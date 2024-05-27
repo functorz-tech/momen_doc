@@ -19,7 +19,7 @@ With Momen, you can bring your ideas to life, build remarkable digital solutions
 
 Momen was started by a group of Engineers in 2019. Initially, we were just irked by the repeated need to write CRUD code, API glues, and CSS. We thought to ourselves, there must be a better way. Hence the birth of Momen.
 
-Our journey began in China, as a no-code WeChat mini program builder with the partnership of WeChat. Within two years, we acquired over 130,000 users and launched 3,000 projects. In 2022, we broadened our reach to the web. And we are now serving users worldwide, powered by AWS (Amazon Web Services).
+Our journey began as a no-code mini program builder in partnership with a major platform. Within two years, we acquired over 130,000 users and launched 3,000 projects. In 2022, we broadened our reach to the web and are now serving users worldwide, powered by AWS (Amazon Web Services).
 
 #### Founder
 
