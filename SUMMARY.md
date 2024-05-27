@@ -135,6 +135,7 @@
 * [SEO](advanced-functionality/seo.md)
 * [Development Environment](advanced-functionality/development-environment.md)
 * [Multi- Frontends Configuration](advanced-functionality/multi-frontends-configuration.md)
+* [Development Environment Setup Guide](advanced-functionality/development-environment-setup-guide.md)
 * [API](advanced-functionality/api/README.md)
   * [API Fundamentals](advanced-functionality/api/api-fundamentals.md)
   * [API Configuration](advanced-functionality/api/api-configuration.md)
@@ -143,7 +144,6 @@
     * [Google Sheet](advanced-functionality/api/integrations/google-sheet.md)
     * [Airtable](advanced-functionality/api/integrations/airtable.md)
     * [Notion](advanced-functionality/api/integrations/notion.md)
-* [Development Environment Setup Guide](advanced-functionality/development-environment-setup-guide.md)
 
 ## AI
 
