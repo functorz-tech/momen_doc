@@ -16,7 +16,7 @@ description: >-
 
 ### How to Create a Project
 
-Enter the user center and click "+New Project". Here are two options for your new projects:
+Enter the user center and click "+ New Project". Here are two options for your new projects:
 
 * Create a blank project: Build your project from scratch.
 * Choose a template: Build an app based on the existing template, or directly use it.
