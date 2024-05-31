@@ -44,7 +44,7 @@ The link for Google, [https://www.google.com/](https://www.google.com/), is a cu
 
 ### Set Up a Custom Domain
 
-Please view : [Momen Custom Domain](https://momen-tech.notion.site/How-to-set-up-a-custom-domain-on-Momen-208034c312754aa58159d75af6eb42b9)
+Please view : [Momen Custom Domain](https://docs.momen.app/advanced-functionality/custom-domain)
 
 <figure><img src="../../.gitbook/assets/3 (4).gif" alt="Customizing the domain name in a no-code tool"><figcaption></figcaption></figure>
 
