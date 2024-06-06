@@ -46,7 +46,7 @@ To view your App Token balance and purchase more, go to your profile, hover over
 
 <figure><img src="../.gitbook/assets/2 (38).png" alt="Purchase resource kit in a no-code tool"><figcaption></figcaption></figure>
 
-Click the 'Purchase Resource Kit' button to purchase additional App Tokens in a new window. The price is $1 for 10,000 App Tokens.
+Click the 'Purchase Resource Kit' button to purchase additional App Tokens in a new window. The price is $1 for 6,000,000 App Tokens.
 
 <figure><img src="../.gitbook/assets/3 (31).png" alt="App token consumption in a no-code tool"><figcaption></figcaption></figure>
 
