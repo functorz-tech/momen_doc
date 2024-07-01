@@ -103,6 +103,7 @@
   * [Data Model Configuration](data/data-model/data-model-configuration.md)
 * [Data Model by App Type](data/data-model-by-app-type/README.md)
   * [E-commerce](data/data-model-by-app-type/e-commerce.md)
+  * [Blog](data/data-model-by-app-type/blog.md)
 * [Data Binding and Configuration](data/data-binding-and-configuration/README.md)
   * [Page Data](data/data-binding-and-configuration/page-data.md)
   * [Current User Data](data/data-binding-and-configuration/current-user-data.md)
