@@ -35,7 +35,7 @@ In e-commerce, users are categorized as either buyers—who purchase products or
 
 #### **Permission Configuration**&#x20;
 
-Typically, personal data such as shopping cart contents and order history are private. Settings should ensure that only the user and administrators can view or edit this information. Here is a common user table permission configuration: // add row level security
+Personal data, including shopping cart contents and order history, is generally considered private. Settings must ensure that only the user and administrators have the ability to view or modify this information. Below is a standard configuration for user table permissions, incorporating row-level security:
 
 * **View all fields**: Yes
 * **Modify Name**: Yes
