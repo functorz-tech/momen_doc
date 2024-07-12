@@ -10,7 +10,7 @@ Whether selling products or services, e-commerce applications contain both publi
 
 The typical data model for e-commerce applications involves four key tables: Users, Products, Shopping Carts, and Orders. For enhanced interaction, additional tables might include Favorites, Reviews, and a table for storing delivery addresses.
 
-### **User Table**&#x20;
+### **User Table**
 
 In e-commerce, users are categorized as either buyers—who purchase products or services—or administrators—who manage product listings.
 
@@ -33,7 +33,7 @@ In e-commerce, users are categorized as either buyers—who purchase products or
 
 <figure><img src="../../.gitbook/assets/截屏2024-06-25 10.58.08.png" alt=""><figcaption></figcaption></figure>
 
-#### **Permission Configuration**&#x20;
+#### **Permission Configuration**
 
 Personal data, including shopping cart contents and order history, is generally considered private. Settings must ensure that only the user and administrators have the ability to view or modify this information. Below is a standard configuration for user table permissions, incorporating row-level security:
 
@@ -41,19 +41,21 @@ Personal data, including shopping cart contents and order history, is generally 
 * **Modify Name**: Yes
 * **Modify Phone Number**: Yes
 * **Role**: No, this should be set by system rules or administrators.
-* **Shopping Cart**: Yes&#x20;
+* **Shopping Cart**: Yes
 
 And so on, users can only edit their personalized information. While the administrator can view all user information and set a user's, etc.
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 10.59.46.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-07-12 16.23.52.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/截屏2024-07-12 16.26.22.png" alt=""><figcaption></figcaption></figure>
 
 ### **Product Table**
 
-All product information that users see should be stored in a product table. Information that is not convenient for users to see, such as the product's cost price and profit margin, is also stored in the same table and managed. We only need to set the appropriate viewing permissions for the corresponding roles.&#x20;
+All product information that users see should be stored in a product table. Information that is not convenient for users to see, such as the product's cost price and profit margin, is also stored in the same table and managed. We only need to set the appropriate viewing permissions for the corresponding roles.
 
 #### **Common Fields**
 
-* **Name**: Text&#x20;
+* **Name**: Text
 * **Picture**: Image
 * **Price**: Unlimited precision decimal type
 * **Description**: Text type
@@ -65,9 +67,7 @@ All product information that users see should be stored in a product table. Info
 
 <figure><img src="../../.gitbook/assets/截屏2024-06-25 13.57.34.png" alt=""><figcaption></figcaption></figure>
 
-
-
-#### **Permission Configuration**&#x20;
+#### **Permission Configuration**
 
 Users should only be able to view the data in the product table. Administrators can upload and modify all product information.
 
@@ -77,7 +77,7 @@ Users should only be able to view the data in the product table. Administrators 
 
 ### **Shopping Cart Table**
 
-When users browse products, they can add products to the shopping cart. Typically, the shopping cart table establishes a one-to-many relationship with the user table, because one user can add multiple shopping data to the shopping cart table. Similarly, the shopping cart table also establishes a one-to-many relationship with the product table, because multiple different users will purchase the same product and will appear multiple times in the shopping cart table.&#x20;
+When users browse products, they can add products to the shopping cart. Typically, the shopping cart table establishes a one-to-many relationship with the user table, because one user can add multiple shopping data to the shopping cart table. Similarly, the shopping cart table also establishes a one-to-many relationship with the product table, because multiple different users will purchase the same product and will appear multiple times in the shopping cart table.
 
 <figure><img src="../../.gitbook/assets/截屏2024-06-25 14.09.59.png" alt=""><figcaption></figcaption></figure>
 
@@ -89,13 +89,13 @@ When users browse products, they can add products to the shopping cart. Typicall
 
     <figure><img src="../../.gitbook/assets/截屏2024-06-25 14.13.23.png" alt=""><figcaption></figcaption></figure>
 
-#### **Permission Configuration**&#x20;
+#### **Permission Configuration**
 
 Like the user table, the data in the shopping cart table is very private and can only be viewed and modified by the user themselves and administrators. So, we can set in permission management that only the user themselves and administrators can modify and view the user's shopping cart data.
 
-### **Order Table**&#x20;
+### **Order Table**
 
-The order table is used to record the order information of user's purchasing, generally including who the buyer is, which products were bought, the payment status, delivery status and other important content. Since an order may contain multiple products, a separate order detail table is usually established, and the order table and the order detail table will establish a one-to-many relationship to record which products are contained in this order.&#x20;
+The order table is used to record the order information of user's purchasing, generally including who the buyer is, which products were bought, the payment status, delivery status and other important content. Since an order may contain multiple products, a separate order detail table is usually established, and the order table and the order detail table will establish a one-to-many relationship to record which products are contained in this order.
 
 #### **Common Fields**
 
@@ -104,14 +104,14 @@ The order table is used to record the order information of user's purchasing, ge
 * **Payment Method**: Text, such as Stripe, Paypal, etc.
 * **Payment Status**: Text, such as payment successful/payment failed, etc.
 * **Order Status**: Text type, such as stocking up/shipped/delivering/cancel order, etc.
-* **Recipient Name**: Text&#x20;
+* **Recipient Name**: Text
 * **Recipient Contact Information**: Text
 * **Recipient Detailed Address**: Text
 * **Total Order Price**: Infinite precision decimal type
 * **Discount Price**: Infinite precision decimal type
 * **Use of Coupon**: Boolean type
 
-#### **Order Table Permission Configuration**&#x20;
+#### **Order Table Permission Configuration**
 
 Order data is relatively private, so it needs to be set so that only the order owner and administrators can view or modify order information. Before placing an order, users can choose the payment method and recipient information. After the order is successfully placed, users can no longer modify the payment method, so extra attention is needed when configuring permissions.
 
