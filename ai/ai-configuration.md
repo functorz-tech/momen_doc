@@ -15,23 +15,15 @@ Optimize your business efficiency with Momen's AI capabilities. Learn about cust
 
 ### Function Description
 
-Based on the AI large model, customize the UI interface of the AI application and configure your exclusive AI business logic.
+Momen AI is a robust feature integrated within the Momen editor, designed to facilitate custom AI request setups. Its streamlined interface demystifies AI configurations, enabling you to create personalized AI applications without coding.
 
-With Momen AI, you can customize task roles, messages, and constraints, as well as combine Momen database data or uploaded files as task context. You can also customize the output.
+#### Core Features
 
-#### V 1.0 Core Features
-
-* Customize AI input content, i.e., role, messages, and constraints/prompts, as pre-set content to drive AI.
-* Select data from the Momen database as context/input result reference for the AI application.
-* Upload content from your knowledge base as context/output result reference for the AI application.
-* Customize AI output format to control the form of the results, enabling direct display or control of the application's front-end page or database operations.
-* AI debugging.
-
-{% hint style="info" %}
-Tips:&#x20;
-
-Momen AI - V 1.0 version currently only supports one-time task interaction. Future AI features to be launched include image processing capabilities, multi-turn conversations, AI calling actionflow and APIs, streaming output, score threshold, etc.
-{% endhint %}
+* Supports a variety of large models, including "GPT 3.5 turbo" and "GPT 4.0 turbo," with plans to include more in future updates for direct integration.
+* Accommodates multiple input types, such as text and images.
+* Connects to various knowledge base sources, including the Momen database, third-party APIs, and local file uploads.
+* Offers a selection of tools for invocation, including behavior flows, APIs, and other pre-configured AI requests.
+* Provides outputs in JSON format and supports streaming outputs.
 
 ### Use Cases
 
@@ -49,6 +41,7 @@ AI applications have a wide range of use cases. Here are some common scenarios:
   * Document translation.
   * Code generation.
   * Text classification.
+* Image processing
 
 ### Function Entry
 
@@ -58,30 +51,42 @@ Click on the Momen AI button in the editor's top left corner to enter the AI app
 
 ### Configuration Instructions
 
-<figure><img src="../.gitbook/assets/2 (36).png" alt=""><figcaption></figcaption></figure>
+The left side is the AI request configuration interface, the right side is the AI debugging interface.
+
+<figure><img src="../.gitbook/assets/截屏2024-07-23 13.34.39.png" alt=""><figcaption></figcaption></figure>
+
+**Defining the Request Name**&#x20;
+
+AI Request Name: The default setting is Ai-ConConfig-1. You can customize the AI request name to suit your business requirements, making it easier to quickly identify the right request during invocation.
 
 #### General Configuration
 
-* AI Interface Name: Define the name of the AI application interface based on business requirements for quick recognition during calls.
-* AI Interface Description: Describe the functionality of the interface for collaborators to quickly understand its purpose.
-* Basic Configuration: Choose the version of the AI model. The choice of a large model may affect the results. It is recommended to use the advanced version for more accurate results, but this will consume more App Tokens and time.
+**Large Model:** Select the version of the large model to complete your AI tasks. The version you choose can influence the results.
+
+* More sophisticated models will use more App Tokens during calls.
+* Currently, only GPT 4.0 turbo has capabilities for processing images.
+
+**AI Personality:** This refers to the 'temperature' setting, which ranges from 0-1. Lower this setting to enhance result accuracy, or increase it to foster more creative content generation.
+
+**Maximum Dialogue Rounds:** This is the maximum number of times you can converse with the AI during debugging sessions.
+
+**Character Limit per Round:** This sets the maximum number of characters both sent to and received from AI in each round.
+
+
 
 {% hint style="info" %}
-Tips on Large Model Version Selection:
-
-For example, generating a 300-word X post:
-
-* Advanced version large model: Consumes about 600 App Tokens, and takes about 60 seconds.
-* Basic version large model: Consumes about 30 App Tokens, and takes about 30 seconds. Quality differences in a generated post may not be significant in this scenario, so it's suggested to test and choose based on expected results.
+&#x20;**Important Note:** When multiple rounds are enabled, each new round will include the context from previous dialogues, resulting in an increasing character count with each round.
 {% endhint %}
 
-* Input Configuration: Configure parameters to be passed to the AI interface. Generally, input parameters will be provided directly to the preset prompts or used as filtering conditions for the knowledge base.
+#### **Input Configuration**&#x20;
+
+Input Parameter Configuration: Set up the single or multiple parameters required when making an AI request. These parameters are typically linked directly to \[Predefined Prompts] for usage, and may also be used as filtering conditions for the \[Knowledge Base-Database].
+
+<figure><img src="../.gitbook/assets/截屏2024-07-23 13.41.04.png" alt=""><figcaption></figcaption></figure>
 
 #### Preset Prompts
 
-**Prompts' Function**
-
-Prompts serve to inform AI of its role, provide reference material, and specify task constraints.
+**Prompts:** Prompts serve to inform AI of its role, provide reference material, and specify task constraints.
 
 **Advanced Prompts Guide**
 
@@ -89,11 +94,10 @@ Prompts serve to inform AI of its role, provide reference material, and specify 
 
 **Prompt Source Options**
 
-1. Direct Input:
-2. Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI interface only execute fixed tasks.
-3. Direct Input + AI Parameter Reference:
-
-If your business involves assisting users in writing content, where task roles or constraints remain fixed and only task messages need user input, you can directly input fixed roles and constraint content in the AI interface. Task details can then be obtained using AI parameters.
+1. Direct Input: Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI interface only execute fixed tasks.
+2. **AI Parameter Reference:** Click the "+" sign next to the input box to reference parameters that are passed when the AI is invoked. This setup is more flexible than direct input, allowing users to define their own task roles, details, and constraints, enabling the request to handle a wider array of tasks.
+3. Direct Input + AI Parameter Reference: If your business involves assisting users in writing content, where task roles or constraints remain fixed and only task messages need user input, you can directly input fixed roles and constraint content in the AI interface. Task details can then be obtained using AI parameters.
+4. **Knowledge Base:** Retrieve data from the Momen database, third-party APIs, or files uploaded locally.
 
 **Momen AI Prompt Content**
 
@@ -143,6 +147,8 @@ Case 2: Develop an AI assistant for internal company finance processes. Colleagu
 
 **Knowledge Base Data Source**
 
+Momen AI supports multiple data source, including database, APIs and local files.
+
 **Database:**
 
 Select single or multiple data tables, fields, related tables/fields stored in Momen. You can also predefine data limits, filtering conditions, sorting, and deduplication operations on selected tables.
@@ -170,54 +176,61 @@ Momen also supports fetching external data via API. You can choose the configure
 
 Please check our step-by-step guide about how to configure APIs in Momen: [Notion](../advanced-functionality/api/integrations/notion.md), [Airtable](../advanced-functionality/api/integrations/airtable.md), [Google Sheet](../advanced-functionality/api/integrations/google-sheet.md)
 
-#### Output Configuration
+#### Tools
 
-<figure><img src="../.gitbook/assets/7 (16).png" alt="Configure the output in Momen AI"><figcaption></figcaption></figure>
+**Why Invoke Tools**&#x20;
 
-**Default:** AI will output results in the default way if there are no output format restrictions in your task constraints. For example, if the task is to calculate a set of data, the output result might be a number; if it's to write an article, the output result might be a large text.
+In an AI Agent, large language models serve as the agent's brain, tasked with logical thinking and task planning. Yet, these models can't directly interact with the world; they require various tools like API requests or intermediary software to facilitate external interactions, similar to human limbs. These tools allow the AI to perform specific actions such as data retrieval, image generation, or other environmental interactions.
 
-**Custom**: Output results in JSON format. Define the content to include which fields and specify the meaning of each field. AI will output the results in JSON format, allowing you to read the data like a data table in Momen when calling this AI interface.
+**Types of Tools**&#x20;
 
-**Word Count Limit:** Refers to the App Tokens required for the content sent to AI (preset prompts + a few segments of content retrieved from the knowledge base) + the content returned by AI. Maximum limit: 8000 App Tokens for advanced version large models, 4000 App Tokens for basic version large models.\
+In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI requests within Momen, or open "Obtain info" to let the AI seek additional context from the user if necessary.
 
+<figure><img src="../.gitbook/assets/截屏2024-07-23 13.54.03.png" alt=""><figcaption></figcaption></figure>
+
+**Invoking Actionflows**&#x20;
+
+Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../actionflow/actionflow-fundamentals.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
+
+<figure><img src="../.gitbook/assets/截屏2024-07-23 13.57.08.png" alt=""><figcaption></figcaption></figure>
+
+**Invoking APIs**&#x20;
+
+Preparation: Learn about \[[API Configuration](../advanced-functionality/api/api-configuration.md)], complete API setup and testing, save, and publish the API. After selecting a configured API, click the add description button on the right side of the API to detail what parameters to send and the expected API returns.
+
+**Invoking AI**&#x20;
+
+Preparation: Other AI requests have been set up and released in Momen. Similarly to the above tools, after choosing another configured AI, add a description, informing the current AI about the tool's function and the input/output data involved.
+
+**Output Configuration**
+
+<figure><img src="../.gitbook/assets/截屏2024-07-23 13.59.53.png" alt=""><figcaption></figcaption></figure>
+
+**Default:** If your task does not specify an output format, the AI will automatically determine the most appropriate output. For instance, it may produce a number when calculating data, or a substantial text block when writing an article.
+
+**Custom:** As depicted below, outputs can be formatted as "JSON" objects. This format allows for the customization of the JSON structure and its field names. Each field can include a description that clarifies its purpose to the AI.
+
+<figure><img src="../.gitbook/assets/截屏2024-07-23 14.00.39.png" alt=""><figcaption></figcaption></figure>
+
+**Streaming Output:** AI models display results progressively as they are generated, reducing latency and thereby improving user experience.&#x20;
+
+{% hint style="info" %}
+&#x20;Important Note: Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
+{% endhint %}
 
 #### Debugging and Preview
 
-Before formal configuration, simulate users and input parameters here to debug the AI interface and view the "input" and "output" of this debugging request.
+Once you've finalized the AI settings, input parameters can be entered on the right side of the interface for debugging and previewing the AI request.
 
-* Make sure the results are as expected before official calls.
-* Optimize the configuration based on results
+<figure><img src="../.gitbook/assets/截屏2024-07-23 14.04.06.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/8 (15).png" alt="Configure the output in Momen AI"><figcaption></figcaption></figure>
+The section below details the entire operation process of the AI. Upon successful execution, you can review the input parameters you provided, how the tools were utilized, and whether the outcomes align with your expectations. If the setup includes multiple dialogue rounds, you can input new parameters here to extend the conversation.
 
-<figure><img src="../.gitbook/assets/9 (14).png" alt="Debug and preview in Momen AI interface"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
+### Request AI
 
 
-Tips:
-
-* If you haven't referenced the current user data when configuring preset prompts, the "Simulated User ID" does not need to be filled in.
-* If you reference current user data when configuring preset prompts, to allow flexible debugging (changing identity, basic information, permissions, etc.), enter the "Simulated User ID" to simulate the corresponding user.
-  * The "Simulated User ID" can be copied from the default account table in the database.
-  * &#x20; ⚠️ Note: The "Simulated User ID" must exist in the default account table; otherwise, debugging will report an error.
-{% endhint %}
-
-### Request AI:
-
-> Currently, AI requests can only be triggered through interactive action.
-
-To receive the results of an AI request, add page data for the page and add an interactive action for the button component. Then, select the configured AI interface and input parameters. Set the page data upon success, and set the value as the content from the result data.
-
-<figure><img src="../.gitbook/assets/10 (14).png" alt="Request AI in a no-code editor"><figcaption></figcaption></figure>
-
-**Streaming Output:** When configuring AI with the "Streaming Output" mode enabled, you will encounter a setting for "Assign streaming output to page data" during the request. In this configuration, you need to choose a preset page data to assign the streaming output. Subsequently, you can bind this page data to a "Text Component." Upon successful AI request, the Text Component will then present the results in a streaming fashion.
-
-<figure><img src="../.gitbook/assets/截屏2024-02-23 15.21.21.png" alt="stream out put in ai configuration in a no-code tool" width="276"><figcaption></figcaption></figure>
-
-Display Loading Animation During Request: This is enabled by default. It shows a loading animation before the AI request results come back.
-
-<figure><img src="../.gitbook/assets/Oct-25-2023 19-28-46.gif" alt=""><figcaption></figcaption></figure>
 
 ### App Token Consumption
 
@@ -229,8 +242,6 @@ If you encounter any issues during the process, feel free to join our [Discord c
 ### About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
-
-Basic and above versions are required to use AI-related features. Please ensure that you have upgraded to the corresponding version and have sufficient [App Tokens](app-token-consumption.md) before use.
 
 
 

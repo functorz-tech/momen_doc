@@ -154,6 +154,7 @@
 ## AI
 
 * [AI Configuration](ai/ai-configuration.md)
+* [AI Invocation and Data Model](ai/ai-invocation-and-data-model.md)
 * [App Token Consumption](ai/app-token-consumption.md)
 * [Vector Data Storage and Sorting](ai/vector-data-storage-and-sorting.md)
 
