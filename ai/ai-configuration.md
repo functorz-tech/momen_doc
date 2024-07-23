@@ -6,8 +6,6 @@ description: >-
 
 # AI Configuration
 
-Basic and above versions are required to use AI-related features. Please ensure that you have upgraded to the corresponding version and have sufficient [App Tokens](app-token-consumption.md) before use.
-
 ### Introduction
 
 Optimize your business efficiency with Momen's AI capabilities. Learn about custom AI interfaces, knowledge base integration, and output configurations. Explore the potential of Momen AI in various scenarios in this tutorial.\
