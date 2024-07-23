@@ -230,7 +230,7 @@ The section below details the entire operation process of the AI. Upon successfu
 
 ### Request AI
 
-
+[AI Invocation and Data Model](ai-invocation-and-data-model.md)
 
 ### App Token Consumption
 
