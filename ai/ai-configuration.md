@@ -53,7 +53,7 @@ The left side is the AI request configuration interface, the right side is the A
 
 <figure><img src="../.gitbook/assets/截屏2024-07-23 13.34.39.png" alt=""><figcaption></figcaption></figure>
 
-**Defining the Request Name**&#x20;
+#### **Defining the Request Name**&#x20;
 
 AI Request Name: The default setting is Ai-ConConfig-1. You can customize the AI request name to suit your business requirements, making it easier to quickly identify the right request during invocation.
 
@@ -66,11 +66,9 @@ AI Request Name: The default setting is Ai-ConConfig-1. You can customize the AI
 
 **AI Personality:** This refers to the 'temperature' setting, which ranges from 0-1. Lower this setting to enhance result accuracy, or increase it to foster more creative content generation.
 
-**Maximum Dialogue Rounds:** This is the maximum number of times you can converse with the AI during debugging sessions.
+**Maximum Rounds:** This is the maximum number of times you can converse with the AI during debugging sessions.
 
-**Character Limit per Round:** This sets the maximum number of characters both sent to and received from AI in each round.
-
-
+**Maximum Token per Round:** This sets the maximum number of characters both sent to and received from AI in each round.
 
 {% hint style="info" %}
 &#x20;**Important Note:** When multiple rounds are enabled, each new round will include the context from previous dialogues, resulting in an increasing character count with each round.
@@ -88,13 +86,17 @@ Input Parameter Configuration: Set up the single or multiple parameters required
 
 **Advanced Prompts Guide**
 
-⚠️ It is recommended to read and understand the [Prompt Engineering Guide ](https://www.promptingguide.ai/)to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more App Tokens and waiting time, they often yield better results.
+{% hint style="info" %}
+It is recommended to read and understand the [Prompt Engineering Guide ](https://www.promptingguide.ai/)to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more App Tokens and waiting time, they often yield better results.
+{% endhint %}
+
+
 
 **Prompt Source Options**
 
-1. Direct Input: Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI interface only execute fixed tasks.
+1. **Direct Input:** Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI interface only execute fixed tasks.
 2. **AI Parameter Reference:** Click the "+" sign next to the input box to reference parameters that are passed when the AI is invoked. This setup is more flexible than direct input, allowing users to define their own task roles, details, and constraints, enabling the request to handle a wider array of tasks.
-3. Direct Input + AI Parameter Reference: If your business involves assisting users in writing content, where task roles or constraints remain fixed and only task messages need user input, you can directly input fixed roles and constraint content in the AI interface. Task details can then be obtained using AI parameters.
+3. **Direct Input + AI Parameter Reference:** If your business involves assisting users in writing content, where task roles or constraints remain fixed and only task messages need user input, you can directly input fixed roles and constraint content in the AI interface. Task details can then be obtained using AI parameters.
 4. **Knowledge Base:** Retrieve data from the Momen database, third-party APIs, or files uploaded locally.
 
 **Momen AI Prompt Content**
@@ -105,7 +107,7 @@ Input Parameter Configuration: Set up the single or multiple parameters required
 
 Define what role AI should play, facilitating better understanding of tasks/questions. For example, "An English teacher helping students master English grammar," "An insurance claims specialist," or "An influencer on Ins"
 
-2. Task Messages:
+2. Task Details:
 
 Define how AI should perform, whether answering questions, writing copies, or extracting information. Specify whether to integrate other context or knowledge base references when executing tasks.
 
@@ -176,7 +178,7 @@ Please check our step-by-step guide about how to configure APIs in Momen: [Notio
 
 #### Tools
 
-**Why Invoke Tools**&#x20;
+**Why does an AI agent need to Invoke Tools**&#x20;
 
 In an AI Agent, large language models serve as the agent's brain, tasked with logical thinking and task planning. Yet, these models can't directly interact with the world; they require various tools like API requests or intermediary software to facilitate external interactions, similar to human limbs. These tools allow the AI to perform specific actions such as data retrieval, image generation, or other environmental interactions.
 
@@ -200,7 +202,7 @@ Preparation: Learn about \[[API Configuration](../advanced-functionality/api/api
 
 Preparation: Other AI requests have been set up and released in Momen. Similarly to the above tools, after choosing another configured AI, add a description, informing the current AI about the tool's function and the input/output data involved.
 
-**Output Configuration**
+#### **Output Configuration**
 
 <figure><img src="../.gitbook/assets/截屏2024-07-23 13.59.53.png" alt=""><figcaption></figcaption></figure>
 
