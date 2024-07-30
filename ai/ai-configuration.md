@@ -17,9 +17,9 @@ Momen AI is a robust feature integrated within the Momen editor, designed to fac
 
 #### Core Features
 
-* Supports a variety of large models, including "GPT 3.5 turbo" and "GPT 4.0 turbo," with plans to include more in future updates for direct integration.
+* Supports a variety of large models, including "GPT 3.5 turbo" and "GPT 4o". Momen will integrate more models in the future.
 * Accommodates multiple input types, such as text and images.
-* Connects to various knowledge base sources, including the Momen database, third-party APIs, and local file uploads.
+* Connects to various knowledge base sources, including the Momen database, third-party APIs, and local files.
 * Offers a selection of tools for invocation, including behavior flows, APIs, and other pre-configured AI requests.
 * Provides outputs in JSON format and supports streaming outputs.
 
@@ -33,45 +33,38 @@ AI applications have a wide range of use cases. Here are some common scenarios:
 * Marketing (AI Content Creation):
   * Sales/consultation script generation based on user information and sales/consultation materials.
   * Copywriting for platforms like Ins, X, and Tiktok and scriptwriting for videos, movies, etc.
-* Efficiency Improvement (AI Collaboration):
-  * Generation of work daily/weekly reports.
-  * Extraction of key information.
-  * Document translation.
-  * Code generation.
-  * Text classification.
-* Image processing
 
 ### Function Entry
 
-Click on the Momen AI button in the editor's top left corner to enter the AI application interface. Click on Start Creation to add a new AI application interface.
+Click on the Momen AI button in the editor's top left corner to enter the AI configuration interface. Click "Create" to add a new AI request.
 
 <figure><img src="../.gitbook/assets/1 (42).png" alt="Entry of AI function in a no-code tool"><figcaption></figcaption></figure>
 
 ### Configuration Instructions
 
-The left side is the AI request configuration interface, the right side is the AI debugging interface.
+The left side is the configuration interface, the right side is the debugging interface.
 
 <figure><img src="../.gitbook/assets/截屏2024-07-23 13.34.39.png" alt=""><figcaption></figcaption></figure>
 
 #### **Defining the Request Name**&#x20;
 
-AI Request Name: The default setting is Ai-ConConfig-1. You can customize the AI request name to suit your business requirements, making it easier to quickly identify the right request during invocation.
+AI Request Name: The default setting is Ai-Config-1. You can customize the name based on your business requirements, making it easier to identify during invocation.
 
 #### General Configuration
 
 **Large Model:** Select the version of the large model to complete your AI tasks. The version you choose can influence the results.
 
-* More sophisticated models will use more App Tokens during calls.
-* Currently, only GPT 4.0 turbo has capabilities for processing images.
+* More sophisticated models will use more tokens during.
+* Currently, only GPT 4o supports processing images.
 
-**AI Personality:** This refers to the 'temperature' setting, which ranges from 0-1. Lower this setting to enhance result accuracy, or increase it to foster more creative content generation.
+**AI Personality:** This refers to 'temperature' in configuration, which ranges from 0-1. A lower value yields more rational and accurate results, and a higher value yields more creative responses.
 
-**Maximum Rounds:** This is the maximum number of times you can converse with the AI during debugging sessions.
+**Maximum Rounds:** This is the maximum number of interactions you can have with the AI during debugging. Sending a command to the AI and receiving a response without invoking any tools counts as one round. If you send a command and the AI calls an API tool before responding, that counts as two rounds.
 
-**Maximum Token per Round:** This sets the maximum number of characters both sent to and received from AI in each round.
+**Maximum Token per Round:** This is the maximum number of words that can be sent to the AI and received from the AI in each round.
 
 {% hint style="info" %}
-&#x20;**Important Note:** When multiple rounds are enabled, each new round will include the context from previous dialogues, resulting in an increasing character count with each round.
+&#x20;**Important Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more tokens. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using tokens.
 {% endhint %}
 
 #### **Input Configuration**&#x20;
@@ -94,7 +87,7 @@ It is recommended to read and understand the [Prompt Engineering Guide ](https:/
 
 **Prompt Source Options**
 
-1. **Direct Input:** Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI interface only execute fixed tasks.
+1. **Direct Input:** Enter prompt words directly in task roles, messages, and constraints. Note that this configuration will make the AI only execute fixed tasks.
 2. **AI Parameter Reference:** Click the "+" sign next to the input box to reference parameters that are passed when the AI is invoked. This setup is more flexible than direct input, allowing users to define their own task roles, details, and constraints, enabling the request to handle a wider array of tasks.
 3. **Direct Input + AI Parameter Reference:** If your business involves assisting users in writing content, where task roles or constraints remain fixed and only task messages need user input, you can directly input fixed roles and constraint content in the AI interface. Task details can then be obtained using AI parameters.
 4. **Knowledge Base:** Retrieve data from the Momen database, third-party APIs, or files uploaded locally.
@@ -147,7 +140,7 @@ Case 2: Develop an AI assistant for internal company finance processes. Colleagu
 
 **Knowledge Base Data Source**
 
-Momen AI supports multiple data source, including database, APIs and local files.
+Momen AI supports multiple data sources, including database, APIs and local files.
 
 **Database:**
 
@@ -157,14 +150,16 @@ Select single or multiple data tables, fields, related tables/fields stored in M
 
 <figure><img src="../.gitbook/assets/5 (21).png" alt="Setting the data in knowledge base"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+&#x20;**Important Note:** The data given to the AI will consume tokens. To manage this, it's best to limit the amount and size of data entries. Set appropriate data limits based on your needs to avoid overloading the model and use tokens efficiently.
+{% endhint %}
+
 **Local Files:**&#x20;
 
-Choose local files to upload to the AI interface.
+Upload your local files as AI's knowledge.
 
-* Supported formats: Word, PDF, txt, md.
-* Total file size not exceeding 50MB.
-* Uploaded files are automatically segmented and vectorized by Momen for easy retrieval.
-* Specify sending the best-matching segments to the large model; the default is 3 segments.
+* Supported formats: Word, PDF, txt, markdown.
+* Total file size should not exceed 50MB.
 
 <figure><img src="../.gitbook/assets/6 (20).png" alt="Upload local file to Momen AI"><figcaption></figcaption></figure>
 
