@@ -20,7 +20,7 @@ Cycle Type: Configure whether the action flow is triggered "every minute", "ever
 
 Binding actionflows: Select the action flows that need to be triggered at regular intervals.
 
-![](../.gitbook/assets/1.jpeg)
+![](<../.gitbook/assets/1 (1).jpeg>)
 
 Tips:
 

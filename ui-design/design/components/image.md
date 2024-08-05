@@ -58,9 +58,9 @@ As shown in the following image ⬇️, select the type of mock assets displayed
 
 The two virtual material display styles are shown below:
 
-<figure><img src="../../../.gitbook/assets/6.jpeg" alt="Mock assets in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (1).jpeg" alt="Mock assets in a no-code tool"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/7.jpeg" alt="Mock assets in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (1).jpeg" alt="Mock assets in a no-code tool"><figcaption></figcaption></figure>
 
 ### Additional Functions of Images
 

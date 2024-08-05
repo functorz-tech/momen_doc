@@ -26,7 +26,7 @@ When you just want to upload a video, the video source can be set as local uploa
 
 When you want to display the original uploaded video and need to update this video, set the video source as data binding, then through the remote data binding of the video content that already exists in the database, in the generated application, you can directly view the uploaded video through the video picker component, when you click on the component, it will automatically open the cell phone album or computer folder to select the content of the video.
 
-![](<../../../.gitbook/assets/1 (1).jpeg>)
+![](<../../../.gitbook/assets/1 (1) (1).jpeg>)
 
 Tips:
 

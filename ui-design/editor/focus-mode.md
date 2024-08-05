@@ -71,7 +71,7 @@ Clicking on a blank area of the page selects the page.
 
 ### Navigation Path (Breadcrumbs)
 
-![](../../.gitbook/assets/5.jpeg)
+![](<../../.gitbook/assets/5 (1).jpeg>)
 
 1. The first level is always the page.
 2. Subsequent levels are the components that have been entered in focus mode.

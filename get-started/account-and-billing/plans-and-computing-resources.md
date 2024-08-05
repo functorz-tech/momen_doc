@@ -115,11 +115,11 @@ Hover over a project in your personal center and click “Details” to see its 
 
 ![](<../../.gitbook/assets/1 (1).png>)
 
-![](<../../.gitbook/assets/2 (1).png>)
+![](<../../.gitbook/assets/2 (1) (1).png>)
 
 If your project is on free plan and needs more resources, you'll need to upgrade to a premium plan first.
 
-![](<../../.gitbook/assets/3 (1).png>)
+![](<../../.gitbook/assets/3 (1) (1).png>)
 
 For apps already on the premium plan, additional computing power can be purchased by navigating to the "Details" section and selecting “More Resources” or by clicking the “+ Add” button next to the desired resource.
 
