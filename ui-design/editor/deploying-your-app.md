@@ -6,49 +6,37 @@ description: >-
 
 # Deploying Your App
 
-### Introduction
+## Introduction
 
-In this tutorial, we'll show you how to effortlessly launch and deploy your website using Momen. With just a click, you can make your webpage accessible to the world or customize a domain name for a more personalized touch.\
-
-
-### Push your website to live with just one click
-
-#### Preview
-
-If you have built your webpage on Momen and you want to make it available for people worldwide to access, you need to first click on the "Preview" button in the upper-right corner of Momen to generate a QR code and a URL link as shown below. You can use your mobile phone to scan the QR code to view the mobile version of the webpage or click on the "Preview" link to open the webpage in a new tab for viewing.
-
-\
+In this tutorial, we'll show you how to effortlessly launch and deploy your website using Momen. With just a click, you can make your webpage accessible to the world or customize a domain name for a more personalized touch.
 
 
-<figure><img src="../../.gitbook/assets/1 (7).PNG" alt="Preview QR code in a no-code too"><figcaption></figcaption></figure>
+## Release
 
-#### Publish
+When your web application is built, you can click the [Publish] button in the top right corner of the editor to deploy and publish your application with one click.
 
-After the Preview process is successful, the 【Publish】 button on the right-hand side will turn blue. Click the blue 【Publish】 button to push your website to live ⬇️.
+For web applications, you need to generate the latest version through [Preview Again]. This will create a QR code and web link in the release interface. You can scan the QR code with your phone or click the link to experience and debug your application in a real web environment.
 
-\
+Once debugging is complete, click the [Publish Now] button to publish your web page. A new official QR code and web link will be generated.
 
+If you want to configure a custom domain, click [Go to Settings] to set it up.
 
-<figure><img src="../../.gitbook/assets/2 (8).PNG" alt="Publish page of a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/publish/preview.jpeg" alt="Preview QR code in a no-code tool"><figcaption></figcaption></figure>
+**Unpublished**  
+<figure><img src="../../.gitbook/assets/publish/publish.jpeg"><figcaption></figcaption></figure>
+**Published**
 
-### Push your website to live with a custom domain name
+### Publishing Web Pages with Custom Domains
 
-#### Domain Name
+**Domain Name:** The web link is also known as the "domain name." Automatically generated domain names are a jumble of letters, making them hard to remember and use. Custom domain names are often used to make web links more memorable and user-friendly.
+**Example:** The link for Google, [https://www.google.com/](https://www.google.com/), is a customized domain name. It defines the link content as the name of the company, Google, making it more convenient for users to access and use.
 
-The webpage link is actually referred to as a 'domain name'. The automatically generated domain name consists of a series of random letters which are difficult to remember and use. Therefore, people usually customize their domain names to make them easier to remember and use. This allows visitors to access their webpage using a customized domain name, instead of using a default webpage address.
-
-#### Example
-
-The link for Google, [https://www.google.com/](https://www.google.com/), is a customized domain name. It defines the link content as the name of the company, Google, making it more convenient for users to access and use.\
-
-
-### Set Up a Custom Domain
+#### Prerequisites for Custom Domains
 
 Please view : [Momen Custom Domain](https://docs.momen.app/advanced-functionality/custom-domain)
 
 <figure><img src="../../.gitbook/assets/3 (4).gif" alt="Customizing the domain name in a no-code tool"><figcaption></figcaption></figure>
 
-\
 If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.\
 
 
