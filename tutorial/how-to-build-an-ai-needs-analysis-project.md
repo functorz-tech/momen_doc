@@ -6,15 +6,19 @@ description: Learn how to build a needs analysis project with Momen AI.
 
 ### Introduction
 
-This document will guide you through building a needs analysis bot using Momen AI. This project helps collect and analyze your customers' needs and provide advice. See how it works on [our website](https://momen.app/ai)!
+In this guide, we’ll walk you through creating a needs analysis bot using Momen AI. This bot will help you collect and analyze your customers’ needs while providing tailored advice based on the input. You can see a working example on our [our website](https://momen.app/ai).
 
 This guide focuses on configuring AI for your website. For more on UI and interaction design, refer to [User Interface and Interaction Design](https://docs.momen.app/get-started/quick-start/user-interface-and-interaction-design)
 
-### Data Storage
+### Step 1: Data Storage
 
-After setting up your UI and data input fields, ensure you have created data and relevant fields for storing information.
+Before configuring the AI, ensure your UI and data input fields are ready. Create the necessary data models and relevant fields for storing customer information. This is crucial for feeding data to the AI during analysis.
 
-### Configure Your AI
+
+
+<figure><img src="../.gitbook/assets/截屏2024-08-19 13.20.17.png" alt=""><figcaption></figcaption></figure>
+
+### Step 2: Configure Your AI
 
 Before proceeding, review [AI configuration](https://docs.momen.app/ai/ai-configuration).
 
@@ -50,7 +54,7 @@ Once all configurations are done, test to ensure it works as expected. Adjust pr
 
 <figure><img src="../.gitbook/assets/debug.png" alt=""><figcaption></figcaption></figure>
 
-#### Apply Your AI on the Frontend
+### Step 3: Apply Your AI on the Frontend
 
 To receive AI request results, add page data and the necessary parameters. For this case, we added parameters related to two questions the AI will analyze.
 
@@ -60,7 +64,9 @@ Configure actions for the button component. In the action configuration, request
 
 <figure><img src="../.gitbook/assets/frontend.jpeg" alt=""><figcaption></figcaption></figure>
 
-Preview and publish your project. Done!
+### Step 4: Preview and publish
+
+Preview your project, ensure everything works as expected, and then publish it. Your needs analysis bot is now live!
 
 <figure><img src="../.gitbook/assets/analysisbot_publish.png" alt=""><figcaption></figcaption></figure>
 
