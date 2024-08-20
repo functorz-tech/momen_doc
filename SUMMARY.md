@@ -97,7 +97,9 @@
 * [Data Overview](data/data-overview/README.md)
   * [Data Retrieval and Display](data/data-overview/data-retrieval-and-display.md)
   * [Data Input and Modification](data/data-overview/data-input-and-modification.md)
-* [Database Operation](data/database-operation.md)
+* [Database](data/database/README.md)
+  * [Database Operation](data/database/database-operation.md)
+  * [Custom Database](data/database/custom-database.md)
 * [Data Model](data/data-model/README.md)
   * [Data Model Fundamental](data/data-model/data-model-fundamental.md)
   * [Data Model Configuration](data/data-model/data-model-configuration.md)
@@ -180,6 +182,7 @@
 * [Online Courses, a nod to Udemy](template/online-courses-a-nod-to-udemy.md)
 
 ## Changelog
+
 * [V2.0.2 - 2024.08.15](changelog/v2.0.2-2024.08.15.md)
 * [V2.0.1 - 2024.08.02](changelog/v2.0.1-2024.08.02.md)
 * [V1.0.9 - 2024.04.25](changelog/v1.0.9-2024.04.25.md)
