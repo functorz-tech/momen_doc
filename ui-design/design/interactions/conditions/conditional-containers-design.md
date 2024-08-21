@@ -10,41 +10,21 @@ description: >-
 
 On many web pages, the content displayed often depends on certain conditions, like whether a user is logged in or not. This tutorial will guide you through the design of conditional containers in Momen. Specifically, we will focus on the "Conditional Container" component, showing you how to set up and configure different sub-containers based on specific conditions. By the end, you'll know how to show content according to user interactions or states on your webpage.
 
-### Content with Conditional Containers
+### How to Add Subcontainers in Conditional Containers
 
-Within a single webpage, the content displayed may need to vary significantly based on certain conditions. For instance, in the construction of a user profile section, non-logged-in users should only be presented with login-related content. However, once logged in, users should be able to view the entire structure of their profile, inclusive of various information.
+Drag a conditional container to the page. Edit the sub-containers on the top of the right side bar.
 
-In Momen, there is a component known as the 【Conditional Container】. Within this component, sub-containers can be added to reflect different content based on the specified conditions. Subsequently, the specific conditions to be met for content display are set within these sub-containers. Whenever the set conditions are satisfied, the content within the respective sub-container is displayed.
+<figure><img src="../../../.gitbook/assets/conditional_containers/conditional_container1.jpeg"><figcaption></figcaption></figure>
 
-Using the aforementioned scenario as an example, login-related content can be placed within one sub-container of the【Conditional Container】, while the structure and other details of the user profile can be housed in another. The individual conditions—whether the user is logged in or not—are then set for each sub-container. Content from the sub-container whose conditions are met will be displayed.
+The function of the default [Loading] sub-container is to process the content displayed when the data is not loaded and returned after entering the page, and generally we do not add any content to the [Loading] sub-container!
 
-### How to Add Sub-containers to the Conditional Container?
+You can click the Focus Mode button above the conditional container to enter the sub-container, and edit the content and conditions in a sub-container individually.
 
-Drag and drop a Conditional Container onto the webpage. In the sidebar of the Conditional Container, click on the【+】to add a conditional sub-container and rename it as desired.
+<figure><img src="../../../.gitbook/assets/conditional_containers/conditional-containers2.gif"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/1 (61).png" alt="Drag and drop a conditional container in a no-code tool"><figcaption></figcaption></figure>
+💡Tips:
+The judgment order of conditional containers is judged from left to right, when the previous condition is true, the content of the corresponding sub-container is directly displayed, and if the previous condition is not true, the judgment of the next condition is entered.
 
-The default【Loading】sub-container is designed to display content while data is still being loaded upon entering a page. Typically, we do not add any content inside the【Loading】sub-container.
-
-<figure><img src="../../../../.gitbook/assets/2 (53).png" alt="Drag and drop sub-containers in a no-code tool"><figcaption></figcaption></figure>
-
-You can drag and drop newly added sub-containers to adjust their sequential order.
-
-<figure><img src="../../../../.gitbook/assets/3 (9).gif" alt="Drag and drop sub-containers in a no-code tool"><figcaption></figcaption></figure>
-
-### How to Set Conditional Criteria for Conditional Sub-containers?
-
-Select a particular sub-container and configure the corresponding conditional criteria in its right-hand sidebar.
-
-
-
-<figure><img src="../../../../.gitbook/assets/4 (48).png" alt="Set conditional criteria for conditional sub-containers in a no-code tool"><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Tips:&#x20;
-
-The evaluation sequence for conditional containers proceeds from left to right. If a condition is met, the content within the corresponding sub-container is immediately displayed. If the condition is not met, evaluation proceeds to the next condition.
-{% endhint %}
 
 If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.\
 
