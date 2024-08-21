@@ -16,34 +16,31 @@ Conditional Containers serve the purpose of displaying different content based o
 
 * Different Views on the Same Page: You can showcase different views on a single webpage based on conditions. For instance, the page's display can vary for users who are logged in and those who aren't.
 * View Switching with Buttons: Conditional Containers allow you to change the displayed content on the same page by clicking a button. For example, clicking the "Send CAPTCHA" button can switch the display to a CAPTCHA Countdown.
-* Combining with Selection: You can use Conditional Containers to create an effect similar to a tab bar or expand a catalog subset based on user selections.
+* Combining with Select View: You can use Conditional Containers to create an effect similar to a tab bar or expand a catalog subset based on user selections.
 
-💡Tips:
+### Add Subcontainers in Conditional Containers
 
-When dealing with different data conditions, consider using \[Conditional Data] to assess the suitability of Conditional Container components.\
+In conditional containers, you can add/modify/delete conditional sub-containers to display different content under different conditions.
 
+For example, when creating a login screen, there are three conditions based on users identities: "visitor", "user", and "admin", so in order to display different interface content under different conditions, we need to add three more sub-containers to the content of the conditional container.
 
-### Conditional Container Content
-
-Within Conditional Containers, you can add, modify, or delete conditional sub-containers. The number of sub-containers corresponds to the conditions you need to accommodate in your business situation. For example, if you categorize your login screen into three conditions, like "Not Logged In," "Logged In\_User," and "Logged In\_Administrator," you would add three sub-containers to the Conditional Container's content.
-
-<figure><img src="../../../.gitbook/assets/1280X1280 (4).png" alt="Switching Cases in Conditional Container."><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/conditional_containers/conditional_container1.jpeg"><figcaption></figcaption></figure>
 
 💡Tips:&#x20;
 
-Conditional containers have a default condition, "loading", when the page data is still loading; conditional containers show the contents of the sub-container are loading, this condition can not be deleted, you can not set the conditions, it is recommended not to make any changes to it!
+Conditional containers have a default condition, "loading". When the page data is still loading, the conditional containers will show that it's loading. This condition can not be deleted, you can not set the conditions to it either. It is recommended not to make any changes to it!
 
-After adding the container, you can double-click to enter the conditional sub-container, where you can see four sub-containers, namely "Not Logged In", "Logged In\_User", "Logged In\_Administrator," and "Loading." "You can click the container name in the upper left corner of the sub-container to configure the display conditions of the sub-container and drag and drop other components into the sub-container to display the content and build the corresponding business logic.
+After adding the container, you can click "Focus Mode" to enter the conditional sub-container, where you can see four sub-containers. You can click on the sub-container to configure the display conditions of the sub-container, and drag other components and build the corresponding business logic
 
-<figure><img src="../../../.gitbook/assets/1280X1280 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/conditional_containers/conditional-containers2.gif"><figcaption></figcaption></figure>
+
 
 #### Conditional Judgment Order Logic
 
 The order in which sub-container views are evaluated follows the red arrow, from left to right, or according to the order of adding sub-containers from top to bottom. When a condition is met, the Container displays the content below that condition. If no conditions are met, the result of the last matching condition is shown.
 
-<figure><img src="../../../.gitbook/assets/0a3efce8-c965-4e29-9d1c-6d8a6b532dec.png" alt="Conditional Judgment Order Logic."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/conditional_containers/conditional-containers3.jpeg"><figcaption></figcaption></figure>
+
 
 💡Tips:
 
@@ -52,14 +49,14 @@ The order in which sub-container views are evaluated follows the red arrow, from
 3. when all conditions are not set, the condition is always by default, then you can switch the view of the current conditional subcontainer through the \[Switch View Condition] behavior.
 
 
-
 #### Rerun Conditions on Remote Data Update
 
 In some cases, remote data can be used as conditions for Conditional Containers. As remote data changes, the conditions may need to be recalculated in real-time. Momen provides a \[Remote Condition on Remote Data Update] mode to handle such situations.
 
 <figure><img src="../../../.gitbook/assets/93a2a1b8-5d42-4e5f-9045-6d8da07bceb8.png" alt=""><figcaption></figcaption></figure>
 
-💡Tips:The update of remote data depends on the request type. In query-type requests, remote data is fetched or updated when the page loads or refreshes, while in subscription-type requests, data is updated when backend data changes (not applicable to media and file types).
+💡Tips: The update of remote data depends on the request type. In query-type requests, remote data is fetched or updated when the page loads or refreshes, while in subscription-type requests, data is updated when backend data changes (not applicable to media and file types).
+
 
 ### Conditional Container Design
 
