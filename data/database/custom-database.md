@@ -1,8 +1,7 @@
 # Custom Database
 
 ---
-description: >-
-  Custom database will help you to manage and share your database more securely and easily.
+description: Custom database will help you to manage and share your database more securely and easily.
 ---
 
 ### Introduction
