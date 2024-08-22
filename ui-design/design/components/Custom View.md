@@ -4,7 +4,7 @@ description: >-
   and visual dividers.
 ---
 
-# View
+# Cuatom View
 
 ### Introduction
 
@@ -15,7 +15,7 @@ In this comprehensive guide, we will navigate through the versatile landscape of
 
 View components in Momen are versatile tools that find their utility in various scenarios:
 
-1. Creating Wholes with Specific Layouts: Use view components to group multiple elements together and apply a specific layout or style to the entire group. This eliminates the need for nesting view components outside each element.
+1. Creating a Section with Specific Layouts: Use view components to group multiple elements together and apply a specific layout or style to the entire group. This eliminates the need for nesting view components outside each element.
 2. Horizontal Scrolling: When you need a web area to scroll horizontally, view components come in handy.
 3. Vertical Scrolling: Similarly, view components are useful when you want an area of the web to scroll vertically.
 4. Divider Lines: View components can be employed to create divider lines, adding structure to your design.
@@ -28,7 +28,7 @@ Appropriate use of view components eliminates the need to nest view components o
 
 ### Utilization
 
-1. #### Creating Wholes with Views
+1. #### Creating Sections with Custom View
 
 Example：
 
@@ -36,7 +36,7 @@ a.  In an activity booking template on an activity details page, use a view to g
 
 b.  Build a custom navigation bar with buttons composed of images and text. Place the image and text components inside a view to streamline button creation and simplify jump behavior setup.
 
-<figure><img src="../../../.gitbook/assets/1 (4).gif" alt="How to read API interface documentation."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/customeviews/views.gif"><figcaption></figcaption></figure>
 
 2. #### Horizontal Scrolling
 

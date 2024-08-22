@@ -13,11 +13,8 @@ Select View is a "list-class" component with many of the same features as [List]
 
 ### Usage Scenario
 
-The Select View component can be used when an 'option' selection is required, and it provides selected/unselected, single/multiple-choice functions.
+The Select View component can be used when an 'option' is required, and it provides selected/unselected, single/multiple-choice functions.
 
-* Answer Options: blue text on a blue background when selected, black text on a white background when unselected
-* Product Category Selection
-* Business Type Selection
 
 <figure><img src="../../../.gitbook/assets/1280X1280 (6).png" alt="Usage example of select view component."><figcaption></figcaption></figure>
 
@@ -25,49 +22,29 @@ The Select View component can be used when an 'option' selection is required, an
 
 ### Select View Design
 
-Select views can be seen as list with "selection" functionality, and they can be accessed by double-clicking inside the component. The component itself is called the parent container, and its internal container is the child container.
+Select views can be seen as list with "selection" functionality. You can set the style of the select view itself, and also click on the subview to edit the selected area or unselected area.
 
-#### Parent Container Design
 
 **Multiple Lines Display Content**
 
-When we want to display the horizontal select view vertically, we can turn on \[Multiple Lines] and set the width of the select view to the same width as each item.
+When we want to display the select view vertically, we can turn on \[Multiple Lines] and set the width of the select view to the same width as each child component, and set the width of the sub-view to 100%.
 
-<figure><img src="../../../.gitbook/assets/1280X1280 (7).png" alt="The view when this option is not selected."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/selectviews/selectviews1.gif"><figcaption></figcaption></figure>
 
+Multiple: Disabled by default, you can select multiple options after turning on 
+Deselectable: Disabled by default, the selected option can be unchecked after clicking again 
+Preserve Selection on Refresh: Disabled by default, and if the component is refreshed, the original selected content will still be retained
 
+#### Sub-Container Design
 
-**Other Style Design**
-
-When setting the border radius and background color of the parent container, the style changes are targeted to the outer layer of the component.
-
-<figure><img src="../../../.gitbook/assets/dbf42339-c17e-42e8-ad59-404f3f433181 (1).png" alt=""><figcaption></figcaption></figure>
-
-* Set container styles: for each item in the select view.
-
-<figure><img src="../../../.gitbook/assets/5a98cc1c-de7a-4602-87f5-63e714a5b18e.png" alt=""><figcaption></figcaption></figure>
-
-#### Sub-Container
-
-A single sub-container can be edited by double-clicking the \[Select View] component. This sub-container encompasses two views: the \[Normal View] and the \[Select View]. Modifications to both views co-occur only when adjusting the container size. All other aspects, such as style and data, must be configured separately.
-
-* Normal view: This view represents the appearance of the option when it is not selected.
-* Select view: This view defines how the option appears when it is selected.
-
-<figure><img src="../../../.gitbook/assets/e430a959-7284-49e1-b938-66484b2bd22d.png" alt=""><figcaption></figcaption></figure>
-
-It's important to highlight that when choosing the view within the \[Button] component, specifically \[Normal View] and \[Select View], the typical approach is to start by adjusting the dimensions (width and height) as well as the background color of the \[Select View].&#x20;
-
-If no background color change is needed, you can set the background color transparency to 0. Subsequently, you can fine-tune the button's style to achieve the desired effect, as illustrated in the following figure. In this setup, options are visually distinguished with a red background and white letters when selected, while unchecked options display a red border with black letters.
-
-<figure><img src="../../../.gitbook/assets/6776455f-411c-44c0-ace8-c58d5eeb4a27.png" alt=""><figcaption></figcaption></figure>
+There are two sub-views - Selected Area and Unselected Area inside the selected view, and you can set the content, size, and style of the sub-views respectively
 
 
+* Unselected view: This view represents the appearance of the option when it is not selected.
+* Selected view: This view defines how the option appears when it is selected.
 
-💡Tips:
+<figure><img src="../../../.gitbook/assets/selectviews/selectviews2.gif><figcaption></figcaption></figure>
 
-* If the button components in the Normal View and Select View do not meet your business needs, you can also remove them and replace them with other components.
-* To edit the Select View configuration itself, click the Preview Area below.
 
 ### Select View Contents
 
@@ -79,59 +56,37 @@ The \[Select View] component offers flexibility in data source selection, suppor
 
 **Once a default value is designated, the associated option will be automatically selected by default (as demonstrated in the example below, where "Basketball" is the default value).**
 
-<figure><img src="../../../.gitbook/assets/fc89d121-b304-4315-b8f4-06cf3bcf2497 (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure>><img src="../../../.gitbook/assets/selectviews/selectviews3.gif><figcaption></figcaption></figure>
 
 💡Tips:
 
 Order of Options: When selecting a view to display options horizontally, the order of options from left to right is determined by the order of the contents of the \[Select View] from top to bottom.
 
-**Binding Option Content**: Double click \[Select View] to enter the sub-container, bind option content for \[Normal View] and \[Select View], click the \[+] sign next to the input box and find "Component Data - Select View - item" to bind option content.
+**Binding Option Content**: Double click \[Select View] to enter the sub-container, click the \[+] sign next to the input box and find "Component Data - Select View - item" to bind option content.
 
-* Normal and selected cases generally display the same content, only the style is not the same, so the general binding content is "Component Data - Select View - item".
-
-<figure><img src="../../../.gitbook/assets/5e32b7de-726c-4e38-8379-d9fdb17e2e27.png" alt=""><figcaption></figcaption></figure>
-
-
-
-#### Remote Data
+#### Query Data
 
 1. **Prerequisite**: A corresponding options data table is created in the data model.
-2. **Add option:** Adjust the data source to "Remote Data" in the content of \[Select View], and select the created data table.
+2. **Add option:** Adjust the data source to "Query Data" in the content of \[Select View], and select the created data table.
 3. **List field & Default value:** You need to select the field to be checked by default and then specify the content of the default value based on the field type and content via inputs/data selection.
 
 * For example: there are two fields in the type table: ID and username.
   * If you set the list field as ID, the default value is the ID of data in the type table.
   * If you set the list field to username, the default value will be the value of the specific username of a piece of data in the type table.
 
-![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=MDg1MTM0NGYxOWQxYmFjMGM4NjJmMDZiMGUyZDUzZTlfUmtpSWxNRGI0YkJuRUpzM1VGTENndkZMNHJXeUU1ZTFfVG9rZW46Q1JDb2JHYktpb1BCYWd4cjg0emM1dUVYbkNlXzE3MTEwOTE4NDg6MTcxMTA5NTQ0OF9WNA)
-
 **Bind option content:** After entering the sub-container, establish a binding for the option content within the component responsible for displaying the options.&#x20;
 
-To do this, click on the \[+] sign within the content and locate "Component Data - Select View - Item".![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=YTZjMGZkZWQ1ZDM0MTUyZjFjNTM2ZmUzMmU2MzlhNGNfMDNWTUpXd05VdXVwNUhseDhETGk0RDE3YkR5ZXp3TlVfVG9rZW46UDE2WmJSTmNIb0JYS1B4OHVGYWMxR2xKbmhoXzE3MTEwOTE4NDg6MTcxMTA5NTQ0OF9WNA)
+To do this, click on the \[+] sign within the content and locate "Component Data - Select View - Item".
+
+<figure>><img src="../../../.gitbook/assets/selectviews/selectviews4.gif><figcaption></figcaption></figure>
 
 💡Tips:
 
 The purpose of setting the "List Field" after adding remote data to the Select View is to set the default value so that the content and type of the default value correspond to the content and type of the selected field.
 
-### Select View Interaction
 
-**Multiple:** off by default, you can select more than one option when you turn it on.
-
-**Deselectable:** off by default, you can deselect the selected option by clicking it again.
-
-**Treat empty as all**: on by default, it doesn't have any significance at present, so it can be ignored.
-
-**Keep choice during refresh:** off by default, if the component is refreshed after opening, the original selection will still be kept.
-
-**Item click actions:** after selecting an option, you can configure other interactive behaviors according to the business situation.
-
-
-
-<figure><img src="../../../.gitbook/assets/afc51249-4be4-4c1d-b86b-c6a2b58fa594 (1).png" alt=""><figcaption></figcaption></figure>
-
-### Results of Select View
+### Output Configuration
+The result of the selection of a view can be bound to a component to display or to insert or update a data table by modifying the table data behavior. In order to accurately locate its data, it is recommended to rename the Select View component
 
 #### Single Select
 
