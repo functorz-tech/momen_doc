@@ -142,6 +142,7 @@
 * [Custom Component](advanced-functionality/custom-component.md)
 * [SSO](advanced-functionality/sso.md)
 * [SEO](advanced-functionality/seo.md)
+* [Stripe](advanced-functionality/stripe.md)
 * [Development Environment](advanced-functionality/development-environment.md)
 * [Multi- Frontends Configuration](advanced-functionality/multi-frontends-configuration.md)
 * [Development Environment Setup Guide](advanced-functionality/development-environment-setup-guide.md)
