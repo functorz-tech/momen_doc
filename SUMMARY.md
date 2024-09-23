@@ -182,7 +182,7 @@
 * [Feedback Tool, a nod to Canny](template/feedback-tool-a-nod-to-canny.md)
 * [Portfolio](template/portfolio.md)
 * [Online Courses, a nod to Udemy](template/online-courses-a-nod-to-udemy.md)
-* [Mobile Auto Repair Appointment Assistant](template/mobile-auto-repair-appointment-assistant.md)
+* [Mobile Auto Repair AI Scheduler](template/mobile-auto-repair-ai-scheduler.md)
 
 ## Changelog
 
