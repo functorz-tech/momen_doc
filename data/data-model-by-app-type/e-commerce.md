@@ -115,7 +115,7 @@ The order table is used to record the order information of user's purchasing, ge
 
 Order data is relatively private, so it needs to be set so that only the order owner and administrators can view or modify order information. Before placing an order, users can choose the payment method and recipient information. After the order is successfully placed, users can no longer modify the payment method, so extra attention is needed when configuring permissions.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ### **References**
 

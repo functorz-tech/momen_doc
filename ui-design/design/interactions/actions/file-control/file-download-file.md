@@ -8,13 +8,13 @@ Enhance your component with the ability to download files directly from remote d
 
 Configure a remote data source on the page that requests access to a data table containing the file data. Set the limit to one record and adjust the filter conditions to meet your specific business needs.
 
-<img src="https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZlNTA4YTAyYTVkOTFiMTBjNDM0MGQzODk1ODNmYjBfRlhuVUpNVlF5NXRUS29iMFZ0NDI0NVJ5T1Q2T0tVUEtfVG9rZW46UktQUGJqWHdTb3Fxc1N4a2x5MWN3YWRhbnhkXzE3MTUzMTM4NzU6MTcxNTMxNzQ3NV9WNA" alt="" data-size="original">               ![](<../../../../../.gitbook/assets/image (7).png>)
+<img src="https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZlNTA4YTAyYTVkOTFiMTBjNDM0MGQzODk1ODNmYjBfRlhuVUpNVlF5NXRUS29iMFZ0NDI0NVJ5T1Q2T0tVUEtfVG9rZW46UktQUGJqWHdTb3Fxc1N4a2x5MWN3YWRhbnhkXzE3MTUzMTM4NzU6MTcxNTMxNzQ3NV9WNA" alt="" data-size="original">               ![](<../../../../../.gitbook/assets/image (7) (1).png>)
 
 ### Add Action
 
 To enable file downloading, attach the "File Operation - File - Download File" action to your component. Then, bind this action to the file data that has been fetched from remote sources.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **About Momen​​​​​**
 

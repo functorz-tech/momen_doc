@@ -39,7 +39,7 @@ b. Sent State: In the "Sent" sub-container, use a "Text Component" linked to the
 
 a. End of Countdown: When the countdown timer displayed in the page data reaches 0, indicating the end of the countdown, perform the following actions:
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Stop the scheduled task to prevent further countdown.
 * Reset the countdown timer to its initial state.
