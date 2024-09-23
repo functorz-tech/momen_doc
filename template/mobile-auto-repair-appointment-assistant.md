@@ -15,7 +15,7 @@ This template follows a simple process. When a customer starts a conversation, t
 To enable the AI to schedule appointments in your calendar, you’ll need to add your own API key. Detailed instructions for configuring the API are provided below.
 {% endhint %}
 
-{% file src="../.gitbook/assets/9月23日.mov" %}
+{% embed url="https://youtu.be/YrwHaPgfsg8" %}
 
 {% hint style="warning" %}
 Only staff members can access and log in to the dashboard. You’ll need to assign the necessary permissions in your project settings. Details are provided below.
@@ -253,7 +253,9 @@ You'll also need to set up the permission setting so that only you and your staf
 
 2. Edit account permissions in the editor.&#x20;
 
-{% file src="../.gitbook/assets/录屏2024-09-06 16.49.21.mov" %}
+
+
+{% embed url="https://youtu.be/_s986Zbyp9M" %}
 
 **4. Google Auth Refresh Token Setup**&#x20;
 
