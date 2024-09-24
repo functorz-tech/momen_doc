@@ -15,13 +15,11 @@ This template follows a simple process. When a customer starts a conversation, t
 To enable the AI to schedule appointments in your calendar, you’ll need to add your own API key. Detailed instructions for configuring the API are provided below.
 {% endhint %}
 
-{% embed url="https://youtu.be/YrwHaPgfsg8" %}
+{% embed url="https://youtu.be/x_TcVCwYpZM" %}
 
 {% hint style="warning" %}
 Only staff members can access and log in to the dashboard. You’ll need to assign the necessary permissions in your project settings. Details are provided below.
 {% endhint %}
-
-
 
 ***
 
