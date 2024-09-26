@@ -2,7 +2,7 @@
 description: >-
   The Mobile Auto Repair AI Scheduler is a template powered by Momen AI 2.0. It
   enables your AI agent to assist customers in identifying car issues and
-  seamlessly scheduling repair appointments
+  seamlessly scheduling repair appointments.
 ---
 
 # Mobile Auto Repair AI Scheduler
