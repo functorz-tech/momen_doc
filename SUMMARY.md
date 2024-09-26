@@ -139,7 +139,7 @@
 
 * [Permission Management](advanced-functionality/permission-management.md)
 * [Custom Domain](advanced-functionality/custom-domain.md)
-* [Custom Component](advanced-functionality/custom-component.md)
+* [Code Component](advanced-functionality/custom-component.md)
 * [SSO](advanced-functionality/sso.md)
 * [SEO](advanced-functionality/seo.md)
 * [Stripe](advanced-functionality/stripe.md)

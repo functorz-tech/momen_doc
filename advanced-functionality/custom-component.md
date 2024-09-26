@@ -2,11 +2,11 @@
 description: Learn how to configure custom components in Momen.
 ---
 
-# Custom Component
+# Code Component
 
 ### Introduction
 
-An introduction to the usage of custom components to develop a counting component from scratch.
+An introduction to the usage of code components to develop a counting component from scratch.
 
 ### **Prerequisites**
 
