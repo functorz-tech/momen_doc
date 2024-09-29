@@ -4,7 +4,7 @@ description: >-
   and visual dividers.
 ---
 
-# Cuatom View
+# Custom View
 
 ### Introduction
 
