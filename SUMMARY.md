@@ -32,7 +32,7 @@
     * [Conditional Container](ui-design/design/components/conditional-container.md)
     * [Text Input](ui-design/design/components/text-input.md)
     * [Button](ui-design/design/components/button.md)
-    * [View](ui-design/design/components/view.md)
+    * [Custom View](ui-design/design/components/custom_view.md)
     * [Image](ui-design/design/components/image.md)
     * [Image Picker](ui-design/design/components/image-picker.md)
     * [List](ui-design/design/components/list.md)
