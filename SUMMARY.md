@@ -63,9 +63,9 @@
   * [Component Control | Text Input｜ Set Input Value](actions/component-control/set-input-value.md)
   * [Component Control | Conditional Container | Switch View Case](actions/component-control/switch-view-case.md)
   * [Component Control｜Scroll Horizontal List](actions/component-control/scroll-horizontal-list.md)
-  * [Component Control | Image | Image Download](actions/component-control/image-download.md)
+  * [Component Control | Image | Image Download](actions/component-control/download-image.md)
   * [Component Control | Image | Fullscreen Image](actions/component-control/fullscreen-image.md)
-  * [Component Control | Conditional Container | Reevaluate Conditions](actions/component-control/rerun-conditions.md)
+  * [Component Control | Conditional Container | Reevaluate Conditions](actions/component-control/rerun-condition.md)
   * [Component Control | List | Load More](actions/component-control/list-load-more.md)
   * [Component Control｜List | Scroll to Bottom](actions/component-control/scroll-to.md)
   * [Lottie](actions/component-control/lottie.md)
@@ -82,12 +82,12 @@
 * [Loop](actions/loop.md)
 * [Share to Twitter](actions/share-to-twitter.md)
 * [File Control](actions/file-control/README.md)
-  * [File｜Upload File](actions/file-control/file-upload-file.md)
-  * [File｜Download File](actions/file-control/file-download-file.md)
+  * [File｜Upload File](actions/file-control/upload-file.md)
+  * [File｜Download File](actions/file-control/download-file.md)
 * [Conditional](actions/conditional/README.md)
   * [Logical Condition Design](actions/conditional/logical-condition-design.md)
   * [Conditional Actions Design](actions/conditional/conditional-actions-design.md)
-* [Animation Configuration](actions/animation-configuration.md)
+* [Animation Configuration](actions/lottie.md)
 
 ## Data
 
