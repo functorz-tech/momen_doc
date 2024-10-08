@@ -142,7 +142,7 @@ Finalize and verify the accuracy of the data model. Validation involves not just
 
 It's worth noting that the design process isn't strictly linear. Often, we cycle through steps, refining continuously to get the final data model. All these iterations are logical and necessary before diving into specific database tools, i.e., before creating the physical data model. Once the data model is finalized and data binding is done in Momen, making alterations to the data model could introduce unnecessary complications.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

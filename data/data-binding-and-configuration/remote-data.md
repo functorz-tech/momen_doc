@@ -136,7 +136,7 @@ For example, for remote data for the student table, set the condition for the na
 
 Success is very important, often need to add action in this position, because need to make sure that this step has got the data or has been carried out. For example, the use of filtering to determine whether the user's account exists, if the success of the result found that the data is empty, proving that there is no account can be triggered to set their own other action.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

@@ -207,7 +207,6 @@ Imported data contains data that violates constraints. If you have one-to-one re
 
 <figure><img src="../../.gitbook/assets/23 (1).png" alt="Check the constraints violation"><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.\
 
 
 ### About Momen

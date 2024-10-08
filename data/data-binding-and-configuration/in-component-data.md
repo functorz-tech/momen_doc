@@ -24,7 +24,7 @@ Taking the List component as an example, after dragging the list component into 
 
 ![](<../../.gitbook/assets/1 (5).png>)
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

@@ -33,7 +33,7 @@ Sequoia , Linear Capital , MiraclePlus
 
 #### Follow Us
 
-[Discord](https://discord.gg/UCyhySSXfz) , [Twitter](https://twitter.com/Momen\_HQ) , [Linkedin](https://www.linkedin.com/company/momen-hq/) , [Youtube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7\_AKYQ)
+[Twitter](https://twitter.com/Momen\_HQ) , [Linkedin](https://www.linkedin.com/company/momen-hq/) , [Youtube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7\_AKYQ)
 
 #### Contact Us
 

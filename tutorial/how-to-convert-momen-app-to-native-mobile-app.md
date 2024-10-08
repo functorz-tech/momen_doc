@@ -114,7 +114,7 @@ Note: Packaging may involve configuring application icons, names, and other deta
 5. #### Submit to the Google Play Store for Review and Release
 
 \
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

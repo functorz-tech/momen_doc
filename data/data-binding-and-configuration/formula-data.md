@@ -68,7 +68,7 @@ In normal mathematical operation rules, you first calculate within the parenthes
 
 ![](<../../.gitbook/assets/7 (36).png>)
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

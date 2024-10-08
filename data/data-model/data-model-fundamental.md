@@ -215,13 +215,6 @@ For beginners, a common question might arise: "Without any source data table, ca
 \
 It is not recommended to bypass the data table. The process of aggregation inherently reduces information granularity. For instance, by merely viewing a total score statistical table, one cannot discern individual subject scores for each student, or even identify the range of subjects. Consequently, should a different statistical requirement arise later, one might find it challenging to accommodate, such as needing the average scores across subjects.
 
-\
-**Thus, the standard workflow involves first collecting data to create a data table, and then deriving statistical tables from it.**
-
-\
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.\
-
-
 ### About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

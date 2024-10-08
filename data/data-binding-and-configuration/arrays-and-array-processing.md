@@ -69,7 +69,7 @@ passing them as \[{name: "PaulT", age: "18" }, {name: "MikeR", age: "20" }, {nam
 3. Getting a value from an array type field of an api return result
    1. Array to item conversion
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

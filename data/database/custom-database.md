@@ -1,8 +1,12 @@
+---
+description: >-
+  Custom database will help you to manage and share your database more securely
+  and easily.
+---
+
 # Custom Database
 
----
-description: Custom database will help you to manage and share your database more securely and easily.
----
+
 
 ### Introduction
 
@@ -18,11 +22,11 @@ You can select data tables and fields from the default database to generate a cu
 
 ### Creating Custom Database
 
-Click the [+] next to "Data" - "Database" in the upper left corner of the editor and select the required data table and fields in the data table to create a customized database, and you can even configure further filters.
-   
-<figure><img src="../../../.gitbook/assets/conditional_containers/conditional_container1.jpeg"><figcaption></figcaption></figure>
+Click the \[+] next to "Data" - "Database" in the upper left corner of the editor and select the required data table and fields in the data table to create a customized database, and you can even configure further filters.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+<figure><img src="../../.gitbook/assets/conditional_containers/conditional_container1.jpeg" alt=""><figcaption></figcaption></figure>
+
+
 
 ### About Momen
 

@@ -48,7 +48,7 @@ Example: A user posts a question in the community, and in the relationship field
 
 <figure><img src="../../.gitbook/assets/3 (52).png" alt="Recording user actions."><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

@@ -44,7 +44,7 @@ The formatted data type will be transformed into **text**.
 
 <figure><img src="../../.gitbook/assets/5 (10).png" alt="Formatting timestamp types."><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

@@ -71,7 +71,7 @@ If everything looks good and you have checked for any errors, click on【Publish
 
 Congratulations! After completing the aforementioned steps, your Canny platform is now ready to operate.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.
+
 
 ### **About Momen**
 

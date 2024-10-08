@@ -54,7 +54,7 @@ When moving from one page (A) to another (B) using a jump behavior, add the jump
 
 When storing data in a database, IDs often serve as unique identifiers for data pieces. Pass the ID data through \[Link Data] for efficient data retrieval.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

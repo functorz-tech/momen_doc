@@ -164,11 +164,7 @@ The following categories of data permit adjustment to【Format】. By single-cli
   * Current Date and Time (Timestamp)
   * Present Date
 * Time
-* Geographical Location
-
-
-
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.\
+* Geographical Location\
 
 
 ### About Momen

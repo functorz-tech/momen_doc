@@ -79,8 +79,7 @@ Configure it to obtain a time point based on a specific time interval from the c
 <figure><img src="../../.gitbook/assets/5 (10).png" alt="Formatting timestamp types."><figcaption></figcaption></figure>
 
 \
-\
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

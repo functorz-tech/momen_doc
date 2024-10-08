@@ -59,8 +59,6 @@ Currently, Momen mainly provides three interaction modes: Click, Hover, and Scro
 
 In almost all interactions of components, you can configure "Action on Click" in the "Action" and configure "Hover" and "Scroll" interactions in the "Animation".
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
-
 
 
 **About Momen​​**

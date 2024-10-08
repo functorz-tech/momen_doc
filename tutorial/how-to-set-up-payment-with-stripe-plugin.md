@@ -144,8 +144,7 @@ After configuring registration and login, we can call Stripe. Following is the c
 4. Payment method: Only supports bank cards by default, no need to fill in.
 5. Actions on success/failure: Configure what actions need to be done when the user succeeds/fails in payment respectively (e.g., show toast).
 
-\
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

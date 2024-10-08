@@ -28,7 +28,7 @@ In the example below, a page incorporates two \[Text Input] components to captur
 
 <figure><img src="../../.gitbook/assets/0 (4).gif" alt="Using Input Box Data in Momen."><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

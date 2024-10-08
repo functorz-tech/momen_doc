@@ -70,7 +70,7 @@ Preview your project, ensure everything works as expected, and then publish it. 
 
 <figure><img src="../.gitbook/assets/analysisbot_publish.png" alt=""><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### About Momen
 

@@ -38,7 +38,7 @@ You can directly access "Global Data" from any location where data can be called
 
 ![](<../../.gitbook/assets/2 (66).png>)
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

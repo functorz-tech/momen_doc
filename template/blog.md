@@ -94,8 +94,6 @@ Double-click【Preview】in the upper right to begin the preview.
 
 If everything looks good and you have checked for any errors, click on "Publish" to publish the website. Congratulations! You have now completed the creation of a fully customized blog website！
 
-\
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.\
 
 
 ### About Momen

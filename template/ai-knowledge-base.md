@@ -82,10 +82,6 @@ If you accessed the template through the preview link, all content is read-only.
 
 You can embed your AI knowledge base on your current website. To see how to embed it, please refer to [How to Embed an Iframe Component into Your Momen Project](https://docs.momen.app/tutorial/how-to-embed-an-iframe-component-into-your-momen-project).
 
-\
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.\
-
-
 ### About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

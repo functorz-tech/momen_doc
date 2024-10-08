@@ -51,7 +51,7 @@ After opening "IsList," you can save multiple data (arrays) within page data.
 
 After \[Page Data] is created on a page, you can assign a value to \[Page Data] when needed by using the \[Set Value | Set Page Data] behavior. Then the page data can be used for judgment, writing, and other operations.
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+
 
 ### **About Momen​​**
 

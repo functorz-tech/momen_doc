@@ -185,7 +185,7 @@ In Momen, the simultaneous operation on multiple data tables is referred to as ã
 
 <figure><img src="../../.gitbook/assets/12 (1).gif" alt="Updating multiple records in a table in a no-code tool"><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz.) for assistance.
+
 
 ### About Momen
 

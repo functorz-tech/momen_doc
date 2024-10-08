@@ -71,10 +71,9 @@ Design the registration/login content on the interface, including the button for
 
 ### Single Sign-On (SSO)
 
-Refer to the advanced capabilities: [\[_Single Sign-On Configuration Guide\]_](../advanced-functionality/sso.md)_._
+Refer to the advanced capabilities: [\[_Single Sign-On Configuration Guide\]_](../functions/sso.md)_._
 
 \
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.\
 
 
 ### About Momen
