@@ -1,7 +1,6 @@
 ---
 description: >-
-  Explore requests and mutations in data processing for efficient web
-  application development.
+  Mutation: Add, update, or delete single or multiple records in a data table.
 ---
 
 # Request | Mutation
