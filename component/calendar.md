@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how to use Momen's calendar component to elevate your management and
-  event planning apps.
+  Calendar Component: Used to showcase specific dates or facilitate date selection scenarios. Examples include displaying holidays or choosing check-in/check-out dates.
 ---
 
 # Calendar
