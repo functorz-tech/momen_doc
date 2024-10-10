@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover and learn how to customize the text component in Momen to elevate
-  your text-based content.
+  Text: Components for displaying data like text, date, time etc.
 ---
 
 # Text
