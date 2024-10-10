@@ -1,8 +1,6 @@
 ---
 description: >-
-  Dive deep into the intricacies of the Momen Data Model. Learn how to access,
-  create tables, establish relationships, and ensure data integrity through
-  constraints.
+  Data model: Where you can create data tables, add data fields, relationships, and constraints. Remember to update the backend after modifying the data model.
 ---
 
 # Data Model Configuration
