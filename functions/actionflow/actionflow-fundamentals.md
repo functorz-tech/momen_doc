@@ -1,5 +1,6 @@
 ---
-description: Learn about basics of Momen ActionFlow in this doc.
+description: >-
+  ActionFlow: By adding, deleting, modifying, querying data, writing JS code blocks, calling APIs, and conditional branching, you can implement complex business logic, such as processing objects and array data, and implementing complex judgments and loops.
 ---
 
 # Actionflow Fundamentals
