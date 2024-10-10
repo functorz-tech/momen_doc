@@ -1,5 +1,6 @@
 ---
-description: Learn how to configure the button components in your web app.
+description: >-
+  Button: Components for displaying. Used for scenarios that require users to click on the screen to trigger certain actions. E.g. adding data, navigating to a new page, etc.
 ---
 
 # Button
