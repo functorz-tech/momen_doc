@@ -1,5 +1,6 @@
 ---
-description: Get to grips with the data picker and time picker using Momen components.
+description: >-
+  Data/DateTime Picker: Used for selecting address details like province, city, and district, choosing delivery date/time, or specifying options such as gender, school, etc. It is designed for scenarios where user input is not expected, and selections are made through choices.
 ---
 
 # Data Picker / Time Picker
