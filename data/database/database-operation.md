@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover how to manage database settings in Momen's no-code platform. Learn
-  basic operations for database in this comprehensive guide.
+  Database: You can view and manage (add, modify, import, export) your data here.
 ---
 
 # Database Operation
