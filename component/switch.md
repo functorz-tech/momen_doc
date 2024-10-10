@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn to effectively use Momen's Switch component to manage task completion
-  status.
+  Switch: Used for toggling between two states, controlling permissions, agreeing to privacy policies, etc. Examples include setting permissions for someone or agreeing to a privacy policy, where the content can only be either true or false. The selected data can be accessed in the input component when in use.
 ---
 
 # Switch
