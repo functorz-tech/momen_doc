@@ -1,7 +1,6 @@
 ---
 description: >-
-  Use the Select View component to explore dynamic option selection and styling
-  for web development.
+  Select View: Typically used for making single or multiple selections from various options. Common examples include selecting categories or choosing answers.
 ---
 
 # Select View
