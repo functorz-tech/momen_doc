@@ -2,6 +2,7 @@
 description: >-
   Table component is useful in showcasing and managing data in your website. 
 ---
+
 # Table
 
 ### **Introduction**
