@@ -1,5 +1,6 @@
 ---
-description: Learn about rich text editor component in Momen.
+description: >-
+  Rich Text: Generally used to showcase text with additional elements beyond plain text. These additional elements may include font styles (such as bold or italic), text color, hyperlinks, images, tables, lists, etc. Clicking on the content of the rich text component may open the rich text editor for content editing.
 ---
 
 # Rich Text Editor
