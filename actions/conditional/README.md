@@ -1,3 +1,9 @@
+---
+description: >-
+  Conditional Action: Add conditional branches in interaction and configure
+  other actions within each branch.
+---
+
 # Conditional
 
 ### **Introduction**

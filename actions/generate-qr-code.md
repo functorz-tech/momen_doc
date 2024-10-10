@@ -1,3 +1,10 @@
+---
+description: >-
+  Generate QR Code: After clicking on the component configured for this action,
+  you can generate a QR code. The QR code can be plain text or include
+  parameters, and you can also set a background image.
+---
+
 # QR Code｜Generate QR Code
 
 ### **Introduction**
@@ -12,15 +19,15 @@ Momen's Generate QR Code action can generate a plain text QR code or a QR code c
 
 1. In the page where the QR code is to be generated, create the page data with the data type of image (QR code belongs to image).
 
-![](<../../../../.gitbook/assets/0 (12).png>)
+![](<../.gitbook/assets/0 (12).png>)
 
 2. Add the action of generating a QR code to the component (usually a button), the data in the QR code can be of two types: \[Is Plain Text] and \[Parameters].
 
 * If the data is of \[Is Plain Text] type, turn on the \[Is Plain Text] button and enter the content directly into the input box.
 * If the data is not of \[Is Plain Text] type, you can click Add Parameter (can be more than one) to define the name and type of the data, and input or bind the corresponding data content.
 
-| <img src="../../../../.gitbook/assets/1 (12).png" alt="" data-size="original"> | <img src="../../../../.gitbook/assets/2 (8).png" alt="" data-size="original"> |
-| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/1 (12).png" alt="" data-size="original"> | <img src="../.gitbook/assets/2 (8).png" alt="" data-size="original"> |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------- |
 
 💡 Tips:
 
@@ -34,14 +41,14 @@ The data of plain text QR code can be set as text, URL, image, file and video.
 
 After setting up the QR code data, you need to assign this data to the page data created in the first step.
 
-![](<../../../../.gitbook/assets/3 (6).png>)
+![](<../.gitbook/assets/3 (6).png>)
 
 3. Turning off plain text mode
 
 After setting the parameters for the QR code, the result is a JSON object.\
 For example, if you configured an "integer" type 'seat\_id' parameter and a "text" type 'web\_link' parameter, the actual data seen after scanning the code would be {"seat\_id":20,"web\_link":"https://momen.app/"}.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-09 at 16.08.32.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2024-05-09 at 16.08.32.png" alt=""><figcaption></figcaption></figure>
 
 The QR codes generated with plain text mode disabled are generally used in the following scenarios:
 
@@ -56,14 +63,14 @@ The size and relative position here refer to the QR code image, not the backgrou
 
 As shown in the figure below, the relative position is the upper left corner, if you want to achieve the poster effect, you can adjust the relative position and size here.
 
-![](<../../../../.gitbook/assets/4 (6).png>)
+![](<../.gitbook/assets/4 (6).png>)
 
 **Binding page data using image component**
 
 Generally, when we successfully generate a QR code, we will add the \[Show Modal] action to display the QR code by adding an image component to the custom mode, and the data bound to the image component is the page data set in the first step.
 
-| <img src="../../../../.gitbook/assets/5 (2).png" alt="" data-size="original"> | <img src="../../../../.gitbook/assets/6 (2).png" alt="" data-size="original"> |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/5 (2).png" alt="" data-size="original"> | <img src="../.gitbook/assets/6 (2).png" alt="" data-size="original"> |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------- |
 
 💡 Tip:
 

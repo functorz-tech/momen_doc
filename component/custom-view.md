@@ -1,7 +1,7 @@
 ---
 description: >-
-  Explore how to enhance web design with structured layouts, scrolling options,
-  and visual dividers.
+  Custom View: Generally used to group other components within a view, allowing
+  for specific layout or styling.
 ---
 
 # Custom View

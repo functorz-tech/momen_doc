@@ -1,5 +1,8 @@
 ---
-description: Learn about rich text editor component in Momen.
+description: >-
+  Rich Text Editor: Generally used for editing rich text content. It is employed
+  in scenarios such as community posting and article publication with diverse
+  elements.
 ---
 
 # Rich Text Editor

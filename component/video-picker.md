@@ -1,3 +1,10 @@
+---
+description: >-
+  Video Picker: Generally used when the application requires uploading video
+  content. For example, uploading personal introduction videos, course videos,
+  etc.
+---
+
 # Video Picker
 
 ### **Usage Scenarios**

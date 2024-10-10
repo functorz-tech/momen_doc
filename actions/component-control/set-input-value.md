@@ -1,5 +1,7 @@
 ---
-description: Learn how to configure text input components using Set Input Value in Momen.
+description: >-
+  Set Input Value: After clicking on the component configured for this action,
+  you can set the value of a specified text input component.
 ---
 
 # Component Control | Text Input｜ Set Input Value
@@ -45,8 +47,6 @@ Path: Component Control - Text Input - Set Input Value
 3. In scenarios with multiple text input components on the page, it's advisable to assign distinctive names to each component for clarity when selecting the target text input component.
 
 <figure><img src="../../.gitbook/assets/1 (28).png" alt="Action drop-down box."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​**
 

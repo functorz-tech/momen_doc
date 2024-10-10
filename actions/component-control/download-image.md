@@ -1,26 +1,24 @@
 ---
-description: Discover and learn how to configure image download action in Momen.​
+description: >-
+  Download Image: After clicking on the component configured for this action,
+  you can download the specified image content.
 ---
 
 # Component Control | Image | Image Download
 
 ### Introduction
 
-In this tutorial, you will learn how to configure actions in Momen to enable users to download images with a simple click.\
-
+In this tutorial, you will learn how to configure actions in Momen to enable users to download images with a simple click.\\
 
 ### Application
 
-The image download action is ideal when you want users to be able to download an image by clicking on it or a button.\
-
+The image download action is ideal when you want users to be able to download an image by clicking on it or a button.\\
 
 ### Configuration
 
 Add the \[Download Image] action under the interaction setting of components. To the image itself, this action could be a button or any desired component that triggers the function of the image download. Click the \[+] sign to bind the action to your data source. Ensure that the data source is of a single data type requested by "Remote Data," "List Item Data," or similar sources. The requested data type should be an image.
 
 <figure><img src="../../.gitbook/assets/1 (53).png" alt="Configure the download action in a no-code tool" width="284"><figcaption></figcaption></figure>
-
-
 
 ### About Momen
 

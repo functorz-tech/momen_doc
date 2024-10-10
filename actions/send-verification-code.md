@@ -1,3 +1,10 @@
+---
+description: >-
+  Send Verification Code: After clicking on the component configured for this
+  action, you can send a verification code to the specified email for general,
+  registration, login, or password reset purposes
+---
+
 # Send Verification Code
 
 ### **Introduction**

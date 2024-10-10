@@ -1,5 +1,5 @@
 ---
-description: Discover and learn how to customize the image component in Momen.
+description: 'Image: Used for display images like avatars, product images.'
 ---
 
 # Image

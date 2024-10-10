@@ -1,13 +1,14 @@
 ---
-description: Learn about Lottie animation and how to set up your animation in Momen
+description: >-
+  Generally used to enhance user interaction and provide feedback, such as page
+  transitions, loading indicators, and attention guidance.
 ---
 
 # Animation
 
 ### Introduction
 
-Animation transforms static websites into captivating, interactive experiences. In this tutorial, you'll learn about Lottie animation and how to set up your web's animation effect in Momen.\
-
+Animation transforms static websites into captivating, interactive experiences. In this tutorial, you'll learn about Lottie animation and how to set up your web's animation effect in Momen.\\
 
 ### Why Animation?
 
@@ -18,8 +19,7 @@ Compared with static images, animation offers a more friendly and pleasant user 
 3. Hearthstone's card revailing
 4. CSGO's chest opening
 
-While the outcomes are determined in a split second, animation designers craft these interactions to make users feel like they're part of something thrilling.\
-
+While the outcomes are determined in a split second, animation designers craft these interactions to make users feel like they're part of something thrilling.\\
 
 ### Lottie and GIF
 
@@ -28,15 +28,13 @@ In Momen, the animation effect specifically refers to the Lottie format animatio
 [https://lottiefiles.com/blog/tips-and-tutorials/lottie-vs-gif/](https://lottiefiles.com/blog/tips-and-tutorials/lottie-vs-gif/)
 
 \
-To summarize: GIFs may be familiar and easy to use, but they come at a cost. They tend to consume more system resources, potentially leading to sluggish page performance. In contrast, Lottie animations are more silky and smooth and deliver a superior user experience.\
-
+To summarize: GIFs may be familiar and easy to use, but they come at a cost. They tend to consume more system resources, potentially leading to sluggish page performance. In contrast, Lottie animations are more silky and smooth and deliver a superior user experience.\\
 
 ### Lottie Website
 
 Explore the Lottie official website to experience the lightweight animations:
 
-[LottieFiles: Download Free lightweight animations for website & apps.](https://lottiefiles.com/)\
-
+[LottieFiles: Download Free lightweight animations for website & apps.](https://lottiefiles.com/)\\
 
 ### Interaction Settings
 
@@ -54,8 +52,7 @@ To get started with Lottie animations, we've provided two silky-smooth examples 
 
 {% file src="../.gitbook/assets/131496-keeping-santa-fit.json" %}
 
-\
-
+\\
 
 ### About Momen
 

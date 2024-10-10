@@ -1,3 +1,9 @@
+---
+description: >-
+  Share to Twitter: By configuring this action, you can share the links, text
+  and images to Twitter
+---
+
 # Share to Twitter
 
 ### **Usage Scenario**

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Master the art of using Momen's Conditional Containers to display content on
-  your website based on specific conditions dynamically.
+  Conditional Container Component:  Generally used to show different UI content
+  based on conditional judgments or when toggling condition views.
 ---
 
 # Conditional Container

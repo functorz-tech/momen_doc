@@ -1,8 +1,8 @@
 ---
 description: >-
-  Learn how to configure and use APIs in Momen. Follow our guide to add, debug,
-  and leverage APIs effectively in your projects, whether you're querying data
-  or making modifications.
+  API: Making GET and POST requests through HTTPS to connect with third-party
+  services, interacting with external applications, and accessing or altering
+  data from external sources.
 ---
 
 # API Configuration

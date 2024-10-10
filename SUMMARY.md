@@ -23,6 +23,7 @@
 
 ## Component
 
+* [Tab View](component/tab-view.md)
 * [Rich Text](component/rich-text.md)
 * [Calendar](component/calendar.md)
 * [Data Picker / Time Picker](component/data-picker.md)
@@ -87,7 +88,6 @@
 * [Conditional](actions/conditional/README.md)
   * [Logical Condition Design](actions/conditional/logical-condition-design.md)
   * [Conditional Actions Design](actions/conditional/conditional-actions-design.md)
-* [Animation Configuration](actions/animation-configuration.md)
 
 ## Data
 

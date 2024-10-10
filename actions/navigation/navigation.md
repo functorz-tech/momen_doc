@@ -1,7 +1,8 @@
 ---
 description: >-
-  Learn how to implement navigation within Momen, covering various navigation
-  methods and best practices.
+  Navigation: Clicking on this action will navigate to the specified target
+  page, and there are different modes for navigation, resulting in various
+  transition effects.
 ---
 
 # Navigation | Navigation Collections
@@ -23,18 +24,15 @@ Navigation in Momen is an essential feature that allows users to control the flo
 
 #### Go to Page
 
-Navigate to a certain page.&#x20;
+Navigate to a certain page.
 
-If you want to return to the previous page after navigation, you need to configure a button and the action to specify the page to return to, or return by clicking the browser's back button.\
-
+If you want to return to the previous page after navigation, you need to configure a button and the action to specify the page to return to, or return by clicking the browser's back button.\\
 
 #### Open External Link
 
-Open a new tab in the browser and display the page content.\
+Open a new tab in the browser and display the page content.\\
 
-
-\
-
+\\
 
 ### About Momen
 

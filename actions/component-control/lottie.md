@@ -1,5 +1,8 @@
 ---
-description: Learn how to use lottie animation to create dynamic visuals.
+description: >-
+  Lottie: After clicking on the component configured for this action, it
+  controls the playback state of the animations within the Lottie animation
+  component, including play, stop, pause, and segments.
 ---
 
 # Lottie

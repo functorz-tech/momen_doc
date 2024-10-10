@@ -1,3 +1,10 @@
+---
+description: >-
+  Open External Link: Clicking on the configured component for this action will
+  redirect to the webpage pointed to by the link. Please note that this action
+  does not support real-time preview.
+---
+
 # Navigation | Open External Link
 
 ### **Action Overview**
@@ -14,8 +21,6 @@ Add the "Navigate - Open External Link" action in the component's interactions. 
 ### **Parameterized Redirection**
 
 If the external link you are opening requires parameters, you can append them to the link using a question mark (?), where each parameter consists of a name and its corresponding value. Multiple parameters are separated by an ampersand (&).
-
-
 
 ### **About Momen​​**
 

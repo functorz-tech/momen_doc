@@ -1,3 +1,10 @@
+---
+description: >-
+  Set Page Data: Typically added during page loading, upon successful mutation,
+  or within a component, triggering this action will assign values to
+  pre-defined page data.
+---
+
 # App & Page Control ｜ Set Page Data
 
 ### **Introduction**
@@ -52,8 +59,6 @@ Assuming that when setting the value of the page data, the insertion is an array
 Enabling the "Unique" option allows you to utilize the \[Remove] function within \[Set Page Data]. During a \[Remove] operation, the value to be removed is compared with the values in the page data. If a match is found, the corresponding value in the page data is deleted.
 
 <figure><img src="../../.gitbook/assets/6 (8).png" alt="Remove data from page data"><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​​​​**
 

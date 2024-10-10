@@ -1,5 +1,7 @@
 ---
-description: Learn how to configure custom components in Momen.
+description: >-
+  Code Component: Based on Vite and related ecosystems, developers can create
+  any new components according to their needs.
 ---
 
 # Code Component

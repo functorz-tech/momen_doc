@@ -1,7 +1,7 @@
 ---
 description: >-
-  Elevate your customer service, supercharge marketing content creation, and
-  streamline daily tasks with Momen AI.
+  Momen AI: Based on LLMs, leveraging RAG and tool invocation, you can create
+  customized business AI apps and agents.
 ---
 
 # AI Configuration

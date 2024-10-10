@@ -1,7 +1,8 @@
 ---
 description: >-
-  Use Momen's Set Global Data action for powerful web app global data
-  management.
+  Set Global Data: Typically added during application loading or within a
+  component, triggering this action will assign values to pre-defined global
+  data.
 ---
 
 # App & Page Control｜Set Global Data
@@ -23,8 +24,6 @@ In unfocused mode, click the header toolbar, click App Global Settings, and add 
 After adding \[Global Data], you can set global data on any page or component of the web app according to the business scenario through the \[Set Global Data] action. Global data can be used in all pages and components.
 
 <figure><img src="../../.gitbook/assets/1 (21).png" alt="Set global data according to business needs."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​​​​**
 

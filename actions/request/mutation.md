@@ -1,7 +1,5 @@
 ---
-description: >-
-  Explore requests and mutations in data processing for efficient web
-  application development.
+description: 'Mutation: Add, update, or delete single or multiple records in a data table.'
 ---
 
 # Request | Mutation
@@ -77,8 +75,6 @@ As depicted in the image above, after incorporating the Mutation action for the 
   * When configuring an input box for entering text or an image selector, you can set up content audit validation to ensure that the content provided does not contain any prohibited or illegal material.
 * Verify if the input content complies with custom regular expression rules.
   * When configuring an input box that requires users to input content adhering to specific custom rules (e.g., mandating uppercase letters in usernames), you can set up the corresponding regular expression for validation.
-
-
 
 ### **About Momen​​**
 

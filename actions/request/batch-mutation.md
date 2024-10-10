@@ -1,7 +1,5 @@
 ---
-description: >-
-  Streamline data operations using Momen's Batch Action feature with this
-  tutorial.
+description: 'Batch Mutation: Configure multiple mutations in a single request.'
 ---
 
 # Request | Batch Action
@@ -19,8 +17,6 @@ To configure a "Batch Action" for a specific component, click on the component, 
 To set up a "Batch Action," follow these steps in order: Action > Action on Click > Request > Batch Action > Insert/Update/Delete Selected lists.
 
 <figure><img src="../../.gitbook/assets/0 (1).gif" alt="Add process of Batch Action."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​**
 

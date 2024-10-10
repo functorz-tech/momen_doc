@@ -1,5 +1,7 @@
 ---
-description: Get to grips with the data picker and time picker using Momen components.
+description: >-
+  Data/Time Picker: Used for selecting address details like province, city, and
+  district, choosing delivery date/time.
 ---
 
 # Data Picker / Time Picker
@@ -20,7 +22,7 @@ The \[Data Picker] content comprises three key elements: "Placeholder", "Content
 
 <figure><img src="../.gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
 
-**Prompt Text:** This is not required but serves as a placeholder when no default value is available. It is displayed as a guide to users.&#x20;
+**Prompt Text:** This is not required but serves as a placeholder when no default value is available. It is displayed as a guide to users.
 
 <div>
 
@@ -113,8 +115,7 @@ After setting the default value, the selector is automatically positioned at the
 
 * Configure the prompt text, not required, when there is no default value, the content of the "prompt text" will be displayed.
 
-\
-
+\\
 
 ### About Momen
 

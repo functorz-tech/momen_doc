@@ -1,3 +1,10 @@
+---
+description: >-
+  Full-Screen Image: After clicking on the configured action for the image
+  component, it enables the image to be zoomed in to fill the entire screen for
+  display.
+---
+
 # Component Control | Image | Fullscreen Image
 
 ### Introduction
@@ -11,8 +18,6 @@ The behavior of \[Fullscreen Image] can only be configured for the \[Image] comp
 <figure><img src="../../.gitbook/assets/截屏2024-05-15 14.07.26.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGI4OTEwY2Q4YmQ3MmRhZDhmZWUzYjFhNGZkNDkxZGJfWGhOWFZrMm1XcUh0S1J5MmcxRkp0bU5KY3FSZ2VXQjNfVG9rZW46WWlaWWJhNzR5b1JybjN4eEJSTWN4dnpubmNkXzE3MTUyNDM1OTU6MTcxNTI0NzE5NV9WNA" alt="" width="375"><figcaption></figcaption></figure>
-
-
 
 ### About Momen
 

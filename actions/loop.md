@@ -1,3 +1,10 @@
+---
+description: >-
+  Loop: Using remote data (with a limit greater than 1) or select view (multiple
+  choices) as the data source, retrieve the data from the data source and
+  process it one by one.
+---
+
 # Loop
 
 ### **Introduction**

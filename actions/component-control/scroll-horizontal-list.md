@@ -1,12 +1,15 @@
 ---
-description: Use the component control to modify the style of the horizontal list.
+description: >-
+  Scroll Horizontal List: After clicking on the component configured for this
+  action, it allows control over scrolling a horizontal list to the previous or
+  next item.
 ---
 
 # Component Control｜Scroll Horizontal List
 
 ### **Introduction**
 
-By clicking the button, you can control the scrolling of the horizontal list to move to the previous or next item position.&#x20;
+By clicking the button, you can control the scrolling of the horizontal list to move to the previous or next item position.
 
 ### **Action Profile**
 
@@ -44,8 +47,6 @@ Scroll event for Horizontal Lists. Scrolling to the previous/next position of th
 Scroll to the previous image by clicking the button in the lower left corner, and switch to the previous image by clicking the button in the lower right corner.
 
 ![](<../../.gitbook/assets/2 (9).gif>)
-
-
 
 ### **About Momen​​**
 

@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn to effectively use Momen's Switch component to manage task completion
-  status.
+  Generally used for toggling between two states, controlling permissions,
+  agreeing to privacy policies, etc.
 ---
 
 # Switch

@@ -1,5 +1,7 @@
 ---
-description: Use the refresh action in Momen to optimize the web app's data consistency.
+description: >-
+  Refresh: Typically added upon successful mutation to refresh pages or list
+  components that need to display the latest data.
 ---
 
 # App & Page Control｜Refresh
@@ -48,8 +50,6 @@ This action involves refreshing the data associated with the current user, speci
 Typically, you should configure this action upon the successful modification of data in the default account table. In the "User Action" section, you can locate the "Refresh Login User Data" action for configuration. This ensures that the data associated with the current user is updated after any successful changes, allowing for the use or display of the latest information.
 
 ![](<../../.gitbook/assets/2 (7).png>)
-
-
 
 ### **About Momen​​​​​**
 

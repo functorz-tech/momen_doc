@@ -1,3 +1,9 @@
+---
+description: >-
+  Upload File: After clicking on the component configured for this action, you
+  can choose a file from the system folder for upload.
+---
+
 # File｜Upload File
 
 ### **Introduction**
@@ -39,8 +45,6 @@ Assign the uploaded file to the page data set in step 1.
 Since the front end of the page will not change after the file is uploaded successfully, it is common to add a \[Show Toast] action to the \[Upload File] action to remind the user that the file has been uploaded successfully.
 
 Of course, you can also use the \[Conditional Container] to display different styles of uploading and successful uploading to remind users of the successful upload, as shown in the figure above.
-
-
 
 ### **About Momen​​​​​**
 

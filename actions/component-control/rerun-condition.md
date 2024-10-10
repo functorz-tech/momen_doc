@@ -1,12 +1,17 @@
+---
+description: >-
+  Reevaluate Conditions: It triggers the conditional container to re-evaluate
+  its conditions. This actionis usually enabled by default when setting up the
+  conditional container.
+---
+
 # Component Control | Conditional Container | Reevaluate Conditions
 
-Please familiarize yourself with [Conditional Container](https://docs.momen.app/ui-design/design/interactions/conditions/conditional-containers-design) and [Logical Condition Design](https://docs.momen.app/ui-design/design/interactions/conditions/logical-condition-design) before reading this doc.\
-
+Please familiarize yourself with [Conditional Container](https://docs.momen.app/ui-design/design/interactions/conditions/conditional-containers-design) and [Logical Condition Design](https://docs.momen.app/ui-design/design/interactions/conditions/logical-condition-design) before reading this doc.
 
 ### Action Overview
 
-When a sub-container is configured to use data from remote sources, reevaluating conditions involves updating the sub-container’s judgments based on the most recent data. This process determines which sub-container content is displayed, but note that each "Reevaluate Conditions" action can only manage one conditional container at a time.For pages with multiple conditional containers, consider renaming the container components and their states for clarity in selection during configuration.\
-
+When a sub-container is configured to use data from remote sources, reevaluating conditions involves updating the sub-container’s judgments based on the most recent data. This process determines which sub-container content is displayed, but note that each "Reevaluate Conditions" action can only manage one conditional container at a time.For pages with multiple conditional containers, consider renaming the container components and their states for clarity in selection during configuration.\\
 
 ### Configuration Guide
 
@@ -19,10 +24,6 @@ Under successful outcomes, navigate to and set up Component Operations - Conditi
 Note: Conditional containers often have "Reevaluate Conditions on Remote Data Update" enabled by default. If this is the case, additional configuration to reevaluate upon successful data retrieval is unnecessary.
 
 <figure><img src="../../.gitbook/assets/截屏2024-05-11 12.06.48.png" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 ### **About Momen​​​​​**
 

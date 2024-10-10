@@ -1,5 +1,7 @@
 ---
-description: Learn about Progress Baar component in Momen.
+description: >-
+  Progress Bar: Generally used to showcase the current progress status of a
+  specific task.
 ---
 
 # Progress Bar

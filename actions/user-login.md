@@ -1,7 +1,7 @@
 ---
 description: >-
-  Setting up secure live user logout actions in Momen ensures data integrity and
-  a seamless experience.
+  User Action: After clicking on the component configured for this action, it
+  enables user registration and login functionality using username or email.
 ---
 
 # User Action | User Login - Logout
@@ -19,8 +19,6 @@ Closing the page doesn't automatically log out to the live user, ensuring their 
 The live user logout operates exclusively within the current webpage, allowing the user to exit the current account without affecting information in the database, including the user ID.
 
 <figure><img src="../.gitbook/assets/0 (28).png" alt="Momen editor settings for user logout."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​**
 

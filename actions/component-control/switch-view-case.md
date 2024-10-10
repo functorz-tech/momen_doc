@@ -1,5 +1,7 @@
 ---
-description: Explore component controls for conditional container actions in Momen.
+description: >-
+  Switch View Case: After clicking on the component configured for this action,
+  it allows for direct control of switching between conditional containers.
 ---
 
 # Component Control | Conditional Container | Switch View Case
@@ -14,7 +16,7 @@ In this tutorial on Component Control, we explore the functionality of Condition
 
 When employing Conditional Containers and aiming to control the sub-container view without relying on sub-container conditions, the \[Switch View Case] action provides an alternative method for sub-container view transitions.
 
-### **Application Scenarios**&#x20;
+### **Application Scenarios**
 
 When the switch view case action is triggered, the page will switch to display the selected conditional container and the selected condition.
 
@@ -72,8 +74,6 @@ In the Shopping App, the process of adding a shopping cart when it's not added a
 In shopping cart view switching, to enhance the user experience, it's common to enable the transition from an unadded state to an added state by clicking the add button. However, the reverse transition, from added to unadded, typically doesn't occur by clicking the add quantity button. Similarly, when toggling between states A and B through a button, the decision to use the switching view condition action should be carefully considered, as this action is not inherently reversible and requires thoughtful planning for optimal user interaction.
 
 <figure><img src="../../.gitbook/assets/3 (62).png" alt="Shopping cart view switching."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​**
 

@@ -1,5 +1,8 @@
 ---
-description: Learn how to optimize your website for search engines in Momen.
+description: >-
+  SEO: Boost your organic search rankings based on search engine guidelines. 
+  You can configure your page TDK, H tags, alt texts etc. to improve you ranks
+  and gain traffic.
 ---
 
 # SEO

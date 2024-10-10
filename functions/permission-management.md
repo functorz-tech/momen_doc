@@ -1,7 +1,8 @@
 ---
 description: >-
-  Learn how to configure permissions for different roles, making your website
-  more secure and dynamic.
+  Permission Management: Set up various user roles with permissions tailored to
+  access or modify designated tables/ columns, interact with certain APIs, and
+  ActionFlow, along with configuration of AI.
 ---
 
 # Permission Management

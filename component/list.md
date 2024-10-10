@@ -1,5 +1,7 @@
 ---
-description: Learn how to manage and showcase diverse data using Momen's List Component.
+description: >-
+  List: Used to showcase multiple items with consistent styling but varying
+  data, often taken from a database.
 ---
 
 # List

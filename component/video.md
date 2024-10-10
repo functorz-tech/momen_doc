@@ -1,3 +1,9 @@
+---
+description: >-
+  Video: Used for playing videos on a page. Examples include playing course
+  videos, product introduction videos, etc.
+---
+
 # Video
 
 ### **Usage Scenarios**

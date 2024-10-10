@@ -1,7 +1,7 @@
 ---
 description: >-
-  Optimize the live user experience with Momen for smooth audio and video play,
-  pause, and stop actions.
+  Video: After clicking on the component configured for this series of actions,
+  you can play, pause, or stop video playback.
 ---
 
 # Component Control | Audio/Video | Play, Pause, Stop
@@ -58,8 +58,6 @@ Background music play and pause rely on the media resource action to complete.
 <figure><img src="../../.gitbook/assets/2 (25).png" alt="Supported Media Resource Formats."><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/3 (17).png" alt="Supported Media Resource Formats."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​​​​**
 

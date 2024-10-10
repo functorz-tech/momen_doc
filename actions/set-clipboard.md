@@ -1,3 +1,10 @@
+---
+description: >-
+  Set Clipboard: After clicking on the component configured for this action, you
+  can copy the content directly filled in the action or bound to it to the
+  clipboard of the phone.
+---
+
 # Clipboard | Configure Clipboard
 
 ### **Introduction:**
@@ -14,15 +21,15 @@ Note: This action currently supports only text-type data.
 
 To enable content copying, integrate the "Clipboard - Set Clipboard" action within the interactive elements of the component. Simply input or bind the textual data within the action settings.
 
-| <img src="../../../../.gitbook/assets/0 (46).png" alt="" data-size="original"> | <img src="../../../../.gitbook/assets/1 (84).png" alt="" data-size="original"> |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| <img src="../.gitbook/assets/0 (46).png" alt="" data-size="original"> | <img src="../.gitbook/assets/1 (84).png" alt="" data-size="original"> |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 
 ### **Practical Example of Using the Clipboard Action**
 
 Enhancing User Experience: After the "Set Clipboard" action is triggered, improve the user experience by notifying users that the content has been successfully copied to their clipboard. This can be achieved by configuring an action to display a prompt immediately after the clipboard action. Users can then proceed to paste the copied content wherever necessary.
 
-| <img src="../../../../.gitbook/assets/2 (69).png" alt="" data-size="original"> | <img src="../../../../.gitbook/assets/3 (11).gif" alt="" data-size="original"> |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| <img src="../.gitbook/assets/2 (69).png" alt="" data-size="original"> | <img src="../.gitbook/assets/3 (11).gif" alt="" data-size="original"> |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 
 ### About Momen
 

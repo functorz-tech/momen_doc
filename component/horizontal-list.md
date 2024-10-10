@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn to harness the power of Horizontal Lists in Momen for dynamic data
-  display.
+  Horizontal List: Generally used to showcase carousel content fetched from a
+  database. It can be configured with interactions such as autoplay and loop.
 ---
 
 # Horizontal List

@@ -1,3 +1,10 @@
+---
+description: >-
+  Actionflow: Invoke the configured action flow in the action flow configuration
+  interface. If the action flow has parameters, input/bind the parameters at
+  this point.
+---
+
 # Request | ActionFlow
 
 Please review [ActionFlow Fundamentals](https://docs.momen.app/actionflow/actionflow-fundamentals) before proceeding with this guide.

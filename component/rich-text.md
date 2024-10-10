@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn about rich text components in this tutorial to enhance the content and
-  design of web applications.
+  Rich Text: Generally used to showcase text with additional elements beyond
+  plain text.
 ---
 
 # Rich Text

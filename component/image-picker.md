@@ -1,5 +1,7 @@
 ---
-description: Learn about image picker component in Momen.
+description: >-
+  Image Picker: An input component typically used for selecting and uploading
+  one or multiple images.
 ---
 
 # Image Picker

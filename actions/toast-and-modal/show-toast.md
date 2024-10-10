@@ -1,5 +1,8 @@
 ---
-description: Use the show toast action in Momen to create prompts in web apps.
+description: >-
+  Show Toast: After clicking on the component configured for this action, a
+  toast message will be displayed on the page to provide users with information
+  or feedback.
 ---
 
 # Toast & Modal | Show Toast
@@ -32,8 +35,6 @@ The Show Toast action is commonly used to signal the successful execution of a m
 At the interface's top, a text prompt displays the content of the toast, featuring a default style of black text on a white background and the style cannot be customized.
 
 <figure><img src="../../.gitbook/assets/2 (20).png" alt="Display effect showcase of the Show Toast action."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​​​​**
 

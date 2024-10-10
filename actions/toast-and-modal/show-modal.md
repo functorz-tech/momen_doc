@@ -1,5 +1,8 @@
 ---
-description: Explore Momen's modal capabilities with the Show Modal action tutorial.
+description: >-
+  Show Modal: Typically added upon successful mutation, triggering this action
+  will display text content on the page to indicate the success or failure of a
+  certain operation.
 ---
 
 # Toast & Modal｜Show Modal
@@ -81,8 +84,6 @@ Effect: When the button is clicked, the dialog box will be closed.
 ### **Sample Scenarios**
 
 <figure><img src="../../.gitbook/assets/7.gif" alt="Sample scenario of using show modal action in custom mode."><figcaption></figcaption></figure>
-
-
 
 ### **About Momen​​​​​**
 
