@@ -1,5 +1,6 @@
 ---
-description: Master numeric data handling with Momen's Number Input Components.
+description: >-
+  Number Input: Used for entering numeric data within a specified range. Examples include rating within a range of 1-10, increasing or decreasing the quantity of items in a shopping cart, etc. The entered data can be accessed in the input component when in use.
 ---
 
 # Number Input
