@@ -1,5 +1,6 @@
 ---
-description: Discover and learn how to customize the image component in Momen.
+description: >-
+  Image: Components for displaying. Used for display avatars, product images and other scenarios that require displaying images.
 ---
 
 # Image
