@@ -1,5 +1,6 @@
 ---
-description: Learn about Lottie animation and how to set up your animation in Momen
+description: >-
+  Animation: Used to enhance user interaction and provide feedback, such as page transitions, loading indicators, and attention guidance. The animation component only supports uploading Lottie format animation files. Recommended material download website: https://lottiefiles.com/
 ---
 
 # Animation
