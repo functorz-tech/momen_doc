@@ -1,7 +1,6 @@
 ---
 description: >-
-  Explore how to enhance web design with structured layouts, scrolling options,
-  and visual dividers.
+  Custom View: Generally used to group other components within a view, allowing for specific layout or styling. It can be utilized to create a group with a defined layout or style or to enable individual horizontal/vertical scrolling within a particular area of the app.
 ---
 
 # Custom View
