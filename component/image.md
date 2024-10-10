@@ -1,6 +1,6 @@
 ---
 description: >-
-  Image: Components for displaying. Used for display avatars, product images and other scenarios that require displaying images.
+  Image: Components for displaying images like avatars, product images.
 ---
 
 # Image
