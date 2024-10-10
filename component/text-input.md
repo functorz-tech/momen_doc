@@ -1,7 +1,6 @@
 ---
 description: >-
-  Master the Text Input component for web app development – attributes,
-  behaviors, and real-world use cases.
+  Text Input: Components for input. Normally used for scenorios like typing in usernames or passwords, or entering search queries. When utilized, the data can be retrieved from this input component.
 ---
 
 # Text Input
