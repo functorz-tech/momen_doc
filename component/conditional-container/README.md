@@ -1,7 +1,6 @@
 ---
 description: >-
-  Master the art of using Momen's Conditional Containers to display content on
-  your website based on specific conditions dynamically.
+  Conditional Container: Used to present different UI content based on conditional judgments or when toggling views. For instance, in an event registration interface, it can show a "Sign Up Now" button when a user is not registered and an "Already Registered" button when they are.
 ---
 
 # Conditional Container
