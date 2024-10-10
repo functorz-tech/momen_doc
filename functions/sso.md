@@ -1,7 +1,6 @@
 ---
 description: >-
-  Learn how to enhance user experience and security by implementing SSO in
-  Momen.
+  SSO: A mechanism that allows users to access multiple related systems via a single verification. After configuring SSO, new users entering your website can use their existing accounts (Google, Facebook, etc.) to register and login directly.
 ---
 
 # SSO
