@@ -87,7 +87,7 @@
 * [Conditional](actions/conditional/README.md)
   * [Logical Condition Design](actions/conditional/logical-condition-design.md)
   * [Conditional Actions Design](actions/conditional/conditional-actions-design.md)
-* [Animation Configuration](actions/lottie.md)
+* [Animation Configuration](actions/animation-configuration.md)
 
 ## Data
 
@@ -192,3 +192,4 @@
 * [V1.0.3 - 2023.8.16](changelog/v1.0.3-2023.8.16.md)
 * [V1.0.2 - 2023.7.24](changelog/v1.0.2-2023.7.24.md)
 * [V1.0.1 - 2023.5.25](changelog/v1.0.1-2023.5.25.md)
+* [V2.0.5 - 2024.10.10](changelog/v2.0.5-2024.10.10.md)
