@@ -1,5 +1,6 @@
 ---
-description: Learn how to optimize your website for search engines in Momen.
+description: >-
+SEO: It means boosting your organic search rankings based on search engine guidelines. The goal is to gain traffic and reputation for your websites. You can configure your page TDK, H tags, alt texts for images, etc. to improve your ranks.
 ---
 
 # SEO
