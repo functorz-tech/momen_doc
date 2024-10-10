@@ -1,6 +1,6 @@
 ---
 description: >-
-Video Picker: Used when the application requires uploading video content. For example, uploading personal introduction videos, course videos, etc. The uploaded videos can be accessed in the input component when in use.
+  Video Picker: Used when the application requires uploading video content. For example, uploading personal introduction videos, course videos, etc. The uploaded videos can be accessed in the input component when in use.
 ---
 
 # Video Picker
