@@ -6,7 +6,7 @@ description: >-
 
 # Filtering Condition Design
 
-Before reading this, it is recommended that you familiarize yourself with the [Data Retrieval and Display](../data-overview/data-retrieval-and-display.md)&#x20;
+Before reading this, it is recommended that you familiarize yourself with the [Data Retrieval and Display](data-overview/data-retrieval-and-display.md)&#x20;
 
 ### Introduction
 
@@ -20,7 +20,7 @@ The prerequisite for setting the filter condition is to read the remote data. In
 
 **Configuration method of the above case:** add a list component in the page, then switch the data source to remote data in its content. Select the data table as "Class Table", click "Filter" next to the "+" button to add filtering conditions, select the "Class Table" in the \[Gender] field, select the "Equal to" comparison operator, and then enter the comparative data "Male" in the input box.
 
-<figure><img src="../../.gitbook/assets/1 (11).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (11).gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Tips:
@@ -44,21 +44,21 @@ This is both an obstacle and an asset that can be utilized for complex filtering
 
 It means that in a 1-table list, filtering is done based on entries in tables with more than one relationship. Even in a 1-table list, filtering can still be done on the basis of the entries in multiple tables it contains. Suppose the class table forms a 1:N relationship with the student table. How to filter the class list for "Classes with students named John"? Request the class table with the filter set to:
 
-<figure><img src="../../.gitbook/assets/2 (58).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (58).png" alt="" width="371"><figcaption></figcaption></figure>
 
 How to filter out the list of classes for "classes with students"?
 
-<figure><img src="../../.gitbook/assets/3 (55).png" alt="" width="372"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/3 (55).png" alt="" width="372"><figcaption></figcaption></figure>
 
 To filter out the list of classes with "no students", some modification is needed.
 
-<figure><img src="../../.gitbook/assets/4 (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4 (55).png" alt=""><figcaption></figcaption></figure>
 
 Adding "not" can make the filter conditions into its complement. The reason why it can not simply use "student.id is null" to determine involves the project in the graphql settings, which will not to expanded in detail.&#x20;
 
 To filter out the classes listed as "classes without students called John", then:
 
-<figure><img src="../../.gitbook/assets/5 (41).png" alt="" width="373"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/5 (41).png" alt="" width="373"><figcaption></figcaption></figure>
 
 The reason why you can't simply use "student. name ! = John" is because in the previous section, {X ! = A} does not include the case where X is null, i.e., in Momen, "not equal to A" actually means "not null and not equal to A". If we use "student. name ! = John" would result in the actual filter being "Classes that do not contain John and contain at least one student".\
 
@@ -71,7 +71,7 @@ Method 1:
 
 Configure the remote data for the page to request the product table, with the filtering condition that the account ID is equal to the current user ID. When the product ID is equal to the remote data, the limit will be canceled. In the "not liked" conditional container, you can use the "quantity of likes" from the previous data request to check if there are zero likes, indicating there's no record of likes. A grey button will be displayed.
 
-<figure><img src="../../.gitbook/assets/6 (38).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/6 (38).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Method 2:
 
@@ -80,7 +80,7 @@ Method 2:
 * Since we want to compare the number of likes specifically from the current user for this product, we need to apply a secondary filter to the results obtained in the previous step. Click on the configuration for this product's data in the likes table from the previous step, and add a condition that checks if the account ID in the likes table equals the current user's ID.
 * If you obtain data in this step, it means the user has already liked the product. If the quantity is 0, it means there are no like records, and you can display the "like" button in gray.
 
-<figure><img src="../../.gitbook/assets/7 (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/7 (30).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Tips:

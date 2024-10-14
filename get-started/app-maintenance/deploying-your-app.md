@@ -20,11 +20,11 @@ Once debugging is complete, click the \[Publish Now] button to publish your web 
 
 If you want to configure a custom domain, click \[Go to Settings] to set it up.
 
-<figure><img src="../.gitbook/assets/publish/preview.jpeg" alt="Preview QR code in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/publish/preview.jpeg" alt="Preview QR code in a no-code tool"><figcaption></figcaption></figure>
 
 \*\*Unpublished\*\*
 
-<figure><img src="../.gitbook/assets/publish/publish.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/publish/publish.jpeg" alt=""><figcaption></figcaption></figure>
 
 \*\*Published\*\*
 
@@ -36,7 +36,7 @@ If you want to configure a custom domain, click \[Go to Settings] to set it up.
 
 Please view : [Momen Custom Domain](https://docs.momen.app/advanced-functionality/custom-domain)
 
-<figure><img src="../.gitbook/assets/3 (4).gif" alt="Customizing the domain name in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/3 (4).gif" alt="Customizing the domain name in a no-code tool"><figcaption></figcaption></figure>
 
 
 

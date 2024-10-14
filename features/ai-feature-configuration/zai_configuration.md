@@ -166,7 +166,7 @@ Momen also supports fetching external data via API. You can choose the configure
 
 <figure><img src="../../.gitbook/assets/截屏2024-02-23 15.07.10.png" alt="use api as data source"><figcaption></figcaption></figure>
 
-Please check our step-by-step guide about how to configure APIs in Momen: [Notion](../api/integrations/notion.md), [Airtable](../api/integrations/airtable.md), [Google Sheet](../api/integrations/google-sheet.md)
+Please check our step-by-step guide about how to configure APIs in Momen: [Notion](../api-configuration/integrations/notion.md), [Airtable](../api-configuration/integrations/airtable.md), [Google Sheet](../api-configuration/integrations/google-sheet.md)
 
 #### Tools
 
@@ -182,13 +182,13 @@ In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI re
 
 **Invoking Actionflows**
 
-Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../actionflow/actionflow-fundamentals.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
+Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action\_flow\_basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.57.08.png" alt=""><figcaption></figcaption></figure>
 
 **Invoking APIs**
 
-Preparation: Learn about \[[API Configuration](../api/api-configuration.md)], complete API setup and testing, save, and publish the API. After selecting a configured API, click the add description button on the right side of the API to detail what parameters to send and the expected API returns.
+Preparation: Learn about \[[API Configuration](../api-configuration/api-configuration.md)], complete API setup and testing, save, and publish the API. After selecting a configured API, click the add description button on the right side of the API to detail what parameters to send and the expected API returns.
 
 **Invoking AI**
 

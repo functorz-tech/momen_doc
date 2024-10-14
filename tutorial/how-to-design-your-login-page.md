@@ -71,7 +71,7 @@ Design the registration/login content on the interface, including the button for
 
 ### Single Sign-On (SSO)
 
-Refer to the advanced capabilities: [\[_Single Sign-On Configuration Guide\]_](../functions/sso.md)_._
+Refer to the advanced capabilities: [\[_Single Sign-On Configuration Guide\]_](../features/sso.md)_._
 
 \
 

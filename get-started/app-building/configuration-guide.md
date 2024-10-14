@@ -18,10 +18,10 @@ After selecting a web page by clicking on it, you can configure the following in
 * **Web Path:** Displayed in the browser tab after entering the web page.
 *   **Web Title:** The path appended to the web link in the browser's address bar after entering the web page.
 
-    <figure><img src="../.gitbook/assets/2 (44).png" alt="Result of the configuration set in a no-code tool ​"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/2 (44).png" alt="Result of the configuration set in a no-code tool ​"><figcaption></figcaption></figure>
 * **SEO Settings:** Expand to set the TDK (title, description, keywords) for the web page and configure the thumbnail for sharing the web link.
 
-<figure><img src="../.gitbook/assets/webpage_configuration/seo.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/webpage_configuration/seo.jpeg" alt=""><figcaption></figcaption></figure>
 
 \- \*\*Size and Style:\*\* Refer to \[Layout] for configurations related to size and style.
 
@@ -43,7 +43,7 @@ The lifecycle of a page spans from when it is opened and starts loading content 
 
 You can configure actions for when the page is loaded and when it is unloaded:
 
-<figure><img src="../.gitbook/assets/webpage_configuration/seo.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/webpage_configuration/seo.jpeg" alt=""><figcaption></figcaption></figure>
 
 * **Page Loaded Actions:** For example, display a splash screen ad with a countdown by configuring the countdown action.
 * **Set Page Data:** Configure the behavior to set page data for the current page.
@@ -62,15 +62,15 @@ Scheduled tasks are behaviors triggered at set time intervals until manually pau
 * **Trigger Interval:** The time interval in milliseconds at which the behavior is triggered.
 * **Immediate Trigger:** Starts the scheduled task automatically when entering the page if enabled.
 
-<figure><img src="../.gitbook/assets/webpage_configuration/scheduled.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/webpage_configuration/scheduled.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### Manual Control
 
 You can add a "Control Scheduled Task" behavior to a component to manually start or pause a scheduled task.
 
-<figure><img src="../.gitbook/assets/webpage_configuration/scheduledconfig1.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/webpage_configuration/scheduledconfig1.jpeg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/webpage_configuration/scheduledconfig2.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/webpage_configuration/scheduledconfig2.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### About Momen
 

@@ -31,7 +31,7 @@ In e-commerce, users are categorized as either buyers—who purchase products or
 * **Reviews**: This is a relational field created by establishing a one-to-many relationship between the user table and reviews, allowing indexing of this user's evaluations of different orders.
 * **Other possible configured fields**: Gender, Age, Membership, etc.
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 10.58.08.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-06-25 10.58.08.png" alt=""><figcaption></figcaption></figure>
 
 #### **Permission Configuration**
 
@@ -45,9 +45,9 @@ Personal data, including shopping cart contents and order history, is generally 
 
 And so on, users can only edit their personalized information. While the administrator can view all user information and set a user's, etc.
 
-<figure><img src="../../.gitbook/assets/截屏2024-07-12 16.23.52.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-07-12 16.23.52.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/截屏2024-07-12 16.26.22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-07-12 16.26.22.png" alt=""><figcaption></figcaption></figure>
 
 ### **Product Table**
 
@@ -65,21 +65,21 @@ All product information that users see should be stored in a product table. Info
 * **Product Category ID**: Integer. This is a relational field created by establishing a one-to-many relationship between the product category table and the product table, allowing indexing of the type of product this product belongs to.
 * **Status**: Text, such as in stock, out of stock
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 13.57.34.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-06-25 13.57.34.png" alt=""><figcaption></figcaption></figure>
 
 #### **Permission Configuration**
 
 Users should only be able to view the data in the product table. Administrators can upload and modify all product information.
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 14.04.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-06-25 14.04.24.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 14.05.15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-06-25 14.05.15.png" alt=""><figcaption></figcaption></figure>
 
 ### **Shopping Cart Table**
 
 When users browse products, they can add products to the shopping cart. Typically, the shopping cart table establishes a one-to-many relationship with the user table, because one user can add multiple shopping data to the shopping cart table. Similarly, the shopping cart table also establishes a one-to-many relationship with the product table, because multiple different users will purchase the same product and will appear multiple times in the shopping cart table.
 
-<figure><img src="../../.gitbook/assets/截屏2024-06-25 14.09.59.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-06-25 14.09.59.png" alt=""><figcaption></figcaption></figure>
 
 #### **Common Fields**
 
@@ -87,7 +87,7 @@ When users browse products, they can add products to the shopping cart. Typicall
 * **Product ID**: Integer. This is a relational field created by establishing a one-to-many relationship between the product table and the shopping cart table, allowing indexing of this product's basic information.
 *   **Product Quantity**: Integer], records the quantity of this product added.
 
-    <figure><img src="../../.gitbook/assets/截屏2024-06-25 14.13.23.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/截屏2024-06-25 14.13.23.png" alt=""><figcaption></figcaption></figure>
 
 #### **Permission Configuration**
 
@@ -115,7 +115,7 @@ The order table is used to record the order information of user's purchasing, ge
 
 Order data is relatively private, so it needs to be set so that only the order owner and administrators can view or modify order information. Before placing an order, users can choose the payment method and recipient information. After the order is successfully placed, users can no longer modify the payment method, so extra attention is needed when configuring permissions.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ### **References**
 
