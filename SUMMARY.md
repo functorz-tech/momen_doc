@@ -114,8 +114,6 @@
 
 ## Features
 
-* [Permission management configuration](features/permission-management-configuration/README.md)
-  * [Permission Management](features/permission-management-configuration/permission-configuration.md)
 * [Actionflow](features/action-flow-configuration/README.md)
   * [Actionflow Fundamentals](features/action-flow-configuration/action-flow-basics.md)
   * [Writing Code Blocks in Actionflow](features/action-flow-configuration/writing-code-blocks-in-actionflow/README.md)
@@ -155,6 +153,7 @@
     * [Blog](features/data-model-and-database/data-model-by-app-type/blog.md)
     * [Community](features/data-model-and-database/data-model-by-app-type/community.md)
     * [Digital Content Marketplace](features/data-model-and-database/data-model-by-app-type/digital-content-marketplace.md)
+* [Permission Management](features/permission-configuration.md)
 
 ## Tutorial
 
