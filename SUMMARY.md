@@ -114,6 +114,8 @@
 
 ## Features
 
+* [Permission management configuration](features/permission-management-configuration/README.md)
+  * [Permission Management](features/permission-management-configuration/permission-configuration.md)
 * [Actionflow](features/action-flow-configuration/README.md)
   * [Actionflow Fundamentals](features/action-flow-configuration/action\_flow\_basics.md)
   * [Writing Code Blocks in Actionflow](features/action-flow-configuration/writing-code-blocks-in-actionflow/README.md)
@@ -129,7 +131,6 @@
     * [Google Sheet](features/api-configuration/integrations/google-sheet.md)
     * [Airtable](features/api-configuration/integrations/airtable.md)
     * [Notion](features/api-configuration/integrations/notion.md)
-* [Permission Management](features/permission-configuration.md)
 * [Custom Domain](features/custom-domain-configuration.md)
 * [SSO](features/sso.md)
 * [SEO](features/seo-configuration.md)
@@ -143,17 +144,17 @@
   * [AI Invocation and Data Model](features/ai-feature-configuration/ai-invocation-and-data-model.md)
   * [App Token Consumption](features/ai-feature-configuration/app-token-consumption.md)
   * [Vector Data Storage and Sorting](features/ai-feature-configuration/vector-data-storage-and-sorting.md)
-* [Data Model and Database](features/data\_model\_and\_database/README.md)
-  * [Database](features/data\_model\_and\_database/database.md)
-  * [Custom Database](features/data\_model\_and\_database/custom-database.md)
-  * [Data Model Fundamental](features/data\_model\_and\_database/data-model-fundamental.md)
-  * [Data Model Configuration](features/data\_model\_and\_database/data-model.md)
-  * [Data Model by App Type](features/data\_model\_and\_database/data-model-by-app-type/README.md)
-    * [E-commerce](features/data\_model\_and\_database/data-model-by-app-type/e-commerce.md)
-    * [Appointment Scheduling](features/data\_model\_and\_database/data-model-by-app-type/appointment-scheduling.md)
-    * [Blog](features/data\_model\_and\_database/data-model-by-app-type/blog.md)
-    * [Community](features/data\_model\_and\_database/data-model-by-app-type/community.md)
-    * [Digital Content Marketplace](features/data\_model\_and\_database/data-model-by-app-type/digital-content-marketplace.md)
+* [Data Model and Database](features/data-model-and-database/README.md)
+  * [Database](features/data-model-and-database/database.md)
+  * [Custom Database](features/data-model-and-database/custom-database.md)
+  * [Data Model Fundamental](features/data-model-and-database/data-model-fundamental.md)
+  * [Data Model Configuration](features/data-model-and-database/data-model.md)
+  * [Data Model by App Type](features/data-model-and-database/data-model-by-app-type/README.md)
+    * [E-commerce](features/data-model-and-database/data-model-by-app-type/e-commerce.md)
+    * [Appointment Scheduling](features/data-model-and-database/data-model-by-app-type/appointment-scheduling.md)
+    * [Blog](features/data-model-and-database/data-model-by-app-type/blog.md)
+    * [Community](features/data-model-and-database/data-model-by-app-type/community.md)
+    * [Digital Content Marketplace](features/data-model-and-database/data-model-by-app-type/digital-content-marketplace.md)
 
 ## Tutorial
 

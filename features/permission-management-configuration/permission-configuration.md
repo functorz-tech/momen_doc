@@ -13,7 +13,7 @@ RBAC: Role-Based Access Control.
 
 The basic idea: the various permissions for system operations are not directly granted to specific users, but to establish a set of roles between the set of users and the set of permissions. Each role corresponds to a set of corresponding permissions. Once a user is assigned an appropriate role, the user has all the permissions for this role.
 
-![](<../.gitbook/assets/0 (16).png>)
+![](<../../.gitbook/assets/0 (16).png>)
 
 The benefits of this approach are to enhance the scalability of system management. For bulk changes in user access, it is only necessary to modify the permissions associated with the roles of that batch of users without the need to change the permissions for each user in the batch individually.
 
@@ -64,7 +64,7 @@ Logged-in Users: Users who have successfully executed User Events -> User Login 
 
 Anonymous User: Visitors who enter the project directly without logging in will be automatically assigned this role. The permissions for this role can be customized.
 
-![](<../.gitbook/assets/1 (16).png>)
+![](<../../.gitbook/assets/1 (16).png>)
 
 #### **Step 2: Configure the Permissions of Each Role**
 
@@ -72,7 +72,7 @@ Anonymous User: Visitors who enter the project directly without logging in will 
 
 Click the \[Add] button to add a new role. You can change the name of the role before updating the permission configuration, and you can only copy and delete the role after updating the permission configuration.
 
-![](<../.gitbook/assets/2 (13).png>)
+![](<../../.gitbook/assets/2 (13).png>)
 
 2. Configuring Role Permissions/Adding Role Users
 
@@ -80,7 +80,7 @@ Click the tab under " Permission Management" to set the operation privileges of 
 
 Click the button under "User Management" to view the users under this role and add/delete users for this role.
 
-![](<../.gitbook/assets/3 (8).png>)
+![](<../../.gitbook/assets/3 (8).png>)
 
 3. Configure Data Model Permissions
 
@@ -88,20 +88,20 @@ Operation permissions: there are four operations: select, create, update and del
 
 For example, an ordinary user can only view the data of the active table, that is, he can only perform query operations, but he cannot add, modify or delete the data of the active table.
 
-![](<../.gitbook/assets/4 (8).png>)
+![](<../../.gitbook/assets/4 (8).png>)
 
 3. Field permissions: After adding operation permissions, you can further configure the role's permissions for a column (field) in this data table.
 
 For example, the personal information table has a username, ID, and other information; general users can only query the personal information table name field, and the administrator can view the filed data of ID.
 
-![](<../.gitbook/assets/5 (4).png>)
+![](<../../.gitbook/assets/5 (4).png>)
 
 4. Advanced Filtering: When you open the configuration privileges of an operation, you can further configure advanced filtering for this operation, i.e., configure further judgment conditions under this operation for this role, so that the operation is allowed to be performed only if the conditions are met.
 
 * For example, a user can only modify the data in his/her personal information table.
 
-| <img src="../.gitbook/assets/6 (4).png" alt="" data-size="original"> | <img src="../.gitbook/assets/7 (2).png" alt="" data-size="original"> |
-| -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| <img src="../../.gitbook/assets/6 (4).png" alt="" data-size="original"> | <img src="../../.gitbook/assets/7 (2).png" alt="" data-size="original"> |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 
 Data sources that can be selected with advanced filtering
 
@@ -113,15 +113,15 @@ Configuring API, Action Flow and Momen AI Operation Permissions
 
 Check the checkboxes in APIs to set which APIs the role can call.
 
-![](<../.gitbook/assets/8 (1).png>)
+![](<../../.gitbook/assets/8 (1).png>)
 
 Check the checkboxes in Action Flow to set which action flows the role can call.
 
-![](../.gitbook/assets/9.png)
+![](../../.gitbook/assets/9.png)
 
 Check the checkboxes in Momen AI to set which Momen AI the role can call.
 
-![](../.gitbook/assets/10.png)
+![](../../.gitbook/assets/10.png)
 
 3. Cautions
 
@@ -140,7 +140,7 @@ When a user has multiple roles: When a user has multiple roles (A, B, and C role
 
 After the permission configuration is changed, the system will automatically pop up the \[Update Configuration] prompt, click Update Configuration to make the latest configuration take effect.
 
-![](../.gitbook/assets/11.png)
+![](../../.gitbook/assets/11.png)
 
 ### **Using User Roles As Conditions in Page Configuration**
 
@@ -148,7 +148,7 @@ After the permission configuration is changed, the system will automatically pop
 
 For example, in the conditional container, there are conditional sub-containers for "Admin" and " General User" respectively, and only people with administrator privileges can see the content in the sub-container for "Admin", so we can configure the "Administrator" sub-container with the condition of "Includes" \[Admin].
 
-![](../.gitbook/assets/12.png)
+![](../../.gitbook/assets/12.png)
 
 ### **Cautions**
 
