@@ -182,7 +182,7 @@ In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI re
 
 **Invoking Actionflows**
 
-Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action\_flow\_basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
+Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action-flow-basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.57.08.png" alt=""><figcaption></figcaption></figure>
 
