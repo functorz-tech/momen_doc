@@ -1,100 +1,131 @@
----
-description: >-
-  Code Component: Based on Vite and related ecosystems, developers can create
-  any new components according to their needs.
----
-
 # Code Component
 
 ### Introduction
 
-An introduction to the usage of code components to develop a counting component from scratch.
+Enhance your applications by adding custom-built React components. These components can enable dynamic forms with live validation, data-driven charts, advanced animations, transitions, interactive maps, and data visualizations, expanding the range of interactive functionality. Check out the showcase of data visualization [here](https://dev.to/momen\_hq/interop-between-code-and-no-code-using-code-components-to-add-echart-in-your-project-4ifp).
 
-### **Prerequisites**
+### **Prerequisites**&#x20;
 
-**Some basic knowledge of Git / Frontend / React and Web is required.**
+Before you begin, ensure you meet the following prerequisites:
 
-### **Detailed Configuration Steps**
+* Working knowledge of Momen
+* Basic front-end development experience
+* Familiarity with TypeScript&#x20;
+* Ability to develop customized React components
 
-1. Custom projects need to be hosted on the developer's GitHub public repository. Momen provides a template project that users can directly fork and develop according to their needs (be careful not to clone the template project directly). The template project is located at [https://github.com/oychao/zvm-custom-comp-template.](https://github.com/oychao/zvm-custom-comp-template)
+For users new to React, consider exploring resources such as [React official docs](https://react.dev/learn).
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 17.48.12.png" alt=""><figcaption></figcaption></figure>
+### **Getting Started**&#x20;
 
-2. After cloning the project, the project under your own repository will be cloned locally. The custom template project is a react project based on Vite and related ecosystems, where developers can create any new component they want. But in order to work with Momen, it must meet certain specifications.
+To begin, install Momen globally for local development. This setup provides the command alias `zvm` for simplified access to platform commands.
 
-```Plain
-git clone https://github.com/%your account%/zvm-custom-comp-template
+```bash
+# Install globally
+npm i -g momen
 ```
 
-3. After retrieving the project, add the Count component under src/components/ as follows.
+To confirm that FunctorZ is installed correctly, run `zvm --version`.
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 17.48.41.png" alt=""><figcaption></figcaption></figure>
+#### **Platform Login**&#x20;
 
-4. Components must be exported in the default of src/components/index.ts, which is the entry point for exposing components, so be careful to export in the default object.
+Use the following command to sign in from your project’s working directory. Replace `username` and `password` with your actual credentials.
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 17.48.30.png" alt=""><figcaption></figcaption></figure>
+```bash
+# Sign in with your username and password
+momen signin username password --platform=
+```
 
-5. In addition to this you need to configure the information about the exposed components in config.json. This step is to access to the information about the component in the Momen editor.
-   1. CustomComponentItems is the place where individual components are configured, the key and name should be the same as the custom component name, imagePath is the relative path to the preview image, and description is the description of the component.
-   2. Version is the version information, every time you release a version, you need to update a version, just follow the npm general specification.
+#### **Project Creation**&#x20;
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 17.48.41 (1).png" alt=""><figcaption></figcaption></figure>
+Run the command below to create a new project.
 
-6. App.tsx is used for local debugging of components, developers can run npm run dev locally to debug components. Note that the debugging here does not affect the runtime of the Momen project, and based on the configuration above, the only custom components that are really exposed are the config.json and the Count under src/components/index.ts.
-7. Once development is complete, commit the code to a GitHub repository (requires a master branch, master / main).
-8. Click GitHub icon in the upper right corner of the User Center, configure the repository's display name and url, and click Import.
+```bash
+# Create a new project
+functorz create project_name
+```
 
-<figure><img src="../.gitbook/assets/8 (6).png" alt=""><figcaption></figcaption></figure>
+This command generates a template project and registers it as a new code component project within Momen. While multiple components can be added, note that the initial setup doesn’t publish a version yet, so further steps are required to release it.
 
-9. At this point, the first new repository and version are built.
+```bash
+# create project_name
+functorz create test21
+```
 
-<figure><img src="../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
+This command creates a template project and registers a new code component project on the platform, which can contain multiple components. No version is published yet.
 
-10. After this, select the component that needs to be published, you can see the name of the component you just configured, the preview image, and the description information.
-11. The status of a successful release is as follows.
+#### Editing Code
 
-<figure><img src="../.gitbook/assets/10 (4).png" alt=""><figcaption></figcaption></figure>
+To start developing custom components, navigate to your project directory and install dependencies:
 
-12. When users need to release a new version after adding, updating, or deleting components in their own repository, update the component information and version name in src/components/index.ts and config.json, and then click the + in the left list of the repository.
-13. Next, click on the GitHub icon in the upper right corner of the left column and select the version that was just released, at this point the list of optional components will have more components that were just released.
+```bash
+# Navigate to the project directory and install dependencies
+cd project_name
+npm install
+```
 
-<figure><img src="../.gitbook/assets/11 (3).png" alt=""><figcaption></figcaption></figure>
+A typical code component library project has the following structure:
 
-14. Note that you must click Preview to see the effectn of the custom component.
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.06.58.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/12 (3).png" alt=""><figcaption></figcaption></figure>
+*   In this step, you’ll define and set up custom components in your project. Each custom component requires a dedicated folder under `src/components` with the following files:
 
-15. You can then view it in Mirror and Preview.
+    * **`index.ts`:** for exporting the component
+    * **`[ComponentName].tsx`:** for component logic
 
-<figure><img src="../.gitbook/assets/13 (2).png" alt=""><figcaption></figcaption></figure>
+    Each component file must export four interfaces for property types:
 
-### **Data Interaction with Host Project**
+    * **`[ComponentName]PropData`:** Defines data types received from the host project (supported types: string, number, boolean)
+    * **`[ComponentName]StateData`:** Declares component states exposed to the host, with type State from the `zvm-code-context` package
+    * **`[ComponentName]Event`:** Declares internal events with properties typed as `EventHandler` from `zvm-code-context`
+    * **`[ComponentName]Prop`:** Combines the above three interfaces as `propData`, `propState`, and `event`
 
-Custom components currently support two ways of interacting with the host project.Refer to the project address [https://github.com/oychao/zvm-custom-comp-working.](https://github.com/oychao/zvm-custom-comp-working)
+    <figure><img src="../.gitbook/assets/截屏2024-10-31 19.10.11.png" alt=""><figcaption></figcaption></figure>
 
-#### **Global Data**
+    Expose newly created components in `src/components/index.ts`.&#x20;
 
-Global data declared in the project can be read and written directly by the custom component.
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.11.35.png" alt=""><figcaption></figcaption></figure>
 
-1. Configure global data in the project.
+Refer to the template’s example code for guidance. Follow the conventions strictly for proper component and declaration recognition.
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 18.12.16.png" alt=""><figcaption></figcaption></figure>
+#### Publishing the Project
 
-2. You can read it directly in the custom component (here the Display is a sample custom component, you can see that you can already read the value of the global data in its properties).
+To publish your project, update the version field in `package.json` to align with npm versioning guidelines. For example, follow the semantic versioning format like `1.0.0`.
 
-<figure><img src="../.gitbook/assets/截屏2024-02-23 18.13.17.png" alt=""><figcaption></figcaption></figure>
+Then, run the following command within the project directory:
 
-#### **Declaring Parameters**
+```bash
+# Publish the project
+functorz publish
+```
 
-1. A custom component can implement the data binding configuration for the right column by configuring parameters in config.json. The following is the configuration of config.json and the implementation of the Display component in the sample project.
-
-<figure><img src="../.gitbook/assets/截屏2024-02-23 18.14.14.png" alt=""><figcaption></figcaption></figure>
-
-2. Currently supported attribute type declarations include TEXT, FLOAT8, INTEGER, BOOLEAN, OBJECT, ARRAY, and IMAGE.
-
+After publishing, the new code component library will be available for configuration in any project on  Momen.
 
 
-To see how a custom component works in Momen, please refer to our [AI landing page](https://momen.app/ai). The guide of embedding an Iframe in Momen is here: [How to Embed a Momen Project into Your Website.](../tutorial/how-to-embed-an-iframe-component-into-your-momen-project.md)
+
+#### **Importing Code Components**&#x20;
+
+To add your custom code component to a no-code project:
+
+1. Click the icon on the left sidebar.
+2. Select your newly published component project in the pop-up window.
+
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.15.31.png" alt=""><figcaption></figcaption></figure>
+
+Once added, the component will appear at the bottom of the left sidebar.
+
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.16.40.png" alt=""><figcaption></figcaption></figure>
+
+#### **Database Synchronization**&#x20;
+
+After configuring or modifying a component, sync the database or preview to ensure it functions at runtime. To do this, click the **database sync icon** (located in the upper left of the interface).
+
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.18.04.png" alt="" width="297"><figcaption></figcaption></figure>
+
+#### **Configuring Component Properties**&#x20;
+
+Properties are parsed according to their declared types, so it’s essential to follow naming conventions and structure precisely to ensure compatibility with Momen.
+
+<figure><img src="../.gitbook/assets/截屏2024-10-31 19.19.18.png" alt=""><figcaption></figcaption></figure>
 
 \
 
