@@ -10,7 +10,7 @@ Apart from the Enterprise plan, Momen's pricing is structured around individual 
 
 Momen offers several plans: Free, Basic, Pro, and Enterprise, each designed to meet different business needs. Premium plans offer increased computing resources and advanced functionalities. The Enterprise plan allows the creation of 5 Advanced and 5 Professional projects for free within a team space.
 
-![](<../../.gitbook/assets/0 (1).png>)
+![](<../../../.gitbook/assets/0 (1).png>)
 
 ### **Server and Feature Comparison**
 
@@ -113,17 +113,17 @@ Depleted App Tokens: New text cannot be vectorized, and AI functionalities will 
 
 Hover over a project in your personal center and click “Details” to see its computing power details.
 
-![](<../../.gitbook/assets/1 (1).png>)
+![](<../../../.gitbook/assets/1 (1).png>)
 
-![](<../../.gitbook/assets/2 (1) (1).png>)
+![](<../../../.gitbook/assets/2 (1) (1).png>)
 
 If your project is on free plan and needs more resources, you'll need to upgrade to a premium plan first.
 
-![](<../../.gitbook/assets/3 (1) (1).png>)
+![](<../../../.gitbook/assets/3 (1) (1).png>)
 
 For apps already on the premium plan, additional computing power can be purchased by navigating to the "Details" section and selecting “More Resources” or by clicking the “+ Add” button next to the desired resource.
 
-![](<../../.gitbook/assets/4 (1).png>)
+![](<../../../.gitbook/assets/4 (1).png>)
 
 ### **About Momen**
 

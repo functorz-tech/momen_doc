@@ -4,17 +4,17 @@
 
 You can upgrade your server to Basic, Pro, Enterprise, or purchase the Single-Tenant kit.
 
-<figure><img src="../../.gitbook/assets/截屏2024-04-28 15.54.29 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-04-28 15.54.29 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Schedule the Activation
 
 After the plan upgrade, you can choose to activate the server right away or schedule an automated activation within seven days.
 
-<figure><img src="../../.gitbook/assets/截屏2024-04-25 12.41.02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-04-25 12.41.02.png" alt=""><figcaption></figcaption></figure>
 
 If you didn't select the activation option on the upgrade success page, you can still open the project details page and continue to schedule activation time in the reminder bar at the top of the project information.
 
-<figure><img src="../../.gitbook/assets/截屏2024-04-28 16.35.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/截屏2024-04-28 16.35.42.png" alt=""><figcaption></figcaption></figure>
 
 ### While Upgrading
 

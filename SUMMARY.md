@@ -1,20 +1,21 @@
 # Table of contents
 
-## Get Started
+## Get Started <a href="#starts" id="starts"></a>
 
 * [Introduction](README.md)
-* [Quick Start](get-started/quick-start.md)
-* [App Building](get-started/app-building/README.md)
-  * [Product Requirements Gathering](get-started/app-building/product-requirements-gathering.md)
-  * [Data Model Design](get-started/app-building/data-model-design.md)
-  * [User Interface and Interaction Design](get-started/app-building/user-interface-and-interaction-design.md)
-  * [Application Development and Management](get-started/app-building/application-development-and-management.md)
-  * [Configuration Guide](get-started/app-building/configuration-guide.md)
-* [App Maintenance](get-started/app-maintenance/README.md)
-  * [Server Activation for Premium Plans](get-started/app-maintenance/server-activation-for-premium-plans.md)
-  * [RPS](get-started/app-maintenance/rps.md)
-  * [Plans and Computing Resources](get-started/app-maintenance/plans-and-computing-resources.md)
-  * [Deploying Your App](get-started/app-maintenance/deploying-your-app.md)
+* [Quick Start](starts/quick-start.md)
+* [App Building and Maintenance](starts/app-building-and-maintenance/README.md)
+  * [Product Requirements Gathering](starts/app-building-and-maintenance/product-requirements-gathering.md)
+  * [Data Model Design](starts/app-building-and-maintenance/data-model-design.md)
+  * [User Interface and Interaction Design](starts/app-building-and-maintenance/user-interface-and-interaction-design.md)
+  * [Application Development and Management](starts/app-building-and-maintenance/application-development-and-management.md)
+  * [Configuration Guide](starts/app-building-and-maintenance/configuration-guide.md)
+  * [Deploying Your App](starts/app-building-and-maintenance/deploying-your-app.md)
+* [Pricing and Resources](starts/commerce/README.md)
+  * [Plans and Computing Resources](starts/commerce/version\_and\_computing\_resource\_pricing/README.md)
+    * [RPS](starts/commerce/version\_and\_computing\_resource\_pricing/rps.md)
+    * [Server Activation for Premium Plans](starts/commerce/version\_and\_computing\_resource\_pricing/server-activation-for-premium-plans.md)
+    * [My Wallet](starts/commerce/version\_and\_computing\_resource\_pricing/my-wallet.md)
 
 ## Design
 
@@ -47,7 +48,6 @@
 * [Video Picker](components-pages/video-picker.md)
 * [Table](components-pages/sheet.md)
 * [Animation](components-pages/lottie.md)
-* [Code Component](components-pages/custom-component.md)
 
 ## Actions
 
@@ -121,6 +121,7 @@
     * [Custom Code Advanced](features/action-flow-configuration/writing-code-blocks-in-actionflow/custom-code-advanced.md)
   * [Scheduled Job/Callbacks](features/action-flow-configuration/scheduled-job-callbacks.md)
   * [Calling APIs in Actionflows](features/action-flow-configuration/calling-apis-in-actionflows.md)
+* [Code Component](features/custom-component.md)
 * [API](features/api-configuration/README.md)
   * [API Fundamentals](features/api-configuration/api-basics.md)
   * [API Configuration](features/api-configuration/api-configuration.md)

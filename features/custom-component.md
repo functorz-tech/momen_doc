@@ -21,10 +21,10 @@ To begin, install Momen globally for local development. This setup provides the 
 
 ```bash
 # Install globally
-npm i -g momen
+npm i -g momen-cli
 ```
 
-To confirm that FunctorZ is installed correctly, run `zvm --version`.
+To confirm that Momen is installed correctly, run `zvm --version`.
 
 #### **Platform Login**&#x20;
 

@@ -46,7 +46,7 @@ We implement a peak Requests Per Second (RPS) limit for each project, and the li
   * Design features to minimize high RPS activities, such as restricting users to one lottery entry per day to avoid excessive clicking.
 * After deploying the application, if RPS limits are exceeded:
   * Visit the project's detail page to review usage peaks.
-  * ![](<../../.gitbook/assets/截屏2024-04-28 15.54.29.png>)
+  * ![](<../../../.gitbook/assets/截屏2024-04-28 15.54.29.png>)
   * Upgrade your project to get more computing resources.
   * Purchase a single-tenant kit with unlimited RPS.
 
