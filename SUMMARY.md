@@ -121,6 +121,7 @@
     * [Custom Code Advanced](features/action-flow-configuration/writing-code-blocks-in-actionflow/custom-code-advanced.md)
   * [Scheduled Job/Callbacks](features/action-flow-configuration/scheduled-job-callbacks.md)
   * [Calling APIs in Actionflows](features/action-flow-configuration/calling-apis-in-actionflows.md)
+  * [Database Trigger](features/action-flow-configuration/db-trigger.md)
 * [Code Component](features/custom-component.md)
 * [API](features/api-configuration/README.md)
   * [API Fundamentals](features/api-configuration/api-basics.md)
