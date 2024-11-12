@@ -155,7 +155,7 @@
     * [Blog](features/data-model-and-database/data-model-by-app-type/blog.md)
     * [Community](features/data-model-and-database/data-model-by-app-type/community.md)
     * [Digital Content Marketplace](features/data-model-and-database/data-model-by-app-type/digital-content-marketplace.md)
-* [Permission Management](features/permission-configuration.md)
+* [Permission Management](features/permissions.md)
 * [Log Service](features/log-service.md)
 
 ## Tutorial
