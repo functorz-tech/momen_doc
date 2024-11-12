@@ -4,7 +4,7 @@ description: >-
   roles.
 ---
 
-# Multi- Frontends Configuration
+# Multiple Frontends
 
 ### **Introduction**
 

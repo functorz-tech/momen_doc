@@ -5,7 +5,7 @@ description: >-
   and gain traffic.
 ---
 
-# SEO
+# Search Engine Optimization (SEO)
 
 ### Introduction
 

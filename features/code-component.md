@@ -32,7 +32,7 @@ Use the following command to sign in from your project’s working directory. Re
 
 ```bash
 # Sign in with your username and password
-momen signin username password --platform=
+momen signin username password
 ```
 
 #### **Project Creation**&#x20;
@@ -41,14 +41,14 @@ Run the command below to create a new project.
 
 ```bash
 # Create a new project
-functorz create project_name
+momen create project_name
 ```
 
 This command generates a template project and registers it as a new code component project within Momen. While multiple components can be added, note that the initial setup doesn’t publish a version yet, so further steps are required to release it.
 
 ```bash
 # create project_name
-functorz create test21
+momen create test21
 ```
 
 This command creates a template project and registers a new code component project on the platform, which can contain multiple components. No version is published yet.
@@ -95,7 +95,7 @@ Then, run the following command within the project directory:
 
 ```bash
 # Publish the project
-functorz publish
+momen publish
 ```
 
 After publishing, the new code component library will be available for configuration in any project on  Momen.
