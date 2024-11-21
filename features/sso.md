@@ -113,8 +113,8 @@ For instance, let's consider the registration/login action. The configuration in
 
 ### Obtain SSO User Information
 
-1. In the default account table of the data model, add an email field of the text type. After adding, update the backend.
-2. Add the following code block in ActionFlow. After adding, save and update the backend.
+
+ Add the following code block in ActionFlow. After adding, save and update the backend.
 
 <figure><img src="../.gitbook/assets/20240320-191541.png" alt=""><figcaption></figcaption></figure>
 
@@ -126,7 +126,7 @@ function updateAccount(variables) {
           $name: String
         ) {
           update_account(
-            _set: { email: $email, username: $name }
+            _set: { fz_email: $email, username: $name }
             where: { id: { _eq: $accountId } }
           ) {
             returning {
@@ -152,11 +152,11 @@ function updateAccount(variables) {
       role: "admin",
     }).account[0];
   }
-  
+
   const accountId = context.getSsoAccountId();
-  
+
   const queryAccountResult = queryAccount({ accountId });
-  
+
   if (queryAccountResult.username === null) {
     const userInfo = context.getSsoUserInfo();
     const userInfoJson = JSON.parse(userInfo);
@@ -167,7 +167,7 @@ function updateAccount(variables) {
       email,
       name,
     };
-  
+
     const updateAccountResult = updateAccount(updateAccountVariables);
   }
 
