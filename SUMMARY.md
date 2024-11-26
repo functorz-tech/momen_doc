@@ -12,10 +12,10 @@
   * [Configuration Guide](starts/app-building-and-maintenance/configuration-guide.md)
   * [Deploying Your App](starts/app-building-and-maintenance/deploying-your-app.md)
 * [Pricing and Resources](starts/commerce/README.md)
-  * [Plans and Computing Resources](starts/commerce/version\_and\_computing\_resource\_pricing/README.md)
-    * [RPS](starts/commerce/version\_and\_computing\_resource\_pricing/rps.md)
-    * [Server Activation for Premium Plans](starts/commerce/version\_and\_computing\_resource\_pricing/server-activation-for-premium-plans.md)
-    * [My Wallet](starts/commerce/version\_and\_computing\_resource\_pricing/my-wallet.md)
+  * [Plans and Computing Resources](starts/commerce/version_and_computing_resource_pricing/README.md)
+    * [RPS](starts/commerce/version_and_computing_resource_pricing/rps.md)
+    * [Server Activation for Premium Plans](starts/commerce/version_and_computing_resource_pricing/server-activation-for-premium-plans.md)
+    * [My Wallet](starts/commerce/version_and_computing_resource_pricing/my-wallet.md)
 
 ## Design
 
@@ -48,6 +48,7 @@
 * [Video Picker](components-pages/video-picker.md)
 * [Table](components-pages/sheet.md)
 * [Animation](components-pages/lottie.md)
+* [Map](components-pages/map.md)
 
 ## Actions
 
