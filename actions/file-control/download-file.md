@@ -21,7 +21,7 @@ Configure a remote data source on the page that requests access to a data table 
 
 To enable file downloading, attach the "File Operation - File - Download File" action to your component. Then, bind this action to the file data that has been fetched from remote sources.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **About Momen​​​​​**
 

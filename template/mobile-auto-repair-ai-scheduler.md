@@ -27,20 +27,12 @@ Only staff members can access and log in to the dashboard. You’ll need to assi
 
 Below is the basic data model setting in this template.&#x20;
 
-![](../.gitbook/assets/image.png)\
+![](<../.gitbook/assets/image (1).png>)\
 
 
-<div align="left">
+<div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
-
-<div align="left">
-
-<figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 The relation between car maker and car model is 1:N, because one brand could have multiple car models. The relation between repair category and repair item is 1:N because 1 category could have different issues. Based on car model and repair issues, a cost estimate is generated.
 
@@ -115,19 +107,7 @@ User messages, car\_model\_id, work\_order\_id.
 Unlike hardcoding data directly into the prompt, a knowledge base is ideal for dynamic, frequently changing information. This approach prevents the need to update the prompt constantly, as the issues may vary each time.
 {% endhint %}
 
-<div>
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 14.04.04.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 14.07.44.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 14.54.55.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/截屏2024-09-23 14.04.04.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 14.07.44.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 14.54.55.png" alt=""><figcaption></figcaption></figure></div>
 
 3. Adjust the AI prompts as needed.
 
@@ -185,19 +165,7 @@ You'll also need to set up the permission setting so that only you and your staf
 
 4. Create credentials (redirect URI: [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)).&#x20;
 
-<div>
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 17.19.27.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 17.22.56.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/截屏2024-09-23 17.24.31.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/截屏2024-09-23 17.19.27.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 17.22.56.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 17.24.31.png" alt=""><figcaption></figcaption></figure></div>
 
 5. Download the credentials JSON file to get your client\_id and client\_secret.&#x20;
 
@@ -211,11 +179,7 @@ You'll also need to set up the permission setting so that only you and your staf
    1. Visit: [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
    2. Set up the client\_id and client\_secret.&#x20;
 
-<div align="right">
-
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="right"><figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure></div>
 
 3. Click "Authorize APIs" and log in with your Google account.&#x20;
 

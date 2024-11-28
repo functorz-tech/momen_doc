@@ -25,7 +25,7 @@ Note:
 
 ### How to Use Vector Sorting
 
-**The basic principle of vector sorting:**Sort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
+**The basic principle of vector sorting:**&#x53;ort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
 
 **Momen provides two vector distance calculation methods:**
 
@@ -46,7 +46,7 @@ COSINE and EUCLIDEAN.
 
 The case database includes specific meanings of Internet slang. In this case, the Internet slang uploaded to the database will be transformed into vector data. The entered content in the search box will also be converted into vector data. After clicking the search button, the \[List] component will return results based on vector distance comparison and sorted results.
 
-**Reference link for Internet slang:** [\[Internet Slang Collection\]](https://www.ruf.rice.edu/\~kemmer/Words04/usage/slang\_internet.html)
+**Reference link for Internet slang:** [\[Internet Slang Collection\]](https://www.ruf.rice.edu/~kemmer/Words04/usage/slang_internet.html)
 
 **Case Effect:**
 
