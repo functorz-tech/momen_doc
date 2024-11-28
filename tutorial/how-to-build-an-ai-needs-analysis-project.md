@@ -16,7 +16,7 @@ Before configuring the AI, ensure your UI and data input fields are ready. Creat
 
 
 
-<figure><img src="../.gitbook/assets/截屏2024-08-19 13.20.17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/datamodel-screenshot.png" alt="screenshot of data model"><figcaption></figcaption></figure>
 
 ### Step 2: Configure Your AI
 
