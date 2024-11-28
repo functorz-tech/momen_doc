@@ -7,8 +7,6 @@ description: >-
 
 # Map
 
-The map component allows users to adjust the visible area of the map based on specific business needs. Users can set the map's zoom levels and multiple markers.
-
 #### Value
 
 1. **Customizable config**: Users can set the display range and zoom level of the map, ensuring that the map content is displayed according to business requirements.
