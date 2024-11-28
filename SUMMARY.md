@@ -158,6 +158,7 @@
     * [Digital Content Marketplace](features/data-model-and-database/data-model-by-app-type/digital-content-marketplace.md)
 * [Permission Management](features/permissions.md)
 * [Log Service](features/log-service.md)
+* [Custom Component](features/custom-component.md)
 
 ## Tutorial
 
