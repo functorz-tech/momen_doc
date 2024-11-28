@@ -11,7 +11,7 @@ The map component allows users to adjust the visible area of the map based on sp
 
 #### Value
 
-1. **Customizable config**: Users can easily set the display range and zoom level of the map, ensuring that the map content is accurately displayed according to business requirements.
+1. **Customizable config**: Users can easily set the display range and zoom level of the map, ensuring that the map content is accurately displayed according to business requirements
 2. **Multiple Markers**: It supports adding one or more markers on the map, enabling users to clearly display information about different locations.
 
 #### When to use
