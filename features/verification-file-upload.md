@@ -7,7 +7,7 @@ For instance, some services or systems (e.g., Google Search Console, website hos
 
 ## File Upload
 
-Upload the required .txt validation file via Project Settings > Global > Upload File to Root Directory.
+Upload the required .txt validation file via Project Settings > Global > Hosting files in the root directory.
 <figure><img src="../.gitbook/assets/momen-verification-file.png" alt=""><figcaption></figcaption></figure>
 
 ##  Notes
