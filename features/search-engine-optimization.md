@@ -35,7 +35,7 @@ SEO configuration is currently exclusive to the Pro project. Ensure you're using
 
 1. #### Select the page and find the SEO settings in the right column under "Content".
 
-<figure><img src="../.gitbook/assets/1 (3).PNG" alt="Set up the TDK in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (3).1.png" alt="Set up the TDK in a no-code tool"><figcaption></figcaption></figure>
 
 2. #### Fill in the TDK
 
@@ -45,7 +45,7 @@ Description: A brief description of the page.
 
 Keywords: Relevant keywords for your website. You can configure up to 10 keywords, and they must not be repeated.
 
-<figure><img src="../.gitbook/assets/2 (4).PNG" alt="SEO configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (4).1.png" alt="SEO configuration in a no-code tool"><figcaption></figcaption></figure>
 
 3. #### Preview to check TDK
 

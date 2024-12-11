@@ -28,7 +28,7 @@ Configuring SSO involves the following key steps:
 
 Begin by creating a new project, opening the project settings, and locating "Single Sign-On Method," then click "Add."
 
-<figure><img src="../.gitbook/assets/1 (5).PNG" alt="Create SSO in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (5).1.png" alt="Create SSO in a no-code tool"><figcaption></figcaption></figure>
 
 You'll notice that the callback address is automatically generated. The SSO process works as follows:
 
@@ -36,7 +36,7 @@ You'll notice that the callback address is automatically generated. The SSO proc
 * Users enter their information (email, password, etc.) on the authorization page to complete the authorization.
 * After successful authorization, users are redirected back to your website via the callback address.
 
-<figure><img src="../.gitbook/assets/2 (6).PNG" alt="Configure SSO in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (6).1.png" alt="Configure SSO in a no-code tool"><figcaption></figcaption></figure>
 
 #### Go to Identity Provider to Register Application
 
@@ -87,11 +87,11 @@ Authorized Redirect URLs: The callback address under the SSO configuration added
 * Copy the Client Id and Client Secret obtained earlier.
 * The scope option determines which account information (e.g., username, avatar) can be accessed. The available scope options vary among providers, so be sure to check the available options when configuring.
 
-<figure><img src="../.gitbook/assets/5 (4).PNG" alt="SSO configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/5 (4).1.png" alt="SSO configuration in a no-code tool"><figcaption></figcaption></figure>
 
 There is also information about the authorization method, type, and more, which must be filled out according to the specific requirements of your chosen provider.
 
-<figure><img src="../.gitbook/assets/6.PNG" alt="SSO provider configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/6.1.png" alt="SSO provider configuration in a no-code tool"><figcaption></figcaption></figure>
 
 Once your configuration is complete, save the settings and turn on the SSO switch.
 
@@ -105,11 +105,11 @@ Next, you can configure the corresponding actions on the page. There are three a
 * Bind: After SSO authorization, the user binds their account to the currently logged-in account. If there is no active session or other accounts are already linked to the SSO, binding will fail.
 * Unbind: Allows users to unlink their current account from SSO.
 
-<figure><img src="../.gitbook/assets/8.PNG" alt="Configure page actions in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/8.1.png" alt="Configure page actions in a no-code tool"><figcaption></figcaption></figure>
 
 For instance, let's consider the registration/login action. The configuration involves connecting SSO and the corresponding web page. Note that after successful SSO authorization, users are redirected to another page, making it impossible to utilize the data and actions of the original page. Thus, most actions cannot be configured upon successful SSO authorization, except for custom actions that run in the background.
 
-<figure><img src="../.gitbook/assets/9.PNG" alt="Page actions configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/9.1.png" alt="Page actions configuration in a no-code tool"><figcaption></figcaption></figure>
 
 ### Obtain SSO User Information
 

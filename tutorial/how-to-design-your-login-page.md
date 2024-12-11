@@ -27,11 +27,11 @@ In this comprehensive tutorial, we'll explore the importance of logins in the di
 
 Momen offers a diverse array of login methods to cater to different scenarios that developers might face. Once developers create a new project, all they need to do is click the【Settings】button in the top left corner of the editor, under【Login Settings】, to activate the desired login method.
 
-<figure><img src="../.gitbook/assets/1 (4).PNG" alt="Login Methods in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (4).1.png" alt="Login Methods in a no-code tool"><figcaption></figcaption></figure>
 
 After you've designed the UI for one or more login methods, you can add login interaction behaviors to the corresponding components. You can find actions like【Username Login】under 【Interaction】. (This assumes that you have already activated the corresponding login configurations in the Login Settings.)
 
-<figure><img src="../.gitbook/assets/2 (5).PNG" alt="User login action in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (5).1.png" alt="User login action in a no-code tool"><figcaption></figcaption></figure>
 
 Principles of Data Logging and Use during Registration/Login
 

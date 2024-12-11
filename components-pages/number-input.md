@@ -30,7 +30,7 @@ Number Input Components in Momen serve the purpose of outputting numeric values.
 
 ### Number Input Content
 
-<figure><img src="../.gitbook/assets/1280X1280 (1).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1280X1280 (1).1.png" alt=""><figcaption></figcaption></figure>
 
 #### Default Value
 

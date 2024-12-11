@@ -34,7 +34,7 @@ Note: While you can use any code editor of your choice, you must install Android
 
 2. Set Up the Environment and Create a [React Native ](https://reactnative.dev/docs/environment-setup)Project
 
-<figure><img src="../.gitbook/assets/2 (2).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (2).1.png" alt=""><figcaption></figcaption></figure>
 
 3. #### Modify App.js and Create a WebView Link to Your Web Page
 

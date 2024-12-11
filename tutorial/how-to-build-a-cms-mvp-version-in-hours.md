@@ -18,11 +18,11 @@ Some of the core pages included in this MVP(minimum viable product) version blog
 
 1. Upload post page: Where users create a new post
 
-<figure><img src="../.gitbook/assets/1 (9).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (9).1.png" alt=""><figcaption></figcaption></figure>
 
 2. Show post page: Showcasing all posts with a list
 
-<figure><img src="../.gitbook/assets/2 (10).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (10).1.png" alt=""><figcaption></figcaption></figure>
 
 ### How to Build a Blog Upload Page
 

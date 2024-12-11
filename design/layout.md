@@ -39,7 +39,7 @@ Type: Configure how the list component is positioned in its parent component.
 
 There are four positioning directions for the absolute and fixed positioning: top left, top right, bottom left, bottom right, and the image below shows the top left positioning method. Click on the coordinate lines in different directions (the lines next to T, L, R, B) to switch the positioning coordinate direction.
 
-<figure><img src="../.gitbook/assets/4 (2).PNG" alt="Percentage of length setting in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4 (2).1.png" alt="Percentage of length setting in a no-code tool"><figcaption></figcaption></figure>
 
 Z Index: This controls the stacking order of overlapping elements on a page. The component first dragged in has a lower z-index level. In absolute or fixed position, when the two components coincide, the component with a higher z-index level will appear in front of the component with a lower value. When the z-index value is defined, the component with a higher value will cover the component with a lower value.
 
@@ -65,7 +65,7 @@ Percentage refers to the relative length compared to the parent component's widt
 
 【Padding】: Sets the spacing between the child component and the parent component.【Margin】: Sets the spacing between the component itself and its sibling components.
 
-<figure><img src="../.gitbook/assets/7.PNG" alt="Padding and margins in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/7.1.png" alt="Padding and margins in a no-code tool"><figcaption></figcaption></figure>
 
 ### Layout
 
@@ -91,13 +91,13 @@ In relative positioning, components cannot be arbitrarily adjusted; consideratio
 
 When the child components placed within the parent component exceed the parent component's width, the parent component's "overflow" mode can be adjusted according to business requirements.
 
-<figure><img src="../.gitbook/assets/11.PNG" alt="Overflow in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/11.1.png" alt="Overflow in a no-code tool"><figcaption></figcaption></figure>
 
 **Spacing**
 
 When the distribution mode of the 【parent component】 is set to "start," custom spacing distances can be set for the 【child components】.
 
-<figure><img src="../.gitbook/assets/12.PNG" alt="Spacing in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/12.1.png" alt="Spacing in a no-code tool"><figcaption></figcaption></figure>
 
 ### Cursor Styles
 

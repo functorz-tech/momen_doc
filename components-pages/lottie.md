@@ -42,9 +42,9 @@ Lottie animations are highly customizable. You can configure them to loop contin
 
 To configure the animations, drag the component onto the canvas. Upload the json file under the content. Then set up the desired actions under interaction.
 
-<figure><img src="../.gitbook/assets/1 (2).PNG" alt="Animation configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (2).1.png" alt="Animation configuration in a no-code tool"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/2 (3).PNG" alt="Animation configuration in a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (3).1.png" alt="Animation configuration in a no-code tool"><figcaption></figcaption></figure>
 
 ### Free Material Reference
 

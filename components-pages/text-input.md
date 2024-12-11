@@ -27,9 +27,9 @@ The Text Input component serves as the input for text or numeric content. You ca
 
 The content is encrypted when you enter it, usually used in password login systems.
 
-<figure><img src="../.gitbook/assets/1 (11).PNG" alt="Unencrypted password field."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (11).1.png" alt="Unencrypted password field."><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/2 (11).PNG" alt="The password field when encryption is turned on. ​"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (11).1.png" alt="The password field when encryption is turned on. ​"><figcaption></figcaption></figure>
 
 2. Multiple Lines
 
