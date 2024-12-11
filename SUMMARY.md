@@ -159,6 +159,11 @@
 * [Permission Management](features/permissions.md)
 * [Log Service](features/log-service.md)
 * [Custom Component](features/custom-component.md)
+* [Hosting files in the root directory](features/verification-file-upload.md)
+
+## Community
+
+* [Earn Commissions by Promoting Momen](community/commission.md)
 
 ## Tutorial
 
