@@ -20,7 +20,7 @@ Momen offers a commission program, designed to empower users and expand Momen's 
 ## How to Receive Your Rewards
 **Receive Commissions:** On the 8th of each month, your earnings will be automatically transferred to your linked Stripe account.
 
-**Track Your Promotion Performance:**
+**Track Your Promotion Statics:**
 
 Paid Users: number of paid users / number of users you’ve referred.
 
