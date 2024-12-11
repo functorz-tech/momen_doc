@@ -20,21 +20,21 @@ When using the Data Picker and Time Picker components, you can streamline user i
 
 The \[Data Picker] content comprises three key elements: "Placeholder", "Content", and "Limit".
 
-<figure><img src="../.gitbook/assets/2 (13).PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/2 (13).1.png" alt=""><figcaption></figcaption></figure>
 
 **Prompt Text:** This is not required but serves as a placeholder when no default value is available. It is displayed as a guide to users.
 
 <div>
 
-<figure><img src="../.gitbook/assets/4 (7).PNG" alt="No default value style set for prompt text."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4 (7).1.png" alt="No default value style set for prompt text."><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/5 (7).PNG" alt="Setting Prompt Question Styles."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/5 (7).1.png" alt="Setting Prompt Question Styles."><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/6 (4).PNG" alt="Setting the default value style."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/6 (4).1.png" alt="Setting the default value style."><figcaption></figcaption></figure>
 
 </div>
 

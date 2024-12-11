@@ -37,7 +37,7 @@ Tips:
 APIs often require registration with the API provider's developer account to access the API (application, app secret, etc.) and determine the allowed number of calls.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/1 (1).PNG" alt="How to read API interface documentation."><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1 (1).1.png" alt="How to read API interface documentation."><figcaption></figcaption></figure>
 
 #### Interface Description
 

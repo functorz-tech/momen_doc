@@ -16,7 +16,7 @@ The text component has a wide range of applications. Any place where text conten
 
 By modifying text attributes, such as fonts, sizes, and colors, you can achieve diverse text display styles, as depicted below:
 
-<figure><img src="../.gitbook/assets/1 (10).PNG" alt="Modify text attributes in a no-code tool" width="296"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (10).1.png" alt="Modify text attributes in a no-code tool" width="296"><figcaption></figcaption></figure>
 
 Tips:
 
@@ -58,7 +58,7 @@ In addition to displaying the data of type "text", the text component also has t
 
 As shown in the figure below, after binding the time data, the time data is in blue and can be clicked. Click on the time data, a pop-up window will appear for you to select the time format to be displayed.
 
-<figure><img src="../.gitbook/assets/4 (4).PNG" alt="Modify text format in a no-code tool" width="563"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4 (4).1.png" alt="Modify text format in a no-code tool" width="563"><figcaption></figcaption></figure>
 
 
 

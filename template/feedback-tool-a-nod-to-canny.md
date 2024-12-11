@@ -35,7 +35,7 @@ By clicking on the feedback card, you'll be directed to the detail, where the co
 
 By clicking the Create a New Post button, users can write and publish their feedback.
 
-<figure><img src="../.gitbook/assets/1280X1280.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1280X1280.1.png" alt=""><figcaption></figcaption></figure>
 
 ### **II. How to Configure Data**
 
