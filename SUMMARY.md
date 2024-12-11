@@ -17,6 +17,10 @@
     * [Server Activation for Premium Plans](starts/commerce/version_and_computing_resource_pricing/server-activation-for-premium-plans.md)
     * [My Wallet](starts/commerce/version_and_computing_resource_pricing/my-wallet.md)
 
+## Changelog
+
+* [Latest Product Update](changelog/product-release.md)
+
 ## Design
 
 * [Editor Overview](design/editor-overview.md)
@@ -187,21 +191,5 @@
 * [Online Courses, a nod to Udemy](template/online-courses-a-nod-to-udemy.md)
 * [Mobile Auto Repair AI Scheduler](template/mobile-auto-repair-ai-scheduler.md)
 
-## Changelog
 
-* [V2.1.1 - 2024.11.22](changelog/v2.1.1-2024.11.22.md)
-* [V2.1.0 - 2024.10.31](changelog/v2.1.0-2024.10.31.md)
-* [V2.0.5 - 2024.10.10](changelog/v2.0.5-2024.10.10.md)
-* [V2.0.4 - 2024.09.14](changelog/v2.0.4-2024.09.14.md)
-* [V2.0.3 - 2024.08.30](changelog/v2.0.3-2024.08.30.md)
-* [V2.0.2 - 2024.08.15](changelog/v2.0.2-2024.08.15.md)
-* [V2.0.1 - 2024.08.02](changelog/v2.0.1-2024.08.02.md)
-* [V1.0.9 - 2024.04.25](changelog/v1.0.9-2024.04.25.md)
-* [V1.0.8 - 2024.3.07](changelog/v1.0.8-2024.3.07.md)
-* [V1.0.7 - 2023.1.18](changelog/v1.0.7-2023.1.18.md)
-* [V1.0.6 - 2023.12.13](changelog/v1.0.6-2023.12.13.md)
-* [V1.0.5 - 2023.10.9](changelog/v1.0.5-2023.10.9.md)
-* [V1.0.4 - 2023.8.31](changelog/v1.0.4-2023.8.31.md)
-* [V1.0.3 - 2023.8.16](changelog/v1.0.3-2023.8.16.md)
-* [V1.0.2 - 2023.7.24](changelog/v1.0.2-2023.7.24.md)
-* [V1.0.1 - 2023.5.25](changelog/v1.0.1-2023.5.25.md)
+
