@@ -6,8 +6,6 @@ Momen offers a commission program, designed to empower users and expand Momen's 
 
 **For Promoters:** By sharing your unique invite code, you can earn up to 10% commission when a new user successfully registers and makes a payment when buying project plan. The commission is based on the new user’s payment actions, and there is no upper limit to how much you can earn, offering great potential for promoters.
 
-**For Invitees:** New users who register using an invite code will receive a ¥10 voucher, which can be used for purchasing plans, computing power packages, or top-up packages.
-
 ## How to Become a Promoter
 
 **Get Started:** Click the "Promote Us" button in the top right corner of the platform.
