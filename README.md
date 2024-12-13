@@ -2,11 +2,7 @@
 
 ### What is Momen
 
-[Momen](http://momen.app) is a no-code web app builder, allows users to build fully customizable web apps. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need.
-
-What's more, Momen's launched AI feature, enabling users to build AI-powered apps based on their business context. Beyond template-based AI bot, you can tailor your GPT's UI, create your exclusive workflow and more.
-
-With Momen, you can bring your ideas to life, build remarkable digital solutions and AI apps, and get your products to market faster than ever before.
+[Momen](http://momen.app) is a no-code web application development tool and a PaaS that allows users to create custom web applications without coding. The platform features a visual canvas and a data model, offering tools for designing, developing, and deploying applications. It is designed to be accessible to individuals with limited technical experience.
 
 ### Why Momen
 
@@ -33,7 +29,7 @@ Sequoia , Linear Capital , MiraclePlus
 
 #### Follow Us
 
-[Twitter](https://twitter.com/Momen\_HQ) , [Linkedin](https://www.linkedin.com/company/momen-hq/) , [Youtube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7\_AKYQ)
+[Twitter](https://twitter.com/Momen_HQ) , [Linkedin](https://www.linkedin.com/company/momen-hq/) , [Youtube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7_AKYQ)
 
 #### Contact Us
 
