@@ -4,7 +4,7 @@ description: >-
   payment to boost your app's monetization.
 ---
 
-# Stripe
+# Payment with Stripe
 
 ### Introduction
 
