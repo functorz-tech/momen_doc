@@ -16,7 +16,7 @@ Momen AI is a robust feature integrated within the Momen editor, designed to fac
 
 #### Core Features
 
-* Supports a variety of large models, including "GPT 3.5 turbo" and "GPT 4o". Momen will integrate more models in the future.
+* Supports a variety of large models, including "GPT 4o mini" and "GPT 4o". Momen will integrate more models in the future.
 * Accommodates multiple input types, such as text and images.
 * Connects to various knowledge base sources, including the Momen database, third-party APIs, and local files.
 * Offers a selection of tools for invocation, including behavior flows, APIs, and other pre-configured AI requests.
@@ -53,7 +53,7 @@ AI Request Name: The default setting is Ai-Config-1. You can customize the name 
 
 **Large Model:** Select the version of the large model to complete your AI tasks. The version you choose can influence the results.
 
-* More sophisticated models will use more tokens during.
+* More sophisticated models will use more AI Points during.
 * Currently, only GPT 4o supports processing images.
 
 **AI Personality:** This refers to 'temperature' in configuration, which ranges from 0-1. A lower value yields more rational and accurate results, and a higher value yields more creative responses.
@@ -63,7 +63,7 @@ AI Request Name: The default setting is Ai-Config-1. You can customize the name 
 **Maximum Token per Round:** This is the maximum number of words that can be sent to the AI and received from the AI in each round.
 
 {% hint style="info" %}
-**Important Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more tokens. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using tokens.
+**Important Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more points. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using points.
 {% endhint %}
 
 #### **Input Configuration**
@@ -79,7 +79,7 @@ Input Parameter Configuration: Set up the single or multiple parameters required
 **Advanced Prompts Guide**
 
 {% hint style="info" %}
-It is recommended to read and understand the [Prompt Engineering Guide ](https://www.promptingguide.ai/)to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more App Tokens and waiting time, they often yield better results.
+It is recommended to read and understand the [Prompt Engineering Guide ](https://www.promptingguide.ai/)to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more AI Points and waiting time, they often yield better results.
 {% endhint %}
 
 **Prompt Source Options**
@@ -148,7 +148,7 @@ Select single or multiple data tables, fields, related tables/fields stored in M
 <figure><img src="../../.gitbook/assets/5 (21).png" alt="Setting the data in knowledge base"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:** The data given to the AI will consume tokens. To manage this, it's best to limit the amount and size of data entries. Set appropriate data limits based on your needs to avoid overloading the model and use tokens efficiently.
+**Important Note:** The data given to the AI will consume points. To manage this, it's best to limit the amount and size of data entries. Set appropriate data limits based on your needs to avoid overloading the model and use points efficiently.
 {% endhint %}
 
 **Local Files:**
@@ -224,9 +224,9 @@ The section below details the entire operation process of the AI. Upon successfu
 
 [AI Invocation and Data Model](ai-invocation-and-data-model.md)
 
-### App Token Consumption
+### AI Point Consumption
 
-[App Token Consumption](app-token-consumption.md)
+[AI Point Consumption](app-token-consumption.md)
 
 
 
