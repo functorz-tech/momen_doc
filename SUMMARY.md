@@ -144,7 +144,7 @@
 * [AI](features/ai-feature-configuration/README.md)
   * [AI Configuration](features/ai-feature-configuration/zai-configuration.md)
   * [AI Invocation and Data Model](features/ai-feature-configuration/ai-invocation-and-data-model.md)
-  * [App Token Consumption](features/ai-feature-configuration/app-token-consumption.md)
+  * [App Point Consumption](features/ai-feature-configuration/app-token-consumption.md)
   * [Vector Data Storage and Sorting](features/ai-feature-configuration/vector-data-storage-and-sorting.md)
 * [Data Model and Database](features/data-model-and-database/README.md)
   * [Database](features/data-model-and-database/database.md)
