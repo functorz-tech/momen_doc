@@ -5,7 +5,6 @@
 * [Introduction](README.md)
 * [Quick Start](starts/starts.md)
 * [Software Devolpment Process](starts/developmentProcess.md)
-* [Build Apps with Momen](starts/build.md)
 * [Pricing and Resources](starts/commerce/README.md)
   * [Plans and Computing Resources](starts/commerce/version_and_computing_resource_pricing/README.md)
     * [RPS](starts/commerce/version_and_computing_resource_pricing/rps.md)
