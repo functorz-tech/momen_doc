@@ -3,14 +3,9 @@
 ## Get Started <a href="#starts" id="starts"></a>
 
 * [Introduction](README.md)
-* [Quick Start](starts/quick-start.md)
-* [App Building and Maintenance](starts/app-building-and-maintenance/README.md)
-  * [Product Requirements Gathering](starts/app-building-and-maintenance/product-requirements-gathering.md)
-  * [Data Model Design](starts/app-building-and-maintenance/data-model-design.md)
-  * [User Interface and Interaction Design](starts/app-building-and-maintenance/user-interface-and-interaction-design.md)
-  * [Application Development and Management](starts/app-building-and-maintenance/application-development-and-management.md)
-  * [Configuration Guide](starts/app-building-and-maintenance/configuration-guide.md)
-  * [Deploying Your App](starts/app-building-and-maintenance/deploying-your-app.md)
+* [Quick Start](starts/starts.md)
+* [Software Devolpment Process](starts/developmentProcess.md)
+* [Build Apps with Momen](starts/build.md)
 * [Pricing and Resources](starts/commerce/README.md)
   * [Plans and Computing Resources](starts/commerce/version_and_computing_resource_pricing/README.md)
     * [RPS](starts/commerce/version_and_computing_resource_pricing/rps.md)
