@@ -1,5 +1,4 @@
-# Plans and Computing Resources
-
+# Upgrade Project Plans
 ### **Introduction**
 
 Momen offers a variety of tiered packages to suit different needs—from basic functionalities for simple projects to advanced options with substantial computing power and premium features. This doc will explain Momen's different plans, their abilities and computing resources, helping you to choose the right plan and optimize your application's performance.
