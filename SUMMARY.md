@@ -13,6 +13,7 @@
 
 ## Build UI <a href="#buildUI" id="buildUI"></a>
 
+* [Pages](buildUI/page.md)
 * [Layout](buildUI/layout.md)
 * [Tab View](buildUI/tab-view.md)
 * [Rich Text](buildUI/rich-text.md)
@@ -38,6 +39,7 @@
 * [Animation](buildUI/lottie.md)
 * [Map](buildUI/map.md)
 * [Shortcut Actions](buildUI/shortcut.md)
+* [Custom Component](buildUI/customComponent.md)
 
 ## Data
 
