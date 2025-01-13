@@ -26,25 +26,25 @@ Allows assigning values to a pre-defined page variable.
 
 Many actions in Momen require the page varibale to be assigned a value after the data is obtained, as shown in the following figure, take "Upload File" as an example. After setting the page variable of the type "File", and the action of uploading a file will be triggered by clicking the button, then the uploaded file will be assigned to the page variable.
 
-| <img src="../../.gitbook/assets/2 (18).png" alt="Page data" data-size="original"> | <img src="../../.gitbook/assets/3 (13).png" alt="Page data" data-size="original"> |
+| <img src="../.gitbook/assets/2 (18).png" alt="Page data" data-size="original"> | <img src="../.gitbook/assets/3 (13).png" alt="Page data" data-size="original"> |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 
 #### 2. Setting up a page ariable that holds multiple data
 
 The following figure shows how to set page variable: When setting page variable for a page, activate "Is List" mode. Utilizing "Is List" for page variable is akin to initializing an empty array.
 
-<figure><img src="../../.gitbook/assets/4 (13).png" alt="Set Page data"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/4 (13).png" alt="Set Page data"><figcaption></figcaption></figure>
 
 Through the \[Set Page Data] action, you can incorporate multiple data entries into page variable by adjusting the action to \[Append]. However, each invocation of the action allows adding only one data entry at a time.
 
-<figure><img src="../../.gitbook/assets/5 (8).png" alt="Set Page data and incorporate multiple data entires"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/5 (8).png" alt="Set Page data and incorporate multiple data entires"><figcaption></figcaption></figure>
 
 
 #### 3.Removing Data from Page Data
 
 Enabling the "Unique" option allows you to utilize the \[Remove] function within \[Set Page Data]. During a \[Remove] operation, the value to be removed is compared with the values in the page variable. If a match is found, the corresponding value in the page variable is deleted.
 
-<figure><img src="../../.gitbook/assets/6 (8).png" alt="Remove data from page data"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/6 (8).png" alt="Remove data from page data"><figcaption></figcaption></figure>
 
 ## 2. Set global data
 
@@ -54,11 +54,11 @@ Assigns values to global data that can be accessed across multiple pages within 
 ### Action configuration guide
 In the header, click App Global Settings, and add a \[Global Variable].
 
-<figure><img src="../../.gitbook/assets/0 (21).png" alt="The path of adding global data."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/0 (21).png" alt="The path of adding global data."><figcaption></figcaption></figure>
 
 After adding \[Global variable], you can set global variable on any page or component according to the business scenario through the \[Set Global Data] action. Global data can be used in all pages and components.
 
-<figure><img src="../../.gitbook/assets/1 (21).png" alt="Set global data according to business needs."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (21).png" alt="Set global data according to business needs."><figcaption></figcaption></figure>
 
 ## 3. Refresh
 
