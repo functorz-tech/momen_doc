@@ -6,17 +6,16 @@ description: >-
 
 # Payment with Stripe
 
-### Introduction
+## Introduction
+In this doc, you'll learn about how to configure Stripe payment in your web app. Whether you're running an e-commerce platform, a subscription-based service, or even a SaaS product, providing users with a secure and easy-to-use payment system can significantly improve your service.
 
-In this doc, you'll learn about how to configure Stripe payment in your web app. Whether you're running an e-commerce platform, a subscription-based service, or even a SaaS product, providing users with a secure and easy-to-use payment system can significantly impact your bottom line.
+## 1. Preparation
 
-### Preparation
-
-#### Prepare a Stripe Account
+### Prepare a Stripe Account
 
 Sign up or log in to Stripe: [Stripe](https://stripe.com/)
 
-#### Upgrade Your Project to Pro Version or Above
+### Upgrade Your Project to Pro Version or Above
 
 Payment features are only available in the Pro plan and above. If you downgrade, existing payment features will become inactive.
 
@@ -24,15 +23,15 @@ Payment features are only available in the Pro plan and above. If you downgrade,
 
 Before configuring payment, ensure you have an order table in your project. This table will be linked to the system's payment table.
 
-### Fill in Basic Information
+## 2. Fill in Basic Information
 
-#### Activate Payment Features
+### Activate Payment Features
 
 Go to the Configuration settings and activate the Payment feature.
 
 <figure><img src="../../.gitbook/assets/stripe/stripe.jpeg" alt=""><figcaption></figcaption></figure>
 
-When activating, bind the order table created. The system will automatically create a one-to-many relationship between the order and payment tables. Please note:
+When activating, bind the order table you created before. The system will automatically create a one-to-many relationship between the order and payment tables. Please note:
 
 * All payment methods share the same order table.
 * Once bound, it cannot be unbound or replaced, and the order table cannot be deleted. Be cautious during the binding process.
@@ -54,7 +53,7 @@ Upon binding the order table and activating the payment feature, the system will
 
     <figure><img src="../../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
 
-#### Input Stripe Information
+### Input Stripe Information
 
 Retrieve your Publishable Key and Secret Key from Stripe and fill them into the project configuration.
 
@@ -62,15 +61,15 @@ Retrieve your Publishable Key and Secret Key from Stripe and fill them into the 
 
 <figure><img src="../../.gitbook/assets/stripe/stripe6.jpeg" alt=""><figcaption></figcaption></figure>
 
-### Using Payment/Refund Actions
+## 3. Using Payment/Refund Actions
 
-#### Adding Actions
+### Adding Actions
 
 Find the Stripe actions in the Action List.
 
 <figure><img src="../../.gitbook/assets/stripe/stripe7.jpeg" alt=""><figcaption></figcaption></figure>
 
-#### Configure Action Parameters
+### Configure Action Parameters
 
 **Single Payment Action**
 
@@ -94,17 +93,17 @@ Before configuring, you must create a recurring payment price in Stripe and obta
 
 Type (option): Initiate for starting a recurring payment, Cancel for canceling it. Order ID (decimal): Must be the ID of the bound order table. Price ID (string): The price ID obtained from Stripe.
 
-#### Configure Action Permissions
+### Configure Action Permissions
 
 In the Permission System, you can set access controls for actions, especially for refund actions. It’s recommended to restrict this permission from regular users to avoid financial loss. A better approach is to create a special admin role with refund permissions.
 
 <figure><img src="../../.gitbook/assets/stripe/stripe12.jpeg" alt=""><figcaption></figcaption></figure>
 
-### Configuring Business Logic After Completing Actions
+## 4. Configuring Business Logic After Completing Actions
 
 Since front-end pages can be bypassed (e.g., users calling the success action via API without making a payment), it’s essential not to modify data in the "success" part of the payment action. The more secure method is to allow Stripe to notify your project’s backend, which will trigger corresponding Actionflows. These actionflows run securely in the backend.
 
-#### Payment Callback Actionflow
+### Payment Callback Actionflow
 
 This flow is triggered after payment completion. The built-in nodes include:
 
@@ -151,14 +150,12 @@ In the code block, modify the part that creates the order based on your specific
 
 <figure><img src="../../.gitbook/assets/stripe/stripe17.jpeg" alt=""><figcaption></figcaption></figure>
 
-### Retrieving Payment/Refund Results
+## 5. Retrieving Payment/Refund Results
 
 Since updating the order/payment/recurring payment/refund tables occurs through custom actionflows and may take time, the front-end should use a subscription method to get the latest data. For example, after calling a payment action, the page can subscribe to the payment table to receive real-time updates on payment status.
 
 <figure><img src="../../.gitbook/assets/stripe/stripe18.jpeg" alt=""><figcaption></figcaption></figure>
 
-
-
-### About Momen
+## About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

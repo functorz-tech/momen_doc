@@ -880,7 +880,7 @@ Kickstart your projects with professionally designed templates for website landi
 ### IV. Bugfixes
 
 1. Resolved issues related to the Mirror feature.
-2. Fixed bugs causing unexpected behavior during project interactions.
+2. Fixed bugs causing unexpected action during project interactions.
 
 ### VI. What We Are Currently Working On
 

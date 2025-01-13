@@ -72,7 +72,7 @@ The purpose of setting the "List Field" after adding remote data to the Select V
 
 #### Output Configuration
 
-The result of the selection of a view can be bound to a component to display or to insert or update a data table by modifying the table data behavior. In order to accurately locate its data, it is recommended to rename the Select View component
+The result of the selection of a view can be bound to a component to display or to insert or update a data table by modifying the table data action. In order to accurately locate its data, it is recommended to rename the Select View component
 
 **Single Select**
 

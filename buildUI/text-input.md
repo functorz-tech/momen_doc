@@ -84,7 +84,7 @@ Tips:
 
 #### Interact
 
-1. Behavior When Changing
+1. action When Changing
 
 Triggered when the input content of the Text Input component changes.
 
@@ -94,7 +94,7 @@ Tips:
 No configuration is needed when applying list filter conditions to the input box value. Configuration updates automatically with real-time input changes.
 {% endhint %}
 
-2. Loss of Focus Behavior
+2. Loss of Focus action
 
 Triggered when the input box loses focus, e.g., when the user clicks elsewhere or finishes typing.\
 

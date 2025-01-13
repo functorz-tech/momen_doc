@@ -1,6 +1,6 @@
 # Custom Code Advanced
 
-### Prerequisite:
+## Prerequisite:
 
 * Understanding of custom code fundamentals
 * Proficient in the use of Momen
@@ -9,15 +9,15 @@
 
 ⚠️⚠️⚠️ Note: Protect your Authorization, once leaked others can manipulate your data via gql, so in order to prevent others from being able to manipulate your database via gql, you need to refer to the \[Permission Configuration Instructions] to define your database access rights.
 
-### **Usage Scenarios**
+**Usage Scenarios**
 
 Read or modify the data in the database directly in the custom code so that you can get the data and then process the code logic.
 
-### **Running gql in a Custom Code**
+**Running gql in a Custom Code**
 
 Prerequisites: Uderstanding GraphQL basics below.
 
-#### **Basic Code Structure**
+**Basic Code Structure**
 
 ```graphql
 // GraphQL content
@@ -38,7 +38,7 @@ const gql = `query findPaymentTransactionById ($paymentTransactionId: bigint!){
 context.runGql('findPaymentTransactionById', gql, { paymentTransactionId: 1 }, { role: 'admin' });
 ```
 
-#### **runGql Parameter Description**
+**runGql Parameter Description**
 
 context.runGql( operationName , gql , variables , permission );
 
@@ -48,7 +48,7 @@ context.runGql( operationName , gql , variables , permission );
 * variables: If gql uses a parameter declaration, the parameter cannot be null.
 * permission: Declare the role of calling gql, usually admin.
 
-### **Graphql Basics and Role**
+**Graphql Basics and Role**
 
 Graphql is a data query language developed internally by Facebook in 2012.
 
@@ -56,7 +56,7 @@ The way that Momen sends requests from frontend to backend is Graphql, hereinaft
 
 Implanting Graphql into ActionFlow, you can define various code blocks in Momen's actionflow to achieve complex functional requirements, such as various types of batch operations.
 
-#### **Altair Interface**
+**Altair Interface**
 
 Altair GraphQL Client is a tool for debugging gql, hereinafter referred to as Altair, download and open the interface as follows
 
@@ -78,7 +78,6 @@ Altair GraphQL Client is a tool for debugging gql, hereinafter referred to as Al
 2. Go to the database, open console, click Network, clear the request, click the reference table in the database, and click Requests in Network:
 
 <figure><img src="../../../.gitbook/assets/20240521-171423.png" alt=""><figcaption></figcaption></figure>
-
 
 
 3. Copy the inner URL from the Request URL in the General under Headers and paste it into the Altair request, with the request method defaulting to POST;
