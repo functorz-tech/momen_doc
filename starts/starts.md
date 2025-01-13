@@ -11,11 +11,7 @@ keywords: >-
 Momen is a no-code development tool with complete capabilities for software building, deployment, and subsequent operations. The Momen Help Documentation aims to help you quickly get started and begin building applications. It is an important reference in your learning journey.
 
 ### Getting Started Video
-Watch the 5-minute video below to quickly get started with Momen👇
-
-<video width="720" controls>
-    <source src="../.gitbook/assets/5min.mp4" type="video/mp4">
-</video>
+Watch the 5-minute video to quickly get started with Momen. [👉 Build an App from Data to Logic to UI Design](https://www.youtube.com/watch?v=73-cLQWTWMk&t=33s&ab_channel=Momen)
 
 
 ## Momen Product Worldview 
