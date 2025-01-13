@@ -6,11 +6,11 @@ description: >-
 
 # Vector Data Storage and Sorting
 
-### Introduction
+## Introduction
 
 The similarity calculation of large models involves finding more similar data within massive unstructured data. To achieve this, a vector database is essential for storing information about each object. If your project requires a "similarity search," save data as vector data.
 
-### How to Save Vector Data
+## How to Save Vector Data
 
 After entering the editor, click the "Data Model" button to open the data model design interface. Create a data table, add fields (type: text), and enable the "Vector Storage" switch when adding a column. When data is added, the information in this field will automatically be saved as vector data.
 
@@ -23,7 +23,7 @@ Note:
 * Enabling this feature will consume database resources.
 {% endhint %}
 
-### How to Use Vector Sorting
+## How to Use Vector Sorting
 
 **The basic principle of vector sorting:**&#x53;ort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
 
@@ -40,7 +40,7 @@ COSINE and EUCLIDEAN.
 
 <figure><img src="../../.gitbook/assets/2 (37).png" alt="" width="306"><figcaption></figcaption></figure>
 
-### Application Example - Semantic Search
+## Application Example - Semantic Search
 
 **Basic description of the case:**
 
@@ -54,6 +54,6 @@ The case database includes specific meanings of Internet slang. In this case, th
 
 
 
-### About Momen
+## About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
