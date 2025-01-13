@@ -144,9 +144,9 @@
 
 ## My Account and Community
 
-* [My Wallet](Community/myWallet.md)
-* [Promoting Momen](Community/commission.md)
-* [Code Component](Community/codeComponent.md)
+* [My Wallet](account-community/myWallet.md)
+* [Promoting Momen](account-community/commission.md)
+* [Code Component](account-community/codeComponent.md)
 
 ## Tutorial
 
