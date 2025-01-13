@@ -6,7 +6,7 @@ description: >-
 
 # Database Trigger
 
-### Introduction
+## Introduction
 
 This feature triggers Actionflows when data changes (insert, update, or delete), enhancing automation within the project.
 
@@ -17,7 +17,7 @@ Common use cases include:
 * Automatically sending a notification when an order is completed
 * Automatically generating an operation record when user points change, for easier tracking
 
-### **Configuration Process**
+## Configuration guide
 
 Here’s how to set it up using an example: When a user’s payment exceeds $1000, the system will automatically upgrade them to VIP.
 
@@ -52,22 +52,22 @@ Triggers allow access to both the previous and updated data values.
 
 <figure><img src="../../.gitbook/assets/截屏2024-11-06 12.33.29.png" alt=""><figcaption></figcaption></figure>
 
-### **View Trigger History**
+## View Trigger History
 
-View the history of triggers in the log system (currently unavailable).
+View the history of triggers in the log system.
 
-### **Quota and Purchase Limits**
+## Quota and Purchase Limits
 
-Automated behavior flows (triggered by scheduled tasks or database changes) have usage limits:
+Automated actionflows (triggered by scheduled tasks or database changes) have usage limits:
 
 * **Free Tier** (resets monthly):
   * Free plan: 1000 executions/month
   * Basic plan: 10000 executions/month
   * Pro plan: 50000 executions/month
 * **Paid Option** (valid indefinitely):
-  * Cost: 10000 executions for $ 10&#x20;
+  * Cost: 10000 executions for $ 10&;
 
-### **Important Notes**
+## Notes
 
 1. **Cyclic Trigger Prevention**
 

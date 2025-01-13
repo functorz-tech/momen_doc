@@ -29,7 +29,7 @@ Momen offers a diverse array of login methods to cater to different scenarios th
 
 <figure><img src="../.gitbook/assets/1 (4).1.png" alt="Login Methods in a no-code tool"><figcaption></figcaption></figure>
 
-After you've designed the UI for one or more login methods, you can add login interaction behaviors to the corresponding components. You can find actions like【Username Login】under 【Interaction】. (This assumes that you have already activated the corresponding login configurations in the Login Settings.)
+After you've designed the UI for one or more login methods, you can add login interaction actions to the corresponding components. You can find actions like【Username Login】under 【Interaction】. (This assumes that you have already activated the corresponding login configurations in the Login Settings.)
 
 <figure><img src="../.gitbook/assets/2 (5).1.png" alt="User login action in a no-code tool"><figcaption></figcaption></figure>
 
@@ -63,9 +63,9 @@ Design the registration/login content on the interface, including the button for
 
 * Configure the action to send a verification code for the aforementioned button.
   * Choose the method of【Email】to send the verification code.
-  * Set the type of verification code for either【Registration】or【Login】. (Ensure to separately configure the code-sending behavior for both registration and login).
+  * Set the type of verification code for either【Registration】or【Login】. (Ensure to separately configure the code-sending action for both registration and login).
   * Attach the corresponding registration/login actions for email to the registration/login buttons.
-  * Bind the entered email and password (from the text input component) to the corresponding input fields of the action. Configure the behaviors or prompts for successful or unsuccessful registration/login.
+  * Bind the entered email and password (from the text input component) to the corresponding input fields of the action. Configure the actions or prompts for successful or unsuccessful registration/login.
 
 <figure><img src="../.gitbook/assets/6 (25).png" alt="[Send Verification],[Username Register],[Username Login] in a no-code tool"><figcaption></figcaption></figure>
 

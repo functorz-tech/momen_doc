@@ -96,7 +96,7 @@ In absolute & fixed positioning, new components overlapping old ones will visual
 
 ### Editor Right Sidebar Configuration
 
-Select a page to display the attribute panel on the right for configuring page names, design, data, and interactive behavior. For details, see \[Configuration Guide].
+Select a page to display the attribute panel on the right for configuring page names, design, data, and interactive action. For details, see \[Configuration Guide].
 
 #### Web Page Right Sidebar
 
@@ -126,7 +126,7 @@ Click \[Third-party API] in the top left corner to open the API configuration in
 
 #### Actionflow
 
-Click \[Actionflow] in the top left corner to open the behavior flow configuration interface. Click \[Create] in the top right corner to create a behavior flow. Configure "input parameters," call methods to get or update database data, write JS code blocks, and call third-party APIs for complex behavior logic. Save the Actionflow and click \[Backend deployment] for it to take effect. Configure "callbacks" and "timed triggers" in the trigger configuration interface. For details, see \[Actionflow].
+Click \[Actionflow] in the top left corner to open the action flow configuration interface. Click \[Create] in the top right corner to create a action flow. Configure "input parameters," call methods to get or update database data, write JS code blocks, and call third-party APIs for complex action logic. Save the Actionflow and click \[Backend deployment] for it to take effect. Configure "callbacks" and "timed triggers" in the trigger configuration interface. For details, see \[Actionflow].
 
 <figure><img src="../.gitbook/assets/editor/actionflow.gif" alt=""><figcaption></figcaption></figure>
 
@@ -140,7 +140,7 @@ Click \[Z AI] in the top left corner to create AI requests. Click \[Start Creati
 
 Click \[Settings] in the top left corner to open project settings. Configure:
 
-* **Global Settings:** Set the homepage, background color, global data, and behavior when the application is loaded.
+* **Global Settings:** Set the homepage, background color, global data, and action when the application is loaded.
 * **Login Settings:** Configure login methods:
   * Username and password
   * Email
@@ -174,7 +174,7 @@ Real-time preview generates the created application pages and interactions in re
 
 #### Backend Deployment
 
-After creating or modifying data models, APIs, Actionflows, and AI, click the \[Backend Deployment] button in the top right to make changes effective. For online projects, if you only modify database data, API, behavior flow, or ZAI configuration without changing page styles or local data, click \[Backend Deployment] to update the backend. This process takes less than 5 seconds, improving development efficiency.
+After creating or modifying data models, APIs, Actionflows, and AI, click the \[Backend Deployment] button in the top right to make changes effective. For online projects, if you only modify database data, API, action flow, or ZAI configuration without changing page styles or local data, click \[Backend Deployment] to update the backend. This process takes less than 5 seconds, improving development efficiency.
 
 <figure><img src="../.gitbook/assets/editor/backenddeployment.jpeg" alt=""><figcaption></figcaption></figure>
 

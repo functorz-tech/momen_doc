@@ -33,7 +33,7 @@ Example：
 
 a. In an activity booking template on an activity details page, use a view to group elements like activity pictures, titles, and taglines. Set the view background to white and enable hover effects for a cohesive look. This approach reduces redundancy in configurations.
 
-b. Build a custom navigation bar with buttons composed of images and text. Place the image and text components inside a view to streamline button creation and simplify jump behavior setup.
+b. Build a custom navigation bar with buttons composed of images and text. Place the image and text components inside a view to streamline button creation and simplify jump action setup.
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 

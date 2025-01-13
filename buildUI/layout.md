@@ -101,7 +101,7 @@ When the distribution mode of the 【parent component】 is set to "start," cust
 
 ### Cursor Styles
 
-As depicted in the illustration below ⬇️, in various interactive contexts, we can show to the users that a particular component possesses specific interactive behavior through the style of the cursor:
+As depicted in the illustration below ⬇️, in various interactive contexts, we can show to the users that a particular component possesses specific interactive action through the style of the cursor:
 
 <figure><img src="../.gitbook/assets/13.JPEG" alt="Cursor styles in a no-code tool" width="554"><figcaption></figcaption></figure>
 

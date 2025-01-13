@@ -1,45 +1,36 @@
 # Scheduled Job/Callbacks
 
-### **Configuration Portal**
+## Access schedule job/callbacks
 
-In the Configure Action Flow interface, find the lightning bolt-shaped button next to the \[Create] button and add a scheduled job/callback
+Locate the lightning bolt-shaped button next to the \[Create] button and add a scheduled job/callback
 
 ![](<../../.gitbook/assets/0 (4).png>)
 
-### **Scheduled Job**
+### 1. Scheduled Job
 
-#### **Application Scenario**
+#### Scenario
 
 Trigger an actionflow at regular intervals or once.
 
-#### **Configuration Item Description**
+#### Item Description**
 
-Time Range: Configure the start and end time of the timed trigger.
+1. Time Range: Configure the start and end time of the timed trigger.
 
-Cycle Type: Configure whether the action flow is triggered "every minute", "every hour", "every day", "every week" or "every year", and at which point in time it is triggered.
-
-Binding actionflows: Select the action flows that need to be triggered at regular intervals.
+2. Cycle Type: Configure whether the action flow is triggered "every minute", "every hour", "every day", "every week" or "every year", and at which point in time it is triggered.
 
 ![](<../../.gitbook/assets/1 (1).jpeg>)
 
-Tips:
 
-⚠️ Note: Once a timed trigger is configured, it can not be deleted and will not stop until it reaches the end time, so when testing timed triggers, you can set a shorter cycle time and a close end time.
-
-The current entry box only supports input, not data selection.
-
-#### **Callback Triggering (High-Level)**
-
-Definition of the callback: In scenarios that require a third-party server to push, such as payment, or CRM Service workflow push, you may encounter scenarios that require us to provide a webhook/callback address for the other party to call.
+### 2. Callback Triggering   
+In scenarios that require a third-party server to push, such as payment, or CRM Service workflow push, you may encounter scenarios that require us to provide a webhook/callback address for the other party to call.
 
 For users who have an API base, it can be understood that the defined custom actionflow is encapsulated into an API.
 
-#### **Application Scenarios**
-
+#### Scenarios
 1. Trigger action through links
 2. Payment configuration callbacks
 
-#### **Basic Configuration**
+#### Configuration guide
 
 1. Add a callback
 
@@ -57,14 +48,10 @@ For users who have an API base, it can be understood that the defined custom act
 
 ![](../../.gitbook/assets/5.png)
 
-#### **Stripe Callback**
-
+#### Stripe Callback   
 By selecting Stripe payment callback, the parameters are automatically configured.
 
 ![](../../.gitbook/assets/6.png)
-
-
-
 
 
 ### **About Momen​​​​​**

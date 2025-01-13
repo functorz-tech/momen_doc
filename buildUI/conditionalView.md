@@ -44,7 +44,7 @@ The order in which sub-container views are evaluated follows the red arrow, from
 
 1. The order of the conditions can be changed by dragging and dropping the condition name from the optional condition in the content bar of the conditional container (red box in the figure below).
 2. when all conditions are always or the same, the conditional container displays the topmost condition view (not logged in as shown below)
-3. when all conditions are not set, the condition is always by default, then you can switch the view of the current conditional subcontainer through the \[Switch View Condition] behavior.
+3. when all conditions are not set, the condition is always by default, then you can switch the view of the current conditional subcontainer through the \[Switch View Condition] action.
 
 #### Rerun Conditions on Remote Data Update
 

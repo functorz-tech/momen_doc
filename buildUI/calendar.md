@@ -48,7 +48,7 @@ The calendar component is not an input-type component. If you want to retrieve t
 
 ### **Calendar Component Interaction**
 
-**Click date event:** the behavior that is executed when you click on a date in the calendar.
+**Click date event:** the action that is executed when you click on a date in the calendar.
 
 **Example of operation:** Retrieve the clicked date.
 

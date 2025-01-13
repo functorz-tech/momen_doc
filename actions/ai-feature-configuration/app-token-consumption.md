@@ -4,7 +4,7 @@ description: Learn about AI Point consumption and purchase in Momen AI.
 
 # AI Point Consumption
 
-### Introduction
+## Introduction
 
 AI Points are crucial in AI interaction. AI Points are deducted based on token usage when calling AI.Learn how to purchase and use AI Points in Momen AI.
 
@@ -17,13 +17,13 @@ AI Points are crucial in AI interaction. AI Points are deducted based on token u
 * After recharging AI Points, it may take a few minutes to generate vectors for previously unprocessed data.
 {% endhint %}
 
-### Point Consumption When Requesting Momen AI
+## Point Consumption When Requesting Momen AI
 
-#### Estimate Consumption of Text Input
+### Estimate Consumption of Text Input
 
 For example, generating a 300-word X post:Pro version large model: Consumes about 600 AI Points, and takes about 60 seconds.Basic version large model: Consumes about 30 AI Points, and takes about 30 seconds.Quality differences in a generated post may not be significant in this scenario, so it's suggested to test and choose based on expected results.
 
-#### Estimate Consumption of Image Input
+### Estimate Consumption of Image Input
 
 Token consumption of images is determined by two factors:
 
@@ -38,7 +38,7 @@ Here is an example:
 
 For a square image of size 1024 x 1024, in fine mode, it requires 4 squares of 512 px each to represent the image. So, the final token cost is 170 \* 4 + 85 = 765.
 
-### AI Point Balance Check and Purchase
+## AI Point Balance Check and Purchase
 
 To view your AI Point balance and purchase more, go to your profile, hover over a project, and click 'Details'.
 
@@ -50,14 +50,14 @@ Click the 'Purchase Resource Kit' button to purchase additional AI Points in a n
 
 <figure><img src="../../.gitbook/assets/3 (31).png" alt="AI Point consumption in a no-code tool"><figcaption></figcaption></figure>
 
-### AI Point Consumption
+## AI Point Consumption
 
-#### Basic Consumption Scenarios
+### Basic Consumption Scenarios
 
 * Saving content as vector data in the database, which occurs when opening vector storage for a field in a data table and adding data to that field, consumes AI Points.
 * Sending content to AI and receiving results from AI consumes AI Points.
 
-#### Consumption Estimate
+### Consumption Estimate
 
 {% hint style="info" %}
 The consumption of AI Points is directly related to the number of input and output words.
@@ -65,9 +65,6 @@ The consumption of AI Points is directly related to the number of input and outp
 
 For example, sending a message to AI like 'I want to develop a web page for purchasing products. Please tell me the key steps to develop it will consume approximately 60 AI Points, with the number of tokens AI returns counted separately."
 
-\
-
-
-### About Momen
+## About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, that allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
