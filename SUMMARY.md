@@ -83,8 +83,7 @@
   * [Scheduled Job/Callbacks](actions/action-flow-configuration/scheduled-job-callbacks.md)
   * [Calling APIs in Actionflows](actions/action-flow-configuration/calling-apis-in-actionflows.md)
   * [Database Trigger](actions/action-flow-configuration/db-trigger.md)
-* [AI](actions/ai-feature-configuration/README.md)
-  * [AI Configuration](actions/ai-feature-configuration/zai-configuration.md)
+* [AI Configuration](actions/ai-feature-configuration/zai-configuration.md)
   * [AI Invocation and Data Model](actions/ai-feature-configuration/ai-invocation-and-data-model.md)
   * [App Point Consumption](actions/ai-feature-configuration/app-token-consumption.md)
   * [Vector Data Storage and Sorting](actions/ai-feature-configuration/vector-data-storage-and-sorting.md)
@@ -102,9 +101,9 @@
 
 ## My Account and Community
 
-* [My Wallet](community/mywallet.md)
-* [Promoting Momen](community/commission.md)
-* [Code Component](community/codeComponent.md)
+* [My Wallet](account-community/mywallet.md)
+* [Promoting Momen](account-community/commission.md)
+* [Code Component](account-community/codeComponent.md)
 
 ## Tutorial
 
