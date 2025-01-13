@@ -9,7 +9,7 @@ Momen provides 16 categories and over 100 types of built-in actions, covering co
 - Navigation: Enables navigation between internal pages or to external URLs.
 - AI: Requires prior configuration of AI models via the AI feature. Once configured and tested, AI actions can be triggered on frontend or in actionflows.
 - Login: Allows building user authentication systems by configuring login methods (username/password, email, phone, or SSO) in "Settings > Login Settings" and adding login actions to components.
-- Payment: Supports monetized apps by enabling payment features in settings and adding payment behaviors to components for user transactions, including payments and refunds.
+- Payment: Supports monetized apps by enabling payment features in settings and adding payment actions to components for user transactions, including payments and refunds.
 
 ### 2. Custom actions via API
 In addition to more than 100 built-in actions, you can also customize actions through the API function. After adding a custom API, you can execute the API in the application with the "request - API" action.

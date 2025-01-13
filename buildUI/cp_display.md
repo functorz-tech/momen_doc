@@ -55,7 +55,7 @@ As shown in the figure below ⬇️, when the image source is set to "Data Bindi
         
 
 5. More Functions of the Image   
-On mobile, clicking the image can achieve functions such as zooming, downloading, forwarding the image, and recognizing QR codes. For details, please see [Component Management](../actions/component_management.md).
+On mobile, clicking the image can achieve functions such as zooming, downloading, forwarding the image, and recognizing QR codes. For details, please see [Component Management](../actions/component-management.md).
 
 ## Video
 When you need to play video content in the application, you can choose the Video Component to achieve this.
@@ -76,8 +76,8 @@ When the video source is data binding, click the + sign to bind the video data r
    - Autoplay: Default is off, meaning that when entering the page where the video is located, the video will automatically play.
    - Playback Control, Mute Button: Default is on, meaning that it shows the functions of video playback start/pause, volume control, playback speed control, picture-in-picture, and full screen.
 
-3. You can configure actions triggered when playback starts in the behavior.
-4. You can add video control actions in the click actions of other components. For details, please see [Component Management](../actions/component_management.md).
+3. You can configure actions triggered when playback starts in the action.
+4. You can add video control actions in the click actions of other components. For details, please see [Component Management](../actions/component-management.md).
 
 ## Rich Text
 When you need to display highly uncertain content and images with richer styles, such as an article containing multiple elements or a long image, it is generally recommended to set the height mode of the Rich Text Component to "Adapt to Content."

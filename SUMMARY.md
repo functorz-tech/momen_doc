@@ -28,9 +28,8 @@
 
 ## Data
 
-* [Data Overview](data/data-overview/README.md)
-  * [Data Retrieval and Display](data/data-overview/data-retrieval-and-display.md)
-  * [Data Input and Modification](data/data-overview/data-input-and-modification.md)
+* [Data Retrieval and Display](data/data-overview/data-retrieval-and-display.md)
+* [Data Input and Modification](data/data-overview/data-input-and-modification.md)
 * [Data Model](data/datamodel.md)
   * [E-commerce](data/datamodelCases/e-commerce.md)
   * [Appointment Scheduling](data/datamodelCases/appointment-scheduling.md)

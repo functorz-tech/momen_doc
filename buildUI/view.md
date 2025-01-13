@@ -8,7 +8,7 @@ description: >-
 
 ### Introduction
 
-In this comprehensive guide, we will navigate through the versatile landscape of View Components. These essential tools empower you to craft seamless layouts, enable both horizontal and vertical scrolling, and effortlessly incorporate visual dividers into your web pages.\\
+In this comprehensive guide, we will navigate through the versatile landscape of View Components. These essential tools empower you to craft seamless layouts, enable both horizontal and vertical scrolling, and effortlessly incorporate visual dividers into your web pages.
 
 ### Usage Scenario
 
