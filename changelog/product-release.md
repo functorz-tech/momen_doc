@@ -1,9 +1,9 @@
-# Latest Product Update
-
 ---
 description: >-
   Announcing the latest Momen product update
 ---
+
+# Latest Product Update
 ## V2.1.2 - 2024.12.12
 
 ### New Features
