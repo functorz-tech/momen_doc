@@ -36,7 +36,7 @@ There are two sub-views - Selected Area and Unselected Area inside the selected 
 * Unselected view: This view represents the appearance of the option when it is not selected.
 * Selected view: This view defines how the option appears when it is selected.
 
-#### Select View Contents
+#### Data
 
 The \[Select View] component offers flexibility in data source selection, supporting both local and remote data. You can refer to our "[Data Retrieval and Display](https://functorz.feishu.cn/docx/F9D7dnJ4mondGYxiOQIcZStbnIf)" tutorial for comprehensive details.
 
