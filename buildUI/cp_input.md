@@ -1,23 +1,25 @@
-```description
+---
+description: >-
 Introduction and usage of all input type components
 ```
-```keywords
+keywords: >-
 Number Input, Date Input, Data Input, Input Box, Password Input, Multi-line Display, Data Type, Default Value, Input Box Interaction, Auto Focus, Input Box Example, Search Input Box
-```
-# System Components - Input Type
-Input type components include: Input Box, Number Input, Data Selector, Date & Time Picker, Rich Text Editor, Image Picker, Video Picker, Switch
+---
+
+# Components - Input
+Includes: Input Box, Number Input, Data Selector, Date & Time Picker, Rich Text Editor, Image Picker, Video Picker, Switch
 ## Unified Usage Method
 ### Data Output Capability
 All input type components, once added to a page, can expose the content entered on the component to the outside. This means:
 1. Other components, such as text components, can choose to bind to "Input Box" - "Input Type Component Name" to display the content of that input box.
 2. Modifying databases or other locations that need to bind content can also reference the content entered in this input type component.
-   <img src="https://docs.functorz.com/static/image/1696993960380-a01ca2e2-b7e2-4a7d-9c59-606b1d884d64.png" width="300">
+   <figure><img src="../.gitbook/assets/7 (24).png" alt="Select the type of input content."><figcaption></figcaption></figure>
 
-### Configurable Special Behaviors
-Input type components can generally configure behaviors for the following trigger timings.
-- On Value Change: Behavior triggered when the input content changes
-- On Blur: Behavior triggered when the cursor is no longer in the input box
-- onSuccess: Behavior triggered after successfully uploading an image/video
+### Configurable Special actions
+Input type components can generally configure actions for the following trigger timings.
+- On Value Change: action triggered when the input content changes
+- On Blur: action triggered when the cursor is no longer in the input box
+- onSuccess: action triggered after successfully uploading an image/video
 
 ## Input Box
 Input boxes are generally used to provide scenarios where users need to input content. For example:
@@ -40,9 +42,6 @@ Placeholder text cannot be data bound, it can only be directly input.
 #### Default Value
 This refers to the default content displayed in the input box. The default value can be data bound.
 
-| img | img |
-| ------------- | ------------- |
-| <img src="https://docs.functorz.com/static/image/1673428446938-633c833e-6cd5-49da-ac7b-348e9335afac.png" width="100%"> | <img src="https://docs.functorz.com/static/image/1673428509744-93e5ddc1-5ecc-4b67-88a3-11a9540d0d3e.gif" width="100%"> |
 
 > 💡 Tips:
     1. When both a placeholder and a default value are set for the input box, the default value is displayed first.
@@ -51,10 +50,6 @@ This refers to the default content displayed in the input box. The default value
 
 #### Some Special Configurations
 1. Password: When entering content, the content is displayed in an encrypted state, usually used in account password login systems.
-
-| On | Off |
-| ------------- | ------------- |
-| <img src="https://docs.functorz.com/static/image/1673423962565-a21d05dc-e99d-4e2f-93a0-261b8ec8af9f.png" width="100%"> | <img src="https://docs.functorz.com/static/image/1673424031514-704f701d-8d0f-4f1e-9876-a9da8239a5e4.png" width="100%"> |
 
 2. Auto Focus: When the input box is set to auto focus, the keyboard will automatically pop up when entering the page where the input box is located, and content can be directly entered.
 3. Cursor and Keyboard Distance: Set the distance between the cursor and the keyboard, which is the distance between the keyboard and the input box when focused.
@@ -66,13 +61,10 @@ If the input box is set to multi-line and its vertical layout mode is set to fit
 > 💡 Tips:
 When there are multiple input boxes on the page, **it is recommended to rename the components**, so that when using the input result content, it is clear which component the content was input through.
 
-When users need to fill/complete their information, an input box needs to be placed on the page for users to input their information in the input box, and select the corresponding input box data in the field configuration of the add/update behavior.
+1. When users need to fill/complete their information, an input box needs to be placed on the page for users to input their information in the input box, and select the corresponding input box data in the field configuration of the add/update action.
 
-<img src="https://docs.functorz.com/static/image/input1.gif" width="100%">
+2. When users need to display the original data and want to edit their information, an input box also needs to be placed on the page. However, for user experience, the current information is usually configured in the default value, allowing users to refer to and modify it.
 
-**When users need to display the original data and want to edit their information**, an input box also needs to be placed on the page. However, for user experience, the current information is usually configured in the default value, allowing users to refer to and modify it.
-
-<img src="https://docs.functorz.com/static/image/input2.jpeg" width="100%">
 
 ## Number Input
 Similar to the input box, the number input component provides users with a + - number operation component, outputting a value of number type. For example, in the following scenarios:
@@ -86,7 +78,7 @@ Similar to the input box, the number input component provides users with a + - n
 5. Disable Input Box: Refers to the inability to directly input/modify numbers, but numbers can be changed by clicking the + or - sign.
 
 ## Data Selector
-The [Text Input] component allows users to input content through an input box, while the [Data Selector Input Box] component allows users to input content by selecting data.
+The Data Selector component allows users to input content by selecting data.
 ### Configuration Instructions
 Most configurations are consistent with other input type components. The special point is that this component must configure the data source and corresponding fields that users can select.
 #### Data Source Selection
@@ -96,24 +88,23 @@ Most configurations are consistent with other input type components. The special
 #### List Field
 It is important to determine the "list field" because remote data has multiple fields, and it is necessary to clarify which field's content is to be displayed.
 #### Default Value
-That is, the default option, which can be directly input according to the data type specified by the [List Field] or bound to remote data of the corresponding type.
+The default option, which can be directly input according to the data type specified by the [List Field] or bound to remote data of the corresponding type.
 
 ## Date & Time Picker
 Similar to the Data Selector, the Date & Time Picker allows users to select and input time or date, and the component exposes time and date formats.
 ### Configuration Instructions
 1. Start Time/Date and End Time/Date: Only supports data binding, both are not required, **generally not set**.
 2. Time Interval: The default selection is 1 minute, supporting selections of 5, 10, 15, 30, and 60 minutes, not supporting manual input.
-3. Default Value: Not required, data binding.
+3. Default Value: Not required, databinding.
 4. Placeholder Text: Not required, when there is no default value, the content in "Placeholder Text" will be displayed.
 
-## Rich Text Editor (Web Only)
+## Rich Text Editor
 A component that allows users to input rich text content, outputting a text type data.
 
-<img src="https://docs.functorz.com/static/image/富文本编辑器演示.gif" width="100%">
+![rich text editor](<../.gitbook/assets/0 (15).png>)
 
 ## Image Picker
 A component for users to upload images. You can choose single or multiple images. It is generally used for uploading photos, avatars, etc.
-<img src="https://docs.functorz.com/static/image/图片选择器多张.jpeg">
 
 ### Configuration Instructions
 1. Maximum Number of Images: Refers to how many images need to be selected and uploaded through the Image Picker, default is 1 image.
@@ -123,19 +114,17 @@ A component for users to upload images. You can choose single or multiple images
 5. Default Value: Refers to the content displayed in the Image Picker before uploading images, which can be single or multiple images.
 
 #### Special Instructions
-When selecting multiple images and wanting to upload this data to the database, you need to use the [Batch Mutation] behavior in the Data Mutation behavior, bind the result selected by the Image Picker in its data source, and then upload the specific image field that needs to be uploaded.
+When selecting multiple images and wanting to upload this data to the database, you need to use the [Batch Mutation] action in the Data Mutation action, bind the result selected by the Image Picker in its data source, and then upload the specific image field that needs to be uploaded.
+
 ## Video Picker
 Used for users to upload videos, the usage is the same as the Image Picker.
 ### Configuration Instructions
 1. After the video is successfully uploaded, clicking the Video Picker component again can reselect the video to upload.
 2. The default video displayed by the component can be displayed through data binding.
+
 ## Switch
 A component that allows users to choose between yes and no, exposing a boolean value (true&false).
 Users can choose from three switch styles, which do not support customization.
 ### Usage Example
 Use the switch component as a toggle for whether a to-do item is completed. When adding a to-do item, the default switch component is false, which means not completed. When completed, click the switch button to change it to true.
-
-| img | img |
-| ------------- | ------------- |
-| <img src="https://docs.functorz.com/static/image/1675664422213-28fa82f1-627d-44e3-b70c-1178247611ca.png" width="100%"> | <img src="https://docs.functorz.com/static/image/1675664782858-02fb4a4a-ae73-4653-921d-cee97e9b71b5.gif" width="100%"> |
-```
+<figure><img src="../.gitbook/assets/4 (2).gif" alt="Effective demonstration."><figcaption></figcaption></figure>
