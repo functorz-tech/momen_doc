@@ -1,10 +1,11 @@
+---
+description: >-
+After clicking on the component configured for this action, you can download a file from the web database to the computer, which was previously requested from the web database.
+---
+
 # File Management
 
-```description
-After clicking on the component configured for this action, you can download a file from the web database to the computer, which was previously requested from the web database.
-```
-
-**File -related action includes:**
+File -related action includes:
 1. Upload file
 2. Download file/images/bitmap
 
@@ -22,7 +23,7 @@ The first step is to add a page variable with the type of file to the page itsel
 **2. Add action**   
 Add the \[Upload File] action to the component and assign the uploaded file to the page variable set in step 1.
 
-<table data-header-hidden><thead><tr><th width="364"></th><th></th></tr></thead><tbody><tr><td><img src="../../.gitbook/assets/1 (13).png" alt="" data-size="original"></td><td><img src="../../.gitbook/assets/2 (9).png" alt="" data-size="original"></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="364"></th><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/1 (13).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/2 (9).png" alt="" data-size="original"></td></tr></tbody></table>
 
 
 ### Notes
@@ -41,7 +42,7 @@ Click to trigger the file that is saved in the database to the folder of the com
 **1. Identify a data source to request files/images**
 If you want to download a file by clicking on the download button, you will need to identify a data source on the page that requests access to a data table containing the file data. Set the limit to one record and adjust the filter conditions to meet your specific business needs.
 
-![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZlNTA4YTAyYTVkOTFiMTBjNDM0MGQzODk1ODNmYjBfRlhuVUpNVlF5NXRUS29iMFZ0NDI0NVJ5T1Q2T0tVUEtfVG9rZW46UktQUGJqWHdTb3Fxc1N4a2x5MWN3YWRhbnhkXzE3MTUzMTM4NzU6MTcxNTMxNzQ3NV9WNA) ![](<../../.gitbook/assets/image (7) (1).png>)
+![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZlNTA4YTAyYTVkOTFiMTBjNDM0MGQzODk1ODNmYjBfRlhuVUpNVlF5NXRUS29iMFZ0NDI0NVJ5T1Q2T0tVUEtfVG9rZW46UktQUGJqWHdTb3Fxc1N4a2x5MWN3YWRhbnhkXzE3MTUzMTM4NzU6MTcxNTMxNzQ3NV9WNA) ![](<../.gitbook/assets/image (7) (1).png>)
 
 **2. Add action**
 - Add the "download file" action to the component(usually a button), then bind the file data through in-page data.
