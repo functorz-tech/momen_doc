@@ -4,126 +4,59 @@ description: >-
   data, writing JS code blocks, calling APIs, and conditional branching.
 ---
 
-# Actionflow Fundamentals
+# Actionflow
 
 ## Introduction
 
-Building in Momen is like building Legos. However, there are always some functions that can not be built by the existing components and actions in Momen.
+Actionflow is a tool provided by Momen for customizaing stream-based operations and configuring various trigger mechanisms. It allows users to create custom workflows, similar to other workflow automation tools. Each actionflow is assigned a unique ID, which can be used to search and view its execution logs.
 
-For example:
+A complete actionflow consists of two main parts: Triggers and Action Nodes. Momen supports several action node types, including database operations, AI execution, API calls, permission management, and custom code execution. Triggers can be configured through page click events, database changes, scheduled timers, or webhooks.
 
-* Randomly draw a question from the question bank that the current user has not done;
-* Change the order status to "transaction expired" every minute if it has been "pending" for more than 15 minutes
-* Encapsulate the commands to operate the database into API for external calls, such as operating the database after payment.
+- Free project can create one actionflow.
+- Basic and above project can create unlimited actionflows.
 
-These functions need to rely on Momen's actionflow to complete. We can understand Momen's actionflow as a function or API. Given an input, it executes the corresponding actions, and returns an output. The logic of execution is fully customizable based on your needs.
+## Use case   
+Actionflows are ideal for executing complex data processing and business logic, such as:   
+- E-commerce Loyalty Program: Automatically upgrade users to "Gold Member" when their total purchase exceeds $10,000.
+- Order Reminders: Send notifications every 24 hours for unpaid orders.
+- Payment Processing: After receiving a successful payment notification, execute post-payment processes like updating inventory and notifying the user.
 
+## How to Use   
+**1. Create & Configure Action Nodes:** Set up actionflow nodes according to your business logic, including branching for conditional processing.   
+**2. Configure Triggers** Select the appropriate trigger type to initiate the actionflow.   
+**3. Set Permissions:** Define which user roles can execute the actionflow.   
+**4. Invoke Actionflow:** Trigger it via frontend interactions or configured triggers.
 
+## Actionflow Configuration guide
 
-## Concept of ActionFlow Versions
-* ActionFlow won't be saved automatically. Make sure to click Save in the upper right corner. Otherwise, the latest Action Flow will not be executed.
-* After each save, the version will be updated.
-* Callbacks and timed triggers execute the latest version of the deployed backend.
+### 1. Creating an Actionflow
+Click "Create" to add a new actionflow. Configure it by adding and arranging action nodes, including branching for conditional logic. You can define input parameters to accept external data and output parameters to return the results of the actionflow.
+- Execution Mode: Actionflows can be executed in synchronous or asynchronous mode. For AI-related flows, asynchronous execution is required.
+- Flow Variables: Declare variables within the flow to store intermediate results, especially for use in conditional branches.
 
+### 2. Action Nodes
+Add action nodes by clicking the "+" icon. Momen supports the following types:
+- Database Operations: Query, insert, update, or delete records in a specific table.
+- Third-Party API Calls: Execute pre-configured APIs, and bind their responses to output parameters for further use.
+- AI Execution: Run an AI model configured in Momen’s AI module.
+- Set Global Variable: Assign values to global variables.
+- Permission Management: Grant or revoke user roles.
+- Conditional Branch: Add decision-making logic, where branches are evaluated from left to right. Use variables to store and output branch results.
+- Custom Code Execution: Execute custom code blocks (refer to the specific documentation for more details).
 
-<figure><img src="../../.gitbook/assets/20240223-170813.jpeg" alt=""><figcaption></figcaption></figure>
+### 3. Triggers
+Momen supports four types of triggers:
+- Scheduled Trigger: Set up periodic execution using a timer. For complex schedules, use Cron expressions.
+- [Database Change Trigger](actions/actionflow/db-trigger.md): Automatically trigger the actionflow when specific changes occur in a table.
+- Webhook Trigger: Use webhooks to trigger the flow. This option is suitable for users with coding skills and requires configuring the callback request body format.
+- Frontend Trigger: Add a "Request – Actionflow" action to a component or page interaction, allowing users to trigger the flow by clicking a button or onPageLoad.
 
-Example:
+## Log Management
+Actionflow execution logs can be viewed in "Project Details > Run Logs." Use the unique actionflow ID to search specific logs for troubleshooting.
 
-* The version executed in your app is version 1.
-* The version executed by callbacks and timed triggers is version 2.
-
-<figure><img src="../../.gitbook/assets/20240223-170743.jpeg" alt=""><figcaption></figcaption></figure>
-
-## Access Actionflow 
-
-Click on the \[Action Flow] button in the upper left corner of the editor to enter the action flow creation page.
-
-<figure><img src="../../.gitbook/assets/20240223-171333.png" alt=""><figcaption></figcaption></figure>
-
-## Creating an ActionFlow
-
-Click the \[Add] button on the left side of the action flow creation page to create an action flow.
-
-<figure><img src="../../.gitbook/assets/20240223-171338.png" alt=""><figcaption></figcaption></figure>
-
-## Configuring an ActionFlow
-
-A complete action flow configuration consists of three parts: input parameters, action operations/branches, and output parameters.
-
-### 1. Configuring Input Parameters
-
-If your actionflow is to further process the data entered by the user or generated by the front-end page logic, you need to click the \[Input] button at the top of the action flow to add input parameters. It is recommended to rename the parameters and select the appropriate data type.
-
-<figure><img src="../../.gitbook/assets/20240223-172158.png" alt=""><figcaption></figcaption></figure>
-
-### 2. Concepts of Nodes, Operations and Branches
-
-**Nodes**
-
-Each \[+] sign in the actionflow represents a \[node], in each node you can use the result data generated by the parent node.
-
-For example: you can directly refer to actionflow data as the filter condition to update the same data.&#x20;
-
-<figure><img src="../../.gitbook/assets/20240223-172259.jpeg" alt=""><figcaption></figcaption></figure>
-
-**Operations**
-
-Actions to be performed in the actionflow. The order of execution of operations is from top to bottom.
-
-**Branches**
-
-When executing different operations under different conditions, you can add branches to set conditions, the evaluation order of the conditions is from left to right, and there are at least two branches when adding.\
-
-
-## Adding Actions
-
-In order to realize various business requirements, the following seven operations can be configured in the action flow.
-
-<figure><img src="../../.gitbook/assets/20240223-172340.png" alt=""><figcaption></figcaption></figure>
-
-\
-**Query Data**
-
-After adding this operation, when running the actionflow, you can configure filtering conditions, making distinct, sorting, and directly read one or more pieces of data in the data table, and the acquired data can be used in other operations or branches of the subsequent action flow.
-
-\
-**Delete Data**
-
-After adding this action, data that meets the filter criteria will be deleted when the actionflow is run.
-
-\
-**Update Data**
-
-When this action is added, the act of updating the data in a table that meets the filter criteria is performed when the action flow is run.
-
-\
-**Insert Data**
-
-This action will add one piece of data to a table, and when you turn on the batch operation, then you can add multiple items.&#x20;
-
-\
-**Custom Code**
-
-JS code can be edited in the actionflow to implement more complex logic.
-
-\
-**Third-party APIs**
-
-You can call APIs to get/modify external data in the actionflow.
-
-\
-**Configuration Output**
-
-If you need to take the result of actionflow processing to the front-end page, you need to configure the output parameter.
-
-
-## Note
-
-* Actionflow does not use strict type checking; therefore, assigning a \[text] variable to a \[integer] variable is not forbidden.
-* Before deleting a node, first delete the output of the node that will be used later.
-
-## About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
-
+## Note  
+- Automation execution requires purchasing additional execution numbers. Momen provides a limited number of free executions depending on the project version. Once exhausted, users need to purchase more numbers of invocation via "Personal Center > Project > Management > Automation Execution Credits."
+- Ensure that all action nodes are properly configured, saved, and published before setting up triggers.
+- Actionflows do not enforce strict type checking, so variables of different types can be assigned without errors (e.g., assigning a string to an integer variable).
+- Before deleting a node, ensure that any downstream node using its output is updated or removed.
+- Formula support in actionflows is currently limited.
