@@ -1,9 +1,6 @@
 ---
 description: >-
   Understand the full lifecycle of the Momen application development platform, including product requirement analysis, design, development, deployment, and operation. As a developer, gradually learn how to plan your application using mind maps and user journeys to increase the success rate of development.
-
-keywords: >-
-  Momen, application development, product requirement analysis, full lifecycle, mind maps, user journeys, MVP, product design, data model
 ---
 
 # Basic Application Development Process

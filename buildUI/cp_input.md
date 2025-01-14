@@ -1,19 +1,6 @@
 ---
 description: >-
   Introduction and usage of all input type components
-keywords:
-  - Number Input
-  - Date Input
-  - Data Input
-  - Input Box
-  - Password Input
-  - Multi-line Display
-  - Data Type
-  - Default Value
-  - Input Box Interaction
-  - Auto Focus
-  - Input Box Example
-  - Search Input Box
 ---
 
 # Components - Input

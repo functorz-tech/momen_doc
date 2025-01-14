@@ -1,9 +1,6 @@
 ---
 description: >-  
 Introduction and usage of some special components in Momen
-
-keywords: >-
-Progress Bar, Divider Line, Animation Component, Camera View, WeChat Ads, Map View, WeChat Follow Public Account, Calendar Component, Table Component
 --- 
 
 # Components - Others

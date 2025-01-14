@@ -2,9 +2,6 @@
 description: >-
   This doc will help you understand Momen's basic functions and get your started
   quickly.
-
-keywords: >-
-  Momen, Help Documentation, Quick Start, Application Building, Editor Operations, Building Elements, Extension Features, Project Building, Learning Guide
 ---
 
 # Welcome to Momen

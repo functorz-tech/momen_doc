@@ -1,9 +1,6 @@
 ---
 description: >-
   learn how to add and config pages on Momen
-
-keywords: >-
-  Momen, application development, pages
 ---
 
 
