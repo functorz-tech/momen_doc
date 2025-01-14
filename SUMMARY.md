@@ -28,35 +28,15 @@
 
 ## Data
 
-* [Data Retrieval and Display](data/data-overview/data-retrieval-and-display.md)
-* [Data Input and Modification](data/data-overview/data-input-and-modification.md)
-* [Data Model](data/datamodel.md)
-  * [E-commerce](data/datamodelCases/e-commerce.md)
-  * [Appointment Scheduling](data/datamodelCases/appointment-scheduling.md)
-  * [Blog](data/datamodelCases/blog.md)
-  * [Community](data/datamodelCases/community.md)
-  * [Digital Content Marketplace](data/datamodelCases/marketplace.md)
-* [Database](data/database.md)
+* [Overview](data/over_view.md)
+* [Data Source](data/data_source.md)
+* [Data Model and Database](data/data_model.md)
+* [API](data/api.md)
+* [Data Usage](data/data_usage.md)
 * [Variable](data/variable.md)
-* [Current User Data](data/current-user-data.md)
-* [Logical Data｜ Is Logged In](data/logical-data-is-logged-in.md)
-* [Constant Data | Time Data](data/constant-data-or-time-data.md)
-* [Aggregate Data (Statistics)](data/aggregate-data-statistics.md)
-* [Link Data](data/link-data.md)
-* [Input Box Data](data/input-box-data.md)
-* [Conditional Data](data/conditional-data/README.md)
-  * [Conditional Data buildUI](data/conditional-data/conditional-data-buildUI.md)
-* [Data Formatting](data/data-formatting.md)
-* [Arrays and Array Processing](data/arrays-and-array-processing.md)
-* [Formula Data](data/formula-data.md)
-* [In Component Data](data/in-component-data.md)
-* [Remote Data](data/remote-data.md)
-* [Filtering Condition buildUI](data/filtering-condition-design.md)
-* [API](data/fromAPI.md)
-  * [Google Analytics](actions/api-configuration/integrations/google-analytics.md)
-  * [Google Sheet](actions/api-configuration/integrations/google-sheet.md)
-  * [Airtable](actions/api-configuration/integrations/airtable.md)
-  * [Notion](actions/api-configuration/integrations/notion.md)
+* [Parameter](data/parameter.md)
+* [Formula and Conditional Data](data/formula.md)
+
 
 ## Actions
 

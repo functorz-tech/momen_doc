@@ -1,3 +1,8 @@
+---
+description: >-
+  Learn how to use variables in Momen, including the definition, assignment, and referencing methods of global variables and page variables. Through illustrated  examples, clearly explain the scope and usage scenarios of variables.
+---
+
 In many scenarios, data is not used directly but is stored in a variable to achieve data reuse. Variables are divided into "global variables" and "page variables" based on their scope. The use of variables involves three steps: "definition," "assignment," and "reference."
 
 ## Global Variables
