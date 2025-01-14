@@ -5,19 +5,16 @@ description: >-
 ---
 
 # Select View
+Select View is a "list-class" component with many of the same features as [List](./list-view.md).
 
-### Introduction
-
-Explore the \[Select View] component in Momen's tutorial. Discover its capabilities for intuitive option selection, styling, and versatile applications in web development.\
-Select View is a "list-class" component with many of the same features as [List](https://docs.momen.app/component/list).
-
-### Usage Scenario
+## Usage Scenario
 
 The Select View component can be used when an 'option' is required, and it provides selected/unselected, single/multiple-choice functions.
 
 <figure><img src="../.gitbook/assets/1280X1280 (6).png" alt="Usage example of select view component."><figcaption></figcaption></figure>
 
-### Select View Design
+## Configuration Instructions
+### Design
 
 Select views can be seen as list with "selection" functionality. You can set the style of the select view itself, and also click on the subview to edit the selected area or unselected area.
 
@@ -36,9 +33,9 @@ There are two sub-views - Selected Area and Unselected Area inside the selected 
 * Unselected view: This view represents the appearance of the option when it is not selected.
 * Selected view: This view defines how the option appears when it is selected.
 
-#### Data
+### Data
 
-The \[Select View] component offers flexibility in data source selection, supporting both local and remote data. You can refer to our "[Data Retrieval and Display](https://functorz.feishu.cn/docx/F9D7dnJ4mondGYxiOQIcZStbnIf)" tutorial for comprehensive details.
+The \[Select View] component offers flexibility in data source selection, supporting both local and remote data. 
 
 **Local Data**
 
@@ -70,7 +67,7 @@ To do this, click on the \[+] sign within the content and locate "Component Data
 
 The purpose of setting the "List Field" after adding remote data to the Select View is to set the default value so that the content and type of the default value correspond to the content and type of the selected field.
 
-#### Output Configuration
+## Output (select view special)
 
 The result of the selection of a view can be bound to a component to display or to insert or update a data table by modifying the table data action. In order to accurately locate its data, it is recommended to rename the Select View component
 
@@ -126,7 +123,7 @@ As depicted in the figure below, click on "Source Data," select one of the requi
 
 <figure><img src="../.gitbook/assets/113.png" alt=""><figcaption></figcaption></figure>
 
-#### Usage Examples
+## Usage Examples
 
 Create Option Effects
 
@@ -142,6 +139,6 @@ Create Option Effects
 
 
 
-#### About Momen
+## About Momen
 
 [Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

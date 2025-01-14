@@ -15,8 +15,8 @@
 
 * [Pages](buildUI/page.md)
 * [Layout](buildUI/layout.md)
-* [Component - Display](buildUI/cp_display.md)
-* [Component - Input](buildUI/cp_input.md)
+* [Component - Display Type](buildUI/cp_display.md)
+* [Component - Input Type](buildUI/cp_input.md)
 * [Component - View](buildUI/view.md)
 * [Component - List](buildUI/lisy-view.md)
 * [Component - Tab View](buildUI/tab-view.md)

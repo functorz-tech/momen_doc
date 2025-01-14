@@ -24,7 +24,7 @@ After selecting a web page, you can configure whether the page is the initial sc
 
 ## Data Section
 
-1. Page Data Source (formerly Remote Data): In Momen, a page is the smallest unit for retrieving data from the server. By adding a page data source, data can be fetched from the database for use by various components within the page. For example, if a text component wants to display a user's nickname from the account table, a new page data source needs to be created to fetch a specific piece of data from the account table, and then bind "Page Data Source" - "Name" to the text component.
+1. Data Source (formerly Remote Data): In Momen, a page is the smallest unit for retrieving data from the server. By adding a page data source, data can be fetched from the database for use by various components within the page. For example, if a text component wants to display a user's nickname from the account table, a new page data source needs to be created to fetch a specific piece of data from the account table, and then bind "Page Data Source" - "Name" to the text component.
 
 2. Page Variables (formerly Page Data): After adding a page variable, other components can change the value of the variable by setting page variable action. Page variables are generally used for temporarily storing some data on the page.
 
@@ -57,8 +57,8 @@ As shown in the image below ⬇️, you can add a "Scheduled Jobs Management" ac
 
 ## Loading Order of Data and action in Pages
 When a new page is opened, the various contents configured on the page will load in a certain order. Understanding this loading order can help us correctly invoke action and use data. The loading order is as follows, **loaded from top to bottom**.
-- If the page is configured with link data, it will first receive the link data passed from other pages.
-- If the page is configured with page data, a page data with an empty value will be created, waiting for assignment.
+- If the page is configured with parameter-query, it will first receive the parameter-query passed from other pages.
+- If the page is configured with page variable, a page variable with an empty value will be created, waiting for assignment.
 - If the page is configured with action for "Page Loaded," the action will start executing.
-- If the page is configured with page data sources, the content of the page data sources will start being read.
+- If the page is configured with data sources, the content of the data sources will start being read.
 - Finally, the local data or default values of each component are displayed.

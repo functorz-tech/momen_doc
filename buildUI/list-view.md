@@ -5,18 +5,18 @@ description: >-
 ---
 
 # List
+## Usage Scenario
+When we need to uniformly display multiple contents with similar styles but different data, we can use the List component. For example, in the common usage scenarios below, a product list includes information such as product image, product name, and product price. The specific content differs, but the layout and other styles are uniform, so we can use the [List] for data display.
 
-### Introduction
-
-In this section, you will learn how to unify and display different data on your frontend by using list component.
-
-### Usage Scenario
-
-The List Component is your go-to solution when you need to unify various data styles for a consistent display. Example: The product list contains product images, product names, prices, and other information in typical use scenarios. The content is different, but the layout and other styles are unified; we can use the \[List] to display data.
+- Product categorization
+- Product display
+- Comment posting
 
 <figure><img src="../.gitbook/assets/1 (57).png" alt="List Usage Examples"><figcaption></figcaption></figure>
 
-### List Design
+## Configuration Instructions
+You can put some componets in the sub-containers,and bind data source in Data section.
+### Design
 
 #### Scroll Direction
 
@@ -26,7 +26,7 @@ Setting the scrolling direction when sliding the list.
 
 <figure><img src="../.gitbook/assets/list/list1.gif" alt=""><figcaption></figcaption></figure>
 
-#### Columns
+#### Number of Rows/Columns
 
 The number of rows or columns of the list.
 
@@ -69,17 +69,13 @@ Refer to Layout.
 
 #### Sub-containers
 
-After dragging the list component into the page, you can see that the first line of the list component has a guide \[Add Component Here], which is the sub-container view of the list, and you can configure the size, layout and style of the sub-container separately
+After dragging the list component into the page, you can see that the first line of the list component has a guide [Add Component Here], which is the sub-container view of the list, and you can configure the size, layout and style of the sub-container separately
 
 <figure><img src="../.gitbook/assets/list/list6.gif" alt=""><figcaption></figcaption></figure>
 
-### List Data
+### Data
 
-Local and remote data have already been covered in Data Retrieval and Display, and lists generally request \[Remote Data].
-
-#### How to Bind Remote Data to a List
-
-After selecting the List, click on the content, choose \[Remote] as the data source, and select the data table created in your data model.
+After selecting the List, click on the content, choose [Remote] as the data source, and select the data table created in your data model or API you configed.
 
 <figure><img src="../.gitbook/assets/list/list7.gif" alt=""><figcaption></figcaption></figure>
 
@@ -87,13 +83,13 @@ After selecting the List, click on the content, choose \[Remote] as the data sou
 
 This limits the number of data requested and displayed in the database at one time.
 
-The list generally reads remote data, and there is often more than one piece of data. If it is displayed after all the data is loaded at one time, it will obviously cause a bad user experience for users. So use the limit function to request a certain amount of data, and each time it slides down to the last one, more data is obtained by \[load more].
+The list generally reads remote data, and there is often more than one piece of data. If it is displayed after all the data is loaded at one time, it will obviously cause a bad user experience for users. So use the limit function to request a certain amount of data, and each time it slides down to the last one, more data is obtained by [load more].
 
 #### Load More
 
 If you've set a limit to the data requests, the list will load more once the user swiped down.
 
-#### Data Collation
+#### Data Filtering
 
 The data will be displayed based on corresponding rules.
 
@@ -117,22 +113,23 @@ Action triggered when the state of the request changes.
 
 #### On Success
 
-The action added here will be triggered after the \[List] data is read successfully.
+The action added here will be triggered after the [List] data is read successfully.
 
-### Bind Data for Each Item in the List
-
-After completing the previous step, double-click to enter the list component, drag other components that need to display the content into the "sub-view", such as the text component. Click the text component, click the \[+] sign in its content, select "Component Data" to find the remote data bound to this list, and then select the item, and select the specific data field to be bound
-
-<figure><img src="../.gitbook/assets/list/list8.gif" alt=""><figcaption></figcaption></figure>
-
-### List Action
+### Action
 
 On Scroll: COnfigure the actions when the list is scrolled.
 
 <figure><img src="../.gitbook/assets/list/list9.jpeg" alt=""><figcaption></figcaption></figure>
 
 
+## How to Bind Data to Each Item in the List
 
-### About Momen
+After completing the previous step, double-click to enter the list component, drag other components that need to display the content into the "sub-view", such as the text component.    
+Click the text component, click the [+] sign in its content, select "Component Data" to find the remote data bound to this list, and then select the item, and select the specific data field to be bound.
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+<figure><img src="../.gitbook/assets/list/list8.gif" alt=""><figcaption></figcaption></figure>
+
+
+## About Momen
+
+[Momen](https://momen.app/?channel=momen-docs) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
