@@ -1,18 +1,19 @@
-```description
-The Momen platform provides developers with a one-stop solution. Through this tutorial, you will gain an in-depth understanding of how to efficiently perform data interactions and build powerful applications.
-```
+---
+description: >-
+  Momen provides developers with a one-stop solution. Through this tutorial, you will gain an in-depth understanding of how to efficiently perform data interactions and build powerful applications.
+---
 
 # Data Sources
 
-Data is the core of applications. To meet the data needs of different scenarios, Momen applications support multiple data source integrations, including databases, external APIs, and environmental data.
+Data is the foundation of all applications. To effectively address diverse data requirements across various scenarios, Momen applications seamlessly integrate with multiple data sources, encompassing databases, external APIs, and environmental data.
 
 ## Data Model and Database
 
-Momen provides a powerful relational database that is flexible and offers excellent performance. See details: [Database](https://docs.momen.com/data/datamodel.html)
+Momen provides a powerful relational database that is flexible and offers excellent performance. See details: [Data Model and Database](https://docs.momen.com/data/data_model.html)
 
 ## API
 
-When external data sources are needed, APIs are typically used. See details: [API](https://docs.momen.com/data/api.html)
+External data sources are typically accessed via APIs. See details: [API](https://docs.momen.com/data/api.html)
 
 ## Environmental Data
 
@@ -32,6 +33,6 @@ Action Result Data: Many action operations generate result data, which can be re
 
 List Item Data: When a List View or Select View is bound to a data source, each list item has its corresponding data. This data can be used in various operations of the list item, such as displaying content, responding to user interactions, etc.
 
-## Components
+## Input Components
 
 Momen provides various input components that can be used as data sources, including: Input, Data Selector, Image Picker, and Select View, etc. Please refer to the documentation of the relevant components for details.

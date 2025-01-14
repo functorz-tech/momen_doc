@@ -5,7 +5,8 @@ description: >-
 
 # Data Overview
 
-The essence of an application is the management and processing of data; data is the core asset of an application. Momen provides flexible and powerful data management and utilization capabilities, with the framework as follows:
+Data is the core asset of an application, which is essentially about managing and processing it. Momen provides flexible and powerful data management and utilization capabilities, with the framework as follows:
+
 <img src="../.gitbook/assets/data/data_overview.png"/>
 
 ## Data Source
@@ -14,12 +15,12 @@ Momen supports a variety of data sources, including built-in databases, APIs, et
 
 ## Data Usage
 
-Once the data source is determined, it can be used by components and behaviors. For more details, see: [Data Usage](https://docs.momen.com/data/data_usage.html). It can also be used for formula and conditional operations. For more details, see: [Data Operations: Conditional Judgments and Formulas](https://docs.momen.com/data/formula.html).
+Once the data source is determined, it can be used by components and actions. For more details, see: [Data Usage](https://docs.momen.com/data/data_usage.html). It can also be used for formula and conditions. For more details, see: [Formula and Conditions](https://docs.momen.com/data/formula.html).
 
 ## Referencing via Variables
 
-To achieve data reuse, data can be stored in variables. For more details, see: [Variables](https://docs.momen.com/data/variable.html).
+To achieve data reuse, data can be stored in variables. For more details, see: [Variable](https://docs.momen.com/data/variable.html).
 
 ## Passing via Parameters
 
-Data transmission (e.g., between pages) can be achieved using parameters. For more details, see: [Parameters](https://docs.momen.com/data/parameter.html).
+Data transmission (e.g., between pages) can be achieved using parameters. For more details, see: [Parameter](https://docs.momen.com/data/parameter.html).

@@ -8,11 +8,11 @@ An API is a bridge between different applications; when an application needs to 
 
 Before starting configuration in Momen, ensure you understand the basic components of an API: Method, Domain, Path, Headers, Query Parameters, and Body. For detailed information about APIs, please refer to online resources.
 
-Next, we will use the example of "retrieving data from Mingdao Cloud" to introduce the complete configuration process.
+Next, we will use the example of "retrieving data from Airtable" to introduce the complete configuration process.
 
 ## Add API
 
-Open the "API" at the top left of the Editor and "Add Configuration."
+Open the "API" at the top left of the Editor and "Add."
 
 <img src="../.gitbook/assets/data/data_api0.png">
 
@@ -36,7 +36,7 @@ In this step, you need to determine the format of the API request and response. 
 
 * Automatically parse the format by successfully sending a request (recommended)
 
-* Manually configure all content by the developer
+* Manually configure all content by yourself
 
 #### Automatically Parse the Format
 
@@ -62,7 +62,7 @@ Once everything is confirmed, you will have the request and response format of t
 
 ## Use API
 
-* Use as a Data Source
+**Use as a Data Source**
 
 In the data source of List, Select View, and Page, you can select a data source type API.
 
@@ -72,7 +72,7 @@ During configuration, you need to specify which field in the API response is of 
 
 <img src="../.gitbook/assets/data/data_api8.png">
 
-* Use as an Action
+**Use as an Action** 
 
 If you have configured a "Mutation" type API, you can find it under the "Request" category in the action list under "API."
 

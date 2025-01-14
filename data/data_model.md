@@ -1,3 +1,8 @@
+---
+description: >-
+ With Momen's built-in relational database, building structured data models is a breeze. It offers a comprehensive suite of features, such as table creation, field customization, relationship management, constraint enforcement, vectorized storage, sorting, and granular permission controls for optimal data security.
+---
+
 # Data Models and Databases
 
 Momen provides a powerful relational database that allows you to create well-structured data models with flexible relations between tables.
@@ -21,11 +26,11 @@ Tables are the core of the data model, where structured data is stored. Managing
 
 Click "Add" and define the table's properties:
 
-* Table Name: Cannot use names like "log," "column," "index," etc.
+* Name: Cannot use names like "log," "column," "index," etc.
 
 * Description: Description of the table, optional
 
-* Open permissions to all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query the table. For details, see: Permission Management
+* Turn on permissions for all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
 > For example, create a "post" table
 
@@ -33,27 +38,27 @@ Click "Add" and define the table's properties:
 
 ### 2. Add Columns
 
-Each table, when created, has three default columns: id, creation time, and update time. These cannot be modified or deleted, and the data is written by the system. The id is a unique identifier for each row of data, acting as a unique "ID card" that does not repeat or change. It is used to locate a specific piece of data and to establish relations between tables.
+Each table, when created, has three default columns: id, created_at, and updated_at. These cannot be modified or deleted, and the data is written by the system. The id is a unique identifier for each row of data, acting as a unique "ID card" that does not repeat or change. It is used to locate a specific record of data and to establish relations between tables.
 
 When adding columns, confirm the following properties:
 
 * Column Name: Cannot use words like "column"
 
-* Type: Supports common types such as Text, integer, Image, etc. Momen has a strict type validation system. For example, "date," "time," and "zoned datetime" are all time-related types but cannot be mixed; as the data table is the foundation of the Project, it will affect UI, behavior, etc., so the type needs to be carefully determined.
+* Type: Supports common types such as Text, integer, Image, etc. Momen has a strict type validation system. For example, "Date," "Zoned time," and "Zoned datetime" are all time-related types but cannot be mixed; as the data table is the foundation of the Project, it will affect UI, actions, etc., so the type needs to be carefully determined.
 
 * Required: Indicates whether the data can be empty when adding or modifying data. Generally turned off.
 
 * Unique: Indicates whether this column's data can be repeated, e.g., the username in an Account table cannot be repeated.
 
-* Open permissions to all roles: Permission management, when enabled, all roles have the permission to add, delete, modify, and query the column. For details, see: Permission Management
+* Turn on permissions for all roles: Permission management, when enabled, all roles have the permission to add, delete, modify, and query the column. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
-> In the post table, add Title (Text), Content (Text), Cover (Image), and Publish Time (Zoned datetime) to store the blog's title, content, cover, and publish time.
+> In the post table, add title (Text), content (Text), cover (Image), and show_at (Zoned datetime).
 
 <img src="../.gitbook/assets/data/data_data_model2.png" width="100%"/>
 
 ### 3. Add Relations
 
-Tables can establish management through id. As shown below, after the Account table establishes a relation with the post table, a new column is added to the post table to store the id of the Account table. From the data in the table, it can be seen that both blog posts belong to "Zhang San."
+Tables can establish relations through id. As shown below, after the Account table establishes a relation with the post table, a new column is added to the post table to store the id of the Account. It can be seen that both blog posts belong to "Roy"
 
 <img src="../.gitbook/assets/data/data_data_model3.png" width="100%"/>
 
@@ -69,21 +74,21 @@ When establishing relations, consider two main aspects:
 
 - One-to-one association: A single piece of data in Table A can only be associated with **one** piece of data in Table B.
 
-In the example below, a user can have multiple blogs (one-to-many) but only one wallet (one-to-one).
+In the example below, a user can have multiple posts (One-to-many) but only one wallet (One-to-one).
 
 <img src="../.gitbook/assets/data/data_data_model4.png" width="100%"/>
 
-When establishing a relation in Momen, add the relation in the starting table (the Account table in this example), and then determine the following properties:
+ Add the relation in the starting table (the Account table in this example), and then determine the following properties:
 
 * Target Table: The table to be associated with (the post in this example)
 
 * Relation Type: One-to-one or one-to-many
 
-* Relation Name (in the target table): The name of the new column in the associated table (e.g., "User" in this example)
+* Relation Name (in target table): The name of the new column in the associated table (e.g., "Author" in this example)
 
-* Relation Name (in the current table): The name of the new column in the starting table (e.g., "Blog" in this example)
+* Relation Name (in current table): The name of the new column in the starting table (e.g., "Post" in this example)
 
-* Open permissions to all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query the table. For details, see: [Permission Management](https://docs.functorz.com/deployment_scale/permissions.html)
+* Turn on permissions for all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query the table. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
 <img src="../.gitbook/assets/data/data_data_model5.png" width="100%"/>
 <img src="../.gitbook/assets/data/data_data_model6.png" width="100%"/>
@@ -100,11 +105,11 @@ As mentioned earlier, id cannot be repeated, so each table will have a default u
 
 Developers can add their own constraints, and when adding, confirm:
 
-1. Constraint Name: Cannot be repeated, and cannot use Chinese or uppercase letters
+1. Constraint Name: Cannot be repeated and cannot use uppercase letters
 
 2. Set of Columns: You can select one or more columns. Selecting one column means the data in this column cannot be repeated; selecting multiple columns means the combination of these columns' data cannot be repeated. **To delete a constraint, you need to remove one of the columns from the set.**
 
-In the image below, a unique constraint is established for the combination of "Title" and "User," indicating that the same user cannot use a duplicate title.
+In the image below, a unique constraint is established for the combination of "title" and "author," indicating that the same author cannot use a duplicate title.
 
 <img src="../.gitbook/assets/data/data_data_model9.png" width="100%"/>
 
@@ -144,7 +149,7 @@ All modifications to tables and columns will be synchronized online after updati
 
 ## Permission Management
 
-Data is the most important asset of a Project, and permission settings can specify different users' access permissions to data, preventing unauthorized access and data leakage, thereby protecting data assets.
+Data is the most important asset of an application, and permission settings can specify different users' access permissions to data, preventing unauthorized access and data leakage, thereby protecting data assets.
 
 Momen provides a permission management system that combines role-based access control (RBAC) and attribute-based access control (ABAC). While ensuring data security, it also allows for flexible and precise permission control. For details.
 
@@ -152,7 +157,7 @@ Momen provides a permission management system that combines role-based access co
 
 After completing the above operations, the data table can be used as a Data source for other parts:
 * As a List Data source
-* As a Page Data source
+* As a Page Data source, see: [Data Usage](https://docs.momen.app/data/data_usage)
 
 ## Data Import
 Click on the data model at the top left of the Editor to enter the database, and click the import button

@@ -1,9 +1,7 @@
-```description
-Familiarize yourself with the use of formulas in Momen, mastering various data manipulation techniques such as mathematical operations, data counting, data format conversion, text processing, time processing, and geographical calculations to easily achieve complex data processing.
-```
-```keywords
-Momen, data processing, mathematical operations, data counting, format conversion, text processing, time processing, geographical calculations, JSON processing, examples
-```
+---
+description: >-
+  Familiarize yourself with the use of formulas in Momen, mastering various data manipulation techniques such as mathematical operations, data counting, data format conversion, text processing, time processing, and geographical calculations to easily achieve complex data processing.
+---
 
 # Formulas and Conditional Judgments
 In addition to being directly used by actions and components, data is also used for formula calculations and conditional judgments.
@@ -80,7 +78,7 @@ Formulas are functions used to calculate data. Momen provides various formulas t
 |---|---|---|
 | JSON_EXTRACT_PATH | Retrieves data from JSON. | Input JSON: {"data": {"foo": "bar"}} Path: data.foo Output: "bar" | 
 
-# Conditional Judgments
+# Conditions
 
 Logical operations on data are used in Conditional View, Conditional data, and conditional branches of Actionflow. For detailed usage, please refer to the relevant documentation.
 

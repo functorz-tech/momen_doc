@@ -47,7 +47,7 @@
 * [API](data/api.md)
 * [Data Usage](data/data_usage.md)
 * [Variable](data/variable.md)
-* [Parameter](data/paarmeter.md)
+* [Parameter](data/parameter.md)
 * [Formula and Conditional Data](data/formula.md)
 
 
