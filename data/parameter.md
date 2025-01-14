@@ -1,7 +1,6 @@
 ---
 description: >-
   Learn how to use parameters in Momen, including the differences and application scenarios of path parameters and query parameters, and how to configure input parameters in actions to achieve data transfer between different components and pages.
-```
 ---
 
 # Parameters
@@ -13,17 +12,17 @@ Both path parameters and query parameters are used for data transfer through the
 
 For example, we access a blog post on the Momen official website through the following URL:
 
-https://www.functorz.com/blog_article/blog/thousand-flowers-zion?utm_campain=xxxxxx
+https://momen.app/article/content/how-to-build-an-ai-needs-analysis-bot?utm_source=google
 
 This can be broken down into different parts:
 
-* https://www.functorz.com: The protocol and domain of the website
+* https://momen.app: The protocol and domain of the website
 
-* /blog_article: The path of the blog page
+* /article: The path of the blog page
 
-* /blog/zion-feature-zion-ai: **Path parameter,** in this example, the value of the path parameter 'blog' is 'zion-feature-zion-ai'
+* /content/how-to-build-an-ai-needs-analysis-bot: **Path parameter,** in this example, the value of the path parameter 'content' is 'how-to-build-an-ai-needs-analysis-bot'
 
-* ?utm_campain=xxxxxx: **Query parameter,** in this example, the value of the query parameter 'utm_campain' is 'xxxxxxx'
+* ?utm_source=google **Query parameter,** in this example, the value of the query parameter 'utm_source' is 'google'
 
 As can be seen, **path parameters directly change the URL of the page, while query parameters only change the parameters of the webpage.**
 
@@ -35,7 +34,7 @@ Query parameters are generally used for parameter transfer.
 
 * Path Parameters
 
-Pages with SEO requirements use path parameters (see: [SEO](https://functorz.feishu.cn/wiki/AV9GwpmDGidh7Nk6KTScEulWnEg)). In the example above, if the value of 'blog' is passed using query parameters, crawlers will recognize all blog posts as a single page, making them unsearchable in search engines and reducing the website's SEO performance. However, with path parameters, each article is recognized as a separate page by crawlers, making them searchable.
+Pages with SEO requirements use path parameters (see: [SEO](https://docs.momen.app/release-and-growth/seo)). In the example above, if the value of 'blog' is passed using query parameters, crawlers will recognize all blog posts as a single page, making them unsearchable in search engines and reducing the website's SEO performance. However, with path parameters, each article is recognized as a separate page by crawlers, making them searchable.
 
 ## Specific Configuration
 
@@ -47,19 +46,19 @@ Both types of parameters are added to the page receiving the data. For example, 
 * Define the path parameter 'blog' as a filter condition for remote data to obtain blog articles. This parameter is required.
 * Define multiple query parameters to pass user information. These parameters can be empty.
 
-<img src="../assets/images/data_param0.png">
+<img src="../.gitbook/assets/data/data_parameter0.png">
 
 ### Assignment
 
 Assign values to them in the action that navigates to the page. For example, on the search results page, in the action that navigates to the blog page, assign the searched blog id to the path parameter 'blog'.
 
-<img src="../assets/images/data_param1.png">
+<img src="../.gitbook/assets/data/data_parameter1.png">
 
 ### Reference
 
 Path parameters and query parameters on the page can be referenced within the current page, usually for configuring filter conditions. For example, on the blog page, use the path parameter 'blog' as a filter to obtain blog articles in remote data.
 
-<img src="../assets/images/data_param2.png">
+<img src="../.gitbook/assets/data/data_parameter2.png">
 
 # Action Input: Data Transfer in Actions
 
@@ -69,9 +68,8 @@ Multiple actions require input parameter configuration, such as Actionflow, AI a
 
 2. Reference: Can be referenced within the action configuration
 
-<img src="../assets/images/data_param3.png">
+<img src="../.gitbook/assets/data/data_parameter3.png">
 
 * Assignment: Assign values when calling the action
 
-<img src="../assets/images/data_param4.png" width="30%">
-```
+<img src="../.gitbook/assets/data/data_parameter4.png" width="30%">
