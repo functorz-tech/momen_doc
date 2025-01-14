@@ -1,9 +1,8 @@
-```description
-Learn how to use parameters in Momen, including the differences and application scenarios of path parameters and query parameters, and how to configure input parameters in actions to achieve data transfer between different components and pages.
+---
+description: >-
+  Learn how to use parameters in Momen, including the differences and application scenarios of path parameters and query parameters, and how to configure input parameters in actions to achieve data transfer between different components and pages.
 ```
-```keywords
-Parameter, Query Parameter, Path Parameter, URL Parameter, URL Path, Page Navigation, Data Transfer
-```
+---
 
 # Parameters
 An application consists of different parts, which involves data transfer between these parts. For example, between pages, components, and action flows. In Momen, data transfer is achieved through parameters.
