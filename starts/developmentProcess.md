@@ -75,10 +75,7 @@ You can add and move components by dragging on the left side, and design styles,
 ## Configure interactions to Implement Data CRUD
 After completing the data model design and setup, UI design and setup, it's time for the most important event configuration to implement data CRUD.
 ### Build Interactions and Data Operations in Momen
-Click on each component or page, and check the right configuration bar - behavior to configure corresponding events for them. For a specific list of behaviors, please click [【Actions Configuration】](../actions/readme.md) and [【Data】](../data/readme.md).
+Click on each component or page, and check the right configuration bar - behavior to configure corresponding events for them. For a specific list of behaviors, please click [【Actions Configuration】](../actions/readme.md) and [【Data】](../data/over_view.md).
 
 ## Publish Application and Maintenance
-Once you have completed all application development or setup, you need to launch your application so that it can be seen and used by users. For publishing applications on Momen, please see [【Application Deployment】](../deployment_scale/app_deployment.md).
-
-## 👉To develop your application in Momen, please continue reading [【Build Apps with Momen】](build.md)
-```
+Once you have completed all application development or setup, you need to launch your application so that it can be seen and used by users. For publishing applications on Momen, please see [【Application Deployment】](../deployment/publish.md).
