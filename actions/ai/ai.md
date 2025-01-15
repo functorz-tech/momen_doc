@@ -265,23 +265,15 @@ It means deleting a certain conversation, as well as the related messages, messa
 
 To be updated...;
 
-## AI Invocation Result&#x20;
+## Using the Results of Calling AI
 
-**1. Default Output**&#x20;
+### When Default Output
 
 In order to directly display the results of the AI request, generally add page variable on the page, then add the needed AI request to the button component's click action, complete the AI request's input parameter configuration, and set the page variable when it is successful, assigning it as content from the result data.
 
-<div>
-
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.51.41.png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.52.32.png" alt=""><figcaption></figcaption></figure>
-
-</div>
-
-**2. Custom Output**&#x20;
+### When Custom Output
 
 When configuring AI, if you configured custom output, you will need to set the output fields' types and names (in English, best if it corresponds to the expected output results' meaning), AI will write the corresponding results into the fields by their names.
 
@@ -293,17 +285,11 @@ When invoking this AI, you can select the needed field content from the AI resul
 
 
 
-**3. Streaming Output**&#x20;
+### When Streaming Output
 
 When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data', in the configuration you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component], when AI call is successful, the text component will then display the results in a streaming manner.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.59.55.png" alt=""><figcaption></figcaption></figure>
-
-**4. Request Display Loading Animation**
-
-By default, when initiating an AI request, it will display the following loading animation until the request results return.
-
-<figure><img src="../../.gitbook/assets/Oct-25-2023 19-28-46.gif" alt=""><figcaption></figcaption></figure>
 
 ## AI Point Consumption
 
