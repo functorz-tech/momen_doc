@@ -35,21 +35,21 @@ After inputting your domain, Momen will automatically generate records based on 
 - Add a TXT record as instructed by the platform.
 - Once the TXT record is added, return to the custom domain page on the platform and initiate the domain verification process. If the verification is successful, proceed to the next step.
 
-<img src="../.gitbook/assets/publish/cd-1.png" alt="Add process of Batch Action." width="800">
-<img src="../.gitbook/assets/publish/cd-2.png" alt="Add process of Batch Action." width="800">
+<img src="../.gitbook/assets/publish/cd-1.png" alt="Momen custom domain txt records">
+<img src="../.gitbook/assets/publish/cd-2.png" alt="Momen custom domain txt records">
 
 **3. Certificate and Proxy Verification**
 In this step, you need to configure TXT and CNAME records to validate certificate and point your custom domain to Momen's proxy server. For instance, if you are using Cloudfare, follow these steps:
 - Add TXT and CNAME records as instructed.
 - Return to the setting page and initiate the certificate and proxy verification process. Upon successful verification, proceed to the final step.
 
-<img src="../.gitbook/assets/publish/cd-3.png" alt="Add process of Batch Action." width="800">
-<img src="../.gitbook/assets/publish/cd-4.png" alt="Add process of Batch Action." width="800">
+<img src="../.gitbook/assets/publish/cd-3.png" alt="Momen custom domain Cname records">
+<img src="../.gitbook/assets/publish/cd-4.png" alt="Momen custom domain Cname records">
 
 **4. Web favicon**
 You can upload a custom icon (favicon) to your website. Once uploaded, save the configuration, and your custom domain will be ready.
 
-<img src="../.gitbook/assets/publish/cd-5.png" alt="Add process of Batch Action." width="800">
+<img src="../.gitbook/assets/publish/cd-5.png" alt="Momen custom domain webfavicon">
 
 ### Notes
 **1. Default Custom Domain:** When multiple custom domains exist, you can set one domain as the default. All other domains will automatically redirect to the default domain when accessed.   
