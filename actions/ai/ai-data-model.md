@@ -3,17 +3,14 @@ description: >-
   Learn about Momen AI invocation and data model in this doc.
 ---
 
-# AI Invocation and Data Model
-
-## Momen AI Data Model
-
+# AI Data Model
 Momen AI provides users with four data tables as shown below to record data generated during dialogues with AI. Developers can directly use these four tables for AI application data display and interaction.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 14.48.32.png" alt=""><figcaption></figcaption></figure>
 
 
 
-### 1. Conversation
+## 1. Conversation
 
 Used to record data from a particular session. In the AI configuration interface, debugging, and invoking the \[Start Conversation] below, a new data entry is automatically added to the table.&#x20;
 
@@ -29,7 +26,7 @@ Used to record data from a particular session. In the AI configuration interface
   * FAILED: Various failure states.&#x20;
   * CANCELED: Status after stopping the reply.
 
-### 2. Message
+## 2. Message
 
 Used to record message logs under a particular session, but not the specific message content.&#x20;
 
@@ -50,7 +47,7 @@ In multi-round dialogues, the first message triggered by \[Start Conversation] i
 In \[Continue Conversation], messages are sent as the user, and assistant continues to process all previous messages and returns results.
 {% endhint %}
 
-### 3. Message Content
+## 3. Message Content
 
 Used to record specific message content. Since the content sent to AI might include both images and text, Momen AI saves images and text separately in the message content table and automatically associates them with a particular message.&#x20;
 
@@ -62,7 +59,7 @@ Used to record specific message content. Since the content sent to AI might incl
 * JSON: JSON type, if the message is a JSON, it is saved in this field.
 * Message ID: Integer type, a relational field produced by a one-to-many relationship between the message table and the message content table, used to record which specific message content belongs to which message.
 
-### 4. Tool Usage Record
+## 4. Tool Usage Record
 
 Used to record the usage of tools during AI operation. Since AI might call multiple tools when processing a particular message, Momen AI saves a record of each tool's usage in this table and automatically associates it with a particular message.
 
@@ -79,93 +76,8 @@ Used to record the usage of tools during AI operation. Since AI might call multi
 * Response: JSON type, the result returned when the tool is called.
 * Message ID: Integer type, a relational field produced by a 1(one-to-many) relationship between the tool usage record table and the message table, used to record which message this tool usage record belongs to.
 
-## AI Action Invocation Explanation
-
-Momen AI provides the following five types of AI actions, you can find AI under the action when clicking and then selecting the needed action to configure.
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.29.15.png" alt=""><figcaption></figcaption></figure>
-
-### 1. Start Conversation
-
-\[Start Conversation] is generally used to start the first round of a multi-round AI dialogue or to complete a one-time AI dialogue.&#x20;
-
-It is triggered by clicking, starting a new AI conversation, i.e., adding a new record in the 'Conversation Table', adding a message record with system as the role in the message table, and recording which dialogue this message belongs to; adding content records in the message content table, and recording which message this content belongs to.&#x20;
-
-If a tool is invoked, adding a tool usage record in the tool usage record table, and recording which message this tool usage record belongs to.&#x20;
-
-**Action configuration guide:**&#x20;
-
-In the action of \[Start Conversation], select the AI to be called, if the AI has input parameters, then bind or directly enter the corresponding input parameters.&#x20;
-
-{% hint style="info" %}
-Note: To accurately bind the session ID in \[Continue Conversation], \[Delete Conversation], \[Stop Response], a page data of integer type (BIGINT) is generally added to the page, named conversation\_id, set this page variable when \[Start Conversation] is successful, assigning it as: result data/Start Session/ID.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.34.24.png" alt="Momen AI start conversation"><figcaption></figcaption></figure>
-
-### 2. Continue Conversation
-
-When conducting multi-round dialogues, after \[Start Conversation], if you want to continue sending messages to AI and automatically bring up the context, then use \[Continue Conversation] action. \[Continue Conversation] is triggered by clicking, and after triggering, it automatically adds related data to the message table, message content table, and tool usage record table just like \[Start Conversation].&#x20;
-
-**Action configuration guide**   
-In the action of \[Continue Conversation], select the same AI as the last \[Start Conversation] call, and bind the Conversation ID generated by \[Start Conversation], simultaneously directly enter or bind the message content.
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.45.20.png" alt="Momen AI continue conversation"><figcaption></figcaption></figure>
-
-### 3. Delete Conversation
-
-It means deleting a certain conversation, as well as the related messages, message content, tool call records.
-
-### 4.Stop Response
-
-\[Stop Response] means during the process of \[Start Conversation] or \[Continue Conversation],  you can trigger \[Stop Response] to stop the current conversation. After stopping the reply, you can still use \[Continue Conversation] to continue the just-ended multi-round dialogue.
-
-### 5. Provide Tool Info
-
-To be updated...;
-
-## AI Invocation Result&#x20;
-
-**1. Default Output**&#x20;
-
-In order to directly display the results of the AI request, generally add page variable on the page, then add the needed AI request to the button component's click action, complete the AI request's input parameter configuration, and set the page variable when it is successful, assigning it as content from the result data.
-
-<div>
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.51.41.png" alt=""><figcaption></figcaption></figure>
 
 
+## About Momen
 
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.52.32.png" alt=""><figcaption></figcaption></figure>
-
-</div>
-
-**2. Custom Output**&#x20;
-
-When configuring AI, if you configured custom output, you will need to set the output fields' types and names (in English, best if it corresponds to the expected output results' meaning), AI will write the corresponding results into the fields by their names.
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 14.00.39.png" alt=""><figcaption></figcaption></figure>
-
-When invoking this AI, you can select the needed field content from the AI result data to refer to.
-
-![](<../../.gitbook/assets/截屏2024-07-23 15.57.46.png>)
-
-
-
-**3. Streaming Output**&#x20;
-
-When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data', in the configuration you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component], when AI call is successful, the text component will then display the results in a streaming manner.
-
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 15.59.55.png" alt=""><figcaption></figcaption></figure>
-
-**4. Request Display Loading Animation**
-
-By default, when initiating an AI request, it will display the following loading animation until the request results return.
-
-<figure><img src="../../.gitbook/assets/Oct-25-2023 19-28-46.gif" alt=""><figcaption></figcaption></figure>
-
-
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=momen-docs) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

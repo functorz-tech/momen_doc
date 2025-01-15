@@ -18,7 +18,7 @@
 * [Component - Display Type](buildUI/cp_display.md)
 * [Component - Input Type](buildUI/cp_input.md)
 * [Component - View](buildUI/view.md)
-* [Component - List](buildUI/list-view.md)
+* [Component - List](buildUI/list.md)
 * [Component - Tab View](buildUI/tab-view.md)
 * [Component - Select View](buildUI/select-view.md)
 * [Component - Conditional View](buildUI/conditional-view.md)
@@ -58,9 +58,9 @@
 * [Actionflow](actions/actionflow/basics.md)
   * [Custom Code](actions/actionflow/custom-code.md.md)
   * [Database Trigger](actions/actionflow/db-trigger.md.md)
-* [AI Configuration](actions/ai/ai-config.md)
-  * [AI Invocation and Data Model](actions/ai/ai-data-model.md)
-  * [App Point Consumption](actions/ai/ai-points.md)
+* [AI](actions/ai/ai.md)
+  * [AI Data Model](actions/ai/ai-data-model.md)
+  * [AI Point](actions/ai/ai-point.md)
   * [Vector Data Storage and Sorting](actions/ai/vector-storage.md)
 
 ## Release and Growth
