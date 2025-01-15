@@ -65,14 +65,13 @@
 
 ## Release and Growth
 
-* [Upgrade Plan](deployment/upgradePlan.md)
-* [Upgrade Sever](deployment/upgradeSever.md)
-* [Custom Domain](deployment/customDomain.md)
+* [Publish Application](deployment/publish.md)
+* [Upgrade Project](deployment/upgrade-project.md)
 * [Multiple Clients](deployment/multipleClients.md)
-* [Permission Management](deployment/permissions.md)
+* [Permission](deployment/permissions.md)
 * [Log Service](deployment/logService.md)
 * [SEO](deployment/seo.md)
-* [Hosting files](deployment/hostingFile.md)
+* [Hosting files](deployment/hosting-file.md)
 
 ## My Account and Community
 
