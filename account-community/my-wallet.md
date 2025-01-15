@@ -11,6 +11,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt=""><figcaption></figcaption></figure>
 
+
 ### Benefits
 
 * **Discounts**: Use coupons to reduce the cost of purchases.
@@ -30,11 +31,13 @@ description: >-
 
 <figure><img src="../.gitbook/assets/Frame 48096512.png" alt=""><figcaption></figcaption></figure>
 
+
 **Usage**:&#x20;
 
 The system automatically selects the best available coupon when you enter the order page, if applicable coupons exist.
 
 <figure><img src="../.gitbook/assets/Group 40355.png" alt=""><figcaption></figcaption></figure>
+
 
 **Records**:&#x20;
 
@@ -60,6 +63,7 @@ All coupons used or expired in the last 7 days will be documented.
 * **Records**: Users can view records of purchases made using their credits in the billing section.
 
 <figure><img src="../.gitbook/assets/20241101-121532.gif" alt=""><figcaption></figcaption></figure>
+
 
 **Important Notes**:
 
