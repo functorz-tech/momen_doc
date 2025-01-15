@@ -13,8 +13,6 @@ In this tutorial, you will learn to add and use custom code in Momen.
 
 Have a basic foundation of JavaScript, familiar with the definition of variables, functions, loops, conditional judgment, and other conventional code writing.
 
-## 
-
 ## Adding Custom Code
 
 Currently, the "Custom Code" in Momen's action flow only supports the JavaScript language.
