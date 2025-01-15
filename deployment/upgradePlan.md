@@ -9,7 +9,7 @@ Apart from the Enterprise plan, Momen's pricing is structured around individual 
 
 Momen offers several plans: Free, Basic, Pro, and Enterprise, each designed to meet different business needs. Premium plans offer increased computing resources and advanced functionalities. The Enterprise plan allows the creation of 5 Advanced and 5 Professional projects for free within a team space.
 
-![](<../../../.gitbook/assets/0 (1).png>)
+![](<../.gitbook/assets/0 (1).png>)
 
 ### **Server and Feature Comparison**
 
@@ -86,7 +86,7 @@ Object Storage: Stores images, audio, videos, and files (like Word, PDF, etc.), 
 
 Database Storage: Stores text data in your database.
 
-[RPS (Requests Per Second)](https://docs.momen.app/get-started/account-and-billing/rps): This is a measure of how many requests your application can handle per second. High RPS indicates more server resource consumption. To ensure both stability and a good user experience, RPS is capped.
+[RPS (Requests Per Second)](rps.md): This is a measure of how many requests your application can handle per second. High RPS indicates more server resource consumption. To ensure both stability and a good user experience, RPS is capped.
 
 Data Outflow: Loading images, videos, and other files in the app consumes equivalent data traffic.
 
@@ -98,7 +98,7 @@ As your app's user base and stored resources grow, you may exceed the computing 
 
 If your project runs out of computing resources:
 
-Maxed Out RPS: This could lead to congestion or errors in app access. Refer here for the [solution](https://docs.momen.app/get-started/account-and-billing/rps).
+Maxed Out RPS: This could lead to congestion or errors in app access. Refer here for the [solution](rps.md).
 
 Depleted Data Outflow: The app will fail to load images, videos, and other file data.
 
@@ -112,17 +112,17 @@ Depleted App Tokens: New text cannot be vectorized, and AI functionalities will 
 
 Hover over a project in your personal center and click “Details” to see its computing power details.
 
-![](<../../../.gitbook/assets/1 (1).png>)
+![](<../.gitbook/assets/1 (1).png>)
 
-![](<../../../.gitbook/assets/2 (1) (1).png>)
+![](<../.gitbook/assets/2 (1) (1).png>)
 
 If your project is on free plan and needs more resources, you'll need to upgrade to a premium plan first.
 
-![](<../../../.gitbook/assets/3 (1) (1).png>)
+![](<../.gitbook/assets/3 (1) (1).png>)
 
 For apps already on the premium plan, additional computing power can be purchased by navigating to the "Details" section and selecting “More Resources” or by clicking the “+ Add” button next to the desired resource.
 
-![](<../../../.gitbook/assets/4 (1).png>)
+![](<../.gitbook/assets/4 (1).png>)
 
 ### **About Momen**
 
