@@ -18,7 +18,7 @@
 * [Component - Display Type](buildUI/cp_display.md)
 * [Component - Input Type](buildUI/cp_input.md)
 * [Component - View](buildUI/view.md)
-* [Component - List](buildUI/lisy-view.md)
+* [Component - List](buildUI/list-view.md)
 * [Component - Tab View](buildUI/tab-view.md)
 * [Component - Select View](buildUI/select-view.md)
 * [Component - Conditional View](buildUI/conditional-view.md)
