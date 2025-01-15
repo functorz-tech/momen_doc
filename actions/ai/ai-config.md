@@ -1,6 +1,6 @@
 ---
 description: >-
-  Momen AI: Based on LLMs, leveraging RAG and tool invocation, you can create
+  Based on LLMs, leveraging RAG and tool invocation, you can create
   customized business AI apps and agents.
 ---
 

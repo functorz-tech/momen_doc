@@ -33,6 +33,6 @@ After configuring this action for a component, clicking the component will redir
 ### Note
 If the external link requires parameters, append them to the URL using a "?" followed by key-value pairs. Use "&" to separate multiple parameters.
 
-Link for example: https: //momen.app/ai?utm_term=Momen&utm_medium=TikTok
+For example: https: //momen.app/ai?utm_term=Momen&utm_medium=TikTok
 
 

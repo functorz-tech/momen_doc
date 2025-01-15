@@ -4,7 +4,7 @@ description: >-
   and images to Twitter
 ---
 
-# Share to Twitter
+# Share 
 
 ## Introduction   
 Enable users to share content directly to Twitter by clicking a button. This feature supports sharing links, text, and images sourced either from input fields, image selectors, or fetched via remote data. The shared content will appear as a tweet.

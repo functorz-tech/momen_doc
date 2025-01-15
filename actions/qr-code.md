@@ -1,6 +1,6 @@
 ---
 description: >-
-  Generate QR Code: After clicking on the component configured for this action,
+  After clicking on the component configured for this action,
   you can generate a QR code. The QR code can be plain text or include
   parameters, and you can also set a background image.
 ---
@@ -42,6 +42,3 @@ Generally, when we successfully generate a QR code, we will add the \[Show Modal
 <img src="../.gitbook/assets/5 (2).png" alt="" data-size="original"> 
 
 
-## About Momen​​​​​
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.​​

@@ -1,5 +1,6 @@
 ---
-description: Learn about AI Point consumption and purchase in Momen AI.
+description: >-
+  Learn about AI Point consumption and purchase in Momen AI.
 ---
 
 # AI Point Consumption

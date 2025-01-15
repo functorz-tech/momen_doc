@@ -1,6 +1,6 @@
 ---
 description: >-
-  Show Toast: After clicking on the component configured for this action, a
+  After clicking on the component configured for this action, a
   toast message will be displayed on the page to provide users with information
   or feedback.
 ---
@@ -97,7 +97,3 @@ Build the components of the modal in the Focus View (upper area).
 
 ### Note
 when triggering the modal action within a \[List] component, direct access to the component data is restricted. To overcome this, employ the \[Set Page Variable] action, transferring the component data to page variable. This process allows subsequent utilization of specific list item data within the modal.
-
-### **About Momen​​​​​**
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.​​

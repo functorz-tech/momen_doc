@@ -1,6 +1,6 @@
 ---
 description: >-
- Mutation: Add, update, or delete single or multiple records in a data table.
+  Add, update, or delete single or multiple records in a data table.
 ---
 # Request
 Request actions enable direct operations on the database, including adding, updating, deleting records, and executing pre-defined actionflows. Momen supports three types of request actions: data mutation, batch mutation, and actionflow.
@@ -48,7 +48,7 @@ Batch mutation is used to create a transaction consisting of multiple database o
 
 <figure><img src="../../.gitbook/assets/0 (1).gif" alt="Add process of Batch Action."><figcaption></figcaption></figure>
 
-## 3. [Actionflow] (actions_en/action-flow-configuration/action-flow-basics.md)
+## 3. [Actionflow](actions_en/action-flow-configuration/action-flow-basics.md)
 
 ### Introduction
 Executes a pre-configured actionflow to implement a sequence of actions or complex logics and events.
