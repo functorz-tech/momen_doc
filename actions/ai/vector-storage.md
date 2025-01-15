@@ -63,11 +63,8 @@ Ensure that a data table storing private data is created, and that the text fiel
 
   <figure><img src="../../.gitbook/assets/ai3.jpeg" alt="The case of semantic search"><figcaption></figcaption></figure>
 
-## Use case - Semantic Search
-
-**Basic description of the case:**
-
-The case database includes specific meanings of Internet slang. In this case, the Internet slang uploaded to the database will be transformed into vector data. The entered content in the search box will also be converted into vector data. After clicking the search button, the \[List] component will return results based on vector distance comparison and sorted results.
+## Semantic Search
+In a case database that includes specific meanings of Internet slang, the Internet slang uploaded to the database has been transformed into vector data. The entered content in the search box will also be converted into vector data. After clicking the search button, the \[List] component will return results based on vector distance comparison and sorted results.
 
 **Reference link for Internet slang:** [\[Internet Slang Collection\]](https://www.ruf.rice.edu/~kemmer/Words04/usage/slang_internet.html)
 
