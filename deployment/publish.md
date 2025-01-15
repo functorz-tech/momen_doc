@@ -51,7 +51,7 @@ In this step, you need to configure TXT and CNAME records to validate certificat
 **4. Web favicon**
 You can upload a custom icon (favicon) to your website. Once uploaded, save the configuration, and your custom domain will be ready.
 
-<img src="../.gitbook/assets/publish/cd-5.png" alt="Momen custom domain webfavicon">
+<figcaption><img src="../.gitbook/assets/publish/cd-5.png" alt="Momen custom domain webfavicon"><figcaption></figcaption></figure>
 
 ### Notes
 **1. Default Custom Domain:** When multiple custom domains exist, you can set one domain as the default. All other domains will automatically redirect to the default domain when accessed.   

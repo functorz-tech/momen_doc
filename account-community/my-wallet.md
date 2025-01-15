@@ -1,6 +1,7 @@
 ---
 description: >-
-  My wallet: Offers convenient payment options with discount coupons and credits.
+  My wallet: Offers convenient payment options with discount coupons and
+  credits.
 ---
 
 # My Wallet
