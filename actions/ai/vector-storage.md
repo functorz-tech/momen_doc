@@ -7,35 +7,61 @@ description: >-
 # Vector Data Storage and Sorting
 
 ## Introduction
-
-The similarity calculation of large models involves finding more similar data within massive unstructured data. To achieve this, a vector database is essential for storing information about each object. If your project requires a "similarity search," save data as vector data.
+When using large language models (LLMs) for similarity search, the goal is to find the most similar data from massive unstructured datasets. This requires storing each data object as a vector in a vector database, enabling efficient similarity comparisons based on vector distances.
 
 ## How to Save Vector Data
 
-After entering the editor, click the "Data Model" button to open the data model design interface. Create a data table, add fields (type: text), and enable the "Vector Storage" switch when adding a column. When data is added, the information in this field will automatically be saved as vector data.
+### Create a Data Table
+- Open the editor and click the "Data" button in the top-left corner to access the data model design interface.
+- Create a new data table and add a "Text" type field (column) where you want to store text data for vectorization.
 
-<figure><img src="../../.gitbook/assets/1 (43).png" alt="Enable the vector storage in a no-code tool"><figcaption></figcaption></figure>
+### Enable Vector Storage
+- After adding the field, click the Settings button next to the field.
+- Toggle "Enable Vector Storage" to ON. Once enabled, all text data saved under this field will be processed and stored as vector data.
 
-Note:
-* Currently, Momen only supports storing text data as vector data.
-* Enabling this feature will consume database resources.
+## What is Vector Sorting?
+Vector sorting arranges data by comparing the vector distances between a sorting object and a reference object. It sorts in ascending order of distance, meaning data with higher similarity appears first.
 
-## How to Use Vector Sorting
+### Distance Calculation Methods:
+1. Cosine Distance (COSINE):   
+Measures directional similarity, focusing on relative relationships and alignment. Suitable for use cases like search engines, text classification, and recommendation systems.
+2. Euclidean Distance (EUCLIDEAN):   
+Measures absolute difference, focusing on numeric values and physical distances. Suitable for scenarios like navigation systems, logistics optimization, and comparing physiological parameters over time.
 
-**The basic principle of vector sorting:** sort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
+### Use Case
+In search applications (e.g., drug search or hardware tool search), users may describe the item by its use case rather than its exact name. By using vector sorting, similar items can be displayed based on the input, enhancing search accuracy.
 
-**Momen provides two vector distance calculation methods:**
+Steps to Configure Vector Sorting:   
+1. Bind Data Table to the List Component   
+Select a data table with a vector-enabled field and bind it to the list component.
 
-COSINE and EUCLIDEAN.
+2. Enable Vector Sorting   
+In the list component's "Sort" settings, choose the vector-enabled field. Select "Vector Mode" as the sorting method.
 
-**The vector sorting feature can only be used in the \[List] component:**
+3. Select Distance Calculation Method   
+Choose either Cosine Distance or Euclidean Distance based on your use case.
 
-* Bind a data table with a vector field to the \[List] component.
-* In the \[List] component's "sort", select the field transformed into vector data, then choose the "vector" sorting mode.
-* Select the vector distance calculation method.
-* Bind the value of the "comparison object."
+4. Bind the Reference Object   
+Set the value of the reference object against which the vector distance will be calculated.
 
-<figure><img src="../../.gitbook/assets/2 (37).png" alt="" width="306"><figcaption></figcaption></figure>
+## Using Vector Sorting with AI for Custom Knowledge
+
+### Use Case
+In scenarios where a large language model (LLM) needs to interact with private knowledge bases, vector sorting can be used to enhance responses. For example, using RAG (Retrieval-Augmented Generation), the model can answer questions or generate new content based on private knowledge.
+
+### Configuration guide
+1. Pre-Configuration Requirement   
+Ensure that a data table storing private data is created, and that the text fields in this table have vector storage enabled.
+
+2. Configuration Steps
+- On AI congifuration page, under Contexts section,select the target data table.
+- Click the filter icon next to the data table.
+- In the right-side configuration panel, add a Sort setting:
+  - Sorting Field: Choose the vector-enabled field.
+  - Sorting Method: Select either Cosine Distance or Euclidean Distance.
+  - Comparison Content: Bind the comparison value of which the sorting will be performed.
+
+  <figure><img src="../../.gitbook/assets/ai3.jpeg" alt="The case of semantic search"><figcaption></figcaption></figure>
 
 ## Use case - Semantic Search
 
@@ -49,3 +75,6 @@ The case database includes specific meanings of Internet slang. In this case, th
 
 <figure><img src="../../.gitbook/assets/4 (3).gif" alt="The case of semantic search"><figcaption></figcaption></figure>
 
+## Note
+- Currently, Momen only supports vectorization for text data.
+- Enabling vector storage will consume database capacity.
