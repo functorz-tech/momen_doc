@@ -43,7 +43,7 @@ A trigger can only be added after the Actionflow is saved.
 
 * On Data Insert
 * On Data Update
-* On Data Delete&#x20;
+* On Data Delete
 * On Data Insert or Update
 
 4. **Set Conditions and Actionflow Parameters**

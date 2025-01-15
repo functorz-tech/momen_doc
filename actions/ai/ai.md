@@ -14,15 +14,13 @@ Optimize your business efficiency with Momen's AI capabilities. Learn about cust
 
 Momen AI is a robust feature integrated within the Momen editor, designed to facilitate custom AI request setups. Its streamlined interface demystifies AI configurations, enabling you to create personalized AI applications without coding.
 
-### Core Features
+## Core Features
 
 * Supports a variety of large models, including "GPT 4o mini" and "GPT 4o". Momen will integrate more models in the future.
 * Accommodates multiple input types, such as text and images.
 * Connects to various knowledge base sources, including the Momen database, third-party APIs, and local files.
 * Offers a selection of tools for invocation, including action flows, APIs, and other pre-configured AI requests.
 * Provides outputs in JSON format and supports streaming outputs.
-
-## Use Cases
 
 AI applications have a wide range of use cases. Here are some common scenarios:
 
@@ -33,11 +31,6 @@ AI applications have a wide range of use cases. Here are some common scenarios:
   * Sales/consultation script generation based on user information and sales/consultation materials.
   * Copywriting for platforms like Ins, X, and Tiktok and scriptwriting for videos, movies, etc.
 
-## Access AI Feature
-
-Click on the Momen AI button in the editor's top left corner to enter the AI configuration interface. Click "Create" to add a new AI request.
-
-<figure><img src="../../.gitbook/assets/1 (42).png" alt="Entry of AI function in a no-code tool"><figcaption></figcaption></figure>
 
 ## Configuration Instructions
 
@@ -45,11 +38,7 @@ The left side is the configuration interface, the right side is the debugging in
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.34.39.png" alt=""><figcaption></figcaption></figure>
 
-### 1. Defining the Request Name
-
-AI Request Name: The default setting is Ai-Config-1. You can customize the name based on your business requirements, making it easier to identify during invocation.
-
-### 2. General Configuration
+### 1. General Configuration
 
 **Large Model:** Select the version of the large model to complete your AI tasks. The version you choose can influence the results.
 
@@ -66,13 +55,13 @@ AI Request Name: The default setting is Ai-Config-1. You can customize the name 
 **Important Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more points. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using points.
 {% endhint %}
 
-### 3. Input Configuration
+### 2. Input Configuration
 
 Input Parameter Configuration: Set up the single or multiple parameters required when making an AI request. These parameters are typically linked directly to \[Predefined Prompts] for usage, and may also be used as filtering conditions for the \[Knowledge Base-Database].
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.41.04.png" alt=""><figcaption></figcaption></figure>
 
-### 4. Preset Prompts
+### 3. Preset Prompts
 
 **Prompts:** Prompts serve to inform AI of its role, provide reference material, and specify task constraints.
 
@@ -117,7 +106,7 @@ Suppose the task is to create an AI assistant for Momen AI development. Users ca
 * Task Constraints: "Only answer user questions based on the provided knowledge base content. If there are no relevant answers in the knowledge base, respond with: 'Sorry, I cannot answer your question. Please contact Momen experts for assistance.'"
 {% endhint %}
 
-### 5. Knowledge Base
+### 4. Knowledge Base
 
 **Function**
 
@@ -168,7 +157,7 @@ Momen also supports fetching external data via API. You can choose the configure
 
 Please check our step-by-step guide about how to configure APIs in Momen: [Notion](../api-configuration/integrations/notion.md), [Airtable](../api-configuration/integrations/airtable.md), [Google Sheet](../api-configuration/integrations/google-sheet.md)
 
-### 6. Tools
+### 5. Tools
 
 **Why does an AI agent need to Invoke Tools**
 
@@ -194,7 +183,7 @@ Preparation: Learn about \[[API Configuration](../api-configuration/api-configur
 
 Preparation: Other AI requests have been set up and released in Momen. Similarly to the above tools, after choosing another configured AI, add a description, informing the current AI about the tool's function and the input/output data involved.
 
-### 7. Output Configuration
+### 6. Output Configuration
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.59.53.png" alt=""><figcaption></figcaption></figure>
 
@@ -210,7 +199,7 @@ Preparation: Other AI requests have been set up and released in Momen. Similarly
 Important Note: Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
 {% endhint %}
 
-### 8. Debugging and Preview
+### 7. Debugging and Preview
 
 Once you've finalized the AI settings, input parameters can be entered on the right side of the interface for debugging and previewing the AI request.
 
@@ -220,7 +209,7 @@ The section below details the entire operation process of the AI. Upon successfu
 
 <figure><img src="../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
  
-## AI Action Invocation 
+## AI action configuration guide
 
 Momen AI provides the following five types of AI actions, you can find AI under the action when clicking and then selecting the needed action to configure.
 
@@ -283,8 +272,6 @@ When invoking this AI, you can select the needed field content from the AI resul
 
 ![](<../../.gitbook/assets/截屏2024-07-23 15.57.46.png>)
 
-
-
 ### When Streaming Output
 
 When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data', in the configuration you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component], when AI call is successful, the text component will then display the results in a streaming manner.
@@ -293,8 +280,6 @@ When configuring AI, if 'Streaming Output' mode is turned on, then when invoking
 
 ## AI Point Consumption
 
-[AI Point Consumption](ai-points.md)
+[AI Point Consumption](ai-point.md)
 
-## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

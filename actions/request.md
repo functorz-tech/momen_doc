@@ -22,7 +22,7 @@ It is used to perform the adding, updating and deleting records of the database.
 
 ### Note
 
-<figure><img src="../../.gitbook/assets/3 (16).png" alt="Action configuration item description."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/3 (16).png" alt="Action configuration item description."><figcaption></figcaption></figure>
 
 1. **List mutation** <br>
 When you choose to add data, you can enable the "List Mutation" for batch adding. It needs to identify a data source with multiple data.
@@ -46,9 +46,9 @@ Batch mutation is used to create a transaction consisting of multiple database o
 1. Transaction Rollback: If any operation within the transaction fails, the entire transaction will be rolled back. For example, if three operations are configured and the third one fails, all preceding operations will be undone.
 2. This action is suitable for scenarios requiring strict data integrity during complex modification processes.
 
-<figure><img src="../../.gitbook/assets/0 (1).gif" alt="Add process of Batch Action."><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/0 (1).gif" alt="Add process of Batch Action."><figcaption></figcaption></figure>
 
-## 3. [Actionflow](actions_en/action-flow-configuration/action-flow-basics.md)
+## 3. [Actionflow](./actionflow/basics.md)
 
 ### Introduction
 Executes a pre-configured actionflow to implement a sequence of actions or complex logics and events.

@@ -47,7 +47,7 @@ Add action nodes by clicking the "+" icon. Momen supports the following types:
 ### 3. Triggers
 Momen supports four types of triggers:
 - Scheduled Trigger: Set up periodic execution using a timer. For complex schedules, use Cron expressions.
-- [Database Change Trigger](actions/actionflow/db-trigger.md): Automatically trigger the actionflow when specific changes occur in a table.
+- [Database Change Trigger](db-trigger.md): Automatically trigger the actionflow when specific changes occur in a table.
 - Webhook Trigger: Use webhooks to trigger the flow. This option is suitable for users with coding skills and requires configuring the callback request body format.
 - Frontend Trigger: Add a "Request – Actionflow" action to a component or page interaction, allowing users to trigger the flow by clicking a button or onPageLoad.
 
