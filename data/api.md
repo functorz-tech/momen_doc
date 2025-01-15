@@ -22,9 +22,9 @@ Open the "API" at the top left of the Editor and "Add."
 
 This step determines whether the API is used as a data source or an action:
 
-* Query: Use the API as a **data source** for components (List, Page, etc.)
+* **Query**: Use the API as a **data source** for components (List, Page, etc.)
 
-* Mutation: Use the API as an **action**
+* **Mutation**: Use the API as an **action**
 
 In this example, the API is directly used as a data source for a list, so "Query" is selected.
 

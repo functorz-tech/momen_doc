@@ -3,10 +3,9 @@ description: >-
   Learn how to use parameters in Momen, including path, query and input parameters.
 ---
 
-# Parameters
 An application consists of different parts, which involves data transfer between these parts. For example, between pages, components, and action flows. In Momen, data transfer is achieved through parameters.
 
-# Path Parameters and Query Parameters: Data Transfer Between Pages
+# Path and Query Parameters: Data Transfer Between Pages
 
 Both path parameters and query parameters are used for data transfer through the URL of a page, but they belong to different parts of the URL.
 
@@ -46,19 +45,19 @@ Both types of parameters are added to the page receiving the data. For example, 
 * Define the path parameter 'blog' as a filter condition for remote data to obtain blog articles. This parameter is required.
 * Define multiple query parameters to pass user information. These parameters can be empty.
 
-![](<../.gitbook/assets/data/data_parameter0.png)>
+![](<../.gitbook/assets/data/data_parameter0.png>)
 
 ### Assignment
 
 Assign values to them in the action that navigates to the page. For example, on the search results page, in the action that navigates to the blog page, assign the searched blog id to the path parameter 'blog'.
 
-![](<../.gitbook/assets/data/data_parameter1.png)>
+![](<../.gitbook/assets/data/data_parameter1.png>)
 
 ### Reference
 
 Path parameters and query parameters on the page can be referenced within the current page, usually for configuring filter conditions. For example, on the blog page, use the path parameter 'blog' as a filter to obtain blog articles in remote data.
 
-![](<../.gitbook/assets/data/data_parameter2.png)>
+![](<../.gitbook/assets/data/data_parameter2.png>)
 
 # Action Input: Data Transfer in Actions
 
@@ -68,8 +67,8 @@ Multiple actions require input parameter configuration, such as Actionflow, AI a
 
 2. Reference: Can be referenced within the action configuration
 
-![](<../.gitbook/assets/data/data_parameter3.png)>
+![](<../.gitbook/assets/data/data_parameter3.png>)
 
 * Assignment: Assign values when calling the action
 
-![](<../.gitbook/assets/data/data_parameter4.png)>
+![](<../.gitbook/assets/data/data_parameter4.png>)

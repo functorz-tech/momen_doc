@@ -12,7 +12,7 @@ Open the "Data" section at the top left of the Editor.
 * **Data Model**: Management of tables, including creating tables, adding columns, establishing relations, etc.
 
 * **Database**: Management of data
-
+ 
 ![](<../.gitbook/assets/data/data_data_model0.png>)
 
 ![](<../.gitbook/assets/data/data_data_model1.png>)
@@ -25,11 +25,11 @@ Tables are the core of the data model, where structured data is stored. Managing
 
 Click "Add" and define the table's properties:
 
-* Name: Cannot use names like "log," "column," "index," etc.
+* **Name**: Cannot use names like "log," "column," "index," etc.
 
-* Description: Description of the table, optional
+* **Description**: Description of the table, optional
 
-* Turn on permissions for all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
+* **Turn on permissions for all roles**: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
 > For example, create a "post" table
 
@@ -41,15 +41,15 @@ Each table, when created, has three default columns: id, created_at, and updated
 
 When adding columns, confirm the following properties:
 
-* Column Name: Cannot use words like "column"
+* **Column Name**: Cannot use words like "column"
 
-* Type: Supports common types such as Text, integer, Image, etc. Momen has a strict type validation system. For example, "Date," "Zoned time," and "Zoned datetime" are all time-related types but cannot be mixed; as the data table is the foundation of the Project, it will affect UI, actions, etc., so the type needs to be carefully determined.
+* **Type**: Supports common types such as Text, integer, Image, etc. Momen has a strict type validation system. For example, "Date," "Zoned time," and "Zoned datetime" are all time-related types but cannot be mixed; as the data table is the foundation of the Project, it will affect UI, actions, etc., so the type needs to be carefully determined.
 
-* Required: Indicates whether the data can be empty when adding or modifying data. Generally turned off.
+* **Required**: Indicates whether the data can be empty when adding or modifying data. Generally turned off.
 
-* Unique: Indicates whether this column's data can be repeated, e.g., the username in an Account table cannot be repeated.
+* **Unique**: Indicates whether this column's data can be repeated, e.g., the username in an Account table cannot be repeated.
 
-* Turn on permissions for all roles: Permission management, when enabled, all roles have the permission to add, delete, modify, and query the column. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
+* **Turn on permissions for all roles**: Permission management, when enabled, all roles have the permission to add, delete, modify, and query the column. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
 > In the post table, add title (Text), content (Text), cover (Image), and show_at (Zoned datetime).
 
@@ -67,11 +67,11 @@ When establishing relations, consider two main aspects:
 
    Who establishes a relation with whom, as in the example above, the Account establishes a relation with post.
 
-* **Relation Type**
+2. **Relation Type**
 
-- One-to-many association: A single piece of data in Table A can be associated with **multiple** pieces of data in Table B.
+- **One-to-many**: A single piece of data in Table A can be associated with **multiple** pieces of data in Table B.
 
-- One-to-one association: A single piece of data in Table A can only be associated with **one** piece of data in Table B.
+- **One-to-one**: A single piece of data in Table A can only be associated with **one** piece of data in Table B.
 
 In the example below, a user can have multiple posts (One-to-many) but only one wallet (One-to-one).
 
@@ -79,20 +79,21 @@ In the example below, a user can have multiple posts (One-to-many) but only one 
 
  Add the relation in the starting table (the Account table in this example), and then determine the following properties:
 
-* Target Table: The table to be associated with (the post in this example)
+* **Target Table**: The table to be associated with (the post in this example)
 
-* Relation Type: One-to-one or one-to-many
+* **Relation Type**: One-to-one or one-to-many
 
-* Relation Name (in target table): The name of the new column in the associated table (e.g., "Author" in this example)
+* **Relation Name (in target table)**: The name of the new column in the associated table (e.g., "Author" in this example)
 
-* Relation Name (in current table): The name of the new column in the starting table (e.g., "Post" in this example)
+* **Relation Name (in current table)**: The name of the new column in the starting table (e.g., "Post" in this example)
 
 * Turn on permissions for all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query the table. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
 ![](<../.gitbook/assets/data/data_data_model5.png>)
+
 ![](<../.gitbook/assets/data/data_data_model6.png>)
 
-### 4. Constraint Settings
+### 4. Constraints
 
 Currently supports "unique constraint," which can specify that certain columns' data cannot be repeated.
 
@@ -146,7 +147,7 @@ All modifications to tables and columns will be synchronized online after updati
 
 ![](<../.gitbook/assets/data/data_data_model12.png>)
 
-## Permission Management
+## Permissions
 
 Data is the most important asset of an application, and permission settings can specify different users' access permissions to data, preventing unauthorized access and data leakage, thereby protecting data assets.
 
