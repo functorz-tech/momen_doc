@@ -7,14 +7,13 @@ description: >-
 # Components - Display
 Includes Text, Button, Image, Video, and Rich Text Component.
 
-## Text
+## Text   
 Generally used to display text, numbers, time, date, and other text-based content.
 
 ### Configuration Instructions
 1. By clicking the [+] sign in the content input box, you can reference other data.
-2. Momen supports handwriting input and data binding concatenation. If you want to reference other data in the middle of the input text, please press the "/" key.
-
-<figure><img src="../.gitbook/assets/2 (45).png" alt="Utilize external data source in a no-code tool" width="293"><figcaption></figcaption></figure>
+2. Momen supports handwriting input and data binding concatenation. If you want to reference other data in the middle of the input text, please press the "/" key.   
+<img src="../.gitbook/assets/2 (45).png" alt="Utilize external data source in a no-code tool" width="300">
 
 ## Button
 Used in various scenarios where users need to click on the screen to trigger a certain action. Common actions include adding data, navigating to pages, etc.

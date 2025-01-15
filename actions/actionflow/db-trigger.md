@@ -17,7 +17,7 @@ Common use cases include:
 * Automatically sending a notification when an order is completed
 * Automatically generating an operation record when user points change, for easier tracking
 
-## Configuration guide
+## Action configuration guide
 
 Here’s how to set it up using an example: When a user’s payment exceeds $1000, the system will automatically upgrade them to VIP.
 

@@ -1,10 +1,6 @@
 ---
 description: >-
   Provides the capability to create Custom Components, allowing users to save configured components as Custom Components and add them to the left sidebar component library. Users can reuse them in multiple places within a Project to enhance building efficiency.
-## Value
-
-keywords: >-
-  Momen, application development, Custom Component, Reusable Component
 ---
 
 # Custom Component

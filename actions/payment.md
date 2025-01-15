@@ -156,6 +156,3 @@ Since updating the order/payment/recurring payment/refund tables occurs through 
 
 <figure><img src="../../.gitbook/assets/stripe/stripe18.jpeg" alt=""><figcaption></figcaption></figure>
 
-## About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

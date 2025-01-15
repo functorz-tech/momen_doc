@@ -17,7 +17,7 @@ In addition to more than 100 built-in actions, you can also customize actions th
 ### 3. Use actionflow to streamline complicated business processes
 In complex business scenarios, a series of data operations may be required. At this time, the actionflow is an ideal solution. The actionflow allows users to connect multiple action nodes to form a complete actionflow. It supports a variety of nodes, including adding, deletion, changes to the database, calling third-party APIs, executing code blocks and AI operations. Users can also set condition branches to handle different business logic paths. The triggering method of actionflow is diverse. In addition to the button click, it also supports time-triggers such as regular triggers, data changes, and webhooks to facilitate building the action automation.
 
-<img src="../.gitbook/assets/actions mindmap.png" alt="Momen action mindmap" data-size="original">
+<img src="../.gitbook/assets/actions mindmap.png" alt="Momen action mindmap" width="900">
 
 ## To add an action
 1. Find a component that needs to be configured and click "action" to add new actions. 

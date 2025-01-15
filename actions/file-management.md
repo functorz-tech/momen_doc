@@ -5,7 +5,7 @@ description: >-
 
 # File Management
 
-File -related action includes:
+**File -related action includes:**
 1. Upload file
 2. Download file/images/bitmap
 

@@ -1,7 +1,6 @@
 ---
 description: >-
-  My wallet: Offers convenient payment options with discount coupons and
-  credits.
+  My wallet: Offers convenient payment options with discount coupons and credits.
 ---
 
 # My Wallet
@@ -10,7 +9,7 @@ description: >-
 
 &#x20;"My Wallet"  has been introduced to provide users with more convenient payment options on Momen. This feature enables purchases using discount coupons and credits.
 
-<figure><img src="../../../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt=""><figcaption></figcaption></figure>
 
 ### Benefits
 
@@ -29,13 +28,13 @@ description: >-
 * **Usage Restrictions**: Varies based on project plans and minimum spending amount.
 * **Validity**: Must be used within a specified period.
 
-<figure><img src="../../../.gitbook/assets/Frame 48096512.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Frame 48096512.png" alt=""><figcaption></figcaption></figure>
 
 **Usage**:&#x20;
 
 The system automatically selects the best available coupon when you enter the order page, if applicable coupons exist.
 
-<figure><img src="../../../.gitbook/assets/Group 40355.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Group 40355.png" alt=""><figcaption></figcaption></figure>
 
 **Records**:&#x20;
 
@@ -52,15 +51,15 @@ All coupons used or expired in the last 7 days will be documented.
 
 * **Viewing**: Access "My Wallet" and the "credit" is in in the top left corner of your wallet.
 
-<figure><img src="../../../.gitbook/assets/20241101-121004.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20241101-121004.jpeg" alt=""><figcaption></figcaption></figure>
 
 * **Usage**: If your credit is sufficient, credit payment is the default option. Users can also opt for Stripe payment.
 
-<figure><img src="../../../.gitbook/assets/Group 40355 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Group 40355 (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Records**: Users can view records of purchases made using their credits in the billing section.
 
-<figure><img src="../../../.gitbook/assets/20241101-121532.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20241101-121532.gif" alt=""><figcaption></figcaption></figure>
 
 **Important Notes**:
 

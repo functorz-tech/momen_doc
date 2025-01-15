@@ -1,6 +1,6 @@
 ---
 description: >-
-    This section explains how to configure various component actions in Momen, including setting input values, horizontal list scrolling, full-screen images, and conditional view switching.
+  This section explains how to configure various component actions in Momen, including setting input values, list scrolling, full-screen images, and conditional view switching.
 ---
 
 # Component Management
@@ -55,7 +55,7 @@ Rename list components for quick identification when configuring actions, especi
 ### Brief
 Scrolls a list straight to the bottom when triggered.
 
-### Configuration Guide
+### Action configuration guide
 Add the Scroll to Bottom action to a component（usually a button）. Select the list component to be scrolled.
 
 ## 5. Image – Fullscreen Image
@@ -96,7 +96,7 @@ Switches the view between different sub-containers based on user interactions. T
 - Password Visibility: Switch between "Show Password" and "Hide Password" views when a user toggles the visibility of a password input field.
 - Cart Status: In e-commerce apps, switch between "Add to Cart" and "Update Quantity" views when an item is added to the cart.
 
-### Action configuration Guide
+### Action configuration guide
 Ensure that the page contains a conditional container with two or more sub-containers. Add the Switch View action to a component, specifying the target conditional container and the sub-container to switch to.
 
 ### Note

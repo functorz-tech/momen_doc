@@ -1,6 +1,6 @@
 ---
 description: >-
-  Actionflow: Implement complex logic by adding, deleting, modifying, querying
+  Implement complex logic by adding, deleting, modifying, querying
   data, writing JS code blocks, calling APIs, and conditional branching.
 ---
 

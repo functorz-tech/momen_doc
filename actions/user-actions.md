@@ -1,6 +1,6 @@
 ---
 description: >-
-  User Action: After clicking on the component configured for this action, it
+  After clicking on the component configured for this action, it
   enables user registration and login functionality using username, email or phone number.
 ---
 
@@ -25,7 +25,7 @@ User actions are essential interactions in an app, including registration, login
 ### Brief
 This action ensures that the latest user data is reflected in the application after significant changes, such as account binding, unbinding, password reset, or profile updates. It helps maintain data consistency between the client-side interface and the server-side database. Without refreshing, users might continue to see outdated information until they manually reload the page or log out and log back in.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button component and bind the action of "Refresh Login User Data" or trigger the action upon specific events (e.g., after binding/unbinding or resetting a password).
 
 ## 2. Verification Code
@@ -33,7 +33,7 @@ Add a button component and bind the action of "Refresh Login User Data" or trigg
 ### Brief
 When users perform sensitive operations (e.g., login, registration, password reset, or binding information), the app sends a one-time verification code to the user's email or phone to verify the ownership of the contact method, enhancing account security.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button component on the page, and configure a "send verification code" action. Input or bind the fields (phone number or email) to which the verification code will be sent.
 
 <figure><img src="../.gitbook/assets/user-action-send-code.png" alt="Send verification code guidance in Momen."><figcaption></figcaption></figure>
@@ -43,7 +43,7 @@ Add a button component on the page, and configure a "send verification code" act
 ### Brief
 The process where a user creates a new account by providing basic information such as name, email address, phone number, and password. This process may include email or phone number verification to ensure authenticity. Momen supports three registration methods: username, phone number, and email registration.
 
-### Action Configuration Guide
+### Action configuration guide
 Typically, add some input boxes and a button to the page, and configure a registration action for the button. Bind the values of the input box to the action (for username, phone number, email, verification code, or password) on the page to the action to collect the user's registration information.
 
 <figure><img src="../.gitbook/assets/user-action-email-registration.png" alt="registration guidance in Momen."><figcaption></figcaption></figure>
@@ -56,7 +56,7 @@ After successful registration, Momen will automatically insert the username/phon
 ### Brief
 Allows registered users to access their accounts using a username and password or other authentication methods (e.g., email, phone number & verification code). Momen supports four login methods: username login, phone number verification login, phone number & password login, email login,.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button and some input components to the page, and configure a login-related action. Bind the values of the input boxes (username, phone number, email, verification code, or password) to the action to collect user input for login.
 
 ### Note
@@ -69,7 +69,7 @@ It’s common to configure a “Show Prompt” action for successful/failed logi
 ### Brief
 After registering with a username and password, users may want to add a phone number or email address to their account for enhanced security and easier password recovery. Once binding is successful, the corresponding phone number or email will be updated in the user’s record in the default account table.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button and input components on the page, and configure a binding action to the button. Bind the values of email/phone number and verification codes  to the action to collect info for binding.
 
 ### Note
@@ -80,7 +80,7 @@ When requesting a verification code for binding, set the verification code type 
 ### Brief
 Allows users to remove a previously bound phone number or email from their account, typically when changing contact information or discontinuing its use. After successful unbinding, the corresponding phone number or email in the user’s record will be cleared.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button component on the page, and configure an unbinding action. Bind the input fields (for the verification code) to the action to collect the code received via phone or email.
 
 ### Note
@@ -91,7 +91,7 @@ When requesting a verification code for unbinding, set the verification code typ
 ### Brief
 Enables users who have forgotten their passwords to reset them using their registered phone number or email. This process typically involves verifying the user’s identity (via verification code) before allowing them to set a new password.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button component on the page, and configure a password reset action. Bind the input fields (for phone number, new password, and verification code) to the action to reset password.
 
 
@@ -100,7 +100,7 @@ Add a button component on the page, and configure a password reset action. Bind 
 ### Brief
 Allows users to end their current session and log out of the application. Simply closing the webpage does not automatically log out the user, so this action ensures better privacy and data security.
 
-### Action Configuration Guide
+### Action configuration guide
 Typically used for one-click logout, combined with actions to refresh logged-in user data, recalculate data, or switch views accordingly. Logout only affects the current session and does not alter any data in the database.   
 <figure><img src="../.gitbook/assets/0 (28).png" alt="Momen editor settings for user logout."><figcaption></figcaption></figure>
 
@@ -109,7 +109,7 @@ Typically used for one-click logout, combined with actions to refresh logged-in 
 ### Brief
 Allows users to permanently delete their account and all associated data. Since this action is irreversible, users must confirm their intent and may need to complete multiple steps for security reasons. Momen supports two methods for account deletion: verification code deletion and password deletion.
 
-### Action Configuration Guide
+### Action configuration guide
 Add a button component on the page, and configure an account deletion action. Bind the input fields (for verification code or password) to the action to collect the necessary user input. When using verification code deletion, choose the appropriate sending method (SMS or email).
 
 ### Note
