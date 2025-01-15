@@ -14,8 +14,8 @@ Used to display a progress
 3. Step Value: The smallest unit of change each time (frame)
 4. Default Progress: The specific position displayed by the progress bar, must be numeric data, cannot be empty
 
-## Map View
-Please see: [Map View Component](/buildUI/map.md)
+## Map
+Please see: [Map](/buildUI/map.md)
 
 ## Table
 Used to display data in a table, common application scenarios include:

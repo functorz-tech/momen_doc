@@ -23,10 +23,9 @@ For example, when creating a login screen, there are three conditions based on u
 <figure><img src="../.gitbook/assets/conditional_view/conditional_view1.jpeg" alt=""><figcaption></figcaption></figure>
 
 💡Tips:
-
-Conditional view have a default condition, "loading". When the page data is still loading, the conditional view will show that it's loading. This condition can not be deleted, you can not set the conditions to it either. It is recommended not to make any changes to it!
-
-After adding the view, you can click "Focus Mode" to enter the conditional sub-view, where you can see four sub-view. You can click on the sub-view to configure the display conditions of the sub-view, and drag other components and build the corresponding business logic
+  Conditional view have a default condition, "loading". When the page data is still loading, the conditional view will show that it's loading. This condition can not be deleted, you can not set the conditions to it either. It is recommended not to make any changes to it!
+  
+  After adding the view, you can click "Focus Mode" to enter the conditional sub-view, where you can see four sub-view. You can click on the sub-view to configure the display conditions of the sub-view, and drag other components and build the corresponding business logic
 
 <figure><img src="../.gitbook/assets/conditional_view/conditional-view2.gif" alt=""><figcaption></figcaption></figure>
 
