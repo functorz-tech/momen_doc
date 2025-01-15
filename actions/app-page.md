@@ -1,6 +1,6 @@
 ---
 description: >-
-Learn how to create and manage page data, configure global data, refresh data, and implement scroll behaviors in Zion’s no-code platform.
+  Learn how to create and manage page data, configure global data, refresh data, and implement scroll behaviors in Zion’s no-code platform.
 ---
 
 # App and page management
