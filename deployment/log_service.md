@@ -79,7 +79,61 @@ The log service offers efficient query syntax for flexible and rapid log searche
 
 ### **Log Classification Overview**
 
-#### **Gateway**&#x20;
+#### Actionflow (Coming Soon)
+
+The Log Service records the running status of each node in the Actionflow in detail:
+
+* Each node generates two logs: a log when the node starts and a log when the node ends
+
+* A log is also generated when Context.log() is called within a code block
+
+* Explanation of node log fields
+
+| <div style="width:40px">Field</div> | <div style="width:160px;text-align:left">Description</div>             |
+|:------|:-------------------|
+| traceId  	| Used for event tracking query                 	|
+| nodeType 	| Type of the node                       	|
+| nodeName 	| Name of the node                         	|
+| version  	| Version of the Actionflow                       	|
+| input    	| Input of the node, including all referenceable data 	|
+| output    | Result of the node's execution	|
+| startAt  	| Start time of the node                  	|
+| endAt  	| End time of the node                  	|
+
+* Types of nodes in logs
+
+| <div style="width:40px">Node</div> | <div style="width:160px;text-align:left">Type in Logs</div> |
+|:-----|:-------------------|
+| Input	   | FLOW_START                |
+| Query Record | QUERY_RECORD                       	|
+| Update Record 	| UPDATE_RECORD                        	|
+| Insert Record  | INSERT_RECORD                	|
+| Delete Record  | DELETE_RECORD	|
+| Code Block   | CUSTUM_CODE	|
+| Add Role  | ADD_ROLE_TO_ACCOUNT             	|
+| Remove Role  | REMOVE_ROLE_FROM_ACCOUN           	|
+| Update Global Variables 	| UPDATE_GLOBAL_VARIABLES         	|
+| Branch Start 	| BRANCH_SEPARATION         	|
+| Branch End 	| BRANCH_MERGE         	|
+
+#### Database Operations
+
+This category records all operations (add, delete, modify) on the database, including the following content:
+
+1. Trigger method (frontend request, Actionflow, AI, etc.)
+
+2. Detailed content of the operation
+
+#### Deployment Records
+
+The project deployment and release process consists of various steps, and the log service will log information for each step, including:
+
+* Type of deployment (web, backend).
+* Status, start, and end times for each step.&#x20;
+
+Monitoring this information will aid in quickly resolving issues during deployment.
+
+#### Gateway
 
 The gateway serves as a connection point between different networks, facilitating data forwarding for seamless communication. In the Momen platform, the following requests pass through the gateway:
 
@@ -90,32 +144,4 @@ Logs in this category encompass most requests, including CRUD operations on data
 
 <figure><img src="../.gitbook/assets/截屏2024-10-31 18.11.48.png" alt=""><figcaption></figcaption></figure>
 
-#### **Actionflow (Coming Soon)**&#x20;
 
-The log service will capture detailed execution processes of Actionflows, including:
-
-* Execution time, status, input, and output.
-* Input, output, and status for each node.
-* Content printed with context.log() in code blocks.
-
-#### **Database Operations (Coming Soon)**&#x20;
-
-This category will log all database operations (CRUD), detailing:
-
-* Trigger methods (frontend requests, Actionflows, AI, etc.).
-* Detailed operation content.
-
-#### **Deployment Records (Coming Soon)**&#x20;
-
-The project deployment and release process consists of various steps, and the log service will log information for each step, including:
-
-* Type of deployment (web, backend).
-* Status, start, and end times for each step.&#x20;
-
-Monitoring this information will aid in quickly resolving issues during deployment.
-
-
-
-**About Momen​​​​​**
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.​​

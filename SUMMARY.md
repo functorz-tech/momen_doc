@@ -69,7 +69,7 @@
 * [Upgrade Project](deployment/upgrade-project.md)
 * [Multiple Clients](deployment/multipleClients.md)
 * [Permission](deployment/permissions.md)
-* [Log Service](deployment/logService.md)
+* [Log Service](deployment/log_service.md)
 * [SEO](deployment/seo.md)
 * [Hosting files](deployment/hosting-file.md)
 

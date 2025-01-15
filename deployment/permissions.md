@@ -57,6 +57,7 @@ In addition to the system's built-in roles, developers can create their own role
 
 #### Action Permission
 Control the permissions for user actions, including API, Actionflow, AI, and Payment.
+
 ![](<../.gitbook/assets/permission/permission6.png>)
 
 ### 4. Assign Roles to Users
