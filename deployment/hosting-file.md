@@ -8,7 +8,7 @@ For instance, some services or systems (e.g., Google Search Console, website hos
 ## File Upload
 
 Upload the required .txt validation file via Project Settings > Global > Upload File to Root Directory.
-<figure><img src="../.gitbook/assets/verification-file.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/verification-file.jpeg" alt="Momen uplaod verification file"><figcaption></figcaption></figure>
 
 ##  Notes
 1. The validation file size cannot exceed 1KB.

@@ -457,5 +457,5 @@ In Altair's Docs, enter operation in the search box, and the related request wil
 
 <figure><img src="/.gitbook/assets/截屏2024-05-21 17.47.31.png" alt="" width="375"><figcaption></figcaption></figure>
 
-If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.​​​
+
 

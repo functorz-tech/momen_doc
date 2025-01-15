@@ -16,16 +16,13 @@ After entering the editor, click the "Data Model" button to open the data model 
 
 <figure><img src="../../.gitbook/assets/1 (43).png" alt="Enable the vector storage in a no-code tool"><figcaption></figcaption></figure>
 
-{% hint style="danger" %}
 Note:
-
 * Currently, Momen only supports storing text data as vector data.
 * Enabling this feature will consume database resources.
-{% endhint %}
 
 ## How to Use Vector Sorting
 
-**The basic principle of vector sorting:**&#x53;ort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
+**The basic principle of vector sorting:** sort from small to large based on the vector distance between the "sorting object" and the "comparison object." The closer the distance, the higher the similarity, and it will be placed at the front.
 
 **Momen provides two vector distance calculation methods:**
 
@@ -40,7 +37,7 @@ COSINE and EUCLIDEAN.
 
 <figure><img src="../../.gitbook/assets/2 (37).png" alt="" width="306"><figcaption></figcaption></figure>
 
-## Application Example - Semantic Search
+## Use case - Semantic Search
 
 **Basic description of the case:**
 
@@ -52,8 +49,3 @@ The case database includes specific meanings of Internet slang. In this case, th
 
 <figure><img src="../../.gitbook/assets/4 (3).gif" alt="The case of semantic search"><figcaption></figcaption></figure>
 
-
-
-## About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
