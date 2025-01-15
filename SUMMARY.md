@@ -56,8 +56,8 @@
 * [Conditional](actions/condition.md)
 * [Loop](actions/loop.md)
 * [Actionflow](actions/actionflow/basics.md)
-  * [Custom Code](actions/actionflow/custom-code.md.md)
-  * [Database Trigger](actions/actionflow/db-trigger.md.md)
+  * [Custom Code](actions/actionflow/custom-code.md)
+  * [Database Trigger](actions/actionflow/db-trigger.md)
 * [AI](actions/ai/ai.md)
   * [AI Data Model](actions/ai/ai-data-model.md)
   * [AI Point](actions/ai/ai-point.md)
@@ -76,9 +76,9 @@
 
 ## My Account and Community
 
-* [My Wallet](account-community/mywallet.md)
+* [My Wallet](account-community/my-wallet.md)
 * [Promoting Momen](account-community/commission.md)
-* [Code Component](account-community/codeComponent.md)
+* [Code Component](account-community/code-component.md)
 
 ## Tutorial
 
