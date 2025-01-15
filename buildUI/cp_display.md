@@ -1,6 +1,6 @@
 ---
 description: >-
-Introduction to the usage scenarios and configuration methods of Text Component, Button Component, Image Component, Video Component, and Rich Text Component.
+  Introduction to the usage scenarios and configuration methods of Text Component, Button Component, Image Component, Video Component, and Rich Text Component.
 ---
 
 
