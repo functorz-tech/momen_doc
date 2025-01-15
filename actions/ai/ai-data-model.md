@@ -8,8 +8,6 @@ Momen AI provides users with four data tables as shown below to record data gene
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 14.48.32.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## 1. Conversation
 
 Used to record data from a particular session. In the AI configuration interface, debugging, and invoking the \[Start Conversation] below, a new data entry is automatically added to the table.&#x20;
