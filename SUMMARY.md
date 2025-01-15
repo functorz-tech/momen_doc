@@ -35,7 +35,7 @@
 * [Data Usage](data/data_usage.md)
 * [Variable](data/variable.md)
 * [Parameter](data/parameter.md)
-* [Formula and Conditional Data](data/formula.md)
+* [Formula and Conditions](data/formula.md)
 
 
 ## Actions

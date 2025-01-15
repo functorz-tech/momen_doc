@@ -5,18 +5,17 @@ description: >-
 
 # Data Models and Databases
 
-Momen provides a powerful relational database that allows you to create well-structured data models with flexible relations between tables.
-
 ## Getting Started
 
 Open the "Data" section at the top left of the Editor.
 
-* Data Model: Management of tables, including creating tables, adding columns, establishing relations, etc.
+* **Data Model**: Management of tables, including creating tables, adding columns, establishing relations, etc.
 
-* Database: Management of data
+* **Database**: Management of data
 
-<img src="../.gitbook/assets/data/data_data_model0.png" width="100%"/>
-<img src="../.gitbook/assets/data/data_data_model1.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model0.png>)
+
+![](<../.gitbook/assets/data/data_data_model1.png>)
 
 ## Table Management
 
@@ -34,7 +33,7 @@ Click "Add" and define the table's properties:
 
 > For example, create a "post" table
 
-<img src="../.gitbook/assets/data/data_data_model1_1.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model1_1.png>)
 
 ### 2. Add Columns
 
@@ -54,13 +53,13 @@ When adding columns, confirm the following properties:
 
 > In the post table, add title (Text), content (Text), cover (Image), and show_at (Zoned datetime).
 
-<img src="../.gitbook/assets/data/data_data_model2.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model2.png>)
 
 ### 3. Add Relations
 
 Tables can establish relations through id. As shown below, after the Account table establishes a relation with the post table, a new column is added to the post table to store the id of the Account. It can be seen that both blog posts belong to "Roy"
 
-<img src="../.gitbook/assets/data/data_data_model3.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model3.png>)
 
 When establishing relations, consider two main aspects:
 
@@ -76,7 +75,7 @@ When establishing relations, consider two main aspects:
 
 In the example below, a user can have multiple posts (One-to-many) but only one wallet (One-to-one).
 
-<img src="../.gitbook/assets/data/data_data_model4.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model4.png>)
 
  Add the relation in the starting table (the Account table in this example), and then determine the following properties:
 
@@ -90,18 +89,18 @@ In the example below, a user can have multiple posts (One-to-many) but only one 
 
 * Turn on permissions for all roles: Table permission management, when enabled, all roles have the permission to add, delete, modify, and query the table. For details, see: [Permissions](https://docs.momen.app/release-and-growth/permissions)
 
-<img src="../.gitbook/assets/data/data_data_model5.png" width="100%"/>
-<img src="../.gitbook/assets/data/data_data_model6.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model5.png>)
+![](<../.gitbook/assets/data/data_data_model6.png>)
 
 ### 4. Constraint Settings
 
 Currently supports "unique constraint," which can specify that certain columns' data cannot be repeated.
 
-<img src="../.gitbook/assets/data/data_data_model7.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model7.png>)
 
 As mentioned earlier, id cannot be repeated, so each table will have a default unique constraint on the id.
 
-<img src="../.gitbook/assets/data/data_data_model8.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model8.png>)
 
 Developers can add their own constraints, and when adding, confirm:
 
@@ -111,7 +110,7 @@ Developers can add their own constraints, and when adding, confirm:
 
 In the image below, a unique constraint is established for the combination of "title" and "author," indicating that the same author cannot use a duplicate title.
 
-<img src="../.gitbook/assets/data/data_data_model9.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model9.png>)
 
 ### 5. Vector Storage and Sort
 
@@ -129,11 +128,11 @@ For example, by vectorizing the "Content" column in the "post" table, the "Artic
 
 Momen currently only supports vector storage for Text types:
 
-<img src="../.gitbook/assets/data/data_data_model10.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model10.png>)
 
 After configuring vector storage, vector sort can be configured when retrieving data:
 
-<img src="../.gitbook/assets/data/data_data_model11.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model11.png>)
 
 Momen provides two methods for calculating vector distance: COSINE and EUCLIDEAN
 
@@ -145,7 +144,7 @@ Momen provides two methods for calculating vector distance: COSINE and EUCLIDEAN
 
 All modifications to tables and columns will be synchronized online after updating the backend. **If your Project has been published and is in use, modifications to the table may cause some online requests to fail.**
 
-<img src="../.gitbook/assets/data/data_data_model12.png" width="100%"/>
+![](<../.gitbook/assets/data/data_data_model12.png>)
 
 ## Permission Management
 

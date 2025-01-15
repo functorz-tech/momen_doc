@@ -19,8 +19,8 @@ Open "Settings," go to "Global," and then "Add Global Variable." Choose a variab
 
 Assign values through "Set Global Data," which can be used in global settings or on a page.
 
-<img src="../.gitbook/assets/data/data_variable_global_assign0.png" width="100%">
-<img src="../.gitbook/assets/data/data_variable_global_assign2.png" width="100%">
+![](<../.gitbook/assets/data/data_variable_global_assign0.png>)
+![](<../.gitbook/assets/data/data_variable_global_assign2.png>)
 
 3. Reference
 

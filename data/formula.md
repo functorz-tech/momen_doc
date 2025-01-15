@@ -82,4 +82,5 @@ Formulas are functions used to calculate data. Momen provides various formulas t
 
 Logical operations on data are used in Conditional View, Conditional data, and conditional branches of Actionflow. For detailed usage, please refer to the relevant documentation.
 
-<img src="../.gitbook/assets/data/data_formula0.png" width="100%">
+![](<../.gitbook/assets/data/data_formula0.png>)
+
