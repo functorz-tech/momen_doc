@@ -1,6 +1,6 @@
 ---
 description: >-
-After clicking on the component configured for this action, you can download a file from the web database to the computer, which was previously requested from the web database.
+  After clicking on the component configured for this action, you can download a file from the web database to the computer, which was previously requested from the web database.
 ---
 
 # File Management
