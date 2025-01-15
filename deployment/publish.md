@@ -36,6 +36,7 @@ After inputting your domain, Momen will automatically generate records based on 
 - Once the TXT record is added, return to the custom domain page on the platform and initiate the domain verification process. If the verification is successful, proceed to the next step.
 
 <img src="../.gitbook/assets/publish/cd-1.png" alt="Momen custom domain txt records">
+
 <img src="../.gitbook/assets/publish/cd-2.png" alt="Momen custom domain txt records">
 
 **3. Certificate and Proxy Verification**
@@ -44,6 +45,7 @@ In this step, you need to configure TXT and CNAME records to validate certificat
 - Return to the setting page and initiate the certificate and proxy verification process. Upon successful verification, proceed to the final step.
 
 <img src="../.gitbook/assets/publish/cd-3.png" alt="Momen custom domain Cname records">
+
 <img src="../.gitbook/assets/publish/cd-4.png" alt="Momen custom domain Cname records">
 
 **4. Web favicon**
@@ -55,4 +57,4 @@ You can upload a custom icon (favicon) to your website. Once uploaded, save the 
 **1. Default Custom Domain:** When multiple custom domains exist, you can set one domain as the default. All other domains will automatically redirect to the default domain when accessed.   
 **2. Editing a Custom Domain:** If a custom domain configuration is not saved, the platform will retain it for 24 hours. After 24 hours, unsaved configurations will be cleared. Once a domain is saved, only the website icon can be modified later.   
 **3. Deleting a Custom Domain:** If all custom domains are deleted, the app will revert to being published via Momen domain.   
-**4. Proxy status：**For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
+**4. Proxy status**For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
