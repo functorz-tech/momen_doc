@@ -1,16 +1,16 @@
 # Upgrade Project Plan and Sever
 
-Apart from the Enterprise plan, Momen's pricing is structured around individual projects. You can opt to upgrade a specific project in your personal center. Once upgraded, the new plan’s enhanced computing capabilities and advanced features will only apply to that particular project. You can also choose to directly purchase a premium plan when you create a project.
+Apart from the Enterprise plan, Momen's pricing is structured on project base. You can opt to upgrade a specific project in your personal center. Once upgraded, the new plan’s affliated computing resources and features will only apply to that particular project. You can also choose to directly purchase a plan when you create a project.
 
 ## Upgrade Plan
 
-Momen offers several plans: Free, Basic, Pro, and Enterprise, each designed to meet different business needs. Premium plans offer increased computing resources and advanced functionalities.
+Momen offers several plans: Free, Basic, Pro, and Enterprise, each designed to meet different business needs. The Enterprise plan offer increased computing resources and advanced functionalities.
 
 ![](<../.gitbook/assets/0 (1).png>)
 
 > After the upgrade, you need to schedule your sever activation
 
-> Server and Feature Comparison[click here](https://momen.app/pricing)
+> Server and Feature Comparison [click here](https://momen.app/pricing)
 
 ### Computing Power
 Momen's computing power includes server capacity, object storage, database storage, peak Requests Per Second (RPS), data outflow, and app tokens. Consumption of these resources is linked to the operations performed during app development, debugging, and live usage:
@@ -19,13 +19,15 @@ Momen's computing power includes server capacity, object storage, database stora
 
 2. Database Storage: Stores text data in your database.
 
-3. [RPS (Requests Per Second)](rps.md): This is a measure of how many requests your application can handle per second. High RPS indicates more server resource consumption. To ensure both stability and a good user experience, RPS is capped.
+3. RPS (Requests Per Second): This is a measure of how many requests your application can handle per second. High RPS indicates more server resource consumption. To ensure both stability and a good user experience, RPS is capped.
 
 4. Data Outflow: Loading images, videos, and other files in the app consumes equivalent data traffic.
 
 5. App Tokens: These are utilized when activating Momen AI capabilities or performing text vectorization.
 
-#### Viewing and Purchasing Computing Power
+6. Actionflow Automation Count: This refers to how many times left for scheduled and database change executions.
+
+#### Viewing and Purchasing Computing Resource
 
 Hover over a project in user center and click “Manage” to see its computing power details.
 
@@ -52,6 +54,8 @@ Full Database Storage: Saving new text data in the database will be impossible.
 
 Depleted App Tokens: New text cannot be vectorized, and AI functionalities will be unavailable.
 
+Depleted Actionflow Automation count: Unable to run actionflow when triggered.
+
 
 ## Sever Activation
 
@@ -59,7 +63,7 @@ After the plan upgrade, you can choose to activate the server right away or sche
 
 <figure><img src="../.gitbook/assets/截屏2024-04-25 12.41.02.png" alt=""><figcaption></figcaption></figure>
 
-If you didn't select the activation option on the upgrade success page, you can still open the project details page and continue to schedule activation time in the reminder bar at the top of the project information.
+If you didn't select the activation option on the upgrade success page, on project detail page, you can still continue to schedule activation in the reminder bar at the top of the project information.
 
 <figure><img src="../.gitbook/assets/截屏2024-04-28 16.35.42.png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +73,3 @@ If you didn't select the activation option on the upgrade success page, you can 
 
 3. If a server upgrade or activation fails due to network issues, you will receive a system and email notification. Our engineering team will solve the problem for you as soon as possible, and you can also contact us to follow up on the latest progress of the solution.
 
-
-### **About Momen**
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.

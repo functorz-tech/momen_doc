@@ -6,7 +6,7 @@ description: >-
 
 # Log Service
 
-**Scope:** The log service aims to capture all key information within the system. Currently, gateway logs are included, with plans to expand coverage to Actionflows, database operations, deployment releases, and more in the future.
+**Scope:** The log service aims to capture all key information within the system. Currently, the scope of log service ranges from actionflow, database access, ai, api, trigger, gateway, deployment and publishing to GraphQL related records.
 
 **Storage Capacity:** The log service offers varying storage capacities based on the project version, measured in days:
 
@@ -16,7 +16,7 @@ description: >-
 
 
 
-### **Getting Started**
+## **Getting Started**
 
 1. Access the log service from the "Log Service" section on the project details page.
 
@@ -31,7 +31,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/20241031-175313.jpeg" alt=""><figcaption></figcaption></figure>
 
-### **Query Syntax**
+## **Query Syntax**
 
 The log service offers efficient query syntax for flexible and rapid log searches.
 
@@ -77,9 +77,9 @@ The log service offers efficient query syntax for flexible and rapid log searche
        requestBody.query: mutation*
        ```
 
-### **Log Classification Overview**
+## **Log Classification Overview**
 
-#### Actionflow (Coming Soon)
+### Actionflow 
 
 The Log Service records the running status of each node in the Actionflow in detail:
 
@@ -116,7 +116,7 @@ The Log Service records the running status of each node in the Actionflow in det
 | Branch Start 	| BRANCH_SEPARATION         	|
 | Branch End 	| BRANCH_MERGE         	|
 
-#### Database Operations
+### Database Operations
 
 This category records all operations (add, delete, modify) on the database, including the following content:
 
@@ -124,7 +124,7 @@ This category records all operations (add, delete, modify) on the database, incl
 
 2. Detailed content of the operation
 
-#### Deployment Records
+### Deployment Records
 
 The project deployment and release process consists of various steps, and the log service will log information for each step, including:
 
@@ -133,7 +133,7 @@ The project deployment and release process consists of various steps, and the lo
 
 Monitoring this information will aid in quickly resolving issues during deployment.
 
-#### Gateway
+### Gateway
 
 The gateway serves as a connection point between different networks, facilitating data forwarding for seamless communication. In the Momen platform, the following requests pass through the gateway:
 

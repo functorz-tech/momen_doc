@@ -28,7 +28,7 @@
 
 ## Data
 
-* [Overview](data/over_view.md)
+* [Overview](data/overview.md)
 * [Data Source](data/data_source.md)
 * [Data Model and Database](data/data_model.md)
 * [API](data/api.md)
@@ -40,7 +40,7 @@
 
 ## Actions
 
-* [Overview of Actions](actions/readme.md)
+* [Overview](actions/overview.md)
 * [Request](actions/request.md)
 * [Navigation](actions/navigation.md)
 * [User Actions](actions/user-actions.md)
