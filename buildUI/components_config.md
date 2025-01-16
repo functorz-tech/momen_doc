@@ -1,3 +1,8 @@
+---
+description: >-
+  Add and config components in Momen
+---
+
 # Add and configure components
 Components are the building blocks of a page. When selected, you can configure them in detail using the “Design,” “Data,” and “Action” tabs in the right sidebar.        
 This document focuses on the "Design" tab, while the configurations for "Data" and "Action" are discussed at the end.

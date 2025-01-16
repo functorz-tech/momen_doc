@@ -5,7 +5,7 @@
 * [Introduction](README.md)
 * [Quick Start](starts/starts.md)
 * [Software Devolpment Process](starts/developmentProcess.md)
-* [Editor Overview](starts/editorOverview.md)
+* [Editor Overview](starts/editor_overview.md)
 
 ## Changelog
 
@@ -15,6 +15,7 @@
 
 * [Pages](buildUI/page_config.md)
 * [Components](buildUI/components_config.md)
+* [Canvas](buildUI/canvas.md)
 * [Layout](buildUI/layout.md)
 * [Component - Display Type](buildUI/cp_display.md)
 * [Component - Input Type](buildUI/cp_input.md)
