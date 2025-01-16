@@ -6,9 +6,7 @@ description: >-
 ---
 
 # Permissions
-The permission system is the infrastructure of commercial software. Through refined permission control, it can effectively prevent data leakage, unauthorized access, and other security risks, ensuring the integrity and confidentiality of the system and data.
-
-Momen provides a permission management system that combines Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC). While ensuring data security, it also allows for flexible and precise permission control.
+The permission system is the foundation of commercial software. Through refined permission control, it can effectively prevent data leakage, unauthorized access, and other security risks, ensuring the integrity and confidentiality of the system and data. Momen provides a permission management system that combines Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC). While ensuring data security, it also allows for flexible and precise permission control.
 
 ## Basic Concepts
 * **Role**: A collection of a type of users; user permission control is achieved by granting users roles, where roles are bound with multiple permissions.
@@ -17,20 +15,16 @@ Momen provides a permission management system that combines Role-Based Access Co
 
 * **Action Permission**: Controls the actions a role can perform, such as Actionflow, APIs, payment actions, refund actions, etc.
 
-![](<../../.gitbook/assets/0 (16).png>)
+![](<../.gitbook/assets/0 (16).png>)
 
-## Getting started
-### 1. Open Permissions
+## Permission configuration guide
+### 1. Enable Permissions
 ![](<../.gitbook/assets/permission/permission0.png>)
 
 ### 2. Role Management
 The system has two built-in roles:
-* **Logged-in User**
-  * Any user who logs in (via username and password, phone number and password, etc.) is automatically granted this role.
-  * Since the applet will automatically perform "silent login" behavior, any user on the applet has this role.
-* **Anonymous User**
-  * Unlogged visitors are assigned this role.
-  * There are no guests in the applet.
+* **Logged-in User:** Any user who logs in (via username and password, phone number and password, etc.) is automatically granted this role.
+* **Anonymous User:** Unlogged visitors are assigned this role.
 
 In addition to the system's built-in roles, developers can create their own roles. The number of roles that can be created varies with different Project versions:
 * Free Plan: 0 roles
@@ -49,7 +43,7 @@ In addition to the system's built-in roles, developers can create their own role
 
 ![](<../.gitbook/assets/permission/permission3.png>)
 
-3. Advanced Filtering: Configure attribute-based more refined operation permissions through row filtering (e.g., users can only modify their own data).
+3. Advanced Filtering: Configure attribute-based and refined operation permissions through row filtering (e.g., users can only modify their own data).
 
 ![](<../.gitbook/assets/permission/permission4.png>)
 
@@ -73,9 +67,9 @@ Use the permission node in Actionflow to grant and remove roles for certain user
 ![](<../.gitbook/assets/permission/permission8.png>)
 
 ### 5. Make Permissions Effective
-After changing the permission configuration, you need to deploy the backend for it to take effect. Automated authorization Actionflow also needs to be published before it takes effect.
+After changing the permission configuration, you need to deploy the backend for it to take effect. Automated authorization Actionflow also needs to be saved and deployed before it takes effect.
 
-## Considerations
-- Encountering the error "User xxxx has no permission for xxxxx"
-  - Cause: The user does not have the corresponding permission.
-  - Solution: Go to the permission configuration and add the corresponding operation permission for the user's role.
+## Note
+Encountering the error "User xxxx has no permission for xxxxx"
+- Cause: The user does not have the corresponding permission.
+- Solution: Go to the permission configuration and add the corresponding operation permission for the user's role.
