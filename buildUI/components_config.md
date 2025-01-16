@@ -1,12 +1,69 @@
-# Configure Components—Design, Data, Action
-![](../.gitbook/assets/design/right_side_bar_overview.png)
-
-When a component or page is selected, detailed configurations can be made in the right sidebar. You can manage different aspects of the selected component or page by navigating through the "Design," "Data," and "Action" tabs.
-
+# Add and configure components
+Components are the building blocks of a page. When selected, you can configure them in detail using the “Design,” “Data,” and “Action” tabs in the right sidebar.        
 This document focuses on the "Design" tab, while the configurations for "Data" and "Action" are discussed at the end.
+## Add Components
+Click the "Add Component" button in the left sidebar to open the component list. You can also quickly access this list using the shortcut key <font color="#2EA120">**(⌥ C丨Alt C)**</font>.
+
+Currently, the Editor provides three types of component resources:
+
+1. System Components
+
+2. Custom Components
+
+3. Code Components
+
+![](../.gitbook/assets/design/left_side_bar_comp_type.png)
+
+You can add components in three ways:
+
+1. Select the target container and double-click the component to add it.
+
+2. Drag the desired component into the target container.
+
+    <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
+        <img src="../.gitbook/assets/design/double_click_add_comp.gif" alt="Image 1" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
+        <img src="../.gitbook/assets/design/drag_add_comp.gif" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
+    </div>  
+
+3. Use the following shortcuts to add frequently used components to a page or container-type component:
+
+    **Text** — <font color="#2EA120">**T**</font>
+
+    **Button** — <font color="#2EA120">**B**</font>
+
+    **Image** — <font color="#2EA120">**I**</font>
+
+    **View** — <font color="#2EA120">**F**</font>
 
 
-## Title and ID
+### Component Management
+
+Right-click a component to access the management menu with these options:
+
+1. **Copy**: Copy the component (<font color="#2EA120">**⌘ C丨Ctrl C**</font>).
+
+2. **Cut**: Cut the component (<font color="#2EA120">**⌘ X丨Ctrl X**</font>).
+
+3. **Paste**: Place the copied or cut component into the target container  (<font color="#2EA120">**⌘ V丨Ctrl V**</font>).
+
+4. **Duplicate**: Create a copy of the component at the same level (<font color="#2EA120">**⌘ D丨Ctrl D**</font>).
+
+5. **Select**: Use the selected component as a reference to select other content on the same page.
+
+6. **Move**: Change the component's hierarchical position.
+
+7. **Rename**: Modify the component name (shortcut <font color="#2EA120">**⌘ R丨Ctrl R**</font>).
+
+8. **Save as "Custom Component"**: Save the selected component to the "Custom Component" list (<font color="#2EA120">**⇧ ⌘ K**丨**Shift Ctrl K**</font>).
+
+9. **Create View**: Wrap the selected content into a View (<font color="#2EA120">**⌘ G**丨**Ctrl G**</font>).
+
+10. **Delete**: Remove the component.
+
+![](../.gitbook/assets/design/left_side_bar_comp_right_click.png)
+
+
+## Configure Component - Title and ID
 
 **Title**: The title in the right sidebar defaults to the component/page name. Hover over the title to rename it.
 
@@ -14,7 +71,8 @@ This document focuses on the "Design" tab, while the configurations for "Data" a
 
 ![](../.gitbook/assets/design/right_side_bar_name_id.png)
 
-## Design
+## Configure Component - Design
+![](../.gitbook/assets/design/right_side_bar_overview.png)
 
 ### Alignment and Distribution
 
@@ -166,16 +224,10 @@ If the selected component contains text, configure text properties in this secti
 
 ![](../.gitbook/assets/design/right_side_bar_text.png)
 
-## Data
-Configure the data source for components and pages. Supported for pages, Lists, Select Views, tables, etc.
+## Configure Component - Data
+Configure the data source for components. Supported for List, Select Views, Table, etc.
+For details, see [Data](../data/overview.md).
 
-For details, see [Data](../data/readme.md).
-
-## Action
-Define actions triggered by user interactions or events:
-
-Components: Configure actions like clicks, refreshes, or List scroll events.
-
-Pages: Configure actions like load, unload, or scheduled events.
-
-For details, see [Action Configuration](../actions/readme.md).
+## Configure Component - Action
+Define actions triggered by user interactions or events like clicks, refreshes, or List scroll events.       
+For details, see [Action Configuration](../actions/overview.md).

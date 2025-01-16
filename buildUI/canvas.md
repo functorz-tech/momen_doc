@@ -1,4 +1,4 @@
-# Managing Canvas & Components
+# Canvas operations
 
 ## Hierarchical Structure
 Pages Pages and container components support nesting other components. The component tree in the left sidebar displays these nesting relationships.

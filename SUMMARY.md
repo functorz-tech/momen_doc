@@ -13,7 +13,8 @@
 
 ## Build UI <a href="#buildUI" id="buildUI"></a>
 
-* [Pages](buildUI/page.md)
+* [Pages](buildUI/page_config.md)
+* [Components](buildUI/components_config.md)
 * [Layout](buildUI/layout.md)
 * [Component - Display Type](buildUI/cp_display.md)
 * [Component - Input Type](buildUI/cp_input.md)
