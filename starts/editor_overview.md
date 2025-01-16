@@ -1,6 +1,11 @@
-# Introducing the momen editor
+---
+description: >-
+  Overview of the Momen Editor
+---
 
-The Zion Editor is divided into a navigation bar, functional core area, and additional sections such as the left sidebar, right sidebar, and toolbar when a page in the navigation bar is selected. The left sidebar is used for adding and managing pages and components, while the right sidebar is for detailed page and component configuration. Click the provided links for more detailed information.
+# Introducing the Momen Editor
+
+The Momen Editor is divided into a navigation bar, functional core area, and additional sections such as the left sidebar, right sidebar, and toolbar when a page in the navigation bar is selected. The left sidebar is used for adding and managing pages and components, while the right sidebar is for detailed page and component configuration. Click the provided links for more detailed information.
 
 ## Navigation Bar: Feature Access and Project Management
 <img src="../.gitbook/assets/design/nav_bar_overview.png" style="zoom:100%;" />
@@ -9,7 +14,7 @@ The navigation bar allows you to switch between canvas contents, access various 
 
 ###  Return to Personal Center
 
-Click the “Zion” logo in the top-left corner to return to your personal center.
+Click the “Momen” logo in the top-left corner to return to your personal center.
 
 <img src="../.gitbook/assets/design/nav_bar_logo.png" style="zoom:100%;" />
 
