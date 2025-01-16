@@ -16,7 +16,7 @@ description: >-
 
 
 
-## **Getting Started**
+## Access Log Service
 
 1. Access the log service from the "Log Service" section on the project details page.
 
@@ -31,7 +31,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/20241031-175313.jpeg" alt=""><figcaption></figcaption></figure>
 
-## **Query Syntax**
+## Query Syntax
 
 The log service offers efficient query syntax for flexible and rapid log searches.
 
@@ -77,7 +77,7 @@ The log service offers efficient query syntax for flexible and rapid log searche
        requestBody.query: mutation*
        ```
 
-## **Log Classification Overview**
+## Log Classification Overview
 
 ### Actionflow 
 
