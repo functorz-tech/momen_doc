@@ -1,7 +1,7 @@
 # Detailed Tutorial on Layout and Position
 ## Layout
 
-![](../assets/images/layout_and_position_overview.png)
+![](../.gitbook/assets/design/layout_and_position_overview.png)
 
 Pages and Container components come with default layout properties. You can adjust the layout settings to arrange components with a "relative" position type according to the specified rules, achieving your desired layout effect.
 
@@ -10,8 +10,8 @@ Pages and Container components come with default layout properties. You can adju
 The extension direction of the layout.
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../assets/images/layout_and_position_direction.png" alt="Image 1" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
-    <img src="../assets/images/layout_and_position_direction_view.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/layout_and_position_direction.png" alt="Image 1" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/layout_and_position_direction_view.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
 </div>
 
 **Horizontal**
@@ -26,34 +26,32 @@ Add, remove, and reorder objects along the Y-axis.
 
 You can freely adjust the distribution of child components within a page/Container component and align them with reference to the parent.
 
-![](../assets/images/layout_and_position_distribution.png)
+![](../.gitbook/assets/design/layout_and_position_distribution.png)
 
 **Stack**:
-![](../assets/images/layout_and_position_stack.png)
+![](../.gitbook/assets/design/layout_and_position_stack.png)
 
 **Space Between**: The spacing between components is equal, but the first and last components are flush with the edges of the Container.
-![](../assets/images/layout_and_position_spacebetween.png)
+![](../.gitbook/assets/design/layout_and_position_spacebetween.png)
 
 **Space Evenly**: The spacing between components is equal, and the margins at both ends of the Container are also equal.
-![](../assets/images/layout_and_position_spaceevenly.png)
+![](../.gitbook/assets/design/layout_and_position_spaceevenly.png)
 
 **Space Around**: In space-around distribution, each component has equal spacing on both sides, making them appear "evenly surrounded." However, because the components at both ends only share spacing on one side with other components, the gaps between the ends and the Container edges are smaller than the spacing between components.
-![](../assets/images/layout_and_position_spacearound.png)
+![](../.gitbook/assets/design/layout_and_position_spacearound.png)
 
 ### Wrapping
 
 When the content width exceeds the available space of the Container, the content will adjust to the next line for arrangement.
-<video width="100%"  controls>
-  <source src="https://docs.functorz.com/static/video/20241213-163530.mp4">
-</video>
+![](../.gitbook/assets/design/layout_wrap.gif)
 
 ### Gap
 The spacing settings between child components within a page or Container component.
-![](../assets/images/layout_and_position_gap.png)
+![](../.gitbook/assets/design/layout_and_position_gap.png)
 
 ### Overflow
 
-![](../assets/images/layout_and_position_overflow.png)
+![](../.gitbook/assets/design/layout_and_position_overflow.png)
 
 1. **Scroll**: When content overflows, a scrollbar appears on the parent, allowing you to scroll to view the overflowed content.
 
@@ -65,7 +63,7 @@ The spacing settings between child components within a page or Container compone
 
 ### Type
 
-![](../assets/images/layout_and_position_type.png)
+![](../.gitbook/assets/design/layout_and_position_type.png)
 
 1. **Relative**: Components are arranged in an orderly manner according to the layout of their parent.
 
@@ -75,7 +73,7 @@ The spacing settings between child components within a page or Container compone
 
 ### Layer
 
-![](../assets/images/layout_and_position_layers.png)
+![](../.gitbook/assets/design/layout_and_position_layers.png)
 
 * The default layer of all components is "auto," meaning all components are on the same layer.
 
