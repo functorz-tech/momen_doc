@@ -1,120 +1,82 @@
----
-description: >-
-  Learn to create responsive websites with Momen's no-code editor. Explore
-  principles such as flexible layout, relative positioning, and responsive
-  layouts for desktop and mobile.
----
+# Detailed Tutorial on Layout and Position
+## Layout
 
-# Layout
+![](../.gitbook/assets/design/layout_and_position_overview.png)
 
-### Introduction
+Pages and Container components come with default layout properties. You can adjust the layout settings to arrange components with a "relative" position type according to the specified rules, achieving your desired layout effect.
 
-In this tutorial, you'll learn how to build responsive websites using Momen, and as part of that, we also introduce webpage layout design principles. We'll cover key concepts like relative and absolute positioning, flexible layouts, and more, helping you design pages that work across different platforms.\\
+### Direction
 
-### Multi-Platform Development
+The extension direction of the layout.
 
-After creating a project on the Momen editor, you can design web pages for desktop, tablet and mobile platforms concurrently. Please adjust your designs for different page sizes.
+<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
+    <img src="../.gitbook/assets/design/layout_and_position_direction.png" alt="Image 1" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/layout_and_position_direction_view.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+</div>
 
-### Separate Configuration for Desktop, Tablet and Mobile Layouts
+**Horizontal**
 
-Desktop, tablet and mobile interfaces have different page sizes, resulting in distinct layouts for each platform.
+Add, remove, and reorder objects along the X-axis.
 
-When you drag a component on the page, it'll appear on three interfaces. You can adjust the size and position on different interfaces.
+**Vertical**
 
-<figure><img src="../.gitbook/assets/layout/layout-1.gif" alt=""><figcaption></figcaption></figure>
+Add, remove, and reorder objects along the Y-axis.
 
-When you drag in a component on the desktop, and then change the position or size of a component on the mobile, there will be a "Layout Breakpoint" between the mobile and desktop, at which time you can adjust the page layout according to the page size on the mobile.
+### Distribution and Alignment
 
-For the same component, you can modify the component position, size, inner margins, outer margins, and rounded corners on different interfaces, and other properties and actions will take effect at all ends.
+You can freely adjust the distribution of child components within a page/Container component and align them with reference to the parent.
 
-### Position
+![](../.gitbook/assets/design/layout_and_position_distribution.png)
 
-Type: Configure how the list component is positioned in its parent component.
+**Stack**:
+![](../.gitbook/assets/design/layout_and_position_stack.png)
 
-* Relative: Positioning in relation to the position type of the parent component
-* ABsolute: Positioned according to the set distance from the parent component
-* Fixed: Positioned according to the set distance from the parent component, the component will float in a fixed position when scrolling the page
+**Space Between**: The spacing between components is equal, but the first and last components are flush with the edges of the Container.
+![](../.gitbook/assets/design/layout_and_position_spacebetween.png)
 
-<figure><img src="../.gitbook/assets/layout/layout-2.gif" alt=""><figcaption></figcaption></figure>
+**Space Evenly**: The spacing between components is equal, and the margins at both ends of the Container are also equal.
+![](../.gitbook/assets/design/layout_and_position_spaceevenly.png)
 
-There are four positioning directions for the absolute and fixed positioning: top left, top right, bottom left, bottom right, and the image below shows the top left positioning method. Click on the coordinate lines in different directions (the lines next to T, L, R, B) to switch the positioning coordinate direction.
+**Space Around**: In space-around distribution, each component has equal spacing on both sides, making them appear "evenly surrounded." However, because the components at both ends only share spacing on one side with other components, the gaps between the ends and the Container edges are smaller than the spacing between components.
+![](../.gitbook/assets/design/layout_and_position_spacearound.png)
 
-<figure><img src="../.gitbook/assets/4 (2).1.png" alt="Percentage of length setting in a no-code tool"><figcaption></figcaption></figure>
+### Wrapping
 
-Z Index: This controls the stacking order of overlapping elements on a page. The component first dragged in has a lower z-index level. In absolute or fixed position, when the two components coincide, the component with a higher z-index level will appear in front of the component with a lower value. When the z-index value is defined, the component with a higher value will cover the component with a lower value.
+When the content width exceeds the available space of the Container, the content will adjust to the next line for arrangement.
+![](../.gitbook/assets/design/layout_wrap.gif)
 
-<figure><img src="../.gitbook/assets/layout/layout-3.gif" alt=""><figcaption></figcaption></figure>
+### Gap
+The spacing settings between child components within a page or Container component.
+![](../.gitbook/assets/design/layout_and_position_gap.png)
 
-### Size
+### Overflow
 
-You can set the width and height of the component, in the following three length units:
+![](../.gitbook/assets/design/layout_and_position_overflow.png)
 
-* px: Fixed width/height in pixel values.
-* %/fraction: A percentage of the parent component or a fraction of the whole, changing with the size variations of the parent component.
-* Adaptive: Adjusts the width/height according to the amount of content within the component.
+1. **Scroll**: When content overflows, a scrollbar appears on the parent, allowing you to scroll to view the overflowed content.
 
-Maximum/Minimum, Width/Height: When setting a component's width or height as "percentage," "fraction," or "adaptive," you can also define the maximum/minimum width/height. Ensures the child component maintains a specific value in extreme situations (e.g., large or small pages).
+2. **Visible**: When content overflows, the overflowed part is visible on the parent.
 
-#### Size Setting Example
+3. **Hidden**: When content overflows, the overflowed part is hidden on the parent.
 
-Percentage refers to the relative length compared to the parent component's width or height, ranging from 0% to 100%. For instance, if a button's height is set to 50% and the parent component's height is 500px, the button's height will be 250px.
+## Position
 
-<figure><img src="../.gitbook/assets/5 (26).png" alt="Percentage of length setting in a no-code tool"><figcaption></figcaption></figure>
+### Type
 
-#### Padding/ Margins
+![](../.gitbook/assets/design/layout_and_position_type.png)
 
-【Padding】: Sets the spacing between the child component and the parent component.【Margin】: Sets the spacing between the component itself and its sibling components.
+1. **Relative**: Components are arranged in an orderly manner according to the layout of their parent.
 
-<figure><img src="../.gitbook/assets/7.1.png" alt="Padding and margins in a no-code tool"><figcaption></figcaption></figure>
+2. **Absolute**: Components are displayed at a fixed position based on two directions (top-left, top-right, bottom-left, bottom-right) of **their parent**.
 
-### Layout
+3. **Fixed**: Components are displayed at a fixed position based on two directions (top-left, top-right, bottom-left, bottom-right) of the **browser viewport**, and remain in a fixed position even when the page scrolls.
 
-#### Parent and Child Components
+### Layer
 
-If Component A contains Component B, then A is the parent component, and B is the child component. In the illustration below, a view contains three buttons. Thus, the view is the parent component, and the three buttons are its child components. The three buttons are sibling components to one another.
+![](../.gitbook/assets/design/layout_and_position_layers.png)
 
-In a flexible layout, you can modify the child components' positions through the right sidebar properties of the parent component.
+* The default layer of all components is "auto," meaning all components are on the same layer.
 
-<figure><img src="../.gitbook/assets/layout/layout-4.jpeg" alt=""><figcaption></figcaption></figure>
+* You can manually change the layer of a component (numerically), with higher values indicating a higher layer. Components on higher layers will cover those on lower layers.
 
-Tips:
-
-In relative positioning, components cannot be arbitrarily adjusted; consideration must be given to the positions of their parent and sibling components. Although this limits freedom, it offers a more convenient layout and ensures good performance across pages of different sizes.
-
-### Layout Mode
-
-> When a component's positioning method is set to "relative," the following layout modes can be utilized for quick layout operations on the page content:
-
-<figure><img src="../.gitbook/assets/layout/layout-5.gif" alt=""><figcaption></figcaption></figure>
-
-**Overflow**
-
-When the child components placed within the parent component exceed the parent component's width, the parent component's "overflow" mode can be adjusted according to business requirements.
-
-<figure><img src="../.gitbook/assets/11.1.png" alt="Overflow in a no-code tool"><figcaption></figcaption></figure>
-
-**Spacing**
-
-When the distribution mode of the 【parent component】 is set to "start," custom spacing distances can be set for the 【child components】.
-
-<figure><img src="../.gitbook/assets/12.1.png" alt="Spacing in a no-code tool"><figcaption></figcaption></figure>
-
-### Cursor Styles
-
-As depicted in the illustration below ⬇️, in various interactive contexts, we can show to the users that a particular component possesses specific interactive action through the style of the cursor:
-
-<figure><img src="../.gitbook/assets/13.JPEG" alt="Cursor styles in a no-code tool" width="554"><figcaption></figcaption></figure>
-
-* Inherit: Based on the OS (e.g., Mac, Windows default cursors)
-* Auto: Basic arrow cursor
-* No Cursor: Hides cursor
-* Pointer: Hand-shaped, indicating clickable elements
-* Help: Question mark, for assistance
-* Not-allowed: Prohibits clicking
-* Text: Indicates text input
-
-
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+* Components on the same layer are presented in the order they are added, with later additions covering earlier ones.
