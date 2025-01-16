@@ -1,13 +1,13 @@
-# Canvas & Component Management
+# Managing Canvas & Components
 
 ## Hierarchical Structure
-Both pages and container components support adding components within them. You can view the nesting relationships between components in the component tree on the left sidebar.
+Pages Pages and container components support nesting other components. The component tree in the left sidebar displays these nesting relationships.
 
-![](../assets/images/select_and_display_.png)
+![](../.gitbook/assets/design/select_and_display_.png)
 
-> Currently, cross-level dragging to change the nesting hierarchy of components is not supported, but you can achieve this by using the cut + paste method.
+> Currently, Cross-level dragging to adjust nesting is unavailable; use the cut-and-paste method instead.
 
-Components at the same level have a display order, with later added components overlaying earlier ones. When you want to control the display order of components at the same level, you can directly drag the components in the left sidebar or control them through the "Move" option in the right-click menu. Here are some related shortcuts:
+Components at the same level follow a display order: newer components overlay older ones. To control the display order, drag components in the left sidebar or use the "Move" option in the right-click menu. You can also use the following shortcuts:
 
 **Bring to Front**: <font color="#2EA120">**]**</font>
 
@@ -31,9 +31,7 @@ Components at the same level have a display order, with later added components o
 
 **Interaction**
 
-You can directly click with the pointer to select the component you want, or hold <font color="#2EA120">**⌘ | Ctrl**</font> to click and select the parent component.
-
-Once you have selected a component, you can quickly switch to the object you want to select using shortcuts:
+Click a component directly to select it, or hold <font color="#2EA120">**⌘ | Ctrl**</font> to select its parent component. After selecting, you can use shortcuts to switch selection:
 
 **Select Parent**: <font color="#2EA120">**Shift ⏎**</font>
 
@@ -49,20 +47,16 @@ Once you have selected a component, you can quickly switch to the object you wan
 
 **Interaction**
 
-After selecting a component, you can hold <font color="#2EA120">**Shift**</font> to add other components you want to multi-select on the page one by one. Alternatively, in the left sidebar, hold <font color="#2EA120">**⌘ | Ctrl**</font> to select components to achieve the same effect.
-<video width="100%" controls>
-  <source src="https://docs.functorz.com/static/video/20241213-163517.mp4">
-</video>
+To multi-select components on a page, hold <font color="#2EA120">**Shift**</font> and click each component. Alternatively, in the left sidebar, hold <font color="#2EA120">**⌘ | Ctrl**</font> and click components to achieve the same effect.
+![](../.gitbook/assets/design/multi-select_1.gif)
 
-If you want to batch select components, you can use the pointer to draw a selection box on the canvas, or in the left sidebar, hold <font color="#2EA120">**Shift**</font> to directly select all components between two components.
-<video width="100%" controls>
-  <source src="https://docs.functorz.com/static/video/20241213-163526.mp4">
-</video>
+For batch selection, use the pointer to draw a selection box on the canvas, or in the left sidebar, hold <font color="#2EA120">**Shift**</font> to select all components between two.
+![](../.gitbook/assets/design/multi-select_2.gif)
 
-After multi-selecting, you can modify their shared properties in the right sidebar.
+After multi-selecting, shared properties can be modified in the right sidebar.
 
 **Grouping**
 
-If you want to quickly add a view to the selected components, you can choose "Create View" from the right-click menu or use the shortcut **⌘ G | Ctrl G**.
+Group selected components into a view using the "Create View" option in the right-click menu or the shortcut <font color="#2EA120">**⌘ G | Ctrl G**</font>.
 
-![](../assets/images/select_and_display_-1.png)
+![](../.gitbook/assets/design/select_and_display_-1.png)
