@@ -58,7 +58,7 @@ On mobile, clicking the image can achieve functions such as zooming, downloading
 When you need to play video content in the application, you can choose the Video Component to achieve this.
 
 ### Configuration Instructions
-![cp-video](cp-video.png)
+![cp-video](../.gitbook/assets/cp-video.png)
 1. Local Upload Video     
    After a successful upload, the video will be displayed below the local upload. Click the uploaded video to play it, check and confirm the video content, or re-upload.
 
