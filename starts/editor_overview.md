@@ -1,10 +1,10 @@
 ---
 description: >-
-  Overview of the Momen Editor
+  Overview of the Momen Editor.
 ---
 
-# Introducing the Momen Editor
 
+# Introducing the Momen Editor
 The Momen Editor is divided into a navigation bar, functional core area, and additional sections such as the left sidebar, right sidebar, and toolbar when a page in the navigation bar is selected. The left sidebar is used for adding and managing pages and components, while the right sidebar is for detailed page and component configuration. Click the provided links for more detailed information.
 
 ## Navigation Bar: Feature Access and Project Management
