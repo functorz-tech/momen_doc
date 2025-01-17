@@ -14,6 +14,8 @@ description: >-
 * Basic Plan: 7 days
 * Pro Plan: 30 days
 
+
+
 ## Access Log Service
 
 1. Access the log service from the "Log Service" section on the project details page.
@@ -77,9 +79,9 @@ The log service offers efficient query syntax for flexible and rapid log searche
 
 ## Log Classification Overview
 
-### Actionflow 
+#### Actionflow
 
-The Log Service records the running status of each node in the Actionflow in detail:
+The Log Service records the running status of each node in the actionflow in detail:
 
 * Each node generates two logs: a log when the node starts and a log when the node ends
 
@@ -92,7 +94,7 @@ The Log Service records the running status of each node in the Actionflow in det
 | traceId  	| Used for event tracking query                 	|
 | nodeType 	| Type of the node                       	|
 | nodeName 	| Name of the node                         	|
-| version  	| Version of the Actionflow                       	|
+| version  	| Version of the actionflow                       	|
 | input    	| Input of the node, including all referenceable data 	|
 | output    | Result of the node's execution	|
 | startAt  	| Start time of the node                  	|
@@ -114,32 +116,40 @@ The Log Service records the running status of each node in the Actionflow in det
 | Branch Start 	| BRANCH_SEPARATION         	|
 | Branch End 	| BRANCH_MERGE         	|
 
-### Database Operations
+#### Database Operations
 
-This category records all operations (add, delete, modify) on the database, including the following content:
+This category records all operations (add, delete, modify) on the database, including the following:
 
-1. Trigger method (frontend request, Actionflow, AI, etc.)
+1. Trigger method (frontend request, actionflow, AI, etc.)
 
 2. Detailed content of the operation
 
-### Deployment Records
+#### AI
 
-The project deployment and release process consists of various steps, and the log service will log information for each step, including:
+Records the complete process of AI conversations, including model type, message details, etc.
 
-* Type of deployment (web, backend).
-* Status, start, and end times for each step.&#x20;
+#### API
 
-Monitoring this information will aid in quickly resolving issues during deployment.
+Records details of API requests, including the request Header, Body, etc.
 
-### Gateway
+#### Trigger
 
-The gateway serves as a connection point between different networks, facilitating data forwarding for seamless communication. In the Momen platform, the following requests pass through the gateway:
+Records the time, type, and other information of trigger activations.
 
-* Requests from frontend to backend.
-* Requests received via Callback.
+#### Gateway
 
-Logs in this category encompass most requests, including CRUD operations on databases, APIs, and AI. However, due to system limitations, only outbound requests can be viewed; their results are not accessible.
+A gateway is an intermediate device connecting different networks, responsible for forwarding data to enable smooth communication between different systems. On the Momen platform, the following requests pass through the gateway:
+1. Requests sent from the frontend page to the backend;
+2. Requests received through Callback;
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 18.11.48.png" alt=""><figcaption></figcaption></figure>
+Therefore, logs in this category include most requests, including database CRUD operations, API, AI, etc. However, due to system limitations, **only outgoing requests can be viewed in the gateway logs, and the results of the requests cannot be viewed**.
 
+<img src="../.gitbook/assets/截屏2024-10-31 18.11.48.png"" width="100%">
 
+#### Deployment and Release
+
+Records details of each backend release, pre-release, and release.
+
+#### GraphQL
+
+The backend API of Momen uses GraphQL query language, and all backend requests can be seen in this category. For more information about GraphQL, you can visit its official website: [GraphQL | A query language for your API](https://graphql.org/)
