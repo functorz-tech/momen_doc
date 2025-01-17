@@ -143,7 +143,7 @@ Choose from different calculation methods to define the component's size:
 For percentage or fraction-based dimensions, you can specify minimum and maximum constraints:
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_size_constraints.png" alt="Image 1" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
+    <img src="../.gitbook/assets/design/right_side_bar_size_constraints.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
     <img src="../.gitbook/assets/design/right_side_bar_size_constraints_added.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
     <img src="../.gitbook/assets/design/right_side_bar_size_constraints_remove.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
 </div>
@@ -152,20 +152,20 @@ For percentage or fraction-based dimensions, you can specify minimum and maximum
 
 Margin: Adjusts the space between a component and its surroundings.
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_margin.png" alt="Image 1" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
+    <img src="../.gitbook/assets/design/right_side_bar_margin.png" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
     <img src="../.gitbook/assets/design/right_side_bar_margin_intro.png" style="flex: 1; height: 400px; object-fit: cover; width: 60%;">
 </div>
 Padding: Adjusts the space between the component's content and its edges.
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding.png" alt="Image 1" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
+    <img src="../.gitbook/assets/design/right_side_bar_padding.png" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
     <img src="../.gitbook/assets/design/right_side_bar_padding_intro.png" style="flex: 1; height: 400px; object-fit: cover; width: 60%;">
 </div>
 
 By default, margins can be configured simultaneously for all sides. To configure individual sides, click the style icon.
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding_all_icon.png" alt="Image 1" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/right_side_bar_padding_all_icon.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
     <img src="../.gitbook/assets/design/right_side_bar_padding_all.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
 </div>
 

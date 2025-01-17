@@ -15,7 +15,7 @@ Pages and Container components come with default layout properties. You can adju
 The extension direction of the layout.
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/layout_and_position_direction.png" alt="Image 1" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/layout_and_position_direction.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
     <img src="../.gitbook/assets/design/layout_and_position_direction_view.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
 </div>
 
@@ -33,25 +33,31 @@ You can freely adjust the distribution of child components within a page/Contain
 
 ![](../.gitbook/assets/design/layout_and_position_distribution.png)
 
-**Stack**:
+**Stack**:  
+
 ![](../.gitbook/assets/design/layout_and_position_stack.png)
 
-**Space Between**: The spacing between components is equal, but the first and last components are flush with the edges of the Container.
+**Space Between**: The spacing between components is equal, but the first and last components are flush with the edges of the Container.  
+
 ![](../.gitbook/assets/design/layout_and_position_spacebetween.png)
 
 **Space Evenly**: The spacing between components is equal, and the margins at both ends of the Container are also equal.
+
 ![](../.gitbook/assets/design/layout_and_position_spaceevenly.png)
 
-**Space Around**: In space-around distribution, each component has equal spacing on both sides, making them appear "evenly surrounded." However, because the components at both ends only share spacing on one side with other components, the gaps between the ends and the Container edges are smaller than the spacing between components.
+**Space Around**: In space-around distribution, each component has equal spacing on both sides, making them appear "evenly surrounded." However, because the components at both ends only share spacing on one side with other components, the gaps between the ends and the Container edges are smaller than the spacing between components.  
+
 ![](../.gitbook/assets/design/layout_and_position_spacearound.png)
 
 ### Wrapping
 
-When the content width exceeds the available space of the Container, the content will adjust to the next line for arrangement.
+When the content width exceeds the available space of the Container, the content will adjust to the next line for arrangement.  
+
 ![](../.gitbook/assets/design/layout_wrap.gif)
 
 ### Gap
-The spacing settings between child components within a page or Container component.
+The spacing settings between child components within a page or Container component.  
+
 ![](../.gitbook/assets/design/layout_and_position_gap.png)
 
 ### Overflow

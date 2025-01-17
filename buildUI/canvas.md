@@ -52,10 +52,10 @@ Click a component directly to select it, or hold <font color="#2EA120">**⌘ | C
 **Interaction**
 
 To multi-select components on a page, hold <font color="#2EA120">**Shift**</font> and click each component. Alternatively, in the left sidebar, hold <font color="#2EA120">**⌘ | Ctrl**</font> and click components to achieve the same effect.
-![](../.gitbook/assets/design/multi-select_1.gif)
+<img src="../.gitbook/assets/design/multi-select_1.gif" style="width: 100%; max-width: 100%;" />
 
 For batch selection, use the pointer to draw a selection box on the canvas, or in the left sidebar, hold <font color="#2EA120">**Shift**</font> to select all components between two.
-![](../.gitbook/assets/design/multi-select_2.gif)
+<img src="../.gitbook/assets/design/multi-select_2.gif" style="width: 100%; max-width: 100%;" />
 
 After multi-selecting, shared properties can be modified in the right sidebar.
 
