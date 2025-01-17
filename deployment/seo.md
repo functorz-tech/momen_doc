@@ -60,13 +60,13 @@ For more detailed information on CSR, SSR, and SSG, please refer to publicly ava
 
 #### 2. Range of Path Parameters
 
-The range of path parameter directly determines the address of the webpage (see [Parameter](https://docs.momen.app/data/parameter) for details) and will affect SEO in the following two aspects:
+The range of path parameters directly determines the address of the webpage (see [Parameter](https://docs.momen.app/data/parameter) for details) and will affect SEO in the following two aspects:
 
 * Sitemap: Links included can be generated using path parameters
 
 * Page Generation: In SSG, since pages need to be pre-generated at publication, the system will generate pages based on the set range of path parameters.
 
-Sources of path parameter values include:
+Sources of path parameters values include:
 
 * **Static Data**: Manually input fixed values
 
@@ -90,9 +90,9 @@ Momen provides two generation modes: real-time generation and pre-generation.
 
   * Disadvantage: The sitemap may be incomplete, causing some pages (e.g., pages that have not been navigated to) not to be crawled by search engines.
 
-* Pre-generation: At Project publication, a fixed sitemap is generated based on the path parameter range set in the previous step.
+* Pre-generation: At Project publication, a fixed sitemap is generated based on the path parameters range set in the previous step.
 
-  * Advantage: Ensures all sites are included in the sitemap (provided the path parameter is set correctly).
+  * Advantage: Ensures all sites are included in the sitemap (provided the path parameters is set correctly).
 
   * Disadvantage: Low dynamism, requiring re-publication to regenerate the sitemap after each data change.
 
