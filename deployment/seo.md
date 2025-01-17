@@ -1,86 +1,164 @@
 ---
 description: >-
-  SEO: Boost your organic search rankings based on search engine guidelines. 
-  You can configure your page TDK, H tags, alt texts etc. to improve you ranks
-  and gain traffic.
+  Learn how to achieve SEO optimization, improve search engine keyword rankings, and gain more Data Outflow.
 ---
 
-# Search Engine Optimization (SEO)
+# SEO
+SEO (Search Engine Optimization) refers to the practice of optimizing a website's structure and content to improve keyword rankings in search engines, attract more users to the site, and gain more Data Outflow.
 
-### Introduction
+SEO is a comprehensive and ongoing task. Momen provides developers with a rich and easy-to-use set of configuration tools, including:
 
-SEO (Search Engine Optimization) refers to improving the natural ranking of a website within search engines. The aim is to gain branding recognition and get more traffic.&#x20;
+* Rendering Mode
 
-In short, it means making improvements to make it easier for users to search for your website. In this tutorial, you'll explore how to configure your SEO in Momen.
+* Sitemap
 
-### SEO Configuration Classification
+* robots.txt
 
-* Page TDK (Page Title, Page Description, Site Keywords)
+* Custom header/body
+
 * H tags
-* Image Alt Text
-* Others: Page Map, Anchor Text, etc.
 
-**In this version, we only support TDK configuration for now.**\
+* ...
 
+Note: Before using SEO features, you need to have a certain understanding of SEO-related background knowledge. You can find specific information through publicly available online resources.
 
-### Configuration & Overview
+## Configuration Tutorial
 
-Clicking the settings button in the top-left corner of the editor allows you to choose SEO configuration. This takes you to the SEO configuration overview, where you can set up TDK (Title, Description, Keywords), H tags, image alt text, and SiteMap for each page.
+Open "Settings" and go to "SEO". Note that all configurations here will only take effect after the **Project is Published**:
 
-<figure><img src="../.gitbook/assets/ss.png" alt="SEO configuration in a no-code tool"><figcaption></figcaption></figure>
+![](<../.gitbook/assets/seo/seo0.png>)
 
-### TDK Configuration
+### Global Configuration
 
-SEO configuration is currently exclusive to the Pro project. Ensure you're using the correct version before proceeding.
+This part of the configuration will affect all pages of the Project.
 
-1. #### Select the page and find the SEO settings in the right column under "Content".
+#### 1. Select Rendering Mode
 
-<figure><img src="../.gitbook/assets/1 (3).1.png" alt="Set up the TDK in a no-code tool"><figcaption></figcaption></figure>
+![](<../.gitbook/assets/seo/seo1.png>)
 
-2. #### Fill in the TDK
+Rendering mode refers to the timing and method of rendering pages, directly affecting the performance and SEO of all pages. Momen offers three modes:
 
-Title: The title of the page.
+* Client-Side Rendering (CSR): Pages are rendered in the browser, resulting in slow initial load speed and poor SEO performance.
 
-Description: A brief description of the page.
+* Server-Side Rendering (SSR): Pages are rendered on the server and then sent to the browser, resulting in fast initial load speed and better SEO performance.
 
-Keywords: Relevant keywords for your website. You can configure up to 10 keywords, and they must not be repeated.
+* Static Site Generation (SSG): All pages are rendered and saved on the server when the Project is published. When requested, the pre-generated pages are accessed directly. This eliminates the rendering step, resulting in very fast initial load  speed and excellent SEO performance.
 
-<figure><img src="../.gitbook/assets/2 (4).1.png" alt="SEO configuration in a no-code tool"><figcaption></figcaption></figure>
+|        | Client-Side Rendering (CSR)                 | Server-Side Rendering (SSR)                   | Static Site Generation (SSG)                             |
+| ------ | --------------------------- | ----------------------------- | --------------------------------------- |
+| When is the page rendered? | Browser                         | Server                           | Generated and saved on the server at Project publication                         |
+| Initial load speed | Slow                           | Fast                             | Very fast                                      |
+| Content dynamism  | High                           | High                             | Low                                       |
+| SEO performance  | Poor                           | Strong                             | Strong                                       |
+| Suitable scenarios  | Projects with low requirements for initial load speed and SEO: internal management systems, etc. | Projects with frequent content updates and high SEO requirements: e-commerce sites, news portals, etc. | Projects with infrequent content updates and very high requirements for web performance and SEO: blogs, documentation sites, marketing landing pages, etc. |
 
-3. #### Preview to check TDK
+In the generated pages, you can check the generation method in the head of the HTML:
 
-Preview your website, then click a link to enter it. First, observe the title. Upon entering the site, you'll see the SEO title, which is what web crawlers detect.
+![](<../.gitbook/assets/seo/seo2.png>)
 
-<figure><img src="../.gitbook/assets/3 (35).png" alt="Preview the website in a no-code tool"><figcaption></figcaption></figure>
+For more detailed information on CSR, SSR, and SSG, please refer to publicly available online resources.
 
-Then the page reverts to displaying the regular title that users see.
+#### 2. Configure the Range of Path Parameters
 
-<figure><img src="../.gitbook/assets/4 (33).png" alt="Preview the website in a no-code tool"><figcaption></figcaption></figure>
+The range of path parameter directly determines the address of the webpage (see [Parameter](https://docs.momen.app/data/parameter) for details) and will affect SEO in the following two aspects:
 
-Next, verify the description and keywords. Press F12 in your browser, navigate to the console, and inspect the page's elements. Locate the head tag and find two meta tags: description and keywords. Confirm that they have been successfully configured.
+* Sitemap: Links included can be generated using path parameters
 
-<figure><img src="../.gitbook/assets/5 (25).png" alt="This HTML page showcases the website&#x27;s TDK."><figcaption></figcaption></figure>
+* Page Generation: In SSG mode, since pages need to be pre-generated at publication, the system will generate pages based on the set range of path parameters.
 
-### H Tags
+Sources of path parameter values include:
 
-You can configure SEO H tags for text components in your website. Momen provides options to set tags from H1 to H6.
+* Static Data: Manually input fixed values
 
-<figure><img src="../.gitbook/assets/6 (34).png" alt="Configure H tags in a no-code tool" width="302"><figcaption></figcaption></figure>
+* Database: Dynamically obtain values from the database, requiring table and field selection, and filter configuration
 
-### Alt Text
+**Static data and database data will be used together to generate sitemaps and pages**&#x20;
 
-You can configure alt text for your image components. Alt text includes descriptive information about the image, which helps search engines understand its content. This can lead to higher rankings for your website in search engine results.
+![](<../.gitbook/assets/seo/seo3.png>)
 
-<figure><img src="../.gitbook/assets/7 (25).png" alt="Setting alt text in a no-code tool" width="295"><figcaption></figcaption></figure>
+![](<../.gitbook/assets/seo/seo4.png>)
 
-### Sitemap
+#### 3. Set Sitemap
 
-Enabled by default and requiring no additional configuration, a sitemap helps search engines index your website's structure more rapidly and comprehensively, enhancing visibility and search rankings. This, in turn, attracts potential, highly-relevant business clients.
+A sitemap is used to inform search engines about the pages on a website, helping them better understand the overall structure of the site and improve crawling efficiency and accuracy.
 
-<figure><img src="../.gitbook/assets/20231012-185547.jpg" alt="sitemap in a no-code tool"><figcaption></figcaption></figure>
+Momen provides two generation modes: real-time generation and pre-generation.
 
+* Real-time update: After a user visits a page, the URL of that page and the URLs of all navigation target pages within it are included in the sitemap.
 
+  * Advantage: High dynamism
 
-### About Momen
+  * Disadvantage: The sitemap may be incomplete, causing some pages (e.g., pages that have not been navigated to) not to be crawled by search engines.
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+* Pre-generation: At Project publication, a fixed sitemap is generated based on the path parameter range set in the previous step.
+
+  * Advantage: Ensures all sites are included in the sitemap (provided the path parameter is set correctly).
+
+  * Disadvantage: Low dynamism, requiring re-publication to regenerate the sitemap after each data change.
+
+![](<../.gitbook/assets/seo/seo5.png>)
+
+#### 4. Set robots.txt
+
+The robots.txt file is placed in the root directory of the website. Its function is to inform search engine crawlers which pages can be crawled and which cannot. Simply put, it acts as a "gatekeeper" for the website, controlling the access permissions of search engine crawlers.
+
+![](<../.gitbook/assets/seo/seo6.png>)
+
+#### 5. Custom header/body
+
+Used to add additional tags (\<meta />, \<canonical />, etc.) in the HTML Header and Body to help search engines understand your website. Besides SEO, this feature can also be used for code injection (e.g., when using Baidu or Google site tools).
+
+For more tips on adding custom content in HTML, please search for online tutorials.
+
+![](<../.gitbook/assets/seo/seo7.png>)
+
+### Page Configuration
+
+This part of the configuration will only take effect on a specific page.
+
+#### 1. SEO TDK
+
+This feature is used to set the Title, Description, and Keywords for a page, helping search engines better understand the webpage.
+
+![](<../.gitbook/assets/seo/seo8.png>)
+
+#### 2. Social Media Display
+
+This feature is used to set the content displayed on social media (Facebook, X, etc.) for the webpage. Strictly speaking, it is not part of SEO, but configuring it well in addition to basic SEO optimization can be more beneficial for exposure and dissemination on social networks, aligning with the purpose of SEO optimization.
+
+Momen provides two protocols:
+
+* Open graph: A general protocol effective on most social media platforms
+
+* X cards: X platform protocol, only supported on the X platform
+
+Both protocols can be configured together and will take effect.
+
+![](<../.gitbook/assets/seo/seo9.png>)
+
+#### 3. H tags
+
+H tags are important elements used to identify the content and hierarchy of a website page, and search engines index websites based on H tags.
+
+![](<../.gitbook/assets/seo/seo10.png>)
+
+#### 4. ALT attribute of images
+
+The Alt attribute is used to help search engines understand images.
+
+![](<../.gitbook/assets/seo/seo11.png>)
+
+### Publish the Project to Make the Configuration Effective
+All configurations in SEO take effect after the **Project is Published**.
+
+![](<../.gitbook/assets/seo/seo12.png>)
+
+## Function Boundaries
+
+The capabilities of SEO are strongly associated with the rendering mode, and the modes supported by different versions of the Project are as follows:
+
+|         | Free Version | Basic Plan     | Pro Plan     | Single Tenant Sever      |
+| ------- | --- | ------- | ------- | ----------- |
+| Supported Rendering Modes | CSR | CSR, SSG | CSR, SSG | CSR, SSR, SSG |
+
+In CSR mode, page configurations (TDK, social media, etc.) cannot be used.
