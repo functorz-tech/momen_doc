@@ -26,7 +26,7 @@ You can add components in three ways:
 2. Drag the desired component into the target container.
 
     <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-        <img src="../.gitbook/assets/design/double_click_add_comp.gif" alt="Image 1" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
+        <img src="../.gitbook/assets/design/double_click_add_comp.gif" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
         <img src="../.gitbook/assets/design/drag_add_comp.gif" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
     </div>  
 
