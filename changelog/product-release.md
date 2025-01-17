@@ -42,6 +42,9 @@ description: >-
 3. Fixed the issue with remote data causing an infinite loop.
 4. Fixed the issue with template creation.
 
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=2B_h5ewNgDw&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=1)
+
 ## V2.1.0 - 2024.10.31
 
 ### New Features
@@ -66,6 +69,8 @@ description: >-
 5. Fixed the inability to locate configuration errors in Actionflows, aiding users in error resolution.
 6. Resolved issues with abnormal Actionflow triggers to ensure smoother operation.
 
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=FrDjKVodJOA&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=2)
 
 ## V2.0.5 - 2024.10.10
 
@@ -96,7 +101,10 @@ In this update, we enhanced our conditional containers and canvas.
 
 5\. Fixed the failure to deploy after importing large files via AI.
 
-6\. Fixed the issue where project activation failed.\
+6\. Fixed the issue where project activation failed.
+
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=Lm_wlOsr3D4&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=3)
 
 
 ## V2.0.4 - 2024.09.14
@@ -135,6 +143,7 @@ In this update, we enhanced our conditional containers and canvas.
 13. Fixed an issue where lists would trigger a refresh action, but the view wouldn't refresh.
 14. Fixed an issue where fields displayed "null" when SEO was enabled but not configured.
 
+### Product update video
 Please see more details about our updates in the [video](https://www.youtube.com/watch?v=4HGdbwdMOJc\&list=PLvdix\_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=4)
 
 ## V2.0.3 - 2024.09.14
@@ -157,11 +166,11 @@ In this update, we enhanced our conditiopnal containers and text component.
 ### Bug Fixes
 
 1. Resolved an issue where downloaded file names were appearing unreadable.
-
 2. Addressed an issue with calculating totals in page data loops on the web.
-
 3. Corrected an error occurring when selecting a reference type for linked data.
 
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=uNGe5TuKKfI&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=5)
 
 ## V2.0.2 - 2024.08.15
 
@@ -178,22 +187,24 @@ In this update, we enhanced our collaboration capability, and update invite code
 1. Users can now share invitation codes to invite new users to register and join the referral program, earning commission.
 <figure><img src="../.gitbook/assets/productUpdate_v2.0.2/20240816-133218.jpeg" alt=""><figcaption></figcaption></figure>
 
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=DeCMBZKh4Pw&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=6)
 
 ## V2.0.1 - 2024.08.02
 
-### **Introduction**
+### Introduction
 
 We've made major updates on canvas, improving the user experience, design consistency and ease of use in our editor.&#x20;
 
-### **Update Summary**&#x20;
+### Update Summary
 
-#### **New Canvas**
+#### New Canvas**
 
 1. Updated the canvas engine for significantly improved performance.
 2. Adjusted default and selected styles for all components.
 3. Added top toolbars for pages and components with common operations.
 
-#### **Configuration Bar Optimization**
+#### Configuration Bar Optimization
 
 1. The left sidebar now supports searching component lists, right-click to copy, and delete multi-selection.
 2. Displays all breakpoints in multi-breakpoint mode.
@@ -201,7 +212,7 @@ We've made major updates on canvas, improving the user experience, design consis
 4. The right sidebar hierarchy is optimized to "Design," "Data," and "Interaction".&#x20;
 5. Added text paragraph indent, letter spacing, and separate border and corner radius settings.
 
-#### **Deployment Optimization**
+#### Deployment Optimization
 
 1. Moved the original "Preview" entry into "Publish", making it easier to manage your web app's deployment .
 2. Users can deploy changes immediately after modifying backend configurations, with all changes displayed in the backend update panel.
@@ -221,7 +232,7 @@ Added 42 shortcuts for general component operations, selection, movement, and ca
 
 <figure><img src="../.gitbook/assets/截屏2024-08-02 18.42.01.png" alt=""><figcaption></figcaption></figure>
 
-### **Detailed Update**&#x20;
+### **Detailed Update
 
 #### **Left Sidebar**
 
@@ -455,18 +466,20 @@ More shortcuts can be viewed or searched in the shortcut popup.
 
 <figure><img src="../.gitbook/assets/111.jpeg" alt=""><figcaption></figcaption></figure>
 
-### **Future Updates**
+### **Future Updates
 
 1. Support for Multi-select Editing&#x20;
 2. More Powerful Variant Function
 3. Richer Breakpoint Capabilities
 
-### **Feedback Channels**&#x20;
+### Feedback Channels;
 
 If you have any questions or suggestions, feel free to provide feedback here. Your report will be immediately get fixed by our team.&#x20;
 
 <figure><img src="../.gitbook/assets/222.jpeg" alt=""><figcaption></figcaption></figure>
 
+### Product update video
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=6mwNcI5YF5g&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=7)
 
 ## V1.0.9 - 2024.04.25
 
