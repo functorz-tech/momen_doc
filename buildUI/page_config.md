@@ -21,7 +21,7 @@ To add a new page to your project, click the icon shown in the image below.
 To create a group for organizing pages, click the group icon as shown below:
 
 <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/left_side_bar_add_folder.png" alt="Image 1" style="flex: 1; height: 300; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/left_side_bar_add_folder.png" style="flex: 1; height: 300; object-fit: cover; width: 50%;">
     <img src="../.gitbook/assets/design/left_side_bar_folder_rename.png" style="flex: 1; height: 300; object-fit: cover; width: 50%;">
 </div>   
 
@@ -53,8 +53,8 @@ After clicking to select the web page, you can configure whether the page is the
 - Web page title: As shown in the figure below, after entering the web page, the path spliced after the web page link in the browser address bar
 - SEO settings: Click to expand to set the TDK of the web page, namely the title, description, and keywords, and you can also configure the thumbnail image displayed when sharing the web page link
 - The rest of the design is the same as the component Configuration
-  
-    <img src="../.gitbook/assets/design/config_page_titleandpath.png" width="100%">
+
+    ![](../.gitbook/assets/design/config_page_titleandpath.png)
 
 ## Configure Page - Data
 ### Data source (original name - remote data) 
@@ -70,7 +70,8 @@ A way of transferring data between pages (for details, see: [Parameters](../data
 ### When the page is loaded and unloaded
 The period from when the page starts loading content to when the page is closed and unloaded is called the page's active period. During the page's active period, you can configure the action you expect when the page is opened (action when the page loads) and when it is closed (action when the page unloads).
 
-<img src="../.gitbook/assets/design/config_page_action.png" width="100%">
+![](../.gitbook/assets/design/config_page_action.png)
+
 
 ### Scheduled job
 **Definition:**      
@@ -82,14 +83,15 @@ In milliseconds, each time the "trigger interval" is passed, the configured acti
 **Trigger immediately:**       
 After opening this Configuration, the timing task will be automatically started when entering the page
 
-<img src="../.gitbook/assets/design/config_page_scheduledjob.png" width="100%">
+![](../.gitbook/assets/design/config_page_scheduledjob.png)
 
 **Manually start/pause page scheduled tasks:**       
 As shown in the figure below ⬇️, you can add the "control scheduled task" action to a component to start or pause a scheduled task.
 
-| img | img |
-| ------------- | ------------- |
-| <img src="../.gitbook/assets/design/config_page_actionlist.png" width="400"> | <img src="../.gitbook/assets/design/config_page_action_scheduled.png" width="400"> |
+<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
+    <img src="../.gitbook/assets/design/config_page_actionlist.png" style="flex: 1; height: fit; object-fit: cover; width: 50%;">
+    <img src="../.gitbook/assets/design/config_page_action_scheduled.png" style="flex: 1; height: fit; object-fit: cover; width: 50%;">
+</div>
 
 ## Loading order of data and action on the page
 When a new page is opened, the various contents configured on the page will be loaded in a certain order. Understanding the loading order of these data can help us to correctly call actions and use data. The loading order is as follows **Load in order from top to bottom**.
