@@ -11,8 +11,6 @@ description: >-
 This feature enables processing items in an array data source one by one (only remote data and select views are supported as data sources). Ideal for tasks such as updating database entries or calculating total shopping cart values.
 
 ## Action configuration guide
-
-- scenario   
 Taking calculate the total value of a shopping cart as an example.
 
 1. Add Page Variable   

@@ -37,7 +37,7 @@ After inputting your domain, Momen will automatically generate records based on 
 
 <img src="../.gitbook/assets/publish/cd-1.png" alt="Momen custom domain txt records">
 
-<img src="../.gitbook/assets/publish/cd-2.png" alt="Momen custom domain txt records">
+<img src="../.gitbook/assets/publish/mcd-2.jpeg" alt="Momen custom domain txt records">
 
 **3. Certificate and Proxy Verification**
 In this step, you need to configure TXT and CNAME records to validate certificate and point your custom domain to Momen's proxy server. For instance, if you are using Cloudfare, follow these steps:
@@ -46,7 +46,7 @@ In this step, you need to configure TXT and CNAME records to validate certificat
 
 <img src="../.gitbook/assets/publish/cd-3.png" alt="Momen custom domain Cname records">
 
-<img src="../.gitbook/assets/publish/cd-4.png" alt="Momen custom domain Cname records">
+<img src="../.gitbook/assets/publish/mcd-3.jpeg" alt="Momen custom domain Cname records">
 
 **4. Web favicon**
 You can upload a custom icon (favicon) to your website. Once uploaded, save the configuration, and your custom domain will be ready.

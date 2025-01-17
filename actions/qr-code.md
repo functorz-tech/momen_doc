@@ -23,6 +23,7 @@ Add the action of generating a QR code to the component (usually a button), the 
     - When the data is an image URL, scanning the QR code will directly display the image.
     - When the data is a document (word, ppt, pdf, etc.), scanning the QR code will directly display the corresponding document content, which can be browsed.
     - When the data is the URL of a video (MP4, etc.), scanning the QR code will directly display the corresponding video, which can be played.
+
 ![](<../.gitbook/assets/3 (6).png>)
 
 - If the data is not of \[Is Plain Text] type, you can click on Add Parameter (can be more than one) to bind the corresponding data content. The QR codes generated with plain text mode disabled are generally used in the following scenarios:   
@@ -37,7 +38,6 @@ Add the action of generating a QR code to the component (usually a button), the 
 2. When configuring background image, the size and relative position here refer to the QR code itself, not the background image. The background image will fill the whole image component. You can adjust the relative position and size to see how it fits. For instance, the size of image component is 400x400 and the size of qr code is set to 300 (300x300), then in order to place the qr code in the center within the background imgage, the x and y should input 50. 
 
 **4. Binding page data using image component**   
-
 Generally, when we successfully generate a QR code, we will add the \[Show Modal] action and switch to custom mode. Under custom mode, you can add an impage component and bind the previous page variable to the image component to display the QR code.
 <img src="../.gitbook/assets/5 (2).png" alt="" data-size="original"> 
 

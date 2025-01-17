@@ -14,8 +14,6 @@ description: >-
 * Basic Plan: 7 days
 * Pro Plan: 30 days
 
-
-
 ## Access Log Service
 
 1. Access the log service from the "Log Service" section on the project details page.
