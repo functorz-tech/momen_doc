@@ -19,8 +19,8 @@ Once debugging is complete, you can click the [Go to Publish] button to directly
 Momen supports publishing with a Custom domain for Basic Plan and above Projects. 
 
 ### Value
-**1. Enhancing brand identity:** Binding a custom domain helps businesses present a more professional image. It makes the website more memorable and trustworthy, especially when the domain reflects the brand identity.
-**2. SEO Benefits:**Using a custom domain can improve search engine trust, which in turn helps boost the website's search ranking.
+**1. Enhancing brand identity:** Binding a custom domain helps businesses present a more professional image. It makes the website more memorable and trustworthy, especially when the domain reflects the brand identity.   
+**2. SEO Benefits:** Using a custom domain can improve search engine trust, which in turn helps boost the website's search ranking.
 
 ### When to use
 **1. Corporate Website:** Ideal for businesses that quickly build their official website using no-code tools. It enhances brand credibility and improves SEO performance.   
