@@ -58,3 +58,4 @@ You can upload a custom icon (favicon) to your website. Once uploaded, save the 
 **2. Editing a Custom Domain:** If a custom domain configuration is not saved, the platform will retain it for 24 hours. After 24 hours, unsaved configurations will be cleared. Once a domain is saved, only the website icon can be modified later.   
 **3. Deleting a Custom Domain:** If all custom domains are deleted, the app will revert to being published via Momen domain.   
 **4. Proxy status**: For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
+**5. Reconfigure custom domain**: Projects that have been configured a custom domain before January 17, 2025, please delete it and reconfigure. After that, the project must be published for the custom domain to take effect.
