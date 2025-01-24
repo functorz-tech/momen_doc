@@ -34,9 +34,7 @@ Add a button component and bind the action of "Refresh Login User Data" or trigg
 When users perform sensitive operations (e.g., login, registration, password reset, or binding information), the app sends a one-time verification code to the user's email or phone to verify the ownership of the contact method, enhancing account security.
 
 ### Action configuration guide
-Add a button component on the page, and configure a "send verification code" action. Input or bind the fields (phone number or email) to which the verification code will be sent.
-
-<figure><img src="../.gitbook/assets/user-action-send-code.png" alt="Send verification code guidance in Momen."><figcaption></figcaption></figure>
+Add a button and an input component to the page. You can add and configure a "send verification code" action (usually on the button) . When configuring, under the Send to field, input or bind the value of the input component (phone number or email) to which the verification code will be sent. 
 
 ## 3. Registration
 
@@ -44,9 +42,7 @@ Add a button component on the page, and configure a "send verification code" act
 The process where a user creates a new account by providing basic information such as name, email address, phone number, and password. This process may include email or phone number verification to ensure authenticity. Momen supports three registration methods: username, phone number, and email registration.
 
 ### Action configuration guide
-Typically, add some input boxes and a button to the page, and configure a registration action for the button. Bind the values of the input box to the action (for username, phone number, email, verification code, or password) on the page to the action to collect the user's registration information.
-
-<figure><img src="../.gitbook/assets/user-action-email-registration.png" alt="registration guidance in Momen."><figcaption></figcaption></figure>
+Typically, add some input components and a button to the page, and configure a registration action for the button. Bind the values of the input component to the action (for username, phone number, email, verification code, or password) to collect the user's registration information.
 
 ### Note
 After successful registration, Momen will automatically insert the username/phone number/email & password into a developer-invisible data table and add a user record in the default account table, referred to as "current user data." The ID of this record will be automatically linked to the corresponding registration data. It’s common to configure a “Show Toast” action to notify the user upon successful or failed registration.
@@ -102,7 +98,7 @@ Allows users to end their current session and log out of the application. Simply
 
 ### Action configuration guide
 Typically used for one-click logout, combined with actions to refresh logged-in user data, recalculate data, or switch views accordingly. Logout only affects the current session and does not alter any data in the database.   
-<figure><img src="../.gitbook/assets/0 (28).png" alt="Momen editor settings for user logout."><figcaption></figcaption></figure>
+
 
 ## 9. Deregistration
 

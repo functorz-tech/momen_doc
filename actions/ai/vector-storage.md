@@ -55,7 +55,7 @@ Ensure that a data table storing private data is created, and that the text fiel
 
 2. Configuration Steps
 - On AI congifuration page, under Contexts section,select the target data table.
-- Click the filter icon next to the data table.
+- Click the filter icon when hovering on a data table.
 - In the right-side configuration panel, add a Sort setting:
   - Sorting Field: Choose the vector-enabled field.
   - Sorting Method: Select either Cosine Distance or Euclidean Distance.
@@ -68,7 +68,7 @@ In a case database that includes specific meanings of Internet slang, the Intern
 
 **Reference link for Internet slang:** [\[Internet Slang Collection\]](https://www.ruf.rice.edu/~kemmer/Words04/usage/slang_internet.html)
 
-**Case Effect:**
+**Showcase**
 
 <figure><img src="../../.gitbook/assets/4 (3).gif" alt="The case of semantic search"><figcaption></figcaption></figure>
 

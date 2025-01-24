@@ -19,7 +19,7 @@ Currently, the "Custom Code" in Momen's action flow only supports the JavaScript
 
 If you want to write JS code to realize more complex business logic, you can add code blocks in the action flow, click the node where you want to add a code block and select the code block.
 
-![](</.gitbook/assets/0 (49).png>)
+![](</.gitbook/assets/0 (49).png> )
 
 ## Configure Custom Code
 

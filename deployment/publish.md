@@ -33,7 +33,7 @@ Momen supports publishing with a Custom domain for Basic Plan and above Projects
 **2. Domain Verification**   
 After inputting your domain, Momen will automatically generate records based on your domain information. You will need to add these records to your DNS provider. For instance, if you are using Cloudfare as your DNS provider, follow these steps:
 - Add a TXT record as instructed by the platform.
-- Once the TXT record is added, return to the custom domain page on the platform and initiate the domain verification process. If the verification is successful, proceed to the next step.
+- Once the TXT record is added, return to the custom domain page on the platform and initiate the domain check status process. If the verification is successful, proceed to the next step.
 
 <img src="../.gitbook/assets/publish/cd-1.png" alt="Momen custom domain txt records">
 
@@ -41,7 +41,7 @@ After inputting your domain, Momen will automatically generate records based on 
 
 **3. Certificate and Proxy Verification**
 In this step, you need to configure TXT and CNAME records to validate certificate and point your custom domain to Momen's proxy server. For instance, if you are using Cloudfare, follow these steps:
-- Add TXT and CNAME records as instructed. For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
+- Add TXT and CNAME records as instructed. **For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.**
 - Return to the setting page and initiate the certificate and proxy verification process. Upon successful verification, proceed to the final step.
 
 <img src="../.gitbook/assets/publish/cd-3.png" alt="Momen custom domain Cname records">

@@ -26,20 +26,18 @@ Here’s how to set it up using an example: When a user’s payment exceeds $100
    * Add a "Get Payment mount" node to calculate the total payment for the user.
    * Add an "Update account" node to update the user to "VIP."
 
-<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.30.44.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.30.44.png" alt="add actionflow"><figcaption></figcaption></figure>
 
 2. **Add Trigger**
 
-A trigger can only be added after the Actionflow is saved.
+On the actionflow right-sider, under trigger section, add a trigger of database change. It can only be added after the Actionflow is saved.
 
-<figure><img src="../../.gitbook/assets/AgdIHZO4bG.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/AgdIHZO4bG.png" alt="add trigger"><figcaption></figcaption></figure>
 
 3. **Select Operation Type and Data Table**\
    There are 4 types of supported operations:
 
-<figure><img src="../../.gitbook/assets/20241106-135707.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20241106-135707.png" alt="Select Operation Type and Data Table"><figcaption></figcaption></figure>
 
 * On Data Insert
 * On Data Update
@@ -48,9 +46,9 @@ A trigger can only be added after the Actionflow is saved.
 
 4. **Set Conditions and Actionflow Parameters**
 
-Triggers allow access to both the previous and updated data values.
+Triggers allow access to both the previous and updated data values. Under Configure Conditions for Updated Data section, you can choose either data after update or data before update to design your trigger logic.
 
-<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.33.29.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.33.29.png" alt="Set Conditions and Actionflow Parameters"><figcaption></figcaption></figure>
 
 ## View Trigger History
 
