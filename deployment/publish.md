@@ -41,7 +41,7 @@ After inputting your domain, Momen will automatically generate records based on 
 
 **3. Certificate and Proxy Verification**
 In this step, you need to configure TXT and CNAME records to validate certificate and point your custom domain to Momen's proxy server. For instance, if you are using Cloudfare, follow these steps:
-- Add TXT and CNAME records as instructed.
+- Add TXT and CNAME records as instructed. For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
 - Return to the setting page and initiate the certificate and proxy verification process. Upon successful verification, proceed to the final step.
 
 <img src="../.gitbook/assets/publish/cd-3.png" alt="Momen custom domain Cname records">
@@ -49,7 +49,7 @@ In this step, you need to configure TXT and CNAME records to validate certificat
 <img src="../.gitbook/assets/publish/mcd-3.jpeg" alt="Momen custom domain Cname records">
 
 **4. Web favicon**
-You can upload a custom icon (favicon) to your website. Once uploaded, save the configuration, and your custom domain will be ready.
+You can upload a custom icon (favicon) to your website. Once uploaded, save and publish the project again for the custom domain to take effect.
 
 <figcaption><img src="../.gitbook/assets/publish/cd-5.png" alt="Momen custom domain webfavicon"><figcaption></figcaption></figure>
 
@@ -57,5 +57,5 @@ You can upload a custom icon (favicon) to your website. Once uploaded, save the 
 **1. Default Custom Domain:** When multiple custom domains exist, you can set one domain as the default. All other domains will automatically redirect to the default domain when accessed.   
 **2. Editing a Custom Domain:** If a custom domain configuration is not saved, the platform will retain it for 24 hours. After 24 hours, unsaved configurations will be cleared. Once a domain is saved, only the website icon can be modified later.   
 **3. Deleting a Custom Domain:** If all custom domains are deleted, the app will revert to being published via Momen domain.   
-**4. Proxy status**: For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.
-**5. Reconfigure custom domain**: Projects that have been configured a custom domain before January 17, 2025, please delete it and reconfigure. After that, the project must be published for the custom domain to take effect.
+**4. Proxy status**: For some DNS providers such as Cloudfare, when adding the CNAME record, it is mandatory to turn off proxy to use DNS only in order to successfully access your domain.   
+**5. Reconfigure custom domain**: Projects that have been configured a custom domain before January 17, 2025, please delete it and reconfigure again. After that, the project must be published for the custom domain to take effect.
