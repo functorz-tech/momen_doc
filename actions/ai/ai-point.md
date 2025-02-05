@@ -17,6 +17,6 @@ Go to suer center Center. Hover over a specific project and click Manage. In the
 
 ## AI Point Consumption
 - Vector Data Storage: AI Points are consumed when saving content as vector data in the database. This occurs when vector storage is enabled for a specific field and data is added to that field.
-- AI Requests and Responses: AI Points are deducted for both sending content to the AI and receiving responses from it. You can view detailed records of AI Point consumption and additions in the Consumption & Addition Records section under project details in the personal center.
+- AI Requests and Responses: AI Points are deducted for both sending content to the AI and receiving responses from it. You can view detailed records of AI Point consumption and additions in the Order&usage details section under project details in the personal center.
 
 <figure><img src="../../.gitbook/assets/AI-points2.png" alt="Project details in a no-code tool"><figcaption></figcaption></figure>

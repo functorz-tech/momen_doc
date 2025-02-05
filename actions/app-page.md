@@ -42,7 +42,7 @@ Through the \[Set Page variable] action, you can incorporate multiple data entri
 
 #### 3.Removing Data from Page variable
 
-Enabling the "Unique" option allows you to utilize the \[Remove] function within \[Set Page Data]. During a \[Remove] operation, the value to be removed is compared with the values in the page variable. If a match is found, the corresponding value in the page variable is deleted.
+Enabling the "Unique" option allows you to utilize the \[Remove] function within \[Set Page variable]. During a \[Remove] operation, the value to be removed is compared with the values in the page variable. If a match is found, the corresponding value in the page variable is deleted.
 
 <figure><img src="../.gitbook/assets/6 (8).png" alt="Remove data from page variable"><figcaption></figcaption></figure>
 
@@ -52,13 +52,10 @@ Enabling the "Unique" option allows you to utilize the \[Remove] function within
 Assigns values to global variable that can be accessed across multiple pages within the app.
 
 ### Action configuration guide
-In the header, click App Global Settings, and add a \[Global Variable].
+In the header, click Setting and under App Global Settings, and add a \[Global Variable].
 
-<figure><img src="../.gitbook/assets/0 (21).png" alt="The path of adding global variable."><figcaption></figcaption></figure>
+After adding \[Global Variable], you can set global variable on any page or component according to the business scenario through the \[Set Global Variable] action. Global variable can be used in all pages and components.
 
-After adding \[Global variable], you can set global variable on any page or component according to the business scenario through the \[Set Global Data] action. Global data can be used in all pages and components.
-
-<figure><img src="../.gitbook/assets/1 (21).png" alt="Set global data according to business needs."><figcaption></figcaption></figure>
 
 ## 3. Refresh
 
