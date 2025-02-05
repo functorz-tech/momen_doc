@@ -16,7 +16,7 @@ In an event registration, users need to input their name and contact information
 1. Condition 1: The first one is named "Incomplete" and its conditions are configured to check if the customer's name and contact phone number input fields are empty. When the "Incomplete Registration Information" condition is met, the action is configured to display a show moadal saying "Please complete the registration information." 
 2. Condition 2: The second one is named "Complete," and its condition is set as "Always"(leaves empty). In this case, if the previous condition is not met, it indicates that the information is complete, and then execute the registeration action set under condition 2.
 
-<figure><img src="../.gitbook/assets/conditional.png" alt="Momen conditional action configuration"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conditional2025.png" alt="Momen conditional action configuration"><figcaption></figcaption></figure>
 
 
 ## Action configuration guide
