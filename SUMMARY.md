@@ -31,10 +31,8 @@
 ## Data
 
 * [Overview](data/overview.md)
-* [Data Source](data/data_source.md)
 * [Data Model and Database](data/data_model.md)
 * [API](data/api.md)
-* [Data Usage](data/data_usage.md)
 * [Variable](data/variable.md)
 * [Parameter](data/parameter.md)
 * [Formula and Conditions](data/formula.md)
