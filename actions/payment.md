@@ -29,14 +29,15 @@ Before configuring payment, ensure you have an order table in your project. This
 
 Go to the Configuration settings and activate the Payment feature.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe.jpeg" alt=""><figcaption></figcaption></figure>
+
 
 When activating, bind the order table you created before. The system will automatically create a one-to-many relationship between the order and payment tables. Please note:
 
 * All payment methods share the same order table.
 * Once bound, it cannot be unbound or replaced, and the order table cannot be deleted. Be cautious during the binding process.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe2.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe2.jpeg" alt=""><figcaption></figcaption></figure>
 
 Upon binding the order table and activating the payment feature, the system will automatically:
 
@@ -46,20 +47,23 @@ Upon binding the order table and activating the payment feature, the system will
   * Refund Table: Stores refund records. The relationship is 1:N (one payment can have multiple refunds).
 *   Automatically generate two actionflows:
 
-    * Payment Callback Actionflow: Triggered upon payment completion.
-    * Refund Callback Actionflow: Triggered upon refund completion.
+    * StripePaymentCallback: Triggered upon one-off payment completion.
+    * StripeRefundCallback: Triggered upon refund completion.
+    * StripeRecurringPaymentManagementCallback: Triggered upon initiating or canceling a recurring payment.
+    * StripeRecurringPaymentDeductionCallback: For recurring payment deductions
 
-    <figure><img src="../../.gitbook/assets/stripe/stripe3.jpeg" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/stripe/stripe3.jpeg" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Input Stripe Information
 
 Retrieve your Publishable Key and Secret Key from Stripe and fill them into the project configuration.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe5.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe5.jpeg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/stripe/stripe6.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe6.jpeg" alt=""><figcaption></figcaption></figure>
 
 ## 3. Using Payment/Refund Actions
 
@@ -67,19 +71,19 @@ Retrieve your Publishable Key and Secret Key from Stripe and fill them into the 
 
 Find the Stripe actions in the Action List.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe7.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe7.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Configure Action Parameters
 
 **Single Payment Action**
 
-<figure><img src="../../.gitbook/assets/stripe/stripe8.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe8.jpeg" alt=""><figcaption></figcaption></figure>
 
 Order ID (integer): Must be the ID of the bound order table. Currency (string): Stripe-supported currencies. See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods) Amount (decimal): Smallest currency unit. For example, to charge 100 USD, input 1000 (since USD’s smallest unit is cents). See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods)
 
 **Refund Action**
 
-<figure><img src="../../.gitbook/assets/stripe/stripe9.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe9.jpeg" alt=""><figcaption></figcaption></figure>
 
 Payment ID (integer): Must be the ID from the payment table. Refund Amount (decimal): The amount to refund, which must be less than or equal to the original payment amount.
 
@@ -87,9 +91,9 @@ Payment ID (integer): Must be the ID from the payment table. Refund Amount (deci
 
 Before configuring, you must create a recurring payment price in Stripe and obtain the Price ID.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe10.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe10.jpeg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/stripe/stripe11.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe11.jpeg" alt=""><figcaption></figcaption></figure>
 
 Type (option): Initiate for starting a recurring payment, Cancel for canceling it. Order ID (decimal): Must be the ID of the bound order table. Price ID (string): The price ID obtained from Stripe.
 
@@ -97,7 +101,7 @@ Type (option): Initiate for starting a recurring payment, Cancel for canceling i
 
 In the Permission System, you can set access controls for actions, especially for refund actions. It’s recommended to restrict this permission from regular users to avoid financial loss. A better approach is to create a special admin role with refund permissions.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe12.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe12.jpeg" alt=""><figcaption></figcaption></figure>
 
 ## 4. Configuring Business Logic After Completing Actions
 
@@ -116,7 +120,7 @@ This flow is triggered after payment completion. The built-in nodes include:
     * Based on the status of paymentStatus and callbackProcessed, determine whether the payment was successful
     * Configure your own business logic within the branch.
 
-    <figure><img src="../../.gitbook/assets/stripe/stripe13.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/stripe/stripe13.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### Refund Callback Actionflow
 
@@ -128,13 +132,13 @@ This flow is triggered after a refund is completed. The built-in nodes include:
   * callbackProcessed: Checks whether the callback is a duplicate.
 *   Conditional Branch: Handles post-refund logic (e.g., updating the order table), which you need to configure based on your business needs.
 
-    <figure><img src="../../.gitbook/assets/stripe/stripe14.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/stripe/stripe14.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### Recurring Payment Creation/Cancellation Callback
 
 Triggered when recurring payments are created or canceled. In the code block, the data in the recurring\_payment table will be updated.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe15.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe15.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### Recurring Payment Charge
 
@@ -144,15 +148,15 @@ When a recurring payment is created, Stripe will notify the project backend of a
 2. Create a new order.
 3.  Process the payment.
 
-    <figure><img src="../../.gitbook/assets/stripe/stripe16.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/stripe/stripe16.jpeg" alt=""><figcaption></figcaption></figure>
 
 In the code block, modify the part that creates the order based on your specific order table. You can also adjust the amount for subsequent charges (which cannot exceed the amount set during the initial recurring payment).
 
-<figure><img src="../../.gitbook/assets/stripe/stripe17.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe17.jpeg" alt=""><figcaption></figcaption></figure>
 
 ## 5. Retrieving Payment/Refund Results
 
 Since updating the order/payment/recurring payment/refund tables occurs through custom actionflows and may take time, the front-end should use a subscription method to get the latest data. For example, after calling a payment action, the page can subscribe to the payment table to receive real-time updates on payment status.
 
-<figure><img src="../../.gitbook/assets/stripe/stripe18.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/stripe/stripe18.jpeg" alt=""><figcaption></figcaption></figure>
 
