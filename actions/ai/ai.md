@@ -1,10 +1,10 @@
 ---
 description: >-
-  Based on LLMs, leveraging RAG and tool invocation, you can create
-  customized business AI apps and agents.
+  Based on LLMs, leveraging RAG and tool invocation, you can create customized
+  business AI apps and agents.
 ---
 
-# AI Configuration and Invocation
+# AI
 
 ## Introduction
 
@@ -31,6 +31,57 @@ AI applications have a wide range of use cases. Here are some common scenarios:
   * Sales/consultation script generation based on user information and sales/consultation materials.
   * Copywriting for platforms like Ins, X, and Tiktok and scriptwriting for videos, movies, etc.
 
+## Model Support
+
+You can use the large models provided by Momen or integrate your own model services.
+
+### Using Models Provided by Momen
+
+Currently, GPT 4o and GPT 4o mini are the two large models available. When using them, AI Points are deducted proportionally based on the number of tokens consumed by the large model (distinguishing between input and output).
+
+In most cases, GPT 4o consumes more tokens than GPT 4o mini. **However, when processing images, mini's token consumption is about 33 times that of 4o**, making their consumption equivalent when converted to Points. You can use the Point calculator to estimate the consumption for images or text.
+
+When AI Points are insufficient, data vectorization, vector sorting, and Agent invocation cannot proceed normally. After recharging, it takes a few minutes to generate vectors that were not previously generated. You can also view the consumption records of Points in the Project Detail.
+
+Additionally, at the beginning of each month, the system will gift **100,000** AI Points, which will be cleared at the end of the month.
+
+### Using Your Own Model Services
+
+If you have opened model services on other platforms or deployed large models yourself, you can integrate them into Momen. **This feature is only available for paid Projects**.
+
+Currently supported large models include gpt-4o, gpt-4o-mini and DeepSeek-R1:
+
+| Manufacturer | Model       | Model Capabilities                     |
+| ------------ | ----------- | -------------------------------------- |
+| OpenAI       | gpt-4o      | Streaming, Mutiple modal, Tool calling |
+|              | gpt-4o-mini | Streaming, Mutiple modal, Tool calling |
+| DeepSeek     | DeepSeek-R1 | Streaming, Reasoning content           |
+
+When creating a large model, you need to fill in:
+
+**Basic Information**
+
+1. Name: The name of the large model configuration, which must be unique.
+2. Type: Confirm the type of large model, resoning or word embedding.
+3. Platform: Supports official OpenAI and also supports self-hosted (DeepSeek only).
+4. Model: The large model.
+
+**Platform Information**
+
+If integrating with official platforms, fill in:
+
+1. API Key: The authorization key for each platform, please obtain it from the platform yourself.
+
+**Self-hosted Large Model Service Information**
+
+If it is a self-hosted large model service, fill in:
+
+1. Server url: The access address of the large model service.
+2. Custom authentication header: The key name of the authentication method, such as "api-key: xxxxxxxxxxx" in "api-key".
+3. Custom authentication value: The key value of the authentication method, such as "api-key: xxxxxxxxxxx" in "xxxxxxxxxxx".
+4. Model Value of Input Parameter: The model value, such as "DeepSeek-R1".
+
+After filling in the above information, click "Verify". The system will attempt to send a request using this information. If the request is successful, the verification is passed. Save the configuration and deploy the backend, and the large model can be used.
 
 ## Configuration Instructions
 
@@ -206,7 +257,7 @@ Once you've finalized the AI settings, input parameters can be entered on the ri
 The section below details the entire operation process of the AI. Upon successful execution, you can review the input parameters you provided, how the tools were utilized, and whether the outcomes align with your expectations. If the setup includes multiple dialogue rounds, you can input new parameters here to extend the conversation.
 
 <figure><img src="../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
- 
+
 ## AI action configuration guide
 
 Momen AI provides the following five types of AI actions, you can find AI under the action when clicking and then selecting the needed action to configure.
@@ -227,14 +278,13 @@ In the action of \[Start Conversation], select the AI to be called, if the AI ha
 
 Note: To accurately bind the session ID in \[Continue Conversation], \[Delete Conversation], \[Stop Response], a page data of integer type (BIGINT) is generally added to the page, named conversation\_id, set this page variable when \[Start Conversation] is successful, assigning it as: result data/Start Session/ID.
 
-
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.34.24.png" alt="Momen AI start conversation"><figcaption></figcaption></figure>
 
 ### 2. Continue Conversation
 
 When conducting multi-round dialogues, after \[Start Conversation], if you want to continue sending messages to AI and automatically bring up the context, then use \[Continue Conversation] action. \[Continue Conversation] is triggered by clicking, and after triggering, it automatically adds related data to the message table, message content table, and tool usage record table just like \[Start Conversation].
 
-**Action configuration guide**   
+**Action configuration guide**\
 In the action of \[Continue Conversation], select the same AI as the last \[Start Conversation] call, and bind the Conversation ID generated by \[Start Conversation], simultaneously directly enter or bind the message content.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.45.20.png" alt="Momen AI continue conversation"><figcaption></figcaption></figure>
@@ -245,7 +295,7 @@ It means deleting a certain conversation, as well as the related messages, messa
 
 ### 4.Stop Response
 
-\[Stop Response] means during the process of \[Start Conversation] or \[Continue Conversation],  you can trigger \[Stop Response] to stop the current conversation. After stopping the reply, you can still use \[Continue Conversation] to continue the just-ended multi-round dialogue.
+\[Stop Response] means during the process of \[Start Conversation] or \[Continue Conversation], you can trigger \[Stop Response] to stop the current conversation. After stopping the reply, you can still use \[Continue Conversation] to continue the just-ended multi-round dialogue.
 
 ### 5. Provide Tool Info
 
@@ -278,5 +328,3 @@ When configuring AI, if 'Streaming Output' mode is turned on, then when invoking
 ## AI Point Consumption
 
 [AI Point Consumption](ai-point.md)
-
-

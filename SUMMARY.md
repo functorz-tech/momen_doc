@@ -11,7 +11,7 @@
 
 * [Latest Product Update](changelog/product-release.md)
 
-## Build UI <a href="#buildUI" id="buildUI"></a>
+## Build UI <a href="#buildui" id="buildui"></a>
 
 * [Pages](buildUI/page_config.md)
 * [Components](buildUI/components_config.md)
@@ -36,7 +36,6 @@
 * [Variable](data/variable.md)
 * [Parameter](data/parameter.md)
 * [Formula and Conditions](data/formula.md)
-
 
 ## Actions
 
@@ -84,7 +83,7 @@
 * [How to Build an AI Needs Analysis Project?](tutorial/how-to-build-an-ai-needs-analysis-project.md)
 * [How to Set Up Payment with Stripe Plugin?](tutorial/how-to-set-up-payment-with-stripe-plugin.md)
 * [How to Embed an Iframe Component into Your Momen Project?](tutorial/how-to-embed-an-iframe-component-into-your-momen-project.md)
-* [How to buildUI Your Login Page?](tutorial/how-to-buildUI-your-login-page.md)
+* [How to buildUI Your Login Page?](tutorial/how-to-buildui-your-login-page.md)
 * [How to Convert Momen App to Native Mobile App?](tutorial/how-to-convert-momen-app-to-native-mobile-app.md)
 * [How to Build a CMS (MVP version) in Hours?](tutorial/how-to-build-a-cms-mvp-version-in-hours.md)
 * [How to Set a Countdown Timer When Sending a Verification Code](tutorial/how-to-set-a-countdown-timer-when-sending-a-verification-code.md)
@@ -100,6 +99,3 @@
 * [Portfolio](template/portfolio.md)
 * [Online Courses, a nod to Udemy](template/online-courses-a-nod-to-udemy.md)
 * [Mobile Auto Repair AI Scheduler](template/mobile-auto-repair-ai-scheduler.md)
-
-
-
