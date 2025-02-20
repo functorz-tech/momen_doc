@@ -4,6 +4,25 @@ description: >-
 ---
 
 # Latest Product Update
+
+## V2.1.3 - 2025.01.23
+
+### New Features
+
+1. SEO Optimization: Added different render modes such as SSR、SSG and CSR. Supports for Robots.txt, with improved Sitemap generation. [View details.](https://docs.momen.app/release-and-growth/seo)   
+2. AI Integration: Support for using your' own large models (currently only supports OpenAI 4o and 4o mini, with plans to add more models in the future). 
+3. SVG Image Upload: The image component now supports uploading SVG format images.
+4. Transfer of Free Projects: Users can now transfer free projects to other accounts.
+
+### Feature Enhancements
+1. Custom Domain: Step-by-step configuration guide for custom domains, with improved website performance and better search engine optimization. Please note that historical projects will need to reconfigure custom domains before updating. [View details.](https://docs.momen.app/release-and-growth/publish#publish-with-custom-domain)
+2.  Multi-Client Purchase: You can now manage clients (add or remove them) before purchasing additional services. [View details.](https://docs.momen.app/release-and-growth/multipleclients)
+3. Formulas: New formulas have been added, including "Object to Text," "Text to Integer," and "Text to Decimal."
+
+### Bug Fixes
+1. Fixed an issue where the map component couldn't select data within the component.
+2. Fixed an issue with removing sharing permissions incorrectly.
+
 ## V2.1.2 - 2024.12.12
 
 ### New Features
