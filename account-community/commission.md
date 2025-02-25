@@ -4,7 +4,7 @@ Momen offers a commission program, designed to empower users and expand Momen's 
 
 ## What You Can Earn
 
-By sharing your unique invite code, you can earn up to **10%** commission when a new user successfully registers and makes a payment when buying project plan. The commission is based on the new user’s payment actions, and there is no upper limit to how much you can earn, offering great potential for promoters.
+By sharing your unique invite code, you can earn up to **30%** commission when a new user successfully registers and makes a payment when buying project plan. The commission is based on the new user’s payment actions, and there is no upper limit to how much you can earn, offering great potential for promoters.
 
 ## How to Become a Promoter
 
@@ -22,9 +22,9 @@ By sharing your unique invite code, you can earn up to **10%** commission when a
 
 ## Commission Details
 
-You earn 10% commission. If your referral uses a discount, your commission is based on the discounted price.
+You earn 30% commission. If your referral uses a discount, your commission is based on the discounted price.
 
-* Example: If your referral subscribes to the monthly Pro plan for $99, you earn $9.9. With a 50% discount, your commission is $4.95.
+* Example: If your referral subscribes to the monthly Pro plan for $99, you earn $29.7. With a 50% discount, your commission is $14.85.
 
 Program End Date: December 31st, 2025
 
