@@ -77,8 +77,8 @@ If integrating with official platforms, fill in:
 If it is a self-hosted large model service, fill in:
 
 1. Server url: The access address of the large model service.
-2. Custom authentication header: The key name of the authentication method, such as "api-key: xxxxxxxxxxx" in "api-key".
-3. Custom authentication value: The key value of the authentication method, such as "api-key: xxxxxxxxxxx" in "xxxxxxxxxxx".
+2. Custom authentication header: The key name of the authentication method, such as "api-key" in "api-key: xxxxxxxxxxx".
+3. Custom authentication value: The key value of the authentication method, such as "xxxxxxxxxxx" in "api-key: xxxxxxxxxxx".
 4. Model Value of Input Parameter: The model value, such as "DeepSeek-R1".
 
 After filling in the above information, click "Verify". The system will attempt to send a request using this information. If the request is successful, the verification is passed. Save the configuration and deploy the backend, and the large model can be used.
