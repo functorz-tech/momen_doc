@@ -5,7 +5,7 @@ description: >-
   health goals and body data.
 ---
 
-# Andry Dietation
+# Angry Dietation
 
 ### Introduction
 
@@ -14,6 +14,8 @@ The "Angry Dietitian" template integrates Deepseek and GPT-4o to help users trac
 ### Overview
 
 Here’s a step-by-step breakdown of how the template works:
+
+{% embed url="https://youtu.be/anLKwgbjb6k" %}
 
 
 
