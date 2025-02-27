@@ -1,11 +1,11 @@
 ---
 description: >-
-  The "Angry Dietatian" template integrates Deepseek and GPT-4o to help users
+  The "Angry Dietitian" template integrates Deepseek and GPT-4o to help users
   track their daily diet and receive personalized suggestions based on their
   health goals and body data.
 ---
 
-# Angry Dietation
+# Angry Dietition
 
 ### Introduction
 

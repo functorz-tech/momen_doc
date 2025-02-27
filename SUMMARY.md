@@ -90,7 +90,7 @@
 
 ## Template
 
-* [Angry Dietation](template/angry-dietation.md)
+* [Angry Dietition](template/angry-dietition.md)
 * [AI Help Center](template/ai-help-center.md)
 * [AI Knowledge Base](template/ai-knowledge-base.md)
 * [SaaS Corporate Site](template/saas-corporate-site.md)
