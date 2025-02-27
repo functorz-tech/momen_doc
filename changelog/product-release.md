@@ -1,25 +1,57 @@
 ---
-description: >-
-  Announcing the latest Momen product update
+description: Announcing the latest Momen product update
 ---
 
 # Latest Product Update
+
+## V2.2.1 - 2025.02.27
+
+### New Features
+
+1. **Free Trial for Templates**: Users can directly try advanced version templates for free for three days.
+2. **Coupon Redemption**: Users can redeem coupons directly on the My wallet page using a redemption code.
+3. **Dynamic** **List Component**: Automatically calculates and adjusts the number of columns based on the configured width for a responsive display.
+
+### Feature Enhancements
+
+1. **AI Configuration Interaction Updates**
+   1. When an invocation error occurs, specific error details are now displayed.
+   2. "APP Token" renamed to "AI Points," with input and output calculations separated.
+   3. Added a Point Calculator to easily calculate consumption for different models.
+   4. Field description character limit increased from 100 to 10,000 characters.
+   5. Tool names can now be configured.
+2. **Image and Video Selector**: Now supports compressed uploads, saving bandwidth and object storage.
+
+### Bug Fixes
+
+1. Fixed an issue where the page icon for custom domains couldn’t be modified.
+2. Fixed an issue where global variable default values were not taking effect on the mini program side.
+3. Fixed an issue where database trigger behavior couldn’t retrieve associated data from input parameters.
+4. Fixed an issue where the right sidebar of the conditional container couldn’t rename items.
+5. Fixed an issue where data concatenation wasn’t working in database trigger conditions.
+6. Fixed an issue where no prompt was shown when the tool source of an Agent was deleted.
+7. Fixed an issue where copying global data caused the project to fail to open.
+8. Fixed an issue where repeated prompts appeared after an import failure.
+9. Fixed an issue with gradient color display.
+10. Fixed an issue where the default value of an API in the behavior flow was not working.
 
 ## V2.1.3 - 2025.01.23
 
 ### New Features
 
-1. SEO Optimization: Added different render modes such as SSR、SSG and CSR. Supports for Robots.txt, with improved Sitemap generation. [View details.](https://docs.momen.app/release-and-growth/seo)   
-2. AI Integration: Support for using your' own large models (currently only supports OpenAI 4o and 4o mini, with plans to add more models in the future). 
+1. SEO Optimization: Added different render modes such as SSR、SSG and CSR. Supports for Robots.txt, with improved Sitemap generation. [View details.](https://docs.momen.app/release-and-growth/seo)
+2. AI Integration: Support for using your' own large models (currently only supports OpenAI 4o and 4o mini, with plans to add more models in the future).
 3. SVG Image Upload: The image component now supports uploading SVG format images.
 4. Transfer of Free Projects: Users can now transfer free projects to other accounts.
 
 ### Feature Enhancements
+
 1. Custom Domain: Step-by-step configuration guide for custom domains, with improved website performance and better search engine optimization. Please note that historical projects will need to reconfigure custom domains before updating. [View details.](https://docs.momen.app/release-and-growth/publish#publish-with-custom-domain)
-2.  Multi-Client Purchase: You can now manage clients (add or remove them) before purchasing additional services. [View details.](https://docs.momen.app/release-and-growth/multipleclients)
+2. Multi-Client Purchase: You can now manage clients (add or remove them) before purchasing additional services. [View details.](https://docs.momen.app/release-and-growth/multipleclients)
 3. Formulas: New formulas have been added, including "Object to Text," "Text to Integer," and "Text to Decimal."
 
 ### Bug Fixes
+
 1. Fixed an issue where the map component couldn't select data within the component.
 2. Fixed an issue with removing sharing permissions incorrectly.
 
@@ -29,6 +61,7 @@ description: >-
 
 1. Hosting files in the Root Directory: Users can now upload verification files to the root directory of the web application.[View details](https://docs.momen.app/community/commission)
 2. SEO Improvements: Added options for render mode selection, robots file, and other settings.
+
 ### Feature Enhancements
 
 1. Commission Dashboard: A new commission panel in the user center, allowing users to share their exclusive referral link, track the number of invites, total commission, and available withdrawal amount. [View details](https://docs.momen.app/community/commission)
@@ -41,7 +74,6 @@ description: >-
 3. Fixed style issues with the large action popup.
 4. Fixed image component display issues.
 5. Fixed payment configuration issues for multi-client projects.
-
 
 ## V2.1.1 - 2024.11.22
 
@@ -62,7 +94,8 @@ description: >-
 4. Fixed the issue with template creation.
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=2B_h5ewNgDw&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=1)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=2B_h5ewNgDw\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=1)
 
 ## V2.1.0 - 2024.10.31
 
@@ -89,7 +122,8 @@ Please see more details about our updates in the [video](https://www.youtube.com
 6. Resolved issues with abnormal Actionflow triggers to ensure smoother operation.
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=FrDjKVodJOA&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=2)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=FrDjKVodJOA\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=2)
 
 ## V2.0.5 - 2024.10.10
 
@@ -101,10 +135,10 @@ In this update, we enhanced our conditional containers and canvas.
 
 1\. **Canvas Optimization**
 
-* &#x20;Added right-click operations to the top toolbar, supporting actions such as page copying.
+* Added right-click operations to the top toolbar, supporting actions such as page copying.
 * Automatically convert units when switching component width and height units.
 
-2\. **Collaborative Experience and Performance:**&#x20;
+2\. **Collaborative Experience and Performance:**
 
 * Improved the experience and performance for multi-client collaborative applications.
 
@@ -123,8 +157,8 @@ In this update, we enhanced our conditional containers and canvas.
 6\. Fixed the issue where project activation failed.
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=Lm_wlOsr3D4&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=3)
 
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=Lm_wlOsr3D4\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=3)
 
 ## V2.0.4 - 2024.09.14
 
@@ -163,25 +197,27 @@ In this update, we enhanced our conditional containers and canvas.
 14. Fixed an issue where fields displayed "null" when SEO was enabled but not configured.
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=4HGdbwdMOJc\&list=PLvdix\_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=4)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=4HGdbwdMOJc\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=4)
 
 ## V2.0.3 - 2024.09.14
 
 ### Introduction
+
 In this update, we enhanced our conditiopnal containers and text component.
 
 ### Feature Optimizations
 
-1. **Support for Copying Individual Cases in Conditional Containers**
-   - This feature allows users to copy specific cases within conditional container to another.
-   <figure><img src="../.gitbook/assets/product_updates_v2.0.3/pu1.gif" alt=""><figcaption></figcaption></figure>
+1.  **Support for Copying Individual Cases in Conditional Containers**
 
-   
+    * This feature allows users to copy specific cases within conditional container to another.
+
+    <figure><img src="../.gitbook/assets/product_updates_v2.0.3/pu1.gif" alt=""><figcaption></figcaption></figure>
 2. **Support for Setting Maximum Lines in Text Components**
-   - By enabling multi-line display in text components and setting a line limit, any text that exceeds the fixed height of the text box will be truncated.
-  <figure><img src="../.gitbook/assets/product_updates_v2.0.3/pu2.gif" alt=""><figcaption></figcaption></figure>
+   * By enabling multi-line display in text components and setting a line limit, any text that exceeds the fixed height of the text box will be truncated.
 
- 
+<figure><img src="../.gitbook/assets/product_updates_v2.0.3/pu2.gif" alt=""><figcaption></figcaption></figure>
+
 ### Bug Fixes
 
 1. Resolved an issue where downloaded file names were appearing unreadable.
@@ -189,35 +225,39 @@ In this update, we enhanced our conditiopnal containers and text component.
 3. Corrected an error occurring when selecting a reference type for linked data.
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=uNGe5TuKKfI&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=5)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=uNGe5TuKKfI\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=5)
 
 ## V2.0.2 - 2024.08.15
 
 ### **Introduction**
+
 In this update, we enhanced our collaboration capability, and update invite codes generation.
 
-
 ### Enhanced Collaboration Capabilities
+
 1. Resolved data conflicts during simultaneous operations in the editor by multiple users.
 2. Major performance and efficiency improvements.
-   
 
 ### Automatically Generate Referral Code During Registration
+
 1. Users can now share invitation codes to invite new users to register and join the referral program, earning commission.
+
 <figure><img src="../.gitbook/assets/productUpdate_v2.0.2/20240816-133218.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=DeCMBZKh4Pw&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=6)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=DeCMBZKh4Pw\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=6)
 
 ## V2.0.1 - 2024.08.02
 
 ### Introduction
 
-We've made major updates on canvas, improving the user experience, design consistency and ease of use in our editor.&#x20;
+We've made major updates on canvas, improving the user experience, design consistency and ease of use in our editor.
 
 ### Update Summary
 
-#### New Canvas**
+#### New Canvas\*\*
 
 1. Updated the canvas engine for significantly improved performance.
 2. Adjusted default and selected styles for all components.
@@ -228,7 +268,7 @@ We've made major updates on canvas, improving the user experience, design consis
 1. The left sidebar now supports searching component lists, right-click to copy, and delete multi-selection.
 2. Displays all breakpoints in multi-breakpoint mode.
 3. When a component has a popup configured, the left sidebar allows selection and editing of the popup.
-4. The right sidebar hierarchy is optimized to "Design," "Data," and "Interaction".&#x20;
+4. The right sidebar hierarchy is optimized to "Design," "Data," and "Interaction".
 5. Added text paragraph indent, letter spacing, and separate border and corner radius settings.
 
 #### Deployment Optimization
@@ -245,13 +285,13 @@ We've made major updates on canvas, improving the user experience, design consis
 
 <figure><img src="../.gitbook/assets/20240802-184118.png" alt=""><figcaption></figcaption></figure>
 
-#### **Shortcuts**&#x20;
+#### **Shortcuts**
 
 Added 42 shortcuts for general component operations, selection, movement, and canvas panel zooming.
 
 <figure><img src="../.gitbook/assets/截屏2024-08-02 18.42.01.png" alt=""><figcaption></figcaption></figure>
 
-### **Detailed Update
+### \*\*Detailed Update
 
 #### **Left Sidebar**
 
@@ -279,7 +319,7 @@ Added 42 shortcuts for general component operations, selection, movement, and ca
 
 <figure><img src="../.gitbook/assets/1.jpeg" alt="" width="125"><figcaption></figcaption></figure>
 
-* **Display Sub-containers When Selected**&#x20;
+* **Display Sub-containers When Selected**
 
 When a component with sub-containers is selected, the left sidebar displays the relationship.
 
@@ -296,15 +336,13 @@ When a component with sub-containers is selected, the left sidebar displays the 
 1. Supports switching between multi/single breakpoint editing modes.
 2. Supports dragging and adding components to any position in the target container.
 3. Supports direct selection and editing of the innermost component at the pointer position.
-4. Displays more information and shortcut operations when a component is selected.&#x20;
+4. Displays more information and shortcut operations when a component is selected.
    1. Select the parent, edit variant and delete.
    2. Adjust the size of the component
 
 <figure><img src="../.gitbook/assets/5.jpeg" alt=""><figcaption></figcaption></figure>
 
 5. Displays horizontal, vertical center, and edge alignment guides when dragging components positioned as "absolute."
-
-
 
 #### **Right Sidebar**
 
@@ -313,17 +351,17 @@ When a component with sub-containers is selected, the left sidebar displays the 
 1. Text paragraph indent, letter spacing.
 2. Separate border settings.
 
-**Adjustments**&#x20;
+**Adjustments**
 
 * **Labels and Content Adjustments**
 
 1. Added style configuration (named according to the current selection type) at the top under "Design."
 2. Renamed the original "Content" label to "Data." This label now only supports configuring declared data-related items, with other configurations moved to "Design" - style configuration."
-3. Renamed the original "Interaction" label to "Action." This label now only supports configuring actions, with all content under the original "Component" moved to "Design".&#x20;
+3. Renamed the original "Interaction" label to "Action." This label now only supports configuring actions, with all content under the original "Component" moved to "Design".
 
 <figure><img src="../.gitbook/assets/5-1.jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Animation Entry Position Adjustment**&#x20;
+* **Animation Entry Position Adjustment**
 
 Moved the animation entry from "Interaction" to "Design."
 
@@ -356,7 +394,7 @@ Moved the animation entry from "Interaction" to "Design."
 
 <figure><img src="../.gitbook/assets/10.jpeg" alt=""><figcaption></figcaption></figure>
 
-**Layer Styles**&#x20;
+**Layer Styles**
 
 Renamed "Layer Styles" to "Z Index" and moved to "Position."
 
@@ -372,36 +410,33 @@ Renamed "Layer Styles" to "Z Index" and moved to "Position."
 #### **Components**
 
 1. Updated default styles for all components.
+2. Condition Container
 
-
-
-2. Condition Container&#x20;
-
-* **Concept Adjustment**&#x20;
+* **Concept Adjustment**
 
 The parent container is now a concept, unselectable and uneditable.
 
 <figure><img src="../.gitbook/assets/1.1.jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Child Container Configuration**&#x20;
+* **Child Container Configuration**
 
 Supports direct selection of child containers, allowing separate configuration of size, style, etc.
 
 <figure><img src="../.gitbook/assets/1.2.. (1).jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Focus Mode**&#x20;
+* **Focus Mode**
 
 Supports entering focus mode through toolbar entry or shortcut (Cmd/Ctrl + Return/Enter) for configuration.
 
 <figure><img src="../.gitbook/assets/1.4 (1).jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Distinguishing Parent/Child Container Operations**&#x20;
+* **Distinguishing Parent/Child Container Operations**
 
 Distinguishes copy, cut, copy, delete operations for child and parent containers.
 
 <figure><img src="../.gitbook/assets/1.5 (1).jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Adding and Switching Child Containers**&#x20;
+* **Adding and Switching Child Containers**
 
 i. Toolbar ii. Right Sidebar iii. Condition Popup
 
@@ -409,51 +444,45 @@ i. Toolbar ii. Right Sidebar iii. Condition Popup
 
 <figure><img src="../.gitbook/assets/1.6.3 (1).jpeg" alt="" width="375"><figcaption></figcaption></figure>
 
-* **Condition Configuration**&#x20;
+* **Condition Configuration**
 
 Supports simultaneous configuration of all child container conditions.
 
 <figure><img src="../.gitbook/assets/1.7.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Tabs&#x20;
+3. Tabs
 
-* Toolbar&#x20;
+* Toolbar
 
 Supports switching tabs in the toolbar.
 
 <figure><img src="../.gitbook/assets/1.8.jpeg" alt=""><figcaption></figcaption></figure>
 
-* **Configuration**&#x20;
+* **Configuration**
 
-Supports directly selecting and editing different tab content in the canvas.&#x20;
+Supports directly selecting and editing different tab content in the canvas.
 
-
-
-**Focus Mode**&#x20;
+**Focus Mode**
 
 Supports entering focus mode through toolbar entry or shortcut (Cmd/Ctrl + Return/Enter) for configuration.
 
 <figure><img src="../.gitbook/assets/1.9.jpeg" alt=""><figcaption></figcaption></figure>
 
+4. Select Views
 
-
-4. Select Views&#x20;
-
-* Toolbar&#x20;
+* Toolbar
 
 Distinguishes configuration and preview areas, supports direct selection and editing of the "selected" and "unselected" states of the tag.
 
-5. Lists/Horizontal Lists&#x20;
+5. Lists/Horizontal Lists
 
-* Configuration&#x20;
+* Configuration
 
 Distinguishes configuration and preview areas, supports direct selection and editing of the "selected" and "unselected" states of the tag.
 
 <figure><img src="../.gitbook/assets/1.2.jpeg" alt=""><figcaption></figcaption></figure>
 
-
-
-#### **Navigation Bar** &#x20;
+#### **Navigation Bar**
 
 * Publish
 
@@ -462,13 +491,11 @@ Moved the original "Preview" entry into "Publish," forming an integrated web pro
 <figure><img src="../.gitbook/assets/截屏2024-08-05 13.19.45.png" alt=""><figcaption></figcaption></figure>
 
 * **Entry Adjustment Style Adjustment**
-* **Error Reporting**&#x20;
+* **Error Reporting**
 
 Changed from always present to appearing when there is an error.
 
 <figure><img src="../.gitbook/assets/截屏2024-08-05 13.20.30.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Shortcuts**
 
@@ -485,20 +512,21 @@ More shortcuts can be viewed or searched in the shortcut popup.
 
 <figure><img src="../.gitbook/assets/111.jpeg" alt=""><figcaption></figcaption></figure>
 
-### **Future Updates
+### \*\*Future Updates
 
-1. Support for Multi-select Editing&#x20;
+1. Support for Multi-select Editing
 2. More Powerful Variant Function
 3. Richer Breakpoint Capabilities
 
 ### Feedback Channels;
 
-If you have any questions or suggestions, feel free to provide feedback here. Your report will be immediately get fixed by our team.&#x20;
+If you have any questions or suggestions, feel free to provide feedback here. Your report will be immediately get fixed by our team.
 
 <figure><img src="../.gitbook/assets/222.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### Product update video
-Please see more details about our updates in the [video](https://www.youtube.com/watch?v=6mwNcI5YF5g&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz&index=7)
+
+Please see more details about our updates in the [video](https://www.youtube.com/watch?v=6mwNcI5YF5g\&list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz\&index=7)
 
 ## V1.0.9 - 2024.04.25
 
@@ -530,13 +558,11 @@ Support project reset: Reset project will restore the project to blank. All data
 
 ![](<../.gitbook/assets/4 (10).png>)
 
-
 ## V1.0.8 - 2024.3.07
 
 ### I. Introduction
 
-Momen's latest update, version 1.0.8, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\
-
+Momen's latest update, version 1.0.8, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\\
 
 ### II. New features
 
@@ -561,8 +587,7 @@ Momen's latest update, version 1.0.8, is here! Packed with exciting new features
 
 ### I. Introduction
 
-Momen's latest update, version 1.0.7, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\
-
+Momen's latest update, version 1.0.7, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\\
 
 ### II. New features
 
@@ -572,13 +597,9 @@ Momen's latest update, version 1.0.7, is here! Packed with exciting new features
 
 You can now send multiple images to AI, and this technology can be widely used in different scenarios.
 
-
-
 2. New custom action: new interface and triggers.
 
 <figure><img src="../.gitbook/assets/2 (31).png" alt="Actionflow in a no-code tool"><figcaption></figcaption></figure>
-
-
 
 ### III. Improvements
 
@@ -591,8 +612,6 @@ You can now send multiple images to AI, and this technology can be widely used i
 * The speed of creating new projects has been drastically improved.
 * Optimized new project creation process. Users can directly create Basic/Pro version projects. Combined with AI, newly created projects can be classified.
 
-
-
 3. Optimizations for conditional configuration and booleans
 
 * Added the 'is true' and 'is false' operators
@@ -600,15 +619,8 @@ You can now send multiple images to AI, and this technology can be widely used i
 
 <figure><img src="../.gitbook/assets/20240119-113619.jpeg" alt="conditional configuration in a no-code tool"><figcaption></figcaption></figure>
 
-
-
 4. Multi-client: Reduced the price of new web applications under the multi-client capability to 50% of the corresponding version (from 100%)
-
-
-
 5. By default, the list components are arranged in reverse order of ID
-
-
 
 ### IV. Bugfixes
 
@@ -620,8 +632,7 @@ You can now send multiple images to AI, and this technology can be widely used i
 
 ### I. Introduction
 
-Momen's latest update, version 1.0.6, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\
-
+Momen's latest update, version 1.0.6, is here! Packed with exciting new features and enhancements. This release is aimed at enhancing your development experience. Let's explore the highlights!\\
 
 ### II. New features
 
@@ -690,15 +701,15 @@ For more feature introductions, please see: https://docs.momen.app/advanced-comp
 
 2. Update of Default Styles for Sidebar Components
 
-Updated the component library styles and adjusted all component columns to be open by default, reducing user clicks; &#x20;
+Updated the component library styles and adjusted all component columns to be open by default, reducing user clicks;
 
 Fixed the issue where the section of adding components would not display when a page was not selected.
 
-<figure><img src="../.gitbook/assets/12 (10).png" alt="updated of sidebar components in a no-code tool "><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/12 (10).png" alt="updated of sidebar components in a no-code tool"><figcaption></figcaption></figure>
 
 3. Other Improvements
 
-Optimized the bottom capsule to support canvas size adjustment via shortcuts. &#x20;
+Optimized the bottom capsule to support canvas size adjustment via shortcuts.
 
 <figure><img src="../.gitbook/assets/13 (10).png" alt="Optimized bottom capsule in a no-code tool"><figcaption></figcaption></figure>
 
@@ -716,8 +727,7 @@ We're currently working on the Momen AI Knowledge Base template, with built-in A
 
 ### I. Introduction
 
-Momen's latest update, version 1.0.5, is here! Packed with exciting new features, enhancements, and bug fixes, this release is aimed at enhancing your development experience. Let's explore the highlights!\
-
+Momen's latest update, version 1.0.5, is here! Packed with exciting new features, enhancements, and bug fixes, this release is aimed at enhancing your development experience. Let's explore the highlights!\\
 
 ### II. New Features
 
@@ -769,15 +779,13 @@ We're thrilled to see our users engaging and providing valuable feedback that pr
 
 ### I. Introduction
 
-Introducing Momen's newest update, version 1.0.4! Bursting with thrilling new features, improvements, and bug fixes, this release is designed to elevate your development experience. Let's delve into the key highlights!\
-
+Introducing Momen's newest update, version 1.0.4! Bursting with thrilling new features, improvements, and bug fixes, this release is designed to elevate your development experience. Let's delve into the key highlights!\\
 
 ### II. New Features
 
 1. AI vector storage
 
-The text field has been enhanced with AI vector storage capability, enabling vector sorting and facilitating relevance searches using this field. AI-related functionalities are available for projects with Basic projects and higher.\
-
+The text field has been enhanced with AI vector storage capability, enabling vector sorting and facilitating relevance searches using this field. AI-related functionalities are available for projects with Basic projects and higher.\\
 
 ### III. Improvements
 
@@ -801,8 +809,7 @@ Through the use of default values, you can initiate page data or global data wit
 
 4. Paste text onto the canvas
 
-Now you can paste text directly into the editor, and they will automatically convert to text component.\
-
+Now you can paste text directly into the editor, and they will automatically convert to text component.\\
 
 5. Custom components with data binding capabilities
 
@@ -818,15 +825,13 @@ Custom components now offer data binding capabilities, enabling you to bind data
 
 1. Permission control v1.1
 
-We are engaged in a comprehensive effort to refine and optimize our permission control system. Our primary goal is to make it not only more intuitive and user-friendly. This refinement encompasses a deep evaluation of the existing user interface, with a strong focus on simplifying complex processes, streamlining navigation, and ensuring seamless interactions.\
-
+We are engaged in a comprehensive effort to refine and optimize our permission control system. Our primary goal is to make it not only more intuitive and user-friendly. This refinement encompasses a deep evaluation of the existing user interface, with a strong focus on simplifying complex processes, streamlining navigation, and ensuring seamless interactions.\\
 
 ## V1.0.3 - 2023.8.16
 
 ### I. Introduction
 
-Introducing Momen's latest update, version 1.0.3! Packed with exciting new features, improvements, and bug fixes, this release is set to enhance your development journey. Let's explore the highlights!\
-
+Introducing Momen's latest update, version 1.0.3! Packed with exciting new features, improvements, and bug fixes, this release is set to enhance your development journey. Let's explore the highlights!\\
 
 ### II. New Features
 
@@ -837,8 +842,6 @@ We now offer the ability to configure dynamic effects and animations on componen
 <figure><img src="../.gitbook/assets/1.1.png" alt="Editing page of a no-code tool"><figcaption></figcaption></figure>
 
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNNm75vAys0CMwBUdWsgC%2Fuploads%2Fm7YFHGRCbZw3j46Uns3X%2Fmotion.mp4?alt=media&token=eed4e229-c4ba-4ec0-95b9-7e7f6bfc6ba3" %}
-
-
 
 ### III. Improvements
 
@@ -861,7 +864,6 @@ Resolved issues related to the support service deployment.
 ### VI. What We Are Currently Working On
 
 **Development environment**Our ongoing focus is on developing a feature that empowers users to iterate on specific parts of their projects without affecting other sections. The Development environment provides a platform for project building, reflecting the final deployed appearance. Once everything is locked and loaded, merging the testing branch to the main development environment and pushing it to live is just one click away. Stay tuned for this exciting development!
-
 
 ## V1.0.2 - 2023.7.24
 
@@ -930,8 +932,7 @@ We are revamping the Focus Mode to enhance your interface-building experience. T
 
 This week we launched three new features for building custom and beautiful UIs.
 
-Other than that, over the past two weeks, we've been working on a new feature that enables automated conversion of Product Requirement Documents (PRDs) to Momen Data Models through Momen AI. Such a feature can help our users quickly get started with Momen and reduce the time to build data models.\
-
+Other than that, over the past two weeks, we've been working on a new feature that enables automated conversion of Product Requirement Documents (PRDs) to Momen Data Models through Momen AI. Such a feature can help our users quickly get started with Momen and reduce the time to build data models.\\
 
 ### II. New Features
 
