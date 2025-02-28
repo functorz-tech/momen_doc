@@ -20,20 +20,18 @@ description: Announcing the latest Momen product update
    3. Added a Point Calculator to easily calculate consumption for different models.
    4. Field description character limit increased from 100 to 10,000 characters.
    5. Tool names can now be configured.
-2. **Image and Video Selector**: Now supports compressed uploads, saving bandwidth and object storage.
 
 ### Bug Fixes
 
 1. Fixed an issue where the page icon for custom domains couldn’t be modified.
-2. Fixed an issue where global variable default values were not taking effect on the mini program side.
-3. Fixed an issue where database trigger behavior couldn’t retrieve associated data from input parameters.
-4. Fixed an issue where the right sidebar of the conditional container couldn’t rename items.
-5. Fixed an issue where data concatenation wasn’t working in database trigger conditions.
-6. Fixed an issue where no prompt was shown when the tool source of an Agent was deleted.
-7. Fixed an issue where copying global data caused the project to fail to open.
-8. Fixed an issue where repeated prompts appeared after an import failure.
-9. Fixed an issue with gradient color display.
-10. Fixed an issue where the default value of an API in the behavior flow was not working.
+2. Fixed an issue where database trigger behavior couldn’t retrieve associated data from input parameters.
+3. Fixed an issue where the right sidebar of the conditional container couldn’t rename items.
+4. Fixed an issue where data concatenation wasn’t working in database trigger conditions.
+5. Fixed an issue where no prompt was shown when the tool source of an Agent was deleted.
+6. Fixed an issue where copying global data caused the project to fail to open.
+7. Fixed an issue where repeated prompts appeared after an import failure.
+8. Fixed an issue with gradient color display.
+9. Fixed an issue where the default value of an API in the behavior flow was not working.
 
 ## V2.1.3 - 2025.01.23
 
