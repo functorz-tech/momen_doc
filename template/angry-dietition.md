@@ -13,7 +13,7 @@ The "Angry Dietitian" template integrates Deepseek and GPT-4o to help users trac
 
 ### Overview
 
-Here’s a step-by-step breakdown of how the template works:
+Here’s a preview of how the template works:
 
 {% embed url="https://youtu.be/anLKwgbjb6k" %}
 
@@ -73,12 +73,16 @@ Users can input their data on the **Form** page. To allow for data modifications
 
 **AI Configuration**
 
-* **GPT-4o** is pre-integrated into Momen, so you can directly select it when building your agents.
-* The **DeepSeek** model is the free version by default. To use your own model, click “Add Model”, choose the provider, and fill in the API key from the developer documentation.
+* **GPT-4o:** It is pre-integrated into Momen, so you can directly select it when building your agents.
+* **DeepSeek**: ⚠️ You must use your own large model when configuring DeepSeek. While the project preview link shows how it works, you’ll need to integrate it manually when creating a project from the template. To set it up, click **"Add Model"**, enter the **URL** of your model service, select the **provider**, and input the **API key** from the developer documentation.
 
 <figure><img src="../.gitbook/assets/Bring your own model.png" alt=""><figcaption></figcaption></figure>
 
-**Note:** Momen currently supports **OpenAI** and **DeepSeek** models. More models will be added in the future.**Adjusting Prompts** In this template, DeepSeek acts as a tough, no-nonsense dietitian, but you can modify the prompt to adjust the tone and style of the responses to better match your needs.\
+**Note:** Momen currently supports **OpenAI** and **DeepSeek** models. More models will be added in the future.
+
+**Adjusting Prompts**&#x20;
+
+In this template, DeepSeek acts as a tough, no-nonsense dietitian, but you can modify the prompt to adjust the tone and style of the responses to better match your needs.\
 
 
 For a deeper dive into the development of this project, check out the [live building recap](https://www.youtube.com/live/Voy28dhh0IU?si=8gppAY--G06YM2-o) or our detailed showcase.
