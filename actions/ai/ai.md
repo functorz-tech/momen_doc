@@ -45,7 +45,7 @@ When AI Points are insufficient, data vectorization, vector sorting, and Agent i
 
 Additionally, at the beginning of each month, the system will gift **100,000** AI Points, which will be cleared at the end of the month.
 
-### Using Your Own Model Services
+### Bring your own model
 
 If you have opened model services on other platforms or deployed large models yourself, you can integrate them into Momen. **This feature is only available for paid Projects**.
 
