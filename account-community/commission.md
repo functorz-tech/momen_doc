@@ -50,4 +50,4 @@ Accumulated Commissions: view your total earnings.
 
 Cashable Cash: Check how much cash is available for withdrawal.
 
-<figure><img src="../.gitbook/assets/promous4.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/截屏2025-03-10 18.21.42.png" alt=""><figcaption></figcaption></figure>
