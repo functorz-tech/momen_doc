@@ -18,7 +18,7 @@ By sharing your unique invite code, you can earn up to **30%** commission when a
 
 **Link Your Withdrawal Account:** You can only withdraw commissions to your Stripe connect account.
 
-<figure><img src="../.gitbook/assets/promous3.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/截屏2025-03-10 18.21.42.png" alt=""><figcaption></figcaption></figure>
 
 ## Commission Details
 
