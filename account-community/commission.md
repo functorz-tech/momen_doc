@@ -10,13 +10,13 @@ By sharing your unique invite code, you can earn up to **30%** commission when a
 
 **Get Started:** Click the "Promote Us" button in the top right corner of the platform.
 
-<figure><img src="../.gitbook/assets/20250310-183023.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/affiliate.png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Get Your Promo Code:** Copy your unique invitation code or link and start sharing it. Ask your friends to fill in the invitation code when they register. Alternatively, they can directly sign up via your link, and the invitation code will be automatically filled.
 
 **Link Your Withdrawal Account:** You can only withdraw commissions to your Stripe connect account.
-
-<figure><img src="../.gitbook/assets/momen affiliate.png" alt=""><figcaption></figcaption></figure>
 
 ## Commission Details
 
@@ -38,14 +38,14 @@ If your referral upgrades (e.g., from Basic to Pro), the original commission wil
 
 **Receive Commissions:**&#x20;
 
-On the 8th of each month, your earnings will be automatically transferred to your linked Stripe account.
+Within 7 business days, your earnings will be automatically transferred to your linked Stripe account.
 
 **Track Your Promotion Performance:**
+
+<figure><img src="../.gitbook/assets/affiliate dashboard.jpeg" alt=""><figcaption></figcaption></figure>
 
 Paid Users: number of paid users / number of users you’ve referred.
 
 Accumulated Commissions: view your total earnings.
 
 Cashable Cash: Check how much cash is available for withdrawal.
-
-<figure><img src="../.gitbook/assets/momen affiliate.png" alt=""><figcaption></figcaption></figure>
