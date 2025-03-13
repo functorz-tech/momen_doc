@@ -4,6 +4,34 @@ description: Announcing the latest Momen product update
 
 # Latest Product Update
 
+## V2.2.2 - 2025.03.13
+
+### New Features
+
+1. File upload action: support for limiting file size.
+2. SEO: support for Canonical URL
+
+### Feature Enhancements
+
+1. Advanced filtering in permissions supports using Actionflows or AI inputs as conditions for judgment.
+2. AI prompts support binding constant data, such as current date and time.
+3. Structured output of AI supports drag-and-drop order adjustment.
+4. Add a prompt when the source of an AI tool is deleted.
+
+### Bug Fixes
+
+1. Fix issues such as new diffs failing to access custom domains.
+2. Fix the issue in conditional containers where, under focus mode, when conditions are configured, the text and background colors are the same, making them illegible.
+3. Fix the issue where context.log is not working in code blocks within custom behavior flows.
+4. Fix the issue where permissions are fully open by default. Fix the issue where initiating WeChat authorization login for web fails.
+5. Fix the issue in multi-client upload verification where clicking the view icon redirects to an incorrect link.
+6. Fix the issue where an error occurs if two code block nodes under the same branch of a behavior flow declare the same variable.
+7. Fix the issue where opening and refreshing a list on the mini-program side results in scrolling to the top, but this action is ineffective.
+8. Fix the issue in multi-client environments where sub-clients may report errors indicating that large models cannot be recognized.
+9. Fix the issue where array fields in custom objects cannot be bound to multi-select selection views.
+10. Fix the issue where WeChat login configurations cannot be saved to the database.
+11. Fix the issue where defining input parameters with the same name in different code blocks causes an error.
+
 ## V2.2.1 - 2025.02.27
 
 ### New Features
