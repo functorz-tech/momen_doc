@@ -27,8 +27,11 @@ Setting the scrolling direction when sliding the list.
 <figure><img src="../.gitbook/assets/list/list1.gif" alt=""><figcaption></figcaption></figure>
 
 #### Number of Rows/Columns
+Set the number of rows or columns for the list. Currently, it supports fixed numbers or adapting to the screen.          
 
-The number of rows or columns of the list.
+1. Fixed: Simply fill in the number directly.
+2. Auto: Take the vertical list as an example. After enabling the automatic option, the width of each item needs to be configured for the list item container. When the page is rendered, the number of columns to be displayed will be calculated based on the screen width/item width.
+3. Fill the remaining width (List item): This takes effect when in the automatic mode. After enabling it, each child item will become wider to fill the width that is not sufficient for a full column. If it is disabled, the width of each child item remains unchanged.
 
 <figure><img src="../.gitbook/assets/list/list2.gif" alt=""><figcaption></figcaption></figure>
 
