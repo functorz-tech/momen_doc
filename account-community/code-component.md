@@ -46,12 +46,6 @@ momen create project_name
 
 This command generates a template project and registers it as a new code component project within Momen. While multiple components can be added, note that the initial setup doesn’t publish a version yet, so further steps are required to release it.
 
-```bash
-# create project_name
-momen create test21
-```
-
-This command creates a template project and registers a new code component project on the platform, which can contain multiple components. No version is published yet.
 
 ### Editing Code
 
@@ -127,7 +121,7 @@ Properties are parsed according to their declared types, so it’s essential to 
 
 <figure><img src="../.gitbook/assets/截屏2024-10-31 19.19.18.png" alt=""><figcaption></figcaption></figure>
 
-\
+
 
 
 ## About Momen
