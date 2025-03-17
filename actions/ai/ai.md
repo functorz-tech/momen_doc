@@ -206,7 +206,7 @@ Momen also supports fetching external data via API. You can choose the configure
 
 <figure><img src="../../.gitbook/assets/截屏2024-02-23 15.07.10.png" alt="use api as data source"><figcaption></figcaption></figure>
 
-Please check our step-by-step guide about how to configure APIs in Momen: [Notion](../api-configuration/integrations/notion.md), [Airtable](../api-configuration/integrations/airtable.md), [Google Sheet](../api-configuration/integrations/google-sheet.md)
+Please check our step-by-step guide about how to [configure APIs ](../../data/api.md)in Momen.
 
 ### 5. Tools
 
