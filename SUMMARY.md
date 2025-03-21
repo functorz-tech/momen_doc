@@ -77,6 +77,7 @@
 * [My Wallet](account-community/my-wallet.md)
 * [Promoting Momen](account-community/commission.md)
 * [Code Component](account-community/code-component.md)
+* [Collaboration](account-community/collaboration.md)
 
 ## Tutorial
 

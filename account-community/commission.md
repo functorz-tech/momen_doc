@@ -1,3 +1,8 @@
+---
+description: >-
+  Discover Momen's commission program and learn how to earn up to 30% rewards by promoting the no-code platform to new users and businesses.
+---
+
 # Promoting Momen
 
 Momen offers a commission program, designed to empower users and expand Momen's reach. Through this program, users can earn generous rewards by promoting Momen to others, with an easy-to-follow process that attracts individuals and businesses interested in no-code development.
