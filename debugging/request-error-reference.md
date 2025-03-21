@@ -1,0 +1,19 @@
+# Request Error Reference
+
+| Error Message                                  | Explanation                                                   | Cause                                                                            | Solution                                            |
+| ---------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Permission check failed                        | User lacks permission for the action                          | Insufficient permission settings                                                 | Adjust permission settings                          |
+| Duplicate key value violates unique constraint | Attempted to insert a duplicate value in a unique field       | Data constraint violation                                                        | Check and modify duplicate values                   |
+| Delete or update must have a filter            | No filter condition was provided for delete/update operations | Missing filter condition                                                         | Ensure filter condition is set correctly            |
+| Table access denied                            | User lacks access permission for a table                      | Permission settings issue                                                        | Adjust table access permissions                     |
+| Actionflow not found                           | Backend deployment was not completed                          | Action flow missing from backend                                                 | Deploy the action flow and retry                    |
+| Another app is deploying                       | Concurrent deployments detected                               | Backend already in deployment                                                    | Wait for deployment to finish                       |
+| CANNOT\_DEPLOY\_AN\_OLDER\_SCHEMA              | Deployment failed                                             | The project is not using the latest schema version (excluding web publishing)    | Refresh the page and retry                          |
+| PROJECT\_ENV\_CONFIG\_SYNC\_ERROR              | Data synchronization failure                                  | Synchronization failed during backend deployment (e.g., data model, action flow) | Refresh the page and retry                          |
+| TARGET\_PLATFORM\_IS\_DEPLOYING                | Project deployment in progress                                | The same build\_target is currently being deployed                               | Wait for deployment to finish and retry             |
+| NO\_PROJECT\_WECHAT\_APP\_CONFIG               | Deployment failed due to missing configuration                | WeChat Mini Program deployment lacks necessary settings                          | Rebind the Mini Program and retry                   |
+| SUPPORT\_SERVICE\_IS\_DEPLOYING                | Backend deployment in progress                                | A new deployment request was issued during an ongoing backend deployment         | Wait for the deployment to complete before retrying |
+| TABLE\_NAME\_TOO\_LONG                         | Table name exceeds length limit                               | The table name exceeds 62 characters                                             | Shorten the table name                              |
+| TABLE\_NAME\_ALREADY\_EXIST                    | Duplicate table name                                          | The table name already exists                                                    | Rename the table                                    |
+
+*

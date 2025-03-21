@@ -79,6 +79,11 @@
 * [Code Component](account-community/code-component.md)
 * [Collaboration](account-community/collaboration.md)
 
+## Debugging
+
+* [How to Debug in Momen](debugging/how-to-debug-in-momen.md)
+* [Request Error Reference](debugging/request-error-reference.md)
+
 ## Tutorial
 
 * [How to Build an AI Needs Analysis Project?](tutorial/how-to-build-an-ai-needs-analysis-project.md)
