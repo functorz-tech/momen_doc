@@ -8,7 +8,7 @@ description: Announcing the latest Momen product update
 
 ### New Features
 
-1. Components support display/hide at various breakpoints.
+1. Components support  visible/invisible at various breakpoints.
 2. Support for retrieving the user's permission role list on the frontend page.
 3. Static SVG supports direct embedding into HTML.
 4. Agent configuration supports Conditional and Formula.
