@@ -4,6 +4,38 @@ description: Announcing the latest Momen product update
 
 # Latest Product Update
 
+## V2.2.3 - 2025.03.28
+
+### New Features
+
+1. Components support display/hide at various breakpoints.
+2. Support for retrieving the user's permission role list on the frontend page.
+3. Static SVG supports direct embedding into HTML.
+4. Agent configuration supports Conditional and Formula.
+
+### Bug Fixes
+
+1. Fixed the issue where new API added in the List component could not be used as a Data source.
+2. Fixed the issue where the cursor automatically jumps to the end when modifying data in the input box on the Mini-Program.
+3. Fixed the issue of abnormal cursor jumping in the input box.
+4. Fixed the issue where constraint names could be the same as field names.
+5. Fixed the issue of abnormal scrolling in the Conditional Editor.
+6. Fixed the issue where streaming Output to page variables in AI Continue Conversation behavior displayed incorrectly on the page.
+7. Fixed the issue of UI damage in Callback parameter configuration.
+8. Fixed the issue where Logged in user data could not be used in AI configuration.
+9. Fixed the issue where executing the behavior of obtaining a phone number on the first opening of the Mini-Program would report a 401 error.
+10. Fixed the issue where List item width did not have % configuration.
+11. Fixed the issue where cloning any Project would report an error.
+12. Fixed the issue of text disorder in DeepSeek thinking process.
+13. Fixed the issue where inserting multiple images on the Mini-Program end did not take effect.
+14. Fixed the issue where backend deployment errors were not reported to the group.
+15. Fixed the issue where page data configured as List did not support Remove View.
+16. Fixed the issue where the inclusion judgment of date type fields did not take effect.
+17. Fixed the issue where Scheduled triggers continued to execute after Actionflow deletion.
+18. Fixed the issue where components copied within List items could not be pasted onto the page.
+19. Fixed the issue where the create button should not be clickable during data cloning.
+20. Fixed the issue where updating table data in Actionflow could not set the date to Null.
+
 ## V2.2.2 - 2025.03.13
 
 ### New Features
