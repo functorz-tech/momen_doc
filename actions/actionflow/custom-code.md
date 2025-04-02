@@ -1,6 +1,5 @@
 ---
-description: >-
-  Learn to add and use custom code in Momen
+description: Learn to add and use custom code in Momen
 ---
 
 # Custom Code
@@ -19,13 +18,13 @@ Currently, the "Custom Code" in Momen's action flow only supports the JavaScript
 
 If you want to write JS code to realize more complex business logic, you can add code blocks in the action flow, click the node where you want to add a code block and select the code block.
 
-![](</.gitbook/assets/0 (49).png> )
+![](<../../.gitbook/assets/0 (49).png>)
 
 ## Configure Custom Code
 
 After adding a code block, you can click on the code block to change its name. You can also directly write JS code in the code editing area on the right side. Or you can click on the Expand button in the upper right corner of the code editor to expand the code editor interface and use a bigger window to edit code.
 
-![](</.gitbook/assets/1 (2).jpeg>)
+![](<../../.gitbook/assets/1 (2).jpeg>)
 
 ## Configuring and Getting Inputs
 
@@ -35,19 +34,19 @@ Take the example of processing cell phone number encryption:
 
 First, configure the input parameter in the "action flow", the purpose here is to call the behavior flow on the page, you can enter parameters into the behavior flow.
 
-![](</.gitbook/assets/2 (2).jpeg>)
+![](<../../.gitbook/assets/2 (2).jpeg>)
 
 Configure the input in the "Custom Code", the purpose here is to tell the code block what the specific value of the input is.
 
 **Note:** The Input name has to be the same as the one in the function's parentheses that gets the Input in step 3!
 
-![](</.gitbook/assets/3 (2).jpeg>)
+![](<../../.gitbook/assets/3 (2).jpeg>)
 
 To get the input parameter in "code", you need to use Momen built-in context.getArg("input parameter name"); function to get the input parameter.
 
 **Note:** Names must be wrapped in semi-colonized "single quotes" or "double quotes.
 
-```JavaScript
+```javascript
 const thing1 = context.getArg('thing1');
 const thing4 = context.getArg('thing4');
 const date2 = context.getArg('date2');
@@ -73,7 +72,7 @@ If you need to take the result of the code block to other nodes below the action
 
 To return the Output in the Code, you need to use Momen's built-in context.setReturn("name of the Output", content of the Output); function to return the Output.
 
-```JavaScript
+```javascript
 const phone_number = context.getArg('phone_number'); 
 const result = `${phone_number.substring(0,3)}****${phone_number.substring(7,11)}`; 
 context.setReturn('result_phone', result) ; 
@@ -83,17 +82,16 @@ Configure the output in "Custom Code", which tells the subordinate node the name
 
 **Note:** The name of the output should be the same as the name in the context.setReturn() function in the code.
 
-![](</.gitbook/assets/4 (64).png>)
+![](<../../.gitbook/assets/4 (64).png>)
 
 Configure the output in the action flow, the function here is to return the data in the parent node to be used by the front-end to the front-end. After this step, when the front-end page calls this action flow, there will be result data for the page to value/use.
 
-![](</.gitbook/assets/5 (2).jpeg>)
+![](<../../.gitbook/assets/5 (2).jpeg>)
 
 If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.​​​
 
-
-
 ## Running gql in a Custom Code
+
 Prerequisites: Uderstanding GraphQL basics below.
 
 ### Basic Code Structure
@@ -139,7 +137,7 @@ Implanting Graphql into ActionFlow, you can define various code blocks in Momen'
 
 Altair GraphQL Client is a tool for debugging gql, hereinafter referred to as Altair, download and open the interface as follows
 
-![](</.gitbook/assets/0 (50).png>)
+![](<../../.gitbook/assets/0 (50).png>)
 
 **Altair Debugging gql Configuration Content**
 
@@ -156,19 +154,18 @@ Altair GraphQL Client is a tool for debugging gql, hereinafter referred to as Al
 1. Go to Momen and create a new project, create a data table called reference, add the ‘content’ field to the data table, and update the backend.
 2. Go to the database, open console, click Network, clear the request, click the reference table in the database, and click Requests in Network:
 
-<figure><img src="/.gitbook/assets/20240521-171423.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../.gitbook/assets/20240521-171423.png" alt=""><figcaption></figcaption></figure>
 
 3. Copy the inner URL from the Request URL in the General under Headers and paste it into the Altair request, with the request method defaulting to POST;
 4. Copy the Authorization and its value from Request Headers in General under Headers and paste it into the Altair request header.
 
-<figure><img src="/.gitbook/assets/截屏2024-05-21 17.17.58.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.17.58.png" alt=""><figcaption></figcaption></figure>
 
 ### How to View Docs
 
 Configure a query request for the data in the reference table, click on Docs on the right side of Altair, type in reference, you can see the requests for this table here, select the first one, you can see the left and right parameters, types, fields under this request, you can click on any of them to learn more about the request configuration.
 
-<figure><img src="/.gitbook/assets/截屏2024-05-21 17.22.08.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.22.08.png" alt=""><figcaption></figcaption></figure>
 
 ARGUMENTS Request Parameters: When requesting data, it's generally necessary to configure parameters such as where (conditions), order\_by (sorting fields), distinct\_on (deduplication of field content), offset (starting index), and limit (quantity limit).
 
@@ -256,8 +253,6 @@ id
 
 ```
 
-
-
 4. Requests the count of a related table to sort and displays the count of the related table, for example, to display the content of an event in descending order based on the number of registrations for the event.
 
 ```bash
@@ -278,17 +273,15 @@ count
 }
 ```
 
+**Query - Query Request** Search for a table name in Docs, find a query request for that table, and click on it to go to the request Docs.
 
-**Query - Query Request**
-Search for a table name in Docs, find a query request for that table, and click on it to go to the request Docs.
-
-<figure><img src="/.gitbook/assets/截屏2024-05-21 17.23.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.23.21.png" alt=""><figcaption></figcaption></figure>
 
 **Adding a Request**
 
 When the mouse hovers over the top table name, on the right side you can click ADD QUERY, which will automatically populate the request code to the left side (so you don't actually have to write the gql yourself), and in the left editing area you can delete/increase the conditions, fields, and associated table content, keeping the condition you want.
 
-<figure><img src="/.gitbook/assets/20240521-172508.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/20240521-172508.gif" alt=""><figcaption></figcaption></figure>
 
 **Basic Structure of the Request**
 
@@ -314,19 +307,15 @@ distinct\_on: Used to set deduplication conditions and is an array. The array co
 
 limit: Used to set the number of data records to be requested and is an integer.
 
-
-
 **To tailor the returned data fields based on your needs and set request parameters:**
+
 1. After the query's "command name," add a pair of parentheses. Inside the parentheses, provide the request parameter name and type, like this: $argumentname1: parameter type
 
 In the editing interface, click on 【VARVARLABES】 to expand the parameter editing window. Start by entering a pair of curly braces {}. Inside the curly braces, specify the content of the parameters. The parameter names within this content should still begin with a dollar sign $. Since this parameter is an object, if you configured multiple parameters in the command name, you can set multiple parameter contents here.
 
-
-
 **To execute the request:**
 
 Click on the "send query" button located above the request. The execution of the request will then take place, and you can view the results on the right side of the interface.
-
 
 ### Mutation - insert request
 
@@ -336,7 +325,7 @@ Adding a request
 
 When hovering over the top table name, you can click ADD QUERY on the right side, which will automatically copy the request code on the left side.
 
-<figure><img src="/.gitbook/assets/截屏2024-05-21 17.42.39.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.42.39.png" alt=""><figcaption></figcaption></figure>
 
 Basic structure of the request
 
@@ -367,8 +356,6 @@ whatever: anything
 
 **update\_columns:** Specifies the fields that should be updated in the event of a conflict.
 
-
-
 **Mutation - Update Request**
 
 To search for or add an update request:
@@ -380,8 +367,6 @@ Locate the mutation request associated with the table you're interested in.
 Click on the specific update request to navigate to the request documentation.
 
 Follow the same approach as described above for adding requests.
-
-
 
 Basic structure of the request
 
@@ -397,13 +382,9 @@ whatever: anything
 }
 ```
 
-
-
 **\_set:** Used to define the fields and their corresponding values that need to be updated. It is of object type.
 
 **where:** Used to configure the conditions for the update. It is also of object type.
-
-
 
 **Mutation - Delete Request**
 
@@ -416,8 +397,6 @@ Locate the mutation request associated with the table you're interested in.
 Click on the specific delete request to navigate to the request documentation.
 
 Follow the same approach as described earlier for adding requests.
-
-
 
 Basic Structure of the Request:
 
@@ -433,8 +412,6 @@ whatever: anything
 ```
 
 **where:** Used to configure the conditions for deleting data. It is of object type.
-
-
 
 ### Running the API in a Custom Code
 
@@ -455,7 +432,4 @@ context.callThirdPartyApi('$operationId', {"body": {"appKey": "f46dce7fa0566f0c"
 
 In Altair's Docs, enter operation in the search box, and the related request will appear. When you configure more than one API, there will be more than one request, you can click on the request to see the configuration parameters to determine which one it is.
 
-<figure><img src="/.gitbook/assets/截屏2024-05-21 17.47.31.png" alt="" width="375"><figcaption></figcaption></figure>
-
-
-
+<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.47.31.png" alt="" width="375"><figcaption></figcaption></figure>

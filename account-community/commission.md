@@ -1,6 +1,7 @@
 ---
 description: >-
-  Discover Momen's commission program and learn how to earn up to 30% rewards by promoting the no-code platform to new users and businesses.
+  Discover Momen's commission program and learn how to earn up to 30% rewards by
+  promoting the no-code platform to new users and businesses.
 ---
 
 # Promoting Momen
@@ -15,9 +16,7 @@ By sharing your unique invite code, you can earn up to **30%** commission when a
 
 **Get Started:** Click the "Promote Us" button in the top right corner of the platform.
 
-<figure><img src="../.gitbook/assets/affiliate.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/20250402-142842.jpeg" alt=""><figcaption></figcaption></figure>
 
 **Get Your Promo Code:** Copy your unique invitation code or link and start sharing it. Ask your friends to fill in the invitation code when they register. Alternatively, they can directly sign up via your link, and the invitation code will be automatically filled.
 
@@ -41,13 +40,13 @@ If your referral upgrades (e.g., from Basic to Pro), the original commission wil
 
 ## How to Receive Your Rewards
 
-**Receive Commissions:**&#x20;
+**Receive Commissions:**
 
 Within 7 business days, your earnings will be automatically transferred to your linked Stripe account.
 
 **Track Your Promotion Performance:**
 
-<figure><img src="../.gitbook/assets/affiliate dashboard.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/20250402-142850.jpeg" alt=""><figcaption></figcaption></figure>
 
 Paid Users: number of paid users / number of users you’ve referred.
 
