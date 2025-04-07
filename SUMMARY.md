@@ -96,6 +96,7 @@
 
 ## Template
 
+* [AI Mental Health Assistant](template/ai-mental-health-assistant.md)
 * [Angry Dietitian](template/angry-dietitian.md)
 * [AI Help Center](template/ai-help-center.md)
 * [AI Knowledge Base](template/ai-knowledge-base.md)
