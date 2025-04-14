@@ -1,6 +1,6 @@
 ---
 description: >-
-  Discover Momen's commission program and learn how to earn up to 30% rewards by
+  Discover Momen's commission program and learn how to earn up to 10% rewards by
   promoting the no-code platform to new users and businesses.
 ---
 
@@ -10,13 +10,13 @@ Momen offers a commission program, designed to empower users and expand Momen's 
 
 ## What You Can Earn
 
-By sharing your unique invite code, you can earn up to **30%** commission when a new user successfully registers and makes a payment when buying project plan. The commission is based on the new user’s payment actions, and there is no upper limit to how much you can earn, offering great potential for promoters.
+By sharing your unique invite code, you can earn up to 10% commission when a new user successfully registers and makes a payment when buying project plan. The commission is based on the new user’s payment actions, and there is no upper limit to how much you can earn, offering great potential for promoters.
 
 ## How to Become a Promoter
 
 **Get Started:** Click the "Promote Us" button in the top right corner of the platform.
 
-<figure><img src="../.gitbook/assets/20250402-142842.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/promous1.jpeg" alt=""><figcaption></figcaption></figure>
 
 **Get Your Promo Code:** Copy your unique invitation code or link and start sharing it. Ask your friends to fill in the invitation code when they register. Alternatively, they can directly sign up via your link, and the invitation code will be automatically filled.
 
@@ -24,11 +24,13 @@ By sharing your unique invite code, you can earn up to **30%** commission when a
 
 ## Commission Details
 
-You earn 30% commission. If your referral uses a discount, your commission is based on the discounted price.
+You earn 10% commission. If your referral uses a discount, your commission is based on the discounted price.
 
-* Example: If your referral subscribes to the monthly Pro plan for $99, you earn $29.7. With a 50% discount, your commission is $14.85.
+* Example: If your referral subscribes to the monthly Pro plan for $99, you earn $9.9. With a 50% discount, your commission is $4.95.
 
 Program End Date: December 31st, 2025
+
+_Please note: Commission rates and terms are subject to change at any time._
 
 ## Successful Referral Criteria
 
@@ -45,6 +47,8 @@ If your referral upgrades (e.g., from Basic to Pro), the original commission wil
 Within 7 business days, your earnings will be automatically transferred to your linked Stripe account.
 
 **Track Your Promotion Performance:**
+
+
 
 <figure><img src="../.gitbook/assets/20250402-142850.jpeg" alt=""><figcaption></figcaption></figure>
 
