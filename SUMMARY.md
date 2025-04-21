@@ -81,6 +81,11 @@
 * [Code Component](account-community/code-component.md)
 * [Collaboration](account-community/collaboration.md)
 
+## Debugging
+
+* [How to Debug in Momen](debugging/how-to-debug-in-momen.md)
+* [Request Error Reference](debugging/request-error-reference.md)
+
 ## Tutorial
 
 * [How to Build an AI Needs Analysis Project?](tutorial/how-to-build-an-ai-needs-analysis-project.md)
@@ -93,6 +98,7 @@
 
 ## Template
 
+* [AI Mental Health Assistant](template/ai-mental-health-assistant.md)
 * [Angry Dietitian](template/angry-dietitian.md)
 * [AI Help Center](template/ai-help-center.md)
 * [AI Knowledge Base](template/ai-knowledge-base.md)

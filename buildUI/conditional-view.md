@@ -1,11 +1,13 @@
 ---
 description: >-
-  Generally used to show different UI content
-  based on conditional evaluation or when toggling condition view.
+  Generally used to show different UI content based on conditional evaluation or
+  when toggling condition view.
 ---
-# Conditional View
+
+# Component - Conditional View
 
 ## Usage Scenario
+
 Conditional view serve the purpose of displaying different content based on specific conditions. These conditions can encompass various elements, including data, user interfaces, or different functional entrances with varying permissions, all within the same interface. Here are some common scenarios where you can leverage this component:
 
 * Different view on the Same Page: You can showcase different view on a single webpage based on conditions. For instance, the page's display can vary for users who are logged in and those who aren't.
@@ -20,10 +22,9 @@ For example, when creating a login screen, there are three conditions based on u
 
 <figure><img src="../.gitbook/assets/conditional_view/conditional_view1.jpeg" alt=""><figcaption></figcaption></figure>
 
-💡Tips:
-  Conditional view have a default condition, "loading". When the page data is still loading, the conditional view will show that it's loading. This condition can not be deleted, you can not set the conditions to it either. It is recommended not to make any changes to it!
-  
-  After adding the view, you can click "Focus Mode" to enter the conditional sub-view, where you can see four sub-view. You can click on the sub-view to configure the display conditions of the sub-view, and drag other components and build the corresponding business logic
+💡Tips: Conditional view have a default condition, "loading". When the page data is still loading, the conditional view will show that it's loading. This condition can not be deleted, you can not set the conditions to it either. It is recommended not to make any changes to it!
+
+After adding the view, you can click "Focus Mode" to enter the conditional sub-view, where you can see four sub-view. You can click on the sub-view to configure the display conditions of the sub-view, and drag other components and build the corresponding business logic
 
 <figure><img src="../.gitbook/assets/conditional_view/conditional-view2.gif" alt=""><figcaption></figcaption></figure>
 
@@ -92,6 +93,3 @@ Similar to this need to determine in advance conditional view to pre-display the
 2. In a shopping webpage, you can display parent categories first, and after clicking a category, you can expand sub-categories. This allows users to view products under those sub-categories, and the specific configuration is described in the \[Help Center] documentation on Conditional view Sets Selection View (Expanding Sub-directories).
 
 <figure><img src="../.gitbook/assets/7521052c-2e87-44c2-a679-d7fcb3979c1b.gif" alt=""><figcaption></figcaption></figure>
-
-
-

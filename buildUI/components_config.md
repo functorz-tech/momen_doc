@@ -1,20 +1,20 @@
 ---
-description: >-
-  Add and config components in Momen
+description: Add and config components in Momen
 ---
 
-# Add and configure components
-Components are the building blocks of a page. When selected, you can configure them in detail using the “Design,” “Data,” and “Action” tabs in the right sidebar.        
+# Components
+
+Components are the building blocks of a page. When selected, you can configure them in detail using the “Design,” “Data,” and “Action” tabs in the right sidebar.\
 This document focuses on the "Design" tab, while the configurations for "Data" and "Action" are discussed at the end.
+
 ## Add Components
-Click the "Add Component" button in the left sidebar to open the component list. You can also quickly access this list using the shortcut key <font color="#2EA120">**(⌥ C丨Alt C)**</font>.
+
+Click the "Add Component" button in the left sidebar to open the component list. You can also quickly access this list using the shortcut key **(⌥ C丨Alt C)**.
 
 Currently, the Editor provides three types of component resources:
 
 1. System Components
-
 2. Custom Components
-
 3. Code Components
 
 ![](../.gitbook/assets/design/left_side_bar_comp_type.png)
@@ -22,51 +22,35 @@ Currently, the Editor provides three types of component resources:
 You can add components in three ways:
 
 1. Select the target container and double-click the component to add it.
+2.  Drag the desired component into the target container.
 
-2. Drag the desired component into the target container.
+    ![](../.gitbook/assets/design/double_click_add_comp.gif) ![](../.gitbook/assets/design/drag_add_comp.gif)
+3.  Use the following shortcuts to add frequently used components to a page or container-type component:
 
-    <div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-        <img src="../.gitbook/assets/design/double_click_add_comp.gif" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
-        <img src="../.gitbook/assets/design/drag_add_comp.gif" style="flex: 1; height: 400px; object-fit: cover; width: 50%;">
-    </div>  
+    **Text** — **T**
 
-3. Use the following shortcuts to add frequently used components to a page or container-type component:
+    **Button** — **B**
 
-    **Text** — <font color="#2EA120">**T**</font>
+    **Image** — **I**
 
-    **Button** — <font color="#2EA120">**B**</font>
-
-    **Image** — <font color="#2EA120">**I**</font>
-
-    **View** — <font color="#2EA120">**F**</font>
-
+    **View** — **F**
 
 ### Component Management
 
 Right-click a component to access the management menu with these options:
 
-1. **Copy**: Copy the component (<font color="#2EA120">**⌘ C丨Ctrl C**</font>).
-
-2. **Cut**: Cut the component (<font color="#2EA120">**⌘ X丨Ctrl X**</font>).
-
-3. **Paste**: Place the copied or cut component into the target container  (<font color="#2EA120">**⌘ V丨Ctrl V**</font>).
-
-4. **Duplicate**: Create a copy of the component at the same level (<font color="#2EA120">**⌘ D丨Ctrl D**</font>).
-
+1. **Copy**: Copy the component (**⌘ C丨Ctrl C**).
+2. **Cut**: Cut the component (**⌘ X丨Ctrl X**).
+3. **Paste**: Place the copied or cut component into the target container (**⌘ V丨Ctrl V**).
+4. **Duplicate**: Create a copy of the component at the same level (**⌘ D丨Ctrl D**).
 5. **Select**: Use the selected component as a reference to select other content on the same page.
-
 6. **Move**: Change the component's hierarchical position.
-
-7. **Rename**: Modify the component name (shortcut <font color="#2EA120">**⌘ R丨Ctrl R**</font>).
-
-8. **Save as "Custom Component"**: Save the selected component to the "Custom Component" list (<font color="#2EA120">**⇧ ⌘ K**丨**Shift Ctrl K**</font>).
-
-9. **Create View**: Wrap the selected content into a View (<font color="#2EA120">**⌘ G**丨**Ctrl G**</font>).
-
+7. **Rename**: Modify the component name (shortcut **⌘ R丨Ctrl R**).
+8. **Save as "Custom Component"**: Save the selected component to the "Custom Component" list (**⇧ ⌘ K**丨**Shift Ctrl K**).
+9. **Create View**: Wrap the selected content into a View (**⌘ G**丨**Ctrl G**).
 10. **Delete**: Remove the component.
 
 ![](../.gitbook/assets/design/left_side_bar_comp_right_click.png)
-
 
 ## Configure Component - Title and ID
 
@@ -77,6 +61,7 @@ Right-click a component to access the management menu with these options:
 ![](../.gitbook/assets/design/right_side_bar_name_id.png)
 
 ## Configure Component - Design
+
 ![](../.gitbook/assets/design/right_side_bar_overview.png)
 
 ### Alignment and Distribution
@@ -92,19 +77,12 @@ Alignment options help arrange components on a page. Effects vary depending on w
 ![](../.gitbook/assets/design/right_side_bar_alignment.png)
 
 1. Align Left
-
 2. Align Center Horizontally
-
 3. Align Right
-
 4. Align Top
-
 5. Align Center Vertically
-
 6. Align Bottom
-
 7. Distribute Horizontally (requires multiple selections): Outer components remain fixed while inner components are evenly distributed horizontally.
-
 8. Distribute Vertically (requires multiple selections): Top and bottom components remain fixed while inner components are evenly distributed vertically.
 
 ### Custom Configuration
@@ -130,44 +108,31 @@ Choose from different calculation methods to define the component's size:
 ![](../.gitbook/assets/design/right_side_bar_section_size.png)
 
 1. **PX**: Fixed size.
-
 2. **%**: Percentage of the parent container’s size.
+3.  **Fraction (fr)**: Proportional allocation of remaining space in CSS Grid layouts.
 
-3. **Fraction (fr)**: Proportional allocation of remaining space in CSS Grid layouts.
+    > Depends on the parent's layout direction (e.g., vertical for height, horizontal for width).
 
-   > Depends on the parent's layout direction (e.g., vertical for height, horizontal for width).
-
-   ![](../.gitbook/assets/design/right_side_bar_width_fr.png)
+    ![](../.gitbook/assets/design/right_side_bar_width_fr.png)
 4. **Fit**: Automatically adjusts size based on internal content.
 
 For percentage or fraction-based dimensions, you can specify minimum and maximum constraints:
 
-<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_size_constraints.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
-    <img src="../.gitbook/assets/design/right_side_bar_size_constraints_added.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
-    <img src="../.gitbook/assets/design/right_side_bar_size_constraints_remove.png" style="flex: 1; height: 300px; object-fit: cover; width: 33.3%;">
-</div>
+![](../.gitbook/assets/design/right_side_bar_size_constraints.png) ![](../.gitbook/assets/design/right_side_bar_size_constraints_added.png) ![](../.gitbook/assets/design/right_side_bar_size_constraints_remove.png)
 
 **Margin & Padding**
 
 Margin: Adjusts the space between a component and its surroundings.
-<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_margin.png" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
-    <img src="../.gitbook/assets/design/right_side_bar_margin_intro.png" style="flex: 1; height: 400px; object-fit: cover; width: 60%;">
-</div>
+
+![](../.gitbook/assets/design/right_side_bar_margin.png) ![](../.gitbook/assets/design/right_side_bar_margin_intro.png)
+
 Padding: Adjusts the space between the component's content and its edges.
 
-<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding.png" style="flex: 1; height: 400px; object-fit: cover; width: 40%;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding_intro.png" style="flex: 1; height: 400px; object-fit: cover; width: 60%;">
-</div>
+![](../.gitbook/assets/design/right_side_bar_padding.png) ![](../.gitbook/assets/design/right_side_bar_padding_intro.png)
 
 By default, margins can be configured simultaneously for all sides. To configure individual sides, click the style icon.
 
-<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding_all_icon.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
-    <img src="../.gitbook/assets/design/right_side_bar_padding_all.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
-</div>
+![](../.gitbook/assets/design/right_side_bar_padding_all_icon.png) ![](../.gitbook/assets/design/right_side_bar_padding_all.png)
 
 ### Layout
 
@@ -184,27 +149,16 @@ Configures component styles and visual effects.
 ![](../.gitbook/assets/design/right_side_bar_style.png)
 
 1. **Opacity**: Adjust transparency.
-
 2. **Border Radius**: Set corner curvature.
-
-3. **Cursor Style: Change pointer style on hover.
-
+3. \*\*Cursor Style: Change pointer style on hover.
 4. **Background Color**: Set background color.
-
 5. **Background Image**: Use local or remote images.
-
 6. **Border**: Configure border color and thickness.
-
 7. **Shadow**: Add shadow effects.
-
    1. X (Horizontal Offset): The position of the shadow in the horizontal direction.
-
    2. Y (Vertical Offset): The position of the shadow in the vertical direction.
-
    3. Blur: Control the degree of shadow blur.
-
    4. Spread: Control the size of the shadow (expand or contract).
-
 8. **Background Blur**: Apply blur effects to the background.
 
 ### Animation
@@ -216,11 +170,8 @@ Add animations triggered by specific user interactions.
 There are currently four trigger methods for animations.
 
 1. **On Hover**: Triggered when hovered over.
-
 2. **On Click**: Triggered when clicked.
-
 3. **On Scroll to Component**: Triggered when scrolled into view.
-
 4. **On Scroll**: Dynamically triggered based on scroll position.
 
 ### Text
@@ -230,9 +181,10 @@ If the selected component contains text, configure text properties in this secti
 ![](../.gitbook/assets/design/right_side_bar_text.png)
 
 ## Configure Component - Data
-Configure the data source for components. Supported for List, Select Views, Table, etc.
-For details, see [Data](../data/overview.md).
+
+Configure the data source for components. Supported for List, Select Views, Table, etc. For details, see [Data](../data/overview.md).
 
 ## Configure Component - Action
-Define actions triggered by user interactions or events like clicks, refreshes, or List scroll events.       
+
+Define actions triggered by user interactions or events like clicks, refreshes, or List scroll events.\
 For details, see [Action Configuration](../actions/overview.md).
