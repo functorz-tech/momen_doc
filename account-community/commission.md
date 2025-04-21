@@ -1,7 +1,6 @@
 ---
 description: >-
-  Discover Momen's commission program and learn how to earn up to 10% rewards by
-  promoting the no-code platform to new users and businesses.
+  Discover Momen's commission program and learn how to earn up to 10% rewards by promoting the no-code platform to new users and businesses.
 ---
 
 # Promoting Momen
