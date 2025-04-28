@@ -4,159 +4,210 @@ description: >-
   payment to boost your app's monetization.
 ---
 
-# Payment with Stripe
 
-## Introduction
-In this doc, you'll learn about how to configure Stripe payment in your web app. Whether you're running an e-commerce platform, a subscription-based service, or even a SaaS product, providing users with a secure and easy-to-use payment system can significantly improve your service.
+# Payment  with Stripe 
 
 ## 1. Preparation
 
-### Prepare a Stripe Account
+### 1.1 Set Up a Stripe Account
+- Sign up or log in to [Stripe](https://stripe.com/).
+- Obtain your **Publishable Key** and **Secret Key** from the Stripe Dashboard.
 
-Sign up or log in to Stripe: [Stripe](https://stripe.com/)
+### 1.2 Upgrade Your Project
+Ensure your project is on the **Pro plan** or higher to enable payment features.
 
-### Upgrade Your Project to Pro Version or Above
+### 1.3 Create an Order Table
+Before activating payment, you must create an **Order Table** in your project.  
+This table will store essential order information like:
 
-Payment features are only available in the Pro plan and above. If you downgrade, existing payment features will become inactive.
+| Field        | Example  |
+| ------------ | -------- |
+| `price`      | 99.99    |
+| `userId`     | user_123 |
+| `status`     | pending  |
 
-### Create an Order Table in Your Project
+> **Warning:** Once the order table is linked to payment features, **it cannot be unlinked, replaced, or deleted**.
 
-Before configuring payment, ensure you have an order table in your project. This table will be linked to the system's payment table.
+---
 
-## 2. Fill in Basic Information
+## 2. Activating Stripe Payment
 
-### Activate Payment Features
+### 2.1 Enable Payment
+Navigate to **Configuration → Payment**, and activate the payment module.
 
-Go to the Configuration settings and activate the Payment feature.
+Once activated, the system will automatically:
 
-<figure><img src="../.gitbook/assets/stripe/stripe.jpeg" alt=""><figcaption></figcaption></figure>
+- Create three backend tables:
+  - **Payment Table**: Stores one-time payment records.
+  - **Recurring Payment Table**: Manages subscription billing.
+  - **Refund Table**: Tracks refund transactions.
 
+- Generate four system Actionflows:
+  - `StripePaymentCallback`
+  - `StripeRefundCallback`
+  - `StripeRecurringPaymentManagementCallback`
+  - `StripeRecurringPaymentDeductionCallback`
 
-When activating, bind the order table you created before. The system will automatically create a one-to-many relationship between the order and payment tables. Please note:
+<figure><img src="../.gitbook/assets/stripe/stripe3.jpeg" alt=""><figcaption></figcaption></figure>
 
-* All payment methods share the same order table.
-* Once bound, it cannot be unbound or replaced, and the order table cannot be deleted. Be cautious during the binding process.
+<figure><img src="../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/stripe/stripe2.jpeg" alt=""><figcaption></figcaption></figure>
+> These system-generated flows securely handle payment event processing in the backend.
+>
 
-Upon binding the order table and activating the payment feature, the system will automatically:
+### 2.2 Configure Stripe Credentials
+Input the following information into your project settings:
 
-* Create three tables in the data model (non-deletable, non-modifiable by the developer):
-  * Payment Table: Stores payment records. The relationship is 1:N (one order can have multiple payments).
-  * Recurring Payment Table: Stores recurring payment records.
-  * Refund Table: Stores refund records. The relationship is 1:N (one payment can have multiple refunds).
-*   Automatically generate two actionflows:
-
-    * StripePaymentCallback: Triggered upon one-off payment completion.
-    * StripeRefundCallback: Triggered upon refund completion.
-    * StripeRecurringPaymentManagementCallback: Triggered upon initiating or canceling a recurring payment.
-    * StripeRecurringPaymentDeductionCallback: For recurring payment deductions
-
-
-    <figure><img src="../.gitbook/assets/stripe/stripe3.jpeg" alt=""><figcaption></figcaption></figure>
-
-    <figure><img src="../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
-
-### Input Stripe Information
-
-Retrieve your Publishable Key and Secret Key from Stripe and fill them into the project configuration.
+| Field            | Where to Find |
+| ---------------- | ------------- |
+| Publishable Key  | Stripe Dashboard |
+| Secret Key       | Stripe Dashboard |
 
 <figure><img src="../.gitbook/assets/stripe/stripe5.jpeg" alt=""><figcaption></figcaption></figure>
+---
 
-<figure><img src="../.gitbook/assets/stripe/stripe6.jpeg" alt=""><figcaption></figcaption></figure>
-
-## 3. Using Payment/Refund Actions
-
-### Adding Actions
-
-Find the Stripe actions in the Action List.
-
+## 3. Using Payment Actions
 <figure><img src="../.gitbook/assets/stripe/stripe7.jpeg" alt=""><figcaption></figcaption></figure>
 
-### Configure Action Parameters
+### 3.1 One-Time Payment
 
-1. **Single Payment Action**
+Use the **Stripe Payment Action** to charge users.
 
-<figure><img src="../.gitbook/assets/stripe/stripe8.jpeg" alt=""><figcaption></figcaption></figure>
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| `orderId` | Integer | The ID from the order table |
+| `currency` | String | Currency code (e.g., `USD`) |
+| `amount` | Decimal | Charge amount (in **smallest currency unit**, e.g., cents for USD) |
 
-Order ID (integer): Must be the ID of the bound order table. Currency (string): Stripe-supported currencies. See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods) Amount (decimal): Smallest currency unit. For example, to charge 100 USD, input 1000 (since USD’s smallest unit is cents). See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods)
+> **Tip:** To charge **$10.00 USD**, input `1000` because Stripe expects cents.
 
-2. **Refund Action**
+### 3.2 Refund Payment
 
-<figure><img src="../.gitbook/assets/stripe/stripe9.jpeg" alt=""><figcaption></figcaption></figure>
+Use the **Stripe Refund Action** to refund a payment.
 
-Payment ID (integer): Must be the ID from the payment table. Refund Amount (decimal): The amount to refund, which must be less than or equal to the original payment amount.
+| Parameter     | Type    | Description |
+| ------------- | ------- | ----------- |
+| `paymentId`   | Integer | The ID from the payment table |
+| `refundAmount`| Decimal | Amount to refund (must not exceed the original payment amount) |
 
-3. **Recurring Payment Action**
+> **Important:** Restrict refund permissions to admin users to avoid financial risks.
 
-Before configuring, you must create a recurring payment price in Stripe and obtain the Price ID.
+### 3.3 Recurring (Subscription) Payments
 
-<figure><img src="../.gitbook/assets/stripe/stripe10.jpeg" alt=""><figcaption></figcaption></figure>
+Before initiating recurring payments:
 
-<figure><img src="../.gitbook/assets/stripe/stripe11.jpeg" alt=""><figcaption></figcaption></figure>
+- Create a **Recurring Price** object in Stripe.
+- Obtain the **Price ID**.
 
-Type (option): Initiate for starting a recurring payment, Cancel for canceling it. Order ID (decimal): Must be the ID of the bound order table. Price ID (string): The price ID obtained from Stripe.
+| Parameter | Type    | Description |
+| --------- | ------- | ----------- |
+| `orderId` | Integer | The ID from the order table |
+| `priceId` | String  | The Stripe-generated Price ID |
 
-### Configure Action Permissions
+Recurring actions allow:
+- Starting a subscription
+- Canceling an existing subscription
 
-In the Permission System, you can set access controls for actions, especially for refund actions. It’s recommended to restrict this permission from regular users to avoid financial loss. A better approach is to create a special admin role with refund permissions.
+---
 
-<figure><img src="../.gitbook/assets/stripe/stripe12.jpeg" alt=""><figcaption></figcaption></figure>
+## 4. Handling Payment Events via Actionflows
 
-## 4. Configuring Business Logic After Completing Actions
+Stripe automatically triggers backend **Actionflows** for different payment events.  
+These Actionflows allow you to **parse the event data**, **validate results**, and **configure your own business logic** securely.
 
-Since front-end pages can be bypassed (e.g., users calling the success action via API without making a payment), it’s essential not to modify data in the "success" part of the payment action. The more secure method is to allow Stripe to notify your project’s backend, which will trigger corresponding Actionflows. These actionflows run securely in the backend.
+Here are the main Actionflows provided:
 
-### Payment Callback Actionflow
+### 4.1 Stripe Payment Callback
 
-This flow is triggered after payment completion. The built-in nodes include:
+- **Trigger:** After a successful one-time payment
+- **System:**
+  - Parse payment data (e.g., `orderId`, `paymentStatus`)
+  - Ensure **duplicate callbacks** are detected via `callbackProcessed`
+- **Custom business logic:**
+  - Update the order status to `paid`
+  - Grant access to purchased services
+  - Send a confirmation email or notification
 
-* Callback Handler: This code block parses payment-related data and extracts key information (like order ID and payment status). It outputs:
-  * orderId: The order ID provided during the payment action.
-  * paymentStatus: The status of the payment.
-  * callbackProcessed: Checks whether the callback is a duplicate, used along with paymentStatus to determine the real status of the payment.
-*   Conditional Branch:
+<figure><img src="../.gitbook/assets/stripe/stripe13.jpeg" alt=""><figcaption></figcaption></figure>
 
-    * Based on the status of paymentStatus and callbackProcessed, determine whether the payment was successful
-    * Configure your own business logic within the branch.
+### 4.2 Stripe Refund Callback
 
-    <figure><img src="../.gitbook/assets/stripe/stripe13.jpeg" alt=""><figcaption></figcaption></figure>
+- **Trigger:** After a successful refund
+- **System:**
+  - Parse refund data
+  - Detect duplicate callbacks
+- **Custom business logic:**
+  - Update the order status to `refunded`
+  - Adjust user benefits or subscriptions
+  - Notify the user about the refund
 
-### Refund Callback Actionflow
+### 4.3 Stripe Recurring Payment Management Callback
 
-This flow is triggered after a refund is completed. The built-in nodes include:
+- **Trigger:** Upon **starting** or **canceling** a subscription
+- **System:**
+  - Update the `Recurring Payment Table`
+- **Custom business logic:**
+  - Activate or deactivate subscription-based features
 
-* Callback Handler: This block parses the refund data and extracts key information (like order ID and refund status). It outputs:
-  * orderId: The related order table ID.
-  * status: The refund status. If REFUNDED, it indicates a successful refund, otherwise, it indicates failure.
-  * callbackProcessed: Checks whether the callback is a duplicate.
-*   Conditional Branch: Handles post-refund logic (e.g., updating the order table), which you need to configure based on your business needs.
+### 4.4 Stripe Recurring Payment Deduction Callback
 
-    <figure><img src="../.gitbook/assets/stripe/stripe14.jpeg" alt=""><figcaption></figcaption></figure>
+- **Trigger:** When Stripe automatically charges for subscription renewal
+- **System:**
+  - Create a new order record
+- **Custom business logic:**
+  - Mark subscription as renewed
+  - Notify the user about renewal success and next billing cycle
 
-### Recurring Payment Creation/Cancellation Callback
+> **Tip:** Customize each Actionflow to suit your app's logic, such as sending receipts, adjusting access rights, or linking to CRM systems.
 
-Triggered when recurring payments are created or canceled. In the code block, the data in the recurring\_payment table will be updated.
+---
 
-<figure><img src="../.gitbook/assets/stripe/stripe15.jpeg" alt=""><figcaption></figcaption></figure>
+## 5. Retrieving Payment and Refund Status (Frontend)
 
-### Recurring Payment Charge
+Since payment operations are asynchronous:
 
-When a recurring payment is created, Stripe will notify the project backend of any subsequent charges, triggering this actionflow. The code block will:
+- Subscribe to the `Payment` or `Refund` tables while use list component to dispaly result.
+- Listen for real-time updates to refresh the frontend dynamically.
 
-1. Retrieve charge information.
-2. Create a new order.
-3.  Process the payment.
 
-    <figure><img src="../.gitbook/assets/stripe/stripe16.jpeg" alt=""><figcaption></figcaption></figure>
+---
 
-In the code block, modify the part that creates the order based on your specific order table. You can also adjust the amount for subsequent charges (which cannot exceed the amount set during the initial recurring payment).
+## 6. Best Practices
 
-<figure><img src="../.gitbook/assets/stripe/stripe17.jpeg" alt=""><figcaption></figcaption></figure>
+- Validate input parameters before initiating payments.
+- Cross-check the order amount and payment amount after a payment succeeds.
+- Handle duplicate callbacks using `callbackProcessed`.
+- Restrict sensitive operations like refunds to admins.
+- Monitor your Stripe account for unusual activities.
 
-## 5. Retrieving Payment/Refund Results
+---
 
-Since updating the order/payment/recurring payment/refund tables occurs through custom actionflows and may take time, the front-end should use a subscription method to get the latest data. For example, after calling a payment action, the page can subscribe to the payment table to receive real-time updates on payment status.
+## 7. Common Issues and Troubleshooting
 
-<figure><img src="../.gitbook/assets/stripe/stripe18.jpeg" alt=""><figcaption></figcaption></figure>
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| Incorrect charge amount | Misunderstanding Stripe's smallest unit format | Always multiply amounts by 100 for currencies like USD |
+| Payment not reflected in order | Missing or misconfigured callback Actionflow | Ensure callback Actionflows are properly set up |
+| Refund not updating order | Refund callback not processed | Check the refund callback subscription and flow |
+
+---
+
+# 👌 Conclusion
+
+By following this guide, you can seamlessly integrate Stripe payments into your project, offering users a secure, scalable, and professional checkout experience.
+
+> **Remember:** Always rely on secure backend Actionflows rather than frontend assumptions for critical payment processes.
+
+---
+
+## Quick Payment Action Flow
+
+```mermaid
+flowchart LR
+    A[User Initiates Payment] --> B{Payment System}
+    B --> C{Stripe}
+    C --> D[Payment Success/Failure Callback]
+    D --> E[Update Order Table]
+    E --> F[Update Frontend via Subscription]
+```
 
