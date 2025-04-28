@@ -75,19 +75,19 @@ Find the Stripe actions in the Action List.
 
 ### Configure Action Parameters
 
-**Single Payment Action**
+1. **Single Payment Action**
 
 <figure><img src="../.gitbook/assets/stripe/stripe8.jpeg" alt=""><figcaption></figcaption></figure>
 
 Order ID (integer): Must be the ID of the bound order table. Currency (string): Stripe-supported currencies. See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods) Amount (decimal): Smallest currency unit. For example, to charge 100 USD, input 1000 (since USD’s smallest unit is cents). See: [Stripe Currencies](https://docs.stripe.com/currencies#supported-payment-methods)
 
-**Refund Action**
+2. **Refund Action**
 
 <figure><img src="../.gitbook/assets/stripe/stripe9.jpeg" alt=""><figcaption></figcaption></figure>
 
 Payment ID (integer): Must be the ID from the payment table. Refund Amount (decimal): The amount to refund, which must be less than or equal to the original payment amount.
 
-**Recurring Payment Action**
+3. **Recurring Payment Action**
 
 Before configuring, you must create a recurring payment price in Stripe and obtain the Price ID.
 
@@ -122,7 +122,7 @@ This flow is triggered after payment completion. The built-in nodes include:
 
     <figure><img src="../.gitbook/assets/stripe/stripe13.jpeg" alt=""><figcaption></figcaption></figure>
 
-#### Refund Callback Actionflow
+### Refund Callback Actionflow
 
 This flow is triggered after a refund is completed. The built-in nodes include:
 
@@ -134,13 +134,13 @@ This flow is triggered after a refund is completed. The built-in nodes include:
 
     <figure><img src="../.gitbook/assets/stripe/stripe14.jpeg" alt=""><figcaption></figcaption></figure>
 
-#### Recurring Payment Creation/Cancellation Callback
+### Recurring Payment Creation/Cancellation Callback
 
 Triggered when recurring payments are created or canceled. In the code block, the data in the recurring\_payment table will be updated.
 
 <figure><img src="../.gitbook/assets/stripe/stripe15.jpeg" alt=""><figcaption></figcaption></figure>
 
-#### Recurring Payment Charge
+### Recurring Payment Charge
 
 When a recurring payment is created, Stripe will notify the project backend of any subsequent charges, triggering this actionflow. The code block will:
 
