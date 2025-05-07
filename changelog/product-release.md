@@ -4,6 +4,73 @@ description: Announcing the latest Momen product update
 
 # Latest Product Update
 
+## V2.2.4 - 2025.04.28
+
+### 🚀 New Features
+
+* Added cross-project copy-paste support for users with owner permissions (components, APIs, Actionflows, and Ai config)
+* Added a function for extracting weekdays from date expressions
+* Enabled AI to auto-fill tool names
+* Enabled real-time sync in collaborative editing mode
+* Blocked web crawlers via robots.txt for `cave` and `villa` domains
+
+### ✨ Enhancements
+
+* Improved the Mirror interface by allowing user interaction with mock input data
+* Enhanced expand/collapse behavior for page structure with keyboard shortcuts
+* Improved the project list in the personal dashboard by adding the "Server Upgrade Status" field
+* Optimized performance for deeply nested list rendering and scrolling
+* Unified system and custom LLM configurations for a more consistent model management experience
+
+### 🐞 Bug Fixes (50+ Issues)
+
+* Fixed an issue where cloned template projects showed negative SMS balance
+* Fixed password reset errors in Momen projects
+* Fixed missing non-balance records in the transaction history
+* Fixed SMS usage inheritance issues when cloning or referencing projects
+* Fixed incorrect context naming in ai database
+* Fixed AI error: `Cannot invoke 'FieldDescription.getFields()'`
+* Fixed SMS verification failure during domain filing
+* Fixed delayed updates when modifying properties in the right-hand panel
+* Fixed missing gating logic in actionflow conditional filters
+* Fixed table header layout issues in mini program horizontal lists
+* Fixed JSON\_EXTRACT\_PATH formula error in Actionflow
+* Fixed deduplication failure in `get correct schema` for `pendingActionFlow`
+* Fixed default value hint not displaying in unbound data selectors
+* Fixed JSON import failure on Momen landing page
+* Fixed payment config being enabled in projects without payment functionality
+* Fixed broken navigation on circular dependencies in page data sources
+* Fixed missing `result data` in async ActionFlows within ZType
+* Fixed failure in QR code generation when accessing list item values
+* Fixed interpreterSample hang during ActionFlow execution
+* Fixed database access failure in multi-client projects
+* Fixed blank screen rendering in some web pages
+* Fixed data display issue in list components inside popups
+* Fixed font weight configuration typo (`700` should be `bold`, not `medium`)
+* Fixed lack of user feedback on Ai tool invocation failures
+* Fixed inconsistent character limits for all AI descriptions (standardized to 10,000)
+* Fixed validation errors caused by stale data when switching popup actions
+* Fixed select view default value failure when using conditions or formulas
+* Fixed data presence in table component not rendering on frontend
+* Fixed incorrect prompt about unconfigured pages during submission
+* Fixed mismatch between negative AI Point display and database values
+* Fixed multiple validation errors when previewing multi-client projects
+* Fixed server 500 error in admin console
+* Fixed validation error on variable removal from page scope
+* Fixed broken routing to `select view` from other pages
+* Fixed diff issue when creating new data models
+* Fixed sensitive information being exposed in Zeus front-end responses
+* Fixed incorrect boolean evaluation of `string_len` in conditional containers
+* Fixed schema inconsistency actionflowter app cloning
+* Fixed input value setting failure before popup opens
+* Fixed calendar component sending continuous requests in console
+* Fixed issue where AI execution success did not trigger `set_pagedata`
+* Fixed publishing freeze in sub-client apps
+* Fixed WeChat QR login not matching existing accounts across platforms
+* Fixed internal server error during project import
+* Fixed crash when using `distinct` with `count` in data queries
+* Fixed unclear error message when Stripe refund failed due to insufficient balance
+
 ## V2.2.3 - 2025.03.28
 
 ### New Features
