@@ -16,8 +16,6 @@ The navigation bar allows you to switch between canvas contents, access various 
 
 Click the “Momen” logo in the top-left corner to return to your personal center.
 
-![](../.gitbook/assets/design/nav_bar_logo.png)
-
 ### Feature Access
 
 When you enter the editor, the “Page” tab is selected by default. Click other tabs to access different configuration panels.
@@ -46,9 +44,9 @@ Roles and Permissions: 1. Owner: Full project permissions, including creation. 2
 
 ### Mirror
 
-Click the Mirror icon in the navigation bar to quickly preview your project during editing.
+Click the Mirror icon on the top of the page to quickly preview your project during editing.
 
-![](../.gitbook/assets/design/nav_bar_mirror.png) ![](../.gitbook/assets/design/nav_bar_mirror_details.png)
+![](../.gitbook/assets/design/nav_bar_mirror.png) ![](../.gitbook/assets/mirror.png)
 
 ### Backend Update
 
