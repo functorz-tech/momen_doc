@@ -5,7 +5,7 @@ description: >-
   operation. As a developer, gradually learn how
 ---
 
-# Software Devolpment Process
+# Software Development Process
 
 Momen is a no-code application development tool, and using Momen for software development also requires following the basic software development process.
 
