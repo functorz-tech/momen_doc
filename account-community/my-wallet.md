@@ -1,6 +1,6 @@
 ---
 description: >-
-  My wallet: Offers convenient payment options with discount coupons and
+  My Wallet: Offers convenient payment options with discount coupons and
   credits.
 ---
 
@@ -8,10 +8,9 @@ description: >-
 
 ### Introduction
 
-&#x20;"My Wallet"  has been introduced to provide users with more convenient payment options on Momen. This feature enables purchases using discount coupons and credits.
+"My Wallet" has been introduced to provide users with more convenient payment options on Momen. This feature enables purchases using discount coupons and credits.
 
 <figure><img src="../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt=""><figcaption></figcaption></figure>
-
 
 ### Benefits
 
@@ -26,19 +25,17 @@ description: >-
 **Details**:
 
 * **Types**: Discount coupons and cash vouchers.
-* **Applicable Products**: Including plans, computing resources, and single-tenant servers.
-* **Usage Restrictions**: Varies based on project plans and minimum spending amount.
+* **Applicable Products**: Includes plans, computing resources, and single-tenant servers.
+* **Usage Restrictions**: Varies based on project plans and minimum spending amounts.
 * **Validity**: Must be used within a specified period.
 
 <figure><img src="../.gitbook/assets/Frame 48096512.png" alt=""><figcaption></figcaption></figure>
-
 
 **Usage**:&#x20;
 
 The system automatically selects the best available coupon when you enter the order page, if applicable coupons exist.
 
 <figure><img src="../.gitbook/assets/Group 40355.png" alt=""><figcaption></figcaption></figure>
-
 
 **Records**:&#x20;
 
@@ -53,7 +50,7 @@ All coupons used or expired in the last 7 days will be documented.
 
 #### **Credits**
 
-* **Viewing**: Access "My Wallet" and the "credit" is in in the top left corner of your wallet.
+* **Viewing**: Access "My Wallet" and the "credit" is in the top left corner of your wallet.
 
 <figure><img src="../.gitbook/assets/20241101-121004.jpeg" alt=""><figcaption></figcaption></figure>
 
@@ -65,7 +62,6 @@ All coupons used or expired in the last 7 days will be documented.
 
 <figure><img src="../.gitbook/assets/20241101-121532.gif" alt=""><figcaption></figcaption></figure>
 
-
 **Important Notes**:
 
 * Mixed payments are not supported.
@@ -73,4 +69,4 @@ All coupons used or expired in the last 7 days will be documented.
 
 ### About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.

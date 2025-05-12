@@ -10,14 +10,13 @@ description: >-
 
 This feature triggers Actionflows when data changes (insert, update, or delete), enhancing automation within the project.
 
-\
 Common use cases include:
 
 * Automatically upgrading to VIP when a user's payment exceeds a specified amount
 * Automatically sending a notification when an order is completed
 * Automatically generating an operation record when user points change, for easier tracking
 
-## Action configuration guide
+## Action Configuration Guide
 
 Here’s how to set it up using an example: When a user’s payment exceeds $1000, the system will automatically upgrade them to VIP.
 
@@ -78,4 +77,4 @@ Simultaneous updates from multiple Actionflows to the same data may cause deadlo
 
 3. **Data Imports May Trigger Multiple Events**
 
-If a "On data insert" trigger is set on a table and data is imported, each imported record will trigger the flow separately.
+If an "On data insert" trigger is set on a table and data is imported, each imported record will trigger the flow separately.

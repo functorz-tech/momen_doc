@@ -22,10 +22,10 @@ Currently, the Editor provides three types of component resources:
 You can add components in three ways:
 
 1. Select the target container and double-click the component to add it.
-2.  Drag the desired component into the target container.
+2. Drag the desired component into the target container.
 
-    ![](../.gitbook/assets/design/double_click_add_comp.gif) ![](../.gitbook/assets/design/drag_add_comp.gif)
-3.  Use the following shortcuts to add frequently used components to a page or container-type component:
+    ![](../.gitbook/assets/design/double_click_add_comp.gif) ![](..//.gitbook/assets/design/drag_add_comp.gif)
+3. Use the following shortcuts to add frequently used components to a page or container-type component:
 
     **Text** — **T**
 
@@ -95,7 +95,7 @@ Most configuration items in the image apply only to the List component, such as 
 
 ### Position
 
-This section configures the component's position on the page. For detailed guidance, refer to [Layout and position](../design/layout_and_position.md).
+This section configures the component's position on the page. For detailed guidance, refer to [Layout and Position](../design/layout_and_position.md).
 
 ![](../.gitbook/assets/design/right_side_bar_section_position.png)
 
@@ -109,7 +109,7 @@ Choose from different calculation methods to define the component's size:
 
 1. **PX**: Fixed size.
 2. **%**: Percentage of the parent container’s size.
-3.  **Fraction (fr)**: Proportional allocation of remaining space in CSS Grid layouts.
+3. **Fraction (fr)**: Proportional allocation of remaining space in CSS Grid layouts.
 
     > Depends on the parent's layout direction (e.g., vertical for height, horizontal for width).
 
@@ -150,7 +150,7 @@ Configures component styles and visual effects.
 
 1. **Opacity**: Adjust transparency.
 2. **Border Radius**: Set corner curvature.
-3. \*\*Cursor Style: Change pointer style on hover.
+3. **Cursor Style**: Change pointer style on hover.
 4. **Background Color**: Set background color.
 5. **Background Image**: Use local or remote images.
 6. **Border**: Configure border color and thickness.

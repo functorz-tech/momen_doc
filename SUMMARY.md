@@ -4,7 +4,7 @@
 
 * [Introduction](README.md)
 * [Quick Start](starts/starts.md)
-* [Software Devolpment Process](starts/developmentProcess.md)
+* [Software Development Process](starts/developmentProcess.md)
 * [Editor Overview](starts/editor_overview.md)
 
 ## Changelog
@@ -63,7 +63,6 @@
 * [Conditional](actions/condition.md)
 * [Loop](actions/loop.md)
 
-
 ## Release and Growth
 
 * [Publish Application](deployment/publish.md)
@@ -72,7 +71,7 @@
 * [Permission](deployment/permissions.md)
 * [Log Service](deployment/log_service.md)
 * [SEO](deployment/seo.md)
-* [Hosting files](deployment/hosting-file.md)
+* [Hosting Files](deployment/hosting-file.md)
 
 ## My Account and Community
 
@@ -91,9 +90,9 @@
 * [How to Build an AI Needs Analysis Project?](tutorial/how-to-build-an-ai-needs-analysis-project.md)
 * [How to Set Up Payment with Stripe Plugin?](tutorial/how-to-set-up-payment-with-stripe-plugin.md)
 * [How to Embed an Iframe Component into Your Momen Project?](tutorial/how-to-embed-an-iframe-component-into-your-momen-project.md)
-* [How to buildUI Your Login Page?](tutorial/how-to-buildui-your-login-page.md)
+* [How to Build Your Login Page?](tutorial/how-to-buildui-your-login-page.md)
 * [How to Convert Momen App to Native Mobile App?](tutorial/how-to-convert-momen-app-to-native-mobile-app.md)
-* [How to Build a CMS (MVP version) in Hours?](tutorial/how-to-build-a-cms-mvp-version-in-hours.md)
+* [How to Build a CMS (MVP Version) in Hours?](tutorial/how-to-build-a-cms-mvp-version-in-hours.md)
 * [How to Set a Countdown Timer When Sending a Verification Code](tutorial/how-to-set-a-countdown-timer-when-sending-a-verification-code.md)
 
 ## Template
@@ -105,7 +104,7 @@
 * [SaaS Corporate Site](template/saas-corporate-site.md)
 * [Blog](template/blog.md)
 * [AI Feedback Tool](template/ai-feedback-tool.md)
-* [Feedback Tool, a nod to Canny](template/feedback-tool-a-nod-to-canny.md)
+* [Feedback Tool, a Nod to Canny](template/feedback-tool-a-nod-to-canny.md)
 * [Portfolio](template/portfolio.md)
-* [Online Courses, a nod to Udemy](template/online-courses-a-nod-to-udemy.md)
+* [Online Courses, a Nod to Udemy](template/online-courses-a-nod-to-udemy.md)
 * [Mobile Auto Repair AI Scheduler](template/mobile-auto-repair-ai-scheduler.md)

@@ -2,19 +2,19 @@
 description: >-
   Understand the full lifecycle of the Momen application development platform,
   including product requirement analysis, design, development, deployment, and
-  operation. As a developer, gradually learn how
+  operation.
 ---
 
 # Software Development Process
 
 Momen is a no-code application development tool, and using Momen for software development also requires following the basic software development process.
 
-1. Requirement Analysis: This is the crucial first step in application development, where you need to clearly outline what you want to achieve before starting.
-2. Build Datamodel: This step can be challenging for users with no-code capabilities, as it requires some basic knowledge about data models.
-3. Design UI: Design the interface based on product requirements.
-4. Development: Use Momen to build the data model, set up the UI, and implement software interactions through behavior configuration.
-5. Publish Application
-6. Maintain and Manage Application
+1. **Requirement Analysis:** This is the crucial first step in application development, where you need to clearly outline what you want to achieve before starting.
+2. **Build Data Model:** This step can be challenging for users with no-code capabilities, as it requires some basic knowledge about data models.
+3. **Design UI:** Design the interface based on product requirements.
+4. **Development:** Use Momen to build the data model, set up the UI, and implement software interactions through behavior configuration.
+5. **Publish Application**
+6. **Maintain and Manage Application**
 
 The following sections will provide a detailed introduction to each step.
 
@@ -24,7 +24,7 @@ An application is a software tool designed to solve a specific problem, featurin
 
 ## Requirement Analysis
 
-Requirement analysis involves clarifying the functionalities of your application and determining which content and functionalities are presented on which pages. We generally recommend using a \[mind map] to organize pages and functionalities, and then proceed to the next step of data model design and page setup based on the organized \[mind map].
+Requirement analysis involves clarifying the functionalities of your application and determining which content and functionalities are presented on which pages. We generally recommend using a [mind map] to organize pages and functionalities, and then proceed to the next step of data model design and page setup based on the organized [mind map].
 
 Before you can clearly outline product requirements, you need to understand the following:
 
@@ -82,7 +82,7 @@ User interface and interaction design include interface design (UI) and user exp
 
 Momen provides a self-developed visual Editor and a dozen components, allowing pixel-level restoration of designs in design drafts, helping you design your application with a what-you-see-is-what-you-get approach. For details, please click [【Build UI】](../design/). You can add and move components by dragging on the left side, and design styles, bind data, and add interactions in the right toolbar.
 
-## Configure interactions to Implement Data CRUD
+## Configure Interactions to Implement Data CRUD
 
 After completing the data model design and setup, UI design and setup, it's time for the most important event configuration to implement data CRUD.
 

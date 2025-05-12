@@ -9,19 +9,20 @@ description: >-
 
 ## Introduction
 
-This feature enables processing items in an array data source one by one (only remote data and select views are supported as data sources). Ideal for tasks such as updating database entries or calculating total shopping cart values.
+This feature enables processing items in an array data source one by one (only remote data and select views are supported as data sources). It is ideal for tasks such as updating database entries or calculating total shopping cart values.
 
 ## Action configuration guide
 
-Taking calculate the total value of a shopping cart as an example.
+Taking the calculation of the total value of a shopping cart as an example:
 
 1. Add Page Variable\
-   Start by adding "Arbitrary Precision Decimal" page variable to the page to temperarily store calculation results, initially set to zero. If this default does not work, set it to zero during the page load.
+   Start by adding an "Arbitrary Precision Decimal" page variable to the page to temporarily store calculation results, initially set to zero. If this default does not work, set it to zero during the page load.
 
 | <img src="../.gitbook/assets/0 (47).png" alt="" data-size="original"> | <img src="../.gitbook/assets/1 (86).png" alt="" data-size="original"> |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
 
-2. Add Data Source On the page, identify a table as a data source so that the page will request the shopping cart data, filtered by the current user ID as the buyer.
+2. Add Data Source\
+   On the page, identify a table as a data source so that the page will request the shopping cart data, filtered by the current user ID as the buyer.
 
 ![](<../.gitbook/assets/2 (70).png>)
 
@@ -33,4 +34,4 @@ Taking calculate the total value of a shopping cart as an example.
 
 ## About Momen​​​​​
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.​​
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.​​

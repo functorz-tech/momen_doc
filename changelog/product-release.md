@@ -8,7 +8,7 @@ description: Announcing the latest Momen product update
 
 ### 🚀 New Features
 
-* Added cross-project copy-paste support for users with owner permissions (components, APIs, Actionflows, and Ai config)
+* Added cross-project copy-paste support for users with owner permissions (components, APIs, Actionflows, and AI agent)
 * Added a function for extracting weekdays from date expressions
 * Enabled AI to auto-fill tool names
 * Enabled real-time sync in collaborative editing mode
@@ -28,26 +28,26 @@ description: Announcing the latest Momen product update
 * Fixed password reset errors in Momen projects
 * Fixed missing non-balance records in the transaction history
 * Fixed SMS usage inheritance issues when cloning or referencing projects
-* Fixed incorrect context naming in ai database
+* Fixed incorrect context naming in AI database
 * Fixed AI error: `Cannot invoke 'FieldDescription.getFields()'`
 * Fixed SMS verification failure during domain filing
 * Fixed delayed updates when modifying properties in the right-hand panel
-* Fixed missing gating logic in actionflow conditional filters
+* Fixed missing gating logic in Actionflow conditional filters
 * Fixed table header layout issues in mini program horizontal lists
-* Fixed JSON\_EXTRACT\_PATH formula error in Actionflow
+* Fixed `JSON_EXTRACT_PATH` formula error in Actionflow
 * Fixed deduplication failure in `get correct schema` for `pendingActionFlow`
 * Fixed default value hint not displaying in unbound data selectors
 * Fixed JSON import failure on Momen landing page
 * Fixed payment config being enabled in projects without payment functionality
 * Fixed broken navigation on circular dependencies in page data sources
-* Fixed missing `result data` in async ActionFlows within ZType
+* Fixed missing `result data` in async Actionflows within ZType
 * Fixed failure in QR code generation when accessing list item values
-* Fixed interpreterSample hang during ActionFlow execution
+* Fixed `interpreterSample` hang during Actionflow execution
 * Fixed database access failure in multi-client projects
 * Fixed blank screen rendering in some web pages
 * Fixed data display issue in list components inside popups
 * Fixed font weight configuration typo (`700` should be `bold`, not `medium`)
-* Fixed lack of user feedback on Ai tool invocation failures
+* Fixed lack of user feedback on AI tool invocation failures
 * Fixed inconsistent character limits for all AI descriptions (standardized to 10,000)
 * Fixed validation errors caused by stale data when switching popup actions
 * Fixed select view default value failure when using conditions or formulas
@@ -61,7 +61,7 @@ description: Announcing the latest Momen product update
 * Fixed diff issue when creating new data models
 * Fixed sensitive information being exposed in Zeus front-end responses
 * Fixed incorrect boolean evaluation of `string_len` in conditional containers
-* Fixed schema inconsistency actionflowter app cloning
+* Fixed schema inconsistency after app cloning
 * Fixed input value setting failure before popup opens
 * Fixed calendar component sending continuous requests in console
 * Fixed issue where AI execution success did not trigger `set_pagedata`
@@ -75,7 +75,7 @@ description: Announcing the latest Momen product update
 
 ### New Features
 
-1. Components support  visible/invisible at various breakpoints.
+1. Components support visible/invisible at various breakpoints.
 2. Support for retrieving the user's permission role list on the frontend page.
 3. Static SVG supports direct embedding into HTML.
 4. Agent configuration supports Conditional and Formula.
@@ -90,7 +90,7 @@ description: Announcing the latest Momen product update
 5. Fixed the issue of abnormal scrolling in the Conditional Editor.
 6. Fixed the issue where streaming Output to page variables in AI Continue Conversation behavior displayed incorrectly on the page.
 7. Fixed the issue of UI damage in Callback parameter configuration.
-8. Fixed the issue where Logged in user data could not be used in AI configuration.
+8. Fixed the issue where logged-in user data could not be used in AI configuration.
 9. Fixed the issue where executing the behavior of obtaining a phone number on the first opening of the Mini-Program would report a 401 error.
 10. Fixed the issue where List item width did not have % configuration.
 11. Fixed the issue where cloning any Project would report an error.

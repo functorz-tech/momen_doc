@@ -22,7 +22,7 @@ When you enter the editor, the “Page” tab is selected by default. Click othe
 
 ![](../.gitbook/assets/design/nav_bar_features.png)
 
-You can click the link below to view the detailed introduction of the corresponding function：\
+You can click the link below to view the detailed introduction of the corresponding function:\
 [Data](../data/data_model.md)\
 [API](../data/api.md)\
 [Actionflow](../actions/actionflow/basics.md)\
@@ -90,8 +90,8 @@ Adjust the canvas zoom level freely. Common shortcuts include:
 
 **Zoom In**: **⌘ +**
 
-**Zoom Out**: **⌘ +**
+**Zoom Out**: **⌘ -**
 
-Reset to 100%: **⌘ +**
+Reset to 100%: **⌘ 0**
 
 ![](../.gitbook/assets/design/tools_bar_zoom.png)

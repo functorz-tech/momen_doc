@@ -49,12 +49,12 @@ Set the value of the reference object against which the vector distance will be 
 ### Use Case
 In scenarios where a large language model (LLM) needs to interact with private knowledge bases, vector sorting can be used to enhance responses. For example, using RAG (Retrieval-Augmented Generation), the model can answer questions or generate new content based on private knowledge.
 
-### Configuration guide
+### Configuration Guide
 1. Pre-Configuration Requirement   
 Ensure that a data table storing private data is created, and that the text fields in this table have vector storage enabled.
 
 2. Configuration Steps
-- On AI congifuration page, under Contexts section,select the target data table.
+- On the AI configuration page, under the Contexts section, select the target data table.
 - Click the filter icon when hovering on a data table.
 - In the right-side configuration panel, add a Sort setting:
   - Sorting Field: Choose the vector-enabled field.

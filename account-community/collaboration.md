@@ -3,13 +3,12 @@ description: >-
   Learn how to use Momen's powerful collaboration features to enhance team productivity, manage roles, and streamline project workflows.
 ---
 
-
-
-
 # Collaboration
+
 The Momen tool provides powerful collaboration features, allowing multiple users to work on a single project simultaneously. This functionality is designed to enhance team collaboration efficiency, accelerate project completion, and facilitate real-time feedback. Through collaborative efforts, team members can seamlessly share ideas, co-edit content, and resolve issues promptly, significantly improving overall productivity.
 
 ## Accessing Collaboration Features
+
 1. In the top-right corner of the Momen editor, click "Invite Collaborators."
 2. Go to the User Center, select a project, click "Manage Project," and enable "Sharing and Permissions."
 
@@ -24,7 +23,8 @@ After clicking "Invite Collaborators," you will enter a dedicated interface for 
 
 By carefully defining roles and permissions, Momen ensures project security and collaboration efficiency, avoiding unnecessary errors caused by permission confusion.
 
-### Collaborator Limits for Different Project Plan
+### Collaborator Limits for Different Project Plans
+
 Different project versions have limits on the maximum number of collaborators allowed.
 
 | Project Version          | Maximum Editable Users |

@@ -16,19 +16,21 @@ The Select View component can be used when an 'option' is required, and it provi
 ## Configuration Instructions
 ### Design
 
-Select views can be seen as list with "selection" functionality. You can set the style of the select view itself, and also click on the subview to edit the selected area or unselected area.
+Select Views can be seen as lists with "selection" functionality. You can set the style of the Select View itself and also click on the subview to edit the selected area or unselected area.
 
 **Multiple Lines Display Content**
 
-When we want to display the select view vertically, we can turn on \[Multiple Lines] and set the width of the select view to the same width as each child component, and set the width of the sub-view to 100%.
+When we want to display the Select View vertically, we can turn on \[Multiple Lines] and set the width of the Select View to the same width as each child component, and set the width of the sub-view to 100%.
 
 <figure><img src="../.gitbook/assets/selectviews/selectviews1.gif" alt=""><figcaption></figcaption></figure>
 
-Multiple: Disabled by default, you can select multiple options after turning on Deselectable: Disabled by default, the selected option can be unchecked after clicking again Preserve Selection on Refresh: Disabled by default, and if the component is refreshed, the original selected content will still be retained
+Multiple: Disabled by default. You can select multiple options after turning it on.  
+Deselectable: Disabled by default. The selected option can be unchecked after clicking again.  
+Preserve Selection on Refresh: Disabled by default. If the component is refreshed, the original selected content will still be retained.
 
 #### Sub-Container Design
 
-There are two sub-views - Selected Area and Unselected Area inside the selected view, and you can set the content, size, and style of the sub-views respectively
+There are two sub-views - Selected Area and Unselected Area inside the Select View, and you can set the content, size, and style of the sub-views respectively.
 
 * Unselected view: This view represents the appearance of the option when it is not selected.
 * Selected view: This view defines how the option appears when it is selected.
@@ -47,7 +49,7 @@ The \[Select View] component offers flexibility in data source selection, suppor
 
 Order of Options: When selecting a view to display options horizontally, the order of options from left to right is determined by the order of the contents of the \[Select View] from top to bottom.
 
-**Binding Option Content**: Double click \[Select View] to enter the sub-container, click the \[+] sign next to the input box and find "Component Data - Select View - item" to bind option content.
+**Binding Option Content**: Double-click \[Select View] to enter the sub-container, click the \[+] sign next to the input box, and find "Component Data - Select View - item" to bind option content.
 
 **Query Data**
 

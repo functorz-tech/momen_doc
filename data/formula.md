@@ -2,7 +2,7 @@
 description: >-
   Familiarize yourself with the use of formulas in Momen, mastering various data
   manipulation techniques such as mathematical operations, data counting, data
-  format conversion, text processing, time pro
+  format conversion, text processing, and time processing.
 ---
 
 # Formula and Conditions
@@ -19,8 +19,8 @@ Formulas are functions used to calculate data. Momen provides various formulas t
 
 | Name                     | Description                                                | Example                                                                                      |
 | ------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| TO\_TEXT                 | Converts integers, decimals, jsonb, etc. to text data type | <p>{"message": "Hello World!"} <br><br>>> '{"message": "Hello World!"}'</p>                  |
-| TO\_INTEGER              | Converts text or decimals to integers                      | <p>TeOriginal data: -3.1415926<br><br>>> -3</p>                                              |
+| TO\_TEXT                 | Converts integers, decimals, JSONB, etc., to the text data type | <p>{"message": "Hello World!"} <br><br>>> '{"message": "Hello World!"}'</p>                  |
+| TO\_INTEGER              | Converts text or decimals to integers                      | <p>Original data: -3.1415926<br><br>>> -3</p>                                                |
 | TO\_DECIMAL              | Converts text to decimals                                  | <p>Original data: "-3.1415926" <br><br>>> -3.1415926</p>                                     |
 | TEXT\_TO\_DATETIME       | Converts text to datetime                                  | <p>Original data: "2025-02-21 14:36" <br><br>>> 2025-02-21T14:36:00.000+08:00</p>            |
 | COMBINE\_DATE\_AND\_TIME | Combines date and time into datetime                       | <p>Date: 2024-01-08 <br>Time: 13:38:00.000+08:00<br><br>>> 2024-01-08T13:38:00.000+08:00</p> |
@@ -34,7 +34,7 @@ Formulas are functions used to calculate data. Momen provides various formulas t
 | REPLACE\_PART  | Replaces part of the text with new text based on the specified position (first character is 0) and number of characters.                                                                      | Text: "Hello World!" Start position: 1 Number of characters to replace: 4 New text: "ola">> "Hola World!" |
 | REPLACE\_TEXT  | Finds the specified text and replaces it with new text based on the number of occurrences.                                                                                                    | Text: "Hello World!" Old text: "o" New text: "" Number of replacements: 1>> "Hell World"                  |
 | FIND           | Returns the position of the first occurrence of the specified text. The position of the first character is 0, returns -1 if not found.                                                        | Text: "Hello World!" Text to locate: "o">> 4                                                              |
-| CONTAIN        | Determines whether the specified text exists, returning a boolean value true if it does; otherwise, false.                                                                                    | Text: "Hello World!" Text to find: "ello">> true                                                          |
+| CONTAIN        | Determines whether the specified text exists, returning a boolean value `true` if it does; otherwise, `false`.                                                                                | Text: "Hello World!" Text to find: "ello">> true                                                          |
 | SUBSTRING      | Extracts a substring. Includes the start position but not the end position; the position of the first character is 0.                                                                         | Text: "Hello World!" Start position: 0 End position: 5>> "Hello"                                          |
 | LEFT           | Returns a specified number of characters from the start of the text.                                                                                                                          | Text: "Hello World!" Number of characters: 5>> "Hello"                                                    |
 | RIGHT          | Returns a specified number of characters from the end of the text.                                                                                                                            | Text: "Hello World!" Number of characters: 5>> "World"                                                    |

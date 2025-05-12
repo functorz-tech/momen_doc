@@ -46,7 +46,6 @@ momen create project_name
 
 This command generates a template project and registers it as a new code component project within Momen. While multiple components can be added, note that the initial setup doesn’t publish a version yet, so further steps are required to release it.
 
-
 ### Editing Code
 
 To start developing custom components, navigate to your project directory and install dependencies:
@@ -92,9 +91,7 @@ Then, run the following command within the project directory:
 momen publish
 ```
 
-After publishing, the new code component library will be available for configuration in any project on  Momen.
-
-
+After publishing, the new code component library will be available for configuration in any project on Momen.
 
 ### **Importing Code Components**&#x20;
 
@@ -121,9 +118,6 @@ Properties are parsed according to their declared types, so it’s essential to 
 
 <figure><img src="../.gitbook/assets/截屏2024-10-31 19.19.18.png" alt=""><figcaption></figcaption></figure>
 
-
-
-
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.

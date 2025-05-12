@@ -15,5 +15,3 @@
 | SUPPORT\_SERVICE\_IS\_DEPLOYING                | Backend deployment in progress                                | A new deployment request was issued during an ongoing backend deployment         | Wait for the deployment to complete before retrying |
 | TABLE\_NAME\_TOO\_LONG                         | Table name exceeds length limit                               | The table name exceeds 62 characters                                             | Shorten the table name                              |
 | TABLE\_NAME\_ALREADY\_EXIST                    | Duplicate table name                                          | The table name already exists                                                    | Rename the table                                    |
-
-*

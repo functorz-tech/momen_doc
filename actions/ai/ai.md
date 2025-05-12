@@ -24,12 +24,12 @@ Momen AI is a robust feature integrated within the Momen editor, designed to fac
 
 AI applications have a wide range of use cases. Here are some common scenarios:
 
-* Intelligent Customer Service (AI Q\&A):
-  * Insurance, law firms, tools, e-commerce AI Q\&A assistants/intelligent customer service.
+* Intelligent Customer Service (AI Q&A):
+  * Insurance, law firms, tools, e-commerce AI Q&A assistants/intelligent customer service.
   * Provide AI with specialized knowledge within an industry, such as uploading Momen's docs for AI to answer questions related to Momen's operations.
 * Marketing (AI Content Creation):
   * Sales/consultation script generation based on user information and sales/consultation materials.
-  * Copywriting for platforms like Ins, X, and Tiktok and scriptwriting for videos, movies, etc.
+  * Copywriting for platforms like Instagram, X, and TikTok and scriptwriting for videos, movies, etc.
 
 ## Model Support
 
@@ -45,7 +45,7 @@ When AI Points are insufficient, data vectorization, vector sorting, and Agent i
 
 Additionally, at the beginning of each month, the system will gift **100,000** AI Points, which will be cleared at the end of the month.
 
-### Bring your own model
+### Bring Your Own Model
 
 If you have opened model services on other platforms or deployed large models yourself, you can integrate them into Momen. **This feature is only available for paid Projects**.
 
@@ -53,8 +53,8 @@ Currently supported large models include gpt-4o, gpt-4o-mini and DeepSeek-R1:
 
 | Manufacturer | Model       | Model Capabilities                     |
 | ------------ | ----------- | -------------------------------------- |
-| OpenAI       | gpt-4o      | Streaming, Mutiple modal, Tool calling |
-|              | gpt-4o-mini | Streaming, Mutiple modal, Tool calling |
+| OpenAI       | GPT-4o      | Streaming, Multiple modal, Tool calling |
+|              | GPT-4o-mini | Streaming, Multiple modal, Tool calling |
 | DeepSeek     | DeepSeek-R1 | Streaming, Reasoning content           |
 
 When creating a large model, you need to fill in:
@@ -76,7 +76,7 @@ If integrating with official platforms, fill in:
 
 If it is a self-hosted large model service, fill in:
 
-1. Server url: The access address of the large model service.
+1. Server URL: The access address of the large model service.
 2. Custom authentication header: The key name of the authentication method, such as "api-key" in "api-key: xxxxxxxxxxx".
 3. Custom authentication value: The key value of the authentication method, such as "xxxxxxxxxxx" in "api-key: xxxxxxxxxxx".
 4. Model Value of Input Parameter: The model value, such as "DeepSeek-R1".
@@ -119,7 +119,7 @@ Input Parameter Configuration: Set up the single or multiple parameters required
 **Advanced Prompts Guide**
 
 {% hint style="info" %}
-It is recommended to read and understand the [Prompt Engineering Guide ](https://www.promptingguide.ai/)to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more AI Points and waiting time, they often yield better results.
+It is recommended to read and understand the [Prompt Engineering Guide](https://www.promptingguide.ai/) to gain insight into prompt specifications and techniques for optimal results. While high-quality prompts may consume more AI Points and waiting time, they often yield better results.
 {% endhint %}
 
 **Prompt Source Options**
@@ -135,7 +135,7 @@ It is recommended to read and understand the [Prompt Engineering Guide ](https:/
 
 1. Task Roles:
 
-Define what role AI should play, facilitating better understanding of tasks/questions. For example, "An English teacher helping students master English grammar," "An insurance claims specialist," or "An influencer on Ins"
+Define what role AI should play, facilitating better understanding of tasks/questions. For example, "An English teacher helping students master English grammar," "An insurance claims specialist," or "An influencer on Instagram."
 
 2. Task Details:
 
@@ -177,7 +177,7 @@ Case 2: Develop an AI assistant for internal company finance processes. Colleagu
 
 **Knowledge Base Data Source**
 
-Momen AI supports multiple data sources, including database, APIs and local files.
+Momen AI supports multiple data sources, including databases, APIs, and local files.
 
 **Database:**
 
@@ -195,7 +195,7 @@ Select single or multiple data tables, fields, related tables/fields stored in M
 
 Upload your local files as AI's knowledge.
 
-* Supported formats: Word, PDF, txt, markdown.
+* Supported formats: Word, PDF, TXT, Markdown.
 * Total file size should not exceed 50MB.
 
 <figure><img src="../../.gitbook/assets/6 (20).png" alt="Upload local file to Momen AI"><figcaption></figcaption></figure>
@@ -204,31 +204,31 @@ Upload your local files as AI's knowledge.
 
 Momen also supports fetching external data via API. You can choose the configured APIs as your data source.
 
-<figure><img src="../../.gitbook/assets/截屏2024-02-23 15.07.10.png" alt="use api as data source"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/截屏2024-02-23 15.07.10.png" alt="Use API as data source"><figcaption></figcaption></figure>
 
-Please check our step-by-step guide about how to [configure APIs ](../../data/api.md)in Momen.
+Please check our step-by-step guide about how to [configure APIs](../../data/api.md) in Momen.
 
 ### 5. Tools
 
-**Why does an AI agent need to Invoke Tools**
+**Why does an AI agent need to invoke tools**
 
 In an AI Agent, large language models serve as the agent's brain, tasked with logical thinking and task planning. Yet, these models can't directly interact with the world; they require various tools like API requests or intermediary software to facilitate external interactions, similar to human limbs. These tools allow the AI to perform specific actions such as data retrieval, image generation, or other environmental interactions.
 
 **Types of Tools**
 
-In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI requests within Momen, or open "Obtain info" to let the AI seek additional context from the user if necessary.
+In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI requests within Momen, or open "Obtain Info" to let the AI seek additional context from the user if necessary.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.54.03.png" alt=""><figcaption></figcaption></figure>
 
 **Invoking Actionflows**
 
-Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action-flow-basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the add description button to the right of the flow to describe both the actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
+Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action-flow-basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the "Add Description" button to the right of the flow to describe both the Actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 13.57.08.png" alt=""><figcaption></figcaption></figure>
 
 **Invoking APIs**
 
-Preparation: Learn about \[[API Configuration](../api-configuration/api-configuration.md)], complete API setup and testing, save, and publish the API. After selecting a configured API, click the add description button on the right side of the API to detail what parameters to send and the expected API returns.
+Preparation: Learn about \[[API Configuration](../api-configuration/api-configuration.md)], complete API setup and testing, save, and publish the API. After selecting a configured API, click the "Add Description" button on the right side of the API to detail what parameters to send and the expected API returns.
 
 **Invoking AI**
 
@@ -246,7 +246,7 @@ Preparation: Other AI requests have been set up and released in Momen. Similarly
 
 **Streaming Output:** AI models display results progressively as they are generated, reducing latency and thereby improving user experience.
 
-Important Note: Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
+**Important Note:** Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
 
 ### 7. Debugging and Preview
 
@@ -258,9 +258,9 @@ The section below details the entire operation process of the AI. Upon successfu
 
 <figure><img src="../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
 
-## AI action configuration guide
+## AI Action Configuration Guide
 
-Momen AI provides the following five types of AI actions, you can find AI under the action when clicking and then selecting the needed action to configure.
+Momen AI provides the following five types of AI actions. You can find AI under the action menu when clicking and then selecting the needed action to configure.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.29.15.png" alt=""><figcaption></figcaption></figure>
 
@@ -268,15 +268,15 @@ Momen AI provides the following five types of AI actions, you can find AI under 
 
 \[Start Conversation] is generally used to start the first round of a multi-round AI dialogue or to complete a one-time AI dialogue.
 
-It is triggered by clicking, starting a new AI conversation, i.e., adding a new record in the 'Conversation Table', adding a message record with system as the role in the message table, and recording which dialogue this message belongs to; adding content records in the message content table, and recording which message this content belongs to.
+It is triggered by clicking, starting a new AI conversation, i.e., adding a new record in the 'Conversation Table', adding a message record with "System" as the role in the message table, and recording which dialogue this message belongs to; adding content records in the message content table, and recording which message this content belongs to.
 
 If a tool is invoked, adding a tool usage record in the tool usage record table, and recording which message this tool usage record belongs to.
 
-**Action configuration guide:**
+**Action Configuration Guide:**
 
-In the action of \[Start Conversation], select the AI to be called, if the AI has input parameters, then bind or directly enter the corresponding input parameters.
+In the action of \[Start Conversation], select the AI to be called. If the AI has input parameters, then bind or directly enter the corresponding input parameters.
 
-Note: To accurately bind the session ID in \[Continue Conversation], \[Delete Conversation], \[Stop Response], a page data of integer type (BIGINT) is generally added to the page, named conversation\_id, set this page variable when \[Start Conversation] is successful, assigning it as: result data/Start Session/ID.
+**Note:** To accurately bind the session ID in \[Continue Conversation], \[Delete Conversation], \[Stop Response], a page data of integer type (BIGINT) is generally added to the page, named `conversation_id`. Set this page variable when \[Start Conversation] is successful, assigning it as: result data/Start Session/ID.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.34.24.png" alt="Momen AI start conversation"><figcaption></figcaption></figure>
 
@@ -284,34 +284,34 @@ Note: To accurately bind the session ID in \[Continue Conversation], \[Delete Co
 
 When conducting multi-round dialogues, after \[Start Conversation], if you want to continue sending messages to AI and automatically bring up the context, then use \[Continue Conversation] action. \[Continue Conversation] is triggered by clicking, and after triggering, it automatically adds related data to the message table, message content table, and tool usage record table just like \[Start Conversation].
 
-**Action configuration guide**\
+**Action Configuration Guide**\
 In the action of \[Continue Conversation], select the same AI as the last \[Start Conversation] call, and bind the Conversation ID generated by \[Start Conversation], simultaneously directly enter or bind the message content.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.45.20.png" alt="Momen AI continue conversation"><figcaption></figcaption></figure>
 
 ### 3. Delete Conversation
 
-It means deleting a certain conversation, as well as the related messages, message content, tool call records.
+This action deletes a specific conversation, as well as the related messages, message content, and tool call records.
 
-### 4.Stop Response
+### 4. Stop Response
 
 \[Stop Response] means during the process of \[Start Conversation] or \[Continue Conversation], you can trigger \[Stop Response] to stop the current conversation. After stopping the reply, you can still use \[Continue Conversation] to continue the just-ended multi-round dialogue.
 
 ### 5. Provide Tool Info
 
-To be updated...;
+To be updated...
 
 ## Using the Results of Calling AI
 
 ### When Default Output
 
-In order to directly display the results of the AI request, generally add page variable on the page, then add the needed AI request to the button component's click action, complete the AI request's input parameter configuration, and set the page variable when it is successful, assigning it as content from the result data.
+To directly display the results of the AI request, generally add a page variable on the page, then add the needed AI request to the button component's click action, complete the AI request's input parameter configuration, and set the page variable when it is successful, assigning it as content from the result data.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.51.41.png" alt=""><figcaption></figcaption></figure>
 
 ### When Custom Output
 
-When configuring AI, if you configured custom output, you will need to set the output fields' types and names (in English, best if it corresponds to the expected output results' meaning), AI will write the corresponding results into the fields by their names.
+When configuring AI, if you configured custom output, you will need to set the output fields' types and names (in English, best if it corresponds to the expected output results' meaning). AI will write the corresponding results into the fields by their names.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 14.00.39.png" alt=""><figcaption></figcaption></figure>
 
@@ -321,7 +321,7 @@ When invoking this AI, you can select the needed field content from the AI resul
 
 ### When Streaming Output
 
-When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data', in the configuration you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component], when AI call is successful, the text component will then display the results in a streaming manner.
+When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data'. In the configuration, you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component]. When the AI call is successful, the text component will then display the results in a streaming manner.
 
 <figure><img src="../../.gitbook/assets/截屏2024-07-23 15.59.55.png" alt=""><figcaption></figcaption></figure>
 

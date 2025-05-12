@@ -2,7 +2,7 @@
 description: >-
   Learn how to use variables in Momen, including the definition, assignment, and
   referencing methods of global variables and page variables. Through
-  illustrated  examples, clearly explain the scope and
+  illustrated examples, clearly explain the scope and usage.
 ---
 
 # Variable
@@ -13,19 +13,20 @@ In many scenarios, data is not used directly but is stored in a variable to achi
 
 Global variables are variables that can be referenced by all pages, typically used to store global configuration information.
 
-1. Definition
+1. **Definition**
 
 Open "Settings," go to "Global," and then "Add Global Variable." Choose a variable name, select a type, and set a default value (optional) to define a global variable.
 
 ![](../.gitbook/assets/data/data_variable_global_define.png)
 
-2. Assignment
+2. **Assignment**
 
 Assign values through "Set Global Data," which can be used in global settings or on a page.
 
-![](../.gitbook/assets/data/data_variable_global_assign0.png) ![](../.gitbook/assets/data/data_variable_global_assign2.png)
+![](../.gitbook/assets/data/data_variable_global_assign0.png)  
+![](../.gitbook/assets/data/data_variable_global_assign2.png)
 
-3. Reference
+3. **Reference**
 
 Global variables can be referenced by all pages.
 
@@ -35,19 +36,19 @@ Global variables can be referenced by all pages.
 
 Page variables are variables that can be referenced by all components and actions within a page, used to store data related to that page.
 
-1. Definition
+1. **Definition**
 
 Enter the page, open "Data," and then "Add Page Variable." Choose a variable name, select a type, and set a default value (optional) to define a page variable.
 
 ![](../.gitbook/assets/data/data_variable_page_define.png)
 
-2. Assignment
+2. **Assignment**
 
 Assign values through "Set Page Data."
 
 ![](../.gitbook/assets/data/data_variable_page_assign.png)
 
-3. Reference
+3. **Reference**
 
 Page variables can be referenced by all components and actions within the page.
 

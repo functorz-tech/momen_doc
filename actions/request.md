@@ -2,7 +2,9 @@
 description: >-
   Add, update, or delete single or multiple records in a data table.
 ---
+
 # Request
+
 Request actions enable direct operations on the database, including adding, updating, deleting records, and executing pre-defined actionflows. Momen supports three types of request actions: data mutation, batch mutation, and actionflow.
 
 **Request action includes:**
@@ -13,26 +15,26 @@ Request actions enable direct operations on the database, including adding, upda
 ## 1. Data mutation 
 
 ### Introduction
-It is used to perform the adding, updating and deleting records of the database.
+It is used to perform the adding, updating, and deleting of records in the database.
 1. Insert: Add data to the database.
    1. Single insert
    2. List Mutation
 2. Update: Update the data in the database that meets the filtering criteria.
-3. Delete: Deletes data in the database that meets the filter criteria.
+3. Delete: Delete data in the database that meets the filter criteria.
 
 ### Note
 
-1. **List mutation** <br>
+1. **List mutation**  
 When you choose to add data, you can enable the "List Mutation" for batch adding. It needs to identify a data source with multiple data.
 
-2. **On conflict** <br>
-When "Add" or "update" data, you can configure actions when data conflict.<br>
-If a data filed has been constrained to unique, you can configure whether you want to keep updating the conflict data (by setting the constraint action type to Update) or takes no action (by setting the constraint action type to None).
+2. **On conflict**  
+When adding or updating data, you can configure actions when data conflicts occur.  
+If a data field has been constrained to be unique, you can configure whether you want to keep updating the conflicting data (by setting the constraint action type to Update) or take no action (by setting the constraint action type to None).
 
-3. **On success/failure** <br>
-On success/failure refers to the actions triggered after an action (namely data mutation action) is/not successfully executed. It plays a crucial role in real-world applications. Typically, after modifying table data, you can configure Show Toast, Refresh, or Redirect actions to notify users of the operation. Additionally, you can chain subsequent actions, such as another data mutation or set conditional branches to execute corresponding actions, depending on the specific scenario.
+3. **On success/failure**  
+On success/failure refers to the actions triggered after a data mutation action is successfully or unsuccessfully executed. It plays a crucial role in real-world applications. Typically, after modifying table data, you can configure Show Toast, Refresh, or Redirect actions to notify users of the operation. Additionally, you can chain subsequent actions, such as another data mutation or set conditional branches to execute corresponding actions, depending on the specific scenario.
 
-4. **Results data** <br>
+4. **Results data**  
 Upon successful execution, result data is generated, which contains the newly added or updated record, including its ID and other details.
 
 ## 2. Batch mutation
@@ -47,7 +49,7 @@ Batch mutation is used to create a transaction consisting of multiple database o
 ## 3. [Actionflow](./actionflow/basics.md)
 
 ### Introduction
-Executes a pre-configured actionflow to implement a sequence of actions or complex logics and events.
+Executes a pre-configured actionflow to implement a sequence of actions or complex logic and events.
 
 ### Note
 Result Data: If the actionflow has defined output parameters, the output will be available as result data for further use. For example, if the actionflow generates a random number between 0 and 100, and you want to use this number, first define an integer-type Page Variable on the page. Then, on success, add a Set Page Variable action to assign the output parameter to that page variable.

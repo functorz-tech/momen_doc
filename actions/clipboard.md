@@ -9,7 +9,7 @@ description: >-
 Upon activation (by a click), this action copies the specified content, either direct input or data binding, to the phone’s clipboard. This allows users to easily paste the content.
 
 ## Use case
-After the "Set Clipboard" action is triggered, improve the user experience by notifying users that the content has been successfully copied to their clipboard. This can be achieved by configuring an action of show toast to display a prompt immediately after the clipboard action. Users can then proceed to paste the copied content wherever necessary.
+After the "Set Clipboard" action is triggered, improve the user experience by notifying users that the content has been successfully copied to their clipboard. This can be achieved by configuring a [Show Toast] action to display a prompt immediately after the clipboard action. Users can then proceed to paste the copied content wherever necessary.
 
 | <img src="../.gitbook/assets/2 (69).png" alt="" data-size="original"> | <img src="../.gitbook/assets/3 (11).gif" alt="" data-size="original"> |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------- |

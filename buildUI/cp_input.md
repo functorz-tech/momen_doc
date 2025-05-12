@@ -10,20 +10,20 @@ Includes: Input Box, Number Input, Data Selector, Date & Time Picker, Rich Text 
 
 ### Data Output Capability
 
-All input type components, once added to a page, can expose the content entered on the component to the outside. This means:
+All input type components, once added to a page, can expose the content entered in the component to the outside. This means:
 
 1. Other components, such as text components, can choose to bind to "Input Box" - "Input Type Component Name" to display the content of that input box.
-2.  Modifying databases or other locations that need to bind content can also reference the content entered in this input type component.
+2. Modifying databases or other locations that need to bind content can also reference the content entered in this input type component.
 
     <figure><img src="../.gitbook/assets/7 (24).png" alt="Select the type of input content."><figcaption></figcaption></figure>
 
-### Configurable Special actions
+### Configurable Special Actions
 
-Input type components can generally configure actions for the following trigger timings.
+Input type components can generally configure actions for the following trigger timings:
 
-* On Value Change: action triggered when the input content changes
-* On Blur: action triggered when the cursor is no longer in the input box
-* onSuccess: action triggered after successfully uploading an image/video
+* On Value Change: Action triggered when the input content changes.
+* On Blur: Action triggered when the cursor is no longer in the input box.
+* On Success: Action triggered after successfully uploading an image/video.
 
 ## Input Box
 
@@ -34,7 +34,7 @@ Input boxes are generally used to provide scenarios where users need to input co
 * Number Input Box
 * Search Input Box
 
-The default type of the input box is text, with input and output types as Text (String). The input box can be modified to a number type, with input and output types as integer (int).
+The default type of the input box is text, with input and output types as Text (String). The input box can be modified to a number type, with input and output types as Integer (int).
 
 > 💡 Tips: When the data type is changed to a number, the default value will automatically be set to 0. If you do not want to set or display a default value, you can add a page data of number type and set the default value to the page data.
 
@@ -44,13 +44,16 @@ The default type of the input box is text, with input and output types as Text (
 
 This refers to the text displayed when the input box has no content entered. It can be empty. Placeholder text is not actual data content.
 
-> 💡 Tips: Placeholder text cannot be data bound, it can only be directly input.
+> 💡 Tips: Placeholder text cannot be data bound; it can only be directly input.
 
 #### Default Value
 
 This refers to the default content displayed in the input box. The default value can be data bound.
 
-> 💡 Tips: 1. When both a placeholder and a default value are set for the input box, the default value is displayed first. 2. The default value is displayed by assigning a value to the input box when entering the page. When there is input content in the input box, it displays the input content, and modifying the default value at this time will not change the input content or display content of the input box. 3. It is prohibited to select the input box's own default value, as this will lead to infinite loop dependencies, resulting in errors.
+> 💡 Tips: 
+> 1. When both a placeholder and a default value are set for the input box, the default value is displayed first. 
+> 2. The default value is displayed by assigning a value to the input box when entering the page. When there is input content in the input box, it displays the input content, and modifying the default value at this time will not change the input content or display content of the input box. 
+> 3. It is prohibited to select the input box's own default value, as this will lead to infinite loop dependencies, resulting in errors.
 
 #### Some Special Configurations
 
@@ -113,7 +116,7 @@ Similar to the Data Selector, the Date & Time Picker allows users to select and 
 
 1. Start Time/Date and End Time/Date: Only supports data binding, both are not required, **generally not set**.
 2. Time Interval: The default selection is 1 minute, supporting selections of 5, 10, 15, 30, and 60 minutes, not supporting manual input.
-3. Default Value: Not required, databinding.
+3. Default Value: Not required, data binding.
 4. Placeholder Text: Not required, when there is no default value, the content in "Placeholder Text" will be displayed.
 
 ## Rich Text Editor

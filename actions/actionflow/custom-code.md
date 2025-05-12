@@ -90,9 +90,9 @@ Configure the output in the action flow, the function here is to return the data
 
 If you encounter any issues during the process, feel free to join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.​​​
 
-## Running gql in a Custom Code
+### Running gql in a Custom Code
 
-Prerequisites: Uderstanding GraphQL basics below.
+Prerequisites: Understanding GraphQL basics below.
 
 ### Basic Code Structure
 
@@ -317,9 +317,9 @@ In the editing interface, click on 【VARVARLABES】 to expand the parameter edi
 
 Click on the "send query" button located above the request. The execution of the request will then take place, and you can view the results on the right side of the interface.
 
-### Mutation - insert request
+### Mutation - Insert Request
 
-Search for insert\_a table name in Docs, find the mutation request for that table and click on it to go to the request Docs.
+Search for `insert_tableName` in Docs, find the mutation request for that table, and click on it to go to the request Docs.
 
 Adding a request
 
@@ -356,7 +356,7 @@ whatever: anything
 
 **update\_columns:** Specifies the fields that should be updated in the event of a conflict.
 
-**Mutation - Update Request**
+### Mutation - Update Request
 
 To search for or add an update request:
 
@@ -386,7 +386,7 @@ whatever: anything
 
 **where:** Used to configure the conditions for the update. It is also of object type.
 
-**Mutation - Delete Request**
+### Mutation - Delete Request
 
 To search for or add a delete request:
 

@@ -4,8 +4,8 @@ description: >-
 ---
 
 # Component Management
-**Component management includes：**
-1. Input compoents
+**Component management includes:**
+1. Input components
 2. List
 3. Image
 4. Video
@@ -15,16 +15,16 @@ description: >-
 ## 1. Input – Set/Reset Input Component Value
 
 ### Brief
-This action sets a specific value to input type of components. Common use cases include:
+This action sets a specific value to input-type components. Common use cases include:
 - Automatically filling a search box with a popular search term when clicked.
 - Pre-filling user data, such as username or phone number, from the database.
 - Clearing the input field after submitting the content.
 
 ### Action configuration guide
-Add the Set Input Value action to a component. Choose the target input field and configure the value to be set, either a static value or data retrieved from a identified data source.
+Add the Set Input Value action to a component. Choose the target input field and configure the value to be set, either a static value or data retrieved from an identified data source.
 
 ### Use cases
-- Dropdown Selection: Display the dropdown options when clicks on the input component.
+- Dropdown Selection: Display the dropdown options when clicking on the input component.
 - Cross-Page Search: When linking two pages with search fields, pass the input data from page A to page B and set it as the value in page B’s search input field for a seamless user experience.
 
 ### Note
@@ -56,7 +56,7 @@ Rename list components for quick identification when configuring actions, especi
 Scrolls a list straight to the bottom when triggered.
 
 ### Action configuration guide
-Add the Scroll to Bottom action to a component（usually a button）. Select the list component to be scrolled.
+Add the Scroll to Bottom action to a component (usually a button). Select the list component to be scrolled.
 
 ## 5. Image – Fullscreen Image
 
@@ -67,15 +67,15 @@ Displays an enlarged full-screen version of an image when clicked.
 Add the Full-Screen Image action to an image component’s interaction. When clicked, the image will expand to fill the screen.
 
 ### Note
-This action is needed to select and add to a image component directly.
+This action needs to be selected and added to an image component directly.
 
 ## 6. Video – Play, Pause, Stop
 
 ### Brief
-This action controls video, allowing users to play, pause, or stop media files.
+This action controls video playback, allowing users to play, pause, or stop media files.
 
 ### Action configuration guide
-Add the Play, Pause, Stop action to a component (usually a button). Select the target video URL retrieved from a identified remote data.
+Add the Play, Pause, Stop action to a component (usually a button). Select the target video URL retrieved from an identified remote data source.
 
 ### Note
 On the page, you need to identify a data source and filter out the video type of data field first.
@@ -85,8 +85,8 @@ On the page, you need to identify a data source and filter out the video type of
 ### Brief
 Controls Lottie animations by allowing users to play, pause, or stop an animation. 
 
-### Action configuration Guide
-Add the action to a component and select the target lottie component of whether the action should play, pause, stop.
+### Action configuration guide
+Add the action to a component and select the target Lottie component to determine whether the action should play, pause, or stop.
 
 ## 8. Conditional Container – Switch View Case
 

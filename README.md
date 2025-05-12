@@ -6,14 +6,14 @@
 
 ### Why Momen
 
-1. **Unified Development:** Streamlined from prototype design to app deployment, with robust built-in backend.
-2. **Rapid Iteration:** Say farewell to traditional dev. Create apps in weeks, and iterate your ideas with ease - no coding needed.
-3. **Predictable Cost:** Project-based pricing without overage fees and third-party backend service. Estimate costs upfront.
-4. **Assured Scalability:** Advanced collaboration workflows with access control, build fully custom apps for million-user projects from the start.
+1. **Unified Development:** Streamlined from prototype design to app deployment, with a robust built-in backend.
+2. **Rapid Iteration:** Say farewell to traditional development. Create apps in weeks, and iterate your ideas with ease—no coding needed.
+3. **Predictable Cost:** Project-based pricing without overage fees or third-party backend services. Estimate costs upfront.
+4. **Assured Scalability:** Advanced collaboration workflows with access control. Build fully custom apps for million-user projects from the start.
 
 ### About Us
 
-Momen was started by a group of Engineers in 2019. Initially, we were just irked by the repeated need to write CRUD code, API glues, and CSS. We thought to ourselves, there must be a better way. Hence the birth of Momen.
+Momen was started by a group of engineers in 2019. Initially, we were just irked by the repeated need to write CRUD code, API glues, and CSS. We thought to ourselves, there must be a better way. Hence the birth of Momen.
 
 Our journey began as a no-code mini program builder in partnership with a major platform. Within two years, we acquired over 130,000 users and launched 3,000 projects. In 2022, we broadened our reach to the web and are now serving users worldwide, powered by AWS (Amazon Web Services).
 
@@ -25,11 +25,11 @@ Bachelor of Computer Science from the University of Cambridge, Master's in Large
 
 #### Backed By
 
-Sequoia , Linear Capital , MiraclePlus
+Sequoia, Linear Capital, MiraclePlus
 
 #### Follow Us
 
-[Twitter](https://twitter.com/Momen_HQ) , [Linkedin](https://www.linkedin.com/company/momen-hq/) , [Youtube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7_AKYQ)
+[Twitter](https://twitter.com/Momen_HQ), [LinkedIn](https://www.linkedin.com/company/momen-hq/), [YouTube](https://www.youtube.com/channel/UCItxhdjDH1L-C5Nhx7_AKYQ)
 
 #### Contact Us
 

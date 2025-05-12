@@ -14,7 +14,7 @@ Next, we will use the example of "retrieving data from Airtable" to introduce th
 
 ## Add API
 
-Open the "API" at the top left of the Editor and "Add."
+Open the "API" at the top left of the Editor and click "Add".
 
 ![](../.gitbook/assets/data/data_api0.png)
 
@@ -24,8 +24,8 @@ Open the "API" at the top left of the Editor and "Add."
 
 This step determines whether the API is used as a data source or an action:
 
-* **Query**: Use the API as a **data source** for components (List, Page, etc.)
-* **Mutation**: Use the API as an **action**
+* **Query**: Use the API as a **data source** for components (List, Page, etc.).
+* **Mutation**: Use the API as an **action**.
 
 In this example, the API is directly used as a data source for a list, so "Query" is selected.
 
@@ -35,12 +35,12 @@ In this example, the API is directly used as a data source for a list, so "Query
 
 In this step, you need to determine the format of the API request and response. Momen provides two configuration methods:
 
-* Automatically parse the format by successfully sending a request (recommended)
-* Manually configure all content by yourself
+* Automatically parse the format by successfully sending a request (recommended).
+* Manually configure all content by yourself.
 
 #### Automatically Parse the Format
 
-First, open debug.
+First, open debug mode.
 
 ![](../.gitbook/assets/data/data_api2.png)
 
@@ -60,20 +60,17 @@ Once everything is confirmed, you will have the request and response format of t
 
 ![](../.gitbook/assets/data/data_api6.png)
 
-### Setting default values
+### Setting Default Values
 
 Once the structure of the request and response is determined, you can start setting default values for certain fields. After setting them, these fields no longer need to be assigned values when sending requests, making subsequent request configurations simpler.
 
-\
 At the same time, since the default values are stored on the backend, they are very secure and can also be used to store sensitive information, such as the `Authorization` in this example.
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
-
+![](../.gitbook/assets/image (26).png)
 
 ## Use API
 
-**Use as a Data Source**
+### Use as a Data Source
 
 In the data source of List, Select View, and Page, you can select a data source type API.
 
@@ -81,9 +78,9 @@ In the data source of List, Select View, and Page, you can select a data source 
 
 During configuration, you need to specify which field in the API response is of list type and the required input parameters. Since the `Authorization` has already been set with a default value, it does not need to be filled in.
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+![](../.gitbook/assets/image (27).png)
 
-**Use as an Action**
+### Use as an Action
 
 If you have configured a "Mutation" type API, you can find it under the "Request" category in the action list under "API."
 

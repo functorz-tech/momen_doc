@@ -4,8 +4,7 @@ description: >-
   payment to boost your app's monetization.
 ---
 
-
-# Payment  with Stripe 
+# Payment with Stripe
 
 ## 1. Preparation
 
@@ -53,7 +52,6 @@ Once activated, the system will automatically:
 <figure><img src="../.gitbook/assets/stripe/stripe4.jpeg" alt=""><figcaption></figcaption></figure>
 
 > These system-generated flows securely handle payment event processing in the backend.
->
 
 ### 2.2 Configure Stripe Credentials
 Input the following information into your project settings:
@@ -64,6 +62,7 @@ Input the following information into your project settings:
 | Secret Key       | Stripe Dashboard |
 
 <figure><img src="../.gitbook/assets/stripe/stripe5.jpeg" alt=""><figcaption></figcaption></figure>
+
 ---
 
 ## 3. Using Payment Actions
@@ -166,9 +165,8 @@ Here are the main Actionflows provided:
 
 Since payment operations are asynchronous:
 
-- Subscribe to the `Payment` or `Refund` tables while use list component to dispaly result.
+- Subscribe to the `Payment` or `Refund` tables while using a list component to display results.
 - Listen for real-time updates to refresh the frontend dynamically.
-
 
 ---
 

@@ -9,7 +9,7 @@ keywords: >-
 
 ## What is Single Sign-On (SSO)?
 
-**Single Sign-On (SSO)** is an authentication mechanism that allows users to access multiple related systems with a single login. By configuring SSO, new users can register and log in to your website using existing accounts (e.g. Google, Facebook, etc.).
+**Single Sign-On (SSO)** is an authentication mechanism that allows users to access multiple related systems with a single login. By configuring SSO, new users can register and log in to your website using existing accounts (e.g., Google, Facebook, etc.).
 
 > - Only supports the standard OAuth2 protocol  
 > - Available for Pro Plan and above  
@@ -27,7 +27,6 @@ keywords: >-
 - Open project settings, find "Login - SSO," and click "Add."
 - The system will automatically generate a callback URL for redirection after successful authorization.
 
-
 ### 2. Register an Application with an Identity Provider (e.g., Google)
 
 1. Register as a Google Developer: [Google Cloud Console](https://console.cloud.google.com/).
@@ -37,19 +36,16 @@ keywords: >-
 5. Set up the OAuth client ID and fill in the callback URL.
 6. Obtain the client ID and client secret.
 
-
 ### 3. Fill in Application Information in Momen
 
 - Enter the client ID, client secret, and scope.
 - Save the configuration and enable SSO.
-
 
 ### 4. Configure Actions
 
 - **Register/Login**: After authorization, log in if the account exists; otherwise, register a new user.
 - **Bind Existing Account**: Bind the authorized account to the currently logged-in account.
 - **Unbind Account**: Unbind the current account from the SSO.
-
 
 ## Consume SSO User Information
 
@@ -109,3 +105,4 @@ function updateAccount(variables) {
   
     const updateAccountResult = updateAccount(updateAccountVariables);
   }
+```

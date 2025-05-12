@@ -10,16 +10,16 @@ Data is the core asset of an application, which is essentially about managing an
 
 ![](../.gitbook/assets/data/data_overview.png)
 
-## Data Source
+## Data Sources
 
-Momen supports a variety of data sources, including built-in databases, APIs, etc.
+Momen supports a variety of data sources, including built-in databases, APIs, and more.
 
 * **Data Model and Database**: Momen provides a powerful relational database that is flexible and offers excellent performance. See details: [Data Model and Database](https://docs.momen.app/data/data_model)
 * **API**: External data sources are typically accessed via APIs. See details: [API](https://docs.momen.app/data/api)
 * **Environmental Data**: This refers to data provided by the environment in which the program is running, mainly including the following categories:
   * Null Types: Null, Empty Text, Empty Array.
   * Time Types: Current time, date, and datetime.
-  * User Types: Logged in user data (automatically retrieved from the database, can be re-fetched using the "Refresh Login User Data" action), login status (boolean), user agent (browser/operating system information).
+  * User Types: Logged-in user data (automatically retrieved from the database, can be re-fetched using the "Refresh Login User Data" action), login status (boolean), user agent (browser/operating system information).
 * **Contextual Data**: Mainly includes the following two types:
   * Action Result Data: Many action operations generate result data, which can be referenced by subsequent actions. For example, after calling the database "add data" action, the result of the addition will be returned; after calling an API action, the interface will return response data.
   * List Item Data: When a List View or Select View is bound to a data source, each list item has its corresponding data. This data can be used in various operations of the list item, such as displaying content, responding to user interactions, etc.
@@ -33,7 +33,7 @@ Once the data source is determined, it can be used by components and actions.
 
 On pages and components, you can query database data or obtain external data through APIs. The following example of a **page data source** explains how to query and use data (for component data sources, please refer to [List](https://docs.momen.app/buildui/component-list), [Select View](https://docs.momen.app/buildui/select-view), and other documents).
 
-#### 1. Add Data Source
+#### 1. Add a Data Source
 
 Open a page, go to "Data," and "Add Data Source."
 
@@ -43,19 +43,19 @@ Open a page, go to "Data," and "Add Data Source."
 
 If obtaining data from a database, you need to determine the following:
 
-**Tables** You can select all system tables and developer-created tables.
+**Tables**: You can select all system tables and developer-created tables.
 
-**Request Type** Two types are available.
+**Request Type**: Two types are available.
 
 * Query: Obtain data once when the page loads (suitable for most scenarios).
 * Subscription: Obtain data once when the page loads, and when data in the database meeting the condition changes, it will be automatically pushed to the page (suitable for automatically obtaining the latest chat records and other specific scenarios).
 
-**Data Limit** Refers to the maximum number of data entries to obtain, ranging from 1 to unlimited.
+**Data Limit**: Refers to the maximum number of data entries to obtain, ranging from 1 to unlimited.
 
 * **If it is 1, a single record entry is returned.**
 * **If it is greater than 1, an array is returned. To retrieve a specific data entry, you can use the GET\_ITEM formula (see details:** [**Formula**](https://docs.momen.app/data/formula)**).**
 
-**Data Filters** Multiple filters can be configured.
+**Data Filters**: Multiple filters can be configured.
 
 * Conditional: The condition for filtering; the filter that meets the condition will take effect.
 * Filter: Refers to obtaining data that meets the filter condition when extracting data from the database.

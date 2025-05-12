@@ -1,15 +1,15 @@
 ---
 description: >-
-  Learn how to use Momen canvas to build app
+  Learn how to use Momen canvas to build an app
 ---
-# Canvas operations
+# Canvas Operations
 
 ## Hierarchical Structure
-Pages Pages and container components support nesting other components. The component tree in the left sidebar displays these nesting relationships.
+Pages and container components support nesting other components. The component tree in the left sidebar displays these nesting relationships.
 
 ![](../.gitbook/assets/design/select_and_display_.png)
 
-> Currently, Cross-level dragging to adjust nesting is unavailable; use the cut-and-paste method instead.
+> Currently, cross-level dragging to adjust nesting is unavailable; use the cut-and-paste method instead.
 
 Components at the same level follow a display order: newer components overlay older ones. To control the display order, drag components in the left sidebar or use the "Move" option in the right-click menu. You can also use the following shortcuts:
 
