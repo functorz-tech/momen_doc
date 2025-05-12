@@ -6,7 +6,7 @@ description: Learn how to embed an iframe into your website.
 
 ### Introduction
 
-This document serves as a comprehensive guide for introducing and developing custom components, specifically focusing on creating an iframe-embedded component. For a live demonstration of what you'll be building, visit [https://momen.app/ai](https://momen.app/ai).
+This document serves as a comprehensive guide for introducing and developing custom components, specifically focusing on creating an iframe-embedded component. For a live demonstration of what you'll be building, visit [Momen Ai](https://momen.app/ai).
 
 <figure><img src="../.gitbook/assets/1 (32).png" alt="an iframe component in a no-code tool"><figcaption></figcaption></figure>
 
