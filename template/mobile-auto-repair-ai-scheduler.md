@@ -27,51 +27,44 @@ Only staff members can access and log in to the dashboard. You’ll need to assi
 
 Below is the basic data model setting in this template.&#x20;
 
-![](<../.gitbook/assets/image (1).png>)\
-
+![](<../.gitbook/assets/image (1).png>)
 
 <div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 <div align="left"><figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
-The relation between car maker and car model is 1:N, because one brand could have multiple car models. The relation between repair category and repair item is 1:N because 1 category could have different issues. Based on car model and repair issues, a cost estimate is generated.
-
-
+The relation between car maker and car model is 1:N, because one brand could have multiple car models. The relation between repair category and repair item is 1:N because one category could have different issues. Based on the car model and repair issues, a cost estimate is generated.
 
 ***
 
 ### **Business Logic**
 
-Here’s the business logic behind the template, which you can also view as its workflow. We have two AI agents in this template. A customer service that help to record user's car issues and a scheduling assistant that helps to make the schedule in vendor's calendar.
+Here’s the business logic behind the template, which you can also view as its workflow. This template includes two AI agents: a customer service agent to record user car issues and a scheduling assistant to book appointments in the vendor's calendar.
 
 **Customer Service**
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-This is the logic of the customer service AI. This AI works mainly during the conversation. As the conversation progresses, the data table updates in real-time. Car models and locations are recorded as the user selects them, while the AI assesses and updates the car’s issues.
+This is the logic of the customer service AI. It primarily operates during the conversation. As the conversation progresses, the data table updates in real-time. Car models and locations are recorded as the user selects them, while the AI assesses and updates the car’s issues.
 
 **Scheduling Assistant**
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-It operates after an order is created, handling the task of scheduling the event for the vendor.
+This agent operates after an order is created, handling the task of scheduling the event in the vendor's calendar.
 
-
-
-The following is the explanation of different work order status. You can customize the name when you use this template.
+The following is the explanation of different work order statuses. You can customize the names when using this template:
 
 1. **Pending** – Conversation starts, gathering information.
-2. **Chat to Issue** – User inputs the information and  AI assesses the issue.
+2. **Chat to Issue** – User inputs the information, and the AI assesses the issue.
 3. **To Be Confirmed** – The issue has been confirmed, waiting for staff to confirm the appointment.
 4. **Confirmed** – Appointment scheduled successfully.
-
-
 
 ***
 
 ### Configuration Guide
 
-&#x20;This section is the configuration of the AI.
+This section explains how to configure the AI.
 
 1. **Customer Service AI**
 
@@ -146,8 +139,6 @@ Unlike hardcoding data directly into the prompt, a knowledge base is ideal for d
 
 {% hint style="info" %}
 Before using this template, you'll need to configure your own API so the AI can schedule events in your calendar. Additionally, you’ll need to adjust the permission settings to ensure that only you and your staff can manage the dashboard, while users only have access to the conversation page.
-
-You'll also need to set up the permission setting so that only you and your staff can manage the dashboard, while your users can only access the conversation page.
 {% endhint %}
 
 #### **1. Google Calendar Setup**
@@ -159,9 +150,7 @@ You'll also need to set up the permission setting so that only you and your staf
 
 3. Enable the Google Calendar API.&#x20;
 
-<figure><img src="../.gitbook/assets/OgQoo8zPRp.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/img_v3_02f0_88c69dd4-1f6c-4a0b-a3e2-7f64b6d5f84g.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../..gitbook/assets/OgQoo8zPRp.png" alt=""><figcaption></figcaption></figure>
 
 4. Create credentials (redirect URI: [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)).&#x20;
 
@@ -187,11 +176,9 @@ You'll also need to set up the permission setting so that only you and your staf
 
 4. Obtain the refresh\_token.&#x20;
 
-![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=YTc0OTJhZTMxZjVlZDM5ZjQ3YjI5ZGNlOTU1ZTdiMmNfOTd1NEg5MWVRc1c3eE5hVVRoTUYwZTJtN0hwck1icXBfVG9rZW46U3NsR2JrT1E4b0pFYTB4YTdaS2N1b2ZpbnliXzE3MjcwODM3MjM6MTcyNzA4NzMyM19WNA)![](<../.gitbook/assets/image (14).png>)
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 5. In Momen’s API module, set the client\_id, refresh\_token, and client\_secret as default values.&#x20;
-
-![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjFmYzUyOTIzYTY1ZDc0NzJiYWM0NzQxNTllYzU2MTNfTFRCZWxmeGZqYjVkUjVUaFo2T0xyYjZNQm1FS05BcXpfVG9rZW46VlZJZ2J2Q0RTb2o2WXR4cTgybWNoWkV5blE1XzE3MjcwODM3NTE6MTcyNzA4NzM1MV9WNA)![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=YzY5ZThjMjdmM2NmN2IxYzE4MTdjMmIyZjMxNzcwYmVfSm9yOUYwNU9uN21ZZ0JFUE8xcnduRk4zY2JRY1hWY2tfVG9rZW46TXZ2bGI2V213b0RTQUJ4NVgwdGNXUXM4bnBjXzE3MjcwODM3NTE6MTcyNzA4NzM1MV9WNA)
 
 #### **2. Google Maps Platform Setup**
 
@@ -215,16 +202,12 @@ You'll also need to set up the permission setting so that only you and your staf
 
 2. Edit account permissions in the editor.&#x20;
 
-
-
 {% embed url="https://youtu.be/_s986Zbyp9M" %}
 
 **4. Google Auth Refresh Token Setup**&#x20;
 
 The refresh token expires every 24 hours. You'll need to set up an automated process to renew it.
 
+### About Momen
 
-
-#### About Momen <a href="#about-momen" id="about-momen"></a>
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.

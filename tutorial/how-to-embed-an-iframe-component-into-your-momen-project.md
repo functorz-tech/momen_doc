@@ -2,11 +2,11 @@
 description: Learn how to embed an iframe into your website.
 ---
 
-# How to Embed an Iframe Component into Your Momen Project?
+# How to Embed an Iframe Component into Your Momen Project
 
 ### Introduction
 
-This document serves as a comprehensive guide for introducing and developing custom components, specifically focusing on creating an Iframe-embedded component. For a live demonstration of what you'll be building, visit [https://momen.app/ai](https://momen.app/ai).
+This document serves as a comprehensive guide for introducing and developing custom components, specifically focusing on creating an iframe-embedded component. For a live demonstration of what you'll be building, visit [https://momen.app/ai](https://momen.app/ai).
 
 <figure><img src="../.gitbook/assets/1 (32).png" alt="an iframe component in a no-code tool"><figcaption></figcaption></figure>
 
@@ -28,12 +28,12 @@ Your project needs to be a web-based application utilizing ZVM for rendering. It
 
 <figure><img src="../.gitbook/assets/4 (1).gif" alt="initializing the project"><figcaption></figcaption></figure>
 
-3. Modify to Iframe Component: The starter project includes a basic counter component. You'll need to replace or supplement this with an Iframe component by adding it under `src/components/`. This demonstrates the embedding of a custom webpage.
+3. Modify to Iframe Component: The starter project includes a basic counter component. You'll need to replace or supplement this with an iframe component by adding it under `src/components/`. This demonstrates the embedding of a custom webpage.
 
 ```javascript
 export function Iframe() {
   return <iframe 
-  style={{ width: '100%', height: '100%', border: "0",borderRadius: "30px"}} 
+  style={{ width: '100%', height: '100%', border: "0", borderRadius: "30px" }} 
   src="https://0gon984kvrrve.villa.momen.app/"></iframe>;
 }
 ```
@@ -60,7 +60,7 @@ Or you can replace the original counter component by adding a new component.
 
 <figure><img src="../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
 
-10. When releasing a new version, you can modify the components in your repository by adding, updating, or deleting them. Update the component information and version name in src/components/index.ts and config.json, then click the "+" sign in the left list of the repository.
+10. When releasing a new version, you can modify the components in your repository by adding, updating, or deleting them. Update the component information and version name in `src/components/index.ts` and `config.json`, then click the "+" sign in the left list of the repository.
 
 <figure><img src="../.gitbook/assets/10 (4).png" alt="modify the component"><figcaption></figcaption></figure>
 
@@ -78,4 +78,4 @@ Or you can replace the original counter component by adding a new component.
 
 ### About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
