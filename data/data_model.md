@@ -2,7 +2,7 @@
 description: >-
   With Momen's built-in relational database, building structured data models is
   a breeze. It offers a comprehensive suite of features, such as table creation,
-  field customization, and relationship management.
+  field customization, and relationship manag
 ---
 
 # Data Model and Database
@@ -137,10 +137,62 @@ Momen provides a permission management system that combines role-based access co
 
 ## Data Usage
 
-After completing the above operations, the data table can be used as a Data source for other parts:
+Once the tables are created, they can be referenced or modified by other parts. Let's use the example of a blog website to illustrate how data can be created, read, updated, and deleted.\
+First, create a "Blog" table in the Data model to store articles, including the following fields:
 
-* As a List Data source.
-* As a Page Data source, see: [Data Usage](https://docs.momen.app/data/data_usage).
+* show\_at (Publication date)
+* title
+* sub\_title
+* cover\_image
+* content
+* published\_status
+* authors\_author ( Author's account ID)
+
+<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+#### 1. Create Data
+
+Create a blog upload page and add components: inputs, Image Picker, subtext Editor, Date & Time Picker, and button.\
+Bind the "add post" action to the button and bind the field values to the corresponding components. This completes the functionality of adding a blog.
+
+<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+#### 2. Read Data
+
+Next, implement the read of blog articles and display them in a List format and each item in the List displays the blog's cover image, title, author, publication date, etc.
+
+Add a List component to the page, select "Blog" table as the Data source, enable Load more, and set the limit to 3.Sort in descending order by show\_at, indicating that the more recent the publication date, the higher the position.
+
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+Components within the List item also need to bind data. The data selection path is: In-component data -> post\_list (name of the List component) -> item. Item represents the data of each entry, and you can select the corresponding fields within it.
+
+<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+
+#### 3. Update Data
+
+Next, implement the update of blogs, supporting changes to the blog title, subtitle, cover, and main content.\
+Create a blog modification page and add components: inputs, Image Picker, subtext Editor, and button.\
+First, need to know which article is being updated. Therefore, add a Data source to the page, select "Blog" table, set the limit to 1, and add a filter: ID equals the Query parameter blog\_id (users navigate to this page from other pages, passing in blog\_id during navigation).
+
+<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+Once the article to be modified is obtained, you can bind the article's data to the components for display. For example, set the default value of the title input to the article's title:
+
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
+Bind the "Update post" action to the modification button, bind the fields to the corresponding components, and add a filter condition: ID equals the blog's ID in the Data source.
+
+**When performing modification or deletion operations, be sure to carefully check and confirm the filter conditions, otherwise, you may end up updating all data to be the same or deleting all data.**
+
+<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+#### 4. Delete Data
+
+Finally, implement the functionality to delete articles. In this example, deletion is placed on the article's content page, and the article is implemented through the Data source added to the page.\
+Therefore, after adding the "Delete blog" action to the delete button, its filter condition can be configured as: ID equals the blog's ID in the Data source.
+
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 ## Data Import
 
@@ -203,16 +255,16 @@ Check **linenumber**: `linenumber` does not correspond directly to the data row 
 
 Common error types include:
 
-* **Error Type 1: MISMATCHED\_DATA\_TYPE**  
+* **Error Type 1: MISMATCHED\_DATA\_TYPE**\
   This error means **data type mismatch.** For example, passing a **Text** type "three hundred dollars" in the price field, while the data type of the price field in the data model is **Infinite precision decimal.**
-* **Error Type 2: NO\_MATCHING\_MEDIA**  
+* **Error Type 2: NO\_MATCHING\_MEDIA**\
   This error means **no corresponding media file found.** When the file name in the Excel file matches the media file name exactly, it can be successfully uploaded. The folder name must strictly follow the requirements:
   1. Folder name must be strictly consistent: for example, naming the image folder as `images` is invalid.
   2. The file name and the content in the Excel file must be strictly consistent. If the file name has a suffix, it must also be included in the Excel file.
   3. If there are empty data columns in the Excel file, it will also lead to the above error, so empty columns need to be deleted.
   4. Suppose the folder name for saving images is `images`, and after compressing it, the archive name is `images.zip`. Simply changing `images.zip` to `image.zip` will also result in not finding the media file. The folder name should be changed to `image` before compressing.
   5. Suppose the image data name in the Excel file is `image/cover1.png`, but the actual name of `cover1` in the archive is `cover` or the image type is `jpg`, then the image data name in the Excel file should be changed to `image/cover.png` or `image/cover1.jpg`.
-* **Error Type 3: INTERNAL\_ERROR**  
+* **Error Type 3: INTERNAL\_ERROR**\
   This error occurs because Windows used its built-in compression software to compress image/video and other media files, and the encoding format of the media was not UTF-8, causing Momen to be unable to recognize the content of the media files. To avoid this error, it is generally recommended to use the compression software **Bandizip** with the following compression configuration.
-* **Error Type 4: unique\_constraint\_violation**  
+* **Error Type 4: unique\_constraint\_violation**\
   The imported data contains data that violates constraint restrictions. If your table has a one-to-one relation or other manually set constraints, you need to check that the import content of the constrained fields is unique and does not already exist in the backend.

@@ -2,7 +2,7 @@
 description: >-
   Provides the capability to create Custom Components, allowing users to save
   configured components as Custom Components and add them to the left sidebar
-  component library. Users can reuse them in multiple places.
+  component library. Users can reuse them in multi
 ---
 
 # Custom Component
@@ -22,7 +22,7 @@ Repeated general components: During project building, we often encounter some ge
 
 ### Instructions
 
-1. **Create**: After selecting a component, save the configured component as a Custom Component through the right-click option or the shortcut `cmd+shift+K`. We will save all content, style, data configuration structure, and action configuration structure of the component. When there is a data dependency in the data or action configuration, users need to delete and reconfigure the configuration items.
+1.  **Create**: After selecting a component, save the configured component as a Custom Component through the right-click option or the shortcut `cmd+shift+K`. We will save all content, style, data configuration structure, and action configuration structure of the component. When there is a data dependency in the data or action configuration, users need to delete and reconfigure the configuration items.
 
     ![](../.gitbook/assets/addcustomCP.png)
 2. **Fill in information**: Enter the Custom Component panel, where we will automatically generate a preview image of the component, and users can also upload their own. Users can name the Custom Component and add a description in the panel. After clicking save, the component will be added under the left sidebar - Custom Components.

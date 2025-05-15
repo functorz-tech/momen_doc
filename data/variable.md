@@ -2,7 +2,7 @@
 description: >-
   Learn how to use variables in Momen, including the definition, assignment, and
   referencing methods of global variables and page variables. Through
-  illustrated examples, clearly explain the scope and usage.
+  illustrated examples, clearly explain the scope and u
 ---
 
 # Variable
@@ -23,7 +23,7 @@ Open "Settings," go to "Global," and then "Add Global Variable." Choose a variab
 
 Assign values through "Set Global Data," which can be used in global settings or on a page.
 
-![](../.gitbook/assets/data/data_variable_global_assign0.png)  
+![](../.gitbook/assets/data/data_variable_global_assign0.png)\
 ![](../.gitbook/assets/data/data_variable_global_assign2.png)
 
 3. **Reference**

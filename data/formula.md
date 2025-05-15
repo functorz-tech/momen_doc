@@ -2,7 +2,7 @@
 description: >-
   Familiarize yourself with the use of formulas in Momen, mastering various data
   manipulation techniques such as mathematical operations, data counting, data
-  format conversion, text processing, and time processing.
+  format conversion, text processing, and time
 ---
 
 # Formula and Conditions
@@ -17,14 +17,14 @@ Formulas are functions used to calculate data. Momen provides various formulas t
 
 #### **Type Conversion**
 
-| Name                     | Description                                                | Example                                                                                      |
-| ------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| TO\_TEXT                 | Converts integers, decimals, JSONB, etc., to the text data type | <p>{"message": "Hello World!"} <br><br>>> '{"message": "Hello World!"}'</p>                  |
-| TO\_INTEGER              | Converts text or decimals to integers                      | <p>Original data: -3.1415926<br><br>>> -3</p>                                                |
-| TO\_DECIMAL              | Converts text to decimals                                  | <p>Original data: "-3.1415926" <br><br>>> -3.1415926</p>                                     |
-| TEXT\_TO\_DATETIME       | Converts text to datetime                                  | <p>Original data: "2025-02-21 14:36" <br><br>>> 2025-02-21T14:36:00.000+08:00</p>            |
-| COMBINE\_DATE\_AND\_TIME | Combines date and time into datetime                       | <p>Date: 2024-01-08 <br>Time: 13:38:00.000+08:00<br><br>>> 2024-01-08T13:38:00.000+08:00</p> |
-| EXTRACT\_DATE\_OR\_TIME  | Extracts date or time from datetime (timestamp)            | <p>Datetime: 2024-01-08 13:38:00.000+08:00 <br>Extract: Date <br><br>>> 2024-01-08</p>       |
+| Name                     | Description                                                     | Example                                                                                     |
+| ------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| TO\_TEXT                 | Converts integers, decimals, JSONB, etc., to the text data type | <p>{"message": "Hello World!"}<br><br>>> '{"message": "Hello World!"}'</p>                  |
+| TO\_INTEGER              | Converts text or decimals to integers                           | <p>Original data: -3.1415926<br><br>>> -3</p>                                               |
+| TO\_DECIMAL              | Converts text to decimals                                       | <p>Original data: "-3.1415926"<br><br>>> -3.1415926</p>                                     |
+| TEXT\_TO\_DATETIME       | Converts text to datetime                                       | <p>Original data: "2025-02-21 14:36"<br><br>>> 2025-02-21T14:36:00.000+08:00</p>            |
+| COMBINE\_DATE\_AND\_TIME | Combines date and time into datetime                            | <p>Date: 2024-01-08<br>Time: 13:38:00.000+08:00<br><br>>> 2024-01-08T13:38:00.000+08:00</p> |
+| EXTRACT\_DATE\_OR\_TIME  | Extracts date or time from datetime (timestamp)                 | <p>Datetime: 2024-01-08 13:38:00.000+08:00<br>Extract: Date<br><br>>> 2024-01-08</p>        |
 
 #### Text Processing
 
