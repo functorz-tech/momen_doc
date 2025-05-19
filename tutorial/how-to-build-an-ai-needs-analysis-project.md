@@ -46,7 +46,7 @@ Output configuration determines the format of the AI's answers. If you choose th
 
 For example, if there are no output format restrictions in your task constraints, the output could be a number for data calculation or text for writing an article. If you choose custom, the results will be in JSON format. Define the content to include specific fields and their meanings. The AI will output the results in JSON format, allowing you to read the data like a data table. In this project, we use custom output for a structured answer.
 
-<figure><img src="../.gitbook/assets/output.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/output (5).png" alt=""><figcaption></figcaption></figure>
 
 Once all configurations are done, test to ensure it works as expected. Adjust prompts based on the results.
 

@@ -24,8 +24,8 @@ Momen AI is a robust feature integrated within the Momen editor, designed to fac
 
 AI applications have a wide range of use cases. Here are some common scenarios:
 
-* Intelligent Customer Service (AI Q&A):
-  * Insurance, law firms, tools, e-commerce AI Q&A assistants/intelligent customer service.
+* Intelligent Customer Service (AI Q\&A):
+  * Insurance, law firms, tools, e-commerce AI Q\&A assistants/intelligent customer service.
   * Provide AI with specialized knowledge within an industry, such as uploading Momen's docs for AI to answer questions related to Momen's operations.
 * Marketing (AI Content Creation):
   * Sales/consultation script generation based on user information and sales/consultation materials.
@@ -51,11 +51,11 @@ If you have opened model services on other platforms or deployed large models yo
 
 Currently supported large models include gpt-4o, gpt-4o-mini and DeepSeek-R1:
 
-| Manufacturer | Model       | Model Capabilities                     |
-| ------------ | ----------- | -------------------------------------- |
+| Manufacturer | Model       | Model Capabilities                      |
+| ------------ | ----------- | --------------------------------------- |
 | OpenAI       | GPT-4o      | Streaming, Multiple modal, Tool calling |
 |              | GPT-4o-mini | Streaming, Multiple modal, Tool calling |
-| DeepSeek     | DeepSeek-R1 | Streaming, Reasoning content           |
+| DeepSeek     | DeepSeek-R1 | Streaming, Reasoning content            |
 
 When creating a large model, you need to fill in:
 
@@ -256,7 +256,7 @@ Once you've finalized the AI settings, input parameters can be entered on the ri
 
 The section below details the entire operation process of the AI. Upon successful execution, you can review the input parameters you provided, how the tools were utilized, and whether the outcomes align with your expectations. If the setup includes multiple dialogue rounds, you can input new parameters here to extend the conversation.
 
-<figure><img src="../../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/output (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## AI Action Configuration Guide
 

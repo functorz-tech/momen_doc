@@ -22,14 +22,14 @@ Momen categorizes errors into three types: **Editing Errors**, **Deployment and 
   * Actual type: `String`
 * **Analysis & Solution:** Entering "$1" in a price field triggers a type error since the field requires an integer value. Remove the "$" symbol to resolve the issue.
 
-    ![Example 1](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=MmM4MTNmN2M3MGRhM2QzNmZjY2NhMmM0ODg0Y2M5M2ZfMkR6czA1ZjN3Tkc1OXJiWGxZZUpQTGZOeGFtM1hkV0tfVG9rZW46TGtnb2JzaW5xb2drdVl4cm1KSGNBdHU1bmlmXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/output (2).png" alt=""><figcaption></figcaption></figure>
 
 **Example 2: Missing Required Field**
 
 * The system detects that a required field is not provided.
 * Modify the field according to the error message.
 
-![Example 2](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=ODg1NjUwYmFiOTY0MDY1ZGQ0NTljZDhkNDViNGJhODBfbU1tb0Rwa1ZuS1FOV3JRdVIwWTlwUU0zSGlTdUVUaWZfVG9rZW46TnJwbWJzUzVSb3pUSGh4c1RGZmNINGRabjhiXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/output (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -46,13 +46,15 @@ Momen categorizes errors into three types: **Editing Errors**, **Deployment and 
 2. Fix the issue based on the provided error details. If unclear, ask AI for assistance.
 3. Report the issue to our team.
 
-![Deployment Error](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NDJkMDVmNmQxZmQ1N2NkNzg3YWJlMDc4N2NiYjRiY2NfNTdSdkNjR0NySUVNb0FRWWhYek9HMUlpY2pQQ0NXeEJfVG9rZW46VmhnTmJZN1Q1b2FpMEZ4WGk5MGNnUGpMbmZkXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/output (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 **Example: Backend Update Failure**
 
 * Solution: Click "Report Issue," and the support team will handle it.
 
-![Report Issue](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=YTViYjAyOWRjNzdhNTQ3MDdlYzZjMTljZDM4MzIxYWNfZHpYQVBiM1owMGxVTDk4dXpTRWRHSnAwZnFORVlvUDlfVG9rZW46R3pXd2JHc042bzcwY3N4Z2tNeGNYYzVxbjJjXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/530c9a38-3772-4fa0-ad4b-78ab427b08c9.png" alt=""><figcaption></figcaption></figure>
 
 ### UI Display Issues in Production
 
@@ -67,11 +69,13 @@ Momen categorizes errors into three types: **Editing Errors**, **Deployment and 
 
 Example 1: Two components appear left-aligned in the editor, but one uses relative positioning while the other uses absolute positioning. This causes misalignment on different screen widths.
 
-![Example 1](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NjA4Yzk3MTBlMTIxMmFlZTI2OTZlNjg3OTEwYTgxNDlfRGRSQUhhYzRtcFlUMkd5RGxEdlZZcXdsdlhQYkxHRjFfVG9rZW46SnFpV2JsUHVIb0RqSGd4aDMzS2N6N0pwblZiXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/35d08985-24da-4c69-9fa5-d62b2ffb7a69.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/497e3ca2-a5c7-4b48-adca-8b5621e5483a.png" alt=""><figcaption></figcaption></figure>
 
 Example 2: A text component inside a view component overflows. To fix this, change the view’s overflow setting from "visible" to "hidden" or "scroll."
 
-![Example 2](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=MDZmODE3OWZjM2M4NmVhNmU1OTg5Y2YyOTg3YzNmZDRfOFN1N2ZDYzhoQTZMc1JXREMzdkZNUnZjY0tHTlJxdHdfVG9rZW46S05MWWJIclZqb0xuMVp4NDdWdWNORDdXbjZiXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/02f80adb-4105-490b-a72f-d0c0f9fbfb24.png" alt=""><figcaption></figcaption></figure>
 
 2. **Report Possible Bugs**
 
@@ -94,11 +98,11 @@ Find Errors in Browser Using Developer Tools or in Momen's Log.
 
 * **Browser:** Press `F12` or right-click > "Inspect" > Open debugging mode > Click `Network` > Find `graphql-v2` requests.
 
-![Browser Debugging](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTVhNDdlZGFjOGNjZjdlMzZiZjQxNDAwNzFlNmJlZGFfcmdkQmc3SnpTQ0h2ajRzOGIzd0tRcDJVeExKSEhldzVfVG9rZW46WU5rRWJXTlQxb0VDRjd4T3R2S2NrT2o0bkRnXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/output (3).png" alt=""><figcaption></figcaption></figure>
 
 * **Momen Logs:** Click "Logs" in the editor for [more detailed logs](https://docs.momen.app/release-and-growth/log_service).
 
-![Momen Logs](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NjBhODBlNzEyODZiZDk1ZTI3OTgzNjM5MjkwNTIxM2FfR3RLWGRwcFBNcW5uTTJScFlPUmp5bDc2TUtKMlRNVnNfVG9rZW46T3RYaGJqOTB1bzBZWVV4b1pjeGNrMzdxbkVmXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/2814ec88-2923-443e-9c40-6cda6923a199.png" alt=""><figcaption></figcaption></figure>
 
 #### Analyze Request & Response Data
 
@@ -130,7 +134,7 @@ The **query** section contains the query statement, which defines the structure 
 
 * **Response Body:** Displays results and errors. Look for `errors` in the response when debugging.
 
-![Response Example](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTUzMzYxMjNmZDI3MzRjMjBiMmRiMWVkZmU5NWJlZDNfb0tZeUhTaU9nZVhibm50ZHBDR1JkRjhzYjhPYXZWM1BfVG9rZW46SDlQNmJTYmN0b0FWQjh4NzhtZ2NpM0NXbnpmXzE3NDI1NTk2Mjc6MTc0MjU2MzIyN19WNA)
+<figure><img src="../.gitbook/assets/218e5ea0-7fb2-4de7-9359-b9f87917fb49.png" alt=""><figcaption></figcaption></figure>
 
 An example: Permission Error Response:
 
@@ -159,30 +163,43 @@ An example: Permission Error Response:
 1. **Payment/Refund Error:**
    * If a refund action fails, check the logs. If it's a permission issue, verify the project’s permission settings.
 
-2. **API Execution Error:**
-   * Check request logs to find required fields that are missing values.
+<figure><img src="../.gitbook/assets/output (4).png" alt=""><figcaption></figcaption></figure>
 
-3. **Actionflow Execution Failure:**
+1.  **API Execution Error:**
+
+    * Check request logs to find required fields that are missing values.
+
+
+
+    <figure><img src="../.gitbook/assets/33333.png" alt=""><figcaption></figcaption></figure>
+2. **Actionflow Execution Failure:**
    * If an error occurs due to a missing field (e.g., `foodwcost` instead of `foodcost`), correct the field name.
 
-4. **Database Constraint Violations:**
-   * Ensure unique values are not duplicated when inserting data.
+<figure><img src="../.gitbook/assets/63e383ae-a874-4a66-aff4-485ae0497adf.png" alt=""><figcaption></figcaption></figure>
 
-5. **Conditional Component Display Issue:**
+1.  **Database Constraint Violations:**
+
+    * Ensure unique values are not duplicated when inserting data.
+
+
+
+<figure><img src="../.gitbook/assets/e56f3184-d076-4131-9542-c3fa96dd9fda.png" alt=""><figcaption></figcaption></figure>
+
+1. **Conditional Component Display Issue:**
    * If a component’s visibility depends on a data source (e.g., status should be "false" but is actually "true"), check the request to ensure data accuracy.
+
+<figure><img src="../.gitbook/assets/7adc513a-55d5-4ace-a063-f40219af4b5d.png" alt=""><figcaption></figcaption></figure>
 
 ### Debugging Best Practices
 
 1. **Clearly Define the Issue and Reproduce It**
    * Document error behavior, including triggers and error messages.
    * Attempt to reproduce the issue under the same conditions.
-
 2. **Check Configurations by Module**
    * Check the configuration logic of each functional module one by one. For example:
      * **Form**: Ensure that field types, required rules, and data validation conditions are reasonable.
      * **Actionflow**: Verify the step sequence, conditional branches, and permission assignments.
      * **Data Relationships**: Check whether related fields between tables match.
-
 3. **Incremental Fixes & Testing**
    * Modify one variable at a time to isolate the root cause.
 
