@@ -25,63 +25,93 @@ Momen supports a variety of data sources, including built-in databases, APIs, an
   * List Item Data: When a List View or Select View is bound to a data source, each list item has its corresponding data. This data can be used in various operations of the list item, such as displaying content, responding to user interactions, etc.
 * **Input Components**: Momen provides various input components that can be used as data sources, including: Input, Data Selector, Image Picker, and Select View, etc. Please refer to the documentation of the relevant components for details.
 
-## Data Query and Modification
+## Data usage
 
-Once the data source is determined, it can be used by components and actions.
+Next, we will illustrate data usage by implementing features like adding articles, displaying content, liking, and message notifications on a blog website.
 
-### Data Query
+### Adding Blog Articles
 
-On pages and components, you can query database data or obtain external data through APIs. The following example of a **page data source** explains how to query and use data (for component data sources, please refer to [List](https://docs.momen.app/buildui/component-list), [Select View](https://docs.momen.app/buildui/select-view), and other documents).
+This feature involves the **Database** and **Input Components.**
 
-#### 1. Add a Data Source
+First, create a "Blog" table in the Data model to store articles, including the following fields:
 
-Open a page, go to "Data," and "Add Data Source."
+* show\_at (Publication date)
+* title
+* sub\_title
+* cover\_image
+* content
+* authors\_author ( Author's account ID)
+* like\_count
+* ...
 
-![](../.gitbook/assets/data/data_usage0.png)
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Set Filters
+Create a blog upload page and add input fields, an Image Picker, a rich text Editor, and a Date & Time Picker to obtain user input for the article title, subtitle, cover, content, and publish date. Add a button component to save the article to the database.\
+Bind the action "Insert Blog" to the button. Bind values to each field, and in the "inputs" category of the Data Selector menu, find the components just added.
 
-If obtaining data from a database, you need to determine the following:
+<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
-**Tables**: You can select all system tables and developer-created tables.
+### Displaying Article List
 
-**Request Type**: Two types are available.
+This feature involves **Database** and **List Item Data**.\
+Add a List component to the page, select "Blog" table as the data source, enable Load more, and set the limit to 3. Sort in descending order by show\_at.
 
-* Query: Obtain data once when the page loads (suitable for most scenarios).
-* Subscription: Obtain data once when the page loads, and when data in the database meeting the condition changes, it will be automatically pushed to the page (suitable for automatically obtaining the latest chat records and other specific scenarios).
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-**Data Limit**: Refers to the maximum number of data entries to obtain, ranging from 1 to unlimited.
+Components within list items also need to bind data. The data selection path is: In-component data -> blog\_list (name of the List component) -> item. Item represents the data of each entry, and you can select the corresponding field within it.
 
-* **If it is 1, a single record entry is returned.**
-* **If it is greater than 1, an array is returned. To retrieve a specific data entry, you can use the GET\_ITEM formula (see details:** [**Formula**](https://docs.momen.app/data/formula)**).**
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-**Data Filters**: Multiple filters can be configured.
+### Displaying Article Details
 
-* Conditional: The condition for filtering; the filter that meets the condition will take effect.
-* Filter: Refers to obtaining data that meets the filter condition when extracting data from the database.
-* Sort: Choose to sort based on a specific field. If vector storage is enabled for the field, vector sorting can be performed (see details: [Data Model and Database](https://docs.momen.app/data/data_model)).
-* Deduplication: Remove duplicate data; multiple deduplication fields can be selected.
+This feature involves **Page Parameter,** **List Item Data**, and **Data Source of page.**\
+The process is that when a user clicks on an item in the article list, it navigates to the blog detail page, and the blog's ID is passed through Page parameter. In the data source of the detail page, use this ID as a filter condition to obtain the corresponding article.\
+Create a blog detail page and add a page query parameter (see details: [Parameter](https://docs.momen.app/data/parameter)), named "blog\_id". On the list item of the blog list page, add the action "Go To Blog Detail", and set the value of post\_id to the ID of the list item data.\
 
-![](../.gitbook/assets/data/data_usage1.png)
 
-#### 3. Use Queried Data
+<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
-The queried data can be used in the "Page Data" and "Data Source" sections of the data selection menu.
+<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-![](../.gitbook/assets/data/data_usage2.png)
+Add a data source to the detail page, select "Blog" as the table, set the limit to 1, and the filter condition to "ID equals Query/blog\_id". This achieves data transmission between pages during navigation.
 
-### Data Modification
+<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
-The system provides comprehensive operations for data addition, deletion, and modification. Before performing these operations, please carefully check and confirm the filter conditions to avoid unexpected situations (e.g., deleting all data, updating all data to the same entry, etc.).
+In the detail page, you can add text, images, and other components, bind the values of the page data source, and display the article.\
 
-![](../.gitbook/assets/data/data_usage3.png)
 
-![](../.gitbook/assets/data/data_usage4.png)
+<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
-## Referencing via Variables
+### Article Liking and Message Notification
 
-To achieve data reuse, data can be stored in variables. For more details, see: [Variable](https://docs.momen.app/data/variable).
+This feature involves **List Item Data** and **Action Result Data**.\
+The function to be implemented is that users can like articles, and after liking, automatically send a message notification to the author.\
+The like\_count field in the blog table represents the number of likes received. Create a notification table to store message notifications, where the message field represents the message content, the sender field represents the sender's account ID, and the receiver field represents the receiver's account ID.
 
-## Passing via Parameters
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
-Data transmission (e.g., between pages) can be achieved using parameters. For more details, see: [Parameter](https://docs.momen.app/data/parameter).
+On the page, add a like button in the article list item and bind the action "Update Blog" to increase the like count. When updating, it is necessary to know which article is being updated, and the current item data contains the content of the article being clicked. Therefore, you can add a filter condition: **ID equals list item data's ID**, ensuring that only the current article is updated.
+
+**When performing update or deletion operations, the filter condition must be carefully checked and confirmed, otherwise, all data may be updated to the same or all data may be deleted.**
+
+<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+
+After successfully liking, a notification needs to be sent to the author, which means adding a piece of data in the Notification table. Therefore, create the action "Insert Notification" onSuccess of "Update Blog". The message content is: The article "${article title}" received new likes, bringing the total to: ${like count}.\
+The article title can be obtained from the list item data mentioned earlier. After the "Insert Blog" action is successfully executed, the latest updated data will be returned. Therefore, the latest like count can be obtained through the result data of this action.
+
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
+### Notes
+
+1. In addition to directly referencing data, variables can be used for data storage and reference. See details: [variable.md](variable.md "mention").
+2. There are two types of database data requests available:
+   1. &#x20;Query: Retrieve data once when the page loads (suitable for most scenarios)
+   2. Subscription: Retrieve data once when the page loads, and automatically push data to the page when the data in the database meeting the condition changes (suitable for specific scenarios like automatically obtaining the latest chat records)
+3. Data limit refers to the maximum number of data to be retrieved, ranging from 1 to unlimited.
+   1. &#x20;**If it is 1, a single piece of data is returned**
+   2. **If it is greater than 1, an array is returned. To retrieve a specific piece of data from it, you can use the GET\_ITEM formula (see details:** [formula.md](formula.md "mention")**).**
+4. &#x20;Data filtering can be configured with multiple conditions:
+   1. Condition: The condition for filtering, the final condition that meets the criteria will take effect
+   2. &#x20;Filter: Refers to extracting data from the database that meets the filter condition
+   3. Sort: Choose to sort by a specific field. If vector storage is enabled for the field, vector sorting can be performed (see details: [Database](https://docs.functorz.com/data/datamodel.html))
+   4. Distinct: Remove duplicate data, multiple deduplication fields can be selected
