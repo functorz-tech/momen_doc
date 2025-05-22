@@ -88,9 +88,9 @@ Access tutorials, documentation, and connect with the community through the Help
 
 Adjust the canvas zoom level freely. Common shortcuts include:
 
-**Zoom In**: **⌘ +**
+Zoom In: **⌘ +**
 
-**Zoom Out**: **⌘ -**
+Zoom Out: **⌘ -**
 
 Reset to 100%: **⌘ 0**
 
