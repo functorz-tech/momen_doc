@@ -22,7 +22,7 @@ SEO is an ongoing process. Momen provides a comprehensive set of configuration t
 
 Open **Settings** and go to **SEO**. All configurations here take effect only after the **Project is Published**.
 
-![](<../.gitbook/assets/seo/seo0.png>)
+![SEO settings entry in Momen](../.gitbook/assets/seo/seo0.png)
 
 ### Global Settings
 
@@ -30,7 +30,7 @@ These settings affect all pages in the project.
 
 #### 1. Rendering Pattern
 
-![](<../.gitbook/assets/seo/seo1.png>)
+![Rendering pattern options in Momen](../.gitbook/assets/seo/seo1.png)
 
 Rendering patterns determine when and how pages are rendered, directly impacting performance and SEO. Momen supports:
 
@@ -48,7 +48,7 @@ Rendering patterns determine when and how pages are rendered, directly impacting
 
 You can check the rendering method in the HTML `<head>`.
 
-![](<../.gitbook/assets/seo/seo2.png>)
+![Check rendering method in HTML head](../.gitbook/assets/seo/seo2.png)
 
 For more details, refer to online resources.
 
@@ -66,8 +66,8 @@ Sources:
 
 Both are used together for sitemap and page generation.
 
-![](<../.gitbook/assets/seo/seo3.png>)
-![](<../.gitbook/assets/seo/seo4.png>)
+![Static data path parameter configuration](../.gitbook/assets/seo/seo3.png)
+![Database path parameter configuration](../.gitbook/assets/seo/seo4.png)
 
 #### 3. Sitemap
 
@@ -80,19 +80,19 @@ A sitemap helps search engines understand your site structure.
   - *Advantage:* Complete if parameters are set correctly.
   - *Disadvantage:* Requires re-publication after data changes.
 
-![](<../.gitbook/assets/seo/seo5.png>)
+![Sitemap configuration in Momen](../.gitbook/assets/seo/seo5.png)
 
 #### 4. robots.txt
 
 The `robots.txt` file controls which pages search engines can crawl.
 
-![](<../.gitbook/assets/seo/seo6.png>)
+![robots.txt configuration in Momen](../.gitbook/assets/seo/seo6.png)
 
 #### 5. Custom header/body
 
 Add extra tags (`<meta />`, `<canonical />`, etc.) to the HTML header/body for SEO or code injection (e.g., analytics).
 
-![](<../.gitbook/assets/seo/seo7.png>)
+![Custom header/body configuration in Momen](../.gitbook/assets/seo/seo7.png)
 
 ### Page Settings
 
@@ -102,7 +102,7 @@ These settings apply to individual pages.
 
 Set the Title, Description, and Keywords for a page.
 
-![](<../.gitbook/assets/seo/seo8.png>)
+![SEO TDK configuration in Momen](../.gitbook/assets/seo/seo8.png)
 
 #### 2. Social Media Content
 
@@ -113,25 +113,25 @@ Configure how your page appears when shared on social media. Momen supports:
 
 Both can be enabled.
 
-![](<../.gitbook/assets/seo/seo9.png>)
+![Social media content configuration in Momen](../.gitbook/assets/seo/seo9.png)
 
 #### 3. H tags
 
 H tags define page structure and hierarchy for search engines.
 
-![](<../.gitbook/assets/seo/seo10.png>)
+![H tags configuration in Momen](../.gitbook/assets/seo/seo10.png)
 
 #### 4. Image ALT Attributes
 
 The `alt` attribute helps search engines understand images.
 
-![](<../.gitbook/assets/seo/seo11.png>)
+![Image ALT attribute configuration in Momen](../.gitbook/assets/seo/seo11.png)
 
 ### Publishing
 
 All SEO configurations take effect only after the **Project is Published**.
 
-![](<../.gitbook/assets/seo/seo12.png>)
+![Publish project for SEO settings to take effect](../.gitbook/assets/seo/seo12.png)
 
 ## Feature Availability
 

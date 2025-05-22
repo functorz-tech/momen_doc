@@ -4,9 +4,9 @@ Except for the Enterprise plan, Momen uses project-based pricing. You can upgrad
 
 ## Upgrade Plan
 
-Momen offers several plans—Free, Basic, Pro, and Enterprise—each designed to meet different business needs. The Enterprise plan provides increased computing resources and advanced features.
+Momen offers several plans-Free, Basic, Pro, and Enterprise—each designed to meet different business needs. The Enterprise plan provides increased computing resources and advanced features.
 
-![](<../.gitbook/assets/0 (1).png>)
+![plans](<../.gitbook/assets/0 (1).png>)
 
 > After upgrading, you must schedule your server activation.
 >
@@ -27,11 +27,11 @@ Momen's computing power includes server capacity, object storage, database stora
 
 Hover over a project in the user center and click “Manage” to view its computing power details.
 
-![](<../.gitbook/assets/2 (1) (1).png>)
+![project detail](<../.gitbook/assets/2 (1) (1).png>)
 
 Click the “+ Add” button next to a resource to purchase additional computing power.
 
-![](<../.gitbook/assets/4 (1).png>)
+![resources detail](<../.gitbook/assets/4 (1).png>)
 
 #### Limits on Computing Power and Consequences
 
