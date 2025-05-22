@@ -4,90 +4,77 @@ description: >-
 ---
 
 # Detailed Tutorial on Layout and Position
+
 ## Layout
 
-![](../.gitbook/assets/design/layout_and_position_overview.png)
+![Layout and position overview](../.gitbook/assets/design/layout_and_position_overview.png)
 
-Pages and container components come with default layout properties. You can adjust the layout settings to arrange components with a "relative" position type according to the specified rules, achieving your desired layout effect.
+Pages and container components have default layout properties. You can adjust layout settings to arrange components with a "relative" position type according to specified rules, achieving your desired layout effect.
 
 ### Direction
 
-The extension direction of the layout.
+Specifies the extension direction of the layout.
 
-<div style="display: flex; justify-content: space-between; align-items: stretch; gap: 10px;">
-    <img src="../.gitbook/assets/design/layout_and_position_direction.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
-    <img src="../.gitbook/assets/design/layout_and_position_direction_view.png" style="flex: 1; height: 250px; object-fit: cover; width: 50%;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="../.gitbook/assets/design/layout_and_position_direction.png" alt="Horizontal layout direction" style="max-width: 48%;"/>
+  <img src="../.gitbook/assets/design/layout_and_position_direction_view.png" alt="Vertical layout direction" style="max-width: 48%;"/>
 </div>
 
-**Horizontal**
-
-Add, remove, and reorder objects along the X-axis.
-
-**Vertical**
-
-Add, remove, and reorder objects along the Y-axis.
+- **Horizontal:** Add, remove, and reorder objects along the X-axis.
+- **Vertical:** Add, remove, and reorder objects along the Y-axis.
 
 ### Distribution and Alignment
 
-You can freely adjust the distribution of child components within a page/container component and align them with reference to the parent.
+Adjust the distribution of child components within a page or container and align them relative to the parent.
 
-![](../.gitbook/assets/design/layout_and_position_distribution.png)
+![Distribution and alignment options](../.gitbook/assets/design/layout_and_position_distribution.png)
 
-**Stack**:  
+- **Stack:**  
+  ![Stack distribution](../.gitbook/assets/design/layout_and_position_stack.png)
 
-![](../.gitbook/assets/design/layout_and_position_stack.png)
+- **Space Between:** Equal spacing between components; the first and last components are flush with the container edges.  
+  ![Space between distribution](../.gitbook/assets/design/layout_and_position_spacebetween.png)
 
-**Space Between**: The spacing between components is equal, but the first and last components are flush with the edges of the container.  
+- **Space Evenly:** Equal spacing between components and equal margins at both ends of the container.  
+  ![Space evenly distribution](../.gitbook/assets/design/layout_and_position_spaceevenly.png)
 
-![](../.gitbook/assets/design/layout_and_position_spacebetween.png)
-
-**Space Evenly**: The spacing between components is equal, and the margins at both ends of the container are also equal.
-
-![](..//.gitbook/assets/design/layout_and_position_spaceevenly.png)
-
-**Space Around**: In space-around distribution, each component has equal spacing on both sides, making them appear "evenly surrounded." However, because the components at both ends only share spacing on one side with other components, the gaps between the ends and the container edges are smaller than the spacing between components.  
-
-![](../.gitbook/assets/design/layout_and_position_spacearound.png)
+- **Space Around:** Each component has equal spacing on both sides, making them appear "evenly surrounded." The gaps at the ends are half the size of the gaps between components.  
+  ![Space around distribution](../.gitbook/assets/design/layout_and_position_spacearound.png)
 
 ### Wrapping
 
-When the content width exceeds the available space of the container, the content will adjust to the next line for arrangement.  
+When content width exceeds the available space of the container, content wraps to the next line.
 
-![](../.gitbook/assets/design/layout_wrap.gif)
+![Layout wrapping example](../.gitbook/assets/design/layout_wrap.gif)
 
 ### Gap
-The spacing settings between child components within a page or container component.  
 
-![](../.gitbook/assets/design/layout_and_position_gap.png)
+Set the spacing between child components within a page or container.
+
+![Gap setting](../.gitbook/assets/design/layout_and_position_gap.png)
 
 ### Overflow
 
-![](../.gitbook/assets/design/layout_and_position_overflow.png)
+![Overflow options](../.gitbook/assets/design/layout_and_position_overflow.png)
 
-1. **Scroll**: When content overflows, a scrollbar appears on the parent, allowing you to scroll to view the overflowed content.
-
-2. **Visible**: When content overflows, the overflowed part is visible on the parent.
-
-3. **Hidden**: When content overflows, the overflowed part is hidden on the parent.
+1. **Scroll:** When content overflows, a scrollbar appears on the parent, allowing you to scroll to view the overflowed content.
+2. **Visible:** Overflowed content remains visible outside the parent.
+3. **Hidden:** Overflowed content is hidden and not visible outside the parent.
 
 ## Position
 
 ### Type
 
-![](../.gitbook/assets/design/layout_and_position_type.png)
+![Position type options](../.gitbook/assets/design/layout_and_position_type.png)
 
-1. **Relative**: Components are arranged in an orderly manner according to the layout of their parent.
-
-2. **Absolute**: Components are displayed at a fixed position based on two directions (top-left, top-right, bottom-left, bottom-right) of **their parent**.
-
-3. **Fixed**: Components are displayed at a fixed position based on two directions (top-left, top-right, bottom-left, bottom-right) of the **browser viewport**, and remain in a fixed position even when the page scrolls.
+1. **Relative:** Components are arranged in order according to the parent's layout.
+2. **Absolute:** Components are positioned at a fixed location relative to their parent (top-left, top-right, bottom-left, bottom-right).
+3. **Fixed:** Components are positioned at a fixed location relative to the browser viewport and remain fixed even when the page scrolls.
 
 ### Layer
 
-![](../.gitbook/assets/design/layout_and_position_layers.png)
+![Layer settings](../.gitbook/assets/design/layout_and_position_layers.png)
 
-* The default layer of all components is "auto," meaning all components are on the same layer.
-
-* You can manually change the layer of a component (numerically), with higher values indicating a higher layer. Components on higher layers will cover those on lower layers.
-
-* Components on the same layer are presented in the order they are added, with later additions covering earlier ones.
+- The default layer for all components is "auto," meaning all components are on the same layer.
+- You can manually set a component's layer (z-index). Higher values indicate a higher layer; components on higher layers cover those on lower layers.
+- Components on the same layer are displayed in the order they are added; later additions cover earlier ones.

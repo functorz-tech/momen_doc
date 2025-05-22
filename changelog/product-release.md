@@ -8,7 +8,7 @@ description: Announcing the latest Momen product update
 
 ### 🚀 New Features
 
-* Added cross-project copy-paste support for users with owner permissions (components, APIs, Actionflows, and AI agent)
+* Added cross-project copy-paste support for users with owner permissions (components, APIs, Actionflows, and AI agents)
 * Added a function for extracting weekdays from date expressions
 * Enabled AI to auto-fill tool names
 * Enabled real-time sync in collaborative editing mode
@@ -965,9 +965,10 @@ Introducing Momen's latest update, version 1.0.3! Packed with exciting new featu
 
 We now offer the ability to configure dynamic effects and animations on components, with four triggering options: on hover, on click, when scrolling into view, and while scrolling. Once a triggering method is selected, you can customize the effect that will be triggered.
 
-<figure><img src="../.gitbook/assets/1.1.png" alt="Editing page of a no-code tool"><figcaption></figcaption></figure>
-
-{% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNNm75vAys0CMwBUdWsgC%2Fuploads%2Fm7YFHGRCbZw3j46Uns3X%2Fmotion.mp4?alt=media&token=eed4e229-c4ba-4ec0-95b9-7e7f6bfc6ba3" %}
+<video width="640" height="360" controls>
+  <source src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FNNm75vAys0CMwBUdWsgC%2Fuploads%2Fm7YFHGRCbZw3j46Uns3X%2Fmotion.mp4?alt=media&token=eed4e229-c4ba-4ec0-95b9-7e7f6bfc6ba3" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### III. Improvements
 

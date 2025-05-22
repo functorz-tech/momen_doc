@@ -6,17 +6,17 @@ description: >-
 
 # API
 
-An API is a bridge between different applications; when an application needs to connect with external data, it is often achieved through an API.
+An API is a bridge between different applications. When an application needs to connect with external data, it is typically achieved through an API.
 
-Before starting configuration in Momen, ensure you understand the basic components of an API: Method, Domain, Path, Headers, Query Parameters, and Body. For detailed information about APIs, please refer to online resources.
+Before configuring APIs in Momen, ensure you understand the basic components of an API: Method, Domain, Path, Headers, Query Parameters, and Body. For more details about APIs, refer to online resources.
 
-Next, we will use the example of "retrieving data from Airtable" to introduce the complete configuration process.
+This guide uses "retrieving data from Airtable" as an example to introduce the complete configuration process.
 
 ## Add API
 
-Open the "API" at the top left of the Editor and click "Add".
+Open the "API" section at the top left of the Editor and click "Add".
 
-![](../.gitbook/assets/data/data_api0.png)
+![Add API in Momen](../.gitbook/assets/data/data_api0.png)
 
 ## Edit API
 
@@ -24,64 +24,64 @@ Open the "API" at the top left of the Editor and click "Add".
 
 This step determines whether the API is used as a data source or an action:
 
-* **Query**: Use the API as a **data source** for components (List, Page, etc.).
-* **Mutation**: Use the API as an **action**.
+- **Query:** Use the API as a **data source** for components (List, Page, etc.).
+- **Mutation:** Use the API as an **action**.
 
-In this example, the API is directly used as a data source for a list, so "Query" is selected.
+In this example, the API is used as a data source for a list, so "Query" is selected.
 
-![](../.gitbook/assets/data/data_api1.png)
+![Select operation type](../.gitbook/assets/data/data_api1.png)
 
 ### 2. Set the Request Format
 
-In this step, you need to determine the format of the API request and response. Momen provides two configuration methods:
+Determine the format of the API request and response. Momen provides two configuration methods:
 
-* Automatically parse the format by successfully sending a request (recommended).
-* Manually configure all content by yourself.
+- Automatically parse the format by successfully sending a request (recommended)
+- Manually configure all content
 
 #### Automatically Parse the Format
 
 First, open debug mode.
 
-![](../.gitbook/assets/data/data_api2.png)
+![Open debug mode](../.gitbook/assets/data/data_api2.png)
 
-Then, complete the request method, domain, path, body, etc., and click "Send."
+Then, complete the request method, domain, path, body, etc., and click "Send".
 
-![](../.gitbook/assets/data/data_api3.png)
+![Send API request](../.gitbook/assets/data/data_api3.png)
 
 After a successful send, click "Advanced" to confirm whether the format is correct.
 
-![](../.gitbook/assets/data/data_api4.png)
+![Advanced format confirmation](../.gitbook/assets/data/data_api4.png)
 
-Confirm the "Request Parameters" and "Response Parameters" in sequence. If you are updating the API configuration, there will be both new and old configurations, requiring a merge operation.
+Confirm the "Request Parameters" and "Response Parameters" in sequence. If you are updating the API configuration, both new and old configurations may exist, requiring a merge.
 
-![](../.gitbook/assets/data/data_api5.png)
+![Request and response parameter confirmation](../.gitbook/assets/data/data_api5.png)
 
-Once everything is confirmed, you will have the request and response format of the API, and you can proceed to use it.
+Once confirmed, you will have the request and response format of the API and can proceed to use it.
 
-![](../.gitbook/assets/data/data_api6.png)
+![API format confirmed](../.gitbook/assets/data/data_api6.png)
 
 ### Setting Default Values
 
-Once the structure of the request and response is determined, you can start setting default values for certain fields. After setting them, these fields no longer need to be assigned values when sending requests, making subsequent request configurations simpler.
+After determining the structure of the request and response, you can set default values for certain fields. These fields will not require values when sending requests, simplifying subsequent configurations.
 
-At the same time, since the default values are stored on the backend, they are very secure and can also be used to store sensitive information, such as the `Authorization` in this example.
+Since default values are stored on the backend, they are secure and suitable for sensitive information, such as `Authorization` in this example.
 
-![](../.gitbook/assets/image (26).png)
+![Set default values for API fields](../.gitbook/assets/image%20(26).png)
 
 ## Use API
 
 ### Use as a Data Source
 
-In the data source of List, Select View, and Page, you can select a data source type API.
+In the data source settings for List, Select View, and Page, you can select an API as the data source.
 
-![](../.gitbook/assets/data/data_api7.png)
+![Select API as data source](../.gitbook/assets/data/data_api7.png)
 
-During configuration, you need to specify which field in the API response is of list type and the required input parameters. Since the `Authorization` has already been set with a default value, it does not need to be filled in.
+During configuration, specify which field in the API response is a list type and the required input parameters. Since `Authorization` has a default value, it does not need to be filled in.
 
-![](../.gitbook/assets/image (27).png)
+![Configure list field and parameters](../.gitbook/assets/image%20(27).png)
 
 ### Use as an Action
 
-If you have configured a "Mutation" type API, you can find it under the "Request" category in the action list under "API."
+If you have configured a "Mutation" type API, you can find it under the "Request" category in the action list under "API".
 
-![](../.gitbook/assets/data/data_api9.png)
+![Use API as an action](../.gitbook/assets/data/data_api9.png)
