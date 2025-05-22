@@ -113,7 +113,7 @@ Once the permissions are effective, if a user lacks permission to access a resou
 }
 ```
 
-In this case, "User 1" represents the user with ID `1000000000000001`, and "has no permission for SELECT on order" indicates that the user lacks the permission to query the "order" table.
+In this case, "User 1" refers to the user with ID `1000000000000001`, and "has no permission for SELECT on order" means the user does not have permission to query the "order" table.
 
 
 
