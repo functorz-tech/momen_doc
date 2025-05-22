@@ -10,7 +10,7 @@ Some services or platforms (such as Google Search Console or website hosting pro
 
 Upload the required `.txt` validation file via **Project Settings > Global > Upload File to Root Directory**.
 
-<figure><img src="../.gitbook/assets/verification-file.jpeg" alt="Momen upload verification file"><figcaption>Upload verification file in Momen</figcaption></figure>
+![Upload verification file in Momen](../.gitbook/assets/verification-file.jpeg)
 
 ## Notes
 

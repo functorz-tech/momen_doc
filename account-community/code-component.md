@@ -59,7 +59,7 @@ npm install
 
 A typical code component library project has the following structure:
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.06.58.png" alt="Project directory structure for code component"><figcaption>Project directory structure</figcaption></figure>
+![Project directory structure for code component](../.gitbook/assets/截屏2024-10-31%2019.06.58.png)
 
 For each custom component, create a dedicated folder under `src/components` with:
 
@@ -73,11 +73,11 @@ Each component file must export four interfaces for property types:
 - **`[ComponentName]Event`**: Declares internal events with properties typed as `EventHandler` from `zvm-code-context`
 - **`[ComponentName]Prop`**: Combines the above three interfaces as `propData`, `propState`, and `event`
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.10.11.png" alt="Component interface definitions"><figcaption>Component interface definitions</figcaption></figure>
+![Component interface definitions](../.gitbook/assets/截屏2024-10-31%2019.10.11.png)
 
 Expose newly created components in `src/components/index.ts`.
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.11.35.png" alt="Export components in index.ts"><figcaption>Export components in index.ts</figcaption></figure>
+![Export components in index.ts](../.gitbook/assets/截屏2024-10-31%2019.11.35.png)
 
 Refer to the template’s example code for guidance. Follow the conventions strictly for proper component and declaration recognition.
 
@@ -98,24 +98,24 @@ To add your custom code component to a no-code project:
 1. Click the code component icon on the left sidebar.
 2. Select your newly published component project in the pop-up window.
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.15.31.png" alt="Import code component in Momen"><figcaption>Import code component in Momen</figcaption></figure>
+![Import code component in Momen](../.gitbook/assets/截屏2024-10-31%2019.15.31.png)
 
 Once added, the component will appear at the bottom of the left sidebar.
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.16.40.png" alt="Code component in sidebar"><figcaption>Code component in sidebar</figcaption></figure>
+![Code component in sidebar](../.gitbook/assets/截屏2024-10-31%2019.16.40.png)
 
 ### Database Synchronization
 
 After configuring or modifying a component, sync the database or preview to ensure it functions at runtime. Click the **database sync icon** (upper left of the interface).
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.18.04.png" alt="Database sync icon in Momen" width="297"><figcaption>Database sync icon</figcaption></figure>
+![Database sync icon](../.gitbook/assets/截屏2024-10-31%2019.18.04.png)
 
 ### Configuring Component Properties
 
 Properties are parsed according to their declared types. Follow naming conventions and structure precisely to ensure compatibility with Momen.
 
-<figure><img src="../.gitbook/assets/截屏2024-10-31 19.19.18.png" alt="Component property configuration in Momen"><figcaption>Component property configuration</figcaption></figure>
+![Component property configuration](../.gitbook/assets/截屏2024-10-31%2019.19.18.png)
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real-time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.

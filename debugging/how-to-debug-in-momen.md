@@ -1,67 +1,67 @@
 # How to Debug in Momen
 
-Debugging is a critical aspect of application development. Learning how to observe issues, pinpoint errors, and resolve problems in cases of errors and exceptions is a fundamental skill for developers. Among these, observation is the most crucial step, serving as the foundation for subsequent actions. Therefore, this document primarily focuses on how to observe and extract necessary information in Momen.
+Debugging is a critical aspect of application development. Learning to observe issues, pinpoint errors, and resolve problems is a fundamental skill for developers. Observation is the most crucial step, serving as the foundation for subsequent actions. This document focuses on how to observe and extract necessary information in Momen.
 
-Momen categorizes errors into three types: **Editing Errors**, **Deployment and Publishing Errors**, and **Runtime Errors**. This document provides guidance on how to debug each type of error.
+Momen categorizes errors into three types: **Editing Errors**, **Deployment and Publishing Errors**, and **Runtime Errors**. This guide explains how to debug each type.
 
-### Editing Errors
+## Editing Errors
 
-#### Symptoms
+### Symptoms
 
-* The error icon in the top-right corner of the editor displays a number.
+- The error icon in the top-right corner of the editor displays a number.
 
-#### Solution
+### Solution
 
-* Click the icon to navigate to the error and modify the issue based on the error message.
-* Below are two examples:
+- Click the icon to navigate to the error and modify the issue based on the error message.
+- See the examples below:
 
 **Example 1: Type Error**
 
-* Type mismatch in component, action, or bound data.
-  * Expected type: `(Null | Nothing | Int)`
-  * Actual type: `String`
-* **Analysis & Solution:** Entering "$1" in a price field triggers a type error since the field requires an integer value. Remove the "$" symbol to resolve the issue.
+- Type mismatch in a component, action, or bound data.
+  - Expected type: `(Null | Nothing | Int)`
+  - Actual type: `String`
+- **Analysis & Solution:** Entering "$1" in a price field triggers a type error since the field requires an integer. Remove the "$" symbol to resolve the issue.
 
-<figure><img src="../.gitbook/assets/output (2).png" alt="Type error example: type mismatch in price field"><figcaption>Type error: expected integer, got string</figcaption></figure>
+![Type error: expected integer, got string](../.gitbook/assets/output%20(2).png)
 
 **Example 2: Missing Required Field**
 
-* The system detects that a required field is not provided.
-* Modify the field according to the error message.
+- The system detects that a required field is not provided.
+- Modify the field according to the error message.
 
-<figure><img src="../.gitbook/assets/output (1).png" alt="Missing required field error example"><figcaption>Missing required field error</figcaption></figure>
+![Missing required field error](../.gitbook/assets/output%20(1).png)
 
-***
+---
 
-### Deployment and Publishing Errors
+## Deployment and Publishing Errors
 
-#### Symptoms
+### Symptoms
 
 1. Error during preview update.
 2. Backend deployment failure.
 
-#### Solution
+### Solution
 
 1. Check the error message (if available).
 2. Fix the issue based on the provided error details. If unclear, ask AI for assistance.
 3. Report the issue to our team.
 
-<figure><img src="../.gitbook/assets/output (2) (1).png" alt="Deployment or preview update error message"><figcaption>Deployment or preview update error</figcaption></figure>
+![Deployment or preview update error](../.gitbook/assets/output%20(2)%20(1).png)
 
 **Example: Backend Update Failure**
 
-* Solution: Click "Report Issue," and the support team will handle it.
+- Solution: Click "Report Issue" and the support team will handle it.
 
-<figure><img src="../.gitbook/assets/530c9a38-3772-4fa0-ad4b-78ab427b08c9.png" alt="Backend update failure report issue button"><figcaption>Report backend update failure</figcaption></figure>
+![Report backend update failure](../.gitbook/assets/530c9a38-3772-4fa0-ad4b-78ab427b08c9.png)
 
-### UI Display Issues in Production
+## UI Display Issues in Production
 
-#### Symptoms
+### Symptoms
 
-* Components that appear aligned in the editor may be misaligned in the preview.
-* Components that fit within the editor may exceed the screen width on mobile devices.
+- Components that appear aligned in the editor may be misaligned in the preview.
+- Components that fit within the editor may exceed the screen width on mobile devices.
 
-#### Solution
+### Solution
 
 1. **Check UI Design Configurations**
 
@@ -79,34 +79,34 @@ Example 2: A text component inside a view component overflows. To fix this, chan
 
 If no configuration errors are found, report the issue to our team.
 
-***
+---
 
-### Request Errors
+## Request Errors
 
-#### Quick Error Handling
+### Quick Error Handling
 
 When a request error occurs, the frontend page or request log usually displays an error message.
 
-* Use the [request-error-reference.md](request-error-reference.md "mention") to diagnose and resolve common errors.
-* Alternatively, AI can help analyze errors based on logs and request data.
+- Use the [request-error-reference.md](request-error-reference.md "mention") to diagnose and resolve common errors.
+- Alternatively, AI can help analyze errors based on logs and request data.
 
-#### Identifying Faulty Requests
+### Identifying Faulty Requests
 
 Find errors in the browser using developer tools or in Momen's Log.
 
-* **Browser:** Press `F12` or right-click > "Inspect" > Open debugging mode > Click `Network` > Find `graphql-v2` requests.
+- **Browser:** Press `F12` or right-click > "Inspect" > Open debugging mode > Click `Network` > Find `graphql-v2` requests.
 
 <figure><img src="../.gitbook/assets/output (3).png" alt="Browser developer tools showing graphql-v2 request"><figcaption>Find request errors in browser developer tools</figcaption></figure>
 
-* **Momen Logs:** Click "Logs" in the editor for [more detailed logs](https://docs.momen.app/release-and-growth/log_service).
+- **Momen Logs:** Click "Logs" in the editor for [more detailed logs](https://docs.momen.app/release-and-growth/log_service).
 
 <figure><img src="../.gitbook/assets/2814ec88-2923-443e-9c40-6cda6923a199.png" alt="Momen log service interface"><figcaption>View detailed logs in Momen</figcaption></figure>
 
-#### Analyze Request & Response Data
+### Analyze Request & Response Data
 
 In a request, focus on:
 
-* **Request Body:** Contains critical information about the query structure and parameters. Find detailed information in "payload".
+- **Request Body:** Contains critical information about the query structure and parameters. Find detailed information in "payload".
 
 Example:
 
@@ -130,7 +130,7 @@ Example:
 
 The **query** section contains the query statement, which defines the structure of the requested data. From this example, the query targets the **blog\_article** table and is limited to retrieving **two records** (`limit: 2`). The **variables** section contains the parameters for this query, corresponding to the filter conditions, sorting, and deduplication settings configured in the editor. Here, the `"where"` condition filters records where the **title contains "AI"**, and the `"orderBy"` condition sorts the results in **ascending order by "created\_at"**.
 
-* **Response Body:** Displays results and errors. Look for `errors` in the response when debugging.
+- **Response Body:** Displays results and errors. Look for `errors` in the response when debugging.
 
 <figure><img src="../.gitbook/assets/218e5ea0-7fb2-4de7-9359-b9f87917fb49.png" alt="Response body with error details"><figcaption>Response body showing error details</figcaption></figure>
 
@@ -149,14 +149,14 @@ Example: Permission Error Response:
 }
 ```
 
-#### Error Investigation & Fixes
+### Error Investigation & Fixes
 
-* By examining the request body, check whether the query statements and parameters match the configurations in the editor.
-* By analyzing the response body, check for any errors and verify if the results meet expectations.
-* Once enough information is gathered, make an educated guess about the possible cause of the issue and attempt to fix it.
-* If the cause of the error cannot be determined, provide the collected information to AI and refer to the prompt in Step 1 for assistance.
+- By examining the request body, check whether the query statements and parameters match the configurations in the editor.
+- By analyzing the response body, check for any errors and verify if the results meet expectations.
+- Once enough information is gathered, make an educated guess about the possible cause of the issue and attempt to fix it.
+- If the cause of the error cannot be determined, provide the collected information to AI and refer to the prompt in Step 1 for assistance.
 
-#### Case Studies
+### Case Studies
 
 1. **Payment/Refund Error:**
    * If a refund action fails, check the logs. If it's a permission issue, verify the project’s permission settings.
@@ -183,7 +183,7 @@ Example: Permission Error Response:
 
 <figure><img src="../.gitbook/assets/7adc513a-55d5-4ace-a063-f40219af4b5d.png" alt="Component display issue due to data mismatch"><figcaption>Component display issue: data mismatch</figcaption></figure>
 
-### Debugging Best Practices
+## Debugging Best Practices
 
 1. **Clearly Define the Issue and Reproduce It**
    * Document error behavior, including triggers and error messages.
@@ -196,9 +196,9 @@ Example: Permission Error Response:
 3. **Incremental Fixes & Testing**
    * Modify one variable at a time to isolate the root cause.
 
-***
+---
 
-### Technical Support & Resources
+## Technical Support & Resources
 
 1. **Official Documentation:** Check our documentation for more details.
 2. **Community Support:** Post questions on [forum.momen.app](https://forum.momen.app) or email us at [hello@momen.app](mailto:hello@momen.app).

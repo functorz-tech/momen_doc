@@ -15,7 +15,7 @@ Share your unique invite code to earn up to 10% commission when a new user regis
 
 **Get Started:** Click the **Promote Us** button in the top-right corner of the platform.
 
-<figure><img src="../.gitbook/assets/promous1.jpeg" alt="Promote Us button in Momen"><figcaption>Promote Us button in Momen</figcaption></figure>
+![Promote Us button in Momen](../.gitbook/assets/promous1.jpeg)
 
 **Get Your Promo Code:** Copy your unique invitation code or link and start sharing it. Friends can enter the invitation code during registration, or sign up directly via your link (the code will be auto-filled).
 
@@ -27,7 +27,7 @@ You earn 10% commission. If your referral uses a discount, your commission is ba
 
 - Example: If your referral subscribes to the monthly Pro plan for $99, you earn $9.90. With a 50% discount, your commission is $4.95.
 
-Program End Date: December 31, 2025.
+**Program End Date:** December 31, 2025.
 
 _Please note: Commission rates and terms are subject to change at any time._
 
@@ -46,7 +46,7 @@ Within 7 business days, your earnings will be automatically transferred to your 
 
 **Track Your Promotion Performance:**
 
-<figure><img src="../.gitbook/assets/20250402-142850.jpeg" alt="Promotion performance dashboard in Momen"><figcaption>Promotion performance dashboard in Momen</figcaption></figure>
+![Promotion performance dashboard in Momen](../.gitbook/assets/20250402-142850.jpeg)
 
 - **Paid Users:** Number of paid users / number of users you’ve referred
 - **Accumulated Commissions:** View your total earnings

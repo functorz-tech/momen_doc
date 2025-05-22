@@ -44,40 +44,42 @@ First, create a "Blog" table in the Data model to store articles, including fiel
 - like_count
 - ...
 
-<figure><img src="../.gitbook/assets/image (37).png" alt="Blog table fields example"><figcaption>Blog table fields example</figcaption></figure>
+![Blog table fields example](../.gitbook/assets/image%20(37).png)
 
 Create a blog upload page and add input fields, an Image Picker, a rich text Editor, and a Date & Time Picker to collect user input for the article title, subtitle, cover, content, and publish date. Add a button to save the article to the database.  
 Bind the "Insert Blog" action to the button. Bind values to each field, and in the "inputs" category of the Data Selector menu, select the components you just added.
 
-<figure><img src="../.gitbook/assets/image (39).png" alt="Blog upload page configuration"><figcaption>Blog upload page configuration</figcaption></figure>
+![Blog upload page configuration](../.gitbook/assets/image%20(39).png)
 
 ### Displaying Article List
 
 This feature involves **Database** and **List Item Data**.  
 Add a List component to the page, select the "Blog" table as the data source, enable Load more, set the limit to 3, and sort by show_at in descending order.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt="Blog list component configuration"><figcaption>Blog list component configuration</figcaption></figure>
+![Blog list component configuration](../.gitbook/assets/image%20(40).png)
 
 Components within list items also need to bind data. The data selection path is: In-component data → blog_list (List component name) → item. "Item" represents the data for each entry, and you can select the corresponding field within it.
 
-<figure><img src="../.gitbook/assets/image (41).png" alt="List item data binding example"><figcaption>List item data binding example</figcaption></figure>
+![List item data binding example](../.gitbook/assets/image%20(41).png)
 
 ### Displaying Article Details
 
 This feature involves **Page Parameter**, **List Item Data**, and **Page Data Source**.  
 When a user clicks an item in the article list, it navigates to the blog detail page, passing the blog's ID via a page parameter. In the detail page's data source, use this ID as a filter to retrieve the corresponding article.  
 Create a blog detail page and add a page query parameter (see details: [Parameter](https://docs.momen.app/data/parameter)), named "blog_id". On the blog list page, add the "Go To Blog Detail" action to the list item, and set the value of post_id to the ID of the list item data.
+![Configure navigation to blog detail page](../.gitbook/assets/image%20(42).png)  
+*Figure: Configure navigation to blog detail page*
 
-<figure><img src="../.gitbook/assets/image (42).png" alt="Configure navigation to blog detail page"><figcaption>Configure navigation to blog detail page</figcaption></figure>
-<figure><img src="../.gitbook/assets/image (43).png" alt="Set page parameter for blog detail"><figcaption>Set page parameter for blog detail</figcaption></figure>
+![Set page parameter for blog detail](../.gitbook/assets/image%20(43).png)  
+*Figure: Set page parameter for blog detail*
 
 Add a data source to the detail page, select "Blog" as the table, set the limit to 1, and the filter to "ID equals Query/blog_id". This enables data transfer between pages during navigation.
 
-<figure><img src="../.gitbook/assets/image (44).png" alt="Detail page data source configuration"><figcaption>Detail page data source configuration</figcaption></figure>
+![Detail page data source configuration](../.gitbook/assets/image%20(44).png)
 
 On the detail page, add text, images, and other components, bind them to the page data source, and display the article.
 
-<figure><img src="../.gitbook/assets/image (45).png" alt="Display article details"><figcaption>Display article details</figcaption></figure>
+![Display article details](../.gitbook/assets/image%20(45).png)
 
 ### Article Liking and Message Notification
 
@@ -85,18 +87,18 @@ This feature involves **List Item Data** and **Action Result Data**.
 Users can like articles, and after liking, a message notification is automatically sent to the author.  
 The like_count field in the blog table represents the number of likes. Create a notification table to store message notifications, where the message field is the content, sender is the sender's account ID, and receiver is the receiver's account ID.
 
-<figure><img src="../.gitbook/assets/image (48).png" alt="Notification table fields example"><figcaption>Notification table fields example</figcaption></figure>
+![Notification table fields example](../.gitbook/assets/image%20(48).png)
 
 On the page, add a like button in the article list item and bind the "Update Blog" action to increase the like count. When updating, you need to know which article is being updated; the current item data contains the article being clicked. Add a filter: **ID equals list item data's ID**, ensuring only the current article is updated.
 
 **Always check and confirm filter conditions when updating or deleting data to avoid affecting all records.**
 
-<figure><img src="../.gitbook/assets/image (46).png" alt="Like button update action configuration"><figcaption>Like button update action configuration</figcaption></figure>
+![Like button update action configuration](../.gitbook/assets/image%20(46).png)
 
 After liking, send a notification to the author by adding an "Insert Notification" action onSuccess of "Update Blog". The message content can be: The article "${article title}" received new likes, bringing the total to: ${like count}.  
 The article title comes from the list item data. After "Insert Blog" succeeds, the latest updated data is returned, so the latest like count can be obtained from the action result data.
 
-<figure><img src="../.gitbook/assets/image (49).png" alt="Insert notification action configuration"><figcaption>Insert notification action configuration</figcaption></figure>
+![Insert notification action configuration](../.gitbook/assets/image%20(49).png)
 
 ### Notes
 

@@ -10,7 +10,7 @@ description: >-
 
 "My Wallet" provides users with convenient payment options on Momen, enabling purchases using discount coupons and credits.
 
-<figure><img src="../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt="My Wallet dashboard in Momen"><figcaption>My Wallet dashboard in Momen</figcaption></figure>
+![My Wallet dashboard in Momen](../.gitbook/assets/截屏2024-11-01%2011.45.03.png)
 
 ## Benefits
 
@@ -29,12 +29,12 @@ description: >-
 - **Usage Restrictions:** Vary by project plan and minimum spending amount
 - **Validity:** Must be used within a specified period
 
-<figure><img src="../.gitbook/assets/Frame 48096512.png" alt="Coupon list in My Wallet"><figcaption>Coupon list in My Wallet</figcaption></figure>
+![Coupon list in My Wallet](../.gitbook/assets/Frame%2048096512.png)
 
 **Usage:**  
 The system automatically selects the best available coupon on the order page if applicable coupons exist.
 
-<figure><img src="../.gitbook/assets/Group 40355.png" alt="Coupon applied to order"><figcaption>Coupon applied to order</figcaption></figure>
+![Coupon applied to order](../.gitbook/assets/Group%2040355.png)
 
 **Records:**  
 All coupons used or expired in the last 7 days are documented.
@@ -50,15 +50,15 @@ All coupons used or expired in the last 7 days are documented.
 
 - **Viewing:** Access "My Wallet" and view your credit balance in the top left corner.
 
-<figure><img src="../.gitbook/assets/20241101-121004.jpeg" alt="Credit balance in My Wallet"><figcaption>Credit balance in My Wallet</figcaption></figure>
+![Credit balance in My Wallet](../.gitbook/assets/20241101-121004.jpeg)
 
 - **Usage:** If your credit is sufficient, credit payment is the default option. Users can also choose Stripe payment.
 
-<figure><img src="../.gitbook/assets/Group 40355 (1).png" alt="Credit payment option"><figcaption>Credit payment option</figcaption></figure>
+![Credit payment option](../.gitbook/assets/Group%2040355%20(1).png)
 
 - **Records:** View records of purchases made using credits in the billing section.
 
-<figure><img src="../.gitbook/assets/20241101-121532.gif" alt="Credit transaction records"><figcaption>Credit transaction records</figcaption></figure>
+![Credit transaction records](../.gitbook/assets/20241101-121532.gif)
 
 **Important Notes:**
 
@@ -67,4 +67,4 @@ All coupons used or expired in the last 7 days are documented.
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real-time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.

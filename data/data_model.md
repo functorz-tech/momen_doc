@@ -178,27 +178,27 @@ Add a Data source to the page, select "Blog", set limit to 1, and add a filter: 
 
 Once the article is loaded, bind its data to the components for display. For example, set the default value of the title input to the article's title.
 
-<figure><img src="../.gitbook/assets/image (34).png" alt="Bind article data to input fields"><figcaption>Bind article data to input fields</figcaption></figure>
+![Bind article data to input fields](../.gitbook/assets/image%20(34).png)
 
 Bind the "Update post" action to the modification button, bind fields to components, and add a filter: ID equals the blog's ID in the Data source.
 
 **When modifying or deleting, always check and confirm filter conditions to avoid updating or deleting all data.**
 
-<figure><img src="../.gitbook/assets/image (35).png" alt="Update action configuration"><figcaption>Update action configuration</figcaption></figure>
+![Update action configuration](../.gitbook/assets/image%20(35).png)
 
 #### 4. Delete Data
 
 To delete articles, add the "Delete blog" action to the delete button, and set the filter: ID equals the blog's ID in the Data source.
 
-<figure><img src="../.gitbook/assets/image (36).png" alt="Delete action configuration"><figcaption>Delete action configuration</figcaption></figure>
+![Delete action configuration](../.gitbook/assets/image%20(36).png)
 
 ## Data Import
 
-Click on the data model at the top left of the Editor to enter the database, and click the import button.
+Click the data model at the top left of the Editor to enter the database, then click the import button.
 
 ### 1. Select the Data Source to Import
 
-- Only supports Excel files with UTF-8 encoding (`.xls`, `.xlsx`). Otherwise, you may encounter garbled text or upload failure. Use a recent version of Excel and avoid WPS.
+- Only Excel files with UTF-8 encoding (`.xls`, `.xlsx`) are supported. Otherwise, you may encounter garbled text or upload failure. Use a recent version of Excel and avoid WPS.
 - The first row of the Excel file is used as the header.
 - Avoid extra data or spaces in unused columns, and do not include multiple worksheets in one file.
 - Ensure at least one data record exists, or a format error will occur.
@@ -223,7 +223,7 @@ If there are no media files, skip this step. If needed:
 - For videos, use a folder named `video` and compress to `video.zip`.
 - For Excel, doc, pdf, and audio files, use a folder named `file` and compress to `file.zip`.
 
-**Only single media type imports are supported at a time. For example, you cannot batch import images and videos together. If your data contains both, store them in different tables and establish relationships before importing separately.**
+**Only one media type can be imported at a time. For example, you cannot batch import images and videos together. If your data contains both, store them in different tables and establish relationships before importing separately.**
 
 ### 6. Preview
 

@@ -18,7 +18,7 @@ description: >-
 
 1. Access the log service from the "Log Service" section on the project details page.
 
-<figure><img src="../.gitbook/assets/log.png" alt="Log service entry"><figcaption>Log Service entry in project details</figcaption></figure>
+![Log Service entry in project details](../.gitbook/assets/log.png)
 
 2. Use the following features for efficient log viewing:
 
@@ -27,7 +27,7 @@ description: >-
 - **Bar Chart:** Visualize log statistics; click the chart to set time ranges.
 - **Log Details:** View detailed information; click field values to add them to your query.
 
-<figure><img src="../.gitbook/assets/20241031-175313.jpeg" alt="Log service features"><figcaption>Log viewing features</figcaption></figure>
+![Log viewing features](../.gitbook/assets/20241031-175313.jpeg)
 
 ## Query Syntax
 
@@ -122,14 +122,14 @@ Records trigger activation time, type, and related information.
 
 #### Gateway
 
-A gateway connects different networks and forwards data. On Momen, the following requests pass through the gateway:
+A gateway connects different networks and forwards data. In Momen, the following requests pass through the gateway:
 1. Requests from the frontend to the backend.
 2. Requests received via Callback.
 
 Logs in this category include most requests (database CRUD, API, AI, etc.).  
 **Note:** Only outgoing requests are visible in gateway logs; request results are not shown.
 
-<img src="../.gitbook/assets/截屏2024-10-31 18.11.48.png" width="100%" alt="Gateway log example">
+![Gateway log example](../.gitbook/assets/截屏2024-10-31%2018.11.48.png)
 
 #### Deployment and Release
 

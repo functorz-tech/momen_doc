@@ -1,6 +1,6 @@
 # Request Error Reference
 
-This reference provides explanations and solutions for common request error messages encountered in Momen. Use this table to quickly identify the cause of an error and the recommended resolution.
+This reference explains and provides solutions for common request error messages encountered in Momen. Use this table to quickly identify the cause of an error and the recommended resolution.
 
 | Error Message                                  | Explanation                                                   | Cause                                                                            | Solution                                            |
 | ---------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------- |
@@ -10,7 +10,7 @@ This reference provides explanations and solutions for common request error mess
 | Table access denied                            | User lacks access permission for a table                      | Permission settings issue                                                        | Adjust table access permissions                     |
 | Actionflow not found                           | Backend deployment was not completed                          | Actionflow missing from backend                                                  | Deploy the actionflow and retry                     |
 | Another app is deploying                       | Concurrent deployments detected                               | Backend is already in deployment                                                 | Wait for the current deployment to finish           |
-| CANNOT_DEPLOY_AN_OLDER_SCHEMA                  | Deployment failed                                             | The project is not using the latest schema version (excluding web publishing)    | Refresh the page and retry                          |
+| CANNOT_DEPLOY_AN_OLDER_SCHEMA                  | Deployment failed                                             | The project is not using the latest schema version (except web publishing)       | Refresh the page and retry                          |
 | PROJECT_ENV_CONFIG_SYNC_ERROR                  | Data synchronization failure                                  | Synchronization failed during backend deployment (e.g., data model, actionflow)  | Refresh the page and retry                          |
 | TARGET_PLATFORM_IS_DEPLOYING                   | Project deployment in progress                                | The same build target is currently being deployed                                | Wait for deployment to finish and retry             |
 | NO_PROJECT_WECHAT_APP_CONFIG                   | Deployment failed due to missing configuration                | WeChat Mini Program deployment lacks necessary settings                          | Rebind the Mini Program and retry                   |
