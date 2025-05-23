@@ -4,71 +4,67 @@ description: >-
 ---
 
 # AI Data Model
-Momen AI provides users with four data tables as shown below to record data generated during dialogues with AI. Developers can directly use these four tables for AI application data display and interaction.
 
-<figure><img src="../../.gitbook/assets/截屏2024-07-23 14.48.32.png" alt=""><figcaption></figcaption></figure>
+Momen AI provides four data tables to record information generated during interactions with AI. Developers can use these tables directly for AI application data display and interaction.
 
-## 1. Conversation
+![AI data model tables](../../.gitbook/assets/截屏2024-07-23%2014.48.32.png)
 
-Used to record data from a particular session. In the AI configuration interface, debugging, and invoking the \[Start Conversation] below, a new data entry is automatically added to the table.&#x20;
+## Conversation
 
-**Field Explanation:**
+Records data for each AI session. When you debug or invoke **Start Conversation** in the AI configuration interface, a new entry is automatically added.
 
-* Account ID: Integer type, a relational field produced by a one-to-many relationship between the account table and the conversation table, used to record which user initiated this session.
-* Input: At the start of the session, the related content of this AI configuration is saved in this field, i.e., AI prompts, knowledge base configuration, tool configuration, and output configuration.
-* Status: Records the status of this session. The default six statuses allow for setting business logic according to the dialogue state:
-  * CREATED: The initial state when created.
-  * IN PROGRESS: Waiting for AI's reply after being sent.
-  * STREAMING: AI is in the process of streaming output.
-  * COMPLETED: AI has completed replying.
-  * FAILED: Various failure states.
-  * CANCELED: Status after stopping the reply.
+**Fields:**
+- **Account ID:** Integer. Relates to the account table; records which user started the session.
+- **Input:** Stores the AI configuration at session start (prompts, knowledge base, tool config, output config).
+- **Status:** Tracks the session state. Default statuses:
+  - `CREATED`: Initial state.
+  - `IN PROGRESS`: Awaiting AI reply.
+  - `STREAMING`: AI is streaming output.
+  - `COMPLETED`: AI has finished replying.
+  - `FAILED`: Failure state.
+  - `CANCELED`: Stopped by user.
 
-## 2. Message
+## Message
 
-Used to record message logs under a particular session, but not the specific message content.
+Records message logs for each session (not the message content itself).
 
-**Field Explanation:**
+**Fields:**
+- **Account ID:** Integer. Relates to the account table; records the message owner.
+- **Role:** Text. Indicates sender:
+  - `system`: System-generated (prompts, knowledge base/tool results).
+  - `assistant`: AI-generated reply.
+  - `user`: User input.
+- **Conversation ID:** Integer. Relates to the session table; links message to session.
 
-* Account ID: Integer, a relational field produced by a one-to-many relationship between the account table and the message table, used to record which user the message belongs to.
-* Role: Text, defaults to the following three roles, recording who the sender of the message is:
-  * system: When triggering \[Start Session], the prompts (including user-entered input parameters), results returned by the knowledge base, and results from tool invocation are sent to AI, and this message is recorded under the role of system.
-  * assistant: Results returned by AI are recorded under the role of assistant.
-  * user: When clicking to continue the conversation, the content entered by the user from the input box and sent to AI is recorded under the role of user.
-* Conversation ID: Integer type, a relational field produced by a one-to-many relationship between the session table and the message table, used to record which session this message belongs to.
+- In single-turn conversations, only `system` and `assistant` roles appear.
+- In multi-turn, the first message is `system`, followed by `assistant`. For **Continue Conversation**, messages are sent as `user`, and `assistant` replies.
 
-In a single-round dialogue, only the roles of system and assistant appear in the message table.
+---
 
-In multi-round dialogues, the first message triggered by \[Start Conversation] is sent by system, and assistant returns results based on system's content.
+## Message Content
 
-In \[Continue Conversation], messages are sent as the user, and assistant continues to process all previous messages and returns results.
+Stores the actual content of each message. Since messages may include both images and text, Momen AI saves them separately and links them to the message.
 
-## 3. Message Content
+**Fields:**
+- **Type:** Text. One of: `text`, `image`, `JSON`.
+- **Text:** Text content (if applicable).
+- **Image:** Image content (if applicable).
+- **JSON:** JSON content (if applicable).
+- **Message ID:** Integer. Relates to the message table; links content to message.
 
-Used to record specific message content. Since the content sent to AI might include both images and text, Momen AI saves images and text separately in the message content table and automatically associates them with a particular message.
+## Tool Usage Record
 
-**Field Explanation:**
+Tracks tool usage during AI operations. If AI calls multiple tools for a message, each usage is recorded and linked to the message.
 
-* Type: Text type, defaults to the following three types, recording the type of this data: text, image, JSON.
-* Text: Text type, if the message is a text, it is saved in this field.
-* Image: Image type, if the message is an image, it is saved in this field.
-* JSON: JSON type, if the message is a JSON, it is saved in this field.
-* Message ID: Integer type, a relational field produced by a one-to-many relationship between the message table and the message content table, used to record which specific message content belongs to which message.
-
-## 4. Tool Usage Record
-
-Used to record the usage of tools during AI operation. Since AI might call multiple tools when processing a particular message, Momen AI saves a record of each tool's usage in this table and automatically associates it with a particular message.
-
-**Field Explanation:**
-
-* Name: Text type, records the name of the tool.
-* Call ID: Text type, records the tool call ID.
-* Type: Text type, defaults to the following four types, recording the type of the tool:
-  * ACTION\_FLOW: Behavior flow.
-  * TPA: Third-party API.
-  * Momen AI: Other AI.
-  * OBTAIN\_MORE\_INFORMATION: Obtain more information.
-* Request: JSON type, the request made when invoking the tool.
-* Response: JSON type, the result returned when the tool is called.
-* Message ID: Integer type, a relational field produced by a one-to-many relationship between the tool usage record table and the message table, used to record which message this tool usage record belongs to.
+**Fields:**
+- **Name:** Text. Tool name.
+- **Call ID:** Text. Tool call identifier.
+- **Type:** Text. One of:
+  - `ACTION_FLOW`: Actionflow.
+  - `TPA`: Third-party API.
+  - `Momen AI`: Other AI.
+  - `OBTAIN_MORE_INFORMATION`: Fetch more info.
+- **Request:** JSON. The request sent to the tool.
+- **Response:** JSON. The tool's response.
+- **Message ID:** Integer. Relates to the message table; links usage record to message.
 

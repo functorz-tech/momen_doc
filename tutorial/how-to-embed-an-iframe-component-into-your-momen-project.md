@@ -4,78 +4,102 @@ description: Learn how to embed an iframe into your website.
 
 # How to Embed an Iframe Component into Your Momen Project
 
-### Introduction
+## Introduction
 
-This document serves as a comprehensive guide for introducing and developing custom components, specifically focusing on creating an iframe-embedded component. For a live demonstration of what you'll be building, visit [Momen Ai](https://momen.app/ai).
+This guide explains how to create and integrate a custom iframe component into your Momen project.  
+For a live demo, visit [Momen AI](https://momen.app/ai).
 
-<figure><img src="../.gitbook/assets/1 (32).png" alt="an iframe component in a no-code tool"><figcaption></figcaption></figure>
+![Iframe component example](../.gitbook/assets/1%20(32).png "Iframe component example")
 
-### Prerequisites
+---
 
-Your project needs to be a web-based application utilizing ZVM for rendering. It should be structured as a React project leveraging Vite and its ecosystem. This setup allows developers the flexibility to craft new components tailored to their specific requirements. However, to ensure compatibility with Momen, adherence to particular standards is necessary.
+## Prerequisites
 
-1. It's imperative that your custom project is publicly available on GitHub under your developer account. Momen facilitates this process by offering a template project. You can initiate your development by forking this template from [https://github.com/oychao/zvm-custom-comp-template](https://github.com/oychao/zvm-custom-comp-template). Please avoid directly cloning the template to ensure your project remains unique.
+- Your project must be a web-based app using ZVM for rendering.
+- The project should be structured as a React app with Vite.
+- Your custom component project must be public on GitHub.
+- Start by forking the [Momen ZVM custom component template](https://github.com/oychao/zvm-custom-comp-template) (do not clone directly).
 
-<figure><img src="../.gitbook/assets/2 (27).png" alt="prerequisites for creating iframe"><figcaption></figcaption></figure>
+![Fork template project](../.gitbook/assets/2%20(27).png "Fork template project")
 
-### Configuration Steps
+---
 
-1. Fork and Clone: Begin by forking the project to your repository, then clone it locally with `git clone https://github.com/%youraccount%/zvm-custom-comp-template`.
+## Configuration Steps
 
-<figure><img src="../.gitbook/assets/3 (20).png" alt="clone your project"><figcaption></figcaption></figure>
+1. **Fork and Clone**  
+   Fork the template to your GitHub account, then clone it locally:
+   ```
+   git clone https://github.com/%youraccount%/zvm-custom-comp-template
+   ```
+   ![Clone your project](../.gitbook/assets/3%20(20).png "Clone your project")
 
-2. Initialize the Project: To start, install dependencies with `npm i` to prevent errors, then launch the project using `npm run dev`. This step ensures the project's functionality locally before its integration into your Momen project.
+2. **Initialize the Project**  
+   Install dependencies and start the project:
+   ```
+   npm i
+   npm run dev
+   ```
+   ![Initialize the project](../.gitbook/assets/4%20(1).gif "Initialize the project")
 
-<figure><img src="../.gitbook/assets/4 (1).gif" alt="initializing the project"><figcaption></figcaption></figure>
+3. **Create the Iframe Component**  
+   Replace or add a new component under `src/components/`:
+   ```javascript
+   export function Iframe() {
+     return <iframe 
+       style={{ width: '100%', height: '100%', border: "0", borderRadius: "30px" }} 
+       src="https://0gon984kvrrve.villa.momen.app/"></iframe>;
+   }
+   ```
+   ![Add a new component](../.gitbook/assets/5%20(13).png "Add a new component")
 
-3. Modify to Iframe Component: The starter project includes a basic counter component. You'll need to replace or supplement this with an iframe component by adding it under `src/components/`. This demonstrates the embedding of a custom webpage.
+4. **Export Components**  
+   Export your components via `src/components/index.ts` (the main entry point).
 
-```javascript
-export function Iframe() {
-  return <iframe 
-  style={{ width: '100%', height: '100%', border: "0", borderRadius: "30px" }} 
-  src="https://0gon984kvrrve.villa.momen.app/"></iframe>;
-}
-```
+   ![Export your component](../.gitbook/assets/6%20(12).png "Export your component")
 
-Or you can replace the original counter component by adding a new component.
+5. **Configure `config.json`**  
+   Define your component's settings, preview path, and description. Follow npm versioning standards for updates.
 
-<figure><img src="../.gitbook/assets/5 (13).png" alt="add a new component"><figcaption></figcaption></figure>
+   ![Component configuration](../.gitbook/assets/7%20(8).png "Component configuration")
 
-4. Export Components: It's crucial to export your components through `src/components/index.ts`. This file serves as the main entry point for component exposure.
+6. **Local Debugging**  
+   Use `App.tsx` for local testing before integrating with Momen.
 
-<figure><img src="../.gitbook/assets/6 (12).png" alt="export your component"><figcaption></figcaption></figure>
+7. **Commit to GitHub**  
+   Push your changes to the main branch of your repository.
 
-5. Configuration in `config.json`: This configuration file is vital for making your components recognizable in the Momen editor. It involves detailing each component's settings, such as names, preview paths, and descriptions, while adhering to npm versioning standards for updates.
+8. **Integrate with Momen**  
+   In Momen, link your repository and configure the display name and address.
 
-<figure><img src="../.gitbook/assets/7 (8).png" alt="configuration"><figcaption></figcaption></figure>
+   ![Link repository in Momen](../.gitbook/assets/8%20(6).png "Link repository in Momen")
 
-6. Local Debugging with `App.tsx`: Use this for component testing, which is essential for refining your components without impacting the Zion/Momen project runtime.
-7. Commit to GitHub: After development, push your changes to the GitHub repository, targeting the main branch (master/main).
-8. Momen Configuration: Link your repository in Momen by configuring the display name and address of your repository. This integration step is crucial for importing your custom components into the Momen platform.
+9. **Publish and Manage Versions**  
+   Use Momen's version management to update and maintain your components.
 
-<figure><img src="../.gitbook/assets/8 (6).png" alt=""><figcaption></figcaption></figure>
+   ![Version management](../.gitbook/assets/9%20(5).png "Version management")
 
-9. Publication and Version Management: Momen facilitates easy component updates and version management, ensuring your project remains current within the Momen ecosystem.
+10. **Release a New Version**  
+    Update your components and version info in `src/components/index.ts` and `config.json`. Add the new version in Momen.
 
-<figure><img src="../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
+    ![Modify the component](../.gitbook/assets/10%20(4).png "Modify the component")
 
-10. When releasing a new version, you can modify the components in your repository by adding, updating, or deleting them. Update the component information and version name in `src/components/index.ts` and `config.json`, then click the "+" sign in the left list of the repository.
+11. **Select and Preview the Component**  
+    In project configuration, select the released version. The new component will appear in the list of available components.
 
-<figure><img src="../.gitbook/assets/10 (4).png" alt="modify the component"><figcaption></figcaption></figure>
+    ![Configure custom component in Momen](../.gitbook/assets/11%20(3).png "Configure custom component in Momen")
 
-11. Next, navigate to project configuration and click on the GitHub icon located in the upper right corner of the left panel. Then, select the version that was just released and the list of optional components will automatically include the newly released components.
+12. **Preview Your Project**  
+    Click "Preview" to apply the custom component at runtime.
 
-<figure><img src="../.gitbook/assets/11 (3).png" alt="configure your custom component in Momen"><figcaption></figcaption></figure>
+    ![Preview your project](../.gitbook/assets/12%20(3).png "Preview your project")
 
-12. Make sure to click "Preview" at this point to apply the custom component's configuration at runtime.
+13. **View in Mirror or Preview**  
+    Access your custom components in Mirror or Preview mode.
 
-<figure><img src="../.gitbook/assets/12 (3).png" alt="preview your project"><figcaption></figcaption></figure>
+    ![View your custom component](../.gitbook/assets/13%20(2).png "View your custom component")
 
-13. Then you can view your custom components in Mirror or Preview.
+---
 
-<figure><img src="../.gitbook/assets/13 (2).png" alt="view your custom component"><figcaption></figcaption></figure>
+## About Momen
 
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that enables users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. Momen supports real-time iteration, powerful API integration, and rapid product launch.

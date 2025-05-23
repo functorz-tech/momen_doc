@@ -6,86 +6,109 @@ description: >-
 
 # AI Help Center
 
-### Introduction
+## Introduction
 
-The AI Help Center template helps you build a custom support page for your startup. This template not only manages your product resources like FAQs and documentation efficiently but also delivers precise answers to your users by utilizing AI.
+The AI Help Center template helps you build a custom support page for your startup. This template efficiently manages your product resources like FAQs and documentation while delivering precise answers to your users by utilizing AI.
 
-### I. Basic Project Logic
+---
 
-【Help Center】: When your user inputs a question related to your product, the AI retrieves information from your business data and generates answers based on it.
+## I. Basic Project Logic
 
-<figure><img src="../.gitbook/assets/1 (30).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+**Help Center**: When users input a question related to your product, the AI retrieves information from your business data and generates answers based on it.
 
-<figure><img src="../.gitbook/assets/2 (26).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Help Center interface](../.gitbook/assets/1%20(30).png)
 
-【Resources】: This section manages all of your product resources. With everything in one place, your users won't have to navigate to different locations.
+![AI response example](../.gitbook/assets/2%20(26).png)
 
-<figure><img src="../.gitbook/assets/3 (18).png" alt="An AI template of a no-code tool"><figcaption></figcaption></figure>
+**Resources**: This section organizes all your product resources in one place, ensuring users can easily find the information they need without navigating to multiple locations.
 
-【Contact Us】: Add your team's contact information here to provide additional support to your users.
+![Resources section](../.gitbook/assets/3%20(18).png)
 
-<figure><img src="../.gitbook/assets/4 (16).png" alt="An AI template of a no-code tool"><figcaption></figcaption></figure>
+**Contact Us**: Add your team's contact information here to provide additional support to your users.
 
-In the context section, you can choose your AI's data source. This is one of the best features of Momen AI, as it allows you to upload local files, use data from your Momen database, or call third-party APIs to retrieve data for your AI.
+![Contact Us section](../.gitbook/assets/4%20(16).png)
 
-<figure><img src="../.gitbook/assets/5 (11).png" alt="The configuration of an AI template in a no-code tool"><figcaption></figcaption></figure>
+In the **Context** section, you can configure your AI's data source. Momen AI allows you to upload local files, use data from your Momen database, or call third-party APIs to retrieve data for your AI.
 
-### II. How to Create Your AI Apps
+![Context configuration](../.gitbook/assets/5%20(11).png)
 
-#### Step 1: AI Configuration
+---
 
-First, enter the AI integration interface from the top bar of the Momen editor.
+## II. How to Create Your AI Apps
 
-<figure><img src="../.gitbook/assets/6 (10).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+### Step 1: AI Configuration
+
+First, access the AI integration interface from the top bar of the Momen editor.
+
+![AI integration interface](../.gitbook/assets/6%20(10).png)
 
 **Basic Configuration**:  
-Change the name and description of your AI. Choose the model based on your needs. Currently, we support GPT 3.5 and GPT 4. GPT 3.5 is suitable for text-based input, while GPT 4 supports image processing and generates more accurate answers. However, GPT 4 will consume more [tokens](https://docs.momen.app/ai/app-token-consumption).
+- Change the name and description of your AI.  
+- Choose the model based on your needs. Currently, Momen supports GPT 3.5 and GPT 4.  
+  - **GPT 3.5**: Suitable for text-based input.  
+  - **GPT 4**: Supports image processing and generates more accurate answers but consumes more [tokens](https://docs.momen.app/ai/app-token-consumption).
 
 **Input Configurations**:  
-Configure single or multiple parameters for the AI interface. Input parameters can be referenced in predefined prompts or used as filtering conditions for your app.
+- Configure single or multiple parameters for the AI interface.  
+- Input parameters can be referenced in predefined prompts or used as filtering conditions for your app.
 
-<figure><img src="../.gitbook/assets/7 (6).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Input configuration](../.gitbook/assets/7%20(6).png)
 
 **Predefined Prompts**:  
-You can directly input instructions as your prompt source or refer to the input parameters. For more information, please check our guide on [AI Configuration](https://docs.momen.app/ai/ai-configuration), which explains how to write effective prompts.  
-In this template, we used direct input + parameters as the sources.
+- Directly input instructions as your prompt source or reference input parameters.  
+- For more details, refer to our guide on [AI Configuration](https://docs.momen.app/ai/ai-configuration), which explains how to write effective prompts.  
+- In this template, we used a combination of direct input and parameters as the sources.
 
-<figure><img src="../.gitbook/assets/8 (4).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Predefined prompts](../.gitbook/assets/8%20(4).png)
 
 **Contexts**:  
-Context serves as the data source for your AI. This is where you can integrate your business data with AI. Currently, we support three ways to integrate your data:  
-- Select data tables stored in the Momen database.  
-- Upload local files.  
-- Call APIs to fetch external data.  
+- Context serves as the data source for your AI.  
+- Momen supports three ways to integrate your data:  
+  1. Select data tables stored in the Momen database.  
+  2. Upload local files.  
+  3. Call APIs to fetch external data.  
 
-In the Momen AI knowledge base, our data comes from the Momen database, where we store Momen docs.
+In this template, the Momen AI knowledge base uses data stored in the Momen database, where Momen docs are maintained.
 
-<figure><img src="../.gitbook/assets/9 (3).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Context data source](../.gitbook/assets/9%20(3).png)
 
 **Debug and Preview**:  
-Before requesting AI, you can debug and test to see if it generates the desired answers. For example, input a question related to Momen to verify if the AI generates accurate answers.
+- Before requesting AI, debug and test to ensure it generates the desired answers.  
+- For example, input a question related to Momen to verify if the AI provides accurate responses.
 
-<figure><img src="../.gitbook/assets/10 (2).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Debug and preview](../.gitbook/assets/10%20(2).png)
 
-#### Step 2: Action Configuration and AI Request
+---
 
-To make your AI functional in the desired location, you need to bind your data from the backend to your UI and configure the "Request AI" action.  
-In this case, we configured the "Request AI" action on the input box.
+### Step 2: Action Configuration and AI Request
 
-<figure><img src="../.gitbook/assets/11 (1).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+To make your AI functional in the desired location:  
+1. Bind your data from the backend to your UI.  
+2. Configure the **"Request AI"** action.  
 
-Additionally, remember to configure the navigation action in the resource section so that your users can be directed to the relevant resource page.
+In this template, the **"Request AI"** action is configured on the input box.
 
-<figure><img src="../.gitbook/assets/12 (1).png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+![Request AI action](../.gitbook/assets/11%20(1).png)
 
-You can also modify the UI to make your AI help center more customized.
+Additionally, configure the navigation action in the **Resources** section to direct users to the relevant resource page.
 
-#### Step 3: Website Preview
+![Navigation action](../.gitbook/assets/12%20(1).png)
 
-When you finish all the configurations, click "Preview" in the upper-right corner to generate the link. If everything works as expected, you can publish your project to the public.
+You can also customize the UI to make your AI help center more tailored to your brand.
 
-<figure><img src="../.gitbook/assets/13.png" alt="An AI template in a no-code tool"><figcaption></figcaption></figure>
+---
 
-### About Momen
+### Step 3: Website Preview
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+After completing all configurations:  
+1. Click **"Preview"** in the upper-right corner to generate a preview link.  
+2. Verify that everything works as expected.  
+3. Once satisfied, publish your project to make it publicly accessible.
+
+![Website preview QR code](../.gitbook/assets/13.png)
+
+---
+
+## About Momen
+
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. With Momen, you can iterate and refine your projects in real-time, ensuring a seamless creation process. Momen also offers powerful API integration capabilities, enabling you to connect your projects to any service you need. Bring your ideas to life and launch remarkable digital solutions faster than ever before.

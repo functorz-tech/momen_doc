@@ -1,65 +1,65 @@
 ---
 description: >-
-  Learn how to use Momen's portfolio template to build your portfolio and
-  showcase your projects.
+  Learn how to use Momen's portfolio template to build your portfolio and showcase your projects.
 ---
 
 # Portfolio
 
-### **Introduction**
+## Introduction
 
-Introducing Momen's portfolio template. This template will help you build your personal website in minutes and present your best work in style. Customize the style based on your needs.
+Momen's portfolio template helps you quickly build a personal website to showcase your best work. You can easily customize the style to fit your needs.
 
-### **I. Basic Project Operation Logic**
+## I. Basic Project Operation Logic
 
-【Homepage】: The initial page of your website. You can showcase your experience, works, and projects here, telling your users about your abilities. If you want to showcase more sections, you can customize it based on your needs.
+**Homepage:**  
+The landing page of your website. Use it to highlight your experience, work, and projects, and to introduce your abilities. You can add more sections as needed.
 
-![](<../.gitbook/assets/0 (19).png>)
+![Homepage example 1](../.gitbook/assets/0%20(19).png)
+![Homepage example 2](../.gitbook/assets/1%20(19).png)
+![Homepage example 3](../.gitbook/assets/2%20(16).png)
 
-![](<../.gitbook/assets/1 (19).png>)
+**Projects:**  
+This page displays a list of all your projects.
 
-![](<../.gitbook/assets/2 (16).png>)
+![Projects list example](../.gitbook/assets/3%20(11).png)
 
-【Projects】: This page includes a list that displays all of your projects.
+**Project Details:**  
+When users click "View Details" on the projects page, they are taken to a detail page showing the project's content.
 
-![](<../.gitbook/assets/3 (11).png>)
+![Project details example](../.gitbook/assets/4%20(11).png)
 
-【Project Details】: By clicking "View Details" on the project page, users can be directed to the detail page that displays the project content.
+## II. How to Create Your Portfolio Website
 
-![](<../.gitbook/assets/4 (11).png>)
+### Understanding the Data Model
 
-### **II. Learn How to Create Your Portfolio Website**
+![Data model overview](../.gitbook/assets/5%20(6).png)
 
-#### **Understanding the Data Model**
+- **Consumer:** Stores your personal information. Related to other tables such as projects, skills, and education.
+- **Project:** Stores your project data. Has a one-to-many relationship with project details.
+- **Project Detail:** Stores detailed information about each project.
 
-![](<../.gitbook/assets/5 (6).png>)
+## Database Management
 
-【Consumer】: This table stores your own information. It is related to other tables such as projects, skills, education, etc.
+The database allows you to browse and manage all your data, including projects. The data is dynamic and can be updated as needed. Managing content here is more efficient than editing static page content.
 
-【Project】: This table stores your project data. It has a one-to-many relationship with project details.
+For more information, see [Database Operation](https://docs.momen.app/data/database/database-operation).
 
-【Project Detail】: This table stores the project detail data.
+![Database management example](../.gitbook/assets/6%20(6).png)
 
-### **Database Management**
+To learn how to manipulate data and bind it to the frontend, refer to:  
+- [Data Retrieval and Display](https://docs.momen.app/data/data-overview/data-retrieval-and-display)  
+- [Data Input and Modification](https://docs.momen.app/data/data-overview/data-input-and-modification)
 
-The database is where you can browse and manage all your data. You can manage your projects here. The stored data is dynamic and changes based on your needs. Instead of writing all the content on your page, managing it here will be more streamlined.
+## III. Website Preview
 
-For more information, please refer to [Database Operation](https://docs.momen.app/data/database/database-operation).
+Click the **Preview** button to generate a preview link.
 
-![](<../.gitbook/assets/6 (6).png>)
+After previewing, you can return to the editor to make further changes.
 
-To learn how to manipulate data and bind it with the frontend, please refer to [Data Retrieval and Display](https://docs.momen.app/data/data-overview/data-retrieval-and-display) and [Data Input and Modification](https://docs.momen.app/data/data-overview/data-input-and-modification).
+When everything is ready and error-free, click **Publish** to launch your website.
 
-### **III. Website Preview**
+![Preview and publish example](../.gitbook/assets/7%20(4).png)
 
-Click on the "Preview" button to generate the preview link.
+## About Momen
 
-Once the preview is complete, you can make further changes by returning to the editor.
-
-If everything looks good and you have checked for any errors, click on "Publish" to publish the website.
-
-![](<../.gitbook/assets/7 (4).png>)
-
-### **About Momen**
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that enables users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS solutions, and more. You can iterate and refine your projects in real time for a seamless creation process. Momen also offers robust API integration, allowing you to connect your projects to any required service. Bring your ideas to life and launch your web app products faster than ever with Momen.

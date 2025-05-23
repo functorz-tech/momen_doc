@@ -1,213 +1,215 @@
 ---
 description: >-
-  The Mobile Auto Repair AI Scheduler is a template powered by Momen AI 2.0. It
-  enables your AI agent to assist customers in identifying car issues and
-  seamlessly scheduling repair appointments.
+  The Mobile Auto Repair AI Scheduler is a template powered by Momen AI 2.0. It enables your AI agent to assist customers in identifying car issues and seamlessly scheduling repair appointments.
 ---
 
 # Mobile Auto Repair AI Scheduler
 
-### **Overview**
+## Overview
 
-This template follows a simple process. When a customer starts a conversation, the assistant AI helps identify the car issue and provides a cost estimate. After that, the scheduler AI books the repair appointment in the vendor’s calendar.
+This template provides an end-to-end solution for mobile auto repair scheduling. When a customer initiates a conversation, the assistant AI helps identify the car issue and provides a cost estimate. Subsequently, the scheduler AI books a repair appointment in the vendor’s calendar.
 
-{% hint style="info" %}
-To enable the AI to schedule appointments in your calendar, you’ll need to add your own API key. Detailed instructions for configuring the API are provided below.
-{% endhint %}
+To enable AI-powered scheduling, you must add your own [API key](https://youtu.be/hX4J8898hM0). Detailed configuration instructions are provided below.
 
-{% embed url="https://youtu.be/hX4J8898hM0" %}
+> **Note:** Only staff members can access and log in to the dashboard. Assign the necessary permissions in your project settings as described later in this guide.
 
-{% hint style="warning" %}
-Only staff members can access and log in to the dashboard. You’ll need to assign the necessary permissions in your project settings. Details are provided below.
-{% endhint %}
+## Data Model
 
-***
+The following diagram illustrates the basic data model used in this template:
 
-### **Data Model**
+![Data model overview](../.gitbook/assets/image%20(1).png)
 
-Below is the basic data model setting in this template.&#x20;
+![Car maker to car model: 1:N](../.gitbook/assets/image%20(1)%20(1).png)
 
-![](<../.gitbook/assets/image (1).png>)
+![Repair category to repair item: 1:N](../.gitbook/assets/image%20(3).png)
 
-<div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+- **Car Maker to Car Model:** One car maker can have multiple car models (1:N).
+- **Repair Category to Repair Item:** One repair category can include multiple repair items (1:N).
+- **Cost Estimate:** Generated based on the selected car model and repair items.
 
-<div align="left"><figure><img src="../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure></div>
+---
 
-The relation between car maker and car model is 1:N, because one brand could have multiple car models. The relation between repair category and repair item is 1:N because one category could have different issues. Based on the car model and repair issues, a cost estimate is generated.
+## Business Logic
 
-***
+This template includes two AI agents: a customer service agent for recording car issues and a scheduling assistant for booking appointments in the vendor's calendar.
 
-### **Business Logic**
+### Customer Service Agent
 
-Here’s the business logic behind the template, which you can also view as its workflow. This template includes two AI agents: a customer service agent to record user car issues and a scheduling assistant to book appointments in the vendor's calendar.
+![Customer Service AI Workflow](../.gitbook/assets/image%20(4).png)
 
-**Customer Service**
+- Operates during the customer conversation.
+- Updates the data table in real time as the conversation progresses.
+- Records car models and locations as selected by the user.
+- Assesses and updates car issues.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+### Scheduling Assistant
 
-This is the logic of the customer service AI. It primarily operates during the conversation. As the conversation progresses, the data table updates in real-time. Car models and locations are recorded as the user selects them, while the AI assesses and updates the car’s issues.
+![Scheduling Assistant Workflow](../.gitbook/assets/image%20(6).png)
 
-**Scheduling Assistant**
+- Activated after an order is created.
+- Schedules the repair event in the vendor's calendar.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+#### Work Order Statuses
 
-This agent operates after an order is created, handling the task of scheduling the event in the vendor's calendar.
+You can customize these status names as needed:
 
-The following is the explanation of different work order statuses. You can customize the names when using this template:
+1. **Pending** – Conversation started; gathering information.
+2. **Chat to Issue** – User provides information; AI assesses the issue.
+3. **To Be Confirmed** – Issue confirmed; awaiting staff approval for the appointment.
+4. **Confirmed** – Appointment successfully scheduled.
 
-1. **Pending** – Conversation starts, gathering information.
-2. **Chat to Issue** – User inputs the information, and the AI assesses the issue.
-3. **To Be Confirmed** – The issue has been confirmed, waiting for staff to confirm the appointment.
-4. **Confirmed** – Appointment scheduled successfully.
+---
 
-***
+## Configuration Guide
 
-### Configuration Guide
+This section explains how to configure the AI agents.
 
-This section explains how to configure the AI.
+### 1. Customer Service AI
 
-1. **Customer Service AI**
+![Customer Service AI configuration interface](../.gitbook/assets/image%20(7).png)
 
-<figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
+**Purpose:**  
+Collects detailed descriptions of car issues from users, organizes information for mechanics, and estimates repair time and cost.
 
-**Purpose**:&#x20;
+**Tools:**
 
-Gathers detailed descriptions of car issues from the user, organizes information for the mechanic, and estimates repair time and cost.
+- Search for repair items based on user input.
+- Retrieve quotes using car model and repair item details.
+- Modify and query user work orders.
 
-**Tools**:
+**Inputs:**  
+User messages, `car_model_id`, `work_order_id`.
 
-* Find repair items based on user input.
-* Retrieve quotes using car model and repair item details.
-* Modify and query user work orders.
+**Configuration Steps:**
 
-**Input**:&#x20;
+1. **Set up AI tools:**
+   - Search repair items.
+   - Retrieve quotes based on car model and repair items.
+   - Query and update work orders.
 
-User messages, car\_model\_id, work\_order\_id.
+   ![AI tool setup interface](../.gitbook/assets/image%20(8).png)
 
-**Steps**:
+2. **Configure a knowledge base** for car repair categories and specific issues for the AI to reference.
 
-1. Set up tools for the AI:
+   > **Tip:**  
+   > Use a knowledge base for dynamic, frequently changing information instead of hardcoding data into prompts. This approach eliminates the need to update prompts whenever issues change.
 
-* Search repair items.
-* Retrieve quotes based on car model and repair items.
-* Query and update work orders.
+   ![Knowledge base configuration 1](../.gitbook/assets/截屏2024-09-23%2014.04.04.png)
+   ![Knowledge base configuration 2](../.gitbook/assets/截屏2024-09-23%2014.07.44.png)
+   ![Knowledge base configuration 3](../.gitbook/assets/截屏2024-09-23%2014.54.55.png)
 
-<figure><img src="../.gitbook/assets/image (8).png" alt="" width="375"><figcaption></figcaption></figure>
+3. **Adjust AI prompts** as needed to refine responses.
 
-2. Configure a knowledge base for car repair categories and specific issues for the AI to query.
+---
 
-{% hint style="info" %}
-Unlike hardcoding data directly into the prompt, a knowledge base is ideal for dynamic, frequently changing information. This approach prevents the need to update the prompt constantly, as the issues may vary each time.
-{% endhint %}
+### 2. Scheduler AI
 
-<div><figure><img src="../.gitbook/assets/截屏2024-09-23 14.04.04.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 14.07.44.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 14.54.55.png" alt=""><figcaption></figcaption></figure></div>
+![Scheduler AI configuration interface](../.gitbook/assets/image%20(9).png)
 
-3. Adjust the AI prompts as needed.
+**Purpose:**  
+Schedules appointments for mechanics.
 
-***
+**Required Data:**  
+Google Calendar token.
 
-2. **Scheduler AI**
+**Tools:**
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+- Time zone conversion.
+- Distance calculation between locations.
+- Query and create Google Calendar events.
 
-**Purpose**: Schedules appointments for mechanics.
+**Inputs:**  
+Location, preferences, date, time zone, duration.
 
-**Data**: Google Calendar token.
+**Configuration Steps:**
 
-**Tools**:
+- Set up tools for the AI:
+  - Retrieve Google Calendar information.
+  - Calculate distances and travel time.
+  - Create calendar events.
 
-* Time zone conversion.
-* Calculate distances between locations.
-* Query and create Google Calendar events.
+  ![Scheduler AI tool setup](../.gitbook/assets/image%20(10).png)
 
-**Input**: Location, preferences, date, time zone, duration.
+- Adjust prompts as needed for your workflow.
 
-**Steps**:
+---
 
-*   Set up tools for the AI:
+## Usage Guide
 
-    * Retrieve Google Calendar info.
-    * Calculate distances and travel time.
-    * Create calendar events.
+> **Before you begin:**  
+> Configure your own API so the AI can schedule events in your calendar. Adjust permission settings to ensure only staff can manage the dashboard, while users have access only to the conversation page.
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-* Adjust the prompts as needed.
+### 1. Google Calendar Setup
 
-***
+1. Log in to [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project.
 
-### Usage Guide
+   ![Create new Google Cloud project](../.gitbook/assets/image%20(11).png)
 
-{% hint style="info" %}
-Before using this template, you'll need to configure your own API so the AI can schedule events in your calendar. Additionally, you’ll need to adjust the permission settings to ensure that only you and your staff can manage the dashboard, while users only have access to the conversation page.
-{% endhint %}
+3. Enable the Google Calendar API.
 
-#### **1. Google Calendar Setup**
+   ![Enable Google Calendar API](../.gitbook/assets/OgQoo8zPRp.png)
 
-1. Log in to Google Cloud Console: [https://console.cloud.google.com/](https://console.cloud.google.com/)
-2. Create a new project.&#x20;
+4. Create credentials (set redirect URI to [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)).
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+   ![Create credentials](../.gitbook/assets/截屏2024-09-23%2017.19.27.png)
+   ![Set redirect URI](../.gitbook/assets/截屏2024-09-23%2017.22.56.png)
+   ![Download credentials JSON](../.gitbook/assets/截屏2024-09-23%2017.24.31.png)
 
-3. Enable the Google Calendar API.&#x20;
+5. Download the credentials JSON file to obtain your `client_id` and `client_secret`.
 
-<figure><img src="../..gitbook/assets/OgQoo8zPRp.png" alt=""><figcaption></figcaption></figure>
+   ![Download credentials JSON file](../.gitbook/assets/截屏2024-09-23%2017.24.56.png)
 
-4. Create credentials (redirect URI: [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)).&#x20;
+6. Add your Google account as a test user.
 
-<div><figure><img src="../.gitbook/assets/截屏2024-09-23 17.19.27.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 17.22.56.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/截屏2024-09-23 17.24.31.png" alt=""><figcaption></figcaption></figure></div>
+   ![Add Google account as test user](../.gitbook/assets/截屏2024-09-23%2017.25.43.png)
 
-5. Download the credentials JSON file to get your client\_id and client\_secret.&#x20;
+7. Obtain the refresh token:
+   1. Visit [Google OAuth Playground](https://developers.google.com/oauthplayground/)
+   2. Enter your `client_id` and `client_secret`.
 
-<figure><img src="../.gitbook/assets/截屏2024-09-23 17.24.56.png" alt=""><figcaption></figcaption></figure>
+      ![Set up OAuth Playground client info](../.gitbook/assets/image%20(12).png)
 
-6. Add your Google account as a test user.&#x20;
+   3. Click **Authorize APIs** and log in with your Google account.
 
-<figure><img src="../.gitbook/assets/截屏2024-09-23 17.25.43.png" alt=""><figcaption></figcaption></figure>
+      ![Authorize APIs in OAuth Playground](../.gitbook/assets/image%20(13).png)
 
-7. Get the refresh token:
-   1. Visit: [https://developers.google.com/oauthplayground/](https://developers.google.com/oauthplayground/)
-   2. Set up the client\_id and client\_secret.&#x20;
+   4. Obtain the `refresh_token`.
 
-<div align="right"><figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure></div>
+      ![Obtain refresh token](../.gitbook/assets/image%20(14).png)
 
-3. Click "Authorize APIs" and log in with your Google account.&#x20;
+   5. In Momen’s API module, set the `client_id`, `refresh_token`, and `client_secret` as default values.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+### 2. Google Maps Platform Setup
 
-4. Obtain the refresh\_token.&#x20;
+1. Enable the Distance Matrix API in Google Cloud Console.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+   ![Enable Distance Matrix API](../.gitbook/assets/image%20(15).png)
 
-5. In Momen’s API module, set the client\_id, refresh\_token, and client\_secret as default values.&#x20;
+2. Follow the instructions to obtain your API key.
 
-#### **2. Google Maps Platform Setup**
+   ![Get Google Maps API key](../.gitbook/assets/image%20(17).png)
 
-1. Enable the Distance Matrix API in Google Cloud Console.&#x20;
+3. Add the API key to the AI's configuration in Momen.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+   ![Add API key to AI configuration](../.gitbook/assets/image%20(16).png)
 
-2. Follow the instructions to get your API key.&#x20;
+### 3. Permission Setup
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+1. Register a new account.
 
-3. Add the API key to the AI's description in Momen.&#x20;
+   ![Register new account](../.gitbook/assets/image%20(18).png)
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+2. Edit account permissions in the editor.
 
-#### **3. Permission Setup**
+   [Watch the permission setup tutorial](https://youtu.be/_s986Zbyp9M)
 
-1. Register a new account.&#x20;
+### 4. Google Auth Refresh Token Automation
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+The refresh token expires every 24 hours. Set up an automated process to renew it and ensure uninterrupted calendar integration.
 
-2. Edit account permissions in the editor.&#x20;
+---
 
-{% embed url="https://youtu.be/_s986Zbyp9M" %}
+## About Momen
 
-**4. Google Auth Refresh Token Setup**&#x20;
-
-The refresh token expires every 24 hours. You'll need to set up an automated process to renew it.
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that enables users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS solutions, and more. Iterate and refine your projects in real time for a seamless creation process. Momen also offers robust API integration, allowing you to connect your projects to any required service. Bring your ideas to life and launch your web app products faster than ever with Momen.

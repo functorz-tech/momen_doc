@@ -4,45 +4,53 @@ description: >-
   to convert your websites built by Momen into mobile apps for the Google Play Store.
 ---
 
-# How to Convert Momen App to Native Mobile App?
+# How to Convert Momen App to Native Mobile App
 
-### Introduction
+## Introduction
 
-In this comprehensive guide, we'll walk you through the process of transforming your Momen web application into a mobile app.
+This guide explains how to convert your Momen web application into a mobile app and publish it on the Google Play Store.
 
-### Purpose
+---
 
-This guide outlines the process of transforming a web application built with Momen into a mobile app and publishing it on the Google Play Store.
+## Prerequisites
 
-### Required Dependencies
+- **Momen**
+- **Node.js**
+- **React Native**
+- **Java JDK**
+- **Android Studio** (required for compiling and packaging)
 
-1. Momen
-2. Node.js
-3. React Native
-4. Java JDK
-5. Android Studio
+> You may use any code editor, but Android Studio is necessary for the build environment.
 
-Note: While you can use any code editor of your choice, you must install Android Studio to obtain the necessary tools and environment for compiling your Android app.
+---
 
-### Implementation Path
+## Steps
 
-1. #### Obtain the Momen Web Address
+### 1. Obtain the Momen Web Address
 
-<figure><img src="../.gitbook/assets/1 (5).gif" alt=""><figcaption></figcaption></figure>
+Get the URL of your published Momen web app.
 
-2. #### Set Up the Environment and Create a [React Native](https://reactnative.dev/docs/environment-setup) Project
+![Get Momen web address](../.gitbook/assets/1%20(5).gif)
 
-<figure><img src="../.gitbook/assets/2 (2).1.png" alt=""><figcaption></figcaption></figure>
+---
 
-3. #### Modify App.js and Create a WebView Link to Your Web Page
+### 2. Set Up the Environment and Create a React Native Project
 
-Install `react-native-webview`.
+Follow the [React Native environment setup guide](https://reactnative.dev/docs/environment-setup) to create a new project.
+
+![Set up React Native project](../.gitbook/assets/2%20(2).1.png)
+
+---
+
+### 3. Modify App.js to Use WebView
+
+Install the WebView package:
 
 ```bash
 npm install react-native-webview
 ```
 
-Link to the H5 page:
+Update `App.js` to load your Momen web app in a WebView:
 
 ```javascript
 /* eslint-disable react-native/no-inline-styles */
@@ -89,23 +97,27 @@ function App(): JSX.Element {
 export default App;
 ```
 
-4. #### Package the React Native Project to Generate an AAB
+---
+
+### 4. Package the React Native Project (AAB)
 
 Follow the [official React Native documentation](https://reactnative.dev/docs/signed-apk-android) to:
 
 1. Generate an upload key
-2. Set up the Gradle variables
-3. Add the signature configuration to the project's Gradle configuration
-4. Generate the release AAB (Android App Bundle) package
+2. Set up Gradle variables
+3. Add the signature configuration to your Gradle config
+4. Build the release AAB (Android App Bundle) package
 
-Note: Packaging may involve configuring application icons, names, and other details.
+> You may also want to [change the app name](https://dev.to/zenkoders/how-to-change-the-app-name-in-react-nativein-android-and-ios-573i) and [change the app icon](https://aboutreact.com/react-native-change-app-icon/).
 
-[Change app name](https://dev.to/zenkoders/how-to-change-the-app-name-in-react-nativein-android-and-ios-573i)
+---
 
-[Change app icon](https://aboutreact.com/react-native-change-app-icon/)
+### 5. Submit to the Google Play Store
 
-5. #### Submit to the Google Play Store for Review and Release
+Upload your AAB package to the Google Play Store for review and release.
 
-### About Momen
+---
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allowing users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+## About Momen
+
+[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that enables users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. Momen supports real-time iteration, powerful API integration, and rapid product launch.

@@ -9,49 +9,52 @@ description: >-
 
 **File-related actions include:**
 
-1. Upload file
-2. Download file/images/bitmap
+- Upload file
+- Download file/image/bitmap
 
-## 1. Upload file
+## Upload File
 
 ### Introduction
 
-When triggering the "Upload File" action, users can select files in the system folder to upload, supporting PDF, Word, Excel, and audio files.
+The **Upload File** action allows users to select and upload files from their device. Supported file types include PDF, Word, Excel, and audio files.
 
 ### Scenario
 
-For recruitment-related projects, a button is placed on the page to configure the file upload action, allowing applicants to upload their resumes.
+For example, in a recruitment project, you can add a button to the page and configure it with the upload action, allowing applicants to upload their resumes.
 
-### Action configuration guide
+### How to Configure
 
-**1. Add a page variable**  
-The first step is to add a page variable with the type of file to the page itself so that you can assign the uploaded file to that page variable.
+1. **Add a Page Variable**  
+   Add a page variable of type "file" to the page. This variable will store the uploaded file.
 
-**2. Add action**  
-Add the \[Upload File] action to the component and assign the uploaded file to the page variable set in step 1.
+2. **Add the Upload File Action**  
+   Add the **Upload File** action to the component and assign the uploaded file to the page variable created in step 1.
 
-<table data-header-hidden><thead><tr><th width="364"></th><th></th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/1 (13).png" alt="" data-size="original"></td><td><img src="../.gitbook/assets/2 (9).png" alt="" data-size="original"></td></tr></tbody></table>
+| ![Add file variable](../.gitbook/assets/1%20(13).png) | ![Assign uploaded file](../.gitbook/assets/2%20(9).png) |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
 
 ### Notes
 
-1. This action only supports uploading one file. If you upload another file, it will overwrite the previous file.
-2. This action does not support the preview of a file.
-3. If there is more than one page variable on the page, it is recommended to rename it so that you can clearly find the one to which you need to assign.
-4. Since there is no system notification when a file is uploaded successfully, it is common to add a \[Show Toast] action under the "Action on Success" section to remind the user that the file has been uploaded successfully. Of course, you can also use the \[Conditional Container] to display different styles to remind users of the successful upload.
+1. Only one file can be uploaded at a time. Uploading another file will overwrite the previous one.
+2. File preview is not supported.
+3. If there are multiple page variables, rename them for clarity.
+4. Since there is no system notification for a successful upload, it is recommended to add a **Show Toast** action under "Action on Success" to notify the user. Alternatively, use a **Conditional Container** to display a success message.
 
-## 2. Download files/images/bitmap
+---
+
+## Download File/Image/Bitmap
 
 ### Introduction
 
-Click to trigger the download of a file that is saved in the database to the folder on the computer.
+The **Download File** action allows users to download a file stored in the database to their local device.
 
-### Action configuration guide
+### How to Configure
 
-**1. Identify a data source to request files/images**  
-If you want to download a file by clicking on the download button, you will need to identify a data source on the page that requests access to a data table containing the file data. Set the limit to one record and adjust the filter conditions to meet your specific business needs.
+1. **Identify a Data Source**  
+   Set up a data source on the page that requests the data table containing the file. Limit the result to one record and adjust filter conditions as needed.
 
-![](https://functorz.feishu.cn/space/api/box/stream/download/asynccode/?code=NTZlNTA4YTAyYTVkOTFiMTBjNDM0MGQzODk1ODNmYjBfRlhuVUpNVlF5NXRUS29iMFZ0NDI0NVJ5T1Q2T0tVUEtfVG9rZW46UktQUGJqWHdTb3Fxc1N4a2x5MWN3YWRhbnhkXzE3MTUzMTM4NzU6MTcxNTMxNzQ3NV9WNA) ![](<../.gitbook/assets/image (7) (1).png>)
+   ![File data source](../.gitbook/assets/image%20(7)%20(1).png)
 
-**2. Add action**  
-- Add the "Download File" action to the component (usually a button), then bind the file data through in-page data.
-- For the "Download Bitmap" action, when a view component is converted to a bitmap through the "View to Bitmap" action, it will automatically generate a result data. You can then add the "Download Bitmap" action under the "Action on Success" section and bind the result data.
+2. **Add the Download Action**  
+   - Add the **Download File** action to the component (usually a button), and bind the file data from the page data.
+   - For **Download Bitmap**, after converting a view component to a bitmap using the "View to Bitmap" action, the result data will be generated automatically. Add the **Download Bitmap** action under "on Success" and bind the result data.
