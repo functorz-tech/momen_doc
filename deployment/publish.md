@@ -39,13 +39,15 @@ Custom domains are supported for Basic Plan and above.
    - After adding, return to the custom domain page and verify. If successful, proceed.
 
    ![Momen custom domain txt records](../.gitbook/assets/publish/cd-1.png)  
+
    ![Momen custom domain txt records](../.gitbook/assets/publish/mcd-2.jpeg)
 
 3. **Certificate and Proxy Verification**  
    Configure TXT and CNAME records to validate the certificate and point your domain to Momen’s proxy. For some DNS providers (e.g., Cloudflare), disable proxy and use DNS only for the CNAME record.
    - Return to the settings page and verify. Upon success, proceed.
 
-   ![Momen custom domain CNAME records](../.gitbook/assets/publish/cd-3.png)  
+   ![Momen custom domain CNAME records](../.gitbook/assets/publish/cd-3.png) 
+    
    ![Momen custom domain CNAME records](../.gitbook/assets/publish/mcd-3.jpeg)
 
 4. **Web Favicon**  

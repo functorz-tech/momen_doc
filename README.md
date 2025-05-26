@@ -2,7 +2,7 @@
 
 ## What is Momen?
 
-[Momen](http://momen.app) is a no-code web application development platform (PaaS) that enables users to build custom web applications without writing code. The platform provides a visual canvas and a flexible data model, offering comprehensive tools for designing, developing, and deploying applications. Momen is designed to be accessible to users with limited technical experience while remaining powerful for advanced use cases.
+[Momen](http://momen.app) is a no-code web application development platform and a PaaS that enables users to build custom web applications without writing code. The platform provides a visual canvas and a flexible data model, offering comprehensive tools for designing, developing, and deploying applications. Momen is designed to be accessible to users with limited technical experience while remaining powerful for advanced use cases.
 
 ## Why Choose Momen?
 
