@@ -66,7 +66,7 @@ Once the structure of the request and response is determined, you can start sett
 
 At the same time, since the default values are stored on the backend, they are very secure and can also be used to store sensitive information, such as the `Authorization` in this example.
 
-![](../.gitbook/assets/image (26).png)
+![](../.gitbook/assets/image%20(26).png)
 
 ## Use API
 
@@ -78,7 +78,7 @@ In the data source of List, Select View, and Page, you can select a data source 
 
 During configuration, you need to specify which field in the API response is of list type and the required input parameters. Since the `Authorization` has already been set with a default value, it does not need to be filled in.
 
-![](../.gitbook/assets/image (27).png)
+![](../.gitbook/assets/image%20(27).png)
 
 ### Use as an Action
 
