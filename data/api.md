@@ -68,6 +68,7 @@ Since default values are stored on the backend, they are secure and suitable for
 
 ![Set default values for API fields](../.gitbook/assets/image%20(26).png)
 
+
 ## Use API
 
 ### Use as a Data Source
@@ -79,6 +80,7 @@ In the data source settings for List, Select View, and Page, you can select an A
 During configuration, specify which field in the API response is a list type and the required input parameters. Since `Authorization` has a default value, it does not need to be filled in.
 
 ![Configure list field and parameters](../.gitbook/assets/image%20(27).png)
+
 
 ### Use as an Action
 
