@@ -129,7 +129,7 @@ A gateway connects different networks and forwards data. In Momen, the following
 Logs in this category include most requests (database CRUD, API, AI, etc.).  
 **Note:** Only outgoing requests are visible in gateway logs; request results are not shown.
 
-![Gateway log example](../.gitbook/assets/截屏2024-10-31%2018.11.48.png)
+![Gateway log example](../.gitbook/assets/screenshot_20241031_181148.png)
 
 #### Deployment and Release
 

@@ -23,7 +23,7 @@ Our journey began as a no-code mini-program builder in partnership with a major 
 
 - Bachelor of Computer Science, University of Cambridge
 - Master’s in Large-Scale Information Systems Technology, Carnegie Mellon University
-- Early Senior Engineer at Medallia
+- One of the first 20 engineers at Medallia Inc., which has since gone publicly.
 
 ### Backed By
 

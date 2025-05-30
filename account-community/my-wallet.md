@@ -10,13 +10,13 @@ description: >-
 
 "My Wallet" provides users with convenient payment options on Momen, enabling purchases using discount coupons and credits.
 
-![My Wallet dashboard in Momen](../.gitbook/assets/截屏2024-11-01%2011.45.03.png)
+![My Wallet dashboard in Momen](../.gitbook/assets/screenshot_20241101_114503.png)
 
 ## Benefits
 
 - **Discounts:** Use coupons to reduce the cost of purchases.
 - **Credit Payments:** Pay for plans, computing resources, and single-tenant servers directly from your account credit.
-- **Transaction Records:** Access a record of all transactions, upgrades, and refunds through the "Bill" function in My Wallet.
+- **Transaction Records:** Access records of all transactions, upgrades, and refund in the "Bill" section in My Wallet.
 
 ## Overview of My Wallet
 
@@ -24,7 +24,7 @@ description: >-
 
 **Details:**
 
-- **Types:** Discount coupons and cash vouchers
+- **Types:** Percentage off, dollar off and promotional credit
 - **Applicable Products:** Plans, computing resources, and single-tenant servers
 - **Usage Restrictions:** Vary by project plan and minimum spending amount
 - **Validity:** Must be used within a specified period
@@ -39,11 +39,11 @@ The system automatically selects the best available coupon on the order page if 
 **Records:**  
 All coupons used or expired in the last 7 days are documented.
 
-**Important Notes:**
+**Notes:**
 
 - Coupons cannot be transferred or gifted.
 - Only one coupon can be used per order.
-- Coupons applied to premium plan subscriptions provide discounts only for the first month.
+- Coupons applied to premium plan subscriptions provide discounts only for the first month or first year.
 - When an order is created with a coupon, the coupon is locked. If not paid within 5 minutes or if the order is manually closed, the coupon will be returned.
 
 ### Credits
@@ -60,11 +60,11 @@ All coupons used or expired in the last 7 days are documented.
 
 ![Credit transaction records](../.gitbook/assets/20241101-121532.gif)
 
-**Important Notes:**
+**Notes:**
 
-- Mixed payments are not supported.
-- Recharge is currently unavailable.
+- Mixed payments using both credits and bank cards are currently not supported.
+- Add funds is currently unavailable.
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

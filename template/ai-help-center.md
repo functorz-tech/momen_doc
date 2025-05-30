@@ -111,4 +111,4 @@ After completing all configurations:
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. With Momen, you can iterate and refine your projects in real-time, ensuring a seamless creation process. Momen also offers powerful API integration capabilities, enabling you to connect your projects to any service you need. Bring your ideas to life and launch remarkable digital solutions faster than ever before.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

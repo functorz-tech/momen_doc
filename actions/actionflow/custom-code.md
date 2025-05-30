@@ -4,10 +4,6 @@ description: Learn to add and use custom code in Momen
 
 # Custom Code
 
-## Introduction
-
-This tutorial explains how to add and use custom code in Momen.
-
 ## Prerequisites
 
 You should have a basic understanding of JavaScript, including variables, functions, loops, and conditionals.
@@ -15,8 +11,6 @@ You should have a basic understanding of JavaScript, including variables, functi
 ## Adding Custom Code
 
 Currently, the "Custom Code" node in Momen Actionflow only supports JavaScript.
-
-To implement more complex business logic, add a code block in the Actionflow by clicking the "+" node where you want to insert custom logic.
 
 ![Add custom code block](../../.gitbook/assets/0%20(49).png)
 
@@ -32,7 +26,7 @@ If your code block needs to process user input (the top-level "Input" of the Act
 
 For example, to process phone number masking:
 
-First, configure the input parameter in the Actionflow. This allows you to pass parameters into the flow from the page.
+First, configure the input parameter in the Actionflow. This allows you to pass parameters into the Actionflow from the page.
 
 ![Configure Actionflow input](../../.gitbook/assets/2%20(2).jpeg)
 
@@ -66,7 +60,7 @@ const gql = `mutation publishWechatMessage($data: Map_String_StringScalar,$accou
 context.runGql('publishWechatMessage', gql,{data,accountId}, { role: 'admin'});
 ```
 
-## Configuring and Ret urning Output
+## Configuring and Returning Output
 
 If you want to pass the result of the code block to downstream nodes, configure the output parameter in the code block and use the appropriate return statement in your code.
 
@@ -158,13 +152,13 @@ Altair GraphQL Client is a tool for debugging gql. Download and open Altair as s
 3. Copy the inner URL from the Request URL in Headers and paste it into Altair (default method: POST).
 4. Copy the Authorization value from Request Headers and paste it into Altair's request header.
 
-![Copy Authorization header](../../.gitbook/assets/截屏2024-05-21%2017.17.58.png)
+![Copy Authorization header](../../.gitbook/assets/screenshot_20240521_171758.png)
 
 ### How to View Docs
 
 Configure a query request for the reference table data. Click Docs on the right in Altair, type "reference" to see available requests. Select one to view parameters, types, and fields. Click any field for more details.
 
-![View Docs in Altair](../../.gitbook/assets/截屏2024-05-21%2017.22.08.png)
+![View Docs in Altair](../../.gitbook/assets/screenshot_20240521_172208.png)
 
 ### Arguments for Data Requests
 
@@ -297,7 +291,7 @@ count
 
 **Query - Query Request** Search for a table name in Docs, find a query request for that table, and click on it to go to the request Docs.
 
-<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.23.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_20240521_172321.png" alt=""><figcaption></figcaption></figure>
 
 **Adding a Request**
 
@@ -347,7 +341,7 @@ Adding a request
 
 When hovering over the top table name, you can click ADD QUERY on the right side, which will automatically copy the request code on the left side.
 
-<figure><img src="../../.gitbook/assets/截屏2024-05-21 17.42.39.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_20240521_174239.png" alt=""><figcaption></figcaption></figure>
 
 Basic structure of the request
 
@@ -439,17 +433,17 @@ whatever: anything
 
 Prerequisite: The API must be added and debugged in Momen.
 
-callThirdPartyApi('$operationId', $args): Call the API after configuration.
+callThirdPartyApi('$operationId', $args): Call the API.
 
-- $operationId: API id
-- $args: API arguments, e.g. {fz_body:{"appKey": "f46dce7fa0566f0c"}}
+- `$operationId`: API id
+- `$args`: API arguments, e.g. {fz_body:{"appKey": "f46dce7fa0566f0c"}}
 
 ```javascript
 context.callThirdPartyApi('$operationId', {"body": {"appKey": "f46dce7fa0566f0c","sign": "OTljNjYyNXXX=="}});
 ```
 
-**How to find the API id:**
+**How to Find the API id:**
 
 In Altair Docs, search for "operation" to find the relevant request. If you have multiple APIs, click each to view configuration parameters and identify the correct one.
 
-![Find API id in Altair](../../.gitbook/assets/截屏2024-05-21%2017.47.31.png)
+![Find API id in Altair](../../.gitbook/assets/screenshot_20240521_174731.png)

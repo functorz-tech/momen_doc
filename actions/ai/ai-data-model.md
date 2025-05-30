@@ -7,7 +7,7 @@ description: >-
 
 Momen AI provides four data tables to record information generated during interactions with AI. Developers can use these tables directly for AI application data display and interaction.
 
-![AI data model tables](../../.gitbook/assets/截屏2024-07-23%2014.48.32.png)
+![AI data model tables](../../.gitbook/assets/screenshot_20240723_144832.png)
 
 ## Conversation
 

@@ -10,18 +10,18 @@ Momen provides robust collaboration features, allowing multiple users to work on
 ## Accessing Collaboration Features
 
 1. In the top-right corner of the Momen editor, click **Invite Collaborators**.
-2. Or, go to the User Center, select a project, click **Manage Project**, and enable **Sharing and Permissions**.
+2. Or, go to the User Center, select a project, click **Manage Project**, and click **Manage Collaborators**.
 
 ## Inviting and Managing Collaborators
 
-After clicking **Invite Collaborators**, you will enter the collaborator management interface. You can invite collaborators by sharing a link or entering their phone numbers. Assign different roles and permissions to each collaborator. Momen offers the following roles:
+After clicking **Invite Collaborators**, you will enter the collaborator management interface. You can invite collaborators by sharing a link or entering their email addresses. Assign different roles and permissions to each collaborator. Momen offers the following roles:
 
 - **Owner**: The project creator with full control, including editing, managing collaborators, and advanced operations. This is the highest permission level.
 - **Administrator**: Can edit project content, manage participants (invite/remove), and clone the project. Suitable for members assisting the owner in management.
 - **Editor**: Can modify project content. This is the main role for content creators and editors.
 - **Viewer**: Can only view project content, with no editing rights. Suitable for stakeholders who need to stay informed but not edit.
 
-By clearly defining roles and permissions, Momen ensures project security and collaboration efficiency, avoiding errors caused by unclear permissions.
+
 
 ### Collaborator Limits for Different Project Plans
 

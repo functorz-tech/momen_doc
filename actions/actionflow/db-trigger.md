@@ -26,7 +26,7 @@ The **Database Trigger** feature automatically runs Actionflows when data is ins
    - Add a "Get Payment Amount" node to calculate the user's total payment.
    - Add an "Update Account" node to set the user as "VIP".
 
-   ![Add Actionflow](../../.gitbook/assets/截屏2024-11-06%2012.30.44.png)
+   ![Add Actionflow](../../.gitbook/assets/screenshot_20241106_123044.png)
 
 2. **Add Trigger**
 
@@ -49,7 +49,7 @@ The **Database Trigger** feature automatically runs Actionflows when data is ins
 
    Triggers can access both previous and updated data values. In the "Configure Conditions for Updated Data" section, choose to use either the data after update or before update to design your trigger logic.
 
-   ![Set Conditions and Actionflow Parameters](../../.gitbook/assets/截屏2024-11-06%2012.33.29.png)
+   ![Set Conditions and Actionflow Parameters](../../.gitbook/assets/screenshot_20241106_123329.png)
 
 ---
 

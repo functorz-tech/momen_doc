@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Enhance your applications by adding custom-built React components. These components enable dynamic forms with live validation, data-driven charts, advanced animations, transitions, interactive maps, and data visualizations, expanding the range of interactive functionality. See a data visualization showcase [here](https://dev.to/momen_hq/interop-between-code-and-no-code-using-code-components-to-add-echart-in-your-project-4ifp).
+Enhance your applications by adding custom-built React components. These components enable dynamic forms with live validation, data-driven charts, advanced animations, transitions, interactive maps, and other data visualizations, expanding the range of interactive functionality. See a data visualization showcase [here](https://dev.to/momen_hq/interop-between-code-and-no-code-using-code-components-to-add-echart-in-your-project-4ifp).
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ npm install
 
 A typical code component library project has the following structure:
 
-![Project directory structure for code component](../.gitbook/assets/截屏2024-10-31%2019.06.58.png)
+![Project directory structure for code component](../.gitbook/assets/screenshot_20241031_190658.png)
 
 For each custom component, create a dedicated folder under `src/components` with:
 
@@ -73,11 +73,11 @@ Each component file must export four interfaces for property types:
 - **`[ComponentName]Event`**: Declares internal events with properties typed as `EventHandler` from `zvm-code-context`
 - **`[ComponentName]Prop`**: Combines the above three interfaces as `propData`, `propState`, and `event`
 
-![Component interface definitions](../.gitbook/assets/截屏2024-10-31%2019.10.11.png)
+![Component interface definitions](../.gitbook/assets/screenshot_20241031_191011.png)
 
 Expose newly created components in `src/components/index.ts`.
 
-![Export components in index.ts](../.gitbook/assets/截屏2024-10-31%2019.11.35.png)
+![Export components in index.ts](../.gitbook/assets/screenshot_20241031_191135.png)
 
 Refer to the template’s example code for guidance. Follow the conventions strictly for proper component and declaration recognition.
 
@@ -98,24 +98,24 @@ To add your custom code component to a no-code project:
 1. Click the code component icon on the left sidebar.
 2. Select your newly published component project in the pop-up window.
 
-![Import code component in Momen](../.gitbook/assets/截屏2024-10-31%2019.15.31.png)
+![Import code component in Momen](../.gitbook/assets/screenshot_20241031_191531.png)
 
 Once added, the component will appear at the bottom of the left sidebar.
 
-![Code component in sidebar](../.gitbook/assets/截屏2024-10-31%2019.16.40.png)
+![Code component in sidebar](../.gitbook/assets/screenshot_20241031_191640.png)
 
 ### Database Synchronization
 
 After configuring or modifying a component, sync the database or preview to ensure it functions at runtime. Click the **database sync icon** (upper left of the interface).
 
-![Database sync icon](../.gitbook/assets/截屏2024-10-31%2019.18.04.png)
+![Database sync icon](../.gitbook/assets/screenshot_20241031_191804.png)
 
 ### Configuring Component Properties
 
 Properties are parsed according to their declared types. Follow naming conventions and structure precisely to ensure compatibility with Momen.
 
-![Component property configuration](../.gitbook/assets/截屏2024-10-31%2019.19.18.png)
+![Component property configuration](../.gitbook/assets/screenshot_20241031_191918.png)
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and more. You can iterate and refine your projects in real time for a seamless creation process. Momen offers powerful API integration, enabling you to connect your projects to any service. With Momen, you can bring your ideas to life and launch web app products faster than ever.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

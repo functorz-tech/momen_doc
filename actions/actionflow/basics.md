@@ -62,20 +62,20 @@ Defined variables are accessible to all nodes and can be assigned using the "Ass
 
 ### Nodes
 
-Nodes include database operations, AI execution, permission changes, API calls, and code blocks.
+Nodes include database operations, AI execution, permission changes, API calls, code blocks, loop, and conditionals.
 
 ### Triggers
 
-Trigger types: page click, database change, scheduled, and callback.
+Trigger types: database change, scheduled, and callback.
 
 ---
 
 ## How to Use
 
 1. **Create & Configure Nodes:** Add and arrange nodes for your business logic, including conditional branches.
-2. **Configure Triggers:** Select trigger types to start the Actionflow.
+2. **Configure Triggers:** Configure triggers to start the Actionflow.
 3. **Set Permissions:** Define which user roles can execute the Actionflow.
-4. **Invoke Actionflow:** Trigger via frontend interactions or configured triggers.
+4. **Use the Actionflow:** Configure a "Request – Actionflow" action on a component, or use the triggers you have set up to execute the Actionflow.
 
 ---
 
@@ -95,8 +95,8 @@ Add nodes by clicking "+". Supported types:
 
 - **Database Operations:** Query, insert, update, delete.
 - **API Calls:** Execute pre-configured APIs and bind responses.
-- **AI Execution:** Run an AI model configured in Momen.
-- **Set Global Variable:** Assign values to global variables.
+- **AI Execution:** Run an AI agent configured in Momen.
+- **Set Actionflow Variable:** Assign values to Actionflow variables.
 - **Permission Management:** Grant or revoke user roles.
 - **Conditional Branch:** Add decision logic (branches are evaluated left to right).
 - **Custom Code:** Execute code blocks.
@@ -108,19 +108,18 @@ Supported triggers:
 - **Scheduled:** Set periodic execution (supports Cron).
 - **Database Change:** [See details](db-trigger.md).
 - **Webhook:** Trigger via webhooks (requires callback body configuration).
-- **Frontend:** Add "Request – Actionflow" to a component or page interaction.
 
 
 ## Log Management
 
-View execution logs in **Project Details > Run Logs**.  
+View execution logs in **Editor > Logs**.  
 Search by Actionflow ID for troubleshooting.
 
 ---
 
 ## Notes
 
-- Automation requires purchasing execution credits. Free quotas depend on project version; buy more via "Personal Center > Project > Management > Automation Execution Credits."
+- Automation requires purchasing execution credits. Free quotas depend on project version; buy more via "Project Details > Automation Execution Credits."
 - Ensure all nodes are configured, saved, and published before setting up triggers.
 - Actionflows do not enforce strict type checking—variables of different types can be assigned.
 - Before deleting a node, update or remove any downstream nodes using its output.

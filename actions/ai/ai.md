@@ -87,7 +87,7 @@ After filling in the above information, click "Verify". The system will attempt 
 
 The left side is the configuration interface, the right side is the debugging interface.
 
-![AI configuration interface](../../.gitbook/assets/截屏2024-07-23%2013.34.39.png)
+![AI configuration interface](../../.gitbook/assets/screenshot_20240723_133439.png)
 
 ### 1. General Configuration
 
@@ -103,14 +103,14 @@ The left side is the configuration interface, the right side is the debugging in
 **Maximum Token per Round:** This is the maximum number of words that can be sent to the AI and received from the AI in each round.
 
 {% hint style="info" %}
-**Important Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more points. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using points.
+**Note:** When multi-turn conversations are enabled, each new round includes the context from previous rounds. This will result in an increasing number of words per round, consuming more points. Therefore, you need to set a word limit per round based on your business needs to avoid exceeding the model's processing capacity while efficiently using points.
 {% endhint %}
 
 ### 2. Input Configuration
 
 Input Parameter Configuration: Set up the single or multiple parameters required when making an AI request. These parameters are typically linked directly to \[Predefined Prompts] for usage, and may also be used as filtering conditions for the \[Knowledge Base-Database].
 
-![Input parameter configuration](../../.gitbook/assets/截屏2024-07-23%2013.41.04.png)
+![Input parameter configuration](../../.gitbook/assets/screenshot_20240723_134104.png)
 
 ### 3. Preset Prompts
 
@@ -188,7 +188,7 @@ Select single or multiple data tables, fields, related tables/fields stored in M
 ![Setting the data in knowledge base](../../.gitbook/assets/5%20(21).png)
 
 {% hint style="info" %}
-**Important Note:** The data given to the AI will consume points. To manage this, it's best to limit the amount and size of data entries. Set appropriate data limits based on your needs to avoid overloading the model and use points efficiently.
+**Note:** The data given to the AI will consume points. To manage this, it's best to limit the amount and size of data entries. Set appropriate data limits based on your needs to avoid overloading the model and use points efficiently.
 {% endhint %}
 
 **Local Files:**
@@ -204,7 +204,7 @@ Upload your local files as AI's knowledge.
 
 Momen also supports fetching external data via API. You can choose the configured APIs as your data source.
 
-![Use API as data source](../../.gitbook/assets/截屏2024-02-23%2015.07.10.png)
+![Use API as data source](../../.gitbook/assets/screenshot_20240223_150710.png)
 
 Please check our step-by-step guide about how to [configure APIs](../../data/api.md) in Momen.
 
@@ -218,13 +218,13 @@ In an AI Agent, large language models serve as the agent's brain, tasked with lo
 
 In Momen AI, the AI can invoke pre-configured Actionflows, APIs, and other AI requests within Momen, or open "Obtain Info" to let the AI seek additional context from the user if necessary.
 
-![AI tool invocation](../../.gitbook/assets/截屏2024-07-23%2013.54.03.png)
+![AI tool invocation](../../.gitbook/assets/screenshot_20240723_135403.png)
 
 **Invoking Actionflows**
 
 Preparation: Familiarize yourself with \[[Actionflow Fundamentals](../action-flow-configuration/action-flow-basics.md)], complete the Actionflow setup, save, and publish it. After choosing a configured Actionflow, click the "Add Description" button to the right of the flow to describe both the Actionflow itself and the input/output parameters, helping the AI understand the flow's purpose and the data involved.
 
-![Invoking Actionflows](../../.gitbook/assets/截屏2024-07-23%2013.57.08.png)
+![Invoking Actionflows](../../.gitbook/assets/screenshot_20240723_135708.png)
 
 **Invoking APIs**
 
@@ -236,23 +236,23 @@ Preparation: Other AI requests have been set up and released in Momen. Similarly
 
 ### 6. Output Configuration
 
-![Output configuration](../../.gitbook/assets/截屏2024-07-23%2013.59.53.png)
+![Output configuration](../../.gitbook/assets/screenshot_20240723_135953.png)
 
 **Default:** If your task does not specify an output format, the AI will automatically determine the most appropriate output. For instance, it may produce a number when calculating data, or a substantial text block when writing an article.
 
 **Custom:** As depicted below, outputs can be formatted as "JSON" objects. This format allows for the customization of the JSON structure and its field names. Each field can include a description that clarifies its purpose to the AI.
 
-![Custom output configuration](../../.gitbook/assets/截屏2024-07-23%2014.00.39.png)
+![Custom output configuration](../../.gitbook/assets/screenshot_20240723_140039.png)
 
 **Streaming Output:** AI models display results progressively as they are generated, reducing latency and thereby improving user experience.
 
-**Important Note:** Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
+**Note:** Streaming output is intended solely for visual display on pages and cannot be integrated into project data flows. It can be used as standard text for further applications, like database storage, only after a successful AI invocation.
 
 ### 7. Debugging and Preview
 
 Once you've finalized the AI settings, input parameters can be entered on the right side of the interface for debugging and previewing the AI request.
 
-![Debugging and preview](../../.gitbook/assets/截屏2024-07-23%2014.04.06.png)
+![Debugging and preview](../../.gitbook/assets/screenshot_20240723_140406.png)
 
 The section below details the entire operation process of the AI. Upon successful execution, you can review the input parameters you provided, how the tools were utilized, and whether the outcomes align with your expectations. If the setup includes multiple dialogue rounds, you can input new parameters here to extend the conversation.
 
@@ -262,7 +262,7 @@ The section below details the entire operation process of the AI. Upon successfu
 
 Momen AI provides the following five types of AI actions. You can find AI under the action menu when clicking and then selecting the needed action to configure.
 
-![AI action types](../../.gitbook/assets/截屏2024-07-23%2015.29.15.png)
+![AI action types](../../.gitbook/assets/screenshot_20240723_152915.png)
 
 ### 1. Start Conversation
 
@@ -278,7 +278,7 @@ In the action of \[Start Conversation], select the AI to be called. If the AI ha
 
 **Note:** To accurately bind the session ID in \[Continue Conversation], \[Delete Conversation], \[Stop Response], a page data of integer type (BIGINT) is generally added to the page, named `conversation_id`. Set this page variable when \[Start Conversation] is successful, assigning it as: result data/Start Session/ID.
 
-![Momen AI start conversation](../../.gitbook/assets/截屏2024-07-23%2015.34.24.png)
+![Momen AI start conversation](../../.gitbook/assets/screenshot_20240723_153424.png)
 
 ### 2. Continue Conversation
 
@@ -287,7 +287,7 @@ When conducting multi-round dialogues, after \[Start Conversation], if you want 
 **Action Configuration Guide**\
 In the action of \[Continue Conversation], select the same AI as the last \[Start Conversation] call, and bind the Conversation ID generated by \[Start Conversation], simultaneously directly enter or bind the message content.
 
-![Momen AI continue conversation](../../.gitbook/assets/截屏2024-07-23%2015.45.20.png)
+![Momen AI continue conversation](../../.gitbook/assets/screenshot_20240723_154520.png)
 
 ### 3. Delete Conversation
 
@@ -307,23 +307,23 @@ To be updated...
 
 To directly display the results of the AI request, generally add a page variable on the page, then add the needed AI request to the button component's click action, complete the AI request's input parameter configuration, and set the page variable when it is successful, assigning it as content from the result data.
 
-![Directly display AI results](../../.gitbook/assets/截屏2024-07-23%2015.51.41.png)
+![Directly display AI results](../../.gitbook/assets/screenshot_20240723_155141.png)
 
 ### When Custom Output
 
 When configuring AI, if you configured custom output, you will need to set the output fields' types and names (in English, best if it corresponds to the expected output results' meaning). AI will write the corresponding results into the fields by their names.
 
-![Custom output fields configuration](../../.gitbook/assets/截屏2024-07-23%2014.00.39.png)
+![Custom output fields configuration](../../.gitbook/assets/screenshot_20240723_140039.png)
 
 When invoking this AI, you can select the needed field content from the AI result data to refer to.
 
-![](<../../.gitbook/assets/截屏2024-07-23%2015.57.46.png>)
+![](<../../.gitbook/assets/screenshot_20240723_155746.png>)
 
 ### When Streaming Output
 
 When configuring AI, if 'Streaming Output' mode is turned on, then when invoking AI, there will be a configuration option 'Assign streaming output to page data'. In the configuration, you need to select the page data previously created on the page. Then you can bind this page data to \[Text Component]. When the AI call is successful, the text component will then display the results in a streaming manner.
 
-![Streaming output configuration](../../.gitbook/assets/截屏2024-07-23%2015.59.55.png)
+![Streaming output configuration](../../.gitbook/assets/screenshot_20240723_155955.png)
 
 ## AI Point Consumption
 

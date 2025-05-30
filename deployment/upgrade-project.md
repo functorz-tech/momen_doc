@@ -50,11 +50,11 @@ If your project runs out of computing resources:
 
 After upgrading your plan, you can activate the server immediately or schedule automatic activation within seven days.
 
-![Schedule server activation](../.gitbook/assets/截屏2024-04-25%2012.41.02.png)
+![Schedule server activation](../.gitbook/assets/screenshot_20240425_124102.png)
 
 If you did not select the activation option on the upgrade success page, you can still schedule activation from the reminder bar at the top of the project details page.
 
-![Activation reminder in project details](../.gitbook/assets/截屏2024-04-28%2016.35.42.png)
+![Activation reminder in project details](../.gitbook/assets/screenshot_20240428_163542.png)
 
 1. During server upgrade and activation, the project cannot be edited, and the online application will be inaccessible. We recommend scheduling activation based on your business needs.
 2. After successful activation, you will receive both a system and email notification. You can view the server status on the project details page.

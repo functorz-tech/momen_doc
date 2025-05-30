@@ -73,7 +73,7 @@ Momen provides two modal dialog modes:
 
 ![Example workflow for using the Show Modal action in custom mode.](../.gitbook/assets/7.gif)
 
-### Important Notes
+### Notes
 
 When triggering a modal action from within a **List** component, direct access to the list item data is restricted. To work around this:
 

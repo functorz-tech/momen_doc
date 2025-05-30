@@ -415,7 +415,7 @@ We've made major updates on canvas, improving the user experience, design consis
 
 Added 42 shortcuts for general component operations, selection, movement, and canvas panel zooming.
 
-<figure><img src="../.gitbook/assets/截屏2024-08-02 18.42.01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screenshot_20240802_184201.png" alt=""><figcaption></figcaption></figure>
 
 ### \*\*Detailed Update
 
@@ -427,12 +427,12 @@ Added 42 shortcuts for general component operations, selection, movement, and ca
 2. Supports locating components by clicking after search.
 3. Supports right-click to copy/delete after multi-selection on pages.
 
-<figure><img src="../.gitbook/assets/截屏2024-08-02 18.43.11.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screenshot_20240802_184311.png" alt="" width="188"><figcaption></figcaption></figure>
 
 4. Supports dragging and sorting pages.
 5. Displays all breakpoint content in multi-breakpoint mode.
 
-<figure><img src="../.gitbook/assets/截屏2024-08-02 18.43.34.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screenshot_20240802_184334.png" alt=""><figcaption></figcaption></figure>
 
 6. When a component has a popup configured, the left sidebar allows selection and editing the popup.
 7. Distinguishes components positioned as "relative" and "absolute/fixed."
@@ -614,14 +614,14 @@ Distinguishes configuration and preview areas, supports direct selection and edi
 
 Moved the original "Preview" entry into "Publish," forming an integrated web process for centralized management.
 
-<figure><img src="../.gitbook/assets/截屏2024-08-05 13.19.45.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screenshot_20240805_131945.png" alt=""><figcaption></figcaption></figure>
 
 * **Entry Adjustment Style Adjustment**
 * **Error Reporting**
 
 Changed from always present to appearing when there is an error.
 
-<figure><img src="../.gitbook/assets/截屏2024-08-05 13.20.30.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/screenshot_20240805_132030.png" alt=""><figcaption></figcaption></figure>
 
 **Shortcuts**
 
@@ -696,12 +696,12 @@ Momen's latest update, version 1.0.8, is here! Packed with exciting new features
 2. Optimization of Link Data configuration.
    1. Link Data supports not displaying links when there is no data. This means that Link Data will not be shown in the webpage link when there are no configured parameters, which will help increase SEO weight.
 
-<figure><img src="../.gitbook/assets/下载.png" alt="product update of a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/download.png" alt="product update of a no-code tool"><figcaption></figcaption></figure>
 
 3. SSO Optimization
    1. Optimizing page style and interaction, including support for parameter passing when configuring the target page.
 
-<figure><img src="../.gitbook/assets/下载 (1).png" alt="product update of a no-code tool"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/download_1.png" alt="product update of a no-code tool"><figcaption></figcaption></figure>
 
 ### III. Improvements
 

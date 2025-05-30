@@ -94,9 +94,9 @@ User messages, `car_model_id`, `work_order_id`.
    > **Tip:**  
    > Use a knowledge base for dynamic, frequently changing information instead of hardcoding data into prompts. This approach eliminates the need to update prompts whenever issues change.
 
-   ![Knowledge base configuration 1](../.gitbook/assets/截屏2024-09-23%2014.04.04.png)
-   ![Knowledge base configuration 2](../.gitbook/assets/截屏2024-09-23%2014.07.44.png)
-   ![Knowledge base configuration 3](../.gitbook/assets/截屏2024-09-23%2014.54.55.png)
+   ![Knowledge base configuration 1](../.gitbook/assets/screenshot_20240923_140404.png)
+   ![Knowledge base configuration 2](../.gitbook/assets/screenshot_20240923_140744.png)
+   ![Knowledge base configuration 3](../.gitbook/assets/screenshot_20240923_145455.png)
 
 3. **Adjust AI prompts** as needed to refine responses.
 
@@ -152,17 +152,17 @@ Location, preferences, date, time zone, duration.
 
 4. Create credentials (set redirect URI to [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)).
 
-   ![Create credentials](../.gitbook/assets/截屏2024-09-23%2017.19.27.png)
-   ![Set redirect URI](../.gitbook/assets/截屏2024-09-23%2017.22.56.png)
-   ![Download credentials JSON](../.gitbook/assets/截屏2024-09-23%2017.24.31.png)
+   ![Create credentials](../.gitbook/assets/screenshot_20240923_171927.png)
+   ![Set redirect URI](../.gitbook/assets/screenshot_20240923_172256.png)
+   ![Download credentials JSON](../.gitbook/assets/screenshot_20240923_172431.png)
 
 5. Download the credentials JSON file to obtain your `client_id` and `client_secret`.
 
-   ![Download credentials JSON file](../.gitbook/assets/截屏2024-09-23%2017.24.56.png)
+   ![Download credentials JSON file](../.gitbook/assets/screenshot_20240923_172456.png)
 
 6. Add your Google account as a test user.
 
-   ![Add Google account as test user](../.gitbook/assets/截屏2024-09-23%2017.25.43.png)
+   ![Add Google account as test user](../.gitbook/assets/screenshot_20240923_172543.png)
 
 7. Obtain the refresh token:
    1. Visit [Google OAuth Playground](https://developers.google.com/oauthplayground/)
@@ -212,4 +212,4 @@ The refresh token expires every 24 hours. Set up an automated process to renew i
 
 ## About Momen
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that enables users to create fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS solutions, and more. Iterate and refine your projects in real time for a seamless creation process. Momen also offers robust API integration, allowing you to connect your projects to any required service. Bring your ideas to life and launch your web app products faster than ever with Momen.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

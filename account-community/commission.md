@@ -5,19 +5,19 @@ description: >-
 
 # Promoting Momen
 
-Momen offers a commission program to empower users and expand Momen's reach. By promoting Momen, you can earn rewards through a simple process that attracts individuals and businesses interested in no-code development.
+Momen offers a commission program to empower users and expand Momen's reach. By promoting Momen, you can earn rewards through a simple process.
 
 ## What You Can Earn
 
-Share your unique invite code to earn up to 10% commission when a new user registers and pays for a project plan. The commission is based on the new user’s payment, and there is no upper limit to your earnings.
+Share your unique invite code to earn 10% commission when a new user registers and pays for a project plan. The commission is based on the new user’s payment, and there is no upper limit to your earnings.
 
 ## How to Become a Promoter
 
-**Get Started:** Click the **Promote Us** button in the top-right corner of the platform.
+**Get Started:** Click the **Promote Us** button in the bottom-left corner of the User Center.
 
 ![Promote Us button in Momen](../.gitbook/assets/promous1.jpeg)
 
-**Get Your Promo Code:** Copy your unique invitation code or link and start sharing it. Friends can enter the invitation code during registration, or sign up directly via your link (the code will be auto-filled).
+**Get Your Invitation Code:** Copy your unique invitation code or link and start sharing it. Friends can enter the invitation code during registration, or sign up directly via your link (the code will be auto-filled).
 
 **Link Your Withdrawal Account:** Commissions can only be withdrawn to your Stripe Connect account.
 
@@ -25,11 +25,7 @@ Share your unique invite code to earn up to 10% commission when a new user regis
 
 You earn 10% commission. If your referral uses a discount, your commission is based on the discounted price.
 
-- Example: If your referral subscribes to the monthly Pro plan for $99, you earn $9.90. With a 50% discount, your commission is $4.95.
 
-**Program End Date:** December 31, 2025.
-
-_Please note: Commission rates and terms are subject to change at any time._
 
 ## Successful Referral Criteria
 
@@ -50,4 +46,4 @@ Within 7 business days, your earnings will be automatically transferred to your 
 
 - **Paid Users:** Number of paid users / number of users you’ve referred
 - **Accumulated Commissions:** View your total earnings
-- **Cashable Cash:** Check how much cash is available for withdrawal
+- **Available Cash:** Check how much cash is available for withdrawal
