@@ -4,147 +4,144 @@ description: >-
 ---
 
 # SEO
-SEO (Search Engine Optimization) refers to the practice of optimizing a website's structure and content to improve keyword rankings in search engines, attract more users to the site, and gain more Data Outflow.
 
-SEO is a comprehensive and ongoing task. Momen provides developers with a rich and easy-to-use set of configuration tools, including:
+SEO (Search Engine Optimization) is the process of optimizing your website’s structure and content to improve keyword rankings in search engines, attract more users, and increase data outflow.
 
-* Rendering Pattern
-* Sitemap
-* robots.txt
-* Custom header/body
-* H tags
-* ...
+SEO is an ongoing process. Momen provides a comprehensive set of configuration tools, including:
 
-Note: Before using SEO features, you need to have a certain understanding of SEO-related background knowledge. You can find specific information through publicly available online resources.
+- Rendering Pattern
+- Sitemap
+- robots.txt
+- Custom header/body
+- H tags
+- ...
 
-## Configuration Tutorial
+> **Note:** Before using SEO features, ensure you have a basic understanding of SEO. Refer to online resources for more information.
 
-Open "Settings" and go to "SEO". Note that all configurations here will only take effect after the **Project is Published**:
+## Configuration Guide
 
-![](<../.gitbook/assets/seo/seo0.png>)
+Open **Settings** and go to **SEO**. All configurations here take effect only after the **Project is Published**.
+
+![SEO settings entry in Momen](../.gitbook/assets/seo/seo0.png)
 
 ### Global Settings
 
-This part of the configuration will affect all pages of the Project.
+These settings affect all pages in the project.
 
 #### 1. Rendering Pattern
 
-![](<../.gitbook/assets/seo/seo1.png>)
+![Rendering pattern options in Momen](../.gitbook/assets/seo/seo1.png)
 
-Rendering patterns refer to the timing and method of rendering pages, directly affecting the performance and SEO of all pages. Momen offers three patterns:
+Rendering patterns determine when and how pages are rendered, directly impacting performance and SEO. Momen supports:
 
-* **Client-Side Rendering (CSR)**: Pages are rendered in the browser, resulting in slow initial load speed and poor SEO performance.
-* **Server-Side Rendering (SSR)**: Pages are rendered on the server and then sent to the browser, resulting in fast initial load speed and better SEO performance.
-* **Static Site Generation (SSG)**: All pages are rendered and saved on the server when the Project is published. When requested, the pre-generated pages are accessed directly. This eliminates the rendering step, resulting in very fast initial load speed and excellent SEO performance.
+- **Client-Side Rendering (CSR):** Pages are rendered in the browser. Slower initial load and poor SEO.
+- **Server-Side Rendering (SSR):** Pages are rendered on the server and sent to the browser. Faster initial load and better SEO.
+- **Static Site Generation (SSG):** Pages are pre-rendered and saved on the server at publication. Fastest load and best SEO.
 
-|        | Client-Side Rendering (CSR)                 | Server-Side Rendering (SSR)                   | Static Site Generation (SSG)                             |
-| ------ | --------------------------- | ----------------------------- | --------------------------------------- |
-| When is the page rendered? | Browser                         | Server                           | Generated and saved on the server at Project publication                         |
-| Initial load speed | Slow                           | Fast                             | Very fast                                      |
-| Content dynamism  | High                           | High                             | Low                                       |
-| SEO performance  | Poor                           | Strong                             | Strong                                       |
-| Suitable scenarios  | Projects with low requirements for initial load speed and SEO: internal management systems, etc. | Projects with frequent content updates and high SEO requirements: e-commerce sites, news portals, etc. | Projects with infrequent content updates and very high requirements for web performance and SEO: blogs, documentation sites, marketing landing pages, etc. |
+|        | CSR | SSR | SSG |
+|--------|-----|-----|-----|
+| When rendered | Browser | Server | At publication, saved on server |
+| Initial load speed | Slow | Fast | Very fast |
+| Content dynamism | High | High | Low |
+| SEO performance | Poor | Strong | Strong |
+| Suitable scenarios | Internal tools, low SEO | E-commerce, news, high SEO | Blogs, docs, landing pages, high SEO |
 
-In the generated pages, you can check the generation method in the head of the HTML:
+You can check the rendering method in the HTML `<head>`.
 
-![](<../.gitbook/assets/seo/seo2.png>)
+![Check rendering method in HTML head](../.gitbook/assets/seo/seo2.png)
 
-For more detailed information on CSR, SSR, and SSG, please refer to publicly available online resources.
+For more details, refer to online resources.
 
 #### 2. Range of Path Parameters
 
-The range of path parameters directly determines the address of the webpage (see [Parameter](https://docs.momen.app/data/parameter) for details) and will affect SEO in the following two aspects:
+Path parameters determine webpage addresses (see [Parameter](https://docs.momen.app/data/parameter)) and affect:
 
-* Sitemap: Links included can be generated using path parameters.
-* Page Generation: In SSG, since pages need to be pre-generated at publication, the system will generate pages based on the set range of path parameters.
+- **Sitemap:** Links are generated using path parameters.
+- **Page Generation:** In SSG, pages are pre-generated based on these parameters.
 
-Sources of path parameter values include:
+Sources:
 
-* **Static Data**: Manually input fixed values.
-* **Database**: Dynamically obtain values from the database, requiring table and field selection, and filter configuration.
+- **Static Data:** Manually entered values.
+- **Database:** Dynamically fetched from the database.
 
-**Static data and database data will be used together to generate sitemaps and pages.**
+Both are used together for sitemap and page generation.
 
-![](<../.gitbook/assets/seo/seo3.png>)
-
-![](<../.gitbook/assets/seo/seo4.png>)
+![Static data path parameter configuration](../.gitbook/assets/seo/seo3.png)
+![Database path parameter configuration](../.gitbook/assets/seo/seo4.png)
 
 #### 3. Sitemap
 
-A sitemap is used to inform search engines about the pages on a website, helping them better understand the overall structure of the site and improve crawling efficiency and accuracy.
+A sitemap helps search engines understand your site structure.
 
-Momen provides two generation modes: real-time generation and pre-generation.
+- **Real-time update:** URLs are added after user visits.
+  - *Advantage:* Dynamic.
+  - *Disadvantage:* May miss unvisited pages.
+- **Pre-generation:** Fixed sitemap generated at publication.
+  - *Advantage:* Complete if parameters are set correctly.
+  - *Disadvantage:* Requires re-publication after data changes.
 
-* **Real-time update**: After a user visits a page, the URL of that page and the URLs of all navigation target pages within it are included in the sitemap.
-  * Advantage: High dynamism.
-  * Disadvantage: The sitemap may be incomplete, causing some pages (e.g., pages that have not been navigated to) not to be crawled by search engines.
+![Sitemap configuration in Momen](../.gitbook/assets/seo/seo5.png)
 
-* **Pre-generation**: At Project publication, a fixed sitemap is generated based on the path parameters range set in the previous step.
-  * Advantage: Ensures all sites are included in the sitemap (provided the path parameters are set correctly).
-  * Disadvantage: Low dynamism, requiring re-publication to regenerate the sitemap after each data change.
+#### 4. robots.txt
 
-![](<../.gitbook/assets/seo/seo5.png>)
+The `robots.txt` file controls which pages search engines can crawl.
 
-#### 4. Robots.txt
-
-The robots.txt file is placed in the root directory of the website. Its function is to inform search engine crawlers which pages can be crawled and which cannot. Simply put, it acts as a "gatekeeper" for the website, controlling the access permissions of search engine crawlers.
-
-![](<../.gitbook/assets/seo/seo6.png>)
+![robots.txt configuration in Momen](../.gitbook/assets/seo/seo6.png)
 
 #### 5. Custom header/body
 
-Used to add additional tags (\<meta />, \<canonical />, etc.) in the HTML Header and Body to help search engines understand your website. Besides SEO, this feature can also be used for code injection (e.g., when using Baidu or Google site tools).
+Add extra tags (`<meta />`, `<canonical />`, etc.) to the HTML header/body for SEO or code injection (e.g., analytics).
 
-For more tips on adding custom content in HTML, please search for online tutorials.
-
-![](<../.gitbook/assets/seo/seo7.png>)
+![Custom header/body configuration in Momen](../.gitbook/assets/seo/seo7.png)
 
 ### Page Settings
 
-This part of the configuration will only take effect on a specific page.
+These settings apply to individual pages.
 
 #### 1. SEO TDK
 
-This feature is used to set the Title, Description, and Keywords for a page, helping search engines better understand the webpage.
+Set the Title, Description, and Keywords for a page.
 
-![](<../.gitbook/assets/seo/seo8.png>)
+![SEO TDK configuration in Momen](../.gitbook/assets/seo/seo8.png)
 
 #### 2. Social Media Content
 
-This feature is used to set the content displayed on social media (Facebook, X, etc.) for the webpage. Strictly speaking, it is not part of SEO, but configuring it well in addition to basic SEO optimization can be more beneficial for exposure and dissemination on social networks, aligning with the purpose of SEO optimization.
+Configure how your page appears when shared on social media. Momen supports:
 
-Momen provides two protocols:
+- **Open Graph:** For most platforms.
+- **X Cards:** For the X platform.
 
-* **Open graph**: A general protocol effective on most social media platforms.
-* **X cards**: X platform protocol, only supported on the X platform.
+Both can be enabled.
 
-Both protocols can be configured together and will take effect.
-
-![](<../.gitbook/assets/seo/seo9.png>)
+![Social media content configuration in Momen](../.gitbook/assets/seo/seo9.png)
 
 #### 3. H tags
 
-H tags are important elements used to identify the content and hierarchy of a website page, and search engines index websites based on H tags.
+H tags define page structure and hierarchy for search engines.
 
-![](<../.gitbook/assets/seo/seo10.png>)
+![H tags configuration in Momen](../.gitbook/assets/seo/seo10.png)
 
-#### 4. ALT of images
+#### 4. Image ALT Attributes
 
-The Alt attribute is used to help search engines understand images.
+The `alt` attribute helps search engines understand images.
 
-![](<../.gitbook/assets/seo/seo11.png>)
+![Image ALT attribute configuration in Momen](../.gitbook/assets/seo/seo11.png)
 
-### Publish the Project to Make the Configuration Effective
-All configurations in SEO take effect after the **Project is Published**.
+### Publishing
 
-![](<../.gitbook/assets/seo/seo12.png>)
+All SEO configurations take effect only after the **Project is Published**.
 
-## Function Boundaries
+![Publish project for SEO settings to take effect](../.gitbook/assets/seo/seo12.png)
 
-The capabilities of SEO are strongly associated with the rendering mode, and the modes supported by different versions of the Project are as follows:
+## Feature Availability
 
-|         | Free Version | Basic Plan     | Pro Plan     | Single Tenant Server      |
-| ------- | --- | ------- | ------- | ----------- |
-| Supported Rendering Patterns | CSR | CSR, SSG | CSR, SSG | CSR, SSR, SSG |
+SEO features depend on the rendering mode supported by your plan:
 
-In CSR, page configurations (TDK, social media, etc.) cannot be used.
+| Plan                   | Supported Rendering Patterns |
+|------------------------|-----------------------------|
+| Free Version           | CSR                         |
+| Basic Plan             | CSR, SSG                    |
+| Pro Plan               | CSR, SSG                    |
+| Single Tenant Server   | CSR, SSR, SSG               |
+
+> In CSR mode, page-level configurations (TDK, social media, etc.) are not available.

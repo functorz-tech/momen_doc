@@ -1,17 +1,24 @@
 ---
 description: >-
   By configuring this action, you can share links, text,
-  and images to Twitter.
+  and images to X (formerly Twitter).
 ---
 
-# Share 
+# Share to X (formerly Twitter)
 
-## Introduction   
-Enable users to share content directly to Twitter by clicking a button. This feature supports sharing links, text, and images sourced either from input fields, image selectors, or fetched via remote data. The shared content will appear as a tweet.
+## Introduction
 
-## Action configuration guide   
-In the component's interactions, set up the "Share to Twitter" action. Specify or bind the link and text content. Upon successful activation, Twitter will launch, allowing the user to log in and share the prepared content directly.
+Allow users to share content directly to X (formerly Twitter) by clicking a button. This feature supports sharing links, text, and images, which can be sourced from input fields, image selectors, or remote data. The shared content will be posted as a post on X.
 
-This configuration allows seamless integration with Twitter, providing a straightforward way for users to engage with and expand their social media presence directly from your web platform.
+## Action Configuration Guide
+
+To enable sharing to X:
+
+1. In the component's interaction settings, select the **Share to X** action.
+2. Specify or bind the link and text content to be shared.
+3. When the action is triggered, X will open in a new window or tab. Users can log in and share the prepared content directly.
+
+This integration provides a seamless way for users to share content from your web platform to X, helping to increase engagement and expand social media reach.
+
 
 

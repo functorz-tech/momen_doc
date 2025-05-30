@@ -5,82 +5,84 @@ description: >-
 
 # System Components - Display
 
-This category includes the following components: Text, Button, Image, Video, Rich Text, HTML.
+This category includes the following components: Text, Button, Image, Video, Rich Text, and HTML.
 
 ## Text
 
 Used to display content such as text, numbers, dates, and times.
 
-### Text Source:
+### Text Source
 
-* **Static Input**: Manually enter static data.
-* **Data Binding**: Bind data of the Text type.
+- **Static Input:** Manually enter static data.
+- **Data Binding:** Bind data of the Text type.
 
-### Text Style Settings:
+### Text Style Settings
 
-You can set the font, size, line height, weight, letter spacing, color, etc. If the text is too long and exceeds the component's width, causing incomplete display, you can enable the "Multiline" configuration to allow automatic line wrapping.
+You can set the font, size, line height, weight, letter spacing, color, and more. If the text is too long and exceeds the component's width, enable the "Multiline" option to allow automatic line wrapping.
 
 ## Button
 
-Used to trigger a specific action (only supports click events), such as adding data, navigating to a page, etc.
+Used to trigger a specific action (supports only click events), such as adding data or navigating to a page.
 
-> Only text can be displayed on the button. If you need a button with an icon, you can use the View component or Image component to achieve this.
+> Only text can be displayed on the button. If you need a button with an icon, use the View or Image component to achieve this.
 
 ## Image
 
-### Image Source:
+### Image Source
 
-* **Local Upload**: Upload from the local computer. Supported formats: jpg, png, webp, gif. The width or height of the image cannot exceed 30,000 px, and the total pixels cannot exceed 250 million px (the calculation method for gif animations is width * height * number of frames; for other non-dynamic images, it is width * height). **Size cannot exceed 20 MB**.
-* **Data Binding**: Dynamically bind data of the Image type.
-* **Link**: Directly display images using a link, generally used to display images from external systems.
+- **Local Upload:** Upload from your computer. Supported formats: jpg, png, webp, gif. The width or height cannot exceed 30,000 px, and total pixels cannot exceed 250 million px (for GIFs: width × height × frames; for others: width × height). **File size cannot exceed 20 MB.**
+- **Data Binding:** Dynamically bind data of the Image type.
+- **Link:** Display images using a URL, typically for images from external systems.
 
-### Image Settings:
+### Image Settings
 
-* **Auto Compression**: Downloading images consumes Data Outflow. Enabling this configuration will reduce Data Outflow consumption.
-* **Display Mode**: There are two options: "Full Image" and "Fill Space".
-  * Full Image: Display the complete image within the component. The image will be scaled proportionally, and the area outside the image will show the background color.
-  * Fill Space: The image fills the entire component, and the part exceeding the component will be cropped.
+- **Auto Compression:** Downloading images consumes Data Outflow. Enabling this reduces Data Outflow consumption.
+- **Display Mode:** Two options:
+  - **Full Image:** Displays the complete image within the component, scaled proportionally. The area outside the image shows the background color.
+  - **Fill Space:** The image fills the entire component, cropping any part that exceeds the component's bounds.
 
-### Image Actions:
+### Image Actions
 
-The Image component is equipped with a "Fullscreen Image" behavior, supporting functions such as zooming, downloading, forwarding images, and recognizing QR Codes. For details, please see [Component Management](../actions/component-management.md).
+The Image component supports a "Fullscreen Image" behavior, enabling zoom, download, image forwarding, and QR code recognition. For details, see [Component Management](../actions/component-management.md).
 
 ## Video
 
-### Video Source:
+### Video Source
 
-* **Local Upload Video**: Upload from the local computer.
-* **Data Binding**: Dynamically bind data of the Video type.
-* **Link**: Directly play videos using a link, including video live streaming addresses (including HLS video streams, etc.).
+- **Local Upload:** Upload video files from your computer.
+- **Data Binding:** Dynamically bind data of the Video type.
+- **Link:** Play videos using a URL, including live streaming addresses (e.g., HLS streams).
 
-### Video Settings:
+### Video Settings
 
-* **Loop**: Default is off, meaning the video will automatically loop playback after it starts playing.
-* **Autoplay**: Default is off, meaning the video will automatically play when entering the page where the video is located.
-* **Playback Control, Mute Button**: Default is on, meaning it shows the functions of video playback start/pause, volume control, playback speed control, picture-in-picture, and fullscreen.
+- **Loop:** Default is off. When enabled, the video will loop automatically.
+- **Autoplay:** Default is off. When enabled, the video will play automatically when the page loads.
+- **Playback Controls & Mute Button:** Default is on. Shows controls for play/pause, volume, playback speed, picture-in-picture, and fullscreen.
 
-### Video Playback Control:
+### Video Playback Control
 
-You can configure behaviors triggered "when playback starts" in the behavior settings, or add video control behaviors in the "onClick" of other components. For details, please see [Component Management](../actions/component-management.md).
+You can configure behaviors triggered "when playback starts" in the behavior settings, or add video control behaviors to the "onClick" event of other components. For details, see [Component Management](../actions/component-management.md).
 
 ## Rich Text
 
-### Rich Text Data Source:
+### Rich Text Data Source
 
-* **Static Data**: Manually input in the right sidebar.
-* **Dynamic Data Binding**: Bind data of the Text type.
+- **Static Data:** Manually input in the right sidebar.
+- **Dynamic Data Binding:** Bind data of the Text type.
 
 ## HTML
 
 This component supports referencing an external website via iframe or directly writing HTML code to display custom content.
 
-If using the iframe method, you only need to fill in the URL of the referenced page. If you want to add custom HTML code, please note the following points:
+If using the iframe method, fill in the URL of the referenced page. If adding custom HTML code, note:
 
-* **`<script>` tags are not supported**, scripts cannot be run, so this component is usually only used for writing HTML structure and CSS styles.
-* Supports binding data within the Project, allowing dynamic content display.
-* Complete HTML page code is not needed, only necessary code snippets are required (see the example below).
+- **`<script>` tags are not supported**; scripts cannot run. This component is mainly for HTML structure and CSS styles.
+- Supports binding data within the project for dynamic content display.
+- You do not need to write a complete HTML page—only the necessary code snippets (see example below).
 
-Next, we will use custom HTML code to achieve a "text marquee effect". The complete code is as follows, showing only simple structure and style, and referencing data within the Project, achieving dynamic content and text color.
+**Example: Custom HTML Marquee Effect**
+
+The following code creates a text marquee effect, referencing project data for dynamic content and text color.
 
 ```html
 <div class="marquee">

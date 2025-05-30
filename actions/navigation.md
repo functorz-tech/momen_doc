@@ -5,33 +5,33 @@ description: >-
   transition effects.
 ---
 
-# Navigation 
-**Navigation action includes:**
-1. Push into a page
-2. Open in a new tab 
-3. Open an external link
+# Navigation
 
-## 1. Push into the page
+The **Navigation** action allows you to direct users to different destinations within or outside your app. It supports several navigation modes, each providing a distinct user experience.
 
-### Brief
-Jump to a specified page.
+## Navigation Modes
 
-### Note
-If you want to return to the previous page after navigation, you need to configure a button and the action to specify the page to return to, or return by clicking the browser's back button.
+- **Push to a page**
+- **Open in a new tab**
+- **Open an external link**
 
-## 2. Open in a new tab
+### Push to a Page
+Navigates to a specified page within your app.
 
-### Brief
-Open a new tab in the browser and display the content of the page.
+**Note:**  
+To return to the previous page, you can either configure a button with a navigation action to the target page or use the browser's back button.
 
-## 3. Open an external link
+### Open in a New Tab
+Opens the specified page in a new browser tab and displays its content.
 
-### Brief
-After configuring this action for a component, clicking the component will redirect users to the specified external webpage. To set up, add the Open External Link action and enter the target URL.
+### Open an External Link
+Redirects users to a specified external webpage when they click the configured component.  
+To set up, add the "Open External Link" action and enter the target URL.
 
-### Note
+**Note:**  
 If the external link requires parameters, append them to the URL using a "?" followed by key-value pairs. Use "&" to separate multiple parameters.
 
-For example: https://momen.app/ai?utm_term=Momen&utm_medium=TikTok
+**Example:**  
+`https://momen.app/ai?utm_term=Momen&utm_medium=TikTok`
 
 

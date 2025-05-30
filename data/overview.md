@@ -6,112 +6,111 @@ description: >-
 
 # Overview
 
-Data is the core asset of an application, which is essentially about managing and processing it. Momen provides flexible and powerful data management and utilization capabilities, with the framework as follows:
+Data is the core asset of an application. Application development is essentially about managing and processing data. Momen provides flexible and powerful data management and utilization capabilities, structured as follows:
 
-![](../.gitbook/assets/data/data_overview.png)
+![Data management framework in Momen](../.gitbook/assets/data/data_overview.png)
 
 ## Data Sources
 
-Momen supports a variety of data sources, including built-in databases, APIs, and more.
+Momen supports a variety of data sources, including built-in databases, APIs, and more:
 
-* **Data Model and Database**: Momen provides a powerful relational database that is flexible and offers excellent performance. See details: [Data Model and Database](https://docs.momen.app/data/data_model)
-* **API**: External data sources are typically accessed via APIs. See details: [API](https://docs.momen.app/data/api)
-* **Environmental Data**: This refers to data provided by the environment in which the program is running, mainly including the following categories:
-  * Null Types: Null, Empty Text, Empty Array.
-  * Time Types: Current time, date, and datetime.
-  * User Types: Logged-in user data (automatically retrieved from the database, can be re-fetched using the "Refresh Login User Data" action), login status (boolean), user agent (browser/operating system information).
-* **Contextual Data**: Mainly includes the following two types:
-  * Action Result Data: Many action operations generate result data, which can be referenced by subsequent actions. For example, after calling the database "add data" action, the result of the addition will be returned; after calling an API action, the interface will return response data.
-  * List Item Data: When a List View or Select View is bound to a data source, each list item has its corresponding data. This data can be used in various operations of the list item, such as displaying content, responding to user interactions, etc.
-* **Input Components**: Momen provides various input components that can be used as data sources, including: Input, Data Selector, Image Picker, and Select View, etc. Please refer to the documentation of the relevant components for details.
+- **Data Model and Database:** Momen provides a robust relational database with flexibility and high performance. See details: [Data Model and Database](https://docs.momen.app/data/data_model)
+- **API:** External data sources are typically accessed via APIs. See details: [API](https://docs.momen.app/data/api)
+- **Environmental Data:** Data provided by the runtime environment, including:
+  - Null Types: Null, Empty Text, Empty Array
+  - Time Types: Current time, date, and datetime
+  - User Types: Logged-in user data (automatically retrieved from the database, can be refreshed using the "Refresh Login User Data" action), login status (boolean), user agent (browser/OS info)
+- **Contextual Data:** Includes:
+  - Action Result Data: Many actions generate result data, which can be referenced by subsequent actions. For example, after calling the database "add data" action, the result is returned; after calling an API action, the response data is returned.
+  - List Item Data: When a List View or Select View is bound to a data source, each list item has its own data, which can be used for display, user interaction, etc.
+- **Input Components:** Momen provides various input components usable as data sources, such as Input, Data Selector, Image Picker, and Select View. See the relevant component documentation for details.
 
-## Data usage
+## Data Usage
 
-Next, we will illustrate data usage by implementing features like adding articles, displaying content, liking, and message notifications on a blog website.
+The following examples illustrate data usage by implementing features such as adding articles, displaying content, liking, and message notifications in a blog website.
 
 ### Adding Blog Articles
 
-This feature involves the **Database** and **Input Components.**
+This feature involves the **Database** and **Input Components**.
 
-First, create a "Blog" table in the Data model to store articles, including the following fields:
+First, create a "Blog" table in the Data model to store articles, including fields such as:
 
-* show\_at (Publication date)
-* title
-* sub\_title
-* cover\_image
-* content
-* authors\_author ( Author's account ID)
-* like\_count
-* ...
+- show_at (Publication date)
+- title
+- sub_title
+- cover_image
+- content
+- authors_author (Author's account ID)
+- like_count
+- ...
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+![Blog table fields example](../.gitbook/assets/image%20(37).png)
 
-Create a blog upload page and add input fields, an Image Picker, a rich text Editor, and a Date & Time Picker to obtain user input for the article title, subtitle, cover, content, and publish date. Add a button component to save the article to the database.\
-Bind the action "Insert Blog" to the button. Bind values to each field, and in the "inputs" category of the Data Selector menu, find the components just added.
+Create a blog upload page and add input fields, an Image Picker, a rich text Editor, and a Date & Time Picker to collect user input for the article title, subtitle, cover, content, and publish date. Add a button to save the article to the database.  
+Bind the "Insert Blog" action to the button. Bind values to each field, and in the "inputs" category of the Data Selector menu, select the components you just added.
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+![Blog upload page configuration](../.gitbook/assets/image%20(39).png)
 
 ### Displaying Article List
 
-This feature involves **Database** and **List Item Data**.\
-Add a List component to the page, select "Blog" table as the data source, enable Load more, and set the limit to 3. Sort in descending order by show\_at.
+This feature involves **Database** and **List Item Data**.  
+Add a List component to the page, select the "Blog" table as the data source, enable Load more, set the limit to 3, and sort by show_at in descending order.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+![Blog list component configuration](../.gitbook/assets/image%20(40).png)
 
-Components within list items also need to bind data. The data selection path is: In-component data -> blog\_list (name of the List component) -> item. Item represents the data of each entry, and you can select the corresponding field within it.
+Components within list items also need to bind data. The data selection path is: In-component data → blog_list (List component name) → item. "Item" represents the data for each entry, and you can select the corresponding field within it.
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+![List item data binding example](../.gitbook/assets/image%20(41).png)
 
 ### Displaying Article Details
 
-This feature involves **Page Parameter,** **List Item Data**, and **Data Source of page.**\
-The process is that when a user clicks on an item in the article list, it navigates to the blog detail page, and the blog's ID is passed through Page parameter. In the data source of the detail page, use this ID as a filter condition to obtain the corresponding article.\
-Create a blog detail page and add a page query parameter (see details: [Parameter](https://docs.momen.app/data/parameter)), named "blog\_id". On the list item of the blog list page, add the action "Go To Blog Detail", and set the value of post\_id to the ID of the list item data.\
+This feature involves **Page Parameter**, **List Item Data**, and **Page Data Source**.  
+When a user clicks an item in the article list, it navigates to the blog detail page, passing the blog's ID via a page parameter. In the detail page's data source, use this ID as a filter to retrieve the corresponding article.  
+Create a blog detail page and add a page query parameter (see details: [Parameter](https://docs.momen.app/data/parameter)), named "blog_id". On the blog list page, add the "Go To Blog Detail" action to the list item, and set the value of post_id to the ID of the list item data.
+![Configure navigation to blog detail page](../.gitbook/assets/image%20(42).png)  
+*Figure: Configure navigation to blog detail page*
 
+![Set page parameter for blog detail](../.gitbook/assets/image%20(43).png)  
+*Figure: Set page parameter for blog detail*
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+Add a data source to the detail page, select "Blog" as the table, set the limit to 1, and the filter to "ID equals Query/blog_id". This enables data transfer between pages during navigation.
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+![Detail page data source configuration](../.gitbook/assets/image%20(44).png)
 
-Add a data source to the detail page, select "Blog" as the table, set the limit to 1, and the filter condition to "ID equals Query/blog\_id". This achieves data transmission between pages during navigation.
+On the detail page, add text, images, and other components, bind them to the page data source, and display the article.
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
-
-In the detail page, you can add text, images, and other components, bind the values of the page data source, and display the article.\
-
-
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+![Display article details](../.gitbook/assets/image%20(45).png)
 
 ### Article Liking and Message Notification
 
-This feature involves **List Item Data** and **Action Result Data**.\
-The function to be implemented is that users can like articles, and after liking, automatically send a message notification to the author.\
-The like\_count field in the blog table represents the number of likes received. Create a notification table to store message notifications, where the message field represents the message content, the sender field represents the sender's account ID, and the receiver field represents the receiver's account ID.
+This feature involves **List Item Data** and **Action Result Data**.  
+Users can like articles, and after liking, a message notification is automatically sent to the author.  
+The like_count field in the blog table represents the number of likes. Create a notification table to store message notifications, where the message field is the content, sender is the sender's account ID, and receiver is the receiver's account ID.
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+![Notification table fields example](../.gitbook/assets/image%20(48).png)
 
-On the page, add a like button in the article list item and bind the action "Update Blog" to increase the like count. When updating, it is necessary to know which article is being updated, and the current item data contains the content of the article being clicked. Therefore, you can add a filter condition: **ID equals list item data's ID**, ensuring that only the current article is updated.
+On the page, add a like button in the article list item and bind the "Update Blog" action to increase the like count. When updating, you need to know which article is being updated; the current item data contains the article being clicked. Add a filter: **ID equals list item data's ID**, ensuring only the current article is updated.
 
-**When performing update or deletion operations, the filter condition must be carefully checked and confirmed, otherwise, all data may be updated to the same or all data may be deleted.**
+**Always check and confirm filter conditions when updating or deleting data to avoid affecting all records.**
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+![Like button update action configuration](../.gitbook/assets/image%20(46).png)
 
-After successfully liking, a notification needs to be sent to the author, which means adding a piece of data in the Notification table. Therefore, create the action "Insert Notification" onSuccess of "Update Blog". The message content is: The article "${article title}" received new likes, bringing the total to: ${like count}.\
-The article title can be obtained from the list item data mentioned earlier. After the "Insert Blog" action is successfully executed, the latest updated data will be returned. Therefore, the latest like count can be obtained through the result data of this action.
+After liking, send a notification to the author by adding an "Insert Notification" action onSuccess of "Update Blog". The message content can be: The article "${article title}" received new likes, bringing the total to: ${like count}.  
+The article title comes from the list item data. After "Insert Blog" succeeds, the latest updated data is returned, so the latest like count can be obtained from the action result data.
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+![Insert notification action configuration](../.gitbook/assets/image%20(49).png)
 
 ### Notes
 
-1. In addition to directly referencing data, variables can be used for data storage and reference. See details: [variable.md](variable.md "mention").
-2. There are two types of database data requests available:
-   1. &#x20;Query: Retrieve data once when the page loads (suitable for most scenarios)
-   2. Subscription: Retrieve data once when the page loads, and automatically push data to the page when the data in the database meeting the condition changes (suitable for specific scenarios like automatically obtaining the latest chat records)
-3. Data limit refers to the maximum number of data to be retrieved, ranging from 1 to unlimited.
-   1. &#x20;**If it is 1, a single piece of data is returned**
-   2. **If it is greater than 1, an array is returned. To retrieve a specific piece of data from it, you can use the GET\_ITEM formula (see details:** [formula.md](formula.md "mention")**).**
-4. &#x20;Data filtering can be configured with multiple conditions:
-   1. Condition: The condition for filtering, the final condition that meets the criteria will take effect
-   2. &#x20;Filter: Refers to extracting data from the database that meets the filter condition
-   3. Sort: Choose to sort by a specific field. If vector storage is enabled for the field, vector sorting can be performed (see details: [Database](https://docs.functorz.com/data/datamodel.html))
-   4. Distinct: Remove duplicate data, multiple deduplication fields can be selected
+1. In addition to directly referencing data, you can use variables for data storage and reference. See details: [variable.md](variable.md "mention")
+2. There are two types of database data requests:
+   - **Query:** Retrieves data once when the page loads (suitable for most scenarios)
+   - **Subscription:** Retrieves data once on page load and automatically pushes updates when the database data changes (suitable for scenarios like real-time chat)
+3. Data limit refers to the maximum number of records to retrieve, from 1 to unlimited.
+   - If set to 1, a single record is returned.
+   - If greater than 1, an array is returned. To retrieve a specific record, use the GET_ITEM formula (see details: [formula.md](formula.md "mention")).
+4. Data filtering can be configured with multiple conditions:
+   - Condition: The filter criteria; only records meeting the criteria are returned
+   - Filter: Extracts data from the database that meets the filter condition
+   - Sort: Sort by a specific field. If vector storage is enabled, vector sorting is available (see details: [Database](https://docs.functorz.com/data/datamodel.html))
+   - Distinct: Remove duplicate records; multiple deduplication fields can be selected

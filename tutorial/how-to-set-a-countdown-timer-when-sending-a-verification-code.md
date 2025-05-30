@@ -1,58 +1,65 @@
 # How to Set a Countdown Timer When Sending a Verification Code
 
-### **Introduction**
+## Introduction
 
-Implement an effective user verification process on your web application's registration or login page using a mobile verification code.
+Implement a user-friendly verification process on your registration or login page by adding a countdown timer to the "Send Verification Code" button.
 
-### **Setting Up Countdown for Verification Code**
+---
 
-On Momen’s registration/login page:
+## Steps to Set Up a Countdown Timer
 
-Trigger Verification Code: When users click the "Send Verification Code" button, trigger the action to send out the verification code.
+### 1. Initialize Countdown Data
 
-![](<../.gitbook/assets/0 (45).png>)
+- Add a page variable of type **Integer** (e.g., `countdown`).
+- Set its initial value to 60 on page load (representing 60 seconds).
 
-### **Implementation Steps**
+| ![Add countdown variable](../.gitbook/assets/1%20(83).png "Add countdown variable") | ![Initialize countdown](../.gitbook/assets/2%20(68).png "Initialize countdown") |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 
-1. Initialize Countdown Data: Add an "Integer" type of page data. Since there is no dedicated countdown component available on the web version, initialize this data to 60 at page load. This sets the starting countdown time to 60 seconds.
+---
 
-| <img src="../.gitbook/assets/1 (83).png" alt="" data-size="original"> | <img src="../.gitbook/assets/2 (68).png" alt="" data-size="original"> |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+### 2. Set Up a Scheduled Job
 
-2. Set Up a Scheduled Job: Configure a scheduled job with a trigger interval of 1000 milliseconds. This setup ensures that once triggered, the job will execute every second, updating the countdown each time.
+- Configure a scheduled job with a trigger interval of 1000 milliseconds (1 second).
+- This job will decrement the countdown value every second.
 
-![](<../.gitbook/assets/3 (65).png>)
+![Configure scheduled job](../.gitbook/assets/3%20(65).png "Configure scheduled job")
 
-3. Configure Send Verification Code Button: Utilize a conditional container for the send verification code button on the page setup:
+---
 
-a. Not Sent State: Inside the "Not Sent" sub-container, place a "Button Component" that displays "Send Verification Code". Set up the action to send the verification code (select the appropriate verification type based on the registration/login workflow). Upon successful sending, display a prompt and switch to the "Sent" sub-container. Simultaneously, begin the scheduled task.
+### 3. Configure the Send Verification Code Button
 
-b. Sent State: In the "Sent" sub-container, use a "Text Component" linked to the page data to display the remaining countdown time.
+- Use a **Conditional Container** for the button with two sub-containers:
+  - **Not Sent State:**  
+    - Place a button labeled "Send Verification Code."
+    - Set the action to send the code (choose the appropriate verification type).
+    - On success, show a prompt, switch to the "Sent" state, and start the scheduled job.
+  - **Sent State:**  
+    - Use a text component bound to the countdown variable to display the remaining time.
 
-![](<../.gitbook/assets/4 (62).png>)
+![Conditional container setup](../.gitbook/assets/4%20(62).png "Conditional container setup")
+![Send code button](../.gitbook/assets/5%20(49).png "Send code button")
+![Countdown display](../.gitbook/assets/6%20(43).png "Countdown display")
 
-![](<../.gitbook/assets/5 (49).png>)
+---
 
-![](<../.gitbook/assets/6 (43).png>)
+### 4. Configure Scheduled Task Logic
 
-4. Configure Scheduled Task Logic:
+- **When countdown reaches 0:**
+  - Stop the scheduled job.
+  - Reset the countdown variable.
+  - Switch the conditional container back to the "Not Sent" state.
 
-a. End of Countdown: When the countdown timer displayed in the page data reaches 0, indicating the end of the countdown, perform the following actions:
+![End of countdown logic](../.gitbook/assets/image%20(13)%20(1).png "End of countdown logic")
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+- **When countdown > 0:**
+  - Subtract 1 from the countdown variable using a formula.
+  - Update the page data to reflect the new countdown value.
 
-* Stop the scheduled task to prevent further countdown.
-* Reset the countdown timer to its initial state.
-* Switch the conditional container for the send verification code button back to the "Not Sent" state.
+![Decrement countdown](../.gitbook/assets/7%20(33).png "Decrement countdown")
 
-b. If the countdown timer (page data) is greater than 0, this indicates that the countdown is actively running. To update the countdown each second:
+---
 
-Reduce the countdown by 1 using a Formula. This involves subtracting 1 from the current page data value.
+## About Momen
 
-Reassign the newly calculated result back to the page data to update the displayed countdown timer.
-
-![](<../.gitbook/assets/7 (33).png>)
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allowing users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.
