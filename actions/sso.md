@@ -9,49 +9,50 @@ keywords: >-
 
 ## What is Single Sign-On (SSO)?
 
-**Single Sign-On (SSO)** is an authentication mechanism that allows users to access multiple related systems with a single login. By configuring SSO, new users can register and log in to your website using existing accounts (e.g., Google, Facebook, etc.).
+**Single Sign-On (SSO)** is an authentication mechanism that enables users to access multiple related systems with a single login. By configuring SSO, new users can register and log in to your website using existing accounts (such as Google or Facebook).
 
-> - Only supports the standard OAuth2 protocol  
-> - Available for Pro Plan and above  
+> - Only supports the standard OAuth2 protocol.  
+> - Available for Pro Plan and above.  
 
-## Benefits of Single Sign-On
+## Benefits
 
-- **Improved User Experience**: Users only need to log in once to access multiple applications, reducing repetitive login operations.
-- **Enhanced Security**: By centralizing access management, SSO is more secure than traditional username and password authentication.
-- **Simplified Management**: Enterprises can simplify the management of multiple applications through SSO.
+- **Improved User Experience**: Users only need to log in once to access multiple applications, reducing repetitive login steps.
+- **Enhanced Security**: Centralized access management provides stronger security than traditional username and password authentication.
+- **Simplified Management**: SSO streamlines the management of multiple applications for organizations.
 
-## Steps to Configure SSO
+## How to Configure
 
 ### 1. Create an SSO Configuration in Momen
 
-- Open project settings, find "Login - SSO," and click "Add."
-- The system will automatically generate a callback URL for redirection after successful authorization.
+- Open your project settings, navigate to **Login > SSO**, and click **Add**.
+- Momen will automatically generate a callback URL for redirection after successful authorization.
 
 ### 2. Register an Application with an Identity Provider (e.g., Google)
 
-1. Register as a Google Developer: [Google Cloud Console](https://console.cloud.google.com/).
-2. Create a new project and fill in the project information.
-3. Enable APIs and services in the project and set up the OAuth consent screen.
-4. Configure the privacy policy and terms of service pages.
-5. Set up the OAuth client ID and fill in the callback URL.
+1. Register as a Google Developer at [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project and provide the required project information.
+3. Enable APIs and services for the project, then configure the OAuth consent screen.
+4. Set up the privacy policy and terms of service pages.
+5. Create an OAuth client ID and enter the callback URL provided by Momen.
 6. Obtain the client ID and client secret.
 
-### 3. Fill in Application Information in Momen
+### 3. Enter Application Information in Momen
 
-- Enter the client ID, client secret, and scope.
+- Input the client ID, client secret, and scope.
 - Save the configuration and enable SSO.
 
 ### 4. Configure Actions
 
 - **Register/Login**: After authorization, log in if the account exists; otherwise, register a new user.
-- **Bind Existing Account**: Bind the authorized account to the currently logged-in account.
-- **Unbind Account**: Unbind the current account from the SSO.
+- **Bind Existing Account**: Link the authorized account to the currently logged-in user.
+- **Unbind Account**: Disconnect the current account from SSO.
 
-## Consume SSO User Information
+## Consuming User Information
 
-As an example of updating the user's "email" information:
+To update a user's "email" information as an example:
+
 1. Add an `email` field to the account table.
-2. Add the following code to the action flow to update the username and email in the account table:
+2. Add the following code to your Actionflow to update the username and email in the account table:
 
 ```javascript
 function updateAccount(variables) {
@@ -106,3 +107,12 @@ function updateAccount(variables) {
     const updateAccountResult = updateAccount(updateAccountVariables);
   }
 ```
+
+---
+
+**Suggestions for Further Improvement:**
+
+- Consider adding a diagram to illustrate the SSO authentication flow.
+- Provide troubleshooting tips for common SSO integration issues.
+- If supporting other identity providers (e.g., Facebook, Microsoft), add provider-specific notes or links to their documentation.
+- Ensure all referenced UI elements (e.g., "Login > SSO") match the actual product interface for consistency.

@@ -4,158 +4,146 @@ description: Introduction and usage of all input type components
 
 # Component - Input
 
-Includes: Input Box, Number Input, Data Selector, Date & Time Picker, Rich Text Editor, Image Picker, Video Picker, Switch
+Includes: Input Box, Number Input, Data Selector, Date & Time Picker, Rich Text Editor, Image Picker, Video Picker and Switch
 
 ## Unified Usage Method
 
 ### Data Output Capability
 
-All input type components, once added to a page, can expose the content entered in the component to the outside. This means:
+All input-type components, once added to a page, can expose their entered content for use elsewhere. This means:
 
-1. Other components, such as text components, can choose to bind to "Input Box" - "Input Type Component Name" to display the content of that input box.
-2. Modifying databases or other locations that need to bind content can also reference the content entered in this input type component.
+1. Other components (such as text components) can bind to the input component to display its content.
+2. When modifying databases or other targets, you can reference the content entered in any input component.
 
-    <figure><img src="../.gitbook/assets/7 (24).png" alt="Select the type of input content."><figcaption></figcaption></figure>
+![Select the type of input content.](../.gitbook/assets/7%20(24).png)
 
 ### Configurable Special Actions
 
-Input type components can generally configure actions for the following trigger timings:
+Input components generally support configuring actions for the following triggers:
 
-* On Value Change: Action triggered when the input content changes.
-* On Blur: Action triggered when the cursor is no longer in the input box.
-* On Success: Action triggered after successfully uploading an image/video.
+- **On Value Change:** Triggered when the input content changes.
+- **On Blur:** Triggered when the input loses focus.
+- **On Success:** Triggered after successfully uploading an image or video.
 
 ## Input Box
 
-Input boxes are generally used to provide scenarios where users need to input content. For example:
+Input boxes are used for user input scenarios such as:
 
-* Fill/Complete Content
-* Password Input Box
-* Number Input Box
-* Search Input Box
+- Filling out forms
+- Password input
+- Number input
+- Search input
 
-The default type of the input box is text, with input and output types as Text (String). The input box can be modified to a number type, with input and output types as Integer (int).
+The default input type is text (String). You can change the type to number (Integer).
 
-> 💡 Tips: When the data type is changed to a number, the default value will automatically be set to 0. If you do not want to set or display a default value, you can add a page data of number type and set the default value to the page data.
+> 💡 **Tip:** When the data type is changed to number, the default value is set to 0. If you do not want a default value, create a page variable of number type and set its default value as needed.
 
 ### Configuration Instructions
 
 #### Placeholder Text
 
-This refers to the text displayed when the input box has no content entered. It can be empty. Placeholder text is not actual data content.
-
-> 💡 Tips: Placeholder text cannot be data bound; it can only be directly input.
+Displayed when the input box is empty. Placeholder text is not actual data and cannot be data bound; it must be entered directly.
 
 #### Default Value
 
-This refers to the default content displayed in the input box. The default value can be data bound.
+Displayed as the initial content of the input box. The default value can be data bound.
 
-> 💡 Tips: 
-> 1. When both a placeholder and a default value are set for the input box, the default value is displayed first. 
-> 2. The default value is displayed by assigning a value to the input box when entering the page. When there is input content in the input box, it displays the input content, and modifying the default value at this time will not change the input content or display content of the input box. 
-> 3. It is prohibited to select the input box's own default value, as this will lead to infinite loop dependencies, resulting in errors.
+> 💡 **Tips:**  
+> 1. If both a placeholder and a default value are set, the default value is shown first.  
+> 2. The default value is assigned when entering the page. If the user enters content, that content is displayed instead. Changing the default value later does not affect the current input.  
+> 3. Do not set the input box's own default value as its data source—this causes infinite loop dependencies and errors.
 
-#### Some Special Configurations
+#### Special Configurations
 
-1. Password: When entering content, the content is displayed in an encrypted state, usually used in account password login systems.
-2. Auto Focus: When the input box is set to auto focus, the keyboard will automatically pop up when entering the page where the input box is located, and content can be directly entered.
-3. Cursor and Keyboard Distance: Set the distance between the cursor and the keyboard, which is the distance between the keyboard and the input box when focused.
-4. Multi-line: When the multi-line button is turned on, if the length of the text entered in the input box exceeds the width of the input box, it will automatically wrap to display the remaining text.
+1. **Password:** Input is masked for privacy, typically used for passwords.
+2. **Auto Focus:** Automatically focuses the input box and opens the keyboard when the page loads.
+3. **Cursor and Keyboard Distance:** Sets the distance between the input box and the keyboard when focused.
+4. **Multi-line:** When enabled, text that exceeds the input box width wraps to the next line.
 
-> 💡 Tips: If the input box is set to multi-line and its vertical layout mode is set to fit content, the minimum value set will not take effect.
+> 💡 **Tip:** If multi-line is enabled and the vertical layout mode is set to fit content, the minimum value setting will not take effect.
 
 ### Usage Example
 
-> 💡 Tips: When there are multiple input boxes on the page, **it is recommended to rename the components**, so that when using the input result content, it is clear which component the content was input through.
+> 💡 **Tip:** When using multiple input boxes, rename them for clarity when referencing their content elsewhere.
 
-1. When users need to fill/complete their information, an input box needs to be placed on the page for users to input their information in the input box, and select the corresponding input box data in the field configuration of the add/update action.
-2. When users need to display the original data and want to edit their information, an input box also needs to be placed on the page. However, for user experience, the current information is usually configured in the default value, allowing users to refer to and modify it.
+1. For user information forms, add input boxes and bind their data to the corresponding fields in add/update actions.
+2. For editing existing data, set the current value as the default value in the input box for easy reference and modification.
 
 ## Number Input
 
-Similar to the input box, the number input component provides users with a + - number operation component, outputting a value of number type. For example, in the following scenarios:
+Similar to the input box, but provides + and - controls for numeric input (output type: number). Common scenarios:
 
-* Adding item quantities in shopping applications
-* Adding equipment quantities in rental applications
+- Adjusting item quantity in shopping carts
+- Setting equipment quantity in rental apps
 
 ### Configuration Instructions
 
-1. Maximum: The maximum value the component can input. If the input is greater than the maximum value, the maximum value is displayed.
-2. Minimum: The minimum value the component can input. If the input is less than the minimum value, the minimum value is displayed.
-3. Step: Refers to the value increased or decreased when clicking the + or - sign. Directly entering a number is not affected by the step value.
-4. Disable Increment/Decrement: Refers to the inability to click the + or - sign and input numbers. At this time, the number input component displays the default value and cannot change the displayed number.
-5. Disable Input Box: Refers to the inability to directly input/modify numbers, but numbers can be changed by clicking the + or - sign.
+1. **Maximum:** The highest value allowed. Input above this will be set to the maximum.
+2. **Minimum:** The lowest value allowed. Input below this will be set to the minimum.
+3. **Step:** The increment/decrement value for + and - controls. Direct input is not affected by step.
+4. **Disable Increment/Decrement:** Disables the + and - controls and input; only the default value is shown.
+5. **Disable Input Box:** Disables direct input; only the + and - controls can change the value.
 
 ## Data Selector
 
-The Data Selector component allows users to input content by selecting data.
+Allows users to select data from a list.
 
 ### Configuration Instructions
 
-Most configurations are consistent with other input type components. The special point is that this component must configure the data source and corresponding fields that users can select.
+Most settings are similar to other input components. Key differences:
 
-#### Data Source Selection
-
-* You can choose your own created option tables or the default province, city, and region tables.
-* You can set a "limit" (how many options to request) that meets your needs.
-* You can filter, screen, and sort the data source.
-
-#### List Field
-
-It is important to determine the "list field" because remote data has multiple fields, and it is necessary to clarify which field's content is to be displayed.
-
-#### Default Value
-
-The default option, which can be directly input according to the data type specified by the \[List Field] or bound to remote data of the corresponding type.
+- **Data Source Selection:** Choose from your own tables or default tables (e.g., provinces/cities). Set a limit, filter, and sort as needed.
+- **List Field:** Specify which field's content to display from the data source.
+- **Default Value:** Set the default selection, either directly or by binding to remote data.
 
 ## Date & Time Picker
 
-Similar to the Data Selector, the Date & Time Picker allows users to select and input time or date, and the component exposes time and date formats.
+Lets users select and input dates or times, exposing the selected value.
 
 ### Configuration Instructions
 
-1. Start Time/Date and End Time/Date: Only supports data binding, both are not required, **generally not set**.
-2. Time Interval: The default selection is 1 minute, supporting selections of 5, 10, 15, 30, and 60 minutes, not supporting manual input.
-3. Default Value: Not required, data binding.
-4. Placeholder Text: Not required, when there is no default value, the content in "Placeholder Text" will be displayed.
+1. **Start/End Time or Date:** Optional, supports data binding. Usually not set.
+2. **Time Interval:** Default is 1 minute; options include 5, 10, 15, 30, 60 minutes. Manual input is not supported.
+3. **Default Value:** Optional, supports data binding.
+4. **Placeholder Text:** Optional; shown when no default value is set.
 
 ## Rich Text Editor
 
-A component that allows users to input rich text content, outputting a text type data.
+Allows users to input rich text content, outputting text data.
 
-![rich text editor](<../.gitbook/assets/0 (15).png>)
+![Rich text editor](../.gitbook/assets/0%20(15).png)
 
 ## Image Picker
 
-A component for users to upload images. You can choose single or multiple images. It is generally used for uploading photos, avatars, etc.
+Lets users upload images (single or multiple), commonly used for photos or avatars.
 
 ### Configuration Instructions
 
-1. Maximum Number of Images: Refers to how many images need to be selected and uploaded through the Image Picker, default is 1 image.
-2. Number of Columns: When the maximum number of images is greater than 1, you can set the number of columns, that is, the uploaded images are displayed according to the number of columns.
-3. Image Spacing: Refers to the spacing between images and images, rows and columns when uploading multiple images.
-4. Placeholder Image: Refers to the icon style of the uploaded image, the default style is displayed if not uploaded.
-5. Default Value: Refers to the content displayed in the Image Picker before uploading images, which can be single or multiple images.
+1. **Maximum Number of Images:** How many images can be uploaded (default: 1).
+2. **Number of Columns:** For multiple images, sets how many columns to display.
+3. **Image Spacing:** Sets spacing between images and between rows/columns.
+4. **Placeholder Image:** The icon shown before uploading; defaults to a standard style.
+5. **Default Value:** Images shown before upload; can be single or multiple.
 
 #### Special Instructions
 
-When selecting multiple images and wanting to upload this data to the database, you need to use the \[Batch Mutation] action in the Data Mutation action, bind the result selected by the Image Picker in its data source, and then upload the specific image field that needs to be uploaded.
+When uploading multiple images to the database, use the **Batch Mutation** action in Data Mutation, bind the Image Picker's result as the data source, and upload the specific image field.
 
 ## Video Picker
 
-Used for users to upload videos, the usage is the same as the Image Picker.
+For uploading videos; usage is the same as Image Picker.
 
 ### Configuration Instructions
 
-1. After the video is successfully uploaded, clicking the Video Picker component again can reselect the video to upload.
-2. The default video displayed by the component can be displayed through data binding.
+1. After uploading, clicking the Video Picker again allows re-selection.
+2. The default video can be set via data binding.
 
 ## Switch
 
-A component that allows users to choose between yes and no, exposing a boolean value (true\&false). Users can choose from three switch styles, which do not support customization.
+A toggle component for yes/no (boolean) values. Three switch styles are available (not customizable).
 
 ### Usage Example
 
-Use the switch component as a toggle for whether a to-do item is completed. When adding a to-do item, the default switch component is false, which means not completed. When completed, click the switch button to change it to true.
+Use the switch to mark a to-do item as completed. When adding a to-do, the switch defaults to false (not completed). When completed, toggle the switch to true.
 
-<figure><img src="../.gitbook/assets/4 (2).gif" alt="Effective demonstration."><figcaption></figcaption></figure>
+![Effective demonstration.](../.gitbook/assets/4%20(2).gif)

@@ -5,16 +5,18 @@ description: >-
 ---
 
 # Component - View
-Empower yourself to craft seamless layouts, enable both horizontal and vertical scrolling, and effortlessly incorporate visual dividers into your web pages.
 
-### Usage Scenario
-The View component can be used to achieve the following scenarios:
+The View component lets you group other components, apply specific layouts or styles, and enable scrolling or dynamic height changes within a defined area.
 
-- Group several components into a single View to set specific layouts or styles for the whole.
-- Enable a specific area in the application to scroll horizontally.
-- Enable a specific area in the application to scroll vertically.
-- Change the display height of content upon clicking.
+## Usage Scenarios
 
-### About Momen
+Use the View component to:
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+- Group multiple components into a single container to apply unified layout or style.
+- Enable horizontal scrolling for a specific area.
+- Enable vertical scrolling for a specific area.
+- Dynamically change the display height of content (e.g., expand/collapse sections).
+
+## About Momen
+
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

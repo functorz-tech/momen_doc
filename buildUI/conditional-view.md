@@ -6,90 +6,86 @@ description: >-
 
 # Component - Conditional View
 
-## Usage Scenario
+## Overview
 
-Conditional views serve the purpose of displaying different content based on specific conditions. These conditions can encompass various elements, including data, user interfaces, or different functional entrances with varying permissions, all within the same interface. Here are some common scenarios where you can leverage this component:
+Conditional View allows you to display different UI content based on specific conditions. This component is useful for scenarios such as showing different interfaces for users with different permissions, toggling between views with buttons, or creating tab-like navigation. It enables dynamic and context-sensitive UI within a single page.
 
-* Different views on the Same Page: You can showcase different views on a single webpage based on conditions. For instance, the page's display can vary for users who are logged in and those who aren't.
-* View Switching with Buttons: Conditional views allow you to change the displayed content on the same page by clicking a button. For example, clicking the "Send CAPTCHA" button can switch the display to a CAPTCHA Countdown.
-* Combining with Select View: You can use Conditional views to create an effect similar to a tab bar or expand a catalog subset based on user selections.
+## Usage Scenarios
 
-## Add Subview in Conditional View
+- **Different Views on the Same Page:** Show different content for logged-in and non-logged-in users, or for users with different roles.
+- **View Switching with Buttons:** Change the displayed content by clicking a button (e.g., switch to a CAPTCHA countdown after clicking "Send CAPTCHA").
+- **Combining with Select View:** Create tab bar effects or expand/collapse catalog subsets based on user selection.
 
-In Conditional View, you can add/modify/delete conditional sub-views to display different content under different conditions.
+## Adding Subviews in Conditional View
 
-For example, when creating a login screen, there are three conditions based on user identities: "visitor," "user," and "admin." To display different interface content under different conditions, you need to add three more sub-views to the content of the Conditional View.
+You can add, modify, or delete subviews within a Conditional View to display different content under different conditions.
 
-<figure><img src="../.gitbook/assets/conditional_view/conditional_view1.jpeg" alt=""><figcaption></figcaption></figure>
+For example, on a login screen, you might have three user identities: "visitor," "user," and "admin." To display different content for each, add three subviews to the Conditional View.
 
-💡Tips: Conditional views have a default condition, "loading..." When the page data is still loading, the Conditional View will show that it's loading. This condition cannot be deleted, and you cannot set conditions to it either. It is recommended not to make any changes to it!
+![Conditional View with multiple subviews for different user roles](../.gitbook/assets/conditional_view/conditional_view1.jpeg)
 
-After adding the view, you can click "Focus Mode" to enter the conditional sub-view, where you can see four sub-views. You can click on the sub-view to configure the display conditions of the sub-view and drag other components to build the corresponding business logic.
+> **Tip:** Conditional View includes a default "loading..." condition, shown while page data is loading. This condition cannot be deleted or assigned custom logic. It is recommended not to modify it.
 
-<figure><img src="../.gitbook/assets/conditional_view/conditional-view2.gif" alt=""><figcaption></figcaption></figure>
+After adding subviews, click "Focus Mode" to enter the conditional subview editor. Here, you can see all subviews, configure their display conditions, and drag components to build the corresponding UI.
 
-### Conditional Judgment Order Logic
+![Editing conditional subviews in Focus Mode](../.gitbook/assets/conditional_view/conditional-view2.gif)
 
-The order in which sub-views are evaluated follows the red arrow, from left to right, or according to the order of adding sub-views from top to bottom. When a condition is met, the view displays the content below that condition. If no conditions are met, the result of the last matching condition is shown.
+### Conditional Evaluation Order
 
-<figure><img src="../.gitbook/assets/conditional_view/conditional-view3.jpeg" alt=""><figcaption></figcaption></figure>
+Subviews are evaluated in order from left to right (or top to bottom, based on the order of addition). The first subview whose condition is met will be displayed. If no conditions are met, the last subview is shown.
 
-💡Tips:
+![Conditional evaluation order in Conditional View](../.gitbook/assets/conditional_view/conditional-view3.jpeg)
 
-1. The order of the conditions can be changed by dragging and dropping the condition name from the optional condition in the content bar of the Conditional View (red box in the figure below).
-2. When all conditions are always or the same, the Conditional View displays the topmost condition view (e.g., "not logged in").
-3. When all conditions are not set, the condition is always by default. Then you can switch the view of the current conditional sub-view through the \[Switch View Condition] action.
+> **Tips:**
+> 1. Change the order of conditions by dragging the condition name in the Conditional View content bar.
+> 2. If all conditions are set to "always," the topmost subview is displayed.
+> 3. If no conditions are set, all subviews default to "always." You can then use the [Switch View Condition] action to toggle between subviews.
 
 ### Rerun Conditions on Remote Data Update
 
-In some cases, remote data can be used as conditions for Conditional View. As remote data changes, the conditions may need to be recalculated in real-time. Momen provides a \[Remote Condition on Remote Data Update] mode to handle such situations.
+If remote data is used as a condition, you may need to recalculate conditions in real time as data changes. Enable the [Remote Condition on Remote Data Update] mode to handle this.
 
-<figure><img src="../.gitbook/assets/93a2a1b8-5d42-4e5f-9045-6d8da07bceb8.png" alt=""><figcaption></figcaption></figure>
+![Remote data update mode for Conditional View](../.gitbook/assets/93a2a1b8-5d42-4e5f-9045-6d8da07bceb8.png)
 
-💡Tips: The update of remote data depends on the request type. In query-type requests, remote data is fetched or updated when the page loads or refreshes, while in subscription-type requests, data is updated when backend data changes (not applicable to media and file types).
+> **Tip:** The update frequency depends on the request type. Query-type requests update on page load or refresh; subscription-type requests update when backend data changes (not applicable to media/file types).
 
-### Use cases
+## Use Cases
 
-#### Different Conditions, Different Display View
+### 1. Different Conditions, Different Views
 
-1. When user rights differ, the displayed page content can also differ. For instance, when user rights are "hr," the condition can be set to "user type=hr," and specific components are placed in that condition view.
+Display different content based on user roles or login status.
 
-<figure><img src="../.gitbook/assets/54847f4e-234d-4344-a6b4-3e4344a15778.png" alt=""><figcaption></figcaption></figure>
+- Example: Show a specific view when the user role is "hr" by setting the condition to "user type = hr" and placing relevant components in that subview.
 
-<figure><img src="../.gitbook/assets/f166d24a-7334-48f4-8e74-bb66e54a6ea3 (1).png" alt="Sub-view condition setting"><figcaption></figcaption></figure>
+![Conditional View for user role 'hr'](../.gitbook/assets/54847f4e-234d-4344-a6b4-3e4344a15778.png)
+![Setting subview condition for user type](../.gitbook/assets/f166d24a-7334-48f4-8e74-bb66e54a6ea3%20(1).png)
 
-2. When the user's login status varies, the display view can change. For instance, when a user is not logged in, the condition can be set to the "Register," while for logged-in users, it's set to "Update"
+- Example: Show a registration view for non-logged-in users and an update view for logged-in users.
 
-<figure><img src="../.gitbook/assets/f8ec8586-17b7-44a8-a339-4a29a70ea4a3.gif" alt="The display view showcase."><figcaption></figcaption></figure>
+![Switching views based on login status](../.gitbook/assets/f8ec8586-17b7-44a8-a339-4a29a70ea4a3.gif)
 
-💡Tips:
+> **Tip:** For non-logged-in users, configure a one-click authorization button to complete login, refresh user data, or switch to the logged-in view.
 
-For non-logged-in users, configure the one-click authorization button to complete the login, refreshing the user data or switching the view to the logged-in state.\\
+### 2. Button-Triggered View Switching
 
-#### Click the Button to Switch the View Display
+Use a button to switch between subviews, especially when conditions are set to "always."
 
-💡Tips:
+- Example: In a login form, place the password input in a Conditional View. Clicking show/hide toggles the password display mode.
 
-This approach is suitable for Conditional View with a condition set to "always." By configuring a button to switch the view condition, you can achieve the effect of changing the view display by clicking the button.\\
+![Toggle password visibility with Conditional View](../.gitbook/assets/af8b9b8d-6e67-4012-b3dc-7db17d2e53d4.gif)
 
-1. In a login scenario, where the user enters a password, the text input box can be placed in a Conditional View. By clicking show/hide buttons, you can switch the password display mode.
+- Example: On an e-commerce page, use Conditional View to switch between "item in cart" and "item not in cart" states.
 
-<figure><img src="../.gitbook/assets/af8b9b8d-6e67-4012-b3dc-7db17d2e53d4.gif" alt=""><figcaption></figcaption></figure>
+![Switching cart states with Conditional View](../.gitbook/assets/8c896263-8b28-44c2-92ac-b61359a5b103.gif)
 
-2. On an e-commerce webpage, you can use Conditional View to switch between the state of having an item in the shopping cart and not having one, allowing for different views.
+> **Tip:** Predefine the possible states for Conditional View. For example, check if the user's cart contains the current item and set the condition accordingly. Avoid setting all conditions to "always," or the first subview will always display.
 
-<figure><img src="../.gitbook/assets/8c896263-8b28-44c2-92ac-b61359a5b103.gif" alt=""><figcaption></figcaption></figure>
+### 3. Combining with Selection View
 
-💡Tips:
+- Example: Use Conditional View to display different content based on selection, similar to a tab bar.
 
-Similar to this need to determine in advance Conditional View to pre-display the view of the situation, as shown in the figure below, need to first determine whether the user's shopping cart has been added to the current purchase of goods, Conditional View need to set the status of the condition can not be placed in "always" otherwise when the user's shopping cart has been added to the current purchase of goods, but also still will be the first to display the situation of the un-added.\\
+![Tab bar effect with Conditional View and Selection View](../.gitbook/assets/a41a1fe2-2bbc-428d-9d74-4440c7f62b93.gif)
 
-#### Combining Selection View
+- Example: On a shopping page, display parent categories first, then expand sub-categories after selection. See the [Help Center] for details on configuring Conditional View with Selection View for expanding subdirectories.
 
-1. Conditional View can display different views based on the selection, similar to a tab bar. While they can't be scrolled, you can find specific configuration methods in the \[Help Center] documentation on Conditional View and Selection of view.
-
-<figure><img src="../.gitbook/assets/a41a1fe2-2bbc-428d-9d74-4440c7f62b93.gif" alt="Actual Page Showcase"><figcaption></figcaption></figure>
-
-2. In a shopping webpage, you can display parent categories first, and after clicking a category, you can expand sub-categories. This allows users to view products under those sub-categories, and the specific configuration is described in the \[Help Center] documentation on Conditional View Sets Selection View (Expanding Sub-directories).
-
-<figure><img src="../.gitbook/assets/7521052c-2e87-44c2-a679-d7fcb3979c1b.gif" alt=""><figcaption></figcaption></figure>
+![Expanding sub-categories with Conditional View](../.gitbook/assets/7521052c-2e87-44c2-a679-d7fcb3979c1b.gif)

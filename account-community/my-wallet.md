@@ -6,67 +6,65 @@ description: >-
 
 # My Wallet
 
-### Introduction
+## Introduction
 
-"My Wallet" has been introduced to provide users with more convenient payment options on Momen. This feature enables purchases using discount coupons and credits.
+"My Wallet" provides users with convenient payment options on Momen, enabling purchases using discount coupons and credits.
 
-<figure><img src="../.gitbook/assets/截屏2024-11-01 11.45.03.png" alt=""><figcaption></figcaption></figure>
+![My Wallet dashboard in Momen](../.gitbook/assets/screenshot_20241101_114503.png)
 
-### Benefits
+## Benefits
 
-* **Discounts**: Use coupons to reduce the cost of purchases.
-* **Credit Payments**: Pay for items like plans, computing resources, and single-tenant servers directly from your account credit.
-* **Transaction Records**: Access a record of all transactions, upgrades, and refunds through the "Bill" function in "My Wallet."
+- **Discounts:** Use coupons to reduce the cost of purchases.
+- **Credit Payments:** Pay for plans, computing resources, and single-tenant servers directly from your account credit.
+- **Transaction Records:** Access records of all transactions, upgrades, and refund in the "Bill" section in My Wallet.
 
-### Overview of My Wallet
+## Overview of My Wallet
 
-#### **Coupons**
+### Coupons
 
-**Details**:
+**Details:**
 
-* **Types**: Discount coupons and cash vouchers.
-* **Applicable Products**: Includes plans, computing resources, and single-tenant servers.
-* **Usage Restrictions**: Varies based on project plans and minimum spending amounts.
-* **Validity**: Must be used within a specified period.
+- **Types:** Percentage off, dollar off and promotional credit
+- **Applicable Products:** Plans, computing resources, and single-tenant servers
+- **Usage Restrictions:** Vary by project plan and minimum spending amount
+- **Validity:** Must be used within a specified period
 
-<figure><img src="../.gitbook/assets/Frame 48096512.png" alt=""><figcaption></figcaption></figure>
+![Coupon list in My Wallet](../.gitbook/assets/Frame%2048096512.png)
 
-**Usage**:&#x20;
+**Usage:**  
+The system automatically selects the best available coupon on the order page if applicable coupons exist.
 
-The system automatically selects the best available coupon when you enter the order page, if applicable coupons exist.
+![Coupon applied to order](../.gitbook/assets/Group%2040355.png)
 
-<figure><img src="../.gitbook/assets/Group 40355.png" alt=""><figcaption></figcaption></figure>
+**Records:**  
+All coupons used or expired in the last 7 days are documented.
 
-**Records**:&#x20;
+**Notes:**
 
-All coupons used or expired in the last 7 days will be documented.
+- Coupons cannot be transferred or gifted.
+- Only one coupon can be used per order.
+- Coupons applied to premium plan subscriptions provide discounts only for the first month or first year.
+- When an order is created with a coupon, the coupon is locked. If not paid within 5 minutes or if the order is manually closed, the coupon will be returned.
 
-**Important Notes**:
+### Credits
 
-* Coupons cannot be transferred or gifted.
-* Only one coupon is allowed per order.
-* Coupons applied to premium plan subscriptions provide discounts only for the first month.
-* When an order is created with a coupon, the coupon will be locked. If not paid within 5 minutes or if the order is manually closed, the coupon will be returned.
+- **Viewing:** Access "My Wallet" and view your credit balance in the top left corner.
 
-#### **Credits**
+![Credit balance in My Wallet](../.gitbook/assets/20241101-121004.jpeg)
 
-* **Viewing**: Access "My Wallet" and the "credit" is in the top left corner of your wallet.
+- **Usage:** If your credit is sufficient, credit payment is the default option. Users can also choose Stripe payment.
 
-<figure><img src="../.gitbook/assets/20241101-121004.jpeg" alt=""><figcaption></figcaption></figure>
+![Credit payment option](../.gitbook/assets/Group%2040355%20(1).png)
 
-* **Usage**: If your credit is sufficient, credit payment is the default option. Users can also opt for Stripe payment.
+- **Records:** View records of purchases made using credits in the billing section.
 
-<figure><img src="../.gitbook/assets/Group 40355 (1).png" alt=""><figcaption></figcaption></figure>
+![Credit transaction records](../.gitbook/assets/20241101-121532.gif)
 
-* **Records**: Users can view records of purchases made using their credits in the billing section.
+**Notes:**
 
-<figure><img src="../.gitbook/assets/20241101-121532.gif" alt=""><figcaption></figcaption></figure>
+- Mixed payments using both credits and bank cards are currently not supported.
+- Add funds is currently unavailable.
 
-**Important Notes**:
+## About Momen
 
-* Mixed payments are not supported.
-* Recharge is currently unavailable.
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

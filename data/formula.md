@@ -9,99 +9,99 @@ description: >-
 
 ## Formulas and Conditional Judgments
 
-In addition to being directly used by actions and components, data is also used for formula calculations and conditional judgments.
+In addition to being used directly by actions and components, data can also be processed through formulas and conditional logic.
 
 ## Formulas
 
-Formulas are functions used to calculate data. Momen provides various formulas that can perform operations on different types of data such as text, numbers, arrays, and time.
+Formulas are functions used to calculate or transform data. Momen provides a variety of formulas for operations on text, numbers, arrays, time, and more.
 
-#### **Type Conversion**
+### Type Conversion
 
 | Name                     | Description                                                     | Example                                                                                     |
 | ------------------------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| TO\_TEXT                 | Converts integers, decimals, JSONB, etc., to the text data type | <p>{"message": "Hello World!"}<br><br>>> '{"message": "Hello World!"}'</p>                  |
-| TO\_INTEGER              | Converts text or decimals to integers                           | <p>Original data: -3.1415926<br><br>>> -3</p>                                               |
-| TO\_DECIMAL              | Converts text to decimals                                       | <p>Original data: "-3.1415926"<br><br>>> -3.1415926</p>                                     |
-| TEXT\_TO\_DATETIME       | Converts text to datetime                                       | <p>Original data: "2025-02-21 14:36"<br><br>>> 2025-02-21T14:36:00.000+08:00</p>            |
-| COMBINE\_DATE\_AND\_TIME | Combines date and time into datetime                            | <p>Date: 2024-01-08<br>Time: 13:38:00.000+08:00<br><br>>> 2024-01-08T13:38:00.000+08:00</p> |
-| EXTRACT\_DATE\_OR\_TIME  | Extracts date or time from datetime (timestamp)                 | <p>Datetime: 2024-01-08 13:38:00.000+08:00<br>Extract: Date<br><br>>> 2024-01-08</p>        |
+| TO_TEXT                  | Converts integers, decimals, JSONB, etc., to text               | Original data: {"message": "Hello World!"} → '{"message": "Hello World!"}'                  |
+| TO_INTEGER               | Converts text or decimals to integers                           | Original data: -3.1415926 → -3                                                              |
+| TO_DECIMAL               | Converts text to decimals                                       | Original data: "-3.1415926" → -3.1415926                                                    |
+| TEXT_TO_DATETIME         | Converts text to datetime                                       | Original data: "2025-02-21 14:36" → 2025-02-21T14:36:00.000+08:00                           |
+| COMBINE_DATE_AND_TIME    | Combines date and time into datetime                            | Date: 2024-01-08, Time: 13:38:00.000+08:00 → 2024-01-08T13:38:00.000+08:00                  |
+| EXTRACT_DATE_OR_TIME     | Extracts date or time from datetime (timestamp)                 | Datetime: 2024-01-08 13:38:00.000+08:00, Extract: Date → 2024-01-08                         |
 
-#### Text Processing
+### Text Processing
 
-| Name           | Description                                                                                                                                                                                   | Example                                                                                                   |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| STRING\_LEN    | Returns the length of the text, with Chinese characters, letters, numbers, and symbols all counting as one character.                                                                         | Text: "Hello World!">> 12                                                                                 |
-| REPLACE\_PART  | Replaces part of the text with new text based on the specified position (first character is 0) and number of characters.                                                                      | Text: "Hello World!" Start position: 1 Number of characters to replace: 4 New text: "ola">> "Hola World!" |
-| REPLACE\_TEXT  | Finds the specified text and replaces it with new text based on the number of occurrences.                                                                                                    | Text: "Hello World!" Old text: "o" New text: "" Number of replacements: 1>> "Hell World"                  |
-| FIND           | Returns the position of the first occurrence of the specified text. The position of the first character is 0, returns -1 if not found.                                                        | Text: "Hello World!" Text to locate: "o">> 4                                                              |
-| CONTAIN        | Determines whether the specified text exists, returning a boolean value `true` if it does; otherwise, `false`.                                                                                | Text: "Hello World!" Text to find: "ello">> true                                                          |
-| SUBSTRING      | Extracts a substring. Includes the start position but not the end position; the position of the first character is 0.                                                                         | Text: "Hello World!" Start position: 0 End position: 5>> "Hello"                                          |
-| LEFT           | Returns a specified number of characters from the start of the text.                                                                                                                          | Text: "Hello World!" Number of characters: 5>> "Hello"                                                    |
-| RIGHT          | Returns a specified number of characters from the end of the text.                                                                                                                            | Text: "Hello World!" Number of characters: 5>> "World"                                                    |
-| LOWER          | Converts all letters in the text to lowercase.                                                                                                                                                | Text: "Hello World!">> "hello world!"                                                                     |
-| UPPER          | Converts all letters in the text to uppercase.                                                                                                                                                | Text: "Hello World!">> "HELLO WORLD!"                                                                     |
-| RANDOM\_STRING | Generates random text. Note that since random characters are generated on the front end, they are easily controlled and not recommended for use in scenarios such as generating coupon codes. | Minimum length: 5 Maximum length: 10 Lowercase: true Uppercase: true Numbers: true>> "seXr3aoRD"          |
-| SPLIT          | Splits the text into an array using the specified character.                                                                                                                                  | Text: "2024/01/08" Separator: "/">> \["2024", "01", "08"]                                                 |
+| Name           | Description                                                                                                                                              | Example                                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| STRING_LEN     | Returns the length of the text. All characters (including Chinese, letters, numbers, symbols) count as one.                                              | Text: "Hello World!" → 12                                                                                 |
+| REPLACE_PART   | Replaces part of the text with new text based on the specified position (first character is 0) and number of characters.                                 | Text: "Hello World!", Start: 1, Length: 4, New text: "ola" → "Hola World!"                               |
+| REPLACE_TEXT   | Finds the specified text and replaces it with new text, based on the number of occurrences.                                                              | Text: "Hello World!", Old: "o", New: "", Count: 1 → "Hell World"                                         |
+| FIND           | Returns the position of the first occurrence of the specified text. Returns -1 if not found.                                                             | Text: "Hello World!", Find: "o" → 4                                                                      |
+| CONTAIN        | Checks if the specified text exists, returns `true` or `false`.                                                                                          | Text: "Hello World!", Find: "ello" → true                                                                |
+| SUBSTRING      | Extracts a substring. Includes the start position but not the end; first character is 0.                                                                 | Text: "Hello World!", Start: 0, End: 5 → "Hello"                                                         |
+| LEFT           | Returns a specified number of characters from the start of the text.                                                                                     | Text: "Hello World!", Count: 5 → "Hello"                                                                 |
+| RIGHT          | Returns a specified number of characters from the end of the text.                                                                                       | Text: "Hello World!", Count: 5 → "World"                                                                 |
+| LOWER          | Converts all letters in the text to lowercase.                                                                                                           | Text: "Hello World!" → "hello world!"                                                                    |
+| UPPER          | Converts all letters in the text to uppercase.                                                                                                           | Text: "Hello World!" → "HELLO WORLD!"                                                                    |
+| RANDOM_STRING  | Generates random text. (Random characters are generated on the frontend and are not recommended for secure scenarios such as coupon codes.)               | Min length: 5, Max length: 10, Lowercase: true, Uppercase: true, Numbers: true → "seXr3aoRD"             |
+| SPLIT          | Splits the text into an array using the specified separator.                                                                                             | Text: "2024/01/08", Separator: "/" → ["2024", "01", "08"]                                                |
 
-#### Mathematical Operations
+### Mathematical Operations
 
-| Name            | Description                                                                                                                                                                                               | Example                                                                                          |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| +               | Addition between numbers.                                                                                                                                                                                 | Number 1: 5 Number 2: 10>> 15                                                                    |
-| -               | Subtraction between numbers.                                                                                                                                                                              | Number 1: 5 Number 2: 10>> -5                                                                    |
-| \*              | Multiplication between numbers.                                                                                                                                                                           | Number 1: 5 Number 2: 10>> 50                                                                    |
-| /               | Division between numbers.                                                                                                                                                                                 | Number 1: 5 Number 2: 10>> 0.5                                                                   |
-| %               | Returns the remainder after division, with the same sign as the dividend.                                                                                                                                 | Dividend: -5 Divisor: 10>> -5                                                                    |
-| MIN             | Returns the minimum value.                                                                                                                                                                                | Number 1: 5 Number 2: 10>> 5                                                                     |
-| MAX             | Returns the maximum value.                                                                                                                                                                                | Number 1: 5 Number 2: 10>> 10                                                                    |
-| ROUND\_UP       | Returns the nearest integer upwards.                                                                                                                                                                      | Number: 3.5>> 4                                                                                  |
-| ROUND\_DOWN     | Returns the nearest integer downwards.                                                                                                                                                                    | Number: -3.5>> -4                                                                                |
-| INT             | Rounds to the nearest integer.                                                                                                                                                                            | Number: -3.5>> 3                                                                                 |
-| ABS             | Returns the absolute value.                                                                                                                                                                               | Number: -3.5>> 3.5                                                                               |
-| RANDOM\_NUMBER  | Returns a random integer between specified numbers. Note that since random numbers are generated on the front end, they are easily controlled and not recommended for use in scenarios such as lotteries. | Minimum value: 1 Maximum value: 10>> 6                                                           |
-| POWER           | Exponentiation operation                                                                                                                                                                                  | Base: 2 Exponent: 3>> 8                                                                          |
-| DECIMAL\_FORMAT | Decimal formatting. Note that if "Remove all trailing zeros" is selected, it will return data of text type.                                                                                               | Decimal: 3.1415926 Precision: 2 Rounding mode: HALF\_EVEN Remove all trailing zeros: true>> 3.14 |
+| Name            | Description                                                                                                                        | Example                                         |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| +               | Addition                                                                                    | 5 + 10 → 15                                     |
+| -               | Subtraction                                                                                 | 5 - 10 → -5                                     |
+| *               | Multiplication                                                                              | 5 * 10 → 50                                     |
+| /               | Division                                                                                    | 5 / 10 → 0.5                                    |
+| %               | Remainder after division, same sign as dividend                                             | -5 % 10 → -5                                    |
+| MIN             | Returns the minimum value                                                                   | 5, 10 → 5                                       |
+| MAX             | Returns the maximum value                                                                   | 5, 10 → 10                                      |
+| ROUND_UP        | Rounds up to the nearest integer                                                            | 3.5 → 4                                         |
+| ROUND_DOWN      | Rounds down to the nearest integer                                                          | -3.5 → -4                                       |
+| INT             | Rounds to the nearest integer                                                               | -3.5 → 3                                        |
+| ABS             | Returns the absolute value                                                                  | -3.5 → 3.5                                      |
+| RANDOM_NUMBER   | Returns a random integer between specified numbers (not recommended for secure scenarios)    | Min: 1, Max: 10 → 6                             |
+| POWER           | Exponentiation                                                                              | Base: 2, Exponent: 3 → 8                        |
+| DECIMAL_FORMAT  | Decimal formatting (returns text if "Remove all trailing zeros" is selected)                 | 3.1415926, Precision: 2, Remove trailing: true → 3.14 |
 
-#### Array Processing
+### Array Processing
 
-| Name            | Description                                                                       | Example                                                                                |
-| --------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| GET\_ITEM       | Retrieves an item from an array, with the index starting from 0.                  | Array: \["2024", "01", "08"] Index: 1>> "01"                                           |
-| ARRAY\_TO\_ITEM | Retrieves an item from an array (to be deprecated, recommended to use GET\_ITEM). | Input array: \["2024", "01", "08"] Index: 1 Output: "01"                               |
-| ARR\_LEN        | Gets the length of the array.                                                     | Input array: \["2024", "01", "08"] Output: 3                                           |
-| FIRST           | Returns the first item of the array.                                              | Input array: \["2024", "01", "08"] Output: "2024"                                      |
-| LAST            | Returns the last item of the array.                                               | Input array: \["2024", "01", "08"] Output: "08"                                        |
-| RANDOM\_ITEM    | Returns a random item from the array.                                             | Input array: \["2024", "01", "08"] Output: "01"                                        |
-| SLICE           | Extracts a section of the array.                                                  | Input array: \["2024", "01", "08"] Start position: 1 Quantity: 2 Output: \["01", "08"] |
-| JOIN            | Joins an array of text type into a string.                                        | Array: \["2024", "01", "08"] Separator: "-">> "2024-01-08"                             |
-| INDEX\_OF       | Returns the index of the first occurrence of the specified item.                  | Input array: \["2024", "01", "08"] Specified item: "08" Output: 2                      |
+| Name            | Description                                                                       | Example                                         |
+| --------------- | --------------------------------------------------------------------------------- | ----------------------------------------------- |
+| GET_ITEM        | Retrieves an item from an array (index starts from 0)                             | ["2024", "01", "08"], Index: 1 → "01"           |
+| ARRAY_TO_ITEM   | Retrieves an item from an array (deprecated, use GET_ITEM)                        | ["2024", "01", "08"], Index: 1 → "01"           |
+| ARR_LEN         | Gets the length of the array                                                      | ["2024", "01", "08"] → 3                        |
+| FIRST           | Returns the first item of the array                                               | ["2024", "01", "08"] → "2024"                   |
+| LAST            | Returns the last item of the array                                                | ["2024", "01", "08"] → "08"                     |
+| RANDOM_ITEM     | Returns a random item from the array                                              | ["2024", "01", "08"] → "01"                     |
+| SLICE           | Extracts a section of the array                                                   | ["2024", "01", "08"], Start: 1, Count: 2 → ["01", "08"] |
+| JOIN            | Joins an array of text into a string                                              | ["2024", "01", "08"], Separator: "-" → "2024-01-08" |
+| INDEX_OF        | Returns the index of the first occurrence of the specified item                   | ["2024", "01", "08"], Item: "08" → 2            |
 
-#### Time Operations
+### Time Operations
 
-| Name            | Description                                                                                                                               | Example                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GET\_DATE\_TIME | Gets a point in time.                                                                                                                     | Type: DateTime Configuration: Custom Year: 2024 Month: 1 Day: 8 Hour: 13 Minute: 14 Second: 0>> 2024-01-08T13:14:00.000+08:00 Note: 1. Date: 2024-01-08 represents year-month-day. 2. T is the separator between date and time. 3. Time: 13:14:00.246046 represents hour:minute:second.millisecond. 4. Timezone: +08:00 represents this time is in a timezone that is 8 hours ahead of UTC, which usually corresponds to China Standard Time (CST). |
-| DELTA           | Addition/subtraction operation on time.                                                                                                   | Time: 13:38:00.000+08:00 Operation type: Add Hour: 1 Minute: 12 Second: 0>> 14:50:00.000+08:00                                                                                                                                                                                                                                                                                                                                                      |
-| DURATION        | Calculates the interval between two points in time.                                                                                       | Start: 2019-12-01 End: 2024-01-08 Time difference converted to: Year>> 5                                                                                                                                                                                                                                                                                                                                                                            |
-| EXTRACT         | Retrieves a specified part of the time.                                                                                                   | Time: 13:38:00.000+08:00 Unit: Hour>> 13                                                                                                                                                                                                                                                                                                                                                                                                            |
-| TO\_DATETIME    | Converts date and time into DateTime type (timestamp). For example, merging and converting the date and time selected in a Data Selector. | Date: 2024-01-08 Time: 13:38:00.000+08:00>> 2024-01-08T13:38:00.000+08:00                                                                                                                                                                                                                                                                                                                                                                           |
-| TO\_DATE\_TIME  | Retrieves the date or time from a DateTime (timestamp).                                                                                   | DateTime: 2024-01-08 13:38:00.000+08:00 Extract: Date>> 2024-01-08                                                                                                                                                                                                                                                                                                                                                                                  |
+| Name            | Description                                                                                                                               | Example                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| GET_DATE_TIME   | Gets a point in time                                                                               | Year: 2024, Month: 1, Day: 8, Hour: 13, Minute: 14, Second: 0 → 2024-01-08T13:14:00.000+08:00 |
+| DELTA           | Adds or subtracts time                                                                             | Time: 13:38:00.000+08:00, Add 1 hour 12 min → 14:50:00.000+08:00                          |
+| DURATION        | Calculates the interval between two points in time                                                 | Start: 2019-12-01, End: 2024-01-08, Unit: Year → 5                                        |
+| EXTRACT         | Retrieves a specified part of the time                                                             | Time: 13:38:00.000+08:00, Unit: Hour → 13                                                 |
+| TO_DATETIME     | Converts date and time into DateTime (timestamp)                                                   | Date: 2024-01-08, Time: 13:38:00.000+08:00 → 2024-01-08T13:38:00.000+08:00                |
+| TO_DATE_TIME    | Retrieves the date or time from a DateTime (timestamp)                                             | DateTime: 2024-01-08 13:38:00.000+08:00, Extract: Date → 2024-01-08                       |
 
-#### Geographical Location
+### Geographical Location
 
-| Name                         | Description                                                                                                        | Example                                                                                |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| DISTANCE                     | Calculates the distance between two geographical locations. The unit can be selected as: meters, kilometers, miles | Location 1: \[120.2934,30.3150] Location 2: \[120.2934,31.3150] Unit: kilometers>> 866 |
-| GET\_VALUE\_FROM\_GEO\_POINT | Retrieves the longitude or latitude from a geographical location (latitude and longitude).                         | Location: \[120.2934,30.3150] Type: Latitude>> 30.3150                                 |
+| Name                         | Description                                                                                                        | Example                                         |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- |
+| DISTANCE                     | Calculates the distance between two locations (meters, kilometers, or miles)                                       | [120.2934,30.3150], [120.2934,31.3150], km → 866|
+| GET_VALUE_FROM_GEO_POINT     | Retrieves longitude or latitude from a geo point (latitude and longitude)                                          | [120.2934,30.3150], Type: Latitude → 30.3150    |
 
-#### JSON Processing Methods
+### JSON Processing Methods
 
 | Name                | Description               | Example                                                            |
 | ------------------- | ------------------------- | ------------------------------------------------------------------ |
-| JSON\_EXTRACT\_PATH | Retrieves data from JSON. | Input JSON: {"data": {"foo": "bar"\}} Path: data.foo Output: "bar" |
+| JSON_EXTRACT_PATH   | Retrieves data from JSON  | {"data": {"foo": "bar"}}, Path: data.foo → "bar"                   |
 
 ## Conditions
 
-Logical operations on data are used in Conditional View, Conditional data, and conditional branches of Actionflow. For detailed usage, please refer to the relevant documentation.
+Logical operations on data are used in Conditional View, Conditional Data, and conditional branches of Actionflow. For detailed usage, see the relevant documentation.
 
-![](../.gitbook/assets/data/data_formula0.png)
+![Formula and condition usage example](../.gitbook/assets/data/data_formula0.png)

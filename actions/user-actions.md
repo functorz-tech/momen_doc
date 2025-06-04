@@ -4,105 +4,104 @@ description: >-
   enables user registration and login functionality using username, email or phone number.
 ---
 
-# User Action
+# User Authentication and Account Actions
 
-**User actions include:**
-1. Refresh login user data
-2. Verification code
-3. Registration
-4. Login
-5. Bind
-6. Unbind
-7. Reset password
+**Supported user actions:**
+1. Refresh Login User Data
+2. Send Verification Code
+3. Register Account
+4. User Login
+5. Bind Contact Information
+6. Unbind Contact Information
+7. Reset Password
 8. Logout
-9. Deregistration
+9. Deregister Account
 
-## Introduction 
-User actions are essential interactions in an app, including registration, login, password reset, and more. This doc explains the purpose of each action and provides guidance to configure them for a seamless and secure user experience.
+This guide details the purpose and configuration of each user-related action to help you deliver a seamless and secure authentication experience.
 
-## 1. Refresh login user data
+## 1. Refresh Login User Data
 
-### Brief
-This action ensures that the latest user data is reflected in the application after significant changes, such as account binding, unbinding, password reset, or profile updates. It helps maintain data consistency between the client-side interface and the server-side database. Without refreshing, users might continue to see outdated information until they manually reload the page or log out and log back in.
+**Purpose:**  
+Ensures the latest user data is reflected in the application after significant changes (e.g., binding/unbinding, password reset, or profile updates). This maintains data consistency between the client and server. Without refreshing, users may see outdated information until they reload or re-login.
 
-### Action configuration guide
-Add a button component and bind the action of "Refresh Login User Data" or trigger the action upon specific events (e.g., after binding/unbinding or resetting a password).
+**How to Configure:**  
+Add a button and bind the "Refresh Login User Data" action, or trigger it after relevant events (such as binding/unbinding or resetting a password).
 
-## 2. Verification Code
+## 2. Send Verification Code
 
-### Brief
-When users perform sensitive operations (e.g., login, registration, password reset, or binding information), the app sends a one-time verification code to the user's email or phone to verify the ownership of the contact method, enhancing account security.
+**Purpose:**  
+For sensitive operations (registration, login, password reset, binding/unbinding), the app sends a one-time code to the user's email or phone to verify ownership and enhance security.
 
-### Action configuration guide
-Add a button and an input component to the page. You can add and configure a "Send Verification Code" action (usually on the button). When configuring, under the Send to field, input or bind the value of the input component (phone number or email) to which the verification code will be sent. 
+**How to Configure:**  
+Add a button and input component. Configure a "Send Verification Code" action (typically on the button). In the "Send to" field, bind the input value (phone or email) to which the code will be sent.
 
-## 3. Registration
+## 3. Register Account
 
-### Brief
-The process where a user creates a new account by providing basic information such as name, email address, phone number, and password. This process may include email or phone number verification to ensure authenticity. Momen supports three registration methods: username, phone number, and email registration.
+**Purpose:**  
+Allows users to create an account by providing information such as username, email, phone, and password. Registration may include verification for authenticity. Momen supports registration via username, phone, or email.
 
-### Action configuration guide
-Typically, add some input components and a button to the page, and configure a registration action for the button. Bind the values of the input component to the action (for username, phone number, email, verification code, or password) to collect the user's registration information.
+**How to Configure:**  
+Add input components and a button. Configure a registration action for the button. Bind the input values (username, phone, email, verification code, password) to the action.
 
-### Note
-After successful registration, Momen will automatically insert the username/phone number/email & password into a developer-invisible data table and add a user record in the default account table, referred to as "current user data." The ID of this record will be automatically linked to the corresponding registration data. It’s common to configure a “Show Toast” action to notify the user upon successful or failed registration.
+**Note:**  
+Upon successful registration, Momen stores credentials in a secure, developer-invisible table and creates a user record in the default account table ("current user data"). The record ID is linked to registration data. It is recommended to configure a "Show Toast" action to notify users of registration success or failure.
 
-## 4. Login
+## 4. User Login
 
-### Brief
-Allows registered users to access their accounts using a username and password or other authentication methods (e.g., email, phone number & verification code). Momen supports four login methods: username login, phone number verification login, phone number & password login, email login.
+**Purpose:**  
+Allows registered users to access their accounts using username/password or other supported methods (email, phone, verification code). Momen supports username login, phone verification login, phone & password login, and email login.
 
-### Action configuration guide
-Add a button and some input components to the page, and configure a login-related action. Bind the values of the input boxes (username, phone number, email, verification code, or password) to the action to collect user input for login.
+**How to Configure:**  
+Add input components and a button. Configure a login action for the button. Bind the input values (username, phone, email, verification code, password) to the action.
 
-### Note
-It’s common to configure a “Show Prompt” action for successful/failed login, or configure a navigation action to redirect the user to the app’s homepage.
+**Note:**  
+It is recommended to configure a "Show Prompt" action for login success/failure, or a navigation action to redirect users after login.
 
-## 5. Bind
+## 5. Bind Contact Information
 
-### Brief
-After registering with a username and password, users may want to add a phone number or email address to their account for enhanced security and easier password recovery. Once binding is successful, the corresponding phone number or email will be updated in the user’s record in the default account table.
+**Purpose:**  
+Enables users to add a phone number or email to their account for enhanced security and easier recovery. After binding, the contact info is updated in the user's account record.
 
-### Action configuration guide
-Add a button and input components on the page, and configure a binding action to the button. Bind the values of email/phone number and verification codes to the action to collect info for binding.
+**How to Configure:**  
+Add input components and a button. Configure a binding action. Bind the email/phone and verification code fields to the action.
 
-### Note
-When requesting a verification code for binding, set the verification code type to “Bind account”.
+**Note:**  
+When requesting a verification code for binding, set the code type to "Bind account".
 
-## 6. Unbind
+## 6. Unbind Contact Information
 
-### Brief
-Allows users to remove a previously bound phone number or email from their account, typically when changing contact information or discontinuing its use. After successful unbinding, the corresponding phone number or email in the user’s record will be cleared.
+**Purpose:**  
+Allows users to remove a previously bound phone number or email, typically when changing contact info. After unbinding, the contact info is cleared from the user's account record.
 
-### Action configuration guide
-Add a button component on the page, and configure an unbinding action. Bind the input fields (for the verification code) to the action to collect the code received via phone or email.
+**How to Configure:**  
+Add a button and input for the verification code. Configure an unbinding action and bind the code field.
 
-### Note
-When requesting a verification code for unbinding, set the verification code type to “Unbind account”.
+**Note:**  
+When requesting a verification code for unbinding, set the code type to "Unbind account".
 
 ## 7. Reset Password
 
-### Brief
-Enables users who have forgotten their passwords to reset them using their registered phone number or email. This process typically involves verifying the user’s identity (via verification code) before allowing them to set a new password.
+**Purpose:**  
+Allows users to reset a forgotten password using their registered phone or email. This process requires identity verification via code before setting a new password.
 
-### Action configuration guide
-Add a button component on the page, and configure a password reset action. Bind the input fields (for phone number, new password, and verification code) to the action to reset the password.
+**How to Configure:**  
+Add input components (phone/email, new password, verification code) and a button. Configure a password reset action and bind the fields.
 
 ## 8. Logout
 
-### Brief
-Allows users to end their current session and log out of the application. Simply closing the webpage does not automatically log out the user, so this action ensures better privacy and data security.
+**Purpose:**  
+Ends the current user session and logs the user out. Closing the browser does not log out the user; this action ensures privacy and security.
 
-### Action configuration guide
-Typically used for one-click logout, combined with actions to refresh logged-in user data, recalculate data, or switch views accordingly. Logout only affects the current session and does not alter any data in the database.   
+**How to Configure:**  
+Add a logout button. Optionally, combine with actions to refresh user data, recalculate data, or update the UI. Logout only affects the session and does not modify database records.
 
-## 9. Deregistration
+## 9. Deregister Account
 
-### Brief
-Allows users to permanently delete their account and all associated data. Since this action is irreversible, users must confirm their intent and may need to complete multiple steps for security reasons. Momen supports two methods for account deletion: verification code deletion and password deletion.
+**Purpose:**  
+Allows users to permanently delete their account and all associated data. This irreversible action requires confirmation and may involve multiple steps for security. Momen supports account deletion via verification code or password.
 
-### Action configuration guide
-Add a button component on the page, and configure an account deletion action. Bind the input fields (for verification code or password) to the action to collect the necessary user input. When using verification code deletion, choose the appropriate sending method (SMS or email).
+**How to Configure:**  
+Add input components (verification code or password) and a button. Configure an account deletion action and bind the fields. For code-based deletion, choose the appropriate sending method (SMS or email).
 
-### Note
-When requesting a verification code for account deletion, set the verification code type to “Deregistration”.
+**Note:**  
+When requesting a verification code for deregistration, set the code type to "Deregistration".

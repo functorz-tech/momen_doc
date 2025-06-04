@@ -2,79 +2,84 @@
 description: Learn how to set up Stripe payment in your Momen project.
 ---
 
-# How to Set Up Payment with Stripe Plugin?
+# How to Set Up Payment with Stripe Plugin
 
-### Introduction
+## Introduction
 
-In this document, we will use Stripe's test mode to provide an example of configuring Stripe on Momen. It is recommended to go through the entire payment process in test mode before actual configuration.
+This guide demonstrates how to configure Stripe payments in Momen using Stripe's test mode.  
+**Tip:** Always complete the payment process in test mode before going live.
 
-A project example: [https://editor.momen.app/tool/nwLdKMXyBXG/WEB?code=cLtSsuCGhuPaN](https://editor.momen.app/tool/nwLdKMXyBXG/WEB?code=cLtSsuCGhuPaN)
+**Example project:** [Stripe Payment Demo on Momen](https://editor.momen.app/tool/nwLdKMXyBXG/WEB?code=cLtSsuCGhuPaN)
 
-<figure><img src="../.gitbook/assets/1 (31).png" alt="stripe test mode"><figcaption></figcaption></figure>
+![Stripe test mode](../.gitbook/assets/1%20(31).png "Stripe test mode")
 
-### Detailed Steps
+---
 
-1. #### Create a Stripe Action Flow in Momen
+## Step 1: Create a Stripe Actionflow in Momen
 
-And configure Stripe Callback in Trigger.
+- Create an Actionflow for Stripe payments.
+- Set up the Stripe Callback as the trigger.
 
-<figure><img src="../.gitbook/assets/2.gif" alt=""><figcaption></figcaption></figure>
+![Configure Stripe Actionflow trigger](../.gitbook/assets/2.gif "Configure Stripe Actionflow trigger")
 
-2. #### Configure Webhook in Stripe
+---
 
-You can directly open [https://dashboard.stripe.com/test/webhooks](https://dashboard.stripe.com/test/webhooks), or click Developers -> Webhooks to check the endpoints created.
+## Step 2: Configure Webhook in Stripe
 
-<figure><img src="../.gitbook/assets/3 (19).png" alt="configure webhooks in stripe"><figcaption></figcaption></figure>
+- Go to [Stripe Webhooks (test mode)](https://dashboard.stripe.com/test/webhooks) or navigate to **Developers → Webhooks** in the Stripe dashboard.
+- Create a new endpoint and enter the Callback URL generated in Momen.
 
-Fill in the Callback URL created earlier in Momen in the Endpoint URL, and add the following two events.
+![Configure webhooks in Stripe](../.gitbook/assets/3%20(19).png "Configure webhooks in Stripe")
 
-<figure><img src="../.gitbook/assets/4 (17).png" alt="select events in stripe"><figcaption></figcaption></figure>
+- Add the required events to the endpoint.
 
-Finally, your page should look like the one below. Then click Add endpoint, and Stripe will start listening to the events coming from this Callback.
+![Select events in Stripe](../.gitbook/assets/4%20(17).png "Select events in Stripe")
 
-<figure><img src="../.gitbook/assets/5 (12).png" alt=""><figcaption></figcaption></figure>
+- After setup, your page should look like this. Click **Add endpoint** to start listening for events.
 
-<figure><img src="../.gitbook/assets/6 (11).png" alt=""><figcaption></figcaption></figure>
+![Webhook endpoint overview](../.gitbook/assets/5%20(12).png "Webhook endpoint overview")
+![Webhook event details](../.gitbook/assets/6%20(11).png "Webhook event details")
 
-3. #### Configure Payment Settings in Momen
+---
 
-<figure><img src="../.gitbook/assets/7 (7).png" alt=""><figcaption></figcaption></figure>
+## Step 3: Configure Payment Settings in Momen
 
-Stripe PublicKey & Secret Key: Can be found in [https://dashboard.stripe.com/test/apikeys](https://dashboard.stripe.com/test/apikeys) (test mode).
+- Enter your Stripe **Publishable Key** and **Secret Key** (test mode) from [Stripe API Keys](https://dashboard.stripe.com/test/apikeys).
+- Set the Callback URL (from Step 1) and the endpoint secret (from the Stripe webhook page).
 
-<figure><img src="../.gitbook/assets/8 (5).png" alt=""><figcaption></figcaption></figure>
+![Payment settings in Momen](../.gitbook/assets/7%20(7).png "Payment settings in Momen")
+![Stripe API keys](../.gitbook/assets/8%20(5).png "Stripe API keys")
+![Set callback URL and endpoint secret](../.gitbook/assets/9%20(4).png "Set callback URL and endpoint secret")
 
-Callback URL is the URL we created in the first step, and the endpoint secret can be found on the Webhook page.
+- Save and deploy your database.
 
-<figure><img src="../.gitbook/assets/9 (4).png" alt=""><figcaption></figcaption></figure>
+![Save payment settings](../.gitbook/assets/10%20(3).png "Save payment settings")
+![Deploy project](../.gitbook/assets/11%20(2).png "Deploy project")
 
-Save and deploy the database.
+---
 
-<figure><img src="../.gitbook/assets/10 (3).png" alt="payment setting in a no-code tool"><figcaption></figcaption></figure>
+## Step 4: Create a Data Model in Momen
 
-<figure><img src="../.gitbook/assets/11 (2).png" alt="deploy the project in a no-code tool"><figcaption></figcaption></figure>
+Payment scenarios typically require an order model.  
+**Note:** Stripe allows multiple payments per order. If your logic requires one payment per order, implement restrictions to prevent duplicate payments.
 
-4. #### Create an Appropriate Data Model in Momen
+**Recommended data models:**
+- **Payment:** Records order ID, Stripe payment ID, status, amount, currency, description, payment method. Use the payment's ID as the order ID for payment actions.
+- **Event Log:** Tracks payment event stages (content, type, payment ID, Stripe payment ID), such as creation, in progress, failure, and success.
 
-Generally speaking, configuring payments is for purchasing, so there will be models like orders.
+**Example logic:**
+- On success: Add an event log, update payment status to "succeeded," set Stripe payment ID, and mark the order as paid.
+- On failure: Add an event log, update payment status to "payment_failed," and set Stripe payment ID.
+- For other statuses: Update Stripe payment ID and add an event log.
 
-It should be noted that Stripe's orders can be paid multiple times, so if in your logic, an order can only be paid once, some restrictions on the payment logic need to be made (users do not have permission to pay an order that has been paid/a single order may have multiple transaction records).
+![Payment and event log data model](../.gitbook/assets/12%20(2).png "Payment and event log data model")
 
-Below is an example of one way to handle this, it's important to note: that different handling methods may have different data models.
+---
 
-* Add a payment data model to record order ID, stripe payment ID, payment status (order\_id, stripe\_payment\_id, status, amount, currency, description, payment\_method), use the payment's id as the order ID for the payment action.
-* Add an event\_log data model to record different stages of payment events (content, type, payment\_id, stripe\_payment\_id), such as creation, in progress, failure, success, etc.
-* When successful, add an event\_log record, change the payment status to succeeded, stripe\_payment\_id to the returned payment id, change the original order's payment status to paid.
-* When failed, add an event\_log record, change the payment status to payment\_failed, stripe\_payment\_id to the returned payment id.
-* When the return type is other statuses, change the payment's stripe\_payment\_id to the returned payment id, add an event\_log record.
+## Step 5: Modify the Actionflow in Momen
 
-The data model is shown in the following image.
-
-<figure><img src="../.gitbook/assets/12 (2).png" alt=""><figcaption></figcaption></figure>
-
-5. #### Modify the ActionFlow in Momen
-
-Actually, by now, we can request Stripe's payment interface through the payment call in the action, but we still need to parse and invoke the result of the payment, which will ultimately be completed in the actionflow. First, we need to add a custom code node
+- After calling Stripe's payment API, you need to parse and handle the payment result in the Actionflow.
+- Add a custom code node to extract and return key parameters:
 
 ```javascript
 const body = context.getArg('fz_payment_callback_input');
@@ -89,57 +94,51 @@ context.setReturn('paymentStatus', paymentStatus);
 context.setReturn('body', JSON.stringify(body));
 ```
 
-The 'fz\_payment\_callback\_input' in the code is a parameter custom-defined inside Momen, it will get the result of this payment given by Stripe, then we divide it into four parameters and return them through the setReturn function defined by Momen, and remember to output these parameters in this step, so they can be used in later steps.
+- The `'fz_payment_callback_input'` parameter contains Stripe's callback data. The code above extracts and returns relevant fields for use in subsequent steps.
 
-<figure><img src="../.gitbook/assets/13 (1).png" alt="set the parameters of stripe"><figcaption></figcaption></figure>
+![Set Stripe parameters](../.gitbook/assets/13%20(1).png "Set Stripe parameters")
 
-The second step is to create an event\_log for this order.
+- Next, create an event log for the order.
 
-<figure><img src="../.gitbook/assets/14.png" alt="create an event for the order"><figcaption></figcaption></figure>
+![Create event log for order](../.gitbook/assets/14.png "Create event log for order")
 
-The last step is to modify the corresponding payment order according to the returned status, we need to use Condition.
+- Finally, update the payment order based on the returned status using a conditional branch.
 
-<figure><img src="../.gitbook/assets/15.png" alt="configure the order"><figcaption></figcaption></figure>
+![Configure order update condition](../.gitbook/assets/15.png "Configure order update condition")
+![Handle different payment results](../.gitbook/assets/16.png "Handle different payment results")
+![Additional result handling](../.gitbook/assets/17.png "Additional result handling")
 
-Then accordingly, perform different actions for different results.
+---
 
-<figure><img src="../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
+## Step 6: Call Stripe in Momen
 
-<figure><img src="../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
+- Typically, payments are initiated by a button click.
+- **Important:** Users must be logged in before making a payment. Ensure registration and login actions are configured.
 
-6. #### Call Stripe in Momen
+**Configuration steps:**
 
-To make the call in the web, it is usually done in the event of a button click. It is important to note that:
+1. Enable user login in settings and deploy the database.
 
-1. Users must be logged in before initiating payment, so registration and login actions need to be configured before initiating payment.
-2. Configuration steps
+   ![Enable user login](../.gitbook/assets/18.png "Enable user login")
 
-a. Open the user login on the settings page and deploy the database.
+2. Add registration and login actions to the appropriate buttons.
 
-<figure><img src="../.gitbook/assets/18.png" alt=""><figcaption></figcaption></figure>
+   ![Add registration action](../.gitbook/assets/19.png "Add registration action")
+   ![Add login action](../.gitbook/assets/20.png "Add login action")
+   ![Login button example](../.gitbook/assets/21.png "Login button example")
 
-b. Add registration and login actions to different buttons respectively.
+3. After login is set up, configure the Stripe payment action.
 
-<div>
+   ![Configure Stripe payment action](../.gitbook/assets/23.png "Configure Stripe payment action")
 
-<figure><img src="../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+   - **Order ID:** A long integer. The same order can be paid multiple times unless restricted by your logic.
+   - **Currency:** Supported currencies: [Stripe Supported Currencies](https://stripe.com/docs/currencies#supported-payment-methods)
+   - **Amount:** Must be in the smallest currency unit. [See Stripe documentation](https://stripe.com/docs/currencies#zero-decimal)
+   - **Payment method:** Defaults to bank cards; no need to specify unless required.
+   - **Actions on success/failure:** Configure actions such as showing a toast notification.
 
-<figure><img src="../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+---
 
-<figure><img src="../.gitbook/assets/21.png" alt=""><figcaption></figcaption></figure>
+## About Momen
 
-</div>
-
-After configuring registration and login, we can call Stripe. Following is the configuration interface.
-
-<figure><img src="../.gitbook/assets/23.png" alt=""><figcaption></figcaption></figure>
-
-1. Order ID: A long integer, the same order can be paid multiple times (not unique), users need to limit the order to be unique in logic to avoid duplicate payments.
-2. Currency: Supported currencies 👉[https://stripe.com/docs/currencies#supported-payment-methods](https://stripe.com/docs/currencies#supported-payment-methods)
-3. Amount: Needs to be converted to the smallest currency unit 👉([https://stripe.com/docs/currencies#zero-decimal](https://stripe.com/docs/currencies#zero-decimal))
-4. Payment method: Only supports bank cards by default, no need to fill in.
-5. Actions on success/failure: Configure what actions need to be done when the user succeeds/fails in payment respectively (e.g., show toast).
-
-### About Momen
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allows users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.
