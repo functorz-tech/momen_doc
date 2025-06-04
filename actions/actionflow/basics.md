@@ -1,18 +1,17 @@
 ---
 description: >-
   Implement complex logic by adding, deleting, modifying, querying data, writing
-  JS code blocks, calling APIs, and conditional branching.
+  JavaScript code blocks, calling APIs, and conditional branching.
 ---
 
 # Actionflow
 
 ## Introduction
 
-Actionflow is Momen's tool for building custom workflows and automations. It enables you to configure stream-based operations, set up various triggers, and manage complex business logic. Each Actionflow has a unique ID for searching and viewing execution logs.
+Actionflow is Momen's tool for building custom workflows and automations. It helps achieve complex business logic and boosts reusability. Also, because they operate entirely on the server, security is guaranteed.
 
 - Free projects: 1 Actionflow
 - Basic and above: Unlimited Actionflows
-
 
 ## Use Cases
 
@@ -22,28 +21,25 @@ Actionflows are ideal for automating complex data processing and business logic,
 - **Order Reminders:** Send notifications every 24 hours for unpaid orders.
 - **Payment Processing:** After a successful payment, update inventory and notify the user.
 
-
 ## Actionflow Structure
 
 ### Attributes
 
-- **ID:** Unique identifier, searchable in logs.
+- **ID:** A unique identifier. You can paste it directly into the log service search bar to view its runtime information and errors. See: [Log Service](https://docs.momen.app/release-and-growth/log_service) for details.
 - **Version:** Each save creates a new version.  
-  - **Backend update:** Takes effect on backend.  
-  - **Preview update:** Takes effect on frontend.  
-  - If only the backend is updated, the frontend still runs the old version.
+  - **Preview update:** Takes effect on both the backend and frontend.  
+  - **Backend update:** Takes effect only on the backend. If only the backend is updated, the frontend still runs the old version.
 - **Execution Method:**  
-  - **Synchronous:** Executes in order, waits for each step to finish.  
-  - **Asynchronous:** Runs in parallel, order not guaranteed.
+  - **Synchronous:** Actionflows execute sequentially, with each Actionflow waiting for the previous one to complete before starting.  
+  - **Asynchronous:** Actionflows can run independently and concurrently without blocking the main execution thread.
 - **Others:**  
 
-  |                               | Synchronous                                                           | Asynchronous                                                                        |
-  | ----------------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-  | **Execution Order**           | Executes in order                                                     | Order not guaranteed                                                                |
-  | **Blocks Other Actionflows**  | Yes                                                                   | No                                                                                  |
-  | **Timeout Duration**          | Entire flow: 15s (unlimited for paid)                                 | Each node: 15s (unlimited for paid)                                                 |
-  | **Error Handling**            | All data modifications roll back                                      | Data modifications do not roll back                                                 |
-  | **Use Cases**                 | Strict order, short duration                                          | Long-running (e.g., AI), high concurrency                                           |
+| Feature          | Synchronous                     | Asynchronous                    |
+|------------------|----------------------------------|----------------------------------|
+| **Execution**    | Tasks execute sequentially.     | Tasks can execute concurrently or in parallel. |
+| **Blocking**     | The Actionflow blocks and waits for each task to complete before proceeding. | The Actionflow does not block; it can continue with other tasks while a task runs in the background. |
+| **Timeout Duration** | Entire flow: 15s (unlimited for paid projects). | Each node: 15s (unlimited for paid projects).  |
+| **Error Handling** | All data changes to the database will be rolled back. | Database changes on the error node will be rolled back. |
 
 > If an asynchronous Actionflow is triggered by a callback, the call returns a `taskId`. Use the `fz_listen_action_flow_result` subscription to listen for results:
 > 
@@ -62,7 +58,7 @@ Defined variables are accessible to all nodes and can be assigned using the "Ass
 
 ### Nodes
 
-Nodes include database operations, AI execution, permission changes, API calls, code blocks, loop, and conditionals.
+Nodes include database operations, AI execution, permission changes, API calls, code blocks, loops, and conditionals.
 
 ### Triggers
 
@@ -85,7 +81,7 @@ Trigger types: database change, scheduled, and callback.
 
 - Click "Create" to add a new Actionflow.
 - Add and arrange nodes, including conditional branches.
-- Define input parameters (for external data) and output parameters (for results).
+- Define input parameters and output parameters (for results).
 - Choose execution mode (sync/async). AI flows require async.
 - Declare flow variables for intermediate results.
 
@@ -109,7 +105,6 @@ Supported triggers:
 - **Database Change:** [See details](db-trigger.md).
 - **Webhook:** Trigger via webhooks (requires callback body configuration).
 
-
 ## Log Management
 
 View execution logs in **Editor > Logs**.  
@@ -119,8 +114,6 @@ Search by Actionflow ID for troubleshooting.
 
 ## Notes
 
-- Automation requires purchasing execution credits. Free quotas depend on project version; buy more via "Project Details > Automation Execution Credits."
+- Automation requires purchasing execution credits.
 - Ensure all nodes are configured, saved, and published before setting up triggers.
-- Actionflows do not enforce strict type checking—variables of different types can be assigned.
-- Before deleting a node, update or remove any downstream nodes using its output.
 - Formula support in Actionflows is currently limited.

@@ -6,11 +6,11 @@ description: Learn to add and use custom code in Momen
 
 ## Prerequisites
 
-You should have a basic understanding of JavaScript, including variables, functions, loops, and conditionals.
+You should have a basic understanding of JS (Javascript), including variables, functions, loops, and conditionals.
 
 ## Adding Custom Code
 
-Currently, the "Custom Code" node in Momen Actionflow only supports JavaScript.
+Currently, the "Custom Code" node in Momen Actionflow only supports JS.
 
 ![Add custom code block](../../.gitbook/assets/0%20(49).png)
 
@@ -26,7 +26,7 @@ If your code block needs to process user input (the top-level "Input" of the Act
 
 For example, to process phone number masking:
 
-First, configure the input parameter in the Actionflow. This allows you to pass parameters into the Actionflow from the page.
+First, declare an input parameter named phone_number at the input node, which can be bound by all other nodes within the actionflow. This allows you to pass parameters into the Actionflow from the page.
 
 ![Configure Actionflow input](../../.gitbook/assets/2%20(2).jpeg)
 
@@ -37,8 +37,6 @@ Next, configure the input in the Custom Code node. This tells the code block whi
 ![Configure code block input](../../.gitbook/assets/3%20(2).jpeg)
 
 To access the input parameter in code, use the Momen built-in `context.getArg("input parameter name")` function.
-
-**Note:** Names must be wrapped in single or double quotes.
 
 ```javascript
 const thing1 = context.getArg('thing1');
@@ -62,29 +60,27 @@ context.runGql('publishWechatMessage', gql,{data,accountId}, { role: 'admin'});
 
 ## Configuring and Returning Output
 
-If you want to pass the result of the code block to downstream nodes, configure the output parameter in the code block and use the appropriate return statement in your code.
-
-To return output, use Momen's built-in `context.setReturn("outputName", outputValue)` function.
+If you want to pass the result of the code block to downstream nodes, configure the output parameter in the code block and use the appropriate context.setReturn statement in your code, such as `context.setReturn('outputName', outputValue)` function.
 
 ```javascript
 const phone_number = context.getArg('phone_number'); 
 const result = `${phone_number.substring(0,3)}****${phone_number.substring(7,11)}`; 
-context.setReturn('result_phone', result) ; 
+context.setReturn('result_phone', result); 
 ```
 
 Configure the output in the Custom Code node to specify the output name and type.
 
-**Note:** The output name must match the name used in `context.setReturn()` in your code.
+**Note:** The output name must match the name used in `context.setReturn()` in your code. Otherwise, the code block will fail to execute at runtime.
 
 ![Configure code block output](../../.gitbook/assets/4%20(64).png)
 
-Configure the output in the Actionflow to make the result available to the frontend. After this step, when the frontend page calls this Actionflow, the result data will be available for use.
+Configure the output in the Actionflow to make the result available to the frontend. After this step, when the frontend page calls this Actionflow, all outputs will be available within subsequent actions' "result data" sections.
 
 ![Configure Actionflow output](../../.gitbook/assets/5%20(2).jpeg)
 
-If you encounter any issues, join our [Discord community](https://discord.com/invite/UCyhySSXfz) for assistance.
+If you encounter any issues, join our [Forum](https://forum.momen.app/) for assistance.
 
-### Running gql in a Custom Code
+### Running GraphQL in a Custom Code
 
 Prerequisite: Understand the GraphQL basics below.
 
@@ -117,50 +113,50 @@ context.runGql( operationName , gql , variables , permission );
 * operationName: the name of the gql, it needs to be the same as the name inside the gql, e.g. the name after the query in the above gql is the name of the gql.
 * gql: the content of the gql, e.g. the request in the symbol is the result of the keystroke above the tab key in English input mode
 * variables: If gql uses a parameter declaration, the parameter cannot be null.
-* permission: Declare the role of calling gql, usually admin.
+* permission: The permission for calling gql can only be set to 'admin'.
 
-### GraphQL Basics and Role
+### GraphQL Basics
 
 GraphQL is a data query language developed by Facebook.
 
-Momen uses GraphQL (gql) for frontend-backend communication and debugging.  
-By embedding GraphQL in Actionflow, you can define code blocks to achieve complex requirements, such as batch operations.
+Momen's APIs based on the GraphQL specification.  
+
+By embedding GraphQL in Actionflow, you can perform arbitrarily complex data manipulation, such as batch operations.
 
 ### Altair Interface
 
 Altair GraphQL Client is a tool for debugging gql. Download and open Altair as shown below:
 
-![Altair interface](../../.gitbook/assets/0%20(50).png)
+![Altair introduction](../../.gitbook/assets/0%20(50).png)
 
 **Altair Debugging gql Configuration Content**
 
-- Add new request
-- Set request headers
-- Set request method
-- Add request URL
-- Click Docs to view documentation
-- Configure test parameters
-- Beautify request code
+- Set Headers and Method
+- Add GraphQL server URL
+- Click "Docs" to view documentation for the entire GraphQL server's schema.
+- Configure variables
 
 ### Configuring the Request URL and Headers
 
-1. In Momen, create a new project and a data table called reference, add the ‘content’ field, and update the backend.
-2. In the database, open the console, click Network, clear requests, click the reference table, and check Requests in Network:
+Let's move on to an example demonstrating how to debug Momen's API with Altair.
+
+1. In Momen, create a new project and a data table called `reference`, add the `content` field, and update the backend.
+2. Press F12 to open your browser's console, then click on "Network" and clear it. Next, in the Zion editor, open the "Database" tab and navigate to the `reference table`. You'll then see the request for the refer table data in the console.
 
 ![Find request URL](../../.gitbook/assets/20240521-171423.png)
 
-3. Copy the inner URL from the Request URL in Headers and paste it into Altair (default method: POST).
-4. Copy the Authorization value from Request Headers and paste it into Altair's request header.
+3. Copy the Request URL in Headers and paste it into Altair, and set the request method to POST.
+4. Copy the Authorization string from Request Headers and paste it into Altair's request header.
 
 ![Copy Authorization header](../../.gitbook/assets/screenshot_20240521_171758.png)
 
-### How to View Docs
+### How to View Documentation
 
-Configure a query request for the reference table data. Click Docs on the right in Altair, type "reference" to see available requests. Select one to view parameters, types, and fields. Click any field for more details.
+Click "Docs" on the right in Altair, type "reference" to see available requests. Select one to view parameters, types, and fields. Click any field for more details.
 
-![View Docs in Altair](../../.gitbook/assets/screenshot_20240521_172208.png)
+![View Documentation in Altair](../../.gitbook/assets/screenshot_20240521_172208.png)
 
-### Arguments for Data Requests
+### Parameters for Data Requests
 
 When requesting data, you can configure the following parameters:
 
@@ -170,12 +166,6 @@ When requesting data, you can configure the following parameters:
 - **offset**: Indicates the starting index for data retrieval.
 - **limit**: Specifies the number of records to retrieve.
 
-### Type Determination
-
-- **No symbol**: Represents an object.
-- **[]**: Represents an array.
-- **Specific types**: Can be explicitly defined (e.g., `int`).
-
 ### Selecting Parameters
 
 - Click a parameter to view its configuration options.
@@ -184,8 +174,6 @@ When requesting data, you can configure the following parameters:
 ### Basic Comparison Operators
 
 - `_eq`: Equal to
-- `_is_null:true`: Is null
-- `_is_null:false`: Is not null
 - `_gte`: Greater than or equal to
 - `_lte`: Less than or equal to
 - `_and`: Logical AND
@@ -201,15 +189,36 @@ When requesting data, you can configure the following parameters:
 - `_inc`: Increment
 - `_dec`: Decrement
 
+Null in databases is typically used to represent a missing or unknown value. It's important to note that it doesn't signify an empty string or zero.
+
+In GraphQL queries, null can be used to filter data. Here are some common usages:
+
+- `_is_null: false`: Returns data where the field is not null.
+
+- `_is_null: true`: Returns data where the field is null.
+
+- `_not: { _is_null: false }`: Returns data where the field is null.
+- `_eq: null` or `_neq: null`: These conditions are specially handled by Momen and is equivalent to `true`.
+
+
 ### Sorting Options
 
-- `desc`: Descending order
-- `asc`: Ascending order
+- asc: Ascending order.
+
+  - asc_nulls_first: NULL values appear before non-NULL values.
+
+  - asc_nulls_last: NULL values appear after non-NULL values.
+
+- desc: Descending order.
+
+  - desc_nulls_first: NULL values appear before non-NULL values.
+
+  - desc_nulls_last: NULL values appear after non-NULL values.
 
 ### Type and Fields
 
-- **TYPE**: Refers to the table name.
-- **FIELDS**: Represents the fields in the table. Click a field to view related table configurations.
+- **TYPE**: Type of return value
+- **FIELDS**: Specific fields within the return value
 
 ### Requests
 
@@ -252,7 +261,7 @@ ud_account_id_zhanghu_999f9c
 }
 ```
 
-3. Request aggregated data: Search the query request for "table\_aggregate" in Docs to request aggregated data for this table.
+3. Request aggregated data: Search the query request for "table\_aggregate" in Documentation to request aggregated data for this table.
 
 ```bash
 # Request aggregate information from the reference table
@@ -289,7 +298,7 @@ count
 }
 ```
 
-**Query - Query Request** Search for a table name in Docs, find a query request for that table, and click on it to go to the request Docs.
+**Query - Query Request** Search for a table name in Documentation, find a query request for that table, and click on it to go to the request Documentation.
 
 <figure><img src="../../.gitbook/assets/screenshot_20240521_172321.png" alt=""><figcaption></figcaption></figure>
 
@@ -335,7 +344,7 @@ Click on the "send query" button located above the request. The execution of the
 
 ### Mutation - Insert Request
 
-Search for `insert_tableName` in Docs, find the mutation request for that table, and click on it to go to the request Docs.
+Search for `insert_tableName` in Documentation, find the mutation request for that table, and click on it to go to the request Documentation.
 
 Adding a request
 
@@ -376,7 +385,7 @@ whatever: anything
 
 To search for or add an update request:
 
-In the documentation (Docs), search for update\_tableName.
+In the documentation, search for update\_tableName.
 
 Locate the mutation request associated with the table you're interested in.
 
@@ -406,7 +415,7 @@ whatever: anything
 
 To search for or add a delete request:
 
-In the documentation (Docs), search for delete\_tableName.
+In the documentation, search for delete\_tableName.
 
 Locate the mutation request associated with the table you're interested in.
 
@@ -429,14 +438,14 @@ whatever: anything
 
 **where:** Used to configure the conditions for deleting data. It is of object type.
 
-### Running the API in a Custom Code
+### Invoking external API in Custom Code
 
 Prerequisite: The API must be added and debugged in Momen.
 
 callThirdPartyApi('$operationId', $args): Call the API.
 
 - `$operationId`: API id
-- `$args`: API arguments, e.g. {fz_body:{"appKey": "f46dce7fa0566f0c"}}
+- `$args`: API parameters, e.g. {fz_body:{"appKey": "f46dce7fa0566f0c"}}
 
 ```javascript
 context.callThirdPartyApi('$operationId', {"body": {"appKey": "f46dce7fa0566f0c","sign": "OTljNjYyNXXX=="}});
@@ -444,6 +453,6 @@ context.callThirdPartyApi('$operationId', {"body": {"appKey": "f46dce7fa0566f0c"
 
 **How to Find the API id:**
 
-In Altair Docs, search for "operation" to find the relevant request. If you have multiple APIs, click each to view configuration parameters and identify the correct one.
+In Altair Documentation, search for "operation" to find the relevant request. If you have multiple APIs, click each to view configuration parameters and identify the correct one.
 
 ![Find API id in Altair](../../.gitbook/assets/screenshot_20240521_174731.png)
