@@ -37,6 +37,12 @@ Data mutation actions allow you to add, update, or delete records in the databas
 3. **On Success/Failure**  
    These refer to actions triggered after a data mutation succeeds or fails. This is crucial in real-world applications. For example, after modifying table data, you can configure actions such as Show Toast, Refresh, or Redirect to notify users. You can also chain additional actions, such as another data mutation or conditional branches, to execute subsequent logic as needed.
 
+### Input Validation
+
+Input values for each field can be validated. Currently, six rules are supported: Is empty, Not empty, Is phone number, Is email and Custom (Regex). Error prompts can be configured.
+
+![Request validation](../.gitbook/assets/request_validation.png)
+
 4. **Result Data**  
    Upon successful execution, result data is returned, containing the newly added or updated record, including its ID and other details.
 
