@@ -94,7 +94,7 @@ Add nodes by clicking "+". Supported types:
 - **AI Execution:** Run an AI agent configured in Momen.
 - **Set Actionflow Variable:** Assign values to Actionflow variables.
 - **Permission Management:** Grant or revoke user roles.
-- **Conditional Branch:** Add decision logic (branches are evaluated left to right).Once one condition is met, no further conditions are checked. 
+- **Conditional Branch:** Add decision logic. Branches are evaluated left to right, and once a condition is met, no further conditions are checked.
 - **Custom Code:** Execute code blocks.
 
 ### 3. Triggers
