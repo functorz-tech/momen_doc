@@ -4,70 +4,73 @@ description: >-
   management tool in this guide.
 ---
 
-# Feedback Tool, a nod to Canny
+# Feedback Tool: A Nod to Canny
 
-### **Introduction**
+## Introduction
 
-Users can publicly post and vote on feedback for any product. Meanwhile, the product team can synchronize progress based on user feedback. Serving as a project management tool, this template makes product iteration and feedback collection more effective.
+This guide explains how to use Momen's Canny-like Feedback Tool template to build an effective feedback management and product iteration platform. Users can publicly post and vote on feedback for any product, while product teams can track progress and prioritize improvements based on user input.
 
-### **I. Page Introduction**
+## Page Overview
 
-1. **Register/Login**
+### 1. Register/Login
 
-A simple login interface. Users need to register when they first access the product.
+A simple login interface allows users to register when they first access the product.
 
-<figure><img src="../.gitbook/assets/0 (39).png" alt="Feedback management like Canny"><figcaption></figcaption></figure>
+![Feedback management login page](../.gitbook/assets/0%20(39).png)
 
-2. **Homepage**
+### 2. Homepage
 
-<figure><img src="../.gitbook/assets/1 (78).png" alt="Product homepage"><figcaption></figcaption></figure>
+![Feedback tool homepage](../.gitbook/assets/1%20(78).png)
 
-The page displays all the feedback collected. On the feedback list, users can upvote and comment on each feedback. By clicking the tabs "New" and "Trending," you'll see the feedback sorted in different ways, organized by popularity or time order. An integrated search box provides essential navigational functionality within the list view.
+The homepage displays all collected feedback. Users can upvote and comment on each feedback item. The "New" and "Trending" tabs allow sorting by time or popularity. An integrated search box helps users quickly find relevant feedback.
 
-3. **Feedback Detail**
+### 3. Feedback Detail
 
-By clicking on the feedback card, you'll be directed to the detail page, where the content of the feedback is displayed in detail. Additionally, users can engage in discussions related to this specific feedback.
+Clicking a feedback card opens the detail page, where users can view the full content and participate in discussions related to that feedback.
 
-<figure><img src="../.gitbook/assets/2 (65).png" alt="Feedback page"><figcaption></figcaption></figure>
+![Feedback detail page](../.gitbook/assets/2%20(65).png)
 
-4. **Create New Posts**
+### 4. Create New Posts
 
-By clicking the "Create a New Post" button, users can write and publish their feedback.
+Click the "Create a New Post" button to write and submit new feedback.
 
-<figure><img src="../.gitbook/assets/1280X1280.1.png" alt=""><figcaption></figcaption></figure>
+![Create new feedback post interface](../.gitbook/assets/1280X1280.1.png)
 
-### **II. How to Configure Data**
+## Configuring Data
 
-#### **Step 1: Learn How the Data Model Works**
+### Step 1: Understand the Data Model
 
-Located in the upper-left of the editor, you can inspect the structure of the project's data tables. The first step is to understand the association between several main tables and their corresponding informational segments displayed on the page.
+In the upper-left corner of the editor, you can view the structure of the project's data tables. Start by understanding how the main tables relate to the information displayed on each page.
 
-<figure><img src="../.gitbook/assets/4 (60).png" alt="Configure Data"><figcaption></figcaption></figure>
+![Data model configuration](../.gitbook/assets/4%20(60).png)
 
-#### **Step 2: Data Manipulation in the Database**
+### Step 2: Manipulate Data in the Database
 
-You can directly manipulate data in the database. Without the need to modify the frontend, data stored in the database is dynamic.
+You can directly add, edit, or delete data in the database. Changes are reflected dynamically on the frontend without additional configuration.
 
-<figure><img src="../.gitbook/assets/5 (47).png" alt="Data Manipulation in Database"><figcaption></figcaption></figure>
+![Database manipulation interface](../.gitbook/assets/5%20(47).png)
 
-![](<../.gitbook/assets/6 (42).png>)
+![Database table view](../.gitbook/assets/6%20(42).png)
 
-### **III. How to Deploy the Project**
+## Deploying the Project
 
-#### **Step 1: Preview**
+### Step 1: Preview
 
-By this stage, you have completed 99% of the content. Now, let's proceed to preview your website. This process typically takes approximately one minute. Upon successful preview, you will obtain a link to a trial version of the webpage as well as a corresponding QR code.
+After completing your content and configuration, preview your website. This process usually takes about one minute. Upon successful preview, you will receive a link to a trial version of the site and a corresponding QR code.
 
-<figure><img src="../.gitbook/assets/7 (32).png" alt="Deploy the Project"><figcaption><p>Pre-release the project</p></figcaption></figure>
+![Project pre-release preview](../.gitbook/assets/7%20(32).png)
 
-<figure><img src="../.gitbook/assets/8 (28).png" alt="Deploy the Project"><figcaption><p>Successful Pre-release, Publish Button Activated</p></figcaption></figure>
+![Successful pre-release, publish button activated](../.gitbook/assets/8%20(28).png)
 
-#### **Step 2: Publish**
+### Step 2: Publish
 
-If everything looks good and you have checked for any errors, click on "Publish" to publish the website. Upon successful publication, an official link to the webpage will be made available.
+If everything looks correct and you have verified all content, click "Publish" to make your website live. After publishing, you will receive an official link to your feedback management platform.
 
-Congratulations! After completing the aforementioned steps, your feedback management platform is now ready to operate.
+**Congratulations!**  
+Your feedback management platform is now ready to use.
 
-### **About Momen**
+---
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+## About Momen
+
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

@@ -7,29 +7,36 @@ description: >-
 
 # Custom Component
 
-## Background
+## Overview
 
-Building pages with finely granular components has always been popular among users. However, as the complexity of application pages increases, building the UI becomes cumbersome. We have focused on the scenario of user reusability and introduced the Custom Component feature. This feature allows users to save configured components as Custom Components and add them to the left sidebar component library, enabling reuse in multiple places within a project to enhance building efficiency.
+Custom Components allow you to save configured components for reuse throughout your project. This feature streamlines UI building, especially as application complexity grows, by enabling you to add reusable components to the left sidebar component library.
 
-## Value
+## Benefits
 
-1. Reuse in multiple places: Once a component is saved as a Custom Component, it can be directly dragged and used on all pages within the project.
-2. Collaborative efficiency: Project collaborators can directly use the saved Custom Components, improving building efficiency.
+1. **Reusable Across Pages:** Once saved, a Custom Component can be dragged onto any page within the project.
+2. **Collaborative Efficiency:** Project collaborators can use saved Custom Components, improving team productivity.
 
-### Scenario
+## Typical Scenarios
 
-Repeated general components: During project building, we often encounter some general components that appear repeatedly, such as top navigation bars, product lists, and user information panels. We can build the UI once and save it as a Custom Component, then drag it out from the left sidebar's Custom Component library to use on other pages. ![](../.gitbook/assets/customCP.png)
+Common reusable components include navigation bars, product lists, and user info panels. Build the UI once, save it as a Custom Component, and then drag it from the left sidebar's Custom Component library to use on other pages.
 
-### Instructions
+![Custom Component example](../.gitbook/assets/customCP.png)
 
-1.  **Create**: After selecting a component, save the configured component as a Custom Component through the right-click option or the shortcut `cmd+shift+K`. We will save all content, style, data configuration structure, and action configuration structure of the component. When there is a data dependency in the data or action configuration, users need to delete and reconfigure the configuration items.
+## How to Use
 
-    ![](../.gitbook/assets/addcustomCP.png)
-2. **Fill in information**: Enter the Custom Component panel, where we will automatically generate a preview image of the component, and users can also upload their own. Users can name the Custom Component and add a description in the panel. After clicking save, the component will be added under the left sidebar - Custom Components.
-3. **Reuse in multiple places**: Users can drag or double-click to add the saved component from the left sidebar - Custom Components to other pages for use. When there are too many Custom Components, users can accurately find the required component through the description in the upper right corner.
+1. **Create:**  
+   Select a component, then save it as a Custom Component via the right-click menu or the shortcut `Cmd+Shift+K`. All content, style, data configuration, and action configuration structures are saved. If there are data dependencies in the configuration, you must delete and reconfigure those items.
 
-### Functional Boundaries
+   ![Add Custom Component](../.gitbook/assets/addcustomCP.png)
 
-1. The maximum number of components that can be saved per project is 1000.
-2. Style editing is not supported.
-3. Cross-project use is not allowed.
+2. **Fill in Information:**  
+   In the Custom Component panel, a preview image is generated automatically (you can upload your own). Name the component and add a description. Click save to add it to the left sidebar under Custom Components.
+
+3. **Reuse:**  
+   Drag or double-click the saved component from the left sidebar to add it to other pages. If you have many Custom Components, use the description in the upper right to find the one you need.
+
+## Limitations
+
+1. Each project can save up to 1000 Custom Components.
+2. Editing the style of a Custom Component after saving is not supported.
+3. Custom Components cannot be used across different projects.

@@ -2,72 +2,91 @@
 description: Learn how to build a needs analysis project with Momen AI.
 ---
 
-# How to Build an AI Needs Analysis Project?
+# How to Build an AI Needs Analysis Project
 
-### Introduction
+## Introduction
 
-In this guide, we’ll walk you through creating a needs analysis bot using Momen AI. This bot will help you collect and analyze your customers’ needs while providing tailored advice based on the input. You can see a working example on [our website](https://momen.app/ai).
+This guide walks you through building a needs analysis bot using Momen AI. The bot collects and analyzes customer needs and provides tailored advice.  
+See a live example at [Momen AI](https://momen.app/ai).
 
-This guide focuses on configuring AI for your website. For more on UI and interaction design, refer to [User Interface and Interaction Design](https://docs.momen.app/get-started/quick-start/user-interface-and-interaction-design).
+For UI and interaction design, see [User Interface and Interaction Design](https://docs.momen.app/get-started/quick-start/user-interface-and-interaction-design).
 
-### Step 1: Data Storage
+---
 
-Before configuring the AI, ensure your UI and data input fields are ready. Create the necessary data models and relevant fields for storing customer information. This is crucial for feeding data to the AI during analysis.
+## Step 1: Data Storage
 
-<figure><img src="../.gitbook/assets/datamodel-screenshot.png" alt="screenshot of datamodel"><figcaption></figcaption></figure>
+- Prepare your UI and data input fields.
+- Create data models and fields to store customer information.  
+  This ensures the AI has access to relevant data for analysis.
 
-### Step 2: Configure Your AI
+![Data model screenshot](../.gitbook/assets/datamodel-screenshot.png)
 
-Before proceeding, review [AI configuration](https://docs.momen.app/ai/ai-configuration).
+---
 
-Navigate to AI configuration via the top bar in the Momen editor. Click "Create" to configure your AI. Name your AI "Project Analysis Assistant."
+## Step 2: Configure Your AI
 
-<figure><img src="../.gitbook/assets/start.png" alt=""><figcaption></figcaption></figure>
+- Review [AI configuration](https://docs.momen.app/ai/ai-configuration).
+- In the Momen editor, go to AI configuration and click "Create."
+- Name your AI (e.g., "Project Analysis Assistant").
 
-<figure><img src="../.gitbook/assets/createai.png" alt=""><figcaption></figcaption></figure>
+![Start AI configuration](../.gitbook/assets/start.png)
+![Create AI](../.gitbook/assets/createai.png)
 
-Select your AI model.
+- Select your AI model.
 
-<figure><img src="../.gitbook/assets/model.png" alt=""><figcaption></figcaption></figure>
+![Select AI model](../.gitbook/assets/model.png)
 
-The input section is where users input their needs. Reference this input in the prompt by clicking the "+" and choosing the input, so the AI can recognize it.
+- In the input section, reference user input in the prompt by clicking "+" and selecting the input field.
 
-<figure><img src="../.gitbook/assets/inputs.png" alt=""><figcaption></figcaption></figure>
+![Configure AI inputs](../.gitbook/assets/inputs.png)
 
-Define your AI's role in the task role section. Here, we set it as Momen's expert. In task details, specify what you want your AI to do. Structure your task details step-by-step to guide the AI in answering. Outline requirements and how the AI should ask questions in task constraints. In this project, we required brief and concise answers. Below is an example prompt.
+- Define the AI's role and task details.  
+  - Set the role (e.g., Momen expert).
+  - In task details, outline step-by-step instructions for the AI.
+  - Use task constraints to specify requirements (e.g., concise answers).
 
-<figure><img src="../.gitbook/assets/prompts.png" alt=""><figcaption></figcaption></figure>
+![Prompt configuration](../.gitbook/assets/prompts.png)
 
-In the contexts section, choose the data sources you want the AI to use when answering questions. Whether from Momen's database, API, or local files, your AI will retrieve facts from the knowledge base for more accurate and fact-based answers.
+- In the contexts section, select data sources (Momen database, API, or local files) for the AI to use.  
+  This enables fact-based, accurate answers.
 
-<figure><img src="../.gitbook/assets/context.png" alt=""><figcaption></figcaption></figure>
+![Context configuration](../.gitbook/assets/context.png)
 
-Output configuration determines the format of the AI's answers. If you choose the default, the AI will output results based on your input.
+- Configure output format:
+  - **Default:** AI outputs results based on input (number, text, etc.).
+  - **Custom:** Define output as JSON with specific fields for structured results.
 
-For example, if there are no output format restrictions in your task constraints, the output could be a number for data calculation or text for writing an article. If you choose custom, the results will be in JSON format. Define the content to include specific fields and their meanings. The AI will output the results in JSON format, allowing you to read the data like a data table. In this project, we use custom output for a structured answer.
+![Output configuration](../.gitbook/assets/output%20(5).png)
 
-<figure><img src="../.gitbook/assets/output (5).png" alt=""><figcaption></figcaption></figure>
+- Test your AI and adjust prompts as needed.
 
-Once all configurations are done, test to ensure it works as expected. Adjust prompts based on the results.
+![Debug AI](../.gitbook/assets/debug.png)
 
-<figure><img src="../.gitbook/assets/debug.png" alt=""><figcaption></figcaption></figure>
+---
 
-### Step 3: Apply Your AI on the Frontend
+## Step 3: Apply Your AI on the Frontend
 
-To receive AI request results, add page data and the necessary parameters. For this case, we added parameters related to two questions the AI will analyze.
+- Add page data and parameters for the AI request (e.g., parameters for two analysis questions).
 
-<figure><img src="../.gitbook/assets/analysis_pagedata.png" alt=""><figcaption></figcaption></figure>
+![Page data for analysis](../.gitbook/assets/analysis_pagedata.png "Page data for analysis")
 
-Configure actions for the button component. In the action configuration, request AI and set page data. The value of page data would be the content from AI result data. Below is the action configuration in this project.
+- Configure button actions:
+  - Request AI.
+  - Set page data with the AI result.
 
-<figure><img src="../.gitbook/assets/frontend.jpeg" alt=""><figcaption></figcaption></figure>
+![Frontend action configuration](../.gitbook/assets/frontend.jpeg "Frontend action configuration")
 
-### Step 4: Preview and Publish
+---
 
-Preview your project, ensure everything works as expected, and then publish it. Your needs analysis bot is now live!
+## Step 4: Preview and Publish
 
-<figure><img src="../.gitbook/assets/analysisbot_publish.png" alt=""><figcaption></figcaption></figure>
+- Preview your project to ensure everything works as expected.
+- Publish your needs analysis bot.
 
-### About Momen
+![Publish analysis bot](../.gitbook/assets/analysisbot_publish.png "Publish analysis bot")
 
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder, allowing users to build fully customizable web apps, marketplaces, Social Networks, AI Apps, Enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions and get your web app products to market faster than ever before.
+---
+
+## About Momen
+
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

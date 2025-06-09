@@ -7,76 +7,90 @@ description: >-
 
 # Map
 
-#### Value
+## Value
 
-1. **Customizable Config**: Users can set the display range and zoom level of the map, ensuring that the map content is displayed according to business requirements.
-2. **Multiple Markers**: It supports adding one or more markers on the map, enabling users to display information about different locations.
+1. **Customizable Configuration:** Set the display range and zoom level to ensure the map content matches business requirements.
+2. **Multiple Markers:** Add one or more markers to display information about different locations.
 
-#### When to Use
+## When to Use
 
-The map component uses geographical data (latitude and longitude) to display corresponding location information. It responds to user actions, such as clicking on a marker, and can be used in applications that require the display of locations, such as company address information or navigation-based apps.
+The map component uses geographic data (latitude and longitude) to display location information. It responds to user actions, such as clicking a marker, and is suitable for applications that need to display locations (e.g., company addresses, navigation apps).
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+![Map component example](../.gitbook/assets/image.png)
 
-#### How to Use
+## How to Use
 
-1. **Register with Mapbox and Obtain an Access Token**
-   1. Go to the Mapbox platform (https://www.mapbox.com), register an account, and create an access token. It is **recommended** to restrict your token by adding your domain in the Mapbox restriction section to make your token more secure. Once added, the token will only work for requests that originate from the URLs you specify.
-   2. When the access token is obtained, input the access token under Config-General-Map API key section.
+### 1. Register with Mapbox and Obtain an Access Token
 
-<div><figure><img src="../.gitbook/assets/image(1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(2).png" alt=""><figcaption></figcaption></figure></div>
+1. Go to [Mapbox](https://www.mapbox.com), register an account, and create an access token.  
+   **Recommendation:** Restrict your token by adding your domain in the Mapbox restriction section for security. The token will only work for requests from specified URLs.
+2. Enter the access token in the Config > General > Map API key section.
 
-2. **Obtain GeoPoint Data**
+![Mapbox token configuration](../.gitbook/assets/image(1).png)
+![Map API key input](../.gitbook/assets/image(2).png)
 
-Users can obtain GeoPoint data through the action of Get Location and assign it to Page data while constructing the map. Alternatively, you can obtain these data by looking them up on map providers and inserting them into the Momen built-in database. In your database, create an "Address Information" table based on your business logic. Common fields include:
+### 2. Obtain GeoPoint Data
 
-1. **Text Type**: Marker name
-2. **Image Type**: Marker icon
-3. **Boolean**: Center point
-4. **GeoPoint Type**: Marker coordinates
+You can obtain GeoPoint data by using the "Get Location" action and assigning it to page data, or by looking up coordinates on map providers and inserting them into the Momen database.  
+Create an "Address Information" table in your database with fields such as:
 
-<div><figure><img src="../.gitbook/assets/image(5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(3).png" alt=""><figcaption></figcaption></figure></div>
+- **Text:** Marker name
+- **Image:** Marker icon
+- **Boolean:** Center point indicator
+- **GeoPoint:** Marker coordinates
 
-3. **Map Configuration**
+![Address info table example 1](../.gitbook/assets/image(5).png)
+![Address info table example 2](../.gitbook/assets/image(4).png)
+![Address info table example 3](../.gitbook/assets/image(3).png)
 
-**Initial Zoom**: This controls the map's display range. The default is 11, with values ranging from 1 to 19. The lower the number, the larger the display range (e.g., zoom level 1 shows the entire globe).
+### 3. Map Configuration
 
-<div><figure><img src="../.gitbook/assets/image(6).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(7).png" alt=""><figcaption></figcaption></figure></div>
+- **Initial Zoom:** Controls the map's display range (default: 11, range: 1–19). Lower values show a larger area (e.g., 1 = entire globe).
 
-**Show Location**: Enabling this will display the user's current location on the map.
+![Initial zoom setting](../.gitbook/assets/image(6).png)
+![Zoom level example](../.gitbook/assets/image(7).png)
 
-<div><figure><img src="../.gitbook/assets/image(8).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(9).png" alt=""><figcaption></figcaption></figure></div>
+- **Show Location:** Enable to display the user's current location on the map.
 
-**Center Point**: The map will be centered around the configured point. If not configured, the center point of the map defaults to Los Angeles, California, USA.
+![Show location enabled](../.gitbook/assets/image(8).png)
+![Show location example](../.gitbook/assets/image(9).png)
 
-<div><figure><img src="../.gitbook/assets/image(10).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(11).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(12) (2).png" alt=""><figcaption></figcaption></figure></div>
+- **Center Point:** Set the map's center. If not set, the default is Los Angeles, California, USA.
 
-4. **Marker Configuration**
+![Center point configuration 1](../.gitbook/assets/image(10).png)
+![Center point configuration 2](../.gitbook/assets/image(11).png)
+![Center point configuration 3](../.gitbook/assets/image(12)%20(2).png)
 
-**Marker Switch**: Toggle the marker switch to access the marker configuration panel.
+### 4. Marker Configuration
 
-<div><figure><img src="../.gitbook/assets/image(13).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(14).png" alt=""><figcaption></figcaption></figure></div>
+- **Marker Switch:** Toggle to access the marker configuration panel.
 
-**Quantity**:
+![Marker switch panel 1](../.gitbook/assets/image(13).png)
+![Marker switch panel 2](../.gitbook/assets/image(14).png)
 
-1. **Single Marker**: For a single marker, simply bind the marker coordinates via remote data.
+- **Quantity:**
+  - **Single Marker:** Bind marker coordinates via remote data.
 
-<div><figure><img src="../.gitbook/assets/image(15).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(16).png" alt=""><figcaption></figcaption></figure></div>
+    ![Single marker binding 1](../.gitbook/assets/image(15).png)
+    ![Single marker binding 2](../.gitbook/assets/image(16).png)
 
-2. **Multiple Markers**: For multiple markers, bind a remote data source to provide multiple marker coordinates (be mindful to remove data limits if multiple coordinates shall be retrieved at once), and bind the marker coordinates via in-component data.
+  - **Multiple Markers:** Bind a remote data source to provide multiple marker coordinates (remove data limits if needed), and bind marker coordinates via in-component data.
 
-<div><figure><img src="../.gitbook/assets/image(17).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(18).png" alt=""><figcaption></figcaption></figure></div>
+    ![Multiple markers binding 1](../.gitbook/assets/image(17).png)
+    ![Multiple markers binding 2](../.gitbook/assets/image(18).png)
 
-**Icon Style**: Users can upload or bind a custom icon style for markers and adjust the icon size.
+- **Icon Style:** Upload or bind a custom icon for markers and adjust icon size.
 
-<div><figure><img src="../.gitbook/assets/image(19).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(20).png" alt=""><figcaption></figcaption></figure></div>
+![Marker icon style 1](../.gitbook/assets/image(19).png)
+![Marker icon style 2](../.gitbook/assets/image(20).png)
 
-**Marker Name**: Users can manually enter or bind the marker name.
+- **Marker Name:** Enter or bind the marker name.
 
-<div><figure><img src="../.gitbook/assets/image(21).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image(22).png" alt=""><figcaption></figcaption></figure></div>
+![Marker name configuration 1](../.gitbook/assets/image(21).png)
+![Marker name configuration 2](../.gitbook/assets/image(22).png)
 
-**Action onClick**: Users can configure actions triggered when clicking on a marker, such as displaying a popup.
+- **Action onClick:** Configure actions triggered when clicking a marker (e.g., display a popup).
 
-#### 5. Functionality Boundaries
+## Functionality Boundaries
 
-1. When the map center point is not set, the map defaults to Los Angeles, California, USA.
+1. If the map center point is not set, the map defaults to Los Angeles, California, USA.

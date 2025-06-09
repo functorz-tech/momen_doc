@@ -1,69 +1,69 @@
 ---
 description: >-
-  Learn how to use Momen's online course template to build your online course
-  website.
+  Learn how to use Momen's online course template to build your online course website.
 ---
 
-# Online Courses, a nod to Udemy
+# Online Courses: A Nod to Udemy
 
-### **Introduction**
+## Introduction
 
-Introducing Momen's online course template. With this template, you can build your own website for knowledge sharing, content management, and monetization. This guide will introduce the basic logic of this template and how you can build your own website with it.
+Momen's online course template enables you to build a website for knowledge sharing, content management, and monetization. This guide explains the template's core logic and provides step-by-step instructions for creating your own online course website.
 
-### **I. Basic Project Operation Logic**
+## I. Basic Project Operation Logic
 
-【Homepage】: The initial page that your users will see. It showcases the value, popular courses, and testimonials of the website. You can also add sections of other content.
+**Homepage:**  
+The landing page for users, showcasing your website’s value, popular courses, and testimonials. You can add additional content sections as needed.
 
-![](<../.gitbook/assets/0 (17).png>)
+![Homepage example 1](../.gitbook/assets/0%20(17).png)
+![Homepage example 2](../.gitbook/assets/1%20(17).png)
+![Homepage example 3](../.gitbook/assets/2%20(14).png)
 
-![](<../.gitbook/assets/1 (17).png>)
+**Course:**  
+Displays all available courses. Users can purchase courses by clicking **Buy Now**. Payment is handled via built-in Stripe integration—no additional plugins required.
 
-![](<../.gitbook/assets/2 (14).png>)
+![Course list example 1](../.gitbook/assets/3%20(9).png)
+![Course list example 2](../.gitbook/assets/4%20(9).png)
 
-【Course】: A page that displays all listed courses. Users can proceed to purchase by clicking "Buy Now." The payment functionality is enabled through our built-in Stripe integration, without the need for additional plugins.
+**My Learning:**  
+A user center page where users can update their personal information and view purchased courses.
 
-![](<../.gitbook/assets/3 (9).png>)
+![My Learning page example](../.gitbook/assets/5%20(5).png)
 
-![](<../.gitbook/assets/4 (9).png>)
+## II. How to Create Your Online Course Website
 
-【My Learning】: This is the user center page where the user can modify their personal information and see their purchased courses.
+### Understanding the Data Model
 
-![](<../.gitbook/assets/5 (5).png>)
+![Data model overview](../.gitbook/assets/6%20(5).png)
 
-### **II. Learn How to Create Your Online Course Website**
+- **User:** Stores all user information. Only admins have access.
+- **Course:** Stores course information. Has one-to-many relationships with related tables, allowing other tables to reference course data.
 
-#### **Understanding the Data Model**
+![Course data table example](../.gitbook/assets/7%20(3).png)
 
-![](<../.gitbook/assets/6 (5).png>)
+- **Order:** Stores order information, referencing both **User** and **Course** tables.
 
-【User】: This data table stores all of your users' information. Only the admin will have access to it.
+### Database Management
 
-【Course】: This data table stores all the information of courses. It has one-to-many relations with other related tables, meaning that other tables can reference the information in the 【Course】 table.
+The database allows you to browse and manage all data, including courses, orders, and users.  
+For more details, see [Database Operation](https://docs.momen.app/data/database/database-operation).
 
-![](<../.gitbook/assets/7 (3).png>)
+![Database management example 1](../.gitbook/assets/8%20(2).png)
+![Database management example 2](../.gitbook/assets/9%20(1).png)
 
-【Order】: This table stores the information of orders, relating to 【User】 and 【Course】. This means it can reference the information in these two tables.
+To learn how to manipulate data and bind it to the frontend, refer to:  
+- [Data Retrieval and Display](https://docs.momen.app/data/data-overview/data-retrieval-and-display)  
+- [Data Input and Modification](https://docs.momen.app/data/data-overview/data-input-and-modification)
 
-#### **Database Management**
+## III. Website Preview
 
-The database is where you can browse and manage all your data. You can manage your courses, orders, and users here. For more information, please refer to [Database Operation](https://docs.momen.app/data/database/database-operation).
+Click the **Preview** button to generate a preview link.
 
-![](<../.gitbook/assets/8 (2).png>)
+After previewing, you can return to the editor to make further changes.
 
-![](<../.gitbook/assets/9 (1).png>)
+If everything is correct and error-free, click **Publish** to launch your website.
 
-To learn how to manipulate data and bind it with the frontend, please refer to [Data Retrieval and Display](https://docs.momen.app/data/data-overview/data-retrieval-and-display) and [Data Input and Modification](https://docs.momen.app/data/data-overview/data-input-and-modification).
+![Preview and publish example](../.gitbook/assets/10%20(1).png)
 
-### **III. Website Preview**
+## About Momen
 
-Click on the "Preview" button to generate the preview link.
-
-Once the preview is complete, you can make further changes by returning to the editor.
-
-If everything looks good and you have checked for any errors, click on "Publish" to publish the website.
-
-![](<../.gitbook/assets/10 (1).png>)
-
-### **About Momen**
-
-[Momen](https://momen.app/?channel=blog-about) is a no-code web app builder that allows users to build fully customizable web apps, marketplaces, social networks, AI apps, enterprise SaaS, and much more. You can iterate and refine your projects in real-time, ensuring a seamless creation process. Meanwhile, Momen offers powerful API integration capabilities, allowing you to connect your projects to any service you need. With Momen, you can bring your ideas to life and build remarkable digital solutions, getting your web app products to market faster than ever before.
+[Momen](https://momen.app/?channel=docs) is a no-code web app builder that lets you create fully customizable web apps, marketplaces, social networks, AI tools, enterprise SaaS platforms, and more. Iterate and refine your projects in real time for a smooth, streamlined creation process. Momen also offers powerful API integration, making it easy to connect your app to any service. Bring your ideas to life and launch products faster than ever with Momen.

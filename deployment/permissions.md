@@ -15,13 +15,13 @@ The permission system is the foundation of commercial software. Through refined 
 * **Data Permission**: Precisely controls the data content that a role can access or modify.
 * **Action Permission**: Controls the actions a role can perform, such as Actionflow, APIs, payment actions, refund actions, etc.
 
-![](<../.gitbook/assets/0 (16).png>)
+![Permission system overview diagram](../.gitbook/assets/0%20(16).png)
 
 ## Permission Configuration Guide
 
 ### 1. Enable Permissions
 
-![](../.gitbook/assets/permission/permission0.png)
+![Enable permissions in Momen](../.gitbook/assets/permission/permission0.png)
 
 ### 2. Role Management
 
@@ -38,7 +38,7 @@ In addition to the system's built-in roles, developers can create their own role
 
 Click "Add" to create a role with a default name. **Once the backend update activates the role, the name will be unchangeable.**
 
-![](../.gitbook/assets/permission/permission1.png)
+![Role management interface](../.gitbook/assets/permission/permission1.png)
 
 When a user has multiple roles, their permissions are the union of all role permissions (for example, if a user has two roles, one role has payment permission, and the other does not, the user ultimately has payment permission).
 
@@ -50,23 +50,22 @@ If you need to retrieve a user's roles on the front-end page, you can find the "
 
 1. **Operation Permission**: Manage permissions for adding, deleting, modifying, and querying data.
 
-![](../.gitbook/assets/permission/permission2.png)
+![Operation permission configuration](../.gitbook/assets/permission/permission2.png)
 
 2. **Field Permission**: Further configure the operation permissions for a specific column in the data table.
 
-![](../.gitbook/assets/permission/permission3.png)
+![Field permission configuration](../.gitbook/assets/permission/permission3.png)
 
 3. **Advanced Filtering**: Configure attribute-based and refined operation permissions through row filtering (e.g., users can only modify their own data).
 
-![](../.gitbook/assets/permission/permission4.png)
-
-![](../.gitbook/assets/permission/permission5.png)
+![Advanced filtering configuration](../.gitbook/assets/permission/permission4.png)
+![Row-level filtering example](../.gitbook/assets/permission/permission5.png)
 
 #### Action Permission
 
 Control the permissions for user actions, including API, Actionflow, AI, and Payment. Advanced filters provide detailed control (e.g., time-based access) for all actions except payment.
 
-![](../.gitbook/assets/permission/permission6.png)
+![Action permission configuration](../.gitbook/assets/permission/permission6.png)
 
 ### 4. Assign Roles to Users
 
@@ -75,12 +74,12 @@ After configuring the roles, you can assign them to a user. There are two ways t
 1. **Manually Manage in the Permission Management System**  
    Click the button under "User Management" to view which users are under this role and add/remove users for this role.
 
-   ![](../.gitbook/assets/permission/permission7.png)
+   ![User management interface](../.gitbook/assets/permission/permission7.png)
 
 2. **Automatically Manage in Actionflow**  
    Use the permission node in Actionflow to grant and remove roles for certain users, achieving some automated scenarios. For example, grant a VIP role after a user successfully purchases a product.
 
-   ![](../.gitbook/assets/permission/permission8.png)
+   ![Actionflow role assignment example](../.gitbook/assets/permission/permission8.png)
 
 ### 5. Make Permissions Effective
 
@@ -113,7 +112,7 @@ Once the permissions are effective, if a user lacks permission to access a resou
 }
 ```
 
-In this case, "User 1" represents the user with ID `1000000000000001`, and "has no permission for SELECT on order" indicates that the user lacks the permission to query the "order" table.
+In this case, "User 1" refers to the user with ID `1000000000000001`, and "has no permission for SELECT on order" means the user does not have permission to query the "order" table.
 
 
 

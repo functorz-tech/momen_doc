@@ -1,4 +1,4 @@
----
+--- 
 description: Overview of the Momen Editor.
 ---
 
@@ -8,7 +8,7 @@ The Momen Editor is divided into a navigation bar, functional core area, and add
 
 ## Navigation Bar: Feature Access and Project Management
 
-![](../.gitbook/assets/design/nav_bar_overview.png)
+![Navigation bar overview in Momen Editor](../.gitbook/assets/design/nav_bar_overview.png)
 
 The navigation bar allows you to switch between canvas contents, access various functional panels, and open general project settings. Below is a detailed introduction to its components:
 
@@ -20,7 +20,7 @@ Click the “Momen” logo in the top-left corner to return to your personal cen
 
 When you enter the editor, the “Page” tab is selected by default. Click other tabs to access different configuration panels.
 
-![](../.gitbook/assets/design/nav_bar_features.png)
+![Navigation bar feature tabs](../.gitbook/assets/design/nav_bar_features.png)
 
 You can click the link below to view the detailed introduction of the corresponding function:\
 [Data](../data/data_model.md)\
@@ -32,7 +32,8 @@ You can click the link below to view the detailed introduction of the correspond
 
 If configuration errors occur during editing, the navigation bar displays an error notification. Click it to see detailed error information at the bottom of the editor: 1. Location: View the path to the error. 2. Error Message: Description of the issue. 3. Fix: Click to navigate directly to the error location.
 
-![](../.gitbook/assets/design/nav_bar_error_collector.png) ![](../.gitbook/assets/design/nav_bar_error_collector_details.png)
+![Error notification in navigation bar](../.gitbook/assets/design/nav_bar_error_collector.png) 
+![Error details panel](../.gitbook/assets/design/nav_bar_error_collector_details.png)
 
 ### Sharing and Permissions
 
@@ -40,29 +41,32 @@ To share your project or view collaborators, click the “Sharing and Permission
 
 Roles and Permissions: 1. Owner: Full project permissions, including creation. 2. Manager: Can edit, manage collaborators, and clone the project. 3. Editor: Can edit project content. 4. Viewer: Read-only access to the project.
 
-![](../.gitbook/assets/design/nav_bar_share.png) ![](../.gitbook/assets/design/nav_bar_share_details.png)
+![Sharing and permissions icon](../.gitbook/assets/design/nav_bar_share.png) 
+![Sharing and permissions details](../.gitbook/assets/design/nav_bar_share_details.png)
 
 ### Mirror
 
 Click the Mirror icon on the top of the page to quickly preview your project during editing.
 
-![](../.gitbook/assets/design/nav_bar_mirror.png) ![](../.gitbook/assets/mirror.png)
+![Mirror preview icon](../.gitbook/assets/design/nav_bar_mirror.png) 
+![Mirror preview window](../.gitbook/assets/mirror.png)
 
 ### Backend Update
 
 After modifying data models, APIs, workflows, or ZAI, click the Backend Update button in the upper-right corner to apply changes immediately. For live projects, backend updates are sufficient if only backend configurations are modified.
 
-![](../.gitbook/assets/design/nav_bar_sync_backend.png)
+![Backend update button](../.gitbook/assets/design/nav_bar_sync_backend.png)
 
 ### Project Publishing
 
 Once your web application is complete, deploy it by clicking the Publish button. Before publishing: 1. Preview the latest version to generate a QR code and link for testing. 2. After confirming the app works as expected, click Publish to deploy.
 
-![](../.gitbook/assets/design/nav_bar_publish_web_preview.png) ![](../.gitbook/assets/design/nav_bar_publish_web_preview_successful.png)
+![Publish preview button](../.gitbook/assets/design/nav_bar_publish_web_preview.png) 
+![Publish successful confirmation](../.gitbook/assets/design/nav_bar_publish_web_preview_successful.png)
 
 ## Toolbar: Editing Actions and Resources
 
-![](../.gitbook/assets/design/tools_bar_overview.png)
+![Toolbar overview in Momen Editor](../.gitbook/assets/design/tools_bar_overview.png)
 
 The toolbar includes essential tools for editing and useful resources. Below are its features:
 
@@ -70,28 +74,28 @@ The toolbar includes essential tools for editing and useful resources. Below are
 
 The canvas defaults to Edit Mode (shortcut: **V**), allowing element selection and editing. Switch to Move Mode (shortcut: **H**) to drag the canvas without selecting elements. For temporary movement, hold **Spacebar** and drag with the mouse.
 
-![](../.gitbook/assets/design/tools_bar_mode.png)
+![Canvas mode selection](../.gitbook/assets/design/tools_bar_mode.png)
 
 ### Shortcuts
 
 View all available shortcuts by clicking the Shortcuts icon in the toolbar.
 
-![](../.gitbook/assets/design/tools_bar_shortcut.png)
+![Shortcuts icon](../.gitbook/assets/design/tools_bar_shortcut.png)
 
 ### Help
 
 Access tutorials, documentation, and connect with the community through the Help section.
 
-![](../.gitbook/assets/design/tools_bar_help.png)
+![Help section icon](../.gitbook/assets/design/tools_bar_help.png)
 
 ### Canvas Zoom
 
 Adjust the canvas zoom level freely. Common shortcuts include:
 
-**Zoom In**: **⌘ +**
+Zoom In: **⌘ +**
 
-**Zoom Out**: **⌘ -**
+Zoom Out: **⌘ -**
 
 Reset to 100%: **⌘ 0**
 
-![](../.gitbook/assets/design/tools_bar_zoom.png)
+![Canvas zoom controls](../.gitbook/assets/design/tools_bar_zoom.png)

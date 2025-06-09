@@ -3,22 +3,26 @@ description: >-
    After clicking on the component configured for this action, you can copy the content directly filled in the action or bound to it to the clipboard of the phone.
 ---
 
-# Set clipboard
+# Set Clipboard
 
-## Introduction
-Upon activation (by a click), this action copies the specified content, either direct input or data binding, to the phone’s clipboard. This allows users to easily paste the content.
+The **Set Clipboard** action allows users to copy specified text—either static or dynamically bound—to their device's clipboard with a single click. This feature streamlines the process of sharing or reusing information within or outside your app.
 
-## Use case
-After the "Set Clipboard" action is triggered, improve the user experience by notifying users that the content has been successfully copied to their clipboard. This can be achieved by configuring a [Show Toast] action to display a prompt immediately after the clipboard action. Users can then proceed to paste the copied content wherever necessary.
+## How to Use
 
-| <img src="../.gitbook/assets/2 (69).png" alt="" data-size="original"> | <img src="../.gitbook/assets/3 (11).gif" alt="" data-size="original"> |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+1. Add the **Set Clipboard** action to a component (such as a button).
+2. In the action settings, specify or bind the text you want to copy.
+3. (Recommended) Add a **Show Toast** action immediately after to notify users that the content has been copied.
 
-## Action configuration guide
-To enable content copying, integrate the "Clipboard - Set Clipboard" action within the interactive elements of the component. Simply input or bind the textual data within the action settings.
+| ![Copy to clipboard example](../.gitbook/assets/2%20(69).png "Copy to clipboard") | ![Clipboard toast feedback](../.gitbook/assets/3%20(11).gif "Clipboard toast feedback") |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 
-| <img src="../.gitbook/assets/0 (46).png" alt="" data-size="original"> | <img src="../.gitbook/assets/1 (84).png" alt="" data-size="original"> |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| ![Set clipboard action config](../.gitbook/assets/0%20(46).png "Set clipboard action configuration") | ![Bind text to clipboard](../.gitbook/assets/1%20(84).png "Bind text to clipboard") |
+| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 
-## Note
-1. This action currently supports only text-type data.
+---
+
+## Notes
+
+- Only text-type data is supported.
+- The action does not support copying images or files.
+- For best user experience, always provide feedback (such as a toast notification) after copying.
