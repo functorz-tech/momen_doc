@@ -8,73 +8,78 @@ description: >-
 
 ## Introduction
 
-This feature triggers Actionflows when data changes (insert, update, or delete), enhancing automation within the project.
+The **Database Trigger** feature automatically runs Actionflows when data is inserted, updated, or deleted, enabling powerful automation in your project.
 
-Common use cases include:
+**Common use cases:**
+- Upgrade a user to VIP when their payment exceeds a threshold
+- Send a notification when an order is completed
+- Generate an operation record when user points change
 
-* Automatically upgrading to VIP when a user's payment exceeds a specified amount
-* Automatically sending a notification when an order is completed
-* Automatically generating an operation record when user points change, for easier tracking
+---
 
-## Action Configuration Guide
+## How to Configure
 
-Here’s how to set it up using an example: When a user’s payment exceeds $1000, the system will automatically upgrade them to VIP.
+**Example:** Automatically upgrade a user to VIP when their payment exceeds $1000.
 
 1. **Add Actionflow**
-   * Set the input parameter `account_id`.
-   * Add a "Get Payment mount" node to calculate the total payment for the user.
-   * Add an "Update account" node to update the user to "VIP."
+   - Set the input parameter `account_id`.
+   - Add a "Get Payment Amount" node to calculate the user's total payment.
+   - Add an "Update Account" node to set the user as "VIP".
 
-<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.30.44.png" alt="add actionflow"><figcaption></figcaption></figure>
+   ![Add Actionflow](../../.gitbook/assets/screenshot_20241106_123044.png)
 
 2. **Add Trigger**
 
-On the actionflow right-sider, under trigger section, add a trigger of database change. It can only be added after the Actionflow is saved.
+   In the Actionflow's right sidebar, under the trigger section, add a database change trigger. (You can only add a trigger after saving the Actionflow.)
 
-<figure><img src="../../.gitbook/assets/AgdIHZO4bG.png" alt="add trigger"><figcaption></figcaption></figure>
+   ![Add trigger](../../.gitbook/assets/AgdIHZO4bG.png)
 
-3. **Select Operation Type and Data Table**\
-   There are 4 types of supported operations:
+3. **Select Operation Type and Data Table**
 
-<figure><img src="../../.gitbook/assets/20241106-135707.png" alt="Select Operation Type and Data Table"><figcaption></figcaption></figure>
+   Supported operation types:
 
-* On Data Insert
-* On Data Update
-* On Data Delete
-* On Data Insert or Update
+   ![Select Operation Type and Data Table](../../.gitbook/assets/20241106-135707.png)
+
+   - On Data Insert
+   - On Data Update
+   - On Data Delete
+   - On Data Insert or Update
 
 4. **Set Conditions and Actionflow Parameters**
 
-Triggers allow access to both the previous and updated data values. Under Configure Conditions for Updated Data section, you can choose either data after update or data before update to design your trigger logic.
+   Triggers can access both previous and updated data values. In the "Configure Conditions for Updated Data" section, choose to use either the data after update or before update to design your trigger logic.
 
-<figure><img src="../../.gitbook/assets/截屏2024-11-06 12.33.29.png" alt="Set Conditions and Actionflow Parameters"><figcaption></figcaption></figure>
+   ![Set Conditions and Actionflow Parameters](../../.gitbook/assets/screenshot_20241106_123329.png)
+
+---
 
 ## View Trigger History
 
-View the history of triggers in the log system.
+You can view the history of database triggers in the log system.
+
+---
 
 ## Quota and Purchase Limits
 
-Automated actionflows (triggered by scheduled tasks or database changes) have usage limits:
+Automated Actionflows (triggered by scheduled tasks or database changes) have usage limits:
 
-* **Free Tier** (resets monthly):
-  * Free plan: 1000 executions/month
-  * Basic plan: 10000 executions/month
-  * Pro plan: 50000 executions/month
-* **Paid Option** (valid indefinitely):
-  * Cost: 10000 executions for $ 10&;
+- **Free Tier** (resets monthly):
+  - Free plan: 1,000 executions/month
+  - Basic plan: 10,000 executions/month
+  - Pro plan: 50,000 executions/month
+- **Paid Option** (valid indefinitely):
+  - $10 for 10,000 executions
+
+---
 
 ## Notes
 
-1. **Cyclic Trigger Prevention**
+1. **Cyclic Trigger Prevention**  
+   The system ensures each trigger in a chain is only executed once. For example, in a sequence:  
+   Trigger A → Actionflow A → Trigger B → Actionflow B → Trigger A, the second Trigger A will not be executed again.
 
-The system ensures that each trigger in a chain is only triggered once. For example, in the sequence:\
-Trigger A → Actionflow A → Trigger B → Actionflow B → Trigger A, the second Trigger A will not be triggered because it has already been executed.
+2. **Avoid Concurrent Modifications**  
+   Simultaneous updates from multiple Actionflows to the same data may cause deadlocks.
 
-2. **Avoid Concurrent Modifications to the Same Data**
-
-Simultaneous updates from multiple Actionflows to the same data may cause deadlock.
-
-3. **Data Imports May Trigger Multiple Events**
-
-If an "On data insert" trigger is set on a table and data is imported, each imported record will trigger the flow separately.
+3. **Data Imports May Trigger Multiple Events**  
+   If an "On Data Insert" trigger is set on a table, importing data will trigger the flow for each record imported.
