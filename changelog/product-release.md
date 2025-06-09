@@ -70,7 +70,7 @@ description: Announcing the latest Momen product update
 
 ### 🐞 Bug Fixes
 - Fixed an issue where API runtime parsing results were incorrect.
-- \nFixed an issue where lists were not displaying data.
+- Fixed an issue where lists were not displaying data.
 - Fixed an issue where images were not displaying in the web project list.
 - Fixed a 500 and 402 error when batch adding data with an empty array ([]).
 - Fixed an issue with real-time preview errors.
