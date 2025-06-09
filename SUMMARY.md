@@ -89,7 +89,6 @@
 
 * [How to Build an AI Needs Analysis Project?](tutorial/how-to-build-an-ai-needs-analysis-project.md)
 * [How to Set Up Payment with Stripe Plugin?](tutorial/how-to-set-up-payment-with-stripe-plugin.md)
-* [How to Embed an Iframe Component into Your Momen Project?](tutorial/how-to-embed-an-iframe-component-into-your-momen-project.md)
 * [How to Build Your Login Page?](tutorial/how-to-design-your-login-page.md)
 * [How to Convert Momen App to Native Mobile App?](tutorial/how-to-convert-momen-app-to-native-mobile-app.md)
 * [How to Build a CMS (MVP Version) in Hours?](tutorial/how-to-build-a-cms-mvp-version-in-hours.md)
