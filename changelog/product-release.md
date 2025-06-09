@@ -4,6 +4,62 @@ description: Announcing the latest Momen product update
 
 # Latest Product Update
 
+## Collection of Product Update Videos 👉 [YouTube Playlist](https://www.youtube.com/playlist?list=PLvdix_Sk3fBon4bY6PYHbUQrcuv7TmfEz)
+
+## v2.2.6 - April 2025
+**Release Period: April 23 – May 23, 2025**  
+### 🚀 New Features
+- Mirror now includes a Debug Mode, making it easy to inspect the data state of components (Mirror → Click the debugger icon → Enable Debug Mode).  
+   <img src="../.gitbook/assets/changelog/screenshot2025-06-05%20mirrordebug.png" alt="Mirror Debug" width="800">
+- The text component supports rendering Markdown-formatted content.
+- Added an option to enable or disable global horizontal and vertical scrollbars (Settings → Theme → Enable Scrollbar).
+
+### ✨ Enhancements
+- Standardized list scrolling action.
+- Improved field validation interactions in database operations.  
+   <img src="../.gitbook/assets/changelog/screenshot2025-06-06%20list.png" alt="validation" height="400">
+- Refreshed the HTML component styles in the editor canvas.
+- Reduced the minimum interval for scheduled jobs on pages to 1ms.
+
+### 🐞 Bug Fixes (30+ Issues)
+- Fixed issues with image arrays and image uploads after trigger configuration.
+- Resolved mismatches between AI table structures and request payloads.
+- Fixed bugs with email titles and lost diffs.
+- Exposed `id`, `created_at`, and `updated_at` in GraphQL insert/update operations.
+- Fixed loading issues in AI debug mode.
+- Improved project validation error location display.
+- Fixed disabled "Get Verification Code" button when phone number had trailing spaces during domain registration.
+- Handled non-object API response bodies correctly.
+- Improved database manager selection and AI prompt input field usability.
+- Adjusted payment confirmation dialogs and increased AI conversation turns from 30 to 1,000,000.
+- Fixed image parameter binding in follow-up AI sessions.
+- Ensured downloaded file names match original uploads.
+- Fixed API call errors and runtime parsing results.
+- Restored third-party shipping dispatch functionality.
+- Fixed maximum image count in image selector sidebar.
+- Corrected gradient color display and bulk data addition with empty arrays.
+- Resolved third-party mini program authorization failures.
+- Added toggle to hide sidebar loading animation during async workflows.
+- Fixed parameter configuration in audio playback actions.
+- Resolved page navigation failures with date-formatted URL parameters in live preview.
+- Fixed cross-project copy-paste interactions and file upload type filtering.
+- Fixed broken AI assistant link in the editor.
+- Fixed page padding display and AI status issues.
+- Fixed image file size not changing after enabling compression in image selector.
+- Resolved issues retrieving image ID and URL in AI prompts.
+- Fixed loop after "refresh" due to "data fluctuation" in payment configuration activation.
+- Improved multi-image input for AI and API calls with default values in custom workflows.
+- Corrected AI database tool information.
+- Fixed exceptions when editing filter conditions in table components.
+- Resolved incomplete code block display in custom workflows.
+- Fixed child component height setting when parent layout is top-to-bottom.
+- Fixed opacity setting in image selector and issues with view height/width.
+- Fixed absolute component positioning.
+- Resolved GraphQL generation issues when filtering by boolean fields in the database.
+
+
+
+
 ## V2.2.4 - 2025.04.28
 
 ### 🚀 New Features
